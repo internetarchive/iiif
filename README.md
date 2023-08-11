@@ -1,20 +1,19 @@
-# iiify
-A simple Python Flask-based implementation of the IIIF Image API 1.0 standard
+# iiif.archive.org
 
-## Notes
-* This started as a toy project to learn the IIIF API, so it is not necessarily ready for production, but may be some day.
-* It was also an opportunity to learn Flask, a micro-framework. I consciously chose to avoid adding too many abstractions, and attempted to stick to procedural code as much as possible.
-* It has a simple on-disk cache scheme, but no cache management.
-  * If you want to delete the cache, purge the contents of the cache directory.
-  * Cache does not currently check timestamps.
-  * Cache can't be disabled yet.
-* It was a lot of fun, and does work, but is missing a lot of optimizations.
-* There are several sample files in the media directory - all but one are courtesy of the Getty's Open Content Program.
+The Internet Archive's official IIIF 3.0 Image & Presentation API
+
+## Background
+
+This service replaces the iiif.archivelab.org unofficial labs API.
+
+## Technical Details
+
+The service uses a manifest/API service written in python3 flask and makes image processing calls to cantaloupe in both iiif 3.0 and 2.0 format.
 
 ## Installation & Setup
 ```
-git clone https://github.com/ArchiveLabs/iiif.archivelab.org.git
-cd iiif.archivelab.org
+git clone https://github.com/internetarchive/iiif.git
+cd iiif
 pip install .
 python app.py
 ```
@@ -33,7 +32,7 @@ docker run -d --rm --name iiify -p 8080:8080 iiify-uwsgi
 
 Navigate to http://127.0.0.1:8080/iiif
 
-## Test it!
+## Testing
 
 Unit tests are in the `tests` folder and can be run with:
 ```
@@ -48,5 +47,3 @@ Crop into large.jpg and return 800px wide JPEG
 
 Mirror large.jpg horizontally and return 800px wide JPEG
 * http://127.0.0.1:8080/iiif/large.jpg/full/800,/!0/default.jpg 
-
-For more information, read the specification at http://iiif.io/technical-details.html
