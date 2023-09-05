@@ -9,19 +9,13 @@ task "cantaloupe" {
   config {
     image = "uclalibrary/cantaloupe:5.0.5-7"
     ports = [ "cantaloupe" ]
-    mount {
-      type = "bind"
-      target = "/etc/cantaloupe/cantaloupe.properties"
-      source = "local/cantaloupe.properties"
-      readonly = true
-      bind_options {
-        propagation = "rshared"
-      }
-    }
+    volumes = [
+      "local/cantaloupe.properties:/etc/cantaloupe/cantaloupe.properties"
+    ]
   }
 
   template {
-data = <<EOF
+    data = <<EOF
 temp_pathname =
 
 http.enabled = true
@@ -409,8 +403,10 @@ log.access.SyslogAppender.port = 514
 log.access.SyslogAppender.facility = LOCAL0
 
 EOF
-destination = "local/cantaloupe.properties"
-}
+    destination = "local/cantaloupe.properties"
+    change_mode   = "signal"
+    change_signal = "SIGHUP"
+  }
 
   resources {
     cpu = 8000
