@@ -11,7 +11,7 @@ task "cantaloupe" {
     ports = [ "cantaloupe" ]
     mount {
       type = "bind"
-      target = "/etc/cantaloupe"
+      target = "/etc/cantaloupe/cantaloupe.properties"
       source = "local/cantaloupe.properties"
       readonly = true
       bind_options {
@@ -410,8 +410,6 @@ log.access.SyslogAppender.facility = LOCAL0
 
 EOF
     destination = "local/cantaloupe.properties"
-    change_mode   = "signal"
-    change_signal = "SIGHUP"
   }
 
   resources {
