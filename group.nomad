@@ -12,7 +12,7 @@ task "cantaloupe" {
     mount {
       type = "bind"
       target = "/etc/cantaloupe/cantaloupe.properties"
-      source = "cantaloupe/local/cantaloupe.properties"
+      source = "/tmp/cantaloupe.properties"
       readonly = true
       bind_options {
         propagation = "rshared"
