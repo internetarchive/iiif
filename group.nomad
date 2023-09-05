@@ -12,7 +12,7 @@ task "cantaloupe" {
     mount {
       type = "bind"
       target = "/etc/cantaloupe/cantaloupe.properties"
-      source = "cantaloupe.properties"
+      source = "{{env NOMAD_TASK_DIR}}/cantaloupe.properties"
       readonly = true
       bind_options {
         propagation = "rshared"
@@ -409,7 +409,7 @@ log.access.SyslogAppender.port = 514
 log.access.SyslogAppender.facility = LOCAL0
 
 EOF
-    destination = "cantaloupe.properties"
+    destination = "local/cantaloupe.properties"
     change_mode   = "signal"
     change_signal = "SIGHUP"
   }
