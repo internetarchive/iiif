@@ -23,7 +23,6 @@ jobs:
           NOMAD_VAR_MULTI_CONTAINER: 'true'
           NOMAD_VAR_HEALTH_TIMEOUT: '30m'
           NOMAD_VAR_HOSTNAMES: '["iiif.ux-fnf-misc.archive.org"]'
-          NOMAD_VAR_PORTS: '{8080 = "http"}'
           NOMAD_VAR_FORCE_PULL: 'true'
   deploy:
     environment:
