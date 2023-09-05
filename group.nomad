@@ -11,8 +11,8 @@ task "cantaloupe" {
     ports = [ "cantaloupe" ]
     mount {
       type = "bind"
-      target = "/etc/cantaloupe/cantaloupe.properties"
-      source = "{{env NOMAD_TASK_DIR}}/cantaloupe.properties"
+      target = "/etc/cantaloupe"
+      source = "local"
       readonly = true
       bind_options {
         propagation = "rshared"
