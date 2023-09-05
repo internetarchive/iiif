@@ -10,6 +10,10 @@ This service replaces the iiif.archivelab.org unofficial labs API.
 
 The service uses a manifest/API service written in python3 flask and makes image processing calls to cantaloupe in both iiif 3.0 and 2.0 format.
 
+Note that this repository contains a `Dockerfile` used to build the previously mentioned `python3 flask` application. The [nomad](https://gitlab.com/internetarchive/nomad) repository is used for automated testing and deployment; In particular `.github/workflows/cicd.yml` and `.gitlab-ci.yml` relate to that system.
+
+Note also that `start.sh` is run on container startup, and that it makes assumptions about what environment variables exist at this point; In particular `NOMAD_HOST_ADDR_cantaloupe` is assumed to exist, which is created dynamically based on the `nomad` repository handling `group.nomad` and the configuration in the relevant yaml file.
+
 ## Installation & Setup
 ```
 git clone https://github.com/internetarchive/iiif.git
