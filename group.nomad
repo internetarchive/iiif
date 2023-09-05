@@ -9,9 +9,15 @@ task "cantaloupe" {
   config {
     image = "uclalibrary/cantaloupe:5.0.5-7"
     ports = [ "cantaloupe" ]
-    volumes = [
-      "cantaloupe/local/cantaloupe.properties:/etc/cantaloupe/cantaloupe.properties"
-    ]
+    mount {
+      type = "bind"
+      target = "/etc/cantaloupe/cantaloupe.properties"
+      source = "cantaloupe/local/cantaloupe.properties"
+      readonly = true
+      bind_options {
+        propagation = "rshared"
+      }
+    }
   }
 
   template {
