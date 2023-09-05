@@ -12,7 +12,7 @@ task "cantaloupe" {
     mount {
       type = "bind"
       target = "/etc/cantaloupe/cantaloupe.properties"
-      source = "/tmp/cantaloupe.properties"
+      source = "cantaloupe/local/cantaloupe.properties"
       readonly = true
       bind_options {
         propagation = "rshared"
@@ -409,7 +409,7 @@ log.access.SyslogAppender.port = 514
 log.access.SyslogAppender.facility = LOCAL0
 
 EOF
-    destination = "/tmp/cantaloupe.properties"
+    destination = "local/cantaloupe.properties"
   }
 
   resources {
