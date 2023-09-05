@@ -10,7 +10,7 @@ task "cantaloupe" {
     image = "uclalibrary/cantaloupe:5.0.5-7"
     ports = [ "cantaloupe" ]
     volumes = [
-      "local/cantaloupe.properties:/etc/cantaloupe/cantaloupe.properties"
+      "cantaloupe/local/cantaloupe.properties:/etc/cantaloupe/cantaloupe.properties"
     ]
   }
 
