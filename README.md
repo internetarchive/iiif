@@ -1,6 +1,7 @@
 # iiif.archive.org
 
 The Internet Archive's official IIIF 3.0 Image & Presentation API
+* https://en.wikipedia.org/wiki/International_Image_Interoperability_Framework
 
 ## Background
 
