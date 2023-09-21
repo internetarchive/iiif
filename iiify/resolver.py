@@ -5,7 +5,7 @@ import requests
 from iiif2 import iiif, web
 from .configs import options, cors, approot, cache_root, media_root, apiurl
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs, quote
 import json
 import math 
 import re
@@ -20,6 +20,10 @@ bookreader = "http://%s/BookReader/BookReaderImages.php"
 URI_PRIFIX = "https://iiif.archive.org/iiif"
 
 valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
+
+class IsCollection(Exception):
+    # Used for when we need to raise to the route handler from inside the manifest function
+    pass
 
 def purify_domain(domain):
     domain = re.sub('^http:\/\/', "https://", domain)
@@ -83,7 +87,7 @@ def create_collection3(identifier, domain, page=1, rows=1000):
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
 
     # Used to build up URIs for the manifest
-    uri = f"{domain}3/{identifier}/collection.json"
+    uri = f"{domain}{identifier}/collection.json"
 
     config.configs['helpers.auto_fields.AutoLang'].auto_lang = "none"
     collection = Collection(id=uri, label=metadata["metadata"]["title"])
@@ -104,9 +108,9 @@ def create_collection3(identifier, domain, page=1, rows=1000):
     for item in itemsSearch['response']['docs']:
         child = None
         if item['mediatype'] == 'collection':
-            child = CollectionRef(id=f"{domain}3/{item['identifier']}/collection.json", type="Collection", label=item['title'])
+            child = CollectionRef(id=f"{domain}{item['identifier']}/collection.json", type="Collection", label=item['title'])
         else: 
-            child = ManifestRef(id=f"{domain}3/{item['identifier']}/manifest.json", type="Manifest", label=item['title'])
+            child = ManifestRef(id=f"{domain}{item['identifier']}/manifest.json", type="Manifest", label=item['title'])
         
         if "description" in item:
             child.summary = {"none": [item['description']]} 
@@ -114,7 +118,7 @@ def create_collection3(identifier, domain, page=1, rows=1000):
         collection.add_item(child)
     page += 1
     if page <= pages:
-        child = CollectionRef(id=f"{domain}3/{identifier}/{page}/collection.json", type="Collection", label={ "en": [f"Page {page} of {pages}"]})
+        child = CollectionRef(id=f"{domain}{identifier}/{page}/collection.json", type="Collection", label={ "en": [f"Page {page} of {pages}"]})
         collection.add_item(child)
 
     print ('Returning collection')
@@ -305,7 +309,10 @@ def addMetadata(item, identifier, metadata, collection=False):
         item.rights = metadata["licenseurl"].replace("https", "http", 1)
 
     if "description" in metadata:
-        item.summary = {"none": [metadata["description"]]}
+        if type(metadata["description"]) != list:
+            item.summary = {"none": [metadata["description"]]}
+        else:
+            item.summary = {"none": metadata["description"]}
 
     excluded_fields = [
         'avg_rating', 'backup_location', 'btih', 'description', 'downloads',
@@ -368,8 +375,8 @@ def create_manifest3(identifier, domain=None, page=None):
                 for page in pageSpread:
                     fileUrl = urlparse(page['uri'])
                     fileName = parse_qs(fileUrl.query).get('file')[0]
-                    imgId = f"{zipFile}/{fileName}".replace('/','%2f')
-                    imgURL = f"{IMG_SRV}/3/{imgId}"
+                    imgId = f"{zipFile}/{fileName}"
+                    imgURL = f"{IMG_SRV}/3/{quote(imgId, safe='()')}"
 
                     canvas = Canvas(id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas", label=f"{page['leafNum']}")
 
@@ -503,8 +510,9 @@ def create_manifest3(identifier, domain=None, page=None):
             ap.add_item(anno)
             c.add_item(ap)
             manifest.add_item(c)
-
-    else:            
+    elif mediatype == "collection":
+        raise IsCollection
+    else:
         print (f'Unknown mediatype "{mediatype}"')
 
     return json.loads(manifest.jsonld())
@@ -655,6 +663,6 @@ def cantaloupe_resolver(identifier):
             filepath = f"{fileIdentifier}_{leaf.zfill(4)}{extension}"
             return f"{identifier}%2f{filename}%2f{dirpath}%2f{filepath}"
 
-    print (f'images not found for {identifier}')    
-    for f in files:
-        print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")
+    # print (f'images not found for {identifier}')
+    # for f in files:
+    #     print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")
