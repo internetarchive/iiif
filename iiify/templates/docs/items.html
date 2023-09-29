@@ -56,17 +56,25 @@
     <p>Every Internet Archive item has a "details" page that is the main page for that item.</p>
     <p>
      The "details" page will have the word "details" in the URL, like in this example: 
-      <pre><a href="https://archive.org/details/img-8664_202009">https://archive.org/details/img-8664_202009</a></pre>
+      <pre><a href="https://archive.org/details/img-8664_202009">https://archive.org/details/img-8664_202009</a></pre></p>
       
     <p>What you'll need to get the IIIF manifest for any Internet Archive item is the identifier, which is the alphanumeric part of the URL that follows the "/details/" part. </p>
 
     <p>So, from our example just above, the Internet Archive identifier for that item is: <pre>img-8664_202009</pre></p>
 
     <p>To then get the IIIF manifest, plug in the ID to the following template:</p>
-    <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/manifest.json</div>
+    <div class="request">https://iiif.archive.org/iiif/3/<b>:id</b>/manifest.json</div>
 
     <p>For the example above, the final IIIF manifest URL would be:</p>
-    <div class="request">https://iiif.archive.org/iiif/img-8664_202009/manifest.json</div>
+    <div class="request">https://iiif.archive.org/iiif/3/img-8664_202009/manifest.json</div>
+
+<h3>Note about IIIF Presentation API versions</h3>
+<p>
+  The pattern above describes the way to return IIIF Presentation API 3.0 manifests, as denoted by the <b>/3/</b> in the URL. </p>
+  <p>The manifest URL can also be used with the version number removed (<span class="request">https://iiif.archive.org/iiif/<b>:id</b>/manifest.json</span>), though note that with any future updates that URL will always return the most current version of the Presentation API.</p>
+
+
+  <p>The older experimental version of the IIIF APIs for Internet Archive materials hosted on Archivelabs served up IIIF Presentation API version 2.1 manifests; see below for instructions on retrieving a legacy manifests.</p>
 
 
   </section>
@@ -80,8 +88,11 @@
   </section>
 
 <section>
-  <h2><a name="resources-legacy"></a>Getting legacy IIIF Presentation 2.1 manfiests</h2>
+  <h2><a name="resources-legacy"></a>Getting legacy IIIF Presentation API 2.1 manfiests</h2>
 </section>
+    
+    <p>To get the older Presentation API 2.1 IIIF manifest, plug in the ID to the following template:</p>
+    <div class="request">https://iiif.archive.org/iiif/2/<b>:id</b>/manifest.json</div>
 
 
 </article>
