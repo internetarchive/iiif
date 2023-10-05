@@ -14,67 +14,14 @@
     </p>
     <p>For a very high-level overview see <a href="https://iiif.io/get-started/how-iiif-works/">"How IIIF Works"</a> published by the IIIF Consortium.</p>
 
-    <h2><a name="intro-importance">Importance</a></h2>
+    <h2><a name="intro-importance">Why?</a></h2>
     <p>
-      In essence, the goal of IIIF is interoperability: to make an
+      The goal of IIIF is interoperability: to make an
       institution's image and audio/visual openly accessible resources available and easily reusable in a variety of web viewers and players without the need for any special plugins or software.
     </p>
 
-    <p>
-      The Internet Archive IIIF API is
-      a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">RESTful</a> 
-      <a href="https://en.wikipedia.org/wiki/Web_service">web
-  service</a> which implements the IIIF API specifications 
-      and provides a mechanism for accessing nearly all of the Archive's
-      items in IIIF format. Every image item in the Archive
-      now has has a corresponding info.json and nearly all image, text, audio and movie items have an associated
-      manifest.json file. This means you can seamlessly view any Archive.org
-      image or book in any compatible IIIF viewer and also enjoy
-      the enhancements they provide (annotation, side-by-size viewing,
-      and loading images from different institutions into the same
-      space).
-    </p>
-
-    <p>
-      The service also provides a mechanism for producing permanantly
-      citeable image tiles of any arbitrary region of any image or book
-      found in the Internet Archive.
-    </p>
-
-    <h3>Image API</h3>
-    <p>
-      The <a href="http://iiif.io/api/image/">Image API</a> is an
-      interface capable of producing and serving arbitrary tiles of
-      arbitrary regions of an image (just like the different scales of resolution in Google Maps). The properties
-      of these image tiles are specified within a URL, allowing
-      permenant citation and retrieval at a later time.
-      The Image API supports and powers other computer applications
-      (like <a href="https://universalviewer.io/">deep-zoomable image
-	viewers</a>, <a href="https://projectmirador.org/">comparison viewers</a>, and <a href="https://iiif.io/get-started/iiif-viewers/">more</a>).
-    </p>
-
-    <p>The Image API creates images using the following template: </p>
-      <div class="request">{scheme}://{server}{/prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}</div>
-    <p>In the context of the Internet Archive items, that will look like this for a full image:</p>
-    <div class="request">https://iiif.archive.org/image/<b>:id+filename</b>/full/max/0/default.jpg</div>
-
-    <p>A request for a bitonal center-cropped square image 375 pixels on each side, rotated 45 degrees will look like this:</p>
-    <div class="request">https://iiif.archive.org/image/<b>:id+filename</b>/square/375,/45/bitonal.jpg</div>
-
-<p>For more details on the options for constructing image requests via URL parameters, see the full <a href="https://iiif.io/api/image/3.0/#4-image-requests">IIIF Image API specifications.</a></p>
-
-    <h3>Presentation API</h3>
-    <p>
-      The <a href="http://iiif.io/api/presentation/">Presentation
-	API</a> allows institutions to publish and consume metadata about
-      collections and sequences of digital objects, called "manifests." For images and texts, this is almost always used in conjunction with the IIIF Image API to create manifests for digital objects that any IIIF viewer can use to present an engaging deep-zoom experience.</p>
-
-      <p>The Presentation API can also faciliate the portability and playback of time-based media like audio and video files. In the A/V context, IIIF manifests often present multiple playback options based on the media formats and quality types available.</p>
-      
-      <p>A manifest for an Internet Archive items look like this:</p>
-    <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/manifest.json</div>
-
-
+    <p>Fore more about how the goals of interoperability fit in with the Internet Archive's mission, see our announcement 
+      blog post, <a href="https://blog.archive.org/2023/09/18/making-iiif-official-at-the-internet-archive/">Making IIIF Official at the Internet Archive</a>.</p>
 
   </section>
 
