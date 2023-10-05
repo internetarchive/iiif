@@ -1,41 +1,16 @@
 <article id="resources" class="hiddenz">
-  <h1>Items</h1>
+  <h1 id="items">Items</h1>
   <p>
-
+<!-- 
   <ol type="i" class="toc">
     <li><a href="">Listing Items</a></li>
     <li><a href="">Items Types</a></li>
     <li><a href="">Viewing Items</a></li>
     <li><a href="">Producing Tiles</a></li>
     <li><a href="">IIIF Manifests &amp; Metadata</a></li>
-  </ol>
+  </ol> -->
 
-  <section>
-    <h2><a name="resources-listing">Listing Items</a></h2>
-    <p>
-      Querying the root of the Internet Archive IIIF API
-      results in a list of all publicly available items. Some items which are indexed in our search
-      engine but do have no associated content files will result in an
-      Internal Server Error. There are also a small number of items returned that do not have material types associted with them that are IIIF compatible. You can confirm whether the resource
-      actually exists or not by visiting the item's /details page on
-      archive.org.
-    </p>
-
-    <pre><code>
-  $ curl -i "{{ request.url_root }}iiif"
-
-  HTTP/2 200 
-  alt-svc: h3=":443"; ma=2592000
-  cache-control: max-age=900
-  content-type: application/json
-  date: Tue, 15 Aug 2023 14:41:49 GMT
-  server: Caddy
-  server: nginx/1.23.2
-  content-length: 122082
-
-  []
-    </code></pre>
-  </section>
+ 
 
   <section>
     <h2><a name="resources-types">Item Types</a></h2>
@@ -58,6 +33,7 @@
      The "details" page will have the word "details" in the URL, like in this example: 
       <pre><a href="https://archive.org/details/img-8664_202009">https://archive.org/details/img-8664_202009</a></pre></p>
       
+    <h4>Example</h4>
     <p>What you'll need to get the IIIF manifest for any Internet Archive item is the identifier, which is the alphanumeric part of the URL that follows the "/details/" part. </p>
 
     <p>So, from our example just above, the Internet Archive identifier for that item is: <pre>img-8664_202009</pre></p>
@@ -80,13 +56,6 @@
   </section>
 
 
-  <section>
-    <h2><a name="resources-viewing">Getting the info.json for an image</a></h2>
-    <p>
-      Documentation In progress.
-    </p>
-  </section>
-
 <section>
   <h2><a name="resources-legacy"></a>Getting legacy IIIF Presentation API 2.1 manfiests</h2>
 </section>
@@ -94,6 +63,19 @@
     <p>To get the older Presentation API 2.1 IIIF manifest, plug in the ID to the following template:</p>
     <div class="request">https://iiif.archive.org/iiif/2/<b>:id</b>/manifest.json</div>
 
+ <section>
+    <h2><a name="resources-listing">Listing Items</a></h2>
+    <p>
+      Querying the root of the Internet Archive IIIF API
+      results in a list of all publicly available items. Some items which are indexed in our search
+      engine but do have no associated content files will result in an
+      Internal Server Error. There are also a small number of items returned that do not have material types associted with them that are IIIF compatible. You can confirm whether the resource
+      actually exists or not by visiting the item's /details page on
+      archive.org.
+    </p>
 
+   <div class="request">https://iiif.archive.org/iiif</div>
+
+  </section>
 </article>
 </hr>

@@ -1,8 +1,31 @@
 <article id="overview">
   <h1>Overview</h1>
   
-  <p>Nearly all image, text, audio and movie items available from the Internet Archivenow have an associated
-      mechanism for accessing them via IIIF APIs. This means you can seamlessly view any Archive.org
+<section>
+    <h2><a name="overview-version">Current Version</a></h2>
+    <p>
+      The Internet Archive IIIF API service that launched in 2015 was an alpha service that has now been officially adopted as of September 2023.  While stable, it is still under development and we welcome community feedback on desired features.</p>
+
+      <p>The code and logic that runs these APIs is available on <a href="https://github.com/internetarchive/iiif/">Github</a>, and that's where any <a href="https://github.com/internetarchive/iiif/issues">issues identified such as bugs or feature requests can be added</a>.</p>
+
+    <h3><a name="overview-conventions"></a>Conventions</h3>
+    <h4>IDs</h4>
+    <p>
+      ID placeholders are preceded by a ":" in examples. IDs need not
+      appear in bold, however this is done in the following example for
+      emphasis:
+    </p>
+
+    <div class="request">
+      GET {{ request.url_root }}iiif/3/<strong>:id</strong>/manifest.json
+    </div>    
+  </section>
+
+<h2>Getting started</h2>
+
+  <section>
+  <p>Nearly all image, text, audio and movie items available from the Internet Archive now have an associated
+      mechanism for accessing them via IIIF APIs. This means you can seamlessly view nearly any Archive.org
       image or book in any compatible IIIF viewer and also enjoy
       the enhancements they provide (annotation, side-by-size viewing,
       and loading images from different institutions into the same
@@ -17,7 +40,7 @@
 
     <p>In IIIF terms, this functionality is accomplished via two APIs: <b>the Image API</b>, and <b>the Presentation API</b>.</p>
   
-  <h3>Image API</h3>
+  <h2><a name="image-api"></a>Image API</h2>
     <p>
       The <a href="http://iiif.io/api/image/">Image API</a> is an
       interface capable of producing and serving arbitrary tiles of
@@ -37,11 +60,28 @@
     <p>A request for a bitonal center-cropped square image 375 pixels on each side, rotated 45 degrees will look like this:</p>
     <div class="request">https://iiif.archive.org/image/iiif/3/<b>:id+filename</b>/square/375,/45/bitonal.jpg</div>
 
-<p>Because it can be time-consuming to manually generate the IIIF Image API URL just from the Internet Archive item URL, we recommend a IIIF helper tool that can help you identify the Image API URL for a corresponding IA item. One such tool is Glen Robson's <a href="https://glenrobson.github.io/CanvasFinder/">Canvas Finder</a>, which takes as input a Manifest URL (see below for how to find that).</p>
+    <p>See the <a href="https://iiif.io/api/image/3.0/#4-image-requests">Image API section on "Image Requests"</a> for more details on how images can be manipulated and specific sizes or sections retrieved.</p>
 
-<p>For more details on the options for constructing image requests via URL parameters, see the full <a href="https://iiif.io/api/image/3.0/#4-image-requests">IIIF Image API specifications.</a></p>
+    <p>IIIF Image Viewers read something called an "info.json" file, which lets them know how to process the image for deep zooming.</p>
 
-    <h3>Presentation API</h3>
+    <p>For a single-image Internet Archive item, you can generate the info.json via the following route:</p>
+    <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/info.json</div>
+
+<h4>Example</h4>
+<p>Taking one item as an example (<a href="https://archive.org/details/img-8664_202009">https://archive.org/details/img-8664_202009</a>), the info.json would be:</p>
+<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2FIMG_8664.jpg/info.json</div>
+<p>And the full URL for the image would be:</p>
+<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2FIMG_8664.jpg/full/max/0/default.jpg</div>
+<p>A cropped portion at the full resolution can be requested like this:</p>
+<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2fIMG_8664.jpg/<b>1100,904,704,664</b>/max/0/default.jpg</div>
+<p>Where "1100,904,704,664" in that URL stands for 1100 pixels from the left edge, 904 pixels from the bottom edge, 704 pixels is the width of the desired section, and 664 pixels is the height.</p>
+
+
+<p>Because it can be time-consuming to manually generate the IIIF Image API URLs, we recommend a IIIF helper tool that can help you identify the Image API URLs for a corresponding IA item. One such tool is Glen Robson's <a href="https://glenrobson.github.io/CanvasFinder/">Canvas Finder</a>, which takes as input a Manifest URL (see below for how to find that).</p>
+
+<p>More image tools can be found via the community supported <a href="https://github.com/IIIF/awesome-iiif/#image-tools">Awesome IIIF list</a>.</p>
+
+    <h2><a name="presentation-api"></a>Presentation API</h2>
     <p>
       The <a href="http://iiif.io/api/presentation/">Presentation
   API</a> allows institutions to publish and consume metadata about
@@ -52,69 +92,6 @@
       <p>A manifest for an Internet Archive items look like this:</p>
     <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/manifest.json</div>
 
-
-    <div class="banner">
-    New to IIIF? Read the <a href="#introduction">introduction</a> first.
-  </div>
-  
-  <p>
-    This describes the resources that make up the Internet
-    Archive IIIF APIs. If you have any problems or
-    requests, please
-    contact <a href="mailto:support@archive.org">support</a>.
-  </p>
-
-  <section>
-    <h2><a name="overview-version">Current Version</a></h2>
-    <p>
-      The Internet Archive IIIF API service that launched in 2015 was an alpha service that has now been officially adopted as of September 2023.  While stable, it is still under development and we welcome community feedback on desired features.</p>
-
-      <p>The code and logic that runs these APIs is available on <a href="https://github.com/internetarchive/iiif/">Github</a>, and that's where any <a href="https://github.com/internetarchive/iiif/issues">issues identified such as bugs or feature requests can be added</a>.</p>
-
-    <h2><a name="overview-conventions">Conventions</a></h2>
-    <h3>IDs</h3>
-    <p>
-      ID placeholders are preceded by a ":" in examples. IDs need not
-      appear in bold, however this is done in the following example for
-      emphasis:
-    </p>
-
-    <div class="request">
-      GET {{ request.url_root }}<strong>:id</strong>
-    </div>    
-  </section>
-
-  <section>
-    <h2><a name="overview-schema">Schema</a></h2>
-    <p>
-      All API access is over HTTPS, and accessed from the
-      {{ request.url_root }} domain. All data is sent and received as JSON.
-    </p>
-
-    <pre><code>
-  $ curl -i {{ request.url_root }}/iiif
-
-  HTTP/2 200 
-  alt-svc: h3=":443"; ma=2592000
-  cache-control: max-age=900
-  content-type: application/json
-  date: Mon, 14 Aug 2023 20:53:06 GMT
-  server: Caddy
-  server: nginx/1.23.2
-  content-length: 122082
-
-  {
-    ...
-  }
-    </code></pre>
-
-    <h3>Trailing Slashes</h3>
-    <p>
-      Other than the server root, uris should <strong>not</strong> end
-      with trailing slashes.
-    </p>
-
- </section>
-
+</section>
 
 <hr/>
