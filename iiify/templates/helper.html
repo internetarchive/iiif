@@ -12,16 +12,14 @@
     <body>
 
 <p>The IA identifier is: {{ identifier }}</p>
+
 <p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
+
 <p>The manifest URL is: <a href="{{ uri }}/manifest.json">{{ uri }}/manifest.json</a></p>
-<p>The Image API URL for the full image is: <a href="{{image_url}}">{{image_url}}</a></p>
-<p>The Image API info.json  for the image is: <a href="{{info_url}}">{{info_url}}</a></p>	
 
-<hr>
+<p>The Image API URL for the full image is: <a href="https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/full/max/0/default.jpg">https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/full/max/0/default.jpg</a></p>
 
-<h2>Using cantaloupe_id</h2>
-<p>The Image API URL for the full image is: <a href="https://iiif.prod.archive.org/image/iiif/3/{{ cantaloupe_id }}/full/max/0/default.jpg">https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/full/max/0/default.jpg</a></p>
-<p>The Image API info.json  for the image is: <a href="https://iiif.prod.archive.org/image/iiif/3/{{ cantaloupe_id }}/info.json">https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/info.json</a></p>
+<p>The Image API info.json  for the image is: <a href="https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/info.json">https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/info.json</a></p>
 
     </body>
 </html>
