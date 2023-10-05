@@ -1,0 +1,26 @@
+<article id="resources" class="hiddenz">
+  <h2 id="appendix">Appendix</h2>
+
+<section>
+  <h2><a name="resources-legacy"></a>Getting legacy IIIF Presentation API 2.1 manifests</h2>
+    
+    <p>To get the older Presentation API 2.1 IIIF manifest, plug in the ID to the following template:</p>
+    <div class="request">https://iiif.archive.org/iiif/2/<b>:id</b>/manifest.json</div>
+</section>
+
+<section>
+    <h2><a name="resources-listing">Listing all items</a></h2>
+    <p>
+      Querying the root of the Internet Archive IIIF API
+      results in a list of all publicly available items. Some items which are indexed in our search
+      engine but do have no associated content files will result in an
+      Internal Server Error. There are also a small number of items returned that do not have material types associated with them that are IIIF compatible. You can confirm whether the resource
+      actually exists or not by visiting the item's /details page on
+      archive.org.
+    </p>
+
+   <div class="request">https://iiif.archive.org/iiif</div>
+
+  </section>
+</article>
+</hr>
