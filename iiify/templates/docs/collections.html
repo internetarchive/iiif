@@ -4,9 +4,7 @@
 <section>
   <h2><a name="resources-collections"></a>Getting IIIF collection manifests</h2>
 
-  <p>More than one IIIF manifests can be formally grouped into what is called a "collection" manifest.</p>
-
-  <p>On archive.org, a collection is a group of item pages organized under a collections page. For convenience, we've create a route that generates a IIIF collection manfiest for all of the collections on the Internet Archive. For more on how collections work, see <a href="https://help.archive.org/help/collections-a-basic-guide/">the "Collections - A Basic Guide" page</a>.</p>
+  <p>A group of more than one IIIF manifests is called a collection. On archive.org, a collection is a group of item pages organized under a collections page. For convenience, we've generate a IIIF collection manfiest for all of the collections on the Internet Archive. For more on how Internet Archive collections work, see <a href="https://help.archive.org/help/collections-a-basic-guide/">the "Collections - A Basic Guide"</a>.</p>
 
 <h4>Example</h4>
   <p>As with the manifests above, you'll need the Internet Archive identifier for the colllection. Here's an example collection page from the University of Leeds:</p>
@@ -22,13 +20,13 @@
     <div class="request">https://iiif.archive.org/iiif/3/leedsuniversitylibrary/collection.json</div>
 
 <h3>Note about nested collections</h3>
-<p>Please note that Internet Archive collections can be arbitrarily nested within other collections. In these cases, the IIIF collection manifest will return a link to one or more IIIF collection manifest(s) in addition to the items nested individually within that Internet Archive colleciton.</p>
+<p>Please note that Internet Archive collections can be arbitrarily nested within other collections. In these cases, the IIIF collection manifest will return a link to one or more IIIF collection manifest(s) in addition to the items nested individually within that Internet Archive collection.</p>
 
 </section>
 
   <section>
     <h2><a name="resources-listing">Pagination for large collections</a></h2>
-    <p>The route described above for generating IIIF collection manfiests will return the first 1000 items or sub-collections within the collection. In order to get the remaining items for collections larger than that, pagination is required.</p>
+    <p>The pattern described above for generating IIIF collection manifests will return the first 1000 items or sub-collections within the collection. In order to get the remaining items for collections larger than that, pagination is required.</p>
     <p>This looks like the following: 
      <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/<b>:page</b>/collection.json</div></p>
 

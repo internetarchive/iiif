@@ -4,14 +4,14 @@
 <section>
     <h2><a name="overview-version">Current Version</a></h2>
     <p>
-      The Internet Archive IIIF API service that launched in 2015 was an alpha service that has now been officially adopted as of September 2023.  While stable, it is still under development and we welcome community feedback on desired features.</p>
+      The Internet Archive IIIF API service that launched in 2015 was an alpha service that has now been officially upgraded and adopted by the Internet Archive as of September 2023.  While stable, it is still under development and we welcome community feedback on desired features.</p>
 
-      <p>The code and logic that runs these APIs is available on <a href="https://github.com/internetarchive/iiif/">Github</a>, and that's where any <a href="https://github.com/internetarchive/iiif/issues">issues identified such as bugs or feature requests can be added</a>.</p>
+      <p>The code and logic that runs these APIs is available on <a href="https://github.com/internetarchive/iiif/">Github</a>, and that's where any <a href="https://github.com/internetarchive/iiif/issues">bugs or features requests can be added</a>.</p>
 
     <h3><a name="overview-conventions"></a>Conventions</h3>
     <h4>IDs</h4>
     <p>
-      ID placeholders are preceded by a ":" in examples. IDs need not
+      ID placeholders are preceded by a ":" (colon) in examples. IDs need not
       appear in bold, however this is done in the following example for
       emphasis:
     </p>
@@ -22,10 +22,9 @@
 <h2>Getting started</h2>
 
   <section>
-  <p>Nearly all image, text, audio and movie items available from the Internet Archive now have an associated
-      mechanism for accessing them via IIIF APIs. This means you can seamlessly view nearly any Archive.org
-      image or book in any compatible IIIF viewer and also enjoy
-      the enhancements they provide (annotation, side-by-size viewing,
+  <p>Nearly all image, text, audio and video items available from the Internet Archive now have a IIIF API URI. This means you can seamlessly view nearly any Archive.org
+      image, book, audio or video in any compatible IIIF viewer and also enjoy
+      the enhancements they provide (e.g., annotation, side-by-size viewing,
       and loading images from different institutions into the same
       space).
     </p>
@@ -37,8 +36,21 @@
     </p>
 
     <p>In IIIF terms, this functionality is accomplished via two APIs: <b>the Image API</b>, and <b>the Presentation API</b>.</p>
-  
-  <h2><a name="image-api"></a>Image API</h2>
+
+    <h2><a name="presentation-api"></a>Presentation API</h2>
+    <p>
+      The <a href="http://iiif.io/api/presentation/">Presentation
+  API</a> allows institutions to publish and consume metadata about
+      collections and sequences of digital objects e.g. pages in a book, called "manifests." For images and texts, this is almost always used in conjunction with the IIIF Image API to create manifests for digital objects that any IIIF viewer can use to present an engaging deep-zoom experience.</p>
+
+      <p>The Presentation API can also faciliate the portability and playback of time-based media like audio and video files. In the A/V context, IIIF manifests often present multiple playback options based on the media formats and quality types available.</p>
+      
+      <p>A manifest for an Internet Archive items look like this:</p>
+    <div class="request">https://iiif.archive.org/iiif/3/<b>:id</b>/manifest.json</div>
+
+          <p>see the sections below for all the possible ways to retrieve manifests for <a href="#items">items</a> and <a href="#collections">collections</a>.</p>
+
+<h2><a name="image-api"></a>Image API</h2>
     <p>
       The <a href="http://iiif.io/api/image/">Image API</a> is an
       interface capable of producing and serving arbitrary tiles of
@@ -62,7 +74,7 @@
 
     <p>IIIF Image Viewers read something called an "info.json" file, which lets them know how to process the image for deep zooming.</p>
 
-    <p>For a single-image Internet Archive item, you can generate the info.json via the following route:</p>
+    <p>For a single-image Internet Archive item, you can find the info.json via the following template:</p>
     <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/info.json</div>
 
 <h4>Example</h4>
@@ -75,20 +87,9 @@
 <p>Where "1100,904,704,664" in that URL stands for 1100 pixels from the left edge, 904 pixels from the bottom edge, 704 pixels is the width of the desired section, and 664 pixels is the height.</p>
 
 
-<p>Because it can be time-consuming to manually generate the IIIF Image API URLs, we recommend a IIIF helper tool that can help you identify the Image API URLs for a corresponding IA item. One such tool is Glen Robson's <a href="https://glenrobson.github.io/CanvasFinder/">Canvas Finder</a>, which takes as input a Manifest URL (see below for how to find that).</p>
+<p>Because it can be time-consuming to manually generate the IIIF Image API URLs, we recommend a IIIF helper tool that can help you identify the Image API URLs for a corresponding IA item. One such tool is Glen Robson's <a href="https://glenrobson.github.io/CanvasFinder/">Canvas Finder</a>, which takes as input a <a href="#retrieving-manifests">Manifest URL</a> (see below for how to find that) and returns links to the images associated with the manifest.</p>
 
 <p>More image tools can be found via the community supported <a href="https://github.com/IIIF/awesome-iiif/#image-tools">Awesome IIIF list</a>.</p>
-
-    <h2><a name="presentation-api"></a>Presentation API</h2>
-    <p>
-      The <a href="http://iiif.io/api/presentation/">Presentation
-  API</a> allows institutions to publish and consume metadata about
-      collections and sequences of digital objects, called "manifests." For images and texts, this is almost always used in conjunction with the IIIF Image API to create manifests for digital objects that any IIIF viewer can use to present an engaging deep-zoom experience.</p>
-
-      <p>The Presentation API can also faciliate the portability and playback of time-based media like audio and video files. In the A/V context, IIIF manifests often present multiple playback options based on the media formats and quality types available.</p>
-      
-      <p>A manifest for an Internet Archive items look like this:</p>
-    <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/manifest.json</div>
 
 </section>
 

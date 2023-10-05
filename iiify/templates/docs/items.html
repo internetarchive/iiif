@@ -17,16 +17,14 @@
     <p>
       Items available through the this service include Images, Books,
       Audio, and Movie materials. This means any item on archive.org which has a
-      `mediatype` of `texts`, `image`, `audio`, or `movie`, which can be verified through
-      the <a href="https://blog.archive.org/2013/07/04/metadata-api/">metadata
-      API</a>.</p>
+      `mediatype` of `texts`, `image`, `audio`, or `movie`.</p>
 
-      <p>There are some edge cases where rare file types are not represented in the IIIF presentation manifest. If you encounter an item where you think this may be the case, contact <a href="mailto:support@archive.org">support</a>.</p>
+      <p>There are some edge cases where rare file types are not represented in the IIIF presentation manifest. If you encounter an item where you think this may be the case, <a href="https://github.com/internetarchive/iiif/issues">open an issue on the Github repository</a>.</p>
     
   </section>
 
 <section>
-    <h2><a name="retrieving-manifests">Retrieving a manifest for an item</a></h2>
+    <h2><a id="retrieving-manifests"></a>Retrieving a manifest for an item</h2>
 
     <p>Every Internet Archive item has a "details" page that is the main page for that item.</p>
     <p>
@@ -47,35 +45,14 @@
 <h3>Note about IIIF Presentation API versions</h3>
 <p>
   The pattern above describes the way to return IIIF Presentation API 3.0 manifests, as denoted by the <b>/3/</b> in the URL. </p>
-  <p>The manifest URL can also be used with the version number removed (<span class="request">https://iiif.archive.org/iiif/<b>:id</b>/manifest.json</span>), though note that with any future updates that URL will always return the most current version of the Presentation API.</p>
+  <p>The manifest URL can also be used with the version number removed (<span>https://iiif.archive.org/iiif/<b>:id</b>/manifest.json</span>), though note that with any future updates that URL will always return the most current version of the Presentation API.</p>
 
 
-  <p>The older experimental version of the IIIF APIs for Internet Archive materials hosted on Archivelabs served up IIIF Presentation API version 2.1 manifests; see below for instructions on retrieving a legacy manifests.</p>
+  <p>The older experimental version of the IIIF APIs for Internet Archive materials hosted on Archivelabs served up IIIF Presentation API version 2.1 manifests; <a href="#appendix">see below for instructions on retrieving a legacy manifests</a>.</p>
 
 
   </section>
 
 
-<section>
-  <h2><a name="resources-legacy"></a>Getting legacy IIIF Presentation API 2.1 manfiests</h2>
-</section>
-    
-    <p>To get the older Presentation API 2.1 IIIF manifest, plug in the ID to the following template:</p>
-    <div class="request">https://iiif.archive.org/iiif/2/<b>:id</b>/manifest.json</div>
-
- <section>
-    <h2><a name="resources-listing">Listing Items</a></h2>
-    <p>
-      Querying the root of the Internet Archive IIIF API
-      results in a list of all publicly available items. Some items which are indexed in our search
-      engine but do have no associated content files will result in an
-      Internal Server Error. There are also a small number of items returned that do not have material types associted with them that are IIIF compatible. You can confirm whether the resource
-      actually exists or not by visiting the item's /details page on
-      archive.org.
-    </p>
-
-   <div class="request">https://iiif.archive.org/iiif</div>
-
-  </section>
 </article>
 </hr>
