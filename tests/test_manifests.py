@@ -17,7 +17,7 @@ class TestManifests(unittest.TestCase):
         resp = self.test_app.get("/iiif/3/img-8664_202009/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(manifest['id'], 'http://localhost/iiif/3/img-8664_202009/manifest.json', 'Unexpected identifier')
+        self.assertEqual(manifest['id'], 'https://localhost/iiif/img-8664_202009/manifest.json', 'Unexpected identifier')
 
     def test_v3_image_manifest(self):
         resp = self.test_app.get("/iiif/3/rashodgson68/manifest.json")
