@@ -77,6 +77,18 @@ def demo():
 def documentation():
     return render_template('docs/index.html', version=version)
 
+@app.route('/iiif/helper/<identifier>')
+def helper(identifier):
+    domain = purify_domain(request.args.get('domain', request.url_root))
+    uri = '%s%s' % (domain, identifier)
+    try:
+        cantaloupe_id = cantaloupe_resolver(identifier)
+        info_url = f"{image_server}/3/{cantaloupe_id}/info.json"
+        image_url = f"{image_server}/3/{cantaloupe_id}/full/max/0/default.jpg"
+        return render_template('helper.html', domain=domain, uri=uri, info_url=info_url, image_url=image_url, identifier=identifier)
+    except ValueError:
+        abort(404)        
+
 
 @app.route('/iiif/<identifier>')
 def view(identifier):
