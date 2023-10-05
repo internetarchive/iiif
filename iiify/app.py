@@ -79,13 +79,11 @@ def documentation():
 
 @app.route('/iiif/helper/<identifier>')
 def helper(identifier):
-    domain = purify_domain(request.args.get('domain', request.url_root))
-    uri = '%s%s' % (domain, identifier)
     try:
         cantaloupe_id = cantaloupe_resolver(identifier)
         info_url = f"{image_server}/3/{cantaloupe_id}/info.json"
         image_url = f"{image_server}/3/{cantaloupe_id}/full/max/0/default.jpg"
-        return render_template('helper.html', domain=domain, uri=uri, info_url=info_url, image_url=image_url, identifier=identifier)
+        return render_template('helper.html', info_url=info_url, image_url=image_url, identifier=identifier, cantaloupe_id=cantaloupe_id)
     except ValueError:
         abort(404)     
 
