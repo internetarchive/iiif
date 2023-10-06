@@ -34,7 +34,7 @@
       found in the Internet Archive.
     </p>
 
-    <p>In IIIF terms, this functionality is accomplished via two APIs: <b>the Image API</b>, and <b>the Presentation API</b>.</p>
+    <p>In IIIF terms, this functionality is accomplished via two APIs: <b>the Presentation API</b> and <b>the Image API</b>.</p>
 
     <h2><a name="presentation-api"></a>Presentation API</h2>
     <p>
@@ -44,7 +44,7 @@
 
       <p>The Presentation API can also faciliate the portability and playback of time-based media like audio and video files. In the A/V context, IIIF manifests often present multiple playback options based on the media formats and quality types available.</p>
       
-      <p>A manifest for an Internet Archive items look like this:</p>
+      <p>A manifest for an Internet Archive item looks like this:</p>
     <div class="request">https://iiif.archive.org/iiif/3/<b>:id</b>/manifest.json</div>
 
           <p>see the sections below for all the possible ways to retrieve manifests for <a href="#items">items</a> and <a href="#collections">collections</a>.</p>
@@ -62,11 +62,11 @@
     </p>
 
     <p>The Image API creates images using the following template: </p>
-      <div class="request">{scheme}://{server}{/prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}</div>
+      <div class="request">{scheme}://{server}/{prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}</div>
     <p>In the context of the Internet Archive items, that will look like this for a full image:</p>
     <div class="request">https://iiif.archive.org/image/iiif/3/<b>:id+filename</b>/full/max/0/default.jpg</div>
 
-    <p>A request for a bitonal center-cropped square image 375 pixels on each side, rotated 45 degrees will look like this:</p>
+    <p>Making use of the various parameters, a request for a bitonal center-cropped square image 375 pixels on each side, rotated 45 degrees will look like this:</p>
     <div class="request">https://iiif.archive.org/image/iiif/3/<b>:id+filename</b>/square/375,/45/bitonal.jpg</div>
 
     <p>See the <a href="https://iiif.io/api/image/3.0/#4-image-requests">Image API section on "Image Requests"</a> for more details on how images can be manipulated and specific sizes or sections retrieved.</p>
