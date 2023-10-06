@@ -2,6 +2,7 @@
 import hashlib
 import os
 import time
+import requests
 from flask import Flask, send_file, jsonify, abort, request, render_template, redirect
 from flask_cors import CORS
 from flask_caching import Cache
@@ -19,6 +20,7 @@ app.config['CACHE_DIR'] = "cache"
 cors = CORS(app) if cors else None
 cache = Cache(app)
 
+ARCHIVE = 'http://archive.org'
 
 # cache.init_app(app)
 
@@ -81,11 +83,25 @@ def documentation():
 def helper(identifier):
     domain = purify_domain(request.args.get('domain', request.url_root))
     uri = '%s%s' % (domain, identifier)
-    try:
-        cantaloupe_id = cantaloupe_resolver(identifier)
-        return render_template('helper.html', uri=uri, identifier=identifier, cantaloupe_id=cantaloupe_id)
-    except ValueError:
-        abort(404)     
+    metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+    mediatype = metadata['metadata']['mediatype']
+
+    if mediatype == "image":
+        try:
+            cantaloupe_id = cantaloupe_resolver(identifier)
+            return render_template('helpers/image.html', uri=uri, identifier=identifier, cantaloupe_id=cantaloupe_id)
+        except ValueError:
+            abort(404)
+        
+    elif mediatype == "audio" or mediatype == "etree":
+        return render_template('helpers/audio.html', uri=uri, identifier=identifier)
+    elif mediatype == "movies":
+        return render_template('helpers/movies.html', uri=uri, identifier=identifier)
+    elif mediatype == "texts":
+        return render_template('helpers/texts.html', uri=uri, identifier=identifier)
+    else: 
+        pass 
+         
 
 @app.route('/iiif/<identifier>')
 def view(identifier):

@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IIIF Image Helper</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" type="text/css" href="{{ request.url_root}}static/styles/docs.css" media="all"/>
+    <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" href="{{ request.url_root}}static/scripts/docs.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+      <img class="center" src="{{ request.url_root }}static/images/ia.png"/>
+    </header>
+    <div id="container">
+
+<h1>IIIF Image Helper</h1>
+
+<p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
+
+<p>The IA identifier is: {{ identifier }}</p>
+
+<p>The IIIF manifest URL is: <a href="{{ uri }}/manifest.json">{{ uri }}/manifest.json</a></p>
+
+<p>The Image API URL for the full image is: <a href="https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/full/max/0/default.jpg">https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/full/max/0/default.jpg</a></p>
+
+<p>The Image API info.json  for the image is: <a href="https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/info.json">https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/info.json</a></p>
+
+<h2>IIIF Viewer options</h2>
+<ul>
+    <li><a href="https://projectmirador.org/embed/?iiif-content={{ uri }}/manifest.json">Mirador</a></li>
+    <li><a href="https://uv-v4.netlify.app/#?manifest={{ uri }}/manifest.json">Universal Viewer</a></li>
+    <li><a href="https://samvera-labs.github.io/clover-iiif?iiif-content={{ uri }}/manifest.json">Clover</a></li>
+    <li><a href="https://ncsu-libraries.github.io/annona/tools/#/display?url={{ uri }}/manifest.json&viewtype=iiif-storyboard&manifesturl=&settings=%7B%22fullpage%22%3Atrue%7D">Annona </a></li>
+
+</ul>
+
+    </body>
+</html>
