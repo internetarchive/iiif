@@ -1,23 +1,34 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IIIF Image and Presentation API Helper</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>IIIF Image and Presentation API Helper</title>
-       
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" type="text/css" href="{{ request.url_root}}static/styles/docs.css" media="all"/>
+    <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" href="{{ request.url_root}}static/scripts/docs.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+      <img class="center" src="{{ request.url_root }}static/images/ia.png"/>
+    </header>
+    <div id="container">
 
-	<style type="text/css">
-
-	</style>
-    </head>
-    <body>
-
-<h1>Unknown</h1>
-
-<p>The IA identifier is: {{ identifier }}</p>
+<h1>IIIF Presentation API Helper</h1>
 
 <p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
 
-<p>The manifest URL is: <a href="{{ uri }}/manifest.json">{{ uri }}/manifest.json</a></p>
+<p>The IA identifier is: {{ identifier }}</p>
+
+<p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json</a></p>
 
 <p>The material type of the item you're requested is not a recognized material type for IIIF viewers.</p>
 
