@@ -65,6 +65,7 @@ class TestManifests(unittest.TestCase):
         manifest = resp.json
 
         self.assertEqual(len(manifest['items']),36,f"Expected 36 canvases but got: {len(manifest['items'])}")
+        self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['items'][0]['type'],"Sound",f"Expected 'SOund' but got: {manifest['items'][0]['items'][0]['items'][0]['body']['items'][0]['type']}")
 
 
     def test_v3_64Kbps_MP3(self):
