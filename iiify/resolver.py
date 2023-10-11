@@ -442,6 +442,23 @@ def create_manifest3(identifier, domain=None, page=None):
             c.add_item(ap)
             manifest.add_item(c)
 
+            # Setting logic for paging behavior and starting canvases
+            # Start with paged (default) or individual behaviors
+            try:
+                if bookreader['data']['brOptions']['defaults'] == "mode/1up":
+                    manifest.behavior = "individuals"
+            except:
+                manifest.behavior = "paged"
+            
+            # Then set left-to-right or right-to-left if present
+            if bookreader['data']['brOptions']['pageProgression'] == "lr":
+                viewingDirection = "left-to-right"
+            elif bookreader['data']['brOptions']['pageProgression'] == "rl":
+                viewingDirection = "right-to-left"
+            if viewingDirection:
+                manifest.viewingDirection = viewingDirection
+
+
     elif mediatype == "movies":
         # sort the files into originals and derivatives, splitting the derivatives into buckets based on the original
         originals = []
