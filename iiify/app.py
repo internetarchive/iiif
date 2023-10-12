@@ -11,6 +11,8 @@ from .resolver import ia_resolver, create_manifest, create_manifest3, getids, co
     purify_domain, cantaloupe_resolver, create_collection3
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
+from urllib.parse import quote
+
 
 app = Flask(__name__)
 # disabling sorting of the output json
@@ -79,7 +81,7 @@ def demo():
 def documentation():
     return render_template('docs/index.html', version=version)
 
-@app.route('/iiif/helper/<identifier>')
+@app.route('/iiif/helper/<identifier>/')
 def helper(identifier):
     domain = purify_domain(request.args.get('domain', request.url_root))
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
@@ -88,7 +90,8 @@ def helper(identifier):
     if mediatype == "image":
         try:
             cantaloupe_id = cantaloupe_resolver(identifier)
-            return render_template('helpers/image.html', identifier=identifier, cantaloupe_id=cantaloupe_id)
+            esc_cantaloupe_id = quote(cantaloupe_id)
+            return render_template('helpers/image.html', identifier=identifier, cantaloupe_id=cantaloupe_id, esc_cantaloupe_id=esc_cantaloupe_id)
         except ValueError:
             abort(404)
         
