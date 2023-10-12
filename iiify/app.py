@@ -102,7 +102,7 @@ def helper(identifier):
     elif mediatype == "texts":
         return render_template('helpers/texts.html', identifier=identifier)
     else: 
-        pass 
+        return render_template('helpers/unknown.html', identifier=identifier)
          
 
 @app.route('/iiif/<identifier>')
