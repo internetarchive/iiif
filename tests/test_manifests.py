@@ -7,7 +7,6 @@ class TestManifests(unittest.TestCase):
     def setUp(self) -> None:
         self.test_app = FlaskClient(app)
 
-
     def test_no_version(self):
         resp = self.test_app.get("/iiif/rashodgson68/manifest.json")
         self.assertEqual(resp.status_code, 302)
@@ -103,6 +102,33 @@ class TestManifests(unittest.TestCase):
         manifest = resp.json
         self.assertEqual(manifest['provider'][0]['homepage'][0]['id'] == "https://archive.org", True, f"Expected 'https://archive.org' but got {manifest['provider'][0]['id']}")
         self.assertEqual(manifest['provider'][0]['logo'][0]['id'] == "https://archive.org/images/glogo.png", True, f"Expected logo URI but got {manifest['provider'][0]['logo'][0]['id']}")
+
+    def escape_cantaloupe_urls(self):
+            resp = self.test_app.get("/iiif/3/0-._20211206/manifest.json")
+            self.assertEqual(resp.status_code, 200)
+            manifest = resp.json
+            self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id'] == "https://iiif.archive.org/image/iiif/3/0-._20211206%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_jp2.zip%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_jp2%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_0000.jp2/info.json",True, f"Expected 'https://iiif.archive.org/image/iiif/3/0-._20211206%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_jp2.zip%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_jp2%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_0000.jp2/info.json' but got {['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']}")
+
+    def escape_cantaloupe_urls1(self):
+            resp = self.test_app.get("/iiif/3/mareful/manifest.json")
+            self.assertEqual(resp.status_code, 200)
+            manifest = resp.json
+            self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id'] == "https://iiif.archive.org/image/iiif/3/new%2Fmareful-quran-08-new-edition_jp2.zip%2Fmareful-quran-08-new-edition_jp2%2Fmareful-quran-08-new-edition_0000.jp2/info.json",True, f"Expected 'https://iiif.archive.org/image/iiif/3/new%2Fmareful-quran-08-new-edition_jp2.zip%2Fmareful-quran-08-new-edition_jp2%2Fmareful-quran-08-new-edition_0000.jp2/info.json' but got {['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']}")
+
+    def escape_cantaloupe_urls2(self):
+            resp = self.test_app.get("/iiif/3/balagzone_gmail/manifest.json")
+            self.assertEqual(resp.status_code, 200)
+            manifest = resp.json
+            self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id'] == "https://iiif.archive.org/image/iiif/3/balagzone_gmail%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0000.jp2/info.json",True, f"Expected 'https://iiif.archive.org/image/iiif/3/balagzone_gmail%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0000.jp2/info.json' but got {['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']}")
+
+    def metadata_array(self):
+        resp = self.test_app.get("/iiif/3/annualreport00carn_14/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        self.assertEqual(manifest['summary']['none'][0], "Report year ends Sept. 30", f"Expected a value of 'Report year ends Sept. 30' but got {manifest['summary']['none'][0]}")
+        self.assertEqual(manifest['summary']['none'][1], "1951-71. 1 v", f"Expected a value of '1951-71. 1 v' but got {manifest['summary']['none'][1]}")
+
+
 
 ''' to test:
 kaled_jalil (no derivatives)
