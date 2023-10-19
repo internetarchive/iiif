@@ -439,7 +439,7 @@ def create_manifest3(identifier, domain=None, page=None):
                 for format in ['VBR MP3', '32Kbps MP3', '56Kbps MP3', '64Kbps MP3', '96Kbps MP3', '128Kbps MP3', 'MPEG-4 Audio', 'Flac', 'AIFF', 'Apple Lossless Audio', 'Ogg Vorbis', 'WAVE', '24bit Flac', 'Shorten']:
                     if format in derivatives[file['name']]:
                         r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
-                                         type='Audio',
+                                         type='Sound',
                                          format=to_mimetype(format),
                                          label={"none": [format]},
                                          duration=float(file['length']))
@@ -447,7 +447,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     elif file['format'] == format:
                         r = ResourceItem(
                             id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
-                            type='Audio',
+                            type='Sound',
                             format=to_mimetype(format),
                             label={"none": [format]},
                             duration=float(file['length']))
