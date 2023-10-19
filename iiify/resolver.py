@@ -121,7 +121,6 @@ def create_collection3(identifier, domain, page=1, rows=1000):
         child = CollectionRef(id=f"{domain}{identifier}/{page}/collection.json", type="Collection", label={ "en": [f"Page {page} of {pages}"]})
         collection.add_item(child)
 
-    print ('Returning collection')
     return json.loads(collection.jsonld())
     
 def manifest_page(identifier, label='', page='', width='', height='', metadata=None):
@@ -228,35 +227,64 @@ def create_manifest(identifier, domain=None, page=None):
             'itemPath': subPrefix,
             'itemId': identifier
         })
-        data = r.json()
+        if r.status_code != 200: 
+            # If the bookdata failed then treat as a single image
+            fileName = ""
+            for f in resp['files']:
+                if valid_filetype(f['name']) \
+                    and f['source'].lower() == 'original' \
+                    and 'thumb' not in f['name']:
+                    fileName = f['name']
+                    break    
 
-        manifest.update({
-            'label': data['title'],
-            'thumbnail': {
-                '@id': data['previewImage']
-            },
-        })
+            if not fileName:
+                # Original wasn't an image
+                for f in resp['files']:
+                    if '_jp2.zip' in f['name']:
+                        fileName = f"{f['name']}/{f['name'].replace('.zip','')}/{f['name'].replace('jp2.zip','0000.jp2')}"
 
-        if page:
+            imgId = f"{identifier}/{fileName}".replace('/','%2f')
+            info_resp = requests.get(f"{IMG_SRV}/2/{imgId}/info.json")
+            info = info_resp.json()
             manifest['sequences'][0]['canvases'].append(
                 manifest_page(
-                    identifier = "%s%s$%s" % (domain, identifier, page),
-                    label=data['pageNums'][page],
-                    width=data['pageWidths'][page],
-                    height=data['pageHeights'][page]
+                    identifier= info['@id'],
+                    label=metadata['title'],
+                    width=info['width'],
+                    height=info['height'],
+                    metadata=metadata
                 )
             )
-            return manifest
+        else:
+            data = r.json()
 
-        for page in range(0, len(data.get('leafNums', []))):
-            manifest['sequences'][0]['canvases'].append(
-                manifest_page(
-                    identifier = "%s%s$%s" % (domain, identifier, page),
-                    label=data['pageNums'][page],
-                    width=data['pageWidths'][page],
-                    height=data['pageHeights'][page]
+            manifest.update({
+                'label': data['title'],
+                'thumbnail': {
+                    '@id': data['previewImage']
+                },
+            })
+
+            if page:
+                manifest['sequences'][0]['canvases'].append(
+                    manifest_page(
+                        identifier = "%s%s$%s" % (domain, identifier, page),
+                        label=data['pageNums'][page],
+                        width=data['pageWidths'][page],
+                        height=data['pageHeights'][page]
+                    )
                 )
-            )
+                return manifest
+
+            for page in range(0, len(data.get('leafNums', []))):
+                manifest['sequences'][0]['canvases'].append(
+                    manifest_page(
+                        identifier = "%s%s$%s" % (domain, identifier, page),
+                        label=data['pageNums'][page],
+                        width=data['pageWidths'][page],
+                        height=data['pageHeights'][page]
+                    )
+                )
     return manifest
 
 def singleImage(metadata, identifier, manifest, uri):
@@ -361,7 +389,6 @@ def create_manifest3(identifier, domain=None, page=None):
 
         bookReaderURL = f"https://{metadata.get('server')}/BookReader/BookReaderJSIA.php?id={identifier}&itemPath={metadata.get('dir')}&server={metadata.get('server')}&format=jsonp&subPrefix={subprefix}"
 
-        print (f'Book reader url: {bookReaderURL}')
         bookreader = requests.get(bookReaderURL).json()
         if 'error' in bookreader:
             # Image stack not found. Maybe a single image
@@ -580,7 +607,6 @@ def ia_resolver(identifier):
                          and 'thumb' not in f['name'] )
                 itempath = os.path.join(identifier, f['name'])
             url = '%s/download/%s' % (ARCHIVE, itempath)
-            print(url)
             r = requests.get(url, stream=True, allow_redirects=True)
 
         elif mediatype.lower() == 'texts' and leaf:
