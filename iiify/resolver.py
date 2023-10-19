@@ -396,14 +396,17 @@ def create_manifest3(identifier, domain=None, page=None):
                     manifest.behavior = "individuals"
             except:
                 manifest.behavior = "paged"
-            
+
             # Then set left-to-right or right-to-left if present
-            if bookreader['data']['brOptions']['pageProgression'] == "lr":
-                viewingDirection = "left-to-right"
-            elif bookreader['data']['brOptions']['pageProgression'] == "rl":
-                viewingDirection = "right-to-left"
-            if viewingDirection:
-                manifest.viewingDirection = viewingDirection
+            try:
+                if bookreader['data']['brOptions']['pageProgression'] == "lr":
+                    viewingDirection = "left-to-right"
+                elif bookreader['data']['brOptions']['pageProgression'] == "rl":
+                    viewingDirection = "right-to-left"
+                if viewingDirection:
+                    manifest.viewingDirection = viewingDirection
+            except:
+                pass
 
 
     elif mediatype == 'image':
