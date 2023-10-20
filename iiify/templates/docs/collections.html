@@ -1,0 +1,44 @@
+<article id="resources" class="hiddenz">
+  <h1 id="collections">Collections</h1>
+
+<section>
+  <h2><a name="resources-collections"></a>Getting IIIF collection manifests</h2>
+
+  <p>A group of more than one IIIF manifests is called a collection. On archive.org, a collection is a group of item pages organized under a collections page. For convenience, we've generate a IIIF collection manfiest for all of the collections on the Internet Archive. For more on how Internet Archive collections work, see <a href="https://help.archive.org/help/collections-a-basic-guide/">the "Collections - A Basic Guide"</a>.</p>
+
+<h4>Example</h4>
+  <p>As with the manifests above, you'll need the Internet Archive identifier for the colllection. Here's an example collection page from the University of Leeds:</p>
+  <pre><a href="https://archive.org/details/leedsuniversitylibrary">https://archive.org/details/leedsuniversitylibrary</a></pre>
+
+  <p>In this case, the id is:</p>
+<pre>leedsuniversitylibrary</pre>
+
+    <p>To then get the IIIF collection manifest, plug in the ID to the following template:</p>
+    <div class="request">https://iiif.archive.org/iiif/3/<b>:id</b>/collection.json</div>
+
+    <p>For the Leeds example above, the final IIIF collection manifest URL would be:</p>
+    <div class="request">https://iiif.archive.org/iiif/3/leedsuniversitylibrary/collection.json</div>
+
+<h3>Note about nested collections</h3>
+<p>Please note that Internet Archive collections can be arbitrarily nested within other collections. In these cases, the IIIF collection manifest will return a link to one or more IIIF collection manifest(s) in addition to the items nested individually within that Internet Archive collection.</p>
+
+</section>
+
+  <section>
+    <h2><a name="resources-listing">Pagination for large collections</a></h2>
+    <p>The pattern described above for generating IIIF collection manifests will return the first 1000 items or sub-collections within the collection. In order to get the remaining items for collections larger than that, pagination is required.</p>
+    <p>This looks like the following: 
+     <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/<b>:page</b>/collection.json</div></p>
+
+     <p>For the University of Leeds collection above, there are at the time of this writing  3,775 items in the collection. That means that four collections manifest requests will be required to retrieve all the items and/or sub-collections listed within the collection.</p>
+
+<table>
+  <thead><td>Collection manifest URL</td><td>Items retrieved</td></thead>
+  <tr><td>https://iiif.archive.org/iiif/3/leedsuniversitylibrary/collection.json</td><td>0-999</td></tr>
+  <tr><td>https://iiif.archive.org/iiif/3/leedsuniversitylibrary/2/collection.json</td><td>1000-1999</td></tr>
+  <tr><td>https://iiif.archive.org/iiif/3/leedsuniversitylibrary/3/collection.json</td><td>2000-2999</td></tr>
+  <tr><td>https://iiif.archive.org/iiif/3/leedsuniversitylibrary/4/collection.json</td><td>3000-3775</td></tr>
+  </table>
+  </section>
+</article>
+</hr>
