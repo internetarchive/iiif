@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IIIF Image and Presentation API Movies Helper</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" type="text/css" href="{{ request.url_root}}static/styles/docs.css" media="all"/>
+    <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" href="{{ request.url_root}}static/scripts/docs.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+      <img class="center" src="{{ request.url_root }}static/images/ia.png"/>
+    </header>
+    <div id="container">
+
+<h1>IIIF Presentation API Movies Helper</h1>
+
+<p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
+
+<p>The IA identifier is: {{ identifier }}</p>
+
+<p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json</a></p>
+
+<h2>IIIF viewer options for this mediatype:</h2>
+<ul>
+    <li><a href="https://uv-v4.netlify.app/#?manifest=https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json">Universal Viewer</a></li>
+    <li><a href="https://iiif-react-media-player.netlify.app//?iiif-content=https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json">Ramp</a></li>
+    <li><a href="https://iiif.aviaryplatform.com/player?manifest=https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json">Aviary</a></li>
+
+</ul>
+
+    </body>
+</html>

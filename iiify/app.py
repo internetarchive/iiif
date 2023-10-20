@@ -2,6 +2,7 @@
 import hashlib
 import os
 import time
+import requests
 from flask import Flask, send_file, jsonify, abort, request, render_template, redirect
 from flask_cors import CORS
 from flask_caching import Cache
@@ -10,6 +11,8 @@ from .resolver import ia_resolver, create_manifest, create_manifest3, getids, co
     purify_domain, cantaloupe_resolver, create_collection3
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
+from urllib.parse import quote
+
 
 app = Flask(__name__)
 # disabling sorting of the output json
@@ -19,6 +22,7 @@ app.config['CACHE_DIR'] = "cache"
 cors = CORS(app) if cors else None
 cache = Cache(app)
 
+ARCHIVE = 'http://archive.org'
 
 # cache.init_app(app)
 
@@ -77,23 +81,29 @@ def demo():
 def documentation():
     return render_template('docs/index.html', version=version)
 
-@app.route('/iiif/helper/<identifier>')
+@app.route('/iiif/helper/<identifier>/')
 def helper(identifier):
-    # domain = purify_domain(request.args.get('domain', request.url_root))
-    # uri = '%s%s' % (domain, identifier)
-    try:
-        cantaloupe_id = cantaloupe_resolver(identifier)
-        info_url = f"{image_server}/3/{cantaloupe_id}/info.json"
-        image_url = f"{image_server}/3/{cantaloupe_id}/full/max/0/default.jpg"
-        return render_template('helper.html', 
-            cantaloupe_id=cantaloupe_id, 
-            # uri=uri, 
-            info_url=info_url, 
-            image_url=image_url, 
-            identifier=identifier)
-    except ValueError:
-        abort(404)        
+    domain = purify_domain(request.args.get('domain', request.url_root))
+    metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+    mediatype = metadata['metadata']['mediatype']
 
+    if mediatype == "image":
+        try:
+            cantaloupe_id = cantaloupe_resolver(identifier)
+            esc_cantaloupe_id = quote(cantaloupe_id)
+            return render_template('helpers/image.html', identifier=identifier, cantaloupe_id=cantaloupe_id, esc_cantaloupe_id=esc_cantaloupe_id)
+        except ValueError:
+            abort(404)
+        
+    elif mediatype == "audio" or mediatype == "etree":
+        return render_template('helpers/audio.html', identifier=identifier)
+    elif mediatype == "movies":
+        return render_template('helpers/movies.html', identifier=identifier)
+    elif mediatype == "texts":
+        return render_template('helpers/texts.html', identifier=identifier)
+    else: 
+        return render_template('helpers/unknown.html', identifier=identifier)
+         
 
 @app.route('/iiif/<identifier>')
 def view(identifier):

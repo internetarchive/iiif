@@ -1,6 +1,6 @@
 # iiif.archive.org
 
-The Internet Archive's official IIIF 3.0 Image & Presentation API
+The Internet Archive's official [IIIF 3.0 Image & Presentation API](https://iiif.io) service.
 
 ## Background
 
