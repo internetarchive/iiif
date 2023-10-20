@@ -73,14 +73,24 @@
 
     <p>IIIF Image Viewers read something called an "info.json" file, which lets them know how to process the image for deep zooming.</p>
 
-    <p>For a single-image Internet Archive item, you can find the info.json via the following template:</p>
+    <p>As a convenience, for a single-image Internet Archive item you can find a redirect to the info.json via the following template:</p>
     <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/info.json</div>
 
 <h4>Example</h4>
-<p>Taking one item as an example (<a href="https://archive.org/details/img-8664_202009">https://archive.org/details/img-8664_202009</a>), the info.json would be:</p>
-<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2FIMG_8664.jpg/info.json</div>
+<p>Take the following item as an example: <a href="https://archive.org/details/img-8664_202009">https://archive.org/details/img-8664_202009</a>. </p>
+
+<p>In this case, <b>img-8664_202009</b> is the item ID. </p>
+
+<p>To get the filename you can go to "Show all" in the "Download Options" box. This will show you a list of links to the various files associated with an item. Taking the jpg link for this item, you get the following URL: https://archive.org/download/img-8664_202009/IMG_8664.jpg </p>
+
+<p>Here, <b>IMG_8664.jpg</b> is the filename.</p>
+
+<p>In order to get the :id+filename the way you need it for the IIIF Image API info.json, you can combine the ID and filename with a URL encoded slash, i.e. %2f.</p>
+
+<p>So for this image, the info.json would be:</p>
+<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2fIMG_8664.jpg/info.json</div>
 <p>And the full URL for the image would be:</p>
-<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2FIMG_8664.jpg/full/max/0/default.jpg</div>
+<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2fIMG_8664.jpg/full/max/0/default.jpg</div>
 <p>A cropped portion at the full resolution can be requested like this:</p>
 <div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2fIMG_8664.jpg/<b>1100,904,704,664</b>/max/0/default.jpg</div>
 <p>Where "1100,904,704,664" in that URL stands for 1100 pixels from the left edge, 904 pixels from the bottom edge, 704 pixels is the width of the desired section, and 664 pixels is the height.</p>
