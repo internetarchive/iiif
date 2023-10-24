@@ -1,0 +1,10 @@
+variables:
+  NOMAD_VAR_PORTS: '{ 8080 = "http", 8182 = "cantaloupe" }'
+  NOMAD_VAR_CHECK_PATH: '/static/images/ia.png'
+  NOMAD_VAR_MULTI_CONTAINER: 'true'
+  NOMAD_VAR_COUNT_CANARIES: 0
+  NOMAD_VAR_COUNT: 1
+  NOMAD_VAR_HEALTH_TIMEOUT: '30m'
+
+include:
+  - remote: 'https://gitlab.com/internetarchive/nomad/-/raw/master/.gitlab-ci.yml'
