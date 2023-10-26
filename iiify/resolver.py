@@ -3,22 +3,30 @@
 import os
 import requests
 from iiif2 import iiif, web
-from .configs import options, cors, approot, cache_root, media_root, apiurl, image_server, iiif_uri
+from .configs import options, cors, approot, cache_root, media_root, apiurl
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs, quote
 import json
 import math 
+import re
 
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
-METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contributor", "creator")
 ARCHIVE = 'http://archive.org'
+IMG_SRV = 'https://iiif.archive.org/image/iiif'
+METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contributor", "creator")
 bookdata = 'http://%s/BookReader/BookReaderJSON.php'
 bookreader = "http://%s/BookReader/BookReaderImages.php"
+URI_PRIFIX = "https://iiif.archive.org/iiif"
 
 valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
 
+class IsCollection(Exception):
+    # Used for when we need to raise to the route handler from inside the manifest function
+    pass
+
 def purify_domain(domain):
+    domain = re.sub('^http:\/\/', "https://", domain)
     return domain if domain.endswith('/iiif/') else domain + 'iiif/'
 
 def getids(q, limit=1000, cursor=''):
@@ -79,7 +87,7 @@ def create_collection3(identifier, domain, page=1, rows=1000):
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
 
     # Used to build up URIs for the manifest
-    uri = f"{domain}3/{identifier}/collection.json"
+    uri = f"{domain}{identifier}/collection.json"
 
     config.configs['helpers.auto_fields.AutoLang'].auto_lang = "none"
     collection = Collection(id=uri, label=metadata["metadata"]["title"])
@@ -100,9 +108,9 @@ def create_collection3(identifier, domain, page=1, rows=1000):
     for item in itemsSearch['response']['docs']:
         child = None
         if item['mediatype'] == 'collection':
-            child = CollectionRef(id=f"{domain}3/{item['identifier']}/collection.json", type="Collection", label=item['title'])
+            child = CollectionRef(id=f"{domain}{item['identifier']}/collection.json", type="Collection", label=item['title'])
         else: 
-            child = ManifestRef(id=f"{domain}3/{item['identifier']}/manifest.json", type="Manifest", label=item['title'])
+            child = ManifestRef(id=f"{domain}{item['identifier']}/manifest.json", type="Manifest", label=item['title'])
         
         if "description" in item:
             child.summary = {"none": [item['description']]} 
@@ -110,7 +118,7 @@ def create_collection3(identifier, domain, page=1, rows=1000):
         collection.add_item(child)
     page += 1
     if page <= pages:
-        child = CollectionRef(id=f"{domain}3/{identifier}/{page}/collection.json", type="Collection", label={ "en": [f"Page {page} of {pages}"]})
+        child = CollectionRef(id=f"{domain}{identifier}/{page}/collection.json", type="Collection", label={ "en": [f"Page {page} of {pages}"]})
         collection.add_item(child)
 
     print ('Returning collection')
@@ -267,16 +275,16 @@ def singleImage(metadata, identifier, manifest, uri):
                 fileName = f"{f['name']}/{f['name'].replace('.zip','')}/{f['name'].replace('jp2.zip','0000.jp2')}"
 
     imgId = f"{identifier}/{fileName}".replace('/','%2f')
-    imgURL = f"{image_server}/3/{imgId}"
+    imgURL = f"{IMG_SRV}/3/{imgId}"
     
     manifest.make_canvas_from_iiif(url=imgURL,
-                                    id=f"{iiif_uri}/{identifier}/canvas",
+                                    id=f"{URI_PRIFIX}/{identifier}/canvas",
                                     label="1",
                                     anno_page_id=f"{uri}/annotationPage/1",
                                     anno_id=f"{uri}/annotation/1")    
 
 def addMetadata(item, identifier, metadata, collection=False):
-    item.homepage = [{"id": f"{ARCHIVE}/details/{identifier}",
+    item.homepage = [{"id": f"https://archive.org/details/{identifier}",
                          "type": "Text",
                          "label": {"en": ["Item Page on Internet Archive"]},
                          "format": "text/html"}]
@@ -301,7 +309,10 @@ def addMetadata(item, identifier, metadata, collection=False):
         item.rights = metadata["licenseurl"].replace("https", "http", 1)
 
     if "description" in metadata:
-        item.summary = {"none": [metadata["description"]]}
+        if type(metadata["description"]) != list:
+            item.summary = {"none": [metadata["description"]]}
+        else:
+            item.summary = {"none": metadata["description"]}
 
     excluded_fields = [
         'avg_rating', 'backup_location', 'btih', 'description', 'downloads',
@@ -331,7 +342,7 @@ def create_manifest3(identifier, domain=None, page=None):
     mediatype = metadata['metadata']['mediatype']
 
     # Used to build up URIs for the manifest
-    uri = f"{domain}3/{identifier}"
+    uri = f"{domain}{identifier}"
 
     config.configs['helpers.auto_fields.AutoLang'].auto_lang = "none"
 
@@ -350,7 +361,7 @@ def create_manifest3(identifier, domain=None, page=None):
 
         bookReaderURL = f"https://{metadata.get('server')}/BookReader/BookReaderJSIA.php?id={identifier}&itemPath={metadata.get('dir')}&server={metadata.get('server')}&format=jsonp&subPrefix={subprefix}"
 
-        #print (f'Book reader url: {bookReaderURL}')
+        print (f'Book reader url: {bookReaderURL}')
         bookreader = requests.get(bookReaderURL).json()
         if 'error' in bookreader:
             # Image stack not found. Maybe a single image
@@ -364,10 +375,10 @@ def create_manifest3(identifier, domain=None, page=None):
                 for page in pageSpread:
                     fileUrl = urlparse(page['uri'])
                     fileName = parse_qs(fileUrl.query).get('file')[0]
-                    imgId = f"{zipFile}/{fileName}".replace('/','%2f')
-                    imgURL = f"{image_server}/3/{imgId}"
+                    imgId = f"{zipFile}/{fileName}"
+                    imgURL = f"{IMG_SRV}/3/{quote(imgId, safe='()')}"
 
-                    canvas = Canvas(id=f"{iiif_uri}/{identifier}${pageCount}/canvas", label=f"{page['leafNum']}")
+                    canvas = Canvas(id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas", label=f"{page['leafNum']}")
 
                     body = ResourceItem(id=f"{imgURL}/full/max/0/default.jpg", type="Image")
                     body.format = "image/jpeg"
@@ -406,12 +417,12 @@ def create_manifest3(identifier, domain=None, page=None):
         for file in [f for f in originals if f['format'] in ['VBR MP3', '32Kbps MP3', '56Kbps MP3', '64Kbps MP3', '96Kbps MP3', '128Kbps MP3', 'MPEG-4 Audio', 'Flac', 'AIFF', 'Apple Lossless Audio', 'Ogg Vorbis', 'WAVE', '24bit Flac', 'Shorten']]:
             normalised_id = file['name'].rsplit(".", 1)[0]
             slugged_id = normalised_id.replace(" ", "-")
-            c_id = f"{iiif_uri}/{identifier}/{slugged_id}/canvas"
+            c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
             c = Canvas(id=c_id, label=normalised_id, duration=float(file['length']))
 
             # create intermediary objects
-            ap = AnnotationPage(id=f"{iiif_uri}/{identifier}/{slugged_id}/page")
-            anno = Annotation(id=f"{iiif_uri}/{identifier}/{slugged_id}/annotation", motivation="painting", target=c.id)
+            ap = AnnotationPage(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page")
+            anno = Annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation", motivation="painting", target=c.id)
 
             # create body based on whether there are derivatives or not:
             if file['name'] in derivatives:
@@ -459,12 +470,12 @@ def create_manifest3(identifier, domain=None, page=None):
         for file in [f for f in originals if f['format'] in ['MPEG4', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack']]:
             normalised_id = file['name'].rsplit(".", 1)[0]
             slugged_id = normalised_id.replace(" ", "-")
-            c_id = f"{iiif_uri}/{identifier}/{slugged_id}/canvas"
+            c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
             c = Canvas(id=c_id, label=normalised_id, duration=float(file['length']), height=int(file['height']), width=int(file['width']))
 
             # create intermediary objects
-            ap = AnnotationPage(id=f"{iiif_uri}/{identifier}/{slugged_id}/page")
-            anno = Annotation(id=f"{iiif_uri}/{identifier}/{slugged_id}/annotation", motivation="painting", target=c.id)
+            ap = AnnotationPage(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page")
+            anno = Annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation", motivation="painting", target=c.id)
 
             # create body based on whether there are derivatives or not:
             if file['name'] in derivatives:
@@ -499,8 +510,9 @@ def create_manifest3(identifier, domain=None, page=None):
             ap.add_item(anno)
             c.add_item(ap)
             manifest.add_item(c)
-
-    else:            
+    elif mediatype == "collection":
+        raise IsCollection
+    else:
         print (f'Unknown mediatype "{mediatype}"')
 
     return json.loads(manifest.jsonld())
@@ -651,6 +663,6 @@ def cantaloupe_resolver(identifier):
             filepath = f"{fileIdentifier}_{leaf.zfill(4)}{extension}"
             return f"{identifier}%2f{filename}%2f{dirpath}%2f{filepath}"
 
-    print (f'images not found for {identifier}')    
-    for f in files:
-        print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")
+    # print (f'images not found for {identifier}')
+    # for f in files:
+    #     print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")
