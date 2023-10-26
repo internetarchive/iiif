@@ -1,242 +1,106 @@
 <article id="overview">
   <h1>Overview</h1>
   
-  <div class="banner">
-    New to IIIF? Read the <a href="#introduction">introduction</a> first.
-  </div>
-  
-  <p>
-    This describes the resources that make up the Internet
-    Archive IIIF API v1 (alpha). If you have any problems or
-    requests, please
-    contact <a href="mailto:support@archive.org">support</a>.
-  </p>
-  
-  <ol type="i" class="toc">
-    <li><a href="">Current Version</a></li>
-    <li><a href="">Conventions</a></li>
-    <li><a href="">Schema</a></li>
-    <li><a href="">Pagination</a></li>
-    <li><a href="">Client Errors</a></li>
-    <li><a href="">HTTP Redirects</a></li>    
-    <li><a href="">Rate Limiting</a></li>
-    <li><a href="">Cross Origin Resource Sharing</a></li>
-  </ol>
-
-  <section>
+<section>
     <h2><a name="overview-version">Current Version</a></h2>
     <p>
-      <span class="warning">Caution.</span> The Internet Archive IIIF
-      API is currently at version 1 (alpha). This means it is currently
-      under development as a prototype for community feedback and may be
-      either discontinued at any time, or deprecated in favor of an
-      official version 1 release.
-    </p>
+      The Internet Archive IIIF API service that launched in 2015 was an alpha service that has now been officially upgraded and adopted by the Internet Archive as of September 2023.  While stable, it is still under development and we welcome community feedback on desired features.</p>
 
-    <h2><a name="overview-conventions">Conventions</a></h2>
-    <h3>IDs</h3>
+      <p>The code and logic that runs these APIs is available on <a href="https://github.com/internetarchive/iiif/">Github</a>, and that's where any <a href="https://github.com/internetarchive/iiif/issues">bugs or features requests can be added</a>.</p>
+
+    <h3><a name="overview-conventions"></a>Convention: IDs</h3>
     <p>
-      ID placeholders are preceded by a ":" in examples. IDs need not
+      ID placeholders are preceded by a ":" (colon) in examples. IDs need not
       appear in bold, however this is done in the following example for
       emphasis:
     </p>
 
-    <div class="request">
-      GET {{ request.url_root }}<strong>:id</strong>
-    </div>    
+    <div class="request">https://iiif.archive.org/iiif/3/<strong>:id</strong>/manifest.json</div>    
   </section>
 
-  <section>
-    <h2><a name="overview-schema">Schema</a></h2>
-    <p>
-      All API access is over HTTPS, and accessed from the
-      {{ request.url_root }} domain. All data is sent and received as JSON.
-    </p>
-
-    <pre><code>
-  $ curl -i {{ request.url_root }}  
-
-  HTTP/1.1 200 OK
-  Server: nginx/1.4.6 (Ubuntu)
-  Date: Tue, 22 Sep 2015 08:07:27 GMT
-  Content-Type: application/json
-  Content-Length: 21307
-  Connection: keep-alive
-  Cache-Control: max-age=5
-
-  {
-    ...
-  }
-    </code></pre>
-
-    <h3>Trailing Slashes</h3>
-    <p>
-      Other than the server root, uris should <strong>not</strong> end
-      with trailing slashes.
-    </p>
-
-    <h3>Summary Representations</h3>
-
-    <p>
-      When you fetch a list of resources, the response includes a subset
-      of the attributes for that resource. This is the “summary”
-      representation of the resource. (Some attributes are
-      computationally expensive for the API to provide. For performance
-      reasons, the summary representation excludes those attributes. To
-      obtain those attributes, fetch the “detailed” representation.)
-    </p>
-
-    <div class="request">
-      GET {{ request.url_root }}
-    </div>
-
-    <h3>Detailed Representations</h3>
-    <p>
-      To get detailed metadata about a specific Archive.org item, fetch
-      the item's metadata by ID through the Archive.org. (Note that
-      authorization sometimes influences the amount of detail included
-      in the representation.)
-    </p>
-
-    <div class="request">
-      GET https://archive.org/<strong>metadata</strong>/:id
-    </div>
-
-    <p>For example:</p>
-    <pre><code>
-  $ curl -i "https://archive.org/metadata/thirteenbookseu03heibgoog"
-
-  HTTP/1.1 200 OK
-  Server: nginx/1.4.6 (Ubuntu)
-  Date: Tue, 22 Sep 2015 08:07:27 GMT
-  Content-Type: application/json
-  Content-Length: 21307
-  Connection: keep-alive
-  Cache-Control: max-age=5
-
-  {
-    created: 1442378110,
-    d1: "ia600309.us.archive.org",
-    ad2: "ia800309.us.archive.org",
-    dir: "/20/items/thirteenbookseu03heibgoog",
-    files: [],
-    files_count: 16,
-    item_size: 196609584,
-    metadata: {},
-    reviews: [],
-    server: "ia800309.us.archive.org",
-    uniq: 893310999,
-    updated: 1442380951,
-    workable_servers: []
-  }
-    </code></pre>
-
-    <p>
-      If this data is insufficient, you may be able to attrieve
-      additional information through
-      the <a href="https://archive.org/advancedsearch.php">Advanced
-	Search</a> feature.
-    </p>
-  </section>
+<h2>Getting started</h2>
 
   <section>
-    <h2><a name="overview-pagination">Pagination</a></h2>
-    <p>
-      Requests that return multiple items will be paginated to 50
-      items by default. You can specify further pages with the ?page
-      GET parameter. For some resources, you can also set a custom
-      page size up to 100 with the ?limit parameter. Note that for
-      technical reasons not all endpoints respect the ?limit
-      parameter, see events for example.
+  <p>Nearly all image, text, audio and video items available from the Internet Archive now have a IIIF API URI. This means you can seamlessly view nearly any Archive.org
+      image, book, audio or video in any compatible IIIF viewer and also enjoy
+      the enhancements they provide (e.g., annotation, side-by-size viewing,
+      and loading images from different institutions into the same
+      space).
     </p>
 
     <p>
-      Item count begins at 0 (the first item is the 0th entry). Paging
-      begins at 1, on the first page (i.e. ?page=1)
+      The service also provides a mechanism for producing permanantly
+      citeable image tiles of any arbitrary region of any image, book, audio or video
+      found in the Internet Archive.
     </p>
 
-    <pre><code>
-  $ curl -i {{ request.url_root }}?page=1&limit=25
-    </code></pre>
+    <p>In IIIF terms, this functionality is accomplished via two APIs: <b>the Presentation API</b> and <b>the Image API</b>.</p>
 
-    <h3>Calculating next page</h3>
+    <h2><a name="presentation-api"></a>Presentation API</h2>
     <p>
-      This section will be updated when pagination for items is
-      released.
-    </p>
+      The <a href="http://iiif.io/api/presentation/">Presentation
+  API</a> allows institutions to publish and consume metadata about
+      collections and sequences of digital objects (e.g., pages in a book), called "manifests." For images and texts, this is almost always used in conjunction with the IIIF Image API to create manifests for digital objects that any IIIF viewer can use to present an engaging deep-zoom experience.</p>
 
-  </section>
+      <p>The Presentation API can also faciliate the portability and playback of time-based media like audio and video files. In the A/V context, IIIF manifests often present multiple playback options based on the media formats and quality types available.</p>
+      
+      <p>A manifest for an Internet Archive item looks like this:</p>
+    <div class="request">https://iiif.archive.org/iiif/3/<b>:id</b>/manifest.json</div>
 
-  <section>
-    <h2><a name="overview-errors">Client Errors</a></h2>
+          <p>See the sections below for all the possible ways to retrieve manifests for <a href="#items">items</a> and <a href="#collections">collections</a>.</p>
+
+          <p>For more pointers on how IIIF manifests can be used, see the Appendix section on <a href="#helpers">Helpers</a> for different material types.</p>
+
+<h2><a name="image-api"></a>Image API</h2>
     <p>
-      TODO.
+      The <a href="http://iiif.io/api/image/">Image API</a> is an
+      interface capable of producing and serving arbitrary tiles of
+      arbitrary regions of an image (just like the different scales of resolution in Google Maps). The properties
+      of these image tiles are specified within a URL, allowing
+      permenant citation and retrieval at a later time.
+      The Image API supports and powers other computer applications
+      (like <a href="https://universalviewer.io/">deep-zoomable image
+  viewers</a>, <a href="https://projectmirador.org/">comparison viewers</a>, and <a href="https://iiif.io/get-started/iiif-viewers/">more</a>).
     </p>
 
-  <h2><a name="overview-redirects">HTTP Redirects</a></h2>
-  <p>
-  </p>
+    <p>The Image API creates images using the following template: </p>
+      <div class="request">{scheme}://{server}/{prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}</div>
+    <p>In the context of the Internet Archive items, that will look like this for a full image:</p>
+    <div class="request">https://iiif.archive.org/image/iiif/3/<b>:id+filename</b>/full/max/0/default.jpg</div>
 
-  <h2><a name="overview-cors">Cross Origin Resource Sharing</a></h2>
-  <p>
-    The API supports Cross Origin Resource Sharing (CORS) for AJAX
-    requests from any origin.  You can read
-    the <a href="http://www.w3.org/TR/cors/">CORS W3C
-    Recommendation</a>, or
-    <a href="http://code.google.com/p/html5security/wiki/CrossOriginRequestSecurity">this
-    intro</a> from the HTML 5 Security Guide.
-  </p>
+    <p>Making use of the various parameters, a request for a bitonal center-cropped square image 375 pixels on each side, rotated 45 degrees will look like this:</p>
+    <div class="request">https://iiif.archive.org/image/iiif/3/<b>:id+filename</b>/square/375,/45/bitonal.jpg</div>
 
-  <h2><a name="overview-ratelimits">Rate Limiting</a></h2>
-  <p>
-    For the API v1 (alpha) API, no rate limiting is in effect -- we
-    are operating on a trust model. For the stable v1 release,
-    unauthenticated requests will be limited to 2,000 per hour. When
-    this change comes into effect, you will be able to check the
-    returned HTTP headers of any API request to see your current rate
-    limit status:
-  </p>
+    <p>See the <a href="https://iiif.io/api/image/3.0/#4-image-requests">Image API section on "Image Requests"</a> for more details on how images can be manipulated and specific sizes or sections retrieved.</p>
 
-  <pre><code>
-  $ curl -i {{ request.url_root }}platowithenglish04platuoft
+    <p>IIIF Image Viewers read something called an "info.json" file, which lets them know how to process the image for deep zooming.</p>
 
-  HTTP/1.1 200 OK
-  Date: Tue, 22 Sep 2015 08:07:27 GMT
-  Status: 200 OK
-  X-RateLimit-Limit: 2000
-  X-RateLimit-Remaining: 1999
-  X-RateLimit-Reset: 1372700873
-  </pre></code>
+    <p>As a convenience, for a single-image Internet Archive item you can find a redirect to the info.json via the following template:</p>
+    <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/info.json</div>
 
-  <table>
-    <thead>
-      <tr>
-	<th>Header Name</th>
-	<th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-	<td><code>X-RateLimit-Limit</code></td>
-	<td>The maximum number of requests that the consumer is permitted to make per hour.</td>
-      </tr>
-      <tr>
-	<td><code>X-RateLimit-Remaining</code></td>
-	<td>The number of requests remaining in the current rate limit window.</td>
-      </tr>
-      <tr>
-	<td><code>X-RateLimit-Reset</code></td>
-	<td>The time at which the current rate limit window resets in <a href="http://en.wikipedia.org/wiki/Unix_time">UTC epoch seconds</a>.</td>
-      </tr>
-    </tbody>
-  </table>
+<h4>Example</h4>
+<p>Take the following item as an example: <a href="https://archive.org/details/img-8664_202009">https://archive.org/details/img-8664_202009</a>. </p>
 
-  <p>
-    For more information, refer to
-    github's <a href="https://developer.github.com/guides/traversing-with-pagination/">Traversing
-    With Pagination</a> documentation, as pagination for our interface
-    is modeled after their service.
-  </p>
+<p>In this case, <b>img-8664_202009</b> is the item ID. </p>
+
+<p>To get the filename you can go to "Show all" in the "Download Options" box. This will show you a list of links to the various files associated with an item. Taking the jpg link for this item, you get the following URL: https://archive.org/download/img-8664_202009/IMG_8664.jpg </p>
+
+<p>Here, <b>IMG_8664.jpg</b> is the filename.</p>
+
+<p>In order to get the :id+filename the way you need it for the IIIF Image API info.json, you can combine the ID and filename with a URL encoded slash, i.e. %2f.</p>
+
+<p>So for this image, the info.json would be:</p>
+<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2fIMG_8664.jpg/info.json</div>
+<p>And the full URL for the image would be:</p>
+<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2fIMG_8664.jpg/full/max/0/default.jpg</div>
+<p>A cropped portion at the full resolution can be requested like this:</p>
+<div class="request">https://iiif.archive.org/image/iiif/3/img-8664_202009%2fIMG_8664.jpg/<b>1100,904,704,664</b>/max/0/default.jpg</div>
+<p>Where "1100,904,704,664" in that URL stands for 1100 pixels from the left edge, 904 pixels from the bottom edge, 704 pixels is the width of the desired section, and 664 pixels is the height.</p>
+
+
+<p>Because it can be time-consuming to manually generate the IIIF Image API URLs, we recommend a IIIF helper tool that can help you identify the Image API URLs for a corresponding IA item. One such tool is Glen Robson's <a href="https://glenrobson.github.io/CanvasFinder/">Canvas Finder</a>, which takes as input a <a href="#retrieving-manifests">Manifest URL</a> (see below for how to find that) and returns links to the images associated with the manifest.</p>
+
+<p>More image tools can be found via the community supported <a href="https://github.com/IIIF/awesome-iiif/#image-tools">Awesome IIIF list</a>.</p>
 
 </section>
 

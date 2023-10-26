@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IIIF Image and Presentation API Helper</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" type="text/css" href="{{ request.url_root}}static/styles/docs.css" media="all"/>
+
+  </head>
+  <body>
+    <header>
+      <img class="center" src="{{ request.url_root }}static/images/ia.png"/>
+    </header>
+    <div id="container">
+
+<h1>IIIF Presentation API Helper</h1>
+
+<p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
+
+<p>The IA identifier is: {{ identifier }}</p>
+
+<p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json</a></p>
+
+<p>The material type of the item you're requested is not a recognized material type for IIIF viewers.</p>
+
+    </body>
+</html>

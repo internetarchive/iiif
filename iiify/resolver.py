@@ -425,6 +425,28 @@ def create_manifest3(identifier, domain=None, page=None):
                     #                            id=f"https://iiif.archivelab.org/iiif/{identifier}${pageCount}/canvas",
                     #                            label=f"{page['leafNum']}")
                     pageCount += 1
+    
+
+            # Setting logic for paging behavior and starting canvases
+            # Start with paged (default) or individual behaviors
+            try:
+                if bookreader['data']['brOptions']['defaults'] == "mode/1up":
+                    manifest.behavior = "individuals"
+            except:
+                manifest.behavior = "paged"
+
+            # Then set left-to-right or right-to-left if present
+            try:
+                if bookreader['data']['brOptions']['pageProgression'] == "lr":
+                    viewingDirection = "left-to-right"
+                elif bookreader['data']['brOptions']['pageProgression'] == "rl":
+                    viewingDirection = "right-to-left"
+                if viewingDirection:
+                    manifest.viewingDirection = viewingDirection
+            except:
+                pass
+
+
     elif mediatype == 'image':
         singleImage(metadata, identifier, manifest, uri)
     elif mediatype == 'audio' or mediatype == 'etree':
@@ -458,7 +480,7 @@ def create_manifest3(identifier, domain=None, page=None):
                 for format in ['VBR MP3', '32Kbps MP3', '56Kbps MP3', '64Kbps MP3', '96Kbps MP3', '128Kbps MP3', 'MPEG-4 Audio', 'Flac', 'AIFF', 'Apple Lossless Audio', 'Ogg Vorbis', 'WAVE', '24bit Flac', 'Shorten']:
                     if format in derivatives[file['name']]:
                         r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
-                                         type='Audio',
+                                         type='Sound',
                                          format=to_mimetype(format),
                                          label={"none": [format]},
                                          duration=float(file['length']))
@@ -466,7 +488,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     elif file['format'] == format:
                         r = ResourceItem(
                             id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
-                            type='Audio',
+                            type='Sound',
                             format=to_mimetype(format),
                             label={"none": [format]},
                             duration=float(file['length']))

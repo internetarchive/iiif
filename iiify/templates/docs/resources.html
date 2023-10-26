@@ -13,26 +13,25 @@
   <section>
     <h2><a name="resources-listing">Listing Items</a></h2>
     <p>
-      Querying the root of the Internet Archive IIIF v1 (alpha) server
-      results in a list of all publicly available and compatible image
-      and book items. Some items which are indexed in our search
+      Querying the root of the Internet Archive IIIF API
+      results in a list of all publicly available items. Some items which are indexed in our search
       engine but do have no associated content files will result in an
-      Internal Server Error. You can confirm whether the resource
+      Internal Server Error. There are also a small number of items returned that do not have material types associted with them that are IIIF compatible. You can confirm whether the resource
       actually exists or not by visiting the item's /details page on
-      archive.org. In the official v1 release, the message displayed
-      for this error will be clarified.
+      archive.org.
     </p>
 
     <pre><code>
-  $ curl -i "{{ request.url_root }}"
+  $ curl -i "{{ request.url_root }}iiif"
 
-  HTTP/1.1 200 OK
-  Server: nginx/1.4.6 (Ubuntu)
-  Date: Tue, 22 Sep 2015 08:07:27 GMT
-  Content-Type: application/json
-  Content-Length: 21307
-  Connection: keep-alive
-  Cache-Control: max-age=5
+  HTTP/2 200 
+  alt-svc: h3=":443"; ma=2592000
+  cache-control: max-age=900
+  content-type: application/json
+  date: Tue, 15 Aug 2023 14:41:49 GMT
+  server: Caddy
+  server: nginx/1.23.2
+  content-length: 122082
 
   []
     </code></pre>
@@ -42,47 +41,69 @@
     <h2><a name="resources-types">Item Types</a></h2>
     <p>
       Items available through the this service include Images, Books,
-      Book Pages. This includes any item on archive.org which has a
-      `mediatype` of `texts` or `image` which can be verified through
+      Audio, and Movie materials. This means any item on archive.org which has a
+      `mediatype` of `texts`, `image`, `audio`, or `movie`, which can be verified through
       the <a href="https://blog.archive.org/2013/07/04/metadata-api/">metadata
-      API</a>.
-    </p>
+      API</a>.</p>
 
-    <h3>Supported Image Formats</h3>
-    <p>
-      The image formats available for a given item is determine by the
-      item's files on archive.org. To see what formats are available for an item, go to
-      https://archive.org/metadata/:itemid/files.
-    </p>
-    <p>
-      The API is capable of interfacing with jp2 (openjpeg), gif, jpg, tiff, png.
-    </p>
+      <p>There are some edge cases where rare file types are not represented in the IIIF presentation manifest. If you encounter an item where you think this may be the case, contact <a href="mailto:support@archive.org">support</a>.</p>
+    
   </section>
 
+<section>
+    <h2><a name="retrieving-manifests">Retrieving manifests for items</a></h2>
+
+    <p>Every Internet Archive item has a "details" page that is the main page for that item.</p>
+    <p>
+     The "details" page will have the word "details" in the URL, like in this example: 
+      <pre><a href="https://archive.org/details/img-8664_202009">https://archive.org/details/img-8664_202009</a></pre>
+      
+    <p>What you'll need to get the IIIF manifest for any Internet Archive item is the identifier, which is the alphanumeric part of the URL that follows the "/details/" part. </p>
+
+    <p>So, from our example just above, the Internet Archive identifier for that item is: <pre>img-8664_202009</pre></p>
+
+    <p>To then get the IIIF manifest, plug in the ID to the following template:</p>
+    <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/manifest.json</div>
+
+    <p>For the example above, the final IIIF manifest URL would be:</p>
+    <div class="request">https://iiif.archive.org/iiif/img-8664_202009/manifest.json</div>
+
+
+  </section>
+
+<section>
+  <h2><a name="resources-collections"></a>Getting IIIF collection manifests</h2>
+
+  <p>More than one IIIF manifests can be formally grouped into what is called a "collection" manifest.</p>
+
+  <p>On archive.org, a collection is a group of item pages organized under a collections page. For convenience, we've create a route that generates a IIIF collection manfiest for all of the collections on the Internet Archive. For more on how collections work, see <a href="https://help.archive.org/help/collections-a-basic-guide/">the "Collections - A Basic Guide" page</a>.</p>
+
+  <p>As with the manifests above, you'll need the Internet Archive identifier for the colllection. Here's an example collection page from the University of Leeds:</p>
+  <pre><a href="https://archive.org/details/leedsuniversitylibrary">ttps://archive.org/details/leedsuniversitylibrary</a></pre>
+
+  <p>In this case, the id is:</p>
+<pre>leedsuniversitylibrary</pre>
+
+    <p>To then get the IIIF collection manifest, plug in the ID to the following template:</p>
+    <div class="request">https://iiif.archive.org/iiif/<b>:id</b>/collection.json</div>
+
+    <p>For the Leeds example above, the final IIIF collection manifest URL would be:</p>
+    <div class="request">https://iiif.archive.org/iiif/leedsuniversitylibrary/collection.json</div>
+
+</section>
+
+
   <section>
-    <h2><a name="resources-viewing">Viewing Images</a></h2>
+    <h2><a name="resources-viewing">Getting the info.json for an image</a></h2>
     <p>
       Documentation In progress.
     </p>
   </section>
 
-  <section>
-    <h2><a name="resources-tiles">Producing Tiles</a></h2>
-    <p>
-      Documentation In progress.
-    </p>
-  </section>
+<section>
+  <h2><a name="resources-legacy"></a>Getting legacy IIIF Presentation 2.1 manfiests</h2>
+</section>
 
-  <section>
-    <h2><a href="resources-metadata">IIIF Manifests &amp; Metadata</a></h2>
-    <p>
-      Documentation In progress.
-    </p>
-
-    <pre><code>
-
-    </code></pre>
-  </section>
 
 </article>
 </hr>

@@ -1,107 +1,29 @@
 <article id="introduction" class="hiddenz">
-  <h1>Introduction</h1>
-  <p>
-    For those newly aquainted with the IIIF specification, this
-    introduction describes the purpose and applications of
-    <a href="https://iiif.io">IIIF</a> and the Internet Archive's IIIF
-    Service.
-  </p>
+  <h1 id="intro">Introduction</h1>
+  
+  <p><a href="https://iiif.io">IIIF</a> stands for the International Image Interoperability Framework.</p>
 
-  <ol type="i" class="toc">
-    <li><a href="">What is IIIF?</a></li>
-    <li><a href="">Importance</a></li>
-    <li><a href="">Deploying a IIIF Service</a></li>
-  </ol>
+  <p>
+    This introduction describes the way that the IIIF standards have been applied to the Internet Archive's services.
+  </p>
 
   <section>
     <h2><a name="intro-iiif">What is IIIF?</a></h2>
     <p>
-      <a href="https://iiif.io">IIIF</a> (the "International Image
-      Interoperability Framework") is a collection of web standards for
-      manipulating and serving image resources (Image API), as well as
-      structuring collections of these images (Presentation API).
+      IIIF is a set of open standards for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs in various contexts. IIIF is backed by a consortium of leading cultural institutions. For more details and examples, check out the <a href="https://iiif.io">IIIF website</a>, or the <a href="https://iiif.io/api">full API specifications</a>.
+    </p>
+    <p>For a very high-level overview see <a href="https://iiif.io/get-started/how-iiif-works/">"How IIIF Works"</a> published by the IIIF Consortium.</p>
+
+    <h2><a name="intro-importance">Why?</a></h2>
+    <p>
+      The goal of IIIF is interoperability: to make an
+      institution's image and audio/visual openly accessible resources available and easily reusable in a variety of web viewers and players, often open source, without the need for any special plugins or software.
     </p>
 
-    <h3>Image API</h3>
-    <p>
-      The <a href="http://iiif.io/api/image/2.0/">Image API</a> is an
-      interface capable of producing and serving arbitrary tiles of
-      arbitrary regions of an image (like Google Maps). The properties
-      of these image tiles are specified within a URL, allowing
-      permenant citation and retrieval at a later time
-      (see <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a>).
-      The Image API supports and powers other computer applications
-      (like <a href="https://openseadragon.github.io/">zoomable image
-	viewers</a>
-      and <a href="http://universalviewer.azurewebsites.net/">book
-	readers</a>).
-    </p>
+    <p>Fore more about how the goals of interoperability fit with the Internet Archive's mission, see our <a href="https://blog.archive.org/2023/09/18/making-iiif-official-at-the-internet-archive/">Making IIIF Official at the Internet Archive</a> announcement.</p>
 
-    <h3>Presentation API</h3>
-    <p>
-      The <a href="http://iiif.io/api/presentation/2.0/">Presentation
-	API</a> allows institutions to publish and consume metadata about
-      collections and sequences of image resources, called Manifests.  A
-      Manifest may be composed of resources from any number of different
-      institutions serving their images in IIIF format.
-    </p>
-
-    <p>
-      For more information, read about IIIF's
-      goals <a href="http://universalviewer.azurewebsites.net/">here</a>.
-    </p>
-    
-    <h2><a name="intro-importance">Importance</a></h2>
-    <p>
-      At its essence, the goal of IIIF is interoperability: to make an
-      institution's image resources available and accessible to web
-      applications and clients running on other domains.
-    </p>
-
-    <p>
-      The <a href="{{ request.url_root }}">Internet Archive IIIF API
-	v1</a>
-      (<a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha">alpha</a>)
-      is
-      a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">RESTful</a> 
-      <a href="https://en.wikipedia.org/wiki/Web_service">web
-	service</a> which implements IIIF (Image API &amp; Presentation
-      API) and provides a mechanism for accessing all of the Archive's
-      images and books in IIIF format. Every image item in the Archive
-      now has has a corresponding info.json and every book a
-      manifest.json. This means, you can seamlessly view any Archive.org
-      image or book in any interface compatible with IIIF (such as
-      OpenSeadragon, Mirador, and the Universal Viewer) and also enjoy
-      the enhancements they provide (annotation, side-by-size viewing,
-      and loading images from different institutions into the same
-      space).
-    </p>
-
-    <p>
-      The service also provides a mechanism for producing permanantly
-      citeable image tiles of any arbitrary region of any image or book
-      found in the Internet Archive.
-    </p>
   </section>
 
-  <section>
-    <h2>Deploying a IIIF Service</h2>
-    <p>
-      The Internet Archive IIIF API v1 (alpha) is built using
-      Python3.4 <a href="https://pypi.python.org/pypi/Flask">Flask</a>
-      web application framework and
-      the <a href="https://pypi.python.org/pypi/iiif2">iiif2</a>
-      library. The source code
-      for <a href="iiif.archive.org">iiif.archive.org</a> is publicly
-      available <a href="https://github.com/mekarpeles/iiif.archive.org">here</a>,
-      as is the source of
-      the <a href="pypi.python.org/pypi/iiif2">iiif2</a> image
-      processing
-      library <a href="https://github.com/mekarpeles/iiif2">here</a>. For
-      questions on implementing a service,
-      contact <a href="mailto:support@archive.org">support@archive.org</a>.
-    </p>
-  </section>
 </article>
 
 <hr/>
