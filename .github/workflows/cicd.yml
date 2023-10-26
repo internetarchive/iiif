@@ -20,12 +20,12 @@ jobs:
           NOMAD_VAR_COUNT_CANARIES: 0
           # NOMAD_VAR_CHECK_TIMEOUT: '10m'
           NOMAD_VAR_HOSTNAMES: '["iiif.ux-fnf-misc.archive.org"]'
-          NOMAD_VAR_PORTS: '{8080 = "http"}'
+          NOMAD_VAR_PORTS: '{8080 = "http", 8182 = "cantaloupe"}'
           NOMAD_VAR_FORCE_PULL: 'true'
   deploy:
     environment:
       name: development
-      url: https://archivelabs-iiif-archivelab-org-${{ env.BRANCH_NAME }}.ux-fnf-misc.archive.org
+      url: https://internetarchive-iiif-${{ env.BRANCH_NAME }}.ux-fnf-misc.archive.org
     runs-on: ubuntu-latest
     needs: cicd
     steps:

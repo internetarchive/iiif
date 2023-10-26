@@ -1,0 +1,51 @@
+<article id="resources" class="hiddenz">
+  <h1 id="appendix">Appendix</h1>
+
+<section>
+  <h2><a name="resources-legacy"></a>Getting legacy IIIF Presentation API 2.1 manifests</h2>
+    
+    <p>To get the older Presentation API 2.1 IIIF manifest, plug in the ID to the following template:</p>
+    <div class="request">https://iiif.archive.org/iiif/2/<b>:id</b>/manifest.json</div>
+</section>
+
+<section>
+    <h2><a name="resources-listing">Listing all items</a></h2>
+    <p>
+      Querying the root of the Internet Archive IIIF API
+      results in a list of all publicly available items. Some items which are indexed in our search
+      engine but do have no associated content files will result in an
+      Internal Server Error. There are also a small number of items returned that do not have material types associated with them that are IIIF compatible. You can confirm whether the resource
+      actually exists or not by visiting the item's /details page on
+      archive.org.
+    </p>
+
+   <div class="request">https://iiif.archive.org/iiif</div>
+
+  </section>
+
+
+  <section>
+    <h2><a name="helpers">Helpers for various media types</a></h2>
+    <p>
+      To give you a sense of how different media types on the Internet Archive can be used in IIIF viewers, we've created a set of item "helpers" that provide some useful iformation and links.
+    </p>
+    <p>The pattern for these helper pages is as follows:</p>
+   <div class="request">https://iiif.archive.org/iiif/helper/<b>:id</b> </div>
+
+<p>So, for example, the helper page for <a href="https://archive.org/details/img-8664_202009">a single image item</a> with item id <b>img-8664_202009</b> would be the following:</p>
+<div class="request">https://iiif.archive.org/iiif/helper/img-8664_202009</div>
+
+<p>The helper page for this <a href="https://archive.org/details/youtube-7w8F2Xi3vFw">movie item</a> with item id <b>youtube-7w8F2Xi3vFw</b> would be the following:</p>
+<div class="request">https://iiif.archive.org/iiif/helper/youtube-7w8F2Xi3vFw</div>
+
+<p>Not all media types on the Internet Archive have files that are playable in IIIF viewers, but the helper pages should work for images, texts, audio, and movie items.</p>
+<br>
+<br>
+<br>
+<br>
+
+
+
+  </section>
+</article>
+</hr>

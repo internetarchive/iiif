@@ -2,14 +2,17 @@
 import hashlib
 import os
 import time
+import requests
 from flask import Flask, send_file, jsonify, abort, request, render_template, redirect
 from flask_cors import CORS
 from flask_caching import Cache
 from iiif2 import iiif, web
 from .resolver import ia_resolver, create_manifest, create_manifest3, getids, collection, \
-    purify_domain, cantaloupe_resolver, create_collection3
+    purify_domain, cantaloupe_resolver, create_collection3, IsCollection
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
+from urllib.parse import quote
+
 
 app = Flask(__name__)
 # disabling sorting of the output json
@@ -19,6 +22,7 @@ app.config['CACHE_DIR'] = "cache"
 cors = CORS(app) if cors else None
 cache = Cache(app)
 
+ARCHIVE = 'http://archive.org'
 
 # cache.init_app(app)
 
@@ -44,6 +48,10 @@ def cache_bust():
         return True
     return False
 
+@app.route('/')
+def mainentry():
+  return redirect('/iiif/')
+
 
 @app.route('/iiif/')
 def index():
@@ -51,6 +59,7 @@ def index():
     cursor = request.args.get('cursor', '')
     q = request.args.get('q', '')
     return jsonify(getids(q, cursor=cursor))
+
 
 
 @app.route('/iiif/collection.json')
@@ -77,6 +86,29 @@ def demo():
 def documentation():
     return render_template('docs/index.html', version=version)
 
+@app.route('/iiif/helper/<identifier>/')
+def helper(identifier):
+    domain = purify_domain(request.args.get('domain', request.url_root))
+    metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+    mediatype = metadata['metadata']['mediatype']
+
+    if mediatype == "image":
+        try:
+            cantaloupe_id = cantaloupe_resolver(identifier)
+            esc_cantaloupe_id = quote(cantaloupe_id)
+            return render_template('helpers/image.html', identifier=identifier, cantaloupe_id=cantaloupe_id, esc_cantaloupe_id=esc_cantaloupe_id)
+        except ValueError:
+            abort(404)
+        
+    elif mediatype == "audio" or mediatype == "etree":
+        return render_template('helpers/audio.html', identifier=identifier)
+    elif mediatype == "movies":
+        return render_template('helpers/movies.html', identifier=identifier)
+    elif mediatype == "texts":
+        return render_template('helpers/texts.html', identifier=identifier)
+    else: 
+        return render_template('helpers/unknown.html', identifier=identifier)
+         
 
 @app.route('/iiif/<identifier>')
 def view(identifier):
@@ -130,6 +162,18 @@ def collection3page(identifier, page):
         raise excpt
 
 
+@app.route('/iiif/<identifier>/collection.json')
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+def collection(identifier):
+    return redirect(f'/iiif/3/{identifier}/collection.json', code=302)
+
+
+@app.route('/iiif/<identifier>/<page>/collection.json')
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+def collectionPage(identifier, page):
+    return redirect(f'/iiif/3/{identifier}/{page}/collection.json', code=302)
+
+
 @app.route('/iiif/3/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest3(identifier):
@@ -138,6 +182,9 @@ def manifest3(identifier):
 
     try:
         return ldjsonify(create_manifest3(identifier, domain=domain, page=page))
+    except IsCollection:
+        # raised when mediatype is a collection so we can redirect
+        return redirect(f'/iiif/3/{identifier}/collection.json', code=302)
     except Exception as excpt:
         print('Exception occured in manifest3:')
         print(excpt)
