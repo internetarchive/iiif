@@ -104,6 +104,22 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(manifest['provider'][0]['homepage'][0]['id'] == "https://archive.org", True, f"Expected 'https://archive.org' but got {manifest['provider'][0]['id']}")
         self.assertEqual(manifest['provider'][0]['logo'][0]['id'] == "https://archive.org/images/glogo.png", True, f"Expected logo URI but got {manifest['provider'][0]['logo'][0]['id']}")
 
+    def test_page_behavior(self):
+        resp = self.test_app.get("/iiif/3/rbmsbk_ap2-v4_2001_V55N4/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        self.assertEqual(len(manifest['items']),116,f"Expected 116 canvas but got: {len(manifest['items'])}")
+        self.assertEqual(manifest['viewingDirection'],"left-to-right",f"Expected 'left-to-right' canvas but got: {manifest['viewingDirection']}")
+        self.assertEqual(manifest['behavior'][0],"paged",f"Expected 'paged' but got: {manifest['behavior'][0]}")
+
+    def test_page_behavior_r_to_l(self):
+        resp = self.test_app.get("/iiif/3/nybc314063/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        self.assertEqual(len(manifest['items']),544,f"Expected 544 canvas but got: {len(manifest['items'])}")
+        self.assertEqual(manifest['viewingDirection'],"right-to-left",f"Expected 'right-to-left' canvas but got: {manifest['viewingDirection']}")
+        self.assertEqual(manifest['behavior'][0],"paged",f"Expected 'paged' but got: {manifest['behavior'][0]}")
+
     def test_escape_cantaloupe_urls(self):
         resp = self.test_app.get("/iiif/3/0-._20211206/manifest.json")
         self.assertEqual(resp.status_code, 200)
