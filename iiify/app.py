@@ -15,7 +15,7 @@ app = Flask(__name__)
 # disabling sorting of the output json
 app.config['JSON_SORT_KEYS'] = False
 app.config['CACHE_TYPE'] = "FileSystemCache"
-app.config['CACHE_DIR'] = "cache"
+app.config['CACHE_DIR'] = "/tmp/cache"
 cors = CORS(app) if cors else None
 cache = Cache(app)
 
