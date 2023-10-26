@@ -416,7 +416,7 @@ destination = "local/cantaloupe.properties"
 }
 
   resources {
-    cpu = 8000
+    cpu = 8192
     memory = 4096
   }
 }
