@@ -206,7 +206,9 @@ def manifest2(identifier):
         page = int(page)
     try:
         return ldjsonify(create_manifest(identifier, domain=domain, page=page))
-    except:
+    except Exception as excpt:
+        print("Exception occurred in manifest2:")
+        print(excpt)
         abort(404)
 
 
@@ -232,7 +234,7 @@ def add_header(response):
 
 def ldjsonify(data):
     j = jsonify(data)
-    j.headers.set('Access-Control-Allow-Origin', '*')
+    # j.headers.set('Access-Control-Allow-Origin', '*')
     j.mimetype = "application/ld+json"
     return j
 
