@@ -41,7 +41,7 @@ if CRT and KEY:
 
 # Enable CORS to allow cross-domain loading of tilesets from this server
 # Especially useful for SeaDragon viewers running locally
-cors = bool(int(config.getdef('server', 'cors', 0)))
+cors = bool(int(config.getdef('server', 'cors', 1)))
 
 iiif_domain = config.getdef('server', 'domain', 'https://iiif.archivelab.org')
 media_root = config.getdef('media', 'root', 'media')

@@ -232,7 +232,7 @@ def add_header(response):
 
 def ldjsonify(data):
     j = jsonify(data)
-    j.headers.set('Access-Control-Allow-Origin', '*')
+    # j.headers.set('Access-Control-Allow-Origin', '*')
     j.mimetype = "application/ld+json"
     return j
 
