@@ -19,6 +19,6 @@ class TestManifests(unittest.TestCase):
 
 
     def test_text_which_is_image(self):
-        resp = self.test_app.get("/iiif/2/z-2-2-18-14-9/manifest.json")    
+        resp = self.test_app.get("/iiif/2/fbf_3chords_1_/manifest.json")
 
         self.assertEqual(resp.status_code, 200)
