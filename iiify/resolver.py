@@ -48,7 +48,7 @@ def checkMultiItem(metadata):
                 file_types[file['format']] = 0
 
             file_types[file['format']] += 1
-    print (file_types)        
+    #print (file_types)        
 
     # If there is multiple files of the same type then return the first format
     # Will have to see if there are objects with multiple images and formats
@@ -472,9 +472,7 @@ def create_manifest3(identifier, domain=None, page=None):
 
     elif mediatype == 'image':
         (multiFile, format) = checkMultiItem(metadata)
-        print (f"Checking multiFile {multiFile} {format}")
-        # st-anthony-relics-01%2fAuronzo-ComuneCortina.jpeg
-        # st-anthony-relics-01%2FStAnthony-Relics_01.jpeg
+        #print (f"Checking multiFile {multiFile} {format}")
         if multiFile:
             # Create multi file manifest
             for file in metadata['files']:
