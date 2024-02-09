@@ -150,6 +150,11 @@ class TestManifests(unittest.TestCase):
         manifest = resp.json
         self.assertEqual(len(manifest['items']),3, f"Expected three canvases, but got {len(manifest['items'])}")
 
+    def test_multi_file(self):
+        resp = self.test_app.get("/iiif/3/st-anthony-relics-01/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        self.assertEqual(len(manifest['items']),5, f"Expected five canvases, but got {len(manifest['items'])}")
 
 
 ''' to test:
