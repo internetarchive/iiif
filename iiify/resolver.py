@@ -48,6 +48,7 @@ def checkMultiItem(metadata):
                 file_types[file['format']] = 0
 
             file_types[file['format']] += 1
+    print (file_types)        
 
     # If there is multiple files of the same type then return the first format
     # Will have to see if there are objects with multiple images and formats
@@ -472,6 +473,8 @@ def create_manifest3(identifier, domain=None, page=None):
     elif mediatype == 'image':
         (multiFile, format) = checkMultiItem(metadata)
         print (f"Checking multiFile {multiFile} {format}")
+        # st-anthony-relics-01%2fAuronzo-ComuneCortina.jpeg
+        # st-anthony-relics-01%2FStAnthony-Relics_01.jpeg
         if multiFile:
             # Create multi file manifest
             for file in metadata['files']:
@@ -479,11 +482,18 @@ def create_manifest3(identifier, domain=None, page=None):
                     imgId = f"{identifier}/{file['name']}".replace('/','%2f')
                     imgURL = f"{IMG_SRV}/3/{imgId}"
                     
-                    manifest.make_canvas_from_iiif(url=imgURL,
+                    try:
+                        manifest.make_canvas_from_iiif(url=imgURL,
                                                     id=f"{URI_PRIFIX}/{identifier}/canvas",
-                                                    label="1",
+                                                    label=f"{file['name']}",
                                                     anno_page_id=f"{uri}/annotationPage/1",
                                                     anno_id=f"{uri}/annotation/1")
+                    except requests.exceptions.HTTPError as error:
+                        print (f'Failed to get {imgURL}')
+                        manifest.make_canvas(label=f"Failed to load {file['name']} from Image Server",
+                                             summary=f"Got {error}",
+                                            id=f"{URI_PRIFIX}/{identifier}/canvas",
+                                            height=1800, width=1200)
         else:
             singleImage(metadata, identifier, manifest, uri)
     elif mediatype == 'audio' or mediatype == 'etree':
