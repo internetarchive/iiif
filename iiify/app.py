@@ -199,7 +199,7 @@ def manifest(identifier):
 
 @app.route('/iiif/2/<identifier>/manifest.json')
 def manifest2(identifier):
-    domain = "https://iiif.archivelab.org/iiif/"
+    domain = "https://iiif.archive.org/iiif/"
     page = None
     if '$' in identifier:
         identifier, page = identifier.split('$')
