@@ -3,13 +3,15 @@
 import os
 import requests
 from iiif2 import iiif, web
-from .configs import options, cors, approot, cache_root, media_root, apiurl
+from .configs import options, cors, approot, cache_root, media_root
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math 
 import re
 
+SCRAPE_API = 'https://archive.org/services/search/v1/scrape'
+ADVANCED_SEARCH = 'https://archive.org/advancedsearch.php?'
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
 ARCHIVE = 'http://archive.org'
@@ -18,6 +20,9 @@ METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contribut
 bookdata = 'http://%s/BookReader/BookReaderJSON.php'
 bookreader = "http://%s/BookReader/BookReaderImages.php"
 URI_PRIFIX = "https://iiif.archive.org/iiif"
+
+class MaxLimitException(Exception):
+    pass
 
 valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
 
@@ -29,13 +34,73 @@ def purify_domain(domain):
     domain = re.sub('^http:\/\/', "https://", domain)
     return domain if domain.endswith('/iiif/') else domain + 'iiif/'
 
-def getids(q, limit=1000, cursor=''):
-    r = requests.get('%s/iiif' % apiurl, params={
-        'q': q,
-        'limit': limit,
-        'cursor': cursor
-    }, allow_redirects=True, timeout=None)
+def getids(q, limit=1000, cursor='', page=1):
+        q = request.args.get('q', '')
+        query = "(mediatype:(texts) OR mediatype:(image))" + \
+                ((" AND %s" % q) if q else "")
+        fields = request.args.get('fields', '')
+        sorts = request.args.get('sorts', '')
+        cursor = request.args.get('cursor', '')
+        version = 'v2'
+
+        # 'all:1' also works
+        q = "NOT identifier:..*" + (" AND (%s)" % query if query else "")
+        if version == 'v2':
+            return scrape(query=q, fields=fields, sorts=sorts, count=limit,
+                        cursor=cursor)
+        return search(q, page=page, limit=limit)
+
+def scrape(query, fields="", sorts="", count=100, cursor="", security=True):
+    """
+    params:
+        query: the query (using the same query Lucene-like queries supported by Internet Archive Advanced Search.
+        fields: Metadata fields to return, comma delimited
+        sorts: Fields to sort on, comma delimited (if identifier is specified, it must be last)
+        count: Number of results to return (minimum of 100)
+        cursor: A cursor, if any (otherwise, search starts at the beginning)
+    """
+    if not query:
+        raise ValueError("GET 'query' parameters required")
+
+    if int(count) > 1000 and security:
+        raise MaxLimitException("Limit may not exceed 1000.")
+
+    #sorts = sorts or 'date+asc,createdate'
+    fields = fields or 'identifier,title'
+
+    params = {
+        'q': query
+    }
+    if sorts:
+        params['sorts'] = sorts
+    if fields:
+        params['fields'] = fields
+    if count:
+        params['count'] = count
+    if cursor:
+        params['cursor'] = cursor
+
+    r = requests.get(SCRAPE_API, params=params)
     return r.json()
+
+def search(query, page=1, limit=100, security=True, sort=None, fields=None):
+    if not query:
+        raise ValueError("GET query parameters 'q' required")
+
+    if int(limit) > 1000 and security:
+        raise MaxLimitException("Limit may not exceed 1000.")
+
+    sort = sort or 'sort%5B%5D=date+asc&sort%5B%5D=createdate'
+    fields = fields or 'identifier,title'
+    return requests.get(
+        ADVANCED_SEARCH + sort,
+        params={'q': query,
+                'rows': limit,
+                'page': page,
+                'fl[]': fields,
+                'output': 'json',
+            }).json()
+
 
 def to_mimetype(format):
     formats = {
