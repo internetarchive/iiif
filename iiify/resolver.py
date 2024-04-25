@@ -472,17 +472,19 @@ def create_manifest3(identifier, domain=None, page=None):
 
     elif mediatype == 'image':
         (multiFile, format) = checkMultiItem(metadata)
-        #print (f"Checking multiFile {multiFile} {format}")
+        print (f"Checking multiFile {multiFile} {format}")
         if multiFile:
             # Create multi file manifest
+            pageCount = 0
             for file in metadata['files']:
                 if file['source'] == "original" and file['format'] == format:
                     imgId = f"{identifier}/{file['name']}".replace('/','%2f')
                     imgURL = f"{IMG_SRV}/3/{imgId}"
+                    pageCount += 1
                     
                     try:
                         manifest.make_canvas_from_iiif(url=imgURL,
-                                                    id=f"{URI_PRIFIX}/{identifier}/canvas",
+                                                    id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
                                                     label=f"{file['name']}",
                                                     anno_page_id=f"{uri}/annotationPage/1",
                                                     anno_id=f"{uri}/annotation/1")
