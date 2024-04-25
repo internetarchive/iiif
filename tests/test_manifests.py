@@ -144,17 +144,21 @@ class TestManifests(unittest.TestCase):
         manifest = resp.json
         self.assertTrue(len(manifest['summary']['none']) > 1, f"Expected multiple summary values, but got {manifest['summary']['none']}")
 
-    def test_multi_file(self):
+    def test_multi_file_image(self):
         resp = self.test_app.get("/iiif/3/arkivkopia.se-lms-G70-48.3/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['items']),3, f"Expected three canvases, but got {len(manifest['items'])}")
 
+        firstCanvasId = manifest['items'][0]['id']
+        for i in range(1, len(manifest['items'])):
+            self.assertNotEqual(manifest['items'][i]['id'], firstCanvasId, 'Canvas Ids need to be unique')
+
     def test_multi_file(self):
         resp = self.test_app.get("/iiif/3/st-anthony-relics-01/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(len(manifest['items']),5, f"Expected five canvases, but got {len(manifest['items'])}")
+        self.assertEqual(len(manifest['items']),6, f"Expected five canvases, but got {len(manifest['items'])}")
 
 
 ''' to test:
