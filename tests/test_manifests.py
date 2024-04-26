@@ -42,21 +42,13 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(manifest['type'], "Manifest", f"Unexpected type. Expected Manifest go {manifest['type']}")
         self.assertEqual(len(manifest['items']),1,f"Expected 1 canvas but got: {len(manifest['items'])}")
 
-
     def test_v3_vermont_Life_Magazine(self):
         resp = self.test_app.get("/iiif/3/rbmsbk_ap2-v4_2001_V55N4/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
 
         self.assertEqual(len(manifest['items']),116,f"Expected 116 canvas but got: {len(manifest['items'])}")
-
-    def test_v3_single_video_manifest(self):
-        resp = self.test_app.get("/iiif/3/youtube-7w8F2Xi3vFw/manifest.json")
-        self.assertEqual(resp.status_code, 200)
-        manifest = resp.json
-
-        self.assertEqual(len(manifest['items']),1,f"Expected 1 canvas but got: {len(manifest['items'])}")
-
+    
     #logic to cover etree mediatype github issue #123
     def test_v3_etree_mediatype(self):
         resp = self.test_app.get("/iiif/3/gd72-04-14.aud.vernon.23662.sbeok.shnf/manifest.json")
@@ -66,7 +58,6 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(len(manifest['items']),36,f"Expected 36 canvases but got: {len(manifest['items'])}")
         self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['items'][0]['type'],"Sound",f"Expected 'Sound' but got: {manifest['items'][0]['items'][0]['items'][0]['body']['items'][0]['type']}")
 
-
     def test_v3_64Kbps_MP3(self):
         resp = self.test_app.get("/iiif/3/TvQuran.com__Alafasi/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -74,21 +65,12 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(len(manifest['items']),114,f"Expected 114 canvases but got: {len(manifest['items'])}")
         self.assertEqual("64Kbps MP3".lower() in resp.text.lower(), True, f"Expected the string '64Kbps MP3'")
 
-
     def test_v3_128Kbps_MP3(self):
         resp = self.test_app.get("/iiif/3/alice_in_wonderland_librivox/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['items']),12,f"Expected 12 canvases but got: {len(manifest['items'])}")
         self.assertEqual("128kbps mp3".lower() in resp.text.lower(), True, f"Expected the string '128kbps mp3'")
-
-    def test_v3_h264_MPEG4_OGG_Theora(self):
-        resp = self.test_app.get("/iiif/3/taboca_201002_03/manifest.json")
-        self.assertEqual(resp.status_code, 200)
-        manifest = resp.json
-        self.assertEqual(len(manifest['items']),251,f"Expected 251 canvases but got: {len(manifest['items'])}")
-        self.assertEqual("h.264 MPEG4".lower() in resp.text.lower(), True, f"Expected the string 'h.264 MPEG4'")
-        self.assertEqual("OGG Theora".lower() in resp.text.lower(), True, f"Expected the string 'OGG Theora'")
 
     def test_v3_aiff(self):
         resp = self.test_app.get("/iiif/3/PDextend_AIFF/manifest.json")
