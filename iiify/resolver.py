@@ -38,6 +38,28 @@ def getids(q, limit=1000, cursor=''):
     }, allow_redirects=True, timeout=None)
     return r.json()
 
+def checkMultiItem(metadata):    
+    # Maybe add call to book stack to see if that works first
+
+    # Count the number of each original file
+    file_types = {}
+    for file in metadata['files']:
+        if file['source'] == "original":
+            if file['format'] not in file_types:
+                file_types[file['format']] = 0
+
+            file_types[file['format']] += 1
+    #print (file_types)        
+
+    # If there is multiple files of the same type then return the first format
+    # Will have to see if there are objects with multiple images and formats
+    for format in file_types:
+        if file_types[format] > 1 and format.lower() in valid_filetypes:        
+            return (True, format)
+
+    return (False, None)
+
+
 def to_mimetype(format):
     formats = {
         "VBR MP3": "audio/mp3",
@@ -363,7 +385,6 @@ def addMetadata(item, identifier, metadata, collection=False):
 
     item.metadata = manifest_metadata
 
-
 def addSeeAlso(manifest, identifier, files):
 
     mimetypes.add_type("application/gzip", ".gz")
@@ -415,7 +436,6 @@ def addRendering(manifest, identifier, files):
                  "label": {"en": [file["format"]]},
                  "format": mimetypes.guess_type(file["name"])[0]
                  })
-
 
 def create_manifest3(identifier, domain=None, page=None):
     # Get item metadata
@@ -504,7 +524,31 @@ def create_manifest3(identifier, domain=None, page=None):
 
 
     elif mediatype == 'image':
-        singleImage(metadata, identifier, manifest, uri)
+        (multiFile, format) = checkMultiItem(metadata)
+        print (f"Checking multiFile {multiFile} {format}")
+        if multiFile:
+            # Create multi file manifest
+            pageCount = 0
+            for file in metadata['files']:
+                if file['source'] == "original" and file['format'] == format:
+                    imgId = f"{identifier}/{file['name']}".replace('/','%2f')
+                    imgURL = f"{IMG_SRV}/3/{imgId}"
+                    pageCount += 1
+                    
+                    try:
+                        manifest.make_canvas_from_iiif(url=imgURL,
+                                                    id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
+                                                    label=f"{file['name']}",
+                                                    anno_page_id=f"{uri}/annotationPage/1",
+                                                    anno_id=f"{uri}/annotation/1")
+                    except requests.exceptions.HTTPError as error:
+                        print (f'Failed to get {imgURL}')
+                        manifest.make_canvas(label=f"Failed to load {file['name']} from Image Server",
+                                             summary=f"Got {error}",
+                                            id=f"{URI_PRIFIX}/{identifier}/canvas",
+                                            height=1800, width=1200)
+        else:
+            singleImage(metadata, identifier, manifest, uri)
     elif mediatype == 'audio' or mediatype == 'etree':
         # sort the files into originals and derivatives, splitting the derivatives into buckets based on the original
         originals = []
