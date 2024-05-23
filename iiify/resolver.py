@@ -4,11 +4,12 @@ import os
 import requests
 from iiif2 import iiif, web
 from .configs import options, cors, approot, cache_root, media_root, apiurl
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math 
 import re
+import xml.etree.ElementTree as ET
 
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
@@ -145,10 +146,13 @@ def create_collection3(identifier, domain, page=1, rows=1000):
 
     return json.loads(collection.jsonld())
     
-def manifest_page(identifier, label='', page='', width='', height='', metadata=None):
+def manifest_page(identifier, label='', page='', width='', height='', metadata=None, canvasId=""):
+    if not canvasId:
+        canvasId = f"{identifier}/canvas"
+
     metadata = metadata or {}
     return {
-        '@id': '%s/canvas' % identifier,
+        '@id': canvasId,
         '@type': 'sc:Canvas',
         '@context': PRZ_CTX,
         'description': metadata.get('description', ''),
@@ -234,7 +238,8 @@ def create_manifest(identifier, domain=None, page=None):
                 label=metadata['title'],
                 width=info['width'],
                 height=info['height'],
-                metadata=metadata
+                metadata=metadata,
+                canvasId= f"https://iiif.archivelab.org/iiif/{identifier}/canvas"
             )
         )
 
@@ -274,7 +279,8 @@ def create_manifest(identifier, domain=None, page=None):
                     label=metadata['title'],
                     width=info['width'],
                     height=info['height'],
-                    metadata=metadata
+                    metadata=metadata,
+                    canvasId= f"https://iiif.archivelab.org/iiif/{identifier}/canvas"
                 )
             )
         else:
@@ -293,7 +299,8 @@ def create_manifest(identifier, domain=None, page=None):
                         identifier = "%s%s$%s" % (domain, identifier, page),
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
-                        height=data['pageHeights'][page]
+                        height=data['pageHeights'][page],
+                        canvasId= f"https://iiif.archivelab.org/iiif/{identifier}${page}/canvas"
                     )
                 )
                 return manifest
@@ -304,7 +311,8 @@ def create_manifest(identifier, domain=None, page=None):
                         identifier = "%s%s$%s" % (domain, identifier, page),
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
-                        height=data['pageHeights'][page]
+                        height=data['pageHeights'][page],
+                        canvasId= f"https://iiif.archivelab.org/iiif/{identifier}${page}/canvas"
                     )
                 )
     return manifest
@@ -406,9 +414,12 @@ def create_manifest3(identifier, domain=None, page=None):
         # subprefix can be different from the identifier use the scandata filename to find the correct prefix
         # if not present fall back to identifier
         subprefix = identifier
+        djvuFile = ""
         for fileMd in metadata['files']:
             if fileMd['name'].endswith('_scandata.xml'):
                 subprefix = fileMd['name'].replace('_scandata.xml', '')
+            if fileMd['format'] == 'Djvu XML':    
+                djvuFile = fileMd['name']
 
         bookReaderURL = f"https://{metadata.get('server')}/BookReader/BookReaderJSIA.php?id={identifier}&itemPath={metadata.get('dir')}&server={metadata.get('server')}&format=jsonp&subPrefix={subprefix}"
 
@@ -469,7 +480,20 @@ def create_manifest3(identifier, domain=None, page=None):
             except:
                 pass
 
+        # Add annotations if djvu file is present
+        if djvuFile:
+            count = 1
+            for canvas in manifest.items:
+                if 'annotations' in canvas:
+                    annotations = canvas.annotations
+                else:
+                    annotations = []
 
+                annotations.append(
+                    AnnotationPageRef(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage")
+                )         
+                canvas.annotations = annotations
+                count += 1
     elif mediatype == 'image':
         (multiFile, format) = checkMultiItem(metadata)
         print (f"Checking multiFile {multiFile} {format}")
@@ -612,6 +636,44 @@ def create_manifest3(identifier, domain=None, page=None):
         print (f'Unknown mediatype "{mediatype}"')
 
     return json.loads(manifest.jsonld())
+
+def create_annotations(version, identifier, fileName, canvas_no, domain=None):
+    annotationPage = AnnotationPage(id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json")
+    annotationPage.items = []
+    index = int(canvas_no) - 1
+    url = f"{ARCHIVE}/download/{identifier}/{fileName}"
+    try:
+        # Fetch the remote XML file
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an error for bad status codes
+
+        # Parse the XML content
+        djfu = ET.fromstring(response.content)
+        page = djfu.findall(f".//OBJECT[{canvas_no}]")[0]
+        words = page.findall(".//WORD")
+        count = 1
+        for word in words:
+            annotationPage.items.append({
+                "id": f"https://iiif.archive.org/iiif/{identifier}/canvas/{index}/anno/{count}",
+                "type": "Annotation",
+                "motivation": "commenting",
+                "body": {
+                    "type": "TextualBody",
+                    "format": "text/plain",
+                    "value": word.text
+                },
+                "target": f"https://iiif.archive.org/iiif/{identifier}${index}/canvas#xywh={word.attrib['coords']}"
+            })
+            count += 1
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching the XML file: {e}")
+        raise ValueError("Failed to retrieve {url}")
+    except ET.ParseError as e:
+        print(f"Error parsing the XML content: {e}")
+        raise ValueError("Failed to process {url}")
+
+    return json.loads(annotationPage.jsonld())
 
 def coerce_list(value):
     if isinstance(value, list):
