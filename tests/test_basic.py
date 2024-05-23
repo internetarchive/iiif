@@ -1,3 +1,6 @@
+import os
+os.environ["FLASK_CACHE_DISABLE"] = "true"
+
 import unittest
 from flask.testing import FlaskClient
 from iiify.app import app
@@ -7,6 +10,7 @@ class TestBasic(unittest.TestCase):
 
     def setUp(self) -> None:
         self.test_app = FlaskClient(app)
+
 
     def test_documentation(self):
         resp = self.test_app.get("/iiif/documentation")
