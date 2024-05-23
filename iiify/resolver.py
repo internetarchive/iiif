@@ -9,6 +9,7 @@ from urllib.parse import urlparse, parse_qs, quote
 import json
 import math 
 import re
+import xml.etree.ElementTree as ET
 
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
@@ -406,9 +407,12 @@ def create_manifest3(identifier, domain=None, page=None):
         # subprefix can be different from the identifier use the scandata filename to find the correct prefix
         # if not present fall back to identifier
         subprefix = identifier
+        djvuFile = ""
         for fileMd in metadata['files']:
             if fileMd['name'].endswith('_scandata.xml'):
                 subprefix = fileMd['name'].replace('_scandata.xml', '')
+            if fileMd['format'] == 'Djvu XML':    
+                djvuFile = fileMd['name']
 
         bookReaderURL = f"https://{metadata.get('server')}/BookReader/BookReaderJSIA.php?id={identifier}&itemPath={metadata.get('dir')}&server={metadata.get('server')}&format=jsonp&subPrefix={subprefix}"
 
@@ -469,7 +473,21 @@ def create_manifest3(identifier, domain=None, page=None):
             except:
                 pass
 
+        # Add annotations if djvu file is present
+        if djvuFile:
+            count = 1
+            for canvas in manifest.items:
+                if 'annotations' in canvas:
+                    annotations = canvas.annotations
+                else:
+                    annotations = []
 
+                annotations.append({
+                    "id": f"{domain}3/annotations/{identifier}/{djvuFile}/{count}.json",
+                    "type": "AnnotationPage"
+                })         
+                canvas.annotations = annotations
+                count += 1
     elif mediatype == 'image':
         (multiFile, format) = checkMultiItem(metadata)
         print (f"Checking multiFile {multiFile} {format}")
@@ -612,6 +630,44 @@ def create_manifest3(identifier, domain=None, page=None):
         print (f'Unknown mediatype "{mediatype}"')
 
     return json.loads(manifest.jsonld())
+
+def create_annotations(version, identifier, fileName, canvas_no, domain=None):
+    annotationPage = AnnotationPage(id=f"{domain}{version}/annotations/{identifier}/{fileName}/{canvas_no}.json")
+    annotationPage.items = []
+    index = int(canvas_no) - 1
+    url = f"{ARCHIVE}/download/{identifier}/{fileName}"
+    try:
+        # Fetch the remote XML file
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an error for bad status codes
+
+        # Parse the XML content
+        djfu = ET.fromstring(response.content)
+        page = djfu.findall(f".//OBJECT[{canvas_no}]")[0]
+        words = page.findall(".//WORD")
+        count = 1
+        for word in words:
+            annotationPage.items.append({
+                "id": f"https://iiif.archive.org/iiif/{identifier}/canvas/{index}/anno/{count}",
+                "type": "Annotation",
+                "motivation": "supplementing",
+                "body": {
+                    "type": "TextualBody",
+                    "format": "text/plain",
+                    "value": word.text
+                },
+                "target": f"https://iiif.archive.org/iiif/{identifier}${index}/canvas#xywh={word.attrib['coords']}"
+            })
+            count += 1
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching the XML file: {e}")
+        raise ValueError("Failed to retrieve {url}")
+    except ET.ParseError as e:
+        print(f"Error parsing the XML content: {e}")
+        raise ValueError("Failed to process {url}")
+
+    return json.loads(annotationPage.jsonld())
 
 def coerce_list(value):
     if isinstance(value, list):

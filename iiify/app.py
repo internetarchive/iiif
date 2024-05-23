@@ -8,7 +8,7 @@ from flask_cors import CORS
 from flask_caching import Cache
 from iiif2 import iiif, web
 from .resolver import ia_resolver, create_manifest, create_manifest3, getids, collection, \
-    purify_domain, cantaloupe_resolver, create_collection3, IsCollection
+    purify_domain, cantaloupe_resolver, create_collection3, IsCollection, create_annotations
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
@@ -191,6 +191,11 @@ def manifest3(identifier):
         raise excpt
         # abort(404)
 
+@app.route('/iiif/<version>/annotations/<identifier>/<fileName>/<canvas_no>.json')
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+def annnotations(version, identifier, fileName, canvas_no):
+    domain = purify_domain(request.args.get('domain', request.url_root))
+    return ldjsonify(create_annotations(version, identifier, fileName, canvas_no, domain=domain))
 
 @app.route('/iiif/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
