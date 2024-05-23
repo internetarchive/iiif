@@ -4,7 +4,7 @@ import os
 import requests
 from iiif2 import iiif, web
 from .configs import options, cors, approot, cache_root, media_root, apiurl
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math 
@@ -482,10 +482,9 @@ def create_manifest3(identifier, domain=None, page=None):
                 else:
                     annotations = []
 
-                annotations.append({
-                    "id": f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json",
-                    "type": "AnnotationPage"
-                })         
+                annotations.append(
+                    AnnotationPageRef(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json")
+                )         
                 canvas.annotations = annotations
                 count += 1
     elif mediatype == 'image':

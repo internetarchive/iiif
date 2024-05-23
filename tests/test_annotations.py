@@ -20,7 +20,9 @@ class TestAnnotations(unittest.TestCase):
             for anno in canvas['annotations']:
                 if anno['id'] == annotations_url:
                     found=True
-            self.assertTrue(found, f"Expected to find {annotations_url} in {canvas['annotations']}")        
+                self.assertFalse('items' in anno, "As a referenced AnnotationPage it shouldn't contain items.")     
+
+            self.assertTrue(found, f"Expected to find {annotations_url} in {canvas['annotations']}")   
             count += 1
 
     def test_v3_annotations(self):
