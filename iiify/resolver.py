@@ -3,17 +3,16 @@
 import os
 import requests
 from iiif2 import iiif, web
-from .configs import options, cors, approot, cache_root, media_root, apiurl
+from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math 
 import re
-import mimetypes
 
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
-ARCHIVE = 'http://archive.org'
+ARCHIVE = 'https://archive.org'
 IMG_SRV = 'https://iiif.archive.org/image/iiif'
 METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contributor", "creator")
 bookdata = 'http://%s/BookReader/BookReaderJSON.php'
@@ -387,8 +386,6 @@ def addMetadata(item, identifier, metadata, collection=False):
 
 def addSeeAlso(manifest, identifier, files):
 
-    mimetypes.add_type("application/gzip", ".gz")
-
     manifest.seeAlso = [
         {"id": f"{ARCHIVE}/metadata/{identifier}",
          "type": "Metadata",
@@ -407,35 +404,46 @@ def addSeeAlso(manifest, identifier, files):
     }
 
     for file in files:
-        if file['format'] in SEEALSO_TYPES:
+        if file['format'] in LINKS and LINKS[file['format']]['field'] == 'seeAlso':
+            seeAlso = LINKS[file['format']]
             manifest.seeAlso.append(
                 {"id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
-                 "type": SEEALSO_TYPES[file["format"]],
+                 "type": seeAlso['type'],
                  "label": {"en": [file["format"]]},
-                 "format": mimetypes.types_map.get(f".{file['name'].rsplit('.', 1)[1]}", "application/octet-stream")
+                 "format": seeAlso['format']
                  })
 
 
 def addRendering(manifest, identifier, files):
-    RENDERING_TYPES = {
-        "Item Tile": "Image",
-        "Text PDF": "PDF",
-        "Animated GIF": "Image",
-        "DjVuTXT": "Text",
-        "Generic Raw Book Zip": "Images",
-        "Single Page Processed JP2 Zip": "Images",
-    }
-
     manifest.rendering = []
 
     for file in files:
-        if file['format'] in RENDERING_TYPES:
+        if file['format'] in LINKS and LINKS[file['format']]['field'] == 'rendering':
+            rendering = LINKS[file['format']]
             manifest.rendering.append(
                 {"id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
-                 "type": RENDERING_TYPES[file["format"]],
+                 "type": rendering['type'],
                  "label": {"en": [file["format"]]},
-                 "format": mimetypes.guess_type(file["name"])[0]
+                 "format": rendering['format']
                  })
+
+def addThumbnails(manifest, identifier, files):
+    thumbnails = []
+
+    for file in files:
+        if file['format'] == "Thumbnail":
+            mimetype = "image/jpeg"
+            if file['name'].endswith('.png'):
+                mimetype = "image/png"
+
+            thumbnails.append({
+                "id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                "type": "Image",
+                "format": mimetype,
+            })
+
+    if thumbnails:
+        manifest.thumbnail = thumbnails
 
 def create_manifest3(identifier, domain=None, page=None):
     # Get item metadata
@@ -453,6 +461,7 @@ def create_manifest3(identifier, domain=None, page=None):
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
+    addThumbnails(manifest, identifier, metadata['files'])
 
     if mediatype == 'texts':
         # Get bookreader metadata (mostly for filenames and height / width of image)
@@ -743,10 +752,8 @@ def ia_resolver(identifier):
 
 def cantaloupe_resolver(identifier):
     """Resolves an existing Image Service identifier to what it should be with the new Cantaloupe setup"""
-    print("called with identifier:", identifier)
     leaf = None
     if "$" in identifier:
-        print("$ in identifier")
         identifier, leaf = identifier.split("$", 1)
 
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
@@ -756,8 +763,6 @@ def cantaloupe_resolver(identifier):
 
     mediatype = metadata['metadata']['mediatype'].lower()
     files = metadata['files']
-    print("mediatype:", mediatype)
-    print("leaf:", leaf)
     if mediatype == "image":
         # single image file - find the filename
 

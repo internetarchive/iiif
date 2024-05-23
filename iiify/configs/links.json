@@ -1,0 +1,137 @@
+{
+    "Animated GIF": {
+        "field": "rendering",
+        "type": "Image",
+        "format": "image/gif"
+    },
+    "Text PDF": {
+	    "field": "rendering",
+        "type": "Text",
+        "format": "application/pdf"
+    },
+    "Abbyy GZ": {
+        "field": "rendering",
+        "type": "Dataset",
+        "format": "application/gzip"
+    },
+    "Archive BitTorrent": {
+        "field": "rendering",
+        "type": "Dataset",
+        "format": "application/x-bittorrent"
+    },
+    "Grayscale PDF": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "application/pdf"
+    },
+    "chOCR": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "application/gzip"
+    },
+    "DjVuTXT": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "text/plain"
+    },
+    "Djvu XML": {
+        "field": "rendering",
+        "type": "Dataset",
+        "format": "application/xml"
+    },
+    "hOCR": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "text/html"
+    },
+    "Single Page Processed JP2 ZIP": {
+        "field": "rendering",
+        "type": "Image",
+        "format": "application/zip"
+    },
+    "OCR Search Text": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "application/gzip"
+    },
+    "Single Page Original JP2 Tar": {
+        "field": "rendering",
+        "type": "Image",
+        "format": "application/x-tar"
+    },
+    "DjVu": {
+        "field": "rendering",
+        "type": "Image",
+        "format": "image/vnd.djvu"
+    },
+    "Cloth Cover Detection Log": {
+        "field": "seeAlso",
+        "type": "Text",
+        "format": "text/plain"
+    },
+    "Dublin Core": {
+        "field": "seeAlso",
+        "type": "Dataset",
+        "format": "application/xml"
+    },
+    "OCR Page Index": {
+        "field": "seeAlso",
+        "type": "Dataset",
+        "format": "application/json"
+    },
+    "MARC": {
+        "field": "seeAlso",
+        "type": "Dataset",
+        "format": "application/xml"
+    },
+    "MARC Binary": {
+        "field": "seeAlso",
+        "type": "Dataset",
+        "format": "application/marc"
+    },
+    "MARC Source": {
+        "field": "seeAlso",
+        "type": "Dataset",
+        "format": "application/xml"
+    },
+    "Page Numbers JSON": {
+        "field": "seeAlso",
+        "type": "Dataset",
+        "format": "application/json"
+    },
+    "Scandata": {
+        "field": "seeAlso",
+        "type": "Dataset",
+        "format": "application/xml"
+    },
+    "SubRip": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "text/plain"
+    },
+    "Web Video Text Tracks": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "text/vtt"
+    },
+    "Intermediate ASR JSON": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "application/json"
+    },
+    "Whisper ASR JSON": {
+        "field": "rendering",
+        "type": "Text",
+        "format": "application/json"
+    },
+    "Storj Upload Log": {
+        "field": "seeAlso",
+        "type": "Text",
+        "format": "text/plain"
+    },
+    "Storj Upload Trigger": {
+        "field": "seeAlso",
+        "type": "Text",
+        "format": "text/plain"
+    }
+}
