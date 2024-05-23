@@ -21,6 +21,7 @@ class TestAnnotations(unittest.TestCase):
                 if anno['id'] == annotations_url:
                     found=True
                 self.assertFalse('items' in anno, "As a referenced AnnotationPage it shouldn't contain items.")     
+                self.assertTrue('type' in anno and anno['type'] == "AnnotationPage",f"Expected annotation page to have a type {anno}")
 
             self.assertTrue(found, f"Expected to find {annotations_url} in {canvas['annotations']}")   
             count += 1

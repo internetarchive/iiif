@@ -483,7 +483,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     annotations = []
 
                 annotations.append(
-                    AnnotationPageRef(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json")
+                    AnnotationPageRef(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage")
                 )         
                 canvas.annotations = annotations
                 count += 1
