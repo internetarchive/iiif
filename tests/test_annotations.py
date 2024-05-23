@@ -43,13 +43,15 @@ class TestAnnotations(unittest.TestCase):
             self.assertTrue(anno['id'] not in ids,"Duplicate ID: {anno['id']}")
             ids.append(anno['id'])
             self.assertEqual(anno['type'], "Annotation", "Expected type of Annotation")
-            self.assertEqual(anno['motivation'], "supplementing", "Expected motivation of supplementing")
             self.assertTrue("body" in anno and "target" in anno, "Body or target missing from annotation {anno}")
             self.assertEqual(anno['body']['type'], "TextualBody", "Expected body to be a TextualBody")
             self.assertEqual(anno['body']['format'], "text/plain", "Expected format to be a text/plain")
             self.assertEqual(anno['target'].split('#')[0], "https://iiif.archive.org/iiif/journalofexpedit00ford$0/canvas")
             if first:
-                self.assertEqual(anno['target'].split('#')[1],"xywh=592,1860,1052,1742")
+                self.assertEqual(anno['target'].split('#')[1],"xywh=592,1742,460,118")
                 self.assertEqual(anno['body']['value'],"JOURNAL ")
 
+            self.assertEqual(anno['motivation'], "supplementing", "Expected motivation of supplementing")
             first=False
+
+            

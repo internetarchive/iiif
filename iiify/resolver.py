@@ -744,6 +744,17 @@ def create_annotations(version, identifier, fileName, canvas_no, domain=None):
         words = page.findall(".//WORD")
         count = 1
         for word in words:
+            # <WORD coords="444,1353,635,1294" x-confidence="10">[David </WORD>
+            # <WORD coords="lx,by,rx,ty" x-confidence="10">[David </WORD>
+            # x = lx
+            # y = ty
+            # w = rx - lx
+            # h = by - ty
+            (left_x, bottom_y, right_x, top_y) = word.attrib['coords'].split(',')
+            x = left_x
+            y = top_y
+            width = int(right_x) - int(left_x)
+            height = int(bottom_y) - int(top_y)
             annotationPage.items.append({
                 "id": f"https://iiif.archive.org/iiif/{identifier}/canvas/{index}/anno/{count}",
                 "type": "Annotation",
@@ -753,7 +764,7 @@ def create_annotations(version, identifier, fileName, canvas_no, domain=None):
                     "format": "text/plain",
                     "value": word.text
                 },
-                "target": f"https://iiif.archive.org/iiif/{identifier}${index}/canvas#xywh={word.attrib['coords']}"
+                "target": f"https://iiif.archive.org/iiif/{identifier}${index}/canvas#xywh={x},{y},{width},{height}"
             })
             count += 1
 
