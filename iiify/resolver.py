@@ -3,7 +3,7 @@
 import os
 import requests
 from iiif2 import iiif, web
-from .configs import options, cors, approot, cache_root, media_root, apiurl
+from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 from urllib.parse import urlparse, parse_qs, quote
 import json
@@ -12,7 +12,7 @@ import re
 
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
-ARCHIVE = 'http://archive.org'
+ARCHIVE = 'https://archive.org'
 IMG_SRV = 'https://iiif.archive.org/image/iiif'
 METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contributor", "creator")
 bookdata = 'http://%s/BookReader/BookReaderJSON.php'
@@ -384,7 +384,66 @@ def addMetadata(item, identifier, metadata, collection=False):
 
     item.metadata = manifest_metadata
 
+def addSeeAlso(manifest, identifier, files):
 
+    manifest.seeAlso = [
+        {"id": f"{ARCHIVE}/metadata/{identifier}",
+         "type": "Metadata",
+         "label": {"en": ["Item Metadata"]},
+         "format": "application/json"}
+    ]
+
+    # Type format from IA Metadata -> Type description in IIIF
+    SEEALSO_TYPES = {
+        "Abbyy GZ": "OCR Data",
+        "Abbyy XML": "OCR Data",
+        "Djvu XML": "OCR Data",
+        "Scandata": "OCR Data",
+        "Archive BitTorrent": "Torrent",
+        "Metadata": "Metadata",
+    }
+
+    for file in files:
+        if file['format'] in LINKS and LINKS[file['format']]['field'] == 'seeAlso':
+            seeAlso = LINKS[file['format']]
+            manifest.seeAlso.append(
+                {"id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                 "type": seeAlso['type'],
+                 "label": {"en": [file["format"]]},
+                 "format": seeAlso['format']
+                 })
+
+
+def addRendering(manifest, identifier, files):
+    manifest.rendering = []
+
+    for file in files:
+        if file['format'] in LINKS and LINKS[file['format']]['field'] == 'rendering':
+            rendering = LINKS[file['format']]
+            manifest.rendering.append(
+                {"id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                 "type": rendering['type'],
+                 "label": {"en": [file["format"]]},
+                 "format": rendering['format']
+                 })
+
+def addThumbnails(manifest, identifier, files):
+    thumbnails = []
+
+    for file in files:
+        if file['format'] == "Thumbnail":
+            mimetype = "image/jpeg"
+            if file['name'].endswith('.png'):
+                mimetype = "image/png"
+
+            thumbnails.append({
+                "id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                "type": "Image",
+                "format": mimetype,
+            })
+
+    if thumbnails:
+        manifest.thumbnail = thumbnails
 
 def create_manifest3(identifier, domain=None, page=None):
     # Get item metadata
@@ -400,6 +459,9 @@ def create_manifest3(identifier, domain=None, page=None):
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
 
     addMetadata(manifest, identifier, metadata['metadata'])
+    addSeeAlso(manifest, identifier, metadata['files'])
+    addRendering(manifest, identifier, metadata['files'])
+    addThumbnails(manifest, identifier, metadata['files'])
 
     if mediatype == 'texts':
         # Get bookreader metadata (mostly for filenames and height / width of image)
@@ -725,7 +787,6 @@ def ia_resolver(identifier):
 
 def cantaloupe_resolver(identifier):
     """Resolves an existing Image Service identifier to what it should be with the new Cantaloupe setup"""
-
     leaf = None
     if "$" in identifier:
         identifier, leaf = identifier.split("$", 1)
@@ -737,7 +798,6 @@ def cantaloupe_resolver(identifier):
 
     mediatype = metadata['metadata']['mediatype'].lower()
     files = metadata['files']
-
     if mediatype == "image":
         # single image file - find the filename
 
@@ -788,11 +848,12 @@ def cantaloupe_resolver(identifier):
 
         #filename = next(f for f in files if f['source'].lower() == 'derivative' \
         #                and f['name'].endswith('_jp2.zip'))['name']
+        print("end of logic - filename:", filename)
         if filename:
             dirpath = filename[:-4]
             filepath = f"{fileIdentifier}_{leaf.zfill(4)}{extension}"
             return f"{identifier}%2f{filename}%2f{dirpath}%2f{filepath}"
 
-    # print (f'images not found for {identifier}')
-    # for f in files:
-    #     print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")
+ #   print (f'images not found for {identifier}')
+ #   for f in files:
+ #       print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")
