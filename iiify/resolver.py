@@ -483,7 +483,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     annotations = []
 
                 annotations.append({
-                    "id": f"{domain}3/annotations/{identifier}/{djvuFile}/{count}.json",
+                    "id": f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json",
                     "type": "AnnotationPage"
                 })         
                 canvas.annotations = annotations
@@ -632,7 +632,7 @@ def create_manifest3(identifier, domain=None, page=None):
     return json.loads(manifest.jsonld())
 
 def create_annotations(version, identifier, fileName, canvas_no, domain=None):
-    annotationPage = AnnotationPage(id=f"{domain}{version}/annotations/{identifier}/{fileName}/{canvas_no}.json")
+    annotationPage = AnnotationPage(id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json")
     annotationPage.items = []
     index = int(canvas_no) - 1
     url = f"{ARCHIVE}/download/{identifier}/{fileName}"
