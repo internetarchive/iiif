@@ -758,7 +758,7 @@ def create_annotations(version, identifier, fileName, canvas_no, domain=None):
             annotationPage.items.append({
                 "id": f"https://iiif.archive.org/iiif/{identifier}/canvas/{index}/anno/{count}",
                 "type": "Annotation",
-                "motivation": "commenting",
+                "motivation": "supplementing",
                 "body": {
                     "type": "TextualBody",
                     "format": "text/plain",
