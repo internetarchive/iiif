@@ -3,6 +3,7 @@
 import os
 import requests
 from iiif2 import iiif, web
+
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 
@@ -147,10 +148,13 @@ def create_collection3(identifier, domain, page=1, rows=1000):
 
     return json.loads(collection.jsonld())
     
-def manifest_page(identifier, label='', page='', width='', height='', metadata=None):
+def manifest_page(identifier, label='', page='', width='', height='', metadata=None, canvasId=""):
+    if not canvasId:
+        canvasId = f"{identifier}/canvas"
+
     metadata = metadata or {}
     return {
-        '@id': '%s/canvas' % identifier,
+        '@id': canvasId,
         '@type': 'sc:Canvas',
         '@context': PRZ_CTX,
         'description': metadata.get('description', ''),
@@ -236,7 +240,8 @@ def create_manifest(identifier, domain=None, page=None):
                 label=metadata['title'],
                 width=info['width'],
                 height=info['height'],
-                metadata=metadata
+                metadata=metadata,
+                canvasId= f"https://iiif.archivelab.org/iiif/{identifier}/canvas"
             )
         )
 
@@ -276,7 +281,8 @@ def create_manifest(identifier, domain=None, page=None):
                     label=metadata['title'],
                     width=info['width'],
                     height=info['height'],
-                    metadata=metadata
+                    metadata=metadata,
+                    canvasId= f"https://iiif.archivelab.org/iiif/{identifier}/canvas"
                 )
             )
         else:
@@ -295,7 +301,8 @@ def create_manifest(identifier, domain=None, page=None):
                         identifier = "%s%s$%s" % (domain, identifier, page),
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
-                        height=data['pageHeights'][page]
+                        height=data['pageHeights'][page],
+                        canvasId= f"https://iiif.archivelab.org/iiif/{identifier}${page}/canvas"
                     )
                 )
                 return manifest
@@ -306,7 +313,8 @@ def create_manifest(identifier, domain=None, page=None):
                         identifier = "%s%s$%s" % (domain, identifier, page),
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
-                        height=data['pageHeights'][page]
+                        height=data['pageHeights'][page],
+                        canvasId= f"https://iiif.archivelab.org/iiif/{identifier}${page}/canvas"
                     )
                 )
     return manifest
@@ -915,7 +923,6 @@ def cantaloupe_resolver(identifier):
 
         #filename = next(f for f in files if f['source'].lower() == 'derivative' \
         #                and f['name'].endswith('_jp2.zip'))['name']
-        print("end of logic - filename:", filename)
         if filename:
             dirpath = filename[:-4]
             filepath = f"{fileIdentifier}_{leaf.zfill(4)}{extension}"
