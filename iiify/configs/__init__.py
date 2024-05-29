@@ -14,6 +14,7 @@ import os
 import sys
 import types
 import configparser
+import json
 
 path = os.path.dirname(os.path.realpath(__file__))
 approot = os.path.abspath(os.path.join(path, os.pardir))
@@ -75,3 +76,6 @@ cache_timeouts = {
     "long": 432000,  # 5 days
     "longest": 2592000  # 30 days
 }
+
+with open('%s/links.json' % path, 'r') as file:
+    LINKS = json.load(file)

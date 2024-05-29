@@ -1,7 +1,9 @@
+import os
+os.environ["FLASK_ENV"] = "testing"
+
 import unittest
 from flask.testing import FlaskClient
 from iiify.app import app
-
 class TestCollections(unittest.TestCase):
 
     def setUp(self) -> None:

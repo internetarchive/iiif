@@ -58,3 +58,12 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Cache dir
+cache/
+
+# PyCharm
+.idea/
+
+# Old folder from v2?
+media/
