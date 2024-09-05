@@ -3,18 +3,19 @@
 import os
 import requests
 from iiif2 import iiif, web
-from .configs import options, cors, approot, cache_root, media_root
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
+from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math 
 import re
+import xml.etree.ElementTree as ET
 
 SCRAPE_API = 'https://archive.org/services/search/v1/scrape'
 ADVANCED_SEARCH = 'https://archive.org/advancedsearch.php?'
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
-ARCHIVE = 'http://archive.org'
+ARCHIVE = 'https://archive.org'
 IMG_SRV = 'https://iiif.archive.org/image/iiif'
 METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contributor", "creator")
 bookdata = 'http://%s/BookReader/BookReaderJSON.php'
@@ -101,6 +102,26 @@ def search(query, page=1, limit=100, security=True, sort=None, fields=None):
                 'output': 'json',
             }).json()
 
+def checkMultiItem(metadata):    
+    # Maybe add call to book stack to see if that works first
+
+    # Count the number of each original file
+    file_types = {}
+    for file in metadata['files']:
+        if file['source'] == "original":
+            if file['format'] not in file_types:
+                file_types[file['format']] = 0
+
+            file_types[file['format']] += 1
+    #print (file_types)        
+
+    # If there is multiple files of the same type then return the first format
+    # Will have to see if there are objects with multiple images and formats
+    for format in file_types:
+        if file_types[format] > 1 and format.lower() in valid_filetypes:        
+            return (True, format)
+
+    return (False, None)
 
 def to_mimetype(format):
     formats = {
@@ -188,10 +209,13 @@ def create_collection3(identifier, domain, page=1, rows=1000):
 
     return json.loads(collection.jsonld())
     
-def manifest_page(identifier, label='', page='', width='', height='', metadata=None):
+def manifest_page(identifier, label='', page='', width='', height='', metadata=None, canvasId=""):
+    if not canvasId:
+        canvasId = f"{identifier}/canvas"
+
     metadata = metadata or {}
     return {
-        '@id': '%s/canvas' % identifier,
+        '@id': canvasId,
         '@type': 'sc:Canvas',
         '@context': PRZ_CTX,
         'description': metadata.get('description', ''),
@@ -277,7 +301,8 @@ def create_manifest(identifier, domain=None, page=None):
                 label=metadata['title'],
                 width=info['width'],
                 height=info['height'],
-                metadata=metadata
+                metadata=metadata,
+                canvasId= f"https://iiif.archivelab.org/iiif/{identifier}/canvas"
             )
         )
 
@@ -317,7 +342,8 @@ def create_manifest(identifier, domain=None, page=None):
                     label=metadata['title'],
                     width=info['width'],
                     height=info['height'],
-                    metadata=metadata
+                    metadata=metadata,
+                    canvasId= f"https://iiif.archivelab.org/iiif/{identifier}/canvas"
                 )
             )
         else:
@@ -336,7 +362,8 @@ def create_manifest(identifier, domain=None, page=None):
                         identifier = "%s%s$%s" % (domain, identifier, page),
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
-                        height=data['pageHeights'][page]
+                        height=data['pageHeights'][page],
+                        canvasId= f"https://iiif.archivelab.org/iiif/{identifier}${page}/canvas"
                     )
                 )
                 return manifest
@@ -347,7 +374,8 @@ def create_manifest(identifier, domain=None, page=None):
                         identifier = "%s%s$%s" % (domain, identifier, page),
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
-                        height=data['pageHeights'][page]
+                        height=data['pageHeights'][page],
+                        canvasId= f"https://iiif.archivelab.org/iiif/{identifier}${page}/canvas"
                     )
                 )
     return manifest
@@ -427,6 +455,66 @@ def addMetadata(item, identifier, metadata, collection=False):
 
     item.metadata = manifest_metadata
 
+def addSeeAlso(manifest, identifier, files):
+
+    manifest.seeAlso = [
+        {"id": f"{ARCHIVE}/metadata/{identifier}",
+         "type": "Metadata",
+         "label": {"en": ["Item Metadata"]},
+         "format": "application/json"}
+    ]
+
+    # Type format from IA Metadata -> Type description in IIIF
+    SEEALSO_TYPES = {
+        "Abbyy GZ": "OCR Data",
+        "Abbyy XML": "OCR Data",
+        "Djvu XML": "OCR Data",
+        "Scandata": "OCR Data",
+        "Archive BitTorrent": "Torrent",
+        "Metadata": "Metadata",
+    }
+
+    for file in files:
+        if file['format'] in LINKS and LINKS[file['format']]['field'] == 'seeAlso':
+            seeAlso = LINKS[file['format']]
+            manifest.seeAlso.append(
+                {"id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                 "type": seeAlso['type'],
+                 "label": {"en": [file["format"]]},
+                 "format": seeAlso['format']
+                 })
+
+
+def addRendering(manifest, identifier, files):
+    manifest.rendering = []
+
+    for file in files:
+        if file['format'] in LINKS and LINKS[file['format']]['field'] == 'rendering':
+            rendering = LINKS[file['format']]
+            manifest.rendering.append(
+                {"id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                 "type": rendering['type'],
+                 "label": {"en": [file["format"]]},
+                 "format": rendering['format']
+                 })
+
+def addThumbnails(manifest, identifier, files):
+    thumbnails = []
+
+    for file in files:
+        if file['format'] == "Thumbnail":
+            mimetype = "image/jpeg"
+            if file['name'].endswith('.png'):
+                mimetype = "image/png"
+
+            thumbnails.append({
+                "id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                "type": "Image",
+                "format": mimetype,
+            })
+
+    if thumbnails:
+        manifest.thumbnail = thumbnails
 
 def create_manifest3(identifier, domain=None, page=None):
     # Get item metadata
@@ -442,15 +530,21 @@ def create_manifest3(identifier, domain=None, page=None):
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
 
     addMetadata(manifest, identifier, metadata['metadata'])
+    addSeeAlso(manifest, identifier, metadata['files'])
+    addRendering(manifest, identifier, metadata['files'])
+    addThumbnails(manifest, identifier, metadata['files'])
 
     if mediatype == 'texts':
         # Get bookreader metadata (mostly for filenames and height / width of image)
         # subprefix can be different from the identifier use the scandata filename to find the correct prefix
         # if not present fall back to identifier
         subprefix = identifier
+        djvuFile = ""
         for fileMd in metadata['files']:
             if fileMd['name'].endswith('_scandata.xml'):
                 subprefix = fileMd['name'].replace('_scandata.xml', '')
+            if fileMd['format'] == 'Djvu XML':    
+                djvuFile = fileMd['name']
 
         bookReaderURL = f"https://{metadata.get('server')}/BookReader/BookReaderJSIA.php?id={identifier}&itemPath={metadata.get('dir')}&server={metadata.get('server')}&format=jsonp&subPrefix={subprefix}"
 
@@ -511,9 +605,46 @@ def create_manifest3(identifier, domain=None, page=None):
             except:
                 pass
 
+        # Add annotations if djvu file is present
+        if djvuFile:
+            count = 1
+            for canvas in manifest.items:
+                if 'annotations' in canvas:
+                    annotations = canvas.annotations
+                else:
+                    annotations = []
 
+                annotations.append(
+                    AnnotationPageRef(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage")
+                )         
+                canvas.annotations = annotations
+                count += 1
     elif mediatype == 'image':
-        singleImage(metadata, identifier, manifest, uri)
+        (multiFile, format) = checkMultiItem(metadata)
+        print (f"Checking multiFile {multiFile} {format}")
+        if multiFile:
+            # Create multi file manifest
+            pageCount = 0
+            for file in metadata['files']:
+                if file['source'] == "original" and file['format'] == format:
+                    imgId = f"{identifier}/{file['name']}".replace('/','%2f')
+                    imgURL = f"{IMG_SRV}/3/{imgId}"
+                    pageCount += 1
+                    
+                    try:
+                        manifest.make_canvas_from_iiif(url=imgURL,
+                                                    id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
+                                                    label=f"{file['name']}",
+                                                    anno_page_id=f"{uri}/annotationPage/1",
+                                                    anno_id=f"{uri}/annotation/1")
+                    except requests.exceptions.HTTPError as error:
+                        print (f'Failed to get {imgURL}')
+                        manifest.make_canvas(label=f"Failed to load {file['name']} from Image Server",
+                                             summary=f"Got {error}",
+                                            id=f"{URI_PRIFIX}/{identifier}/canvas",
+                                            height=1800, width=1200)
+        else:
+            singleImage(metadata, identifier, manifest, uri)
     elif mediatype == 'audio' or mediatype == 'etree':
         # sort the files into originals and derivatives, splitting the derivatives into buckets based on the original
         originals = []
@@ -571,6 +702,7 @@ def create_manifest3(identifier, domain=None, page=None):
         # sort the files into originals and derivatives, splitting the derivatives into buckets based on the original
         originals = []
         derivatives = {}
+        vttfiles = {}
         for f in metadata['files']:
             if f['source'] == 'derivative':
                 if f['original'] in derivatives:
@@ -579,6 +711,14 @@ def create_manifest3(identifier, domain=None, page=None):
                     derivatives[f['original']] = {f['format']: f}
             elif f['source'] == 'original':
                 originals.append(f)
+
+            if f['format'] == 'Web Video Text Tracks':
+                # Example: cruz-test.en.vtt and 34C3_-_International_Image_Interoperability_Framework_IIIF_Kulturinstitutionen_schaffen_interop-SvH4fbjOT0A.autogenerated.vtt
+                sourceFilename = re.sub('\.[a-zA-H-]*\.vtt', '', f['name'])
+                if sourceFilename not in vttfiles:
+                    vttfiles[sourceFilename] = []    
+                    
+                vttfiles[sourceFilename].append(f)    
             
         # create the canvases for each original
         for file in [f for f in originals if f['format'] in ['MPEG4', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack']]:
@@ -586,6 +726,32 @@ def create_manifest3(identifier, domain=None, page=None):
             slugged_id = normalised_id.replace(" ", "-")
             c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
             c = Canvas(id=c_id, label=normalised_id, duration=float(file['length']), height=int(file['height']), width=int(file['width']))
+
+            # Add vtt if present
+            if vttfiles and normalised_id in vttfiles:
+                vttAPId = f"{URI_PRIFIX}/{identifier}/{slugged_id}/vtt"
+
+                vttNo = 1
+                for vttFile in vttfiles[normalised_id]:
+                    vtAnno = c.make_annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation/vtt/{vttNo}", 
+                                               motivation="supplementing", 
+                                               target=c.id, 
+                                               anno_page_id=vttAPId,
+                                               body={"id": f"{domain}resource/{identifier}/{vttFile['name']}",
+                                                     "type": "Text",
+                                                    "format": "text/vtt",
+                                                    })
+                    # add label and language
+                    if vttFile['name'].endswith("autogenerated.vtt"):
+                        vtAnno.body.label = { 'en': ['autogenerated']}
+                    else:
+                        # Assume language
+                        splitName = vttFile['name'].split(".")
+                        lang = splitName[-2]
+                        vtAnno.body.add_label(lang, language="none")
+                        vtAnno.body.language = lang
+
+                    vttNo += 1
 
             # create intermediary objects
             ap = AnnotationPage(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page")
@@ -630,6 +796,55 @@ def create_manifest3(identifier, domain=None, page=None):
         print (f'Unknown mediatype "{mediatype}"')
 
     return json.loads(manifest.jsonld())
+
+def create_annotations(version, identifier, fileName, canvas_no, domain=None):
+    annotationPage = AnnotationPage(id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json")
+    annotationPage.items = []
+    index = int(canvas_no) - 1
+    url = f"{ARCHIVE}/download/{identifier}/{fileName}"
+    try:
+        # Fetch the remote XML file
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an error for bad status codes
+
+        # Parse the XML content
+        djfu = ET.fromstring(response.content)
+        page = djfu.findall(f".//OBJECT[{canvas_no}]")[0]
+        words = page.findall(".//WORD")
+        count = 1
+        for word in words:
+            # <WORD coords="444,1353,635,1294" x-confidence="10">[David </WORD>
+            # <WORD coords="lx,by,rx,ty" x-confidence="10">[David </WORD>
+            # x = lx
+            # y = ty
+            # w = rx - lx
+            # h = by - ty
+            (left_x, bottom_y, right_x, top_y) = word.attrib['coords'].split(',')
+            x = left_x
+            y = top_y
+            width = int(right_x) - int(left_x)
+            height = int(bottom_y) - int(top_y)
+            annotationPage.items.append({
+                "id": f"https://iiif.archive.org/iiif/{identifier}/canvas/{index}/anno/{count}",
+                "type": "Annotation",
+                "motivation": "supplementing",
+                "body": {
+                    "type": "TextualBody",
+                    "format": "text/plain",
+                    "value": word.text
+                },
+                "target": f"https://iiif.archive.org/iiif/{identifier}${index}/canvas#xywh={x},{y},{width},{height}"
+            })
+            count += 1
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching the XML file: {e}")
+        raise ValueError("Failed to retrieve {url}")
+    except ET.ParseError as e:
+        print(f"Error parsing the XML content: {e}")
+        raise ValueError("Failed to process {url}")
+
+    return json.loads(annotationPage.jsonld())
 
 def coerce_list(value):
     if isinstance(value, list):
@@ -708,7 +923,6 @@ def ia_resolver(identifier):
 
 def cantaloupe_resolver(identifier):
     """Resolves an existing Image Service identifier to what it should be with the new Cantaloupe setup"""
-
     leaf = None
     if "$" in identifier:
         identifier, leaf = identifier.split("$", 1)
@@ -720,7 +934,6 @@ def cantaloupe_resolver(identifier):
 
     mediatype = metadata['metadata']['mediatype'].lower()
     files = metadata['files']
-
     if mediatype == "image":
         # single image file - find the filename
 
@@ -776,6 +989,6 @@ def cantaloupe_resolver(identifier):
             filepath = f"{fileIdentifier}_{leaf.zfill(4)}{extension}"
             return f"{identifier}%2f{filename}%2f{dirpath}%2f{filepath}"
 
-    # print (f'images not found for {identifier}')
-    # for f in files:
-    #     print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")
+ #   print (f'images not found for {identifier}')
+ #   for f in files:
+ #       print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")

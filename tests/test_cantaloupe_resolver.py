@@ -1,3 +1,6 @@
+import os
+os.environ["FLASK_CACHE_DISABLE"] = "true"
+
 import unittest
 from iiify.resolver import cantaloupe_resolver
 
