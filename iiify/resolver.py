@@ -881,8 +881,8 @@ def create_vtt_stream(identifier):
                 if "-->" in line:
                     splitline = line.split("-->")
                     starttime = timeToDelta(splitline[0].strip()) + timedelta(seconds=start)
-                    endtime = timeToDelta(splitline[0].strip()) + timedelta(seconds=start)
-                    line = f"{formatTimeVTT(starttime)} -> {formatTimeVTT(endtime)}"
+                    endtime = timeToDelta(splitline[1].strip()) + timedelta(seconds=start)
+                    line = f"{formatTimeVTT(starttime)} --> {formatTimeVTT(endtime)}"
 
                 vtt_content.append(line)
 
