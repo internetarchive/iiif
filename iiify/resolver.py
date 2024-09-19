@@ -886,7 +886,7 @@ def create_vtt_stream(identifier):
 
                 vtt_content.append(line)
 
-            vtt_content.append(" ")
+            vtt_content.append("")
 
     # Join the list into a single string
     return "\n".join(vtt_content)
