@@ -86,7 +86,7 @@ class TestVideo(unittest.TestCase):
         checkLine=False
         for line in resp.text.split("\n"):
             if checkLine:
-                self.assertEqual("00:01:02.000 -> 00:01:02.000", line, "Expected the timecode to be over a minute as its the second video")
+                self.assertEqual("00:01:02.000 --> 00:01:03.000", line, "Expected the timecode to be over a minute as its the second video")
                 break    
             if line.startswith("28"):
                 checkLine=True
