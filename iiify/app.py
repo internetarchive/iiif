@@ -56,10 +56,11 @@ def mainentry():
 @app.route('/iiif/')
 def index():
     """Lists all available book and image items on Archive.org"""
-    cursor = request.args.get('cursor', '')
     q = request.args.get('q', '')
-    return jsonify(getids(q, cursor=cursor))
-
+    fields = request.args.get('fields', '')
+    sorts = request.args.get('sorts', '')
+    cursor = request.args.get('cursor', '')
+    return jsonify(getids(q, cursor=cursor, fields=fields, sorts=sorts))
 
 
 @app.route('/iiif/collection.json')

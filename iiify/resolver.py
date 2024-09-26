@@ -35,21 +35,13 @@ def purify_domain(domain):
     domain = re.sub('^http:\/\/', "https://", domain)
     return domain if domain.endswith('/iiif/') else domain + 'iiif/'
 
-def getids(q, limit=1000, cursor='', page=1):
-        q = request.args.get('q', '')
+def getids(q, limit=1000, cursor='', sorts='', fields=''):
         query = "(mediatype:(texts) OR mediatype:(image))" + \
                 ((" AND %s" % q) if q else "")
-        fields = request.args.get('fields', '')
-        sorts = request.args.get('sorts', '')
-        cursor = request.args.get('cursor', '')
-        version = 'v2'
-
         # 'all:1' also works
         q = "NOT identifier:..*" + (" AND (%s)" % query if query else "")
-        if version == 'v2':
-            return scrape(query=q, fields=fields, sorts=sorts, count=limit,
-                        cursor=cursor)
-        return search(q, page=page, limit=limit)
+        return scrape(query=q, fields=fields, sorts=sorts, count=limit, cursor=cursor)
+
 
 def scrape(query, fields="", sorts="", count=100, cursor="", security=True):
     """
