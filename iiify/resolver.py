@@ -12,7 +12,7 @@ import re
 import xml.etree.ElementTree as ET
 
 SCRAPE_API = 'https://archive.org/services/search/v1/scrape'
-ADVANCED_SEARCH = 'https://archive.org/advancedsearch.php?'
+ADVANCED_SEARCH = 'https://archive.org/advancedsearch.php'
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
 ARCHIVE = 'https://archive.org'
@@ -21,6 +21,9 @@ METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contribut
 bookdata = 'http://%s/BookReader/BookReaderJSON.php'
 bookreader = "http://%s/BookReader/BookReaderImages.php"
 URI_PRIFIX = "https://iiif.archive.org/iiif"
+
+MAX_SCRAPE_LIMIT = 10_000
+MAX_API_LIMIT = 1_000
 
 class MaxLimitException(Exception):
     pass
@@ -35,7 +38,7 @@ def purify_domain(domain):
     domain = re.sub('^http:\/\/', "https://", domain)
     return domain if domain.endswith('/iiif/') else domain + 'iiif/'
 
-def getids(q, limit=1000, cursor='', sorts='', fields=''):
+def getids(q, cursor='', sorts='', fields='', limit=MAX_API_LIMIT):
         query = "(mediatype:(texts) OR mediatype:(image))" + \
                 ((" AND %s" % q) if q else "")
         # 'all:1' also works
@@ -55,10 +58,9 @@ def scrape(query, fields="", sorts="", count=100, cursor="", security=True):
     if not query:
         raise ValueError("GET 'query' parameters required")
 
-    if int(count) > 1000 and security:
+    if int(count) > MAX_API_LIMIT and security:
         raise MaxLimitException("Limit may not exceed 1000.")
 
-    #sorts = sorts or 'date+asc,createdate'
     fields = fields or 'identifier,title'
 
     params = {
@@ -83,14 +85,13 @@ def search(query, page=1, limit=100, security=True, sort=None, fields=None):
     if int(limit) > 1000 and security:
         raise MaxLimitException("Limit may not exceed 1000.")
 
-    sort = sort or 'sort%5B%5D=date+asc&sort%5B%5D=createdate'
-    fields = fields or 'identifier,title'
     return requests.get(
-        ADVANCED_SEARCH + sort,
+        ADVANCED_SEARCH,
         params={'q': query,
+                'sort[]': sort or ['date asc', 'createdate'],
                 'rows': limit,
                 'page': page,
-                'fl[]': fields,
+                'fl[]': fields or 'identifier,title',
                 'output': 'json',
             }).json()
 
@@ -172,12 +173,12 @@ def create_collection3(identifier, domain, page=1, rows=1000):
 
     addMetadata(collection, identifier, metadata['metadata'], collection=True)
 
-    asURL = f'https://archive.org/advancedsearch.php?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
+    asURL = f'{ADVANCED_SEARCH}?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
     itemsSearch = requests.get(asURL).json()
     total = itemsSearch['response']['numFound']
     # There is a max of 10,000 items that can be retrieved from the advanced search
-    if total > 10000:
-        total = 10000
+    if total > MAX_SCRAPE_LIMIT:
+        total = MAX_SCRAPE_LIMIT
 
     if len(itemsSearch['response']['docs']) == 0:
         return None 

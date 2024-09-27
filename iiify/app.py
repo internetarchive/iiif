@@ -57,9 +57,9 @@ def mainentry():
 def index():
     """Lists all available book and image items on Archive.org"""
     q = request.args.get('q', '')
+    cursor = request.args.get('cursor', '')
     fields = request.args.get('fields', '')
     sorts = request.args.get('sorts', '')
-    cursor = request.args.get('cursor', '')
     return jsonify(getids(q, cursor=cursor, fields=fields, sorts=sorts))
 
 
