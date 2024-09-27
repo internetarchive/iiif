@@ -65,10 +65,10 @@ def index():
 
 @app.route('/iiif/collection.json')
 def catalog():
-    cursor = request.args.get('cursor', '')
     q = request.args.get('q', '')
+    cursor = request.args.get('cursor', '')
     domain = purify_domain(request.args.get('domain', request.url_root))
-    return ldjsonify(collection(domain, getids(q, limit, cursor)['ids']))
+    return ldjsonify(collection(domain, getids(q, cursor=cursor)['ids']))
 
 
 @app.route('/iiif/cache')
