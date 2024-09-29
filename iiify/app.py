@@ -7,8 +7,9 @@ from flask import Flask, send_file, jsonify, abort, request, render_template, re
 from flask_cors import CORS
 from flask_caching import Cache
 from iiif2 import iiif, web
-from .resolver import ia_resolver, create_manifest, create_manifest3, getids, collection, \
-    purify_domain, cantaloupe_resolver, create_collection3, IsCollection, create_annotations
+from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
+    collection, purify_domain, cantaloupe_resolver, create_collection3, IsCollection, \
+    create_annotations
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
@@ -60,15 +61,23 @@ def index():
     cursor = request.args.get('cursor', '')
     fields = request.args.get('fields', '')
     sorts = request.args.get('sorts', '')
-    return jsonify(getids(q, cursor=cursor, fields=fields, sorts=sorts))
+    r = scrape(q, cursor=cursor, fields=fields, sorts=sorts, restrict_to_iiif=True)
+    return jsonify(r)
 
 
 @app.route('/iiif/collection.json')
 def catalog():
     q = request.args.get('q', '')
     cursor = request.args.get('cursor', '')
+    fields = request.args.get('fields', '')
+    sorts = request.args.get('sorts', '')
     domain = purify_domain(request.args.get('domain', request.url_root))
-    return ldjsonify(collection(domain, getids(q, cursor=cursor)['ids']))
+    identifiers = [
+        i.get('identifier') for i in scrape(
+            q, cursor=cursor, fields=fields, sorts=sorts, restrict_to_iiif=True
+        ).get('items')
+    ]
+    return ldjsonify(collection(domain, identifiers))
 
 
 @app.route('/iiif/cache')
@@ -100,16 +109,16 @@ def helper(identifier):
             return render_template('helpers/image.html', identifier=identifier, cantaloupe_id=cantaloupe_id, esc_cantaloupe_id=esc_cantaloupe_id)
         except ValueError:
             abort(404)
-        
+
     elif mediatype == "audio" or mediatype == "etree":
         return render_template('helpers/audio.html', identifier=identifier)
     elif mediatype == "movies":
         return render_template('helpers/movies.html', identifier=identifier)
     elif mediatype == "texts":
         return render_template('helpers/texts.html', identifier=identifier)
-    else: 
+    else:
         return render_template('helpers/unknown.html', identifier=identifier)
-         
+
 
 @app.route('/iiif/<identifier>')
 def view(identifier):
@@ -130,7 +139,7 @@ def view(identifier):
 
 @app.route('/iiif/3/<identifier>/collection.json')
 @cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust)
-def collection3(identifier):
+def collection3JSON(identifier):
     domain = purify_domain(request.args.get('domain', request.url_root))
 
     try:
@@ -165,7 +174,7 @@ def collection3page(identifier, page):
 
 @app.route('/iiif/<identifier>/collection.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
-def collection(identifier):
+def collectionJSON(identifier):
     return redirect(f'/iiif/3/{identifier}/collection.json', code=302)
 
 
@@ -240,7 +249,6 @@ def add_header(response):
 
 def ldjsonify(data):
     j = jsonify(data)
-    # j.headers.set('Access-Control-Allow-Origin', '*')
     j.mimetype = "application/ld+json"
     return j
 
