@@ -497,7 +497,7 @@ def addThumbnails(manifest, identifier, files):
                 mimetype = "image/png"
 
             thumbnails.append({
-                "id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                "id": f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
                 "type": "Image",
                 "format": mimetype,
             })
