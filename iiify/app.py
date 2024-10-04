@@ -7,7 +7,7 @@ from flask import Flask, send_file, jsonify, abort, request, render_template, re
 from flask_cors import CORS
 from flask_caching import Cache
 from iiif2 import iiif, web
-from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, getids, \
+from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
     collection, purify_domain, cantaloupe_resolver, create_collection3, IsCollection, \
     create_annotations, create_vtt_stream
 from .configs import options, cors, approot, cache_root, media_root, \
