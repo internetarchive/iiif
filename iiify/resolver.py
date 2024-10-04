@@ -3,17 +3,17 @@
 import os
 import requests
 from iiif2 import iiif, web
-
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
-
 from urllib.parse import urlparse, parse_qs, quote
 import json
-import math 
+import math
 import re
 import xml.etree.ElementTree as ET
 from datetime import timedelta
 
+SCRAPE_API = 'https://archive.org/services/search/v1/scrape'
+ADVANCED_SEARCH = 'https://archive.org/advancedsearch.php'
 IMG_CTX = 'http://iiif.io/api/image/2/context.json'
 PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
 ARCHIVE = 'https://archive.org'
@@ -22,6 +22,12 @@ METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contribut
 bookdata = 'http://%s/BookReader/BookReaderJSON.php'
 bookreader = "http://%s/BookReader/BookReaderImages.php"
 URI_PRIFIX = "https://iiif.archive.org/iiif"
+
+MAX_SCRAPE_LIMIT = 10_000
+MAX_API_LIMIT = 1_000
+
+class MaxLimitException(Exception):
+    pass
 
 valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
 
@@ -33,15 +39,60 @@ def purify_domain(domain):
     domain = re.sub('^http:\/\/', "https://", domain)
     return domain if domain.endswith('/iiif/') else domain + 'iiif/'
 
-def getids(q, limit=1000, cursor=''):
-    r = requests.get('%s/iiif' % apiurl, params={
-        'q': q,
-        'limit': limit,
-        'cursor': cursor
-    }, allow_redirects=True, timeout=None)
+
+def scrape(query, fields="", sorts="", count=100, cursor="", restrict_to_iiif=False, security=True):
+    """
+    params:
+        query: the query (using the same query Lucene-like queries supported by Internet Archive Advanced Search.
+        fields: Metadata fields to return, comma delimited
+        sorts: Fields to sort on, comma delimited (if identifier is specified, it must be last)
+        count: Number of results to return (minimum of 100)
+        cursor: A cursor, if any (otherwise, search starts at the beginning)
+        restrict_to_iiif: restrict query to supported IIIF collections?
+        security: enforce API page limit
+    """
+    if restrict_to_iiif or not query:
+        _query = "(mediatype:(texts) OR mediatype:(image))"
+        query = f"{_query} AND {query}" if query else _query
+
+    if int(count) > MAX_API_LIMIT and security:
+        raise MaxLimitException(f"Limit may not exceed {MAX_API_LIMIT}.")
+
+    fields = fields or 'identifier,title'
+
+    params = {
+        'q': query
+    }
+    if sorts:
+        params['sorts'] = sorts
+    if fields:
+        params['fields'] = fields
+    if count:
+        params['count'] = count
+    if cursor:
+        params['cursor'] = cursor
+
+    r = requests.get(SCRAPE_API, params=params)
     return r.json()
 
-def checkMultiItem(metadata):    
+def search(query, page=1, limit=100, security=True, sort=None, fields=None):
+    if not query:
+        raise ValueError("GET query parameters 'q' required")
+
+    if int(limit) > MAX_API_LIMIT and security:
+        raise MaxLimitException(f"Limit may not exceed {MAX_API_LIMIT}.")
+
+    return requests.get(
+        ADVANCED_SEARCH,
+        params={'q': query,
+                'sort[]': sort or ['date asc', 'createdate'],
+                'rows': limit,
+                'page': page,
+                'fl[]': fields or 'identifier,title',
+                'output': 'json',
+            }).json()
+
+def checkMultiItem(metadata):
     # Maybe add call to book stack to see if that works first
 
     # Count the number of each original file
@@ -52,16 +103,15 @@ def checkMultiItem(metadata):
                 file_types[file['format']] = 0
 
             file_types[file['format']] += 1
-    #print (file_types)        
+    #print (file_types)
 
     # If there is multiple files of the same type then return the first format
     # Will have to see if there are objects with multiple images and formats
     for format in file_types:
-        if file_types[format] > 1 and format.lower() in valid_filetypes:        
+        if file_types[format] > 1 and format.lower() in valid_filetypes:
             return (True, format)
 
     return (False, None)
-
 
 def to_mimetype(format):
     formats = {
@@ -87,7 +137,7 @@ def to_mimetype(format):
         "Cinepack": "video/x-msvideo",
         "AIFF": "audio/aiff",
         "Apple Lossless Audio": "audio/x-m4a",
-        "MPEG-4 Audio": "audio/mp4" 
+        "MPEG-4 Audio": "audio/mp4"
     }
     return formats.get(format, "application/octet-stream")
 
@@ -108,7 +158,7 @@ def collection(domain, identifiers, label='Custom Archive.org IIIF Collection'):
         })
     return cs
 
-def create_collection3(identifier, domain, page=1, rows=1000):
+def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
     # Get item metadata
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
 
@@ -120,26 +170,26 @@ def create_collection3(identifier, domain, page=1, rows=1000):
 
     addMetadata(collection, identifier, metadata['metadata'], collection=True)
 
-    asURL = f'https://archive.org/advancedsearch.php?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
+    asURL = f'{ADVANCED_SEARCH}?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
     itemsSearch = requests.get(asURL).json()
     total = itemsSearch['response']['numFound']
     # There is a max of 10,000 items that can be retrieved from the advanced search
-    if total > 10000:
-        total = 10000
+    if total > MAX_SCRAPE_LIMIT:
+        total = MAX_SCRAPE_LIMIT
 
     if len(itemsSearch['response']['docs']) == 0:
-        return None 
+        return None
 
     pages = math.ceil(total / rows)
     for item in itemsSearch['response']['docs']:
         child = None
         if item['mediatype'] == 'collection':
             child = CollectionRef(id=f"{domain}{item['identifier']}/collection.json", type="Collection", label=item['title'])
-        else: 
+        else:
             child = ManifestRef(id=f"{domain}{item['identifier']}/manifest.json", type="Manifest", label=item['title'])
-        
+
         if "description" in item:
-            child.summary = {"none": [item['description']]} 
+            child.summary = {"none": [item['description']]}
 
         collection.add_item(child)
     page += 1
@@ -148,7 +198,7 @@ def create_collection3(identifier, domain, page=1, rows=1000):
         collection.add_item(child)
 
     return json.loads(collection.jsonld())
-    
+
 def manifest_page(identifier, label='', page='', width='', height='', metadata=None, canvasId=""):
     if not canvasId:
         canvasId = f"{identifier}/canvas"
@@ -257,7 +307,7 @@ def create_manifest(identifier, domain=None, page=None):
             'itemPath': subPrefix,
             'itemId': identifier
         })
-        if r.status_code != 200: 
+        if r.status_code != 200:
             # If the bookdata failed then treat as a single image
             fileName = ""
             for f in resp['files']:
@@ -265,7 +315,7 @@ def create_manifest(identifier, domain=None, page=None):
                     and f['source'].lower() == 'original' \
                     and 'thumb' not in f['name']:
                     fileName = f['name']
-                    break    
+                    break
 
             if not fileName:
                 # Original wasn't an image
@@ -327,7 +377,7 @@ def singleImage(metadata, identifier, manifest, uri):
             and f['source'].lower() == 'original' \
             and 'thumb' not in f['name']:
             fileName = f['name']
-            break    
+            break
 
     if not fileName:
         # Original wasn't an image
@@ -337,12 +387,12 @@ def singleImage(metadata, identifier, manifest, uri):
 
     imgId = f"{identifier}/{fileName}".replace('/','%2f')
     imgURL = f"{IMG_SRV}/3/{imgId}"
-    
+
     manifest.make_canvas_from_iiif(url=imgURL,
                                     id=f"{URI_PRIFIX}/{identifier}/canvas",
                                     label="1",
                                     anno_page_id=f"{uri}/annotationPage/1",
-                                    anno_id=f"{uri}/annotation/1")    
+                                    anno_id=f"{uri}/annotation/1")
 
 def addMetadata(item, identifier, metadata, collection=False):
     item.homepage = [{"id": f"https://archive.org/details/{identifier}",
@@ -377,7 +427,7 @@ def addMetadata(item, identifier, metadata, collection=False):
 
     excluded_fields = [
         'avg_rating', 'backup_location', 'btih', 'description', 'downloads',
-        'imagecount', 'indexflag', 'item_size', 'licenseurl', 'curation', 
+        'imagecount', 'indexflag', 'item_size', 'licenseurl', 'curation',
         'noindex', 'num_reviews', 'oai_updatedate', 'publicdate', 'publisher',  'reviewdate',
         'scanningcentre', 'stripped_tags', 'uploader'
     ]
@@ -483,7 +533,7 @@ def create_manifest3(identifier, domain=None, page=None):
         for fileMd in metadata['files']:
             if fileMd['name'].endswith('_scandata.xml'):
                 subprefix = fileMd['name'].replace('_scandata.xml', '')
-            if fileMd['format'] == 'Djvu XML':    
+            if fileMd['format'] == 'Djvu XML':
                 djvuFile = fileMd['name']
 
         bookReaderURL = f"https://{metadata.get('server')}/BookReader/BookReaderJSIA.php?id={identifier}&itemPath={metadata.get('dir')}&server={metadata.get('server')}&format=jsonp&subPrefix={subprefix}"
@@ -524,7 +574,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     #                            id=f"https://iiif.archivelab.org/iiif/{identifier}${pageCount}/canvas",
                     #                            label=f"{page['leafNum']}")
                     pageCount += 1
-    
+
 
             # Setting logic for paging behavior and starting canvases
             # Start with paged (default) or individual behaviors
@@ -556,7 +606,7 @@ def create_manifest3(identifier, domain=None, page=None):
 
                 annotations.append(
                     AnnotationPageRef(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage")
-                )         
+                )
                 canvas.annotations = annotations
                 count += 1
     elif mediatype == 'image':
@@ -570,7 +620,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     imgId = f"{identifier}/{file['name']}".replace('/','%2f')
                     imgURL = f"{IMG_SRV}/3/{imgId}"
                     pageCount += 1
-                    
+
                     try:
                         manifest.make_canvas_from_iiif(url=imgURL,
                                                     id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
@@ -676,6 +726,7 @@ def create_manifest3(identifier, domain=None, page=None):
             slugged_id = normalised_id.replace(" ", "-")
             c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
             c = Canvas(id=c_id, label=normalised_id, duration=duration, height=int(filedata['height']), width=int(filedata['width']))        
+
             ap = AnnotationPage(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page")
 
             vttAPId = f"{URI_PRIFIX}/{identifier}/{slugged_id}/vtt"
@@ -999,7 +1050,7 @@ def cantaloupe_resolver(identifier):
         # single image file - find the filename
 
         filename = None
-        for f in files: 
+        for f in files:
             if valid_filetype(f['name']) \
                  and f['source'].lower() == 'original' \
                  and 'thumb' not in f['name']:
@@ -1022,7 +1073,7 @@ def cantaloupe_resolver(identifier):
                 filename = f['name']
                 fileIdentifier = filename[:-1 * len('_jp2.zip')]
 
-        # next look for any _jp2.zip that has a different name to the identifier 
+        # next look for any _jp2.zip that has a different name to the identifier
         if not filename:
             for f in files:
                 if f['name'].endswith('_jp2.zip'):
@@ -1043,13 +1094,8 @@ def cantaloupe_resolver(identifier):
                     fileIdentifier = filename[:-1 * len('_tif.zip')]
                     extension = ".tif"
 
-        #filename = next(f for f in files if f['source'].lower() == 'derivative' \
-        #                and f['name'].endswith('_jp2.zip'))['name']
         if filename:
             dirpath = filename[:-4]
             filepath = f"{fileIdentifier}_{leaf.zfill(4)}{extension}"
             return f"{identifier}%2f{filename}%2f{dirpath}%2f{filepath}"
 
- #   print (f'images not found for {identifier}')
- #   for f in files:
- #       print (f"source: {f['source'].lower()} name: {f['name']} and {f['source'].lower() == 'derivative'} {f['name'].endswith('_jp2.zip')}")
