@@ -233,6 +233,17 @@ def info(identifier):
     cantaloupe_url = f"{image_server}/2/{cantaloupe_id}/info.json"
     return redirect(cantaloupe_url, code=302)
 
+@app.route('/iiif/3/<identifier>/info.json')
+def info3(identifier):
+    cantaloupe_id = cantaloupe_resolver(identifier)
+    cantaloupe_url = f"{image_server}/3/{cantaloupe_id}/info.json"
+    return redirect(cantaloupe_url, code=302)
+
+@app.route('/iiif/2/<identifier>/info.json')
+def info2(identifier):
+    cantaloupe_id = cantaloupe_resolver(identifier)
+    cantaloupe_url = f"{image_server}/2/{cantaloupe_id}/info.json"
+    return redirect(cantaloupe_url, code=302)
 
 @app.route('/iiif/<identifier>/<region>/<size>/<rotation>/<quality>.<fmt>')
 def image_processor(identifier, region, size, rotation, quality, fmt):
