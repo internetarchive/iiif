@@ -498,7 +498,7 @@ def addThumbnails(manifest, identifier, files):
                 mimetype = "image/png"
 
             thumbnails.append({
-                "id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                "id": f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
                 "type": "Image",
                 "format": mimetype,
             })
@@ -722,7 +722,9 @@ def create_manifest3(identifier, domain=None, page=None):
                     duration = float(file['length'])
                     filedata = file
 
-            normalised_id = mp4File.rsplit(".", 1)[0]
+        # create the canvases for each original
+        for file in [f for f in originals if f['format'] in ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack','QuickTime']]:
+            normalised_id = file['name'].rsplit(".", 1)[0]
             slugged_id = normalised_id.replace(" ", "-")
             c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
             c = Canvas(id=c_id, label=normalised_id, duration=duration, height=int(filedata['height']), width=int(filedata['width']))        
