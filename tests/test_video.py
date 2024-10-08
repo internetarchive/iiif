@@ -2,6 +2,7 @@ import os
 os.environ["FLASK_CACHE_DISABLE"] = "true"
 
 import unittest
+import math
 from flask.testing import FlaskClient
 from iiify.app import app
 
@@ -65,6 +66,34 @@ class TestVideo(unittest.TestCase):
             self.assertTrue('language' in item['body'], f"All vtt files should have a language: {item}")
             if item['body']['language'] == 'cy':
                 self.assertEqual(item['body']['id'], 'https://localhost/iiif/resource/cruz-test/cruz-test.cy.vtt', 'Unexpected link for the Welsh vtt file')
+
+    def test_newsitem(self):
+        resp = self.test_app.get("/iiif/3/CSPAN3_20180217_164800_Poplar_Forest_Archaeology/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+
+        canvas = manifest['items'][0]
+        annoPages = canvas['items'][0]
+        annotations = annoPages['items']
+        self.assertEqual(len(annotations), math.floor(780.89 / 60), 'Expected the video to contain the 13min video split into 1 minute segments')
+
+        # Check vtt file
+        self.assertTrue('annotations' in canvas, "Expected canvas to have annotations")
+        vttFile = canvas['annotations'][0]['items'][0]['body']['id']
+        self.assertTrue(vttFile.endswith("/iiif/vtt/streaming/CSPAN3_20180217_164800_Poplar_Forest_Archaeology.vtt"),f"Expected vttFile to be located at /iiif/vtt/streaming/CSPAN3_20180217_164800_Poplar_Forest_Archaeology.vtt but found it at {vttFile}")
+
+        resp = self.test_app.get("/iiif/vtt/streaming/CSPAN3_20180217_164800_Poplar_Forest_Archaeology.vtt")
+        checkLine=False
+        for line in resp.text.split("\n"):
+            if checkLine:
+                self.assertEqual("00:01:02.000 --> 00:01:03.000", line, "Expected the timecode to be over a minute as its the second video")
+                break    
+            if line.startswith("28"):
+                checkLine=True
+        # 28
+        # 00:01:02.000 -> 00:01:02.000
+        # I AM THE DIRECTOR OF ARCHAEOLOGY
+
 
 
 if __name__ == '__main__':
