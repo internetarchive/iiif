@@ -116,6 +116,8 @@ def helper(identifier):
         return render_template('helpers/movies.html', identifier=identifier)
     elif mediatype == "texts":
         return render_template('helpers/texts.html', identifier=identifier)
+    elif mediatype == "collection":
+        return render_template('helpers/collection.html', identifier=identifier)
     else:
         return render_template('helpers/unknown.html', identifier=identifier)
 
