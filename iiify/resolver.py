@@ -722,50 +722,50 @@ def create_manifest3(identifier, domain=None, page=None):
                     duration = float(file['length'])
                     filedata = file
 
-        # create the canvases for each original
-        for file in [f for f in originals if f['format'] in ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack','QuickTime']]:
-            normalised_id = file['name'].rsplit(".", 1)[0]
-            slugged_id = normalised_id.replace(" ", "-")
-            c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
-            c = Canvas(id=c_id, label=normalised_id, duration=duration, height=int(filedata['height']), width=int(filedata['width']))        
+            # create the canvases for each original
+            for file in [f for f in originals if f['format'] in ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack','QuickTime']]:
+                normalised_id = file['name'].rsplit(".", 1)[0]
+                slugged_id = normalised_id.replace(" ", "-")
+                c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
+                c = Canvas(id=c_id, label=normalised_id, duration=duration, height=int(filedata['height']), width=int(filedata['width']))        
 
-            ap = AnnotationPage(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page")
+                ap = AnnotationPage(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page")
 
-            vttAPId = f"{URI_PRIFIX}/{identifier}/{slugged_id}/vtt"
-            vtAnno = c.make_annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation/vtt/streamed", 
-                                                motivation="supplementing", 
-                                                target=c.id, 
-                                                anno_page_id=vttAPId,
-                                                body={"id": f"{domain}vtt/streaming/{identifier}.vtt",
-                                                        "type": "Text",
-                                                        "format": "text/vtt",
-                                                        })
+                vttAPId = f"{URI_PRIFIX}/{identifier}/{slugged_id}/vtt"
+                vtAnno = c.make_annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation/vtt/streamed", 
+                                                    motivation="supplementing", 
+                                                    target=c.id, 
+                                                    anno_page_id=vttAPId,
+                                                    body={"id": f"{domain}vtt/streaming/{identifier}.vtt",
+                                                            "type": "Text",
+                                                            "format": "text/vtt",
+                                                            })
 
-            segments = math.floor(duration / 60)
-            for i in range(segments):
-                start = i * 60
-                if i == segments - 1:
-                    end = int(duration)
-                else:
-                    end = (i + 1) * 60
+                segments = math.floor(duration / 60)
+                for i in range(segments):
+                    start = i * 60
+                    if i == segments - 1:
+                        end = int(duration)
+                    else:
+                        end = (i + 1) * 60
 
-                #print (f"Start: {start} End: {end}, Duration: {float(end) - float(start)} full duration: {duration}")
-                anno = Annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation/{i}", motivation="painting", target=f"{c.id}#t={start},{end}")
-                streamurl = f"https://{metadata['server']}{metadata['dir']}/{mp4File}?start={start}&end={end}&ignore=x.mp4&cnt=0"        
-                body = ResourceItem(id=streamurl,
-                                    type='Video',
-                                    format="video/mp4",
-                                    label={"en": [f"Part {i + 1} of {segments}"]},
-                                    duration=end - start, 
-                                    height=int(filedata['height']),
-                                    width=int(filedata['width']),                      
-                                )
+                    #print (f"Start: {start} End: {end}, Duration: {float(end) - float(start)} full duration: {duration}")
+                    anno = Annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation/{i}", motivation="painting", target=f"{c.id}#t={start},{end}")
+                    streamurl = f"https://{metadata['server']}{metadata['dir']}/{mp4File}?start={start}&end={end}&ignore=x.mp4&cnt=0"        
+                    body = ResourceItem(id=streamurl,
+                                        type='Video',
+                                        format="video/mp4",
+                                        label={"en": [f"Part {i + 1} of {segments}"]},
+                                        duration=end - start, 
+                                        height=int(filedata['height']),
+                                        width=int(filedata['width']),                      
+                                    )
 
-                anno.body = body
-                ap.add_item(anno)
-            
-            c.add_item(ap)
-            manifest.add_item(c)
+                    anno.body = body
+                    ap.add_item(anno)
+                
+                c.add_item(ap)
+                manifest.add_item(c)
         else:
             # create the canvases for each original
             for file in [f for f in originals if f['format'] in ['MPEG4', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack']]:
