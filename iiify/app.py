@@ -23,7 +23,7 @@ app.config['CACHE_DIR'] = "cache"
 cors = CORS(app) if cors else None
 cache = Cache(app)
 
-ARCHIVE = 'http://archive.org'
+ARCHIVE = 'https://archive.org'
 
 # cache.init_app(app)
 
