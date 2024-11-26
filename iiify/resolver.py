@@ -19,8 +19,8 @@ PRZ_CTX = 'http://iiif.io/api/presentation/2/context.json'
 ARCHIVE = 'https://archive.org'
 IMG_SRV = 'https://iiif.archive.org/image/iiif'
 METADATA_FIELDS = ("title", "volume", "publisher", "subject", "date", "contributor", "creator")
-bookdata = 'http://%s/BookReader/BookReaderJSON.php'
-bookreader = "http://%s/BookReader/BookReaderImages.php"
+bookdata = 'https://%s/BookReader/BookReaderJSON.php'
+bookreader = "https://%s/BookReader/BookReaderImages.php"
 URI_PRIFIX = "https://iiif.archive.org/iiif"
 
 MAX_SCRAPE_LIMIT = 10_000

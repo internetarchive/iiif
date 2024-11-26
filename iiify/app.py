@@ -13,6 +13,7 @@ from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
+import re
 
 
 app = Flask(__name__)
@@ -98,8 +99,15 @@ def documentation():
 
 @app.route('/iiif/helper/<identifier>/')
 def helper(identifier):
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    if not re.match(r'^[a-zA-Z0-9_.-]{1,100}$', identifier):
+        abort(400, "Invalid identifier")
+
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+
+    # If the item doesn't exist, the endpoint 200s with an empty object
+    if not metadata:
+        abort(404, f"Identifier '{identifier}' not found")
+
     mediatype = metadata['metadata']['mediatype']
 
     if mediatype == "image":
