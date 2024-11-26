@@ -844,10 +844,10 @@ def create_manifest3(identifier, domain=None, page=None):
 
     return json.loads(manifest.jsonld())
 
-def create_annotations(version, identifier, fileName, canvas_no, domain=None):
+def create_annotations(version: int, identifier: str, fileName: str, canvas_no: int, domain: str | None = None):
     annotationPage = AnnotationPage(id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json")
     annotationPage.items = []
-    index = int(canvas_no) - 1
+    index = canvas_no - 1
     url = f"{ARCHIVE}/download/{identifier}/{fileName}"
     try:
         # Fetch the remote XML file
