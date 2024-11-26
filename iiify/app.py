@@ -216,7 +216,7 @@ def vtt_stream(identifier):
 @app.route('/iiif/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest(identifier):
-    validate_ia_identifier(identifier, page_suffix=True)
+    validate_ia_identifier(identifier, page_suffix=False)
     return redirect(f'/iiif/3/{identifier}/manifest.json', code=302)
 
 @app.route('/iiif/2/<identifier>/manifest.json')
@@ -279,8 +279,8 @@ def validate_ia_identifier(identifier: str, page_suffix: bool) -> None:
     if page_suffix:
         if not re.match(r'^[a-zA-Z0-9_.-]{1,100}(\$\d+)?$', identifier):
             abort(400, "Invalid identifier")
-            return
-    
+        return
+
     if not re.match(r'^[a-zA-Z0-9_.-]{1,100}$', identifier):
         abort(400, "Invalid identifier")
         return
