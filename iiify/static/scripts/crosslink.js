@@ -16,7 +16,7 @@ $(document).ready(function() {
 		canvas,
 		manifest;
 		var url = 'https://pragma.archivelab.org';
-		if (link.indexOf(url) == 0) {
+		if (link == url || link.indexOf(url + '/') == 0) {
 		    console.log('just checking');
 		    event.preventDefault();
 		    event.stopImmediatePropagation;
