@@ -81,7 +81,7 @@ def documentation():
 
 @app.route('/iiif/helper/<identifier>/')
 def helper(identifier):
-    validate_ia_identifier(identifier, page_suffix=false)
+    validate_ia_identifier(identifier, page_suffix=False)
 
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
 
