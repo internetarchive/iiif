@@ -67,3 +67,7 @@ cache/
 
 # Old folder from v2?
 media/
+
+# Python venv
+.venv/
+venv/
