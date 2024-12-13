@@ -1,3 +1,5 @@
+import os
+
 import unittest
 from flask.testing import FlaskClient
 from iiify.app import app
@@ -5,6 +7,7 @@ from iiify.app import app
 class TestAnnotations(unittest.TestCase):
 
     def setUp(self) -> None:
+        os.environ["FLASK_CACHE_DISABLE"] = "true"
         self.test_app = FlaskClient(app)
 
     def test_v3_manifest_has_annotations(self):
