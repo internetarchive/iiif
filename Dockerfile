@@ -1,4 +1,4 @@
-FROM tiangolo/uwsgi-nginx-flask:python3.11
+FROM tiangolo/uwsgi-nginx-flask:python3.12
 ENV LISTEN_PORT 8080
 EXPOSE 8080
 COPY ./requirements.txt /app/requirements.txt
