@@ -1,5 +1,4 @@
 import os
-os.environ["FLASK_CACHE_DISABLE"] = "true"
 
 import unittest
 import math
@@ -9,6 +8,7 @@ from iiify.app import app
 class TestVideo(unittest.TestCase):
 
     def setUp(self) -> None:
+        os.environ["FLASK_CACHE_DISABLE"] = "true"
         self.test_app = FlaskClient(app)
 
     def test_v3_single_video_manifest(self):

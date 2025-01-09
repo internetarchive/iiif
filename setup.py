@@ -4,7 +4,7 @@
 """
     setup.py
     ~~~~~~~~
-    iiify IIIF2 web server
+    iiify IIIF web server
 
     :copyright: (c) 2015 by mek.
     :license: see LICENSE for more details.
@@ -37,7 +37,7 @@ def find_version(*file_paths):
 setup(
     name='iiify',
     version=find_version("iiify", "__init__.py"),
-    description='An implementation of the IIIF Image API 2.0 Specification ',
+    description='An implementation of the IIIF Image API 2 and 3 Specification ',
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -45,8 +45,7 @@ setup(
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.12",
         "Topic :: Internet :: WWW/HTTP",
     ],
     author='mek',

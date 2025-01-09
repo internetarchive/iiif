@@ -1,5 +1,4 @@
 import os
-os.environ["FLASK_ENV"] = "testing"
 
 import unittest
 from flask.testing import FlaskClient
@@ -7,6 +6,7 @@ from iiify.app import app
 class TestCollections(unittest.TestCase):
 
     def setUp(self) -> None:
+        os.environ["FLASK_ENV"] = "testing"
         self.test_app = FlaskClient(app)
 
     def test_v3_collection(self):

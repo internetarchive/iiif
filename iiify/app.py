@@ -13,6 +13,7 @@ from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
+import re
 
 
 app = Flask(__name__)
@@ -23,31 +24,13 @@ app.config['CACHE_DIR'] = "cache"
 cors = CORS(app) if cors else None
 cache = Cache(app)
 
-ARCHIVE = 'http://archive.org'
+ARCHIVE = 'https://archive.org'
 
 # cache.init_app(app)
 
-def sprite_concat(imgs):
-    from PIL import Image
-    images = list(map(Image.open, imgs))
-    widths, heights = zip(*[i.size for i in images])
-
-    total_width = sum(widths)
-    max_height = max(heights)
-
-    new_im = Image.new('RGB', (total_width, max_height))
-
-    x_offset = 0
-    for im in images:
-        new_im.paste(im, (x_offset, 0))
-        x_offset += im.size[0]
-    return new_im
-
 
 def cache_bust():
-    if request.args.get("recache", "") in ["True", "true", "1"]:
-        return True
-    return False
+    return request.args.get("recache", "") in ["True", "true", "1"]
 
 @app.route('/')
 def mainentry():
@@ -98,8 +81,14 @@ def documentation():
 
 @app.route('/iiif/helper/<identifier>/')
 def helper(identifier):
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    validate_ia_identifier(identifier, page_suffix=False)
+
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+
+    # If the item doesn't exist, the endpoint 200s with an empty object
+    if not metadata:
+        abort(404, f"Identifier '{identifier}' not found")
+
     mediatype = metadata['metadata']['mediatype']
 
     if mediatype == "image":
@@ -124,6 +113,8 @@ def helper(identifier):
 
 @app.route('/iiif/<identifier>')
 def view(identifier):
+    validate_ia_identifier(identifier, page_suffix=True)
+
     domain = purify_domain(request.args.get('domain', request.url_root))
     uri = '%s%s' % (domain, identifier)
     page = request.args.get('page', None)
@@ -142,6 +133,7 @@ def view(identifier):
 @app.route('/iiif/3/<identifier>/collection.json')
 @cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust)
 def collection3JSON(identifier):
+    validate_ia_identifier(identifier, page_suffix=False)
     domain = purify_domain(request.args.get('domain', request.url_root))
 
     try:
@@ -159,6 +151,7 @@ def collection3JSON(identifier):
 @app.route('/iiif/3/<identifier>/<page>/collection.json')
 @cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust)
 def collection3page(identifier, page):
+    validate_ia_identifier(identifier, page_suffix=False)
     domain = purify_domain(request.args.get('domain', request.url_root))
 
     try:
@@ -177,18 +170,22 @@ def collection3page(identifier, page):
 @app.route('/iiif/<identifier>/collection.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def collectionJSON(identifier):
+    validate_ia_identifier(identifier, page_suffix=False)
     return redirect(f'/iiif/3/{identifier}/collection.json', code=302)
 
 
 @app.route('/iiif/<identifier>/<page>/collection.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def collectionPage(identifier, page):
+    validate_ia_identifier(identifier, page_suffix=False)
     return redirect(f'/iiif/3/{identifier}/{page}/collection.json', code=302)
 
 
 @app.route('/iiif/3/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest3(identifier):
+    validate_ia_identifier(identifier, page_suffix=False)
+
     domain = purify_domain(request.args.get('domain', request.url_root))
     page = None
 
@@ -203,15 +200,17 @@ def manifest3(identifier):
         raise excpt
         # abort(404)
 
-@app.route('/iiif/<version>/annotations/<identifier>/<fileName>/<canvas_no>.json')
+@app.route('/iiif/<int:version>/annotations/<identifier>/<fileName>/<int:canvas_no>.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
-def annnotations(version, identifier, fileName, canvas_no):
+def annnotations(version: str, identifier: str, fileName: str, canvas_no: int):
+    validate_ia_identifier(identifier, page_suffix=False)
     domain = purify_domain(request.args.get('domain', request.url_root))
     return ldjsonify(create_annotations(version, identifier, fileName, canvas_no, domain=domain))
 
 @app.route('/iiif/vtt/streaming/<identifier>.vtt')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def vtt_stream(identifier):
+    validate_ia_identifier(identifier, page_suffix=False)
     response = make_response(create_vtt_stream(identifier))
     response.headers['Content-Type'] = 'text/vtt'
     return response
@@ -219,10 +218,12 @@ def vtt_stream(identifier):
 @app.route('/iiif/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest(identifier):
+    validate_ia_identifier(identifier, page_suffix=False)
     return redirect(f'/iiif/3/{identifier}/manifest.json', code=302)
 
 @app.route('/iiif/2/<identifier>/manifest.json')
 def manifest2(identifier):
+    validate_ia_identifier(identifier, page_suffix=True)
     domain = purify_domain(request.args.get('domain', request.url_root))
     page = None
     if '$' in identifier:
@@ -238,24 +239,28 @@ def manifest2(identifier):
 
 @app.route('/iiif/<identifier>/info.json')
 def info(identifier):
+    validate_ia_identifier(identifier, page_suffix=True)
     cantaloupe_id = cantaloupe_resolver(identifier)
     cantaloupe_url = f"{image_server}/2/{cantaloupe_id}/info.json"
     return redirect(cantaloupe_url, code=302)
 
 @app.route('/iiif/3/<identifier>/info.json')
 def info3(identifier):
+    validate_ia_identifier(identifier, page_suffix=True)
     cantaloupe_id = cantaloupe_resolver(identifier)
     cantaloupe_url = f"{image_server}/3/{cantaloupe_id}/info.json"
     return redirect(cantaloupe_url, code=302)
 
 @app.route('/iiif/2/<identifier>/info.json')
 def info2(identifier):
+    validate_ia_identifier(identifier, page_suffix=True)
     cantaloupe_id = cantaloupe_resolver(identifier)
     cantaloupe_url = f"{image_server}/2/{cantaloupe_id}/info.json"
     return redirect(cantaloupe_url, code=302)
 
 @app.route('/iiif/<identifier>/<region>/<size>/<rotation>/<quality>.<fmt>')
 def image_processor(identifier, region, size, rotation, quality, fmt):
+    validate_ia_identifier(identifier, page_suffix=True)
     cantaloupe_id = cantaloupe_resolver(identifier)
     cantaloupe_url = f"{image_server}/2/{cantaloupe_id}/{region}/{size}/{rotation}/{quality}.{fmt}"
     return redirect(cantaloupe_url, code=302)
@@ -272,6 +277,15 @@ def ldjsonify(data):
     j.mimetype = "application/ld+json"
     return j
 
+def validate_ia_identifier(identifier: str, page_suffix: bool) -> None:
+    if page_suffix:
+        if not re.match(r'^[a-zA-Z0-9_.-]{1,100}(\$\d+)?$', identifier):
+            abort(400, "Invalid identifier")
+        return
+
+    if not re.match(r'^[a-zA-Z0-9_.-]{1,100}$', identifier):
+        abort(400, "Invalid identifier")
+        return
 
 if __name__ == '__main__':
     app.run(**options)

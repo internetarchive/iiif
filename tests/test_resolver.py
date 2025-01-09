@@ -1,10 +1,12 @@
 import os
-os.environ["FLASK_CACHE_DISABLE"] = "true"
 
 import unittest
 from iiify.resolver import purify_domain, collection, manifest_page
 
 class TestResolver(unittest.TestCase):
+    def setUp(self) -> None:
+        os.environ["FLASK_CACHE_DISABLE"] = "true"
+
     def test_purify(self):
         domain = purify_domain("https://example.org/iiif/")
         self.assertEqual(domain, "https://example.org/iiif/")
