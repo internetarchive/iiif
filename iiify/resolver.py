@@ -134,6 +134,7 @@ def to_mimetype(format):
         "HiRes MPEG4": "video/mpeg",
         "h.264 MPEG4": "video/mpeg",
         "h.264": "video/mpeg",
+        "h.264 HD": "video/mp4",
         "Matroska": "video/x-matroska",
         "Cinepack": "video/x-msvideo",
         "AIFF": "audio/aiff",
