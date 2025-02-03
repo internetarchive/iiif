@@ -668,9 +668,12 @@ def create_manifest3(identifier, domain=None, page=None):
     elif mediatype == 'audio' or mediatype == 'etree':
         # sort the files into originals and derivatives, splitting the derivatives into buckets based on the original
         (originals, derivatives) = sortDerivatives(metadata)
-        
-        # create the canvases for each original
 
+        # Make behavior "auto-advance if more than one original"
+        if sum(f['format'] in AUDIO_FORMATS for f in originals) > 1:
+            manifest.behavior = "auto-advance"
+
+        # create the canvases for each original
         for file in [f for f in originals if f['format'] in AUDIO_FORMATS]:
             normalised_id = file['name'].rsplit(".", 1)[0]
             slugged_id = normalised_id.replace(" ", "-")
@@ -712,6 +715,9 @@ def create_manifest3(identifier, domain=None, page=None):
 
     elif mediatype == "movies":
         (originals, derivatives, vttfiles) = sortDerivatives(metadata, includeVtt=True)
+        # Make behavior "auto-advance if more than one original"
+        if sum(f['format'] in VIDEO_FORMATS for f in originals) > 1:
+            manifest.behavior = "auto-advance"
 
         if 'access-restricted-item' in metadata['metadata'] and metadata['metadata']['access-restricted-item']:
             # this is a news item so has to be treated differently
@@ -972,7 +978,6 @@ def coerce_list(value):
 def valid_filetype(filename):
     f = filename.lower()
     return any(f.endswith('.%s' % ext) for ext in valid_filetypes)
-
 
 def ia_resolver(identifier):
     """Resolves a iiif identifier to the resource's path on disk.
