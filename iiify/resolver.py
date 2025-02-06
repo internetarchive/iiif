@@ -703,7 +703,12 @@ def create_manifest3(identifier, domain=None, page=None):
                         body.items.append(r)
             else:
                 # todo: deal with instances where there are no derivatives for whatever reason
-                pass
+                body = ResourceItem(
+                            id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
+                            type='Sound',
+                            format=to_mimetype(file['format']),
+                            label={"none": [file['format']]},
+                            duration=float(file['length']))
 
             anno.body = body
             ap.add_item(anno)
