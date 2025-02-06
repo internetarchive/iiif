@@ -161,6 +161,33 @@ class TestManifests(unittest.TestCase):
 
         self.assertEqual(len(manifest['items']),1, f"Expected 1 canvas, but got {len(manifest['items'])}")
 
+    def test_auto_advance_audio(self):
+        resp = self.test_app.get("/iiif/3/beowulf_te_librivox/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+
+        self.assertEqual(manifest['behavior'], ["auto-advance"], f"Expected auto-advance on manifest with {len(manifest['items'])} canvases." )
+
+    def test_no_auto_advance_audio(self):
+        resp = self.test_app.get("/iiif/3/78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+
+        self.assertNotEqual(manifest.get('behavior', ['']), ["auto-advance"], "Expected no auto-advance behavior on manifest with 1 canvas." )
+
+    def test_auto_advance_video(self):
+        resp = self.test_app.get("/iiif/3/captain-n-the-game-master-season-2-mkv/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+
+        self.assertEqual(manifest['behavior'], ["auto-advance"], f"Expected auto-advance on manifest with {len(manifest['items'])} canvases." )
+
+    def test_no_auto_advance_video(self):
+        resp = self.test_app.get("/iiif/3/DONAHUEARTSPECIAL/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+
+        self.assertNotEqual(manifest.get('behavior', ['']), ["auto-advance"], "Expected no auto-advance behavior on manifest with 1 canvas." )
 
 
 ''' to test:
