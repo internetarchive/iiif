@@ -285,11 +285,15 @@ def create_manifest(identifier, domain=None, page=None):
     if mediatype.lower() == 'image' or (
         filepath and mediatype.lower() != 'texts'
     ):
-        path, mediatype = ia_resolver(identifier)
-        info = web.info(domain, path)
+        # If the bookdata failed then treat as a single image
+        fileName = findFilename(resp['files'])
+
+        imgId = f"{identifier}/{fileName}".replace('/','%2f')
+        info_resp = requests.get(f"{IMG_SRV}/2/{imgId}/info.json")
+        info = info_resp.json()
         manifest['sequences'][0]['canvases'].append(
             manifest_page(
-                identifier="%s%s" % (domain, identifier),
+                identifier=info['@id'],
                 label=metadata['title'],
                 width=info['width'],
                 height=info['height'],
@@ -311,20 +315,8 @@ def create_manifest(identifier, domain=None, page=None):
         })
         if r.status_code != 200:
             # If the bookdata failed then treat as a single image
-            fileName = ""
-            for f in resp['files']:
-                if valid_filetype(f['name']) \
-                    and f['source'].lower() == 'original' \
-                    and 'thumb' not in f['name']:
-                    fileName = f['name']
-                    break
-
-            if not fileName:
-                # Original wasn't an image
-                for f in resp['files']:
-                    if '_jp2.zip' in f['name']:
-                        fileName = f"{f['name']}/{f['name'].replace('.zip','')}/{f['name'].replace('jp2.zip','0000.jp2')}"
-
+            fileName = findFilename(resp['files'])
+            
             imgId = f"{identifier}/{fileName}".replace('/','%2f')
             info_resp = requests.get(f"{IMG_SRV}/2/{imgId}/info.json")
             info = info_resp.json()
@@ -957,6 +949,24 @@ def create_vtt_stream(identifier):
 
     # Join the list into a single string
     return "\n".join(vtt_content)
+
+def findFilename(resp):
+    # If the bookdata failed then treat as a single image
+    fileName = ""
+    for f in resp:
+        if valid_filetype(f['name']) \
+            and f['source'].lower() == 'original' \
+            and 'thumb' not in f['name']:
+            fileName = f['name']
+            break
+
+    if not fileName:
+        # Original wasn't an image
+        for f in resp['files']:
+            if '_jp2.zip' in f['name']:
+                fileName = f"{f['name']}/{f['name'].replace('.zip','')}/{f['name'].replace('jp2.zip','0000.jp2')}"
+
+    return fileName            
 
 def formatTimeVTT(time):
     hours, remainder = divmod(time.total_seconds(), 3600)

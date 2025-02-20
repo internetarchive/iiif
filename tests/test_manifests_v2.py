@@ -40,8 +40,8 @@ class TestManifests(unittest.TestCase):
         canvas = manifest['sequences'][0]['canvases'][0]
         self.assertEqual(canvas['@id'], 'https://iiif.archivelab.org/iiif/img-8664_202009/canvas', 'Expected canvas id to be the same')
         image = canvas['images'][0]['resource']
-        self.assertEqual(image['@id'], "https://localhost/iiif/img-8664_202009/full/full/0/default.jpg", "Resource not using new image server")
-        self.assertEqual(image['service']['@id'], 'https://localhost/iiif/img-8664_202009', "V2 service not using the new image server")
+        self.assertEqual(image['@id'], "https://iiif.archive.org/image/iiif/2/img-8664_202009%2FIMG_8664.jpg/full/full/0/default.jpg", "Resource not using new image server")
+        self.assertEqual(image['service']['@id'], 'https://iiif.archive.org/image/iiif/2/img-8664_202009%2FIMG_8664.jpg', "V2 service not using the new image server")
 
     def test_v2_single_text_manifest(self):
         resp = self.test_app.get("/iiif/2/fbf_3chords_1_/manifest.json")
@@ -60,3 +60,14 @@ class TestManifests(unittest.TestCase):
         resp = self.test_app.get("/iiif/2/fbf_3chords_1_/manifest.json")
 
         self.assertEqual(resp.status_code, 200)
+
+    def test_brokenv2(self):
+        resp = self.test_app.get("/iiif/2/opencontext-41-nippur-excavation-units/manifest.json")
+
+        self.assertEqual(resp.status_code, 200)    
+        manifest = resp.json
+        imgSrv = manifest['sequences'][0]['canvases'][0]['images'][0]['resource']['service']
+        self.assertTrue(imgSrv['@id'].startswith("https://iiif.archive.org/image/iiif/2"),"Expected v2 image service to use cantaloupe")
+
+        # Check using the correct url 
+        # "https://iiif.archive.org/image/iiif/2

@@ -233,8 +233,8 @@ def manifest2(identifier):
         return ldjsonify(create_manifest(identifier, domain=domain, page=page))
     except Exception as excpt:
         print("Exception occurred in manifest2:")
-        print(excpt)
-        abort(404)
+        raise excpt
+        #abort(404)
 
 
 @app.route('/iiif/<identifier>/info.json')
