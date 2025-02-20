@@ -2,7 +2,6 @@
 
 import os
 import requests
-from iiif2 import iiif, web
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 from urllib.parse import urlparse, parse_qs, quote
