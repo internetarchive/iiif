@@ -171,14 +171,14 @@ def collection3page(identifier, page):
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def collectionJSON(identifier):
     validate_ia_identifier(identifier, page_suffix=False)
-    return redirect(f'/iiif/3/{identifier}/collection.json', code=302)
+    return collection3JSON(identifier)
 
 
 @app.route('/iiif/<identifier>/<page>/collection.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def collectionPage(identifier, page):
     validate_ia_identifier(identifier, page_suffix=False)
-    return redirect(f'/iiif/3/{identifier}/{page}/collection.json', code=302)
+    return collection3page(identifier, page)
 
 
 @app.route('/iiif/3/<identifier>/manifest.json')
@@ -219,7 +219,7 @@ def vtt_stream(identifier):
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest(identifier):
     validate_ia_identifier(identifier, page_suffix=False)
-    return redirect(f'/iiif/3/{identifier}/manifest.json', code=302)
+    return manifest3(identifier)
 
 @app.route('/iiif/2/<identifier>/manifest.json')
 def manifest2(identifier):
