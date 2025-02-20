@@ -236,14 +236,14 @@ def manifest_page(identifier, label='', page='', width='', height='', metadata=N
     }
 
 
-def create_manifest(identifier, domain=None, page=None):
+def create_manifest(identifier, domain=None, page=None, version=""):
     path = os.path.join(media_root, identifier)
     resp = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
     metadata = resp.get("metadata", {})
 
     manifest = {
         '@context': PRZ_CTX,
-        '@id': '%s%s/manifest.json' % (domain, identifier),
+        '@id': '%s%s%s/manifest.json' % (domain, version, identifier),
         '@type': 'sc:Manifest',
         'description': metadata.get('description', ''),
         'logo': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReMN4l9cgu_qb1OwflFeyfHcjp8aUfVNSJ9ynk2IfuHwW1I4mDSw',

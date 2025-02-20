@@ -230,7 +230,7 @@ def manifest2(identifier):
         identifier, page = identifier.split('$')
         page = int(page)
     try:
-        return ldjsonify(create_manifest(identifier, domain=domain, page=page))
+        return ldjsonify(create_manifest(identifier, domain=domain, page=page, version='2/'))
     except Exception as excpt:
         print("Exception occurred in manifest2:")
         print(excpt)
