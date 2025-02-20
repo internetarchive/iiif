@@ -12,8 +12,7 @@ class TestManifests(unittest.TestCase):
 
     def test_no_version(self):
         resp = self.test_app.get("/iiif/rashodgson68/manifest.json")
-        self.assertEqual(resp.status_code, 302)
-        self.assertEqual(resp.location, '/iiif/3/rashodgson68/manifest.json')
+        self.assertEqual(resp.status_code, 200)
 
     def test_ident(self):
         resp = self.test_app.get("/iiif/3/img-8664_202009/manifest.json")

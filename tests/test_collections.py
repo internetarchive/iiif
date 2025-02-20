@@ -22,13 +22,14 @@ class TestCollections(unittest.TestCase):
         resp = self.test_app.get("/iiif/3/frankbford/2/collection.json")
         self.assertEqual(resp.status_code, 200)
 
-    def test_collections_redirect(self):
+    def test_collections_proxy(self):
         resp = self.test_app.get("/iiif/frankbford/collection.json")
-        self.assertEqual(resp.status_code, 302)
+        print(resp.status_code)
+        self.assertEqual(resp.status_code, 200)
 
-    def test_v3_collection_pages_redirect(self):
-            resp = self.test_app.get("/iiif/frankbford/2/collection.json")
-            self.assertEqual(resp.status_code, 302)
+    def test_v3_collection_pages_proxy(self):
+        resp = self.test_app.get("/iiif/frankbford/2/collection.json")
+        self.assertEqual(resp.status_code, 200)
 
 def test_v3_collection_detection(self):
         resp = self.test_app.get("/iiif/frankbford/manifest.json")
