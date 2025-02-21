@@ -15,7 +15,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
 
-        self.assertEqual(manifest['@id'], 'https://localhost/iiif/rashodgson68/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
+        self.assertEqual(manifest['@id'], 'https://localhost/iiif/2/rashodgson68/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
         self.assertEqual(manifest['@type'], "sc:Manifest", f"Unexpected type. Expected Manifest got {manifest['@type']}")
         self.assertEqual(len(manifest['sequences'][0]['canvases']),32,f"Expected 32 canvases but got: {len(manifest['sequences'][0]['canvases'])}")
         self.assertEqual(manifest['sequences'][0]['canvases'][0]['@id'],"https://iiif.archivelab.org/iiif/rashodgson68$0/canvas",f"v2 canvas id has changed")
@@ -26,7 +26,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
 
-        self.assertEqual(manifest['@id'], 'https://localhost/iiif/1991-12-compute-magazine/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
+        self.assertEqual(manifest['@id'], 'https://localhost/iiif/2/1991-12-compute-magazine/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
         image = manifest['sequences'][0]['canvases'][0]['images'][0]['resource']
         self.assertEqual(image['@id'], "https://localhost/iiif/1991-12-compute-magazine$0/full/full/0/default.jpg", "Resource not using new image server")
         self.assertEqual(image['service']['@id'], 'https://localhost/iiif/1991-12-compute-magazine$0', "V2 service not using the new image server")
@@ -36,7 +36,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
 
-        self.assertEqual(manifest['@id'], 'https://localhost/iiif/img-8664_202009/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
+        self.assertEqual(manifest['@id'], 'https://localhost/iiif/2/img-8664_202009/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
         canvas = manifest['sequences'][0]['canvases'][0]
         self.assertEqual(canvas['@id'], 'https://iiif.archivelab.org/iiif/img-8664_202009/canvas', 'Expected canvas id to be the same')
         image = canvas['images'][0]['resource']
@@ -48,7 +48,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
 
-        self.assertEqual(manifest['@id'], 'https://localhost/iiif/fbf_3chords_1_/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
+        self.assertEqual(manifest['@id'], 'https://localhost/iiif/2/fbf_3chords_1_/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
         canvas = manifest['sequences'][0]['canvases'][0]
         self.assertEqual(canvas['@id'], 'https://iiif.archivelab.org/iiif/fbf_3chords_1_$0/canvas', 'Expected canvas id to be the same')
         image = canvas['images'][0]['resource']

@@ -14,10 +14,10 @@ class TestHelper(unittest.TestCase):
         resp = self.test_app.get("/iiif/helper/img-8664_202009/")
         self.assertEqual(resp.status_code, 200)
 
-        self.assertIn('<a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/3/img-8664_202009/manifest.json">Mirador</a>', resp.text, "Couldn't find Mirador link in helper page.")
+        self.assertIn('<a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/img-8664_202009/manifest.json">Mirador</a>', resp.text, "Couldn't find Mirador link in helper page.")
 
     def test_collection(self):
         resp = self.test_app.get("/iiif/helper/frankbford/")
         self.assertEqual(resp.status_code, 200)
 
-        self.assertIn('<a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/3/frankbford/collection.json">Mirador</a>', resp.text, "Couldn't find Mirador link in helper page.")
+        self.assertIn('<a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/frankbford/collection.json">Mirador</a>', resp.text, "Couldn't find Mirador link in helper page.")

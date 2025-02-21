@@ -7,7 +7,7 @@ from iiify.app import app
 class TestImages(unittest.TestCase):
 
     def setUp(self) -> None:
-        os.environ["FLASK_ENV"] = "testing"
+        os.environ["FLASK_CACHE_DISABLE"] = "true"
         self.test_app = FlaskClient(app)
 
     def test_v3_resolving(self):

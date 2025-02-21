@@ -243,7 +243,7 @@ def create_manifest(identifier, domain=None, page=None):
 
     manifest = {
         '@context': PRZ_CTX,
-        '@id': '%s%s/manifest.json' % (domain, identifier),
+        '@id': '%s2/%s/manifest.json' % (domain,identifier),
         '@type': 'sc:Manifest',
         'description': metadata.get('description', ''),
         'logo': 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReMN4l9cgu_qb1OwflFeyfHcjp8aUfVNSJ9ynk2IfuHwW1I4mDSw',
