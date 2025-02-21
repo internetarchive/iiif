@@ -940,25 +940,6 @@ def create_vtt_stream(identifier):
     # Join the list into a single string
     return "\n".join(vtt_content)
 
-def findFilename(resp):
-
-    # If the bookdata failed then treat as a single image
-    fileName = ""
-    for f in resp:
-        if valid_filetype(f['name']) \
-            and f['source'].lower() == 'original' \
-            and 'thumb' not in f['name']:
-            fileName = f['name']
-            break
-
-    if not fileName:
-        # Original wasn't an image
-        for f in resp['files']:
-            if '_jp2.zip' in f['name']:
-                fileName = f"{f['name']}/{f['name'].replace('.zip','')}/{f['name'].replace('jp2.zip','0000.jp2')}"
-
-    return fileName            
-
 def formatTimeVTT(time):
     hours, remainder = divmod(time.total_seconds(), 3600)
     minutes, seconds = divmod(remainder, 60)
