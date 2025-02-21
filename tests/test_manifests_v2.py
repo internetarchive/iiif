@@ -28,8 +28,8 @@ class TestManifests(unittest.TestCase):
 
         self.assertEqual(manifest['@id'], 'https://localhost/iiif/1991-12-compute-magazine/manifest.json', 'V2 Manifest ID is using new infrastructure changed')
         image = manifest['sequences'][0]['canvases'][0]['images'][0]['resource']
-        self.assertEqual(image['@id'], "https://localhost/iiif/1991-12-compute-magazine$0/full/full/0/default.jpg", "Resource not using new image server")
-        self.assertEqual(image['service']['@id'], 'https://localhost/iiif/1991-12-compute-magazine$0', "V2 service not using the new image server")
+        self.assertEqual(image['@id'], "https://iiif.archive.org/image/iiif/2/1991-12-compute-magazine%2fCompute_Issue_136_1991_Dec_jp2.zip%2fCompute_Issue_136_1991_Dec_jp2%2fCompute_Issue_136_1991_Dec_0000.jp2/full/full/0/default.jpg", "Resource not using new image server")
+        self.assertEqual(image['service']['@id'], 'https://iiif.archive.org/image/iiif/2/1991-12-compute-magazine%2fCompute_Issue_136_1991_Dec_jp2.zip%2fCompute_Issue_136_1991_Dec_jp2%2fCompute_Issue_136_1991_Dec_0000.jp2', "V2 service not using the new image server")
 
     def test_v2_single_image(self):
         resp = self.test_app.get("/iiif/2/img-8664_202009/manifest.json")
@@ -52,8 +52,8 @@ class TestManifests(unittest.TestCase):
         canvas = manifest['sequences'][0]['canvases'][0]
         self.assertEqual(canvas['@id'], 'https://iiif.archivelab.org/iiif/fbf_3chords_1_$0/canvas', 'Expected canvas id to be the same')
         image = canvas['images'][0]['resource']
-        self.assertEqual(image['@id'], "https://localhost/iiif/fbf_3chords_1_$0/full/full/0/default.jpg", "Resource not using new image server")
-        self.assertEqual(image['service']['@id'], 'https://localhost/iiif/fbf_3chords_1_$0', "V2 service not using the new image server")
+        self.assertEqual(image['@id'], "https://iiif.archive.org/image/iiif/2/fbf_3chords_1_%2f3chords(1)_jp2.zip%2f3chords(1)_jp2%2f3chords(1)_0000.jp2/full/full/0/default.jpg", "Resource not using new image server")
+        self.assertEqual(image['service']['@id'], 'https://iiif.archive.org/image/iiif/2/fbf_3chords_1_%2f3chords(1)_jp2.zip%2f3chords(1)_jp2%2f3chords(1)_0000.jp2', "V2 service not using the new image server")
 
 
     def test_text_which_is_image(self):
