@@ -11,7 +11,6 @@ Flask-Caching==2.3.0
 Flask-Cors==5.0.0
 idna==3.10
 iiif-prezi3==2.0.0
-iiif2==0.0.32
 importlib_metadata==8.5.0
 internetarchive==5.0.4
 itsdangerous==2.2.0
