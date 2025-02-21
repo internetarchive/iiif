@@ -67,7 +67,8 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)    
         manifest = resp.json
         imgSrv = manifest['sequences'][0]['canvases'][0]['images'][0]['resource']['service']
-        self.assertTrue(imgSrv['@id'].startswith("https://iiif.archive.org/image/iiif/2"),"Expected v2 image service to use cantaloupe")
 
         # Check using the correct url 
         # "https://iiif.archive.org/image/iiif/2
+        self.assertTrue(imgSrv['@id'].startswith("https://iiif.archive.org/image/iiif/2"),"Expected v2 image service to use cantaloupe")
+
