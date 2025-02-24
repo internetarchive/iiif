@@ -57,8 +57,7 @@ setup(
     license='LICENSE',
     install_requires=[
         'flask',
-        'flask-cors',
-        'iiif2'
+        'flask-cors'
         ],
     include_package_data=True
     )

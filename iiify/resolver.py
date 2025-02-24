@@ -2,7 +2,6 @@
 
 import os
 import requests
-from iiif2 import iiif, web
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
 from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
 from urllib.parse import urlparse, parse_qs, quote
@@ -285,11 +284,10 @@ def create_manifest(identifier, domain=None, page=None):
     if mediatype.lower() == 'image' or (
         filepath and mediatype.lower() != 'texts'
     ):
-        path, mediatype = ia_resolver(identifier)
-        info = web.info(domain, path)
+        info = infojson(identifier, metadata=resp) 
         manifest['sequences'][0]['canvases'].append(
             manifest_page(
-                identifier="%s%s" % (domain, identifier),
+                identifier=info['@id'],
                 label=metadata['title'],
                 width=info['width'],
                 height=info['height'],
@@ -311,23 +309,7 @@ def create_manifest(identifier, domain=None, page=None):
         })
         if r.status_code != 200:
             # If the bookdata failed then treat as a single image
-            fileName = ""
-            for f in resp['files']:
-                if valid_filetype(f['name']) \
-                    and f['source'].lower() == 'original' \
-                    and 'thumb' not in f['name']:
-                    fileName = f['name']
-                    break
-
-            if not fileName:
-                # Original wasn't an image
-                for f in resp['files']:
-                    if '_jp2.zip' in f['name']:
-                        fileName = f"{f['name']}/{f['name'].replace('.zip','')}/{f['name'].replace('jp2.zip','0000.jp2')}"
-
-            imgId = f"{identifier}/{fileName}".replace('/','%2f')
-            info_resp = requests.get(f"{IMG_SRV}/2/{imgId}/info.json")
-            info = info_resp.json()
+            info = infojson(identifier, metadata=resp) 
             manifest['sequences'][0]['canvases'].append(
                 manifest_page(
                     identifier= info['@id'],
@@ -351,7 +333,7 @@ def create_manifest(identifier, domain=None, page=None):
             if page:
                 manifest['sequences'][0]['canvases'].append(
                     manifest_page(
-                        identifier = "%s%s$%s" % (domain, identifier, page),
+                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(f"{identifier}${page}", metadata=resp)}",
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
                         height=data['pageHeights'][page],
@@ -363,7 +345,7 @@ def create_manifest(identifier, domain=None, page=None):
             for page in range(0, len(data.get('leafNums', []))):
                 manifest['sequences'][0]['canvases'].append(
                     manifest_page(
-                        identifier = "%s%s$%s" % (domain, identifier, page),
+                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(f"{identifier}${page}", metadata=resp)}",
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
                         height=data['pageHeights'][page],
@@ -1048,13 +1030,31 @@ def ia_resolver(identifier):
 
     return path, mediatype
 
-def cantaloupe_resolver(identifier):
+def infojson(identifier, version="2", metadata=None):
+    """
+     This will only work when identifier is a single image or if it uses the $ to identify the sub image. 
+
+     Parameters:
+     identifier (str): IA object identifier 
+     version (str): IIIF Version number. Defaults to 2
+     metadata (dict): if you have already got the response from ARCHIVE/metadata/identifier then you can
+                      pass this as a parameter 
+    """
+    imgSrv = f"{IMG_SRV}/{version}/{cantaloupe_resolver(identifier, metadata)}/info.json"
+
+    info_resp = requests.get(imgSrv)
+    return info_resp.json()
+
+
+def cantaloupe_resolver(identifier, metadata=None):
     """Resolves an existing Image Service identifier to what it should be with the new Cantaloupe setup"""
     leaf = None
     if "$" in identifier:
         identifier, leaf = identifier.split("$", 1)
 
-    metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+    if not metadata:
+        metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+
     if 'dir' not in metadata:
         raise ValueError("No such valid Archive.org item identifier: %s" \
                         % identifier)

@@ -6,10 +6,9 @@ import requests
 from flask import Flask, send_file, jsonify, abort, request, render_template, redirect, make_response
 from flask_cors import CORS
 from flask_caching import Cache
-from iiif2 import iiif, web
 from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
     collection, purify_domain, cantaloupe_resolver, create_collection3, IsCollection, \
-    create_annotations, create_vtt_stream
+    create_annotations, create_vtt_stream, infojson
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
@@ -124,9 +123,10 @@ def view(identifier):
         path, mediatype = ia_resolver(identifier)
     except ValueError:
         abort(404)
+
     if mediatype == 'image' or '$' in identifier:
         return render_template('viewer.html', domain=domain,
-                               info=web.info(uri, path))
+                               info=infojson(identifier))
     return render_template('reader.html', domain=request.base_url, page=page, citation=citation)
 
 
@@ -233,9 +233,7 @@ def manifest2(identifier):
         return ldjsonify(create_manifest(identifier, domain=domain, page=page))
     except Exception as excpt:
         print("Exception occurred in manifest2:")
-        print(excpt)
-        abort(404)
-
+        raise excpt
 
 @app.route('/iiif/<identifier>/info.json')
 def info(identifier):
