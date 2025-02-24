@@ -234,8 +234,6 @@ def manifest2(identifier):
     except Exception as excpt:
         print("Exception occurred in manifest2:")
         raise excpt
-        #abort(404)
-
 
 @app.route('/iiif/<identifier>/info.json')
 def info(identifier):
