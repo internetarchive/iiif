@@ -1053,9 +1053,14 @@ def cantaloupe_resolver(identifier, metadata=None):
         identifier, leaf = identifier.split("$", 1)
 
     if not metadata:
-        metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+        response = requests.get('%s/metadata/%s' % (ARCHIVE, identifier))
+        # Raise exception if getting the metadata failed
+        response.raise_for_status()
+        metadata = response.json()
 
     if 'dir' not in metadata:
+        print (f"Metadata contains:")
+        print (metadata)
         raise ValueError("No such valid Archive.org item identifier: %s" \
                         % identifier)
 
