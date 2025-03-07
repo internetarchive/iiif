@@ -610,6 +610,18 @@ def create_manifest3(identifier, domain=None, page=None):
 
         # Add annotations if djvu file is present
         if djvuFile:
+            # Add search service
+            service = {
+                "@context": "http://iiif.io/api/search/1/context.json",
+                "@id": f"{domain.replace("https","http")}search/{identifier}",
+                "@type": "SearchService1",
+                "profile": "http://iiif.io/api/search/1/search"
+            }
+            if manifest.service:
+                manifest.service.append(service)
+            else:
+                manifest.service = [service]    
+
             count = 1
             for canvas in manifest.items:
                 if 'annotations' in canvas:
