@@ -476,7 +476,7 @@ def addThumbnails(manifest, identifier, files):
     thumbnails = []
 
     for file in files:
-        if file['format'] == "Thumbnail":
+        if file['format'] == "Thumbnail" or file['format'] == "JPEG Thumb" or file['name'] == '__ia_thumb.jpg':
             mimetype = "image/jpeg"
             if file['name'].endswith('.png'):
                 mimetype = "image/png"
