@@ -1,0 +1,510 @@
+{
+    "created": 1742510050,
+    "d1": "ia601302.us.archive.org",
+    "d2": "ia801302.us.archive.org",
+    "dir": "/31/items/journalofexpedit00ford",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1693201418",
+            "size": "13165",
+            "md5": "ceb1164b8a859dc96a2e74cfe9a83191",
+            "crc32": "155041fa",
+            "sha1": "278ba02ca382452bf432659a7ebd3e26de7b8f04",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "journalofexpedit00ford.djvu",
+            "source": "derivative",
+            "format": "DjVu",
+            "original": "journalofexpedit00ford_djvu.xml",
+            "md5": "22048c255d8b270668b5dbb4231a06b8",
+            "mtime": "1259166791",
+            "size": "1177612",
+            "crc32": "aa625dec",
+            "sha1": "1d9121ba52b2bfe382306c022c973a1a510ac43c"
+        },
+        {
+            "name": "journalofexpedit00ford.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "journalofexpedit00ford_jp2.zip",
+            "md5": "9b6516bc6c01336a4cf6c9928f717b9f",
+            "mtime": "1259165505",
+            "size": "219584",
+            "crc32": "5574403f",
+            "sha1": "ccb37efbaf48b1fed7a5b6a8fe04d349c4cc3edf"
+        },
+        {
+            "name": "journalofexpedit00ford.pdf",
+            "source": "derivative",
+            "format": "Text PDF",
+            "original": "journalofexpedit00ford_page_numbers.json",
+            "mtime": "1699914686",
+            "size": "1387143",
+            "md5": "a4f7b54a4bb8c23f46f8bdc68fcef1fa",
+            "crc32": "835e579a",
+            "sha1": "de8af9f1d3f4b3596c5697676993a0a2ca8e317a"
+        },
+        {
+            "name": "journalofexpedit00ford_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "journalofexpedit00ford_jp2.zip",
+            "md5": "a8a3ae1c54a65bb80e6dbf274ff38918",
+            "mtime": "1259166647",
+            "size": "634976",
+            "crc32": "3511519e",
+            "sha1": "575353b6c73317356c3d349cf7b9ae0107c3ef56"
+        },
+        {
+            "name": "journalofexpedit00ford_archive.torrent",
+            "source": "metadata",
+            "btih": "b4152a70625a926ec4cbfd3218ec4b8085cf5299",
+            "mtime": "1713298742",
+            "size": "6033",
+            "md5": "6a5092f16eb40ecc095405d4658e6214",
+            "crc32": "56f30556",
+            "sha1": "2eba5516380d989a33d131fb1fc2951ffa3d42c1",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "journalofexpedit00ford_bw.pdf",
+            "source": "derivative",
+            "format": "Grayscale PDF",
+            "original": "journalofexpedit00ford_page_numbers.json",
+            "mtime": "1699914686",
+            "size": "3027284",
+            "md5": "309acb70d9e00951990bcb727c5640f2",
+            "crc32": "67fa668c",
+            "sha1": "4f0fa36394a6ddc7f4863775c9863266f5816f01"
+        },
+        {
+            "name": "journalofexpedit00ford_chocr.html.gz",
+            "source": "derivative",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "chOCR",
+            "original": "journalofexpedit00ford_abbyy.gz",
+            "mtime": "1699914542",
+            "size": "526684",
+            "md5": "8279cd2ecdd87d48d4a3af13f1a8a1a0",
+            "crc32": "e5be579f",
+            "sha1": "b95c93faadf16ea2be1a6711c772c64f41ef24c7"
+        },
+        {
+            "name": "journalofexpedit00ford_cloth_detection.log",
+            "source": "derivative",
+            "cloth_cover_detection_module_version": "1.2",
+            "format": "Cloth Cover Detection Log",
+            "original": "journalofexpedit00ford_scandata.xml",
+            "mtime": "1699914766",
+            "size": "778",
+            "md5": "0612e70f8ace4c13d0425a67776097d9",
+            "crc32": "3d7a753b",
+            "sha1": "eeab0565a30471eded4ad36411f65261f9faaf94"
+        },
+        {
+            "name": "journalofexpedit00ford_dc.xml",
+            "source": "original",
+            "format": "Dublin Core",
+            "md5": "e51ccea9a94dcec979c9ab58b9ac0ba1",
+            "mtime": "1649048618",
+            "size": "724",
+            "crc32": "37e2f3c9",
+            "sha1": "612f73d6a3c366d0fb2b0e66ea0ad65ed4b0abee"
+        },
+        {
+            "name": "journalofexpedit00ford_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "journalofexpedit00ford_djvu.xml",
+            "mtime": "1699914601",
+            "size": "47103",
+            "md5": "ecd751e7a94ca4539cca1d578f4faf44",
+            "crc32": "e0d34520",
+            "sha1": "65121f25c931daf3984a847053be174877768d0f"
+        },
+        {
+            "name": "journalofexpedit00ford_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "journalofexpedit00ford_hocr.html",
+            "mtime": "1699914561",
+            "size": "546366",
+            "md5": "a97c18aa29af23013347c99e38be6de7",
+            "crc32": "5c91c103",
+            "sha1": "ebf06441e6ca3adbd9d2a9ef19922b4bdb3ea203"
+        },
+        {
+            "name": "journalofexpedit00ford_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "a8a31a713d919add8ef910e7e9625ecf",
+            "summation": "md5"
+        },
+        {
+            "name": "journalofexpedit00ford_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.2.0",
+            "hocr_char_to_word_hocr_version": "1.1.45",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "hOCR",
+            "original": "journalofexpedit00ford_chocr.html.gz",
+            "mtime": "1699914553",
+            "size": "993929",
+            "md5": "81d185a26e016fbc7d044cf0c17987ed",
+            "crc32": "a1034831",
+            "sha1": "288bd8286f1844769f0e5b4cd75fb6519ab5bc36"
+        },
+        {
+            "name": "journalofexpedit00ford_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "journalofexpedit00ford_hocr.html",
+            "mtime": "1699914565",
+            "size": "290",
+            "md5": "f32eda981421dd0ebbffa522cfb5e4cc",
+            "crc32": "483e1ab0",
+            "sha1": "f08365a3b9f63cd71b679eeb6ac6862342e3ea23"
+        },
+        {
+            "name": "journalofexpedit00ford_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "774",
+            "word_conf_11_20": "816",
+            "word_conf_21_30": "1041",
+            "word_conf_31_40": "1012",
+            "word_conf_41_50": "1368",
+            "word_conf_51_60": "1046",
+            "word_conf_61_70": "654",
+            "word_conf_71_80": "213",
+            "word_conf_81_90": "59",
+            "word_conf_91_100": "47",
+            "format": "OCR Search Text",
+            "original": "journalofexpedit00ford_hocr.html",
+            "mtime": "1699914576",
+            "size": "17118",
+            "md5": "e700436fabaec9a0b9b2002ab4f7dd84",
+            "crc32": "3d6855f4",
+            "sha1": "d609dac16c279d179906fad250fa62be530478d4"
+        },
+        {
+            "name": "journalofexpedit00ford_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "journalofexpedit00ford_orig_jp2.tar",
+            "md5": "3f0e315e388413cbe405c79ff71b9d0d",
+            "mtime": "1259165459",
+            "size": "15628057",
+            "crc32": "da5c627b",
+            "sha1": "dcfb6fd1847b6831bfb0824ce9095d3367144b5d",
+            "filecount": "28"
+        },
+        {
+            "name": "journalofexpedit00ford_marc.xml",
+            "source": "original",
+            "format": "MARC",
+            "md5": "3471dc0ce8bcd68b06384ee1c243d7f2",
+            "mtime": "1258746398",
+            "size": "2802",
+            "crc32": "f6e6025c",
+            "sha1": "75aa4ce386f773efaa0448b765c7b9b94835db9a"
+        },
+        {
+            "name": "journalofexpedit00ford_meta.mrc",
+            "source": "original",
+            "format": "MARC Binary",
+            "md5": "eaf52d9e16163d529c2c0a9393502349",
+            "mtime": "1258746398",
+            "size": "928",
+            "crc32": "b58557ef",
+            "sha1": "5ace2fb749142583a0cdf3abc27ce2b3d04c4642"
+        },
+        {
+            "name": "journalofexpedit00ford_meta.xml",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1713298738",
+            "size": "2406",
+            "md5": "7469929257079ce1556671ecb0edc59c",
+            "crc32": "13a702b7",
+            "sha1": "845db772f2330dc7d6f1f208ca79d918436397f9"
+        },
+        {
+            "name": "journalofexpedit00ford_metasource.xml",
+            "source": "original",
+            "format": "MARC Source",
+            "md5": "9417692f4144250954a329bf35fdf14d",
+            "mtime": "1258746398",
+            "size": "402",
+            "crc32": "1378296e",
+            "sha1": "859ca2a966bde9b11c0a69f0c31e4cb59236f575"
+        },
+        {
+            "name": "journalofexpedit00ford_orig_jp2.tar",
+            "source": "original",
+            "format": "Single Page Original JP2 Tar",
+            "md5": "0a58d37e7420a04f9e7518a5e9d31198",
+            "mtime": "1259164953",
+            "size": "20633600",
+            "crc32": "7f700a4d",
+            "sha1": "85929c39ea7ae84610c3249365497ada430becf5",
+            "filecount": "28"
+        },
+        {
+            "name": "journalofexpedit00ford_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.3",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "61",
+            "format": "Page Numbers JSON",
+            "original": "journalofexpedit00ford_hocr.html",
+            "mtime": "1699914592",
+            "size": "3861",
+            "md5": "3036701ef5467e1255b6d565f5f06ea2",
+            "crc32": "c3cccd88",
+            "sha1": "e75147352f284e27dfa762a683167f96a3d0f2c7"
+        },
+        {
+            "name": "journalofexpedit00ford_scandata.xml",
+            "source": "original",
+            "format": "Scandata",
+            "md5": "a359c5a4ccbc3a87c618560aa2b3d566",
+            "mtime": "1699914766",
+            "size": "15031",
+            "crc32": "005d2d7d",
+            "sha1": "884e4fad621c7aa1abaa07190944dcd06d27384a"
+        }
+    ],
+    "files_count": 24,
+    "item_last_updated": 1713298742,
+    "item_size": 44885876,
+    "metadata": {
+        "title": "Journal of an expedition made in the autumn of 1794, with a detachment of New Jersey troops into western Pennsylvania to aid in suppressing the \"Whiskey rebellion.\"",
+        "creator": [
+            "Ford, David, 1761-1835",
+            "Hough, Franklin Benjamin, 1822-1885. dn"
+        ],
+        "subject": "Whiskey Rebellion, Pa., 1794",
+        "publisher": "Albany : New York Census Bureau",
+        "date": "1700",
+        "language": "eng",
+        "page-progression": "lr",
+        "sponsor": "University of Pittsburgh Library System",
+        "contributor": "University of Pittsburgh Library System",
+        "scanningcenter": "indiana",
+        "mediatype": "texts",
+        "call_number": "31735060392028",
+        "updatedate": "2009-11-20 19:46:39",
+        "updater": "CallieLamkin",
+        "identifier": "journalofexpedit00ford",
+        "uploader": "callie@archive.org",
+        "addeddate": "2009-11-20 19:46:41",
+        "publicdate": "2009-11-20 19:46:49",
+        "ppi": "500",
+        "camera": "Canon 5D",
+        "operator": "scanner-maria-fox@archive.org",
+        "scanner": "scribe7.indiana.archive.org",
+        "scandate": "20091125154836",
+        "imagecount": "26",
+        "foldoutcount": "0",
+        "identifier-access": "http://www.archive.org/details/journalofexpedit00ford",
+        "identifier-ark": "ark:/13960/t6pz5sq9g",
+        "repub_state": "4",
+        "curation": "[curator]callie@archive.org[/curator][date]20091202142711[/date][state]approved[/state]",
+        "sponsordate": "20091130",
+        "collection": [
+            "university_pittsburgh",
+            "americana"
+        ],
+        "backup_location": "ia903604_14",
+        "openlibrary_edition": "OL24467395M",
+        "openlibrary_work": "OL15506436W",
+        "external-identifier": "urn:oclc:record:1047486030",
+        "filesxml": "Thu Dec 24 21:12:08 UTC 2020",
+        "lccn": "a  33000172",
+        "oclc-id": "11607125",
+        "description": "14 p. ; 22 cm",
+        "associated-names": "Hough, Franklin Benjamin, 1822-1885. dn",
+        "ocr_module_version": "0.0.21",
+        "ocr_converted": "abbyy-to-hocr 1.1.37",
+        "page_number_confidence": "61",
+        "page_number_module_version": "1.0.3"
+    },
+    "page_numbers": {
+        "identifier": "journalofexpedit00ford",
+        "format-version": "2",
+        "archive-hocr-tools-version": "1.1.54",
+        "confidence": 61,
+        "pages": [
+            {
+                "leafNum": 1,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 2,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 3,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 4,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 5,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 6,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 7,
+                "confidence": 100,
+                "pageNumber": "3",
+                "pageProb": 97,
+                "wordConf": 7
+            },
+            {
+                "leafNum": 8,
+                "confidence": null,
+                "pageNumber": "4",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 9,
+                "confidence": 100,
+                "pageNumber": "5",
+                "pageProb": 97,
+                "wordConf": 10
+            },
+            {
+                "leafNum": 10,
+                "confidence": null,
+                "pageNumber": "6",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 11,
+                "confidence": 100,
+                "pageNumber": "7",
+                "pageProb": 98,
+                "wordConf": 9
+            },
+            {
+                "leafNum": 12,
+                "confidence": null,
+                "pageNumber": "8",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 13,
+                "confidence": null,
+                "pageNumber": "9",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 14,
+                "confidence": null,
+                "pageNumber": "10",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 15,
+                "confidence": null,
+                "pageNumber": "11",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 16,
+                "confidence": null,
+                "pageNumber": "12",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 17,
+                "confidence": 93,
+                "pageNumber": "13",
+                "pageProb": 83,
+                "wordConf": 12
+            },
+            {
+                "leafNum": 18,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 19,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 20,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 21,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 22,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            }
+        ]
+    },
+    "server": "ia601302.us.archive.org",
+    "uniq": 1326516592,
+    "workable_servers": [
+        "ia601302.us.archive.org",
+        "ia801302.us.archive.org"
+    ]
+}

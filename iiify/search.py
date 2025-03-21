@@ -3,13 +3,17 @@ from .resolver import ARCHIVE, URI_PRIFIX
 import json
 import re
 
-def iiif_search(identifier, query):
+def buildSearchURL(identifier, query):
     response = requests.get(f"{ARCHIVE}/metadata/{identifier}")
     response.raise_for_status() 
 
     metadata = response.json()
 
-    url = f"https://{metadata['server']}/fulltext/inside.php?item_id={identifier}&doc={identifier}&path={metadata['dir']}&q={query}"
+    return f"https://{metadata['server']}/fulltext/inside.php?item_id={identifier}&doc={identifier}&path={metadata['dir']}&q={query}"
+
+def iiif_search(identifier, query):
+    url = buildSearchURL(identifier, query)
+
     print (f"Search URL:\n{url}")
     response = requests.get(url)
     response.raise_for_status() 
@@ -28,27 +32,31 @@ def iiif_search(identifier, query):
     count = 1
     for match in ia_response['matches']:
         paragraph = match['par'][0]
-        x = int(paragraph['l'])
-        y = int (paragraph['t'])
-        width = int(paragraph['r']) - x
-        height = int(paragraph['b']) - y
+       
         # Only show the match rather than the full matching paragraph 
-        match = re.search(r"<IA_FTS_MATCH>(.*?)</IA_FTS_MATCH>", match['text'])
+        match = re.findall(r"<IA_FTS_MATCH>(.*?)</IA_FTS_MATCH>", match['text'])
+        matchNo = 0
 
-        searchResponse['resources'].append({
-            "@id": f"{URI_PRIFIX}/{identifier}/annotation/anno{count}",
-            "@type": "oa:Annotation",
-            "motivation": "sc:painting",
-            "resource": {
-                "@type": "cnt:ContentAsText",
-                "chars": match.group(1)
-            },
-            "on": f"{URI_PRIFIX}/{identifier}${int(paragraph['page']) - 1}/canvas#xywh={x},{y},{width},{height}",
-            "within": {
-                "@id": f"{URI_PRIFIX}/{identifier}/manifest.json",
-                "type": "sc:Manifest"
-            }
-        })
-        count += 1
+        for box in paragraph['boxes']:
+            x = int(box['l'])
+            y = int (box['t'])
+            width = int(box['r']) - x
+            height = int(box['b']) - y
+            searchResponse['resources'].append({
+                "@id": f"{URI_PRIFIX}/{identifier}/annotation/anno{count}",
+                "@type": "oa:Annotation",
+                "motivation": "sc:painting",
+                "resource": {
+                    "@type": "cnt:ContentAsText",
+                    "chars": match[matchNo]
+                },
+                "on": f"{URI_PRIFIX}/{identifier}${int(paragraph['page']) - 1}/canvas#xywh={x},{y},{width},{height}",
+                "within": {
+                    "@id": f"{URI_PRIFIX}/{identifier}/manifest.json",
+                    "type": "sc:Manifest"
+                }
+            })
+            matchNo += 1
+            count += 1
 
     return searchResponse
