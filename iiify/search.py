@@ -34,6 +34,7 @@ def iiif_search(identifier, query):
         paragraph = match['par'][0]
        
         # Only show the match rather than the full matching paragraph 
+        text = ""
         largeResults = False
         if len(match['text']) < 10000:
             largeResults = True
