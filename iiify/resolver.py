@@ -473,22 +473,16 @@ def addRendering(manifest, identifier, files):
                  })
 
 def addThumbnails(manifest, identifier, files):
-    thumbnails = []
-
     for file in files:
-        if file['format'] == "Thumbnail":
-            mimetype = "image/jpeg"
-            if file['name'].endswith('.png'):
-                mimetype = "image/png"
-
-            thumbnails.append({
-                "id": f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
-                "type": "Image",
-                "format": mimetype,
-            })
-
-    if thumbnails:
-        manifest.thumbnail = thumbnails
+        if file['format'] == "Thumbnail" or file['format'] == "JPEG Thumb" or file['name'] == "__ia_thumb.jpg":
+            thumbnail_uri = quote(
+                file.get('name').split('/')[-1].replace('/','%2f')
+            )
+            # Forward solidus before thumbnail uri must always be %2f
+            manifest.create_thumbnail_from_iiif(
+                f"{IMG_SRV}/2/{identifier.strip()}%2f{thumbnail_uri}"
+            )
+    return manifest
 
 def sortDerivatives(metadata, includeVtt=False):
     """
@@ -535,7 +529,7 @@ def create_manifest3(identifier, domain=None, page=None):
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
-    addThumbnails(manifest, identifier, metadata['files'])
+    manifest = addThumbnails(manifest, identifier, metadata['files'])
 
     if mediatype == 'texts':
         # Get bookreader metadata (mostly for filenames and height / width of image)
