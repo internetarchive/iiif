@@ -35,7 +35,7 @@ def iiif_search(identifier, query):
        
         # Only show the match rather than the full matching paragraph 
         largeResults = False
-        if len(match['text'] < 10000):
+        if len(match['text']) < 10000:
             largeResults = True
             match = re.findall(r"<IA_FTS_MATCH>(.*?)</IA_FTS_MATCH>", match['text'])
         else:
