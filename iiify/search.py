@@ -34,7 +34,13 @@ def iiif_search(identifier, query):
         paragraph = match['par'][0]
        
         # Only show the match rather than the full matching paragraph 
-        match = re.findall(r"<IA_FTS_MATCH>(.*?)</IA_FTS_MATCH>", match['text'])
+        largeResults = False
+        if len(match['text'] < 10000):
+            largeResults = True
+            match = re.findall(r"<IA_FTS_MATCH>(.*?)</IA_FTS_MATCH>", match['text'])
+        else:
+            text = query    
+
         matchNo = 0
 
         for box in paragraph['boxes']:
@@ -48,7 +54,7 @@ def iiif_search(identifier, query):
                 "motivation": "sc:painting",
                 "resource": {
                     "@type": "cnt:ContentAsText",
-                    "chars": match[matchNo]
+                    "chars": text if largeResults else match[matchNo] 
                 },
                 "on": f"{URI_PRIFIX}/{identifier}${int(paragraph['page']) - 1}/canvas#xywh={x},{y},{width},{height}",
                 "within": {
