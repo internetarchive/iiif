@@ -475,13 +475,24 @@ def addRendering(manifest, identifier, files):
 def addThumbnails(manifest, identifier, files):
     for file in files:
         if file['format'] == "Thumbnail" or file['format'] == "JPEG Thumb" or file['name'] == "__ia_thumb.jpg":
-            thumbnail_uri = quote(
-                file.get('name').split('/')[-1].replace('/','%2f')
-            )
-            # Forward solidus before thumbnail uri must always be %2f
-            manifest.create_thumbnail_from_iiif(
-                f"{IMG_SRV}/2/{identifier.strip()}%2f{thumbnail_uri}"
-            )
+            try:
+                thumbnail_uri = quote(
+                    file.get('name').split('/')[-1].replace('/','%2f')
+                )
+                # Forward solidus before thumbnail uri must always be %2f
+                manifest.create_thumbnail_from_iiif(
+                    f"{IMG_SRV}/2/{identifier.strip()}%2f{thumbnail_uri}"
+                )
+            except requests.HTTPError:
+                mimetype = "image/jpeg"
+                if file['name'].endswith('.png'):
+                    mimetype = "image/png"
+
+                manifest.thumbnail.append({
+                    "id": f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
+                    "type": "Image",
+                    "format": mimetype,
+                })
     return manifest
 
 def sortDerivatives(metadata, includeVtt=False):
