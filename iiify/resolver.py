@@ -473,8 +473,15 @@ def addRendering(manifest, identifier, files):
                  })
 
 def addThumbnails(manifest, identifier, files):
+    """Creates thumbnails based on files.
+
+    If file is intended to be a thumbnail based on format or name and it's not a derivative, the thumbnail is created from
+    Cantaloupe. If it's not, a service-less thumbnail is created and added to the manifest. Not sure why, but if file["source"]
+    is "derivative", the file doesn't seem to be available to Cantaloupe.
+
+    """
     for file in files:
-        if file['format'] == "Thumbnail" or file['format'] == "JPEG Thumb" or file['name'] == "__ia_thumb.jpg":
+        if file['format'] == "Thumbnail" or file['format'] == "JPEG Thumb" or file['name'] == "__ia_thumb.jpg" and file["source"] == "original":
             try:
                 thumbnail_uri = quote(
                     file.get('name').split('/')[-1].replace('/','%2f')
@@ -491,6 +498,14 @@ def addThumbnails(manifest, identifier, files):
                     f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
                     format=mimetype,
                 )
+        elif file['format'] == "Thumbnail" or file['format'] == "JPEG Thumb" or file['name'] == "__ia_thumb.jpg":
+            mimetype = "image/jpeg"
+            if file['name'].endswith('.png'):
+                mimetype = "image/png"
+            manifest.add_thumbnail(
+                f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
+                format=mimetype,
+            )
     return manifest
 
 def sortDerivatives(metadata, includeVtt=False):
