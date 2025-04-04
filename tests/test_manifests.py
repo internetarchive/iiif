@@ -149,7 +149,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['thumbnail']),17, f"Expected 15 thumbnails, but got {len(manifest['thumbnail'])}")
-        self.assertEqual(manifest['thumbnail'][0]['id'],"https://archive.org/download/steamboat-willie-16mm-film-scan-4k-lossless/steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat%20Willie%20%5B16mm%20Film%20Scan%5D_ProRes%20%283400x2550%29_000001.jpg", f"Expected URL to be encoded")
+        self.assertEqual(manifest['thumbnail'][0]['id'],"https://iiif.archive.org/image/iiif/2/steamboat-willie-16mm-film-scan-4k-lossless%2fSteamboat%20Willie%20%5B16mm%20Film%20Scan%5D_ProRes%20%283400x2550%29.01_thumb.jpg/full/192,/0/default.jpg", f"Expected URL to be encoded")
 
         self.assertEqual(len(manifest['items']),1, f"Expected 1 canvas, but got {len(manifest['items'])}")
 
