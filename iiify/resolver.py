@@ -487,12 +487,10 @@ def addThumbnails(manifest, identifier, files):
                 mimetype = "image/jpeg"
                 if file['name'].endswith('.png'):
                     mimetype = "image/png"
-
-                manifest.thumbnail.append({
-                    "id": f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
-                    "type": "Image",
-                    "format": mimetype,
-                })
+                manifest.add_thumbnail(
+                    f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
+                    format=mimetype,
+                )
     return manifest
 
 def sortDerivatives(metadata, includeVtt=False):
