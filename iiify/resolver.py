@@ -475,38 +475,27 @@ def addRendering(manifest, identifier, files):
 def addThumbnails(manifest, identifier, files):
     """Creates thumbnails based on files.
 
-    If file is intended to be a thumbnail based on format or name and it's not a derivative, the thumbnail is created from
-    Cantaloupe. If it's not, a service-less thumbnail is created and added to the manifest. Not sure why, but if file["source"]
-    is "derivative", the file doesn't seem to be available to Cantaloupe.
-
+    If the file appears to be a thumbnail (by format or name) attempt to create a IIIF thumbnail via Cantaloupe.
+    If that fails or isn't possible, fall back to adding a static thumbnail.
     """
     for file in files:
-        if file['format'] == "Thumbnail" or file['format'] == "JPEG Thumb" or file['name'] == "__ia_thumb.jpg" and file["source"] == "original":
-            try:
-                thumbnail_uri = quote(
-                    file.get('name').split('/')[-1].replace('/','%2f')
-                )
-                # Forward solidus before thumbnail uri must always be %2f
-                manifest.create_thumbnail_from_iiif(
-                    f"{IMG_SRV}/2/{identifier.strip()}%2f{thumbnail_uri}"
-                )
-            except requests.HTTPError:
-                mimetype = "image/jpeg"
-                if file['name'].endswith('.png'):
-                    mimetype = "image/png"
-                manifest.add_thumbnail(
-                    f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
-                    format=mimetype,
-                )
-        elif file['format'] == "Thumbnail" or file['format'] == "JPEG Thumb" or file['name'] == "__ia_thumb.jpg":
-            mimetype = "image/jpeg"
-            if file['name'].endswith('.png'):
-                mimetype = "image/png"
-            manifest.add_thumbnail(
-                f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
-                format=mimetype,
-            )
-    return manifest
+        name = file.get("name", "")
+        file_format = file.get("format", "")
+        is_thumbnail = file_format in {"Thumbnail", "JPEG Thumb"} or name == "__ia_thumb.jpg"
+        if not is_thumbnail:
+            continue
+
+        encoded_name = quote(name.replace('/', '%2f'))
+        # Forward solidus before thumbnail uri must always be %2f
+        iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
+        try:
+            manifest.create_thumbnail_from_iiif(iiif_url)
+        except requests.HTTPError:
+            print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url}")
+            mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
+            static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
+            manifest.add_thumbnail(static_url, format=mimetype)
+    return
 
 def sortDerivatives(metadata, includeVtt=False):
     """
@@ -553,7 +542,7 @@ def create_manifest3(identifier, domain=None, page=None):
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
-    manifest = addThumbnails(manifest, identifier, metadata['files'])
+    addThumbnails(manifest, identifier, metadata['files'])
 
     if mediatype == 'texts':
         # Get bookreader metadata (mostly for filenames and height / width of image)
