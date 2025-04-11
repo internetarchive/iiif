@@ -38,7 +38,7 @@ def iiif_search(identifier, query):
         largeResults = False
         if len(match['text']) < 10000:
             largeResults = True
-            match = re.findall(r"<IA_FTS_MATCH>(.*)</IA_FTS_MATCH>", match['text'])
+            match = re.findall(r"<IA_FTS_MATCH>([^<]*)</IA_FTS_MATCH>", match['text'])
         else:
             text = query    
 
