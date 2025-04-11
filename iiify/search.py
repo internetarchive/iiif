@@ -38,7 +38,7 @@ def iiif_search(identifier, query):
         if len(match['text']) < 10000:
             largeResults = True
             soup = BeautifulSoup(match['text'], 'html.parser')
-            match = [tag.text for tag in soup.find_all('ia_fts_match')]
+            match = [tag.text for tag in soup.find_all('IA_FTS_MATCH')]
         else:
             text = query    
 
