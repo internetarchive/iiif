@@ -1,7 +1,6 @@
 import requests
 from .resolver import ARCHIVE, URI_PRIFIX
-import json
-import re
+from bs4 import BeautifulSoup
 
 def buildSearchURL(identifier, query):
     response = requests.get(f"{ARCHIVE}/metadata/{identifier}")
@@ -38,7 +37,8 @@ def iiif_search(identifier, query):
         largeResults = False
         if len(match['text']) < 10000:
             largeResults = True
-            match = re.findall(r"<IA_FTS_MATCH>(.*)</IA_FTS_MATCH>", match['text'])
+            soup = BeautifulSoup(match['text'], 'html.parser')
+            match = [tag.text for tag in soup.find_all('IA_FTS_MATCH')]
         else:
             text = query    
 

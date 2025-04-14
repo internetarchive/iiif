@@ -57,7 +57,8 @@ setup(
     license='LICENSE',
     install_requires=[
         'flask',
-        'flask-cors'
+        'flask-cors',
+        'beautifulsoup4'
         ],
     include_package_data=True
     )
