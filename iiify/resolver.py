@@ -3,7 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -841,7 +841,9 @@ def create_manifest3(identifier, domain=None, page=None):
     return json.loads(manifest.jsonld())
 
 def create_annotations(version: int, identifier: str, fileName: str, canvas_no: int, domain: str | None = None):
-    annotationPage = AnnotationPage(id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json")
+    annotationPage = AnnotationPage(
+        id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json"
+    )
     annotationPage.items = []
     index = canvas_no - 1
     url = f"{ARCHIVE}/download/{identifier}/{fileName}"
@@ -888,6 +890,29 @@ def create_annotations(version: int, identifier: str, fileName: str, canvas_no: 
         raise ValueError("Failed to process {url}")
 
     return json.loads(annotationPage.jsonld())
+
+def create_annotations_from_comments(version, identifier, domain=None):
+    annotation_page = AnnotationPage(
+        id=f"{domain}{version}/annotations/{identifier}/comments.json"
+    )
+    metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+    i = 0
+    for comment in metadata.get('reviews', []):
+        anno_body = ResourceItem1(
+            type="TextualBody",
+            language="none",
+            format="text/plain",
+            value=f"<span><p>{comment.get('reviewtitle')}:</p><p>{comment.get('reviewbody')}</p></span>"
+        )
+        anno = Annotation(
+            id=f"{domain}{version}/annotations/{identifier}/comments/{i}",
+            motivation="commenting",
+            body = anno_body,
+            target= f"{domain}{version}/{identifier}/manifest.json"
+        )
+        annotation_page.add_item(anno)
+        i += 1
+    return json.loads(annotation_page.jsonld())
 
 def create_vtt_stream(identifier): 
     """

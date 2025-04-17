@@ -8,7 +8,7 @@ from flask_cors import CORS
 from flask_caching import Cache
 from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
     collection, purify_domain, cantaloupe_resolver, create_collection3, IsCollection, \
-    create_annotations, create_vtt_stream, infojson
+    create_annotations, create_vtt_stream, infojson, create_annotations_from_comments
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
@@ -206,6 +206,13 @@ def annnotations(version: str, identifier: str, fileName: str, canvas_no: int):
     validate_ia_identifier(identifier, page_suffix=False)
     domain = purify_domain(request.args.get('domain', request.url_root))
     return ldjsonify(create_annotations(version, identifier, fileName, canvas_no, domain=domain))
+
+@app.route("/iiif/<int:version>/annotations/<identifier>/comments.json")
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+def commenting_annotations(version: str, identifier: str):
+    validate_ia_identifier(identifier, page_suffix=False)
+    domain = purify_domain(request.args.get('domain', request.url_root))
+    return ldjsonify(create_annotations_from_comments(version, identifier, domain=domain))
 
 @app.route('/iiif/vtt/streaming/<identifier>.vtt')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
