@@ -170,6 +170,7 @@ def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
     collection = Collection(id=uri, label=metadata["metadata"]["title"])
 
     addMetadata(collection, identifier, metadata['metadata'], collection=True)
+    addPartOfCollection(collection, metadata.get('metadata').get('collection', []), domain)
 
     asURL = f'{ADVANCED_SEARCH}?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
     itemsSearch = requests.get(asURL).json()
@@ -183,7 +184,6 @@ def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
 
     pages = math.ceil(total / rows)
     for item in itemsSearch['response']['docs']:
-        child = None
         if item['mediatype'] == 'collection':
             child = CollectionRef(id=f"{domain}{item['identifier']}/collection.json", type="Collection", label=item['title'])
         else:
@@ -490,6 +490,26 @@ def addThumbnails(manifest, identifier, files):
     if thumbnails:
         manifest.thumbnail = thumbnails
 
+def addPartOfCollection(resource, collections, domain=None):
+    # metadata["collections"] can be a list or str so we need to test what we have
+    if isinstance(collections, list):
+        parents = []
+        for collection in collections:
+            parents.append(
+                {
+                    "id": f"{domain}{collection}/collection.json",
+                    "type": "Collection"
+                }
+            )
+        resource.partOf=parents
+    elif isinstance(collections, str):
+        resource.partOf = [
+            {
+                "id": f"{domain}{collections}/collection.json",
+                "type": "Collection"
+            }
+        ]
+
 def sortDerivatives(metadata, includeVtt=False):
     """
         Sort the files into originals and derivatives, splitting the derivatives into buckets based on the original
@@ -536,6 +556,7 @@ def create_manifest3(identifier, domain=None, page=None):
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
     addThumbnails(manifest, identifier, metadata['files'])
+    addPartOfCollection(manifest, metadata.get('metadata').get('collection', []), domain)
 
     if mediatype == 'texts':
         # Get bookreader metadata (mostly for filenames and height / width of image)

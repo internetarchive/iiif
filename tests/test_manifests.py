@@ -188,6 +188,12 @@ class TestManifests(unittest.TestCase):
 
         self.assertNotEqual(manifest.get('behavior', ['']), ["auto-advance"], "Expected no auto-advance behavior on manifest with 1 canvas." )
 
+    def test_part_of(self):
+        resp = self.test_app.get("/iiif/3/cc4ia-Polar_Plunge_Promo_-_2018/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        self.assertEqual(len(manifest['partOf']), 3, f"Expected 3 parent collections but got: {len(manifest['partOf'])}")
+
 
 ''' to test:
 kaled_jalil (no derivatives)
