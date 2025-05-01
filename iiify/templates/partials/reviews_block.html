@@ -1,0 +1,8 @@
+{% if reviews %}
+    <h2>Reviews as Annotations</h2>
+    <p>This item has reviews that are modelled as annotations:
+        <a href="https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">
+            https://iiif.archive.org/iiif/3/annotations/{{ identifier }}/comments.json
+        </a>
+    </p>
+{% endif %}

@@ -18,33 +18,36 @@
     </header>
     <div id="container">
 
-<h1>IIIF Image Helper</h1>
+        <h1>IIIF Image Helper</h1>
 
-<p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
+        <p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
 
-<p>The IA identifier is: {{ identifier }}</p>
+        <p>The IA identifier is: {{ identifier }}</p>
 
-<p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/{{ identifier }}/manifest.json</a></p>
+        <p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/{{ identifier }}/manifest.json</a></p>
 
-<p>The Image API URL for the full image is: <a href="https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}/full/max/0/default.jpg">https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}/full/max/0/default.jpg</a></p>
+        <p>The Image API URL for the full image is: <a href="https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}/full/max/0/default.jpg">https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}/full/max/0/default.jpg</a></p>
 
-<p>The Image API info.json  for the image is: <a href="https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}/info.json">https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}/info.json</a></p>
+        <p>The Image API info.json  for the image is: <a href="https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}/info.json">https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}/info.json</a></p>
 
-<h2>IIIF viewer options</h2>
-<ul>
-    <li><a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Mirador</a></li>
-    <li><a href="https://uv-v4.netlify.app/#?manifest=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Universal Viewer</a></li>
-    <li><a href="https://samvera-labs.github.io/clover-iiif?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Clover</a></li>
+        <h2>IIIF viewer options</h2>
+        <ul>
+            <li><a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Mirador</a></li>
+            <li><a href="https://uv-v4.netlify.app/#?manifest=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Universal Viewer</a></li>
+            <li><a href="https://samvera-labs.github.io/clover-iiif?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Clover</a></li>
 
-</ul>
+        </ul>
 
-<h2>IIIF image tool options</h2>
-<ul>
-  <li><a href="https://iiifimage.link/#https://iiif.archive.org/image/iiif/{{ esc_cantaloupe_id }}/full/max/0/default.jpg">IIIF Image Inspector</a></li>
-  <li><a href="https://ncsu-libraries.github.io/iiif-crop-tool/?newUrl=https://iiif.archive.org/image/iiif/2/{{ esc_cantaloupe_id }}/full/full/0/default.jpg">NC State Image Cropper</a></li>
-  <li><a href="https://jbhoward-dublin.github.io/IIIF-imageManipulation/index.html?imageID=https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}">IIIF Image Manipulation Tool</a></li>
-  <li><a href="https://glenrobson.github.io/CanvasFinder/">CanvasFinder (Note: paste in the manifest URL noted above)</a></li>
-</ul>
+        <h2>IIIF image tool options</h2>
+        <ul>
+          <li><a href="https://iiifimage.link/#https://iiif.archive.org/image/iiif/{{ esc_cantaloupe_id }}/full/max/0/default.jpg">IIIF Image Inspector</a></li>
+          <li><a href="https://ncsu-libraries.github.io/iiif-crop-tool/?newUrl=https://iiif.archive.org/image/iiif/2/{{ esc_cantaloupe_id }}/full/full/0/default.jpg">NC State Image Cropper</a></li>
+          <li><a href="https://jbhoward-dublin.github.io/IIIF-imageManipulation/index.html?imageID=https://iiif.archive.org/image/iiif/{{ cantaloupe_id }}">IIIF Image Manipulation Tool</a></li>
+          <li><a href="https://glenrobson.github.io/CanvasFinder/">CanvasFinder (Note: paste in the manifest URL noted above)</a></li>
+        </ul>
+
+        {% include "partials/reviews_block.html" %}
+    </div>
 
     </body>
 </html>
