@@ -13,7 +13,7 @@ def buildSearchURL(identifier, query):
 def iiif_search(identifier, query):
     url = buildSearchURL(identifier, query)
 
-    print (f"Search URL:\n{url}")
+    # print (f"Search URL:\n{url}")
     response = requests.get(url)
     response.raise_for_status() 
     ia_response = response.json()
