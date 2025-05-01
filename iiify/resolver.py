@@ -901,7 +901,7 @@ def create_annotations_from_comments(version, identifier, domain=None):
         anno_body = ResourceItem1(
             type="TextualBody",
             language="none",
-            format="text/plain",
+            format="text/html",
             value=f"<span><p>{comment.get('reviewtitle')}:</p><p>{comment.get('reviewbody')}</p></span>"
         )
         anno = Annotation(
