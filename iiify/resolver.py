@@ -536,7 +536,6 @@ def create_manifest3(identifier, domain=None, page=None):
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
     addThumbnails(manifest, identifier, metadata['files'])
-
     if mediatype == 'texts':
         # Get bookreader metadata (mostly for filenames and height / width of image)
         # subprefix can be different from the identifier use the scandata filename to find the correct prefix
@@ -550,8 +549,8 @@ def create_manifest3(identifier, domain=None, page=None):
                 djvuFile = fileMd['name']
 
         bookReaderURL = f"https://{metadata.get('server')}/BookReader/BookReaderJSIA.php?id={identifier}&itemPath={metadata.get('dir')}&server={metadata.get('server')}&format=jsonp&subPrefix={subprefix}"
-
-        bookreader = requests.get(bookReaderURL).json()
+        response = requests.get(bookReaderURL)
+        bookreader = response.json()
         if 'error' in bookreader:
             # Image stack not found. Maybe a single image
             singleImage(metadata, identifier, manifest, uri)
