@@ -192,7 +192,7 @@ class TestManifests(unittest.TestCase):
         resp = self.test_app.get("/iiif/3/Waste-Management_Taster-Too-demo-2009/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(len(manifest['thumbnail']),6, f"Expected 1 thumbnail, but got {len(manifest['thumbnail'])}")
+        self.assertEqual(len(manifest['thumbnail']),6, f"Expected 6 thumbnails, but got {len(manifest['thumbnail'])}.")
 
 ''' to test:
 kaled_jalil (no derivatives)
