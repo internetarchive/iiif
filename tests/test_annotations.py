@@ -71,6 +71,6 @@ class TestAnnotations(unittest.TestCase):
             self.assertEqual(anno['type'], "Annotation", "Expected type of Annotation")
             self.assertTrue("body" in anno and "target" in anno, f"Body or target missing from annotation {anno}")
             self.assertTrue(anno['id'] not in ids, f"Duplicate ID: {anno['id']}")
-            self.assertEqual(anno['body']['format'], "text/html", "Expected format to be a text/plain")
+            self.assertEqual(anno['body']['format'], "text/html", "Expected format to be a text/html")
             self.assertEqual(anno['motivation'], "commenting", "Expected motivation of commenting")
             

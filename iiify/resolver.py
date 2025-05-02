@@ -891,9 +891,9 @@ def create_annotations(version: int, identifier: str, fileName: str, canvas_no: 
 
     return json.loads(annotationPage.jsonld())
 
-def create_annotations_from_comments(version, identifier, domain=None):
+def create_annotations_from_comments(identifier, domain=None):
     annotation_page = AnnotationPage(
-        id=f"{domain}{version}/annotations/{identifier}/comments.json"
+        id=f"{domain}3/annotations/{identifier}/comments.json"
     )
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
     i = 0
@@ -905,10 +905,10 @@ def create_annotations_from_comments(version, identifier, domain=None):
             value=f"<span><p>{comment.get('reviewtitle')}:</p><p>{comment.get('reviewbody')}</p></span>"
         )
         anno = Annotation(
-            id=f"{domain}{version}/annotations/{identifier}/comments/{i}",
+            id=f"{domain}3/annotations/{identifier}/comments/{i}",
             motivation="commenting",
             body = anno_body,
-            target= f"{domain}{version}/{identifier}/manifest.json"
+            target= f"{domain}3/{identifier}/manifest.json"
         )
         annotation_page.add_item(anno)
         i += 1

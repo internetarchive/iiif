@@ -210,12 +210,12 @@ def annnotations(version: str, identifier: str, fileName: str, canvas_no: int):
     domain = purify_domain(request.args.get('domain', request.url_root))
     return ldjsonify(create_annotations(version, identifier, fileName, canvas_no, domain=domain))
 
-@app.route("/iiif/<int:version>/annotations/<identifier>/comments.json")
+@app.route("/iiif/3/annotations/<identifier>/comments.json")
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
-def commenting_annotations(version: str, identifier: str):
+def commenting_annotations(identifier: str):
     validate_ia_identifier(identifier, page_suffix=False)
     domain = purify_domain(request.args.get('domain', request.url_root))
-    return ldjsonify(create_annotations_from_comments(version, identifier, domain=domain))
+    return ldjsonify(create_annotations_from_comments(identifier, domain=domain))
 
 @app.route('/iiif/vtt/streaming/<identifier>.vtt')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
