@@ -65,7 +65,7 @@ class TestAnnotations(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         self.assertEqual(annotations['@context'], "http://iiif.io/api/presentation/3/context.json","Unexpected context")
         self.assertEqual(annotations['type'], "AnnotationPage", "Unexpected type, expected AnnotationPage")
-        self.assertEqual(len(annotations), 37, "Unexpected number of annotations")
+        self.assertEqual(len(annotations['items']), 37, "Unexpected number of annotations")
         ids = []
         for anno in annotations['items']:
             self.assertEqual(anno['type'], "Annotation", "Expected type of Annotation")
