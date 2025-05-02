@@ -60,13 +60,14 @@ class TestAnnotations(unittest.TestCase):
     def test_review_annotations(self):
         resp = self.test_app.get(
             "/iiif/3/annotations/goodytwoshoes00newyiala/comments.json"
-        ).json()
+        )
+        annotations = resp.json
         self.assertEqual(resp.status_code, 200)
-        self.assertEqual(resp['@context'], "http://iiif.io/api/presentation/3/context.json","Unexpected context")
-        self.assertEqual(resp['type'], "AnnotationPage", "Unexpected type, expected AnnotationPage")
-        self.assertEqual(len(resp), 37, "Unexpected number of annotations")
+        self.assertEqual(annotations['@context'], "http://iiif.io/api/presentation/3/context.json","Unexpected context")
+        self.assertEqual(annotations['type'], "AnnotationPage", "Unexpected type, expected AnnotationPage")
+        self.assertEqual(len(annotations), 37, "Unexpected number of annotations")
         ids = []
-        for anno in resp['items']:
+        for anno in annotations['items']:
             self.assertEqual(anno['type'], "Annotation", "Expected type of Annotation")
             self.assertTrue("body" in anno and "target" in anno, f"Body or target missing from annotation {anno}")
             self.assertTrue(anno['id'] not in ids, f"Duplicate ID: {anno['id']}")
