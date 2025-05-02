@@ -148,7 +148,7 @@ class TestManifests(unittest.TestCase):
         resp = self.test_app.get("/iiif/3/steamboat-willie-16mm-film-scan-4k-lossless/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(len(manifest['thumbnail']),17, f"Expected 15 thumbnails, but got {len(manifest['thumbnail'])}")
+        self.assertEqual(len(manifest['thumbnail']),17, f"Expected 17 thumbnails, but got {len(manifest['thumbnail'])}")
         self.assertEqual(manifest['thumbnail'][0]['id'],"https://iiif.archive.org/image/iiif/2/steamboat-willie-16mm-film-scan-4k-lossless%2fSteamboat%20Willie%20%5B16mm%20Film%20Scan%5D_ProRes%20%283400x2550%29.01_thumb.jpg/full/192,/0/default.jpg", f"Expected URL to be encoded")
 
         self.assertEqual(len(manifest['items']),1, f"Expected 1 canvas, but got {len(manifest['items'])}")
@@ -188,6 +188,11 @@ class TestManifests(unittest.TestCase):
 
         self.assertNotEqual(manifest.get('behavior', ['']), ["auto-advance"], "Expected no auto-advance behavior on manifest with 1 canvas." )
 
+    def test_thumbnail_on_audio_item(self):
+        resp = self.test_app.get("/iiif/3/Waste-Management_Taster-Too-demo-2009/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        self.assertEqual(len(manifest['thumbnail']),6, f"Expected 1 thumbnail, but got {len(manifest['thumbnail'])}")
 
 ''' to test:
 kaled_jalil (no derivatives)
