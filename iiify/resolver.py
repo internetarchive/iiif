@@ -473,22 +473,29 @@ def addRendering(manifest, identifier, files):
                  })
 
 def addThumbnails(manifest, identifier, files):
-    thumbnails = []
+    """Creates thumbnails based on files.
 
+    If the file appears to be a thumbnail (by format or name) attempt to create a IIIF thumbnail via Cantaloupe.
+    If that fails or isn't possible, fall back to adding a static thumbnail.
+    """
     for file in files:
-        if file['format'] == "Thumbnail":
-            mimetype = "image/jpeg"
-            if file['name'].endswith('.png'):
-                mimetype = "image/png"
+        name = file.get("name", "")
+        file_format = file.get("format", "")
+        is_thumbnail = file_format in {"Thumbnail", "JPEG Thumb"} or name == "__ia_thumb.jpg"
+        if not is_thumbnail:
+            continue
 
-            thumbnails.append({
-                "id": f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
-                "type": "Image",
-                "format": mimetype,
-            })
-
-    if thumbnails:
-        manifest.thumbnail = thumbnails
+        encoded_name = quote(name.replace('/', '%2f'))
+        # Forward solidus before thumbnail uri must always be %2f
+        iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
+        try:
+            manifest.create_thumbnail_from_iiif(iiif_url)
+        except requests.HTTPError:
+            print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url}")
+            mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
+            static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
+            manifest.add_thumbnail(static_url, format=mimetype)
+    return
 
 def addPartOfCollection(resource, collections, domain=None):
     # metadata["collections"] can be a list or str so we need to test what we have
