@@ -30,6 +30,12 @@ class TestCollections(unittest.TestCase):
         resp = self.test_app.get("/iiif/frankbford/2/collection.json")
         self.assertEqual(resp.status_code, 200)
 
+    def test_part_of(self):
+        resp = self.test_app.get("/iiif/university_pittsburgh/collection.json")
+        self.assertEqual(resp.status_code, 200)
+        collection = resp.json
+        self.assertEqual(len(collection['partOf']), 1, f"Expected 1 parent collection but got: {len(collection['partOf'])}")
+
 def test_v3_collection_detection(self):
         resp = self.test_app.get("/iiif/frankbford/manifest.json")
         self.assertEqual(resp.status_code, 302)

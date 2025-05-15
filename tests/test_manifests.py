@@ -194,6 +194,13 @@ class TestManifests(unittest.TestCase):
         manifest = resp.json
         self.assertEqual(len(manifest['thumbnail']),6, f"Expected 6 thumbnails, but got {len(manifest['thumbnail'])}.")
 
+    def test_part_of(self):
+        resp = self.test_app.get("/iiif/3/cc4ia-Polar_Plunge_Promo_-_2018/manifest.json")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        self.assertEqual(len(manifest['partOf']), 3, f"Expected 3 parent collections but got: {len(manifest['partOf'])}")
+
+
 ''' to test:
 kaled_jalil (no derivatives)
 Dokku_obrash (geo-restricted?)
