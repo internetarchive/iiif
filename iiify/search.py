@@ -1,6 +1,7 @@
 import requests
 from .resolver import ARCHIVE, URI_PRIFIX
 from bs4 import BeautifulSoup
+import json
 
 def buildSearchURL(identifier, query):
     response = requests.get(f"{ARCHIVE}/metadata/{identifier}")
@@ -17,6 +18,7 @@ def iiif_search(identifier, query):
     response = requests.get(url)
     response.raise_for_status() 
     ia_response = response.json()
+    # print (json.dumps(ia_response, indent=4))
 
     searchResponse = {
         "@context":"http://iiif.io/api/presentation/2/context.json",
@@ -34,11 +36,11 @@ def iiif_search(identifier, query):
        
         # Only show the match rather than the full matching paragraph 
         text = ""
-        largeResults = False
+        largeResults = True
         if len(match['text']) < 10000:
-            largeResults = True
+            largeResults = False
             soup = BeautifulSoup(match['text'], 'html.parser')
-            match = [tag.text for tag in soup.find_all('IA_FTS_MATCH')]
+            match = [tag.text for tag in soup.find_all('ia_fts_match')]
         else:
             text = query    
 

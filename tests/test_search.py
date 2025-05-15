@@ -115,3 +115,10 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(results[1]["resource"]["chars"], "pleasure", "Unexpected search match")
         self.assertEqual(results[2]["resource"]["chars"], "to", "Unexpected search match")
         self.assertEqual(results[3]["resource"]["chars"], "observe", "Unexpected search match")
+
+    def test_matching_characters_not_empty(self):
+        resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
+        results = resp.json
+        for result in results["resources"]:
+            self.assertTrue(isinstance(result, dict))
+            self.assertEqual(result["resource"]["chars"], "Brunswick")    
