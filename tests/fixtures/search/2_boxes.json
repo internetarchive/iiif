@@ -1,0 +1,60 @@
+{
+    "ia": "journalofexpedit00ford",
+    "q": "much",
+    "indexed": true,
+    "matches": [
+        {
+            "text": "ton,  from  whence,  about  11  o'clock,  we  marched  for  Morristown,  at  which place  we  arrived  about  1  o'clock,  and  joined  Major  Leddle,  Capt.  Tuttie, and  the  other  troops  assembled  for  marching.  Here  my  troop  had  the honor  of  turning  out  more  men  than  all  the  rest  of  the  county.  Ready  to march  after  taking  leave  of  my  friends  and  taking  dinner.  We  marched from  the  parade  under  repeated  shouts  of  applause  from  our  ftillow  citizens, a  great  number  of  whom  had  assembled  on  the  occasion.  It  afforded  me <IA_FTS_MATCH>much</IA_FTS_MATCH>  pleasure  to  observe  the  spirit  with  which  the  troops  marched  off,  and as  we  left  the  Green  we  returned  three  cheers  to  our  friends.  We  pro- ceeded by  Baskingridge  to  Dead  River,  where  we  encamped  for  the  night. Most  of  our  men  lay  in  barns,  and  appear  very  happy  ;  for  my  own  part,  T tumbled  on  a  bed  with  my  clothes  on,  to  be  ready  for  the  morning's  march, which  I  had  ordered  at  daylight.",
+            "par": [
+                {
+                    "l": 271,
+                    "t": 682,
+                    "r": 425,
+                    "b": 723,
+                    "page": 7,
+                    "boxes": [
+                        {
+                            "l": 271,
+                            "t": 682,
+                            "r": 425,
+                            "b": 723,
+                            "page": 7
+                        }
+                    ],
+                    "page_width": 2444,
+                    "page_height": 3771
+                }
+            ]
+        },
+        {
+            "text": "lltb.  Long  before  day  my  men  were  ready,  and  at  the  dawn  of  the morning  we  departed  for  Brunswick.  I  was  deputed  by  the  Major  to  wait on  General  White,  and  request  that  he  would  honor  the  squadron  with  his presence  into  the  city,  which  he  \\cry  politely  agreed  to  do.  On  our  march we  fell  in  with  the  Bergen  squadron,  and  marched  into  town  together ;  and without  vanity,  we  cut  a  very  fine  figure,  and  <IA_FTS_MATCH>much</IA_FTS_MATCH>  the  best  of  any  that had  come  in.  Here  our  troops  were  very  <IA_FTS_MATCH>much</IA_FTS_MATCH>  dissatisfied  with  their  for- age. Orders  are  given  for  all  the  troops  to  march  to-morrow  for  Trenton. We  now  have  the  Essex  squadron,  and  part  of  the  Middlesex,  so  that  we march  near  200  men.  This  afternoon  the  whole  cavalry  paraded  in  the grand  street  to  receive  their  standards,  at  the  delivery  of  which  the  General gave  a  most  elegant  and  honorable  charge  to  the  Coronets  who  were  pres- ent, impressing  on  them  the  confidence  placed  in  them  by  committing  to their  charge  the  standard  of  honor ;  to  which  Coronet  Beach,  in  behalf  of the  whole,  made  a  very  handsome  reply,  pledging  themselves  never  to  dis- grace or  part  with  their  standards,  but  with  their  lives.  After  this  solemn ceremony,  we  were  marched  through  the  principal  strc-ets  to  our  Cjuarters in  the  barracks.",
+            "par": [
+                {
+                    "l": 1336,
+                    "t": 1451,
+                    "r": 1638,
+                    "b": 1562,
+                    "page": 7,
+                    "boxes": [
+                        {
+                            "l": 1479,
+                            "t": 1451,
+                            "r": 1638,
+                            "b": 1493,
+                            "page": 7
+                        },
+                        {
+                            "l": 1336,
+                            "t": 1520,
+                            "r": 1507,
+                            "b": 1562,
+                            "page": 7
+                        }
+                    ],
+                    "page_width": 2444,
+                    "page_height": 3771
+                }
+            ]
+        }
+    ]
+}

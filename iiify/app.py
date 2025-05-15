@@ -6,6 +6,7 @@ import requests
 from flask import Flask, send_file, jsonify, abort, request, render_template, redirect, make_response
 from flask_cors import CORS
 from flask_caching import Cache
+from .search import iiif_search    
 from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
     collection, purify_domain, cantaloupe_resolver, create_collection3, IsCollection, \
     create_annotations, create_vtt_stream, infojson, create_annotations_from_comments
@@ -224,6 +225,12 @@ def vtt_stream(identifier):
     response = make_response(create_vtt_stream(identifier))
     response.headers['Content-Type'] = 'text/vtt'
     return response
+
+@app.route('/iiif/search/<identifier>/')
+def search(identifier):
+    validate_ia_identifier(identifier, page_suffix=False)
+    query = request.args.get('q')
+    return ldjsonify(iiif_search(identifier, query))
 
 @app.route('/iiif/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)

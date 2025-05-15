@@ -1,0 +1,72 @@
+{
+    "ia": "journalofexpedit00ford",
+    "q": "pleasure to observe",
+    "indexed": true,
+    "matches": [
+        {
+            "text": "ton,  from  whence,  about  11  o'clock,  we  marched  for  Morristown,  at  which place  we  arrived  about  1  o'clock,  and  joined  Major  Leddle,  Capt.  Tuttie, and  the  other  troops  assembled  for  marching.  Here  my  troop  had  the honor  of  turning  out  more  men  than  all  the  rest  of  the  county.  Ready  <IA_FTS_MATCH>to</IA_FTS_MATCH> march  after  taking  leave  of  my  friends  and  taking  dinner.  We  marched from  the  parade  under  repeated  shouts  of  applause  from  our  ftillow  citizens, a  great  number  of  whom  had  assembled  on  the  occasion.  It  afforded  me much  <IA_FTS_MATCH>pleasure</IA_FTS_MATCH>  <IA_FTS_MATCH>to</IA_FTS_MATCH>  <IA_FTS_MATCH>observe</IA_FTS_MATCH>  the  spirit  with  which  the  troops  marched  off,  and as  we  left  the  Green  we  returned  three  cheers  <IA_FTS_MATCH>to</IA_FTS_MATCH>  our  friends.  We  pro- ceeded by  Baskingridge  <IA_FTS_MATCH>to</IA_FTS_MATCH>  Dead  River,  where  we  encamped  for  the  night. Most  of  our  men  lay  in  barns,  and  appear  very  happy  ;  for  my  own  part,  T tumbled  on  a  bed  with  my  clothes  on,  <IA_FTS_MATCH>to</IA_FTS_MATCH>  be  ready  for  the  morning's  march, which  I  had  ordered  at  daylight.",
+            "par": [
+                {
+                    "l": 425,
+                    "t": 422,
+                    "r": 2135,
+                    "b": 996,
+                    "page": 7,
+                    "boxes": [
+                        {
+                            "l": 2090,
+                            "t": 422,
+                            "r": 2135,
+                            "b": 456,
+                            "page": 7
+                        },
+                        {
+                            "l": 425,
+                            "t": 682,
+                            "r": 650,
+                            "b": 736,
+                            "page": 7
+                        },
+                        {
+                            "l": 650,
+                            "t": 685,
+                            "r": 716,
+                            "b": 723,
+                            "page": 7
+                        },
+                        {
+                            "l": 716,
+                            "t": 681,
+                            "r": 922,
+                            "b": 723,
+                            "page": 7
+                        },
+                        {
+                            "l": 1487,
+                            "t": 753,
+                            "r": 1568,
+                            "b": 791,
+                            "page": 7
+                        },
+                        {
+                            "l": 876,
+                            "t": 817,
+                            "r": 941,
+                            "b": 858,
+                            "page": 7
+                        },
+                        {
+                            "l": 1217,
+                            "t": 953,
+                            "r": 1287,
+                            "b": 996,
+                            "page": 7
+                        }
+                    ],
+                    "page_width": 2444,
+                    "page_height": 3771
+                }
+            ]
+        }
+    ]
+}
