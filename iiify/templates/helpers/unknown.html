@@ -18,15 +18,18 @@
     </header>
     <div id="container">
 
-<h1>IIIF Presentation API Helper</h1>
+        <h1>IIIF Presentation API Helper</h1>
 
-<p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
+        <p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
 
-<p>The IA identifier is: {{ identifier }}</p>
+        <p>The IA identifier is: {{ identifier }}</p>
 
-<p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/{{ identifier }}/manifest.json</a></p>
+        <p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/{{ identifier }}/manifest.json</a></p>
 
-<p>The material type of the item you're requested is not a recognized material type for IIIF viewers.</p>
+        <p>The material type of the item you're requested is not a recognized material type for IIIF viewers.</p>
+
+        {% include "partials/reviews_block.html" %}
+    </div>
 
     </body>
 </html>

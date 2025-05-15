@@ -8,7 +8,7 @@ from flask_cors import CORS
 from flask_caching import Cache
 from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
     collection, purify_domain, cantaloupe_resolver, create_collection3, IsCollection, \
-    create_annotations, create_vtt_stream, infojson
+    create_annotations, create_vtt_stream, infojson, create_annotations_from_comments
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
@@ -90,24 +90,27 @@ def helper(identifier):
 
     mediatype = metadata['metadata']['mediatype']
 
+    # Determine if we Should Add Annotations Presence in Helper
+    reviews = True if len(metadata.get('reviews', [])) > 0 else False
+
     if mediatype == "image":
         try:
             cantaloupe_id = cantaloupe_resolver(identifier)
             esc_cantaloupe_id = quote(cantaloupe_id)
-            return render_template('helpers/image.html', identifier=identifier, cantaloupe_id=cantaloupe_id, esc_cantaloupe_id=esc_cantaloupe_id)
+            return render_template('helpers/image.html', identifier=identifier, cantaloupe_id=cantaloupe_id, esc_cantaloupe_id=esc_cantaloupe_id, reviews=reviews)
         except ValueError:
             abort(404)
 
     elif mediatype == "audio" or mediatype == "etree":
-        return render_template('helpers/audio.html', identifier=identifier)
+        return render_template('helpers/audio.html', identifier=identifier, reviews=reviews)
     elif mediatype == "movies":
-        return render_template('helpers/movies.html', identifier=identifier)
+        return render_template('helpers/movies.html', identifier=identifier, reviews=reviews)
     elif mediatype == "texts":
-        return render_template('helpers/texts.html', identifier=identifier)
+        return render_template('helpers/texts.html', identifier=identifier, reviews=reviews)
     elif mediatype == "collection":
-        return render_template('helpers/collection.html', identifier=identifier)
+        return render_template('helpers/collection.html', identifier=identifier, reviews=reviews)
     else:
-        return render_template('helpers/unknown.html', identifier=identifier)
+        return render_template('helpers/unknown.html', identifier=identifier, reviews=reviews)
 
 
 @app.route('/iiif/<identifier>')
@@ -206,6 +209,13 @@ def annnotations(version: str, identifier: str, fileName: str, canvas_no: int):
     validate_ia_identifier(identifier, page_suffix=False)
     domain = purify_domain(request.args.get('domain', request.url_root))
     return ldjsonify(create_annotations(version, identifier, fileName, canvas_no, domain=domain))
+
+@app.route("/iiif/3/annotations/<identifier>/comments.json")
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+def commenting_annotations(identifier: str):
+    validate_ia_identifier(identifier, page_suffix=False)
+    domain = purify_domain(request.args.get('domain', request.url_root))
+    return ldjsonify(create_annotations_from_comments(identifier, domain=domain))
 
 @app.route('/iiif/vtt/streaming/<identifier>.vtt')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
