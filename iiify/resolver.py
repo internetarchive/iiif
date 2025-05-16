@@ -3,7 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, SeeAlso
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -445,7 +445,7 @@ def addSeeAlso(manifest, identifier, files):
         "Djvu XML": "OCR Data",
         "Scandata": "OCR Data",
         "Archive BitTorrent": "Torrent",
-        "Metadata": "Metadata",
+        "Metadata": "Metadata"
     }
 
     for file in files:
@@ -707,6 +707,15 @@ def create_manifest3(identifier, domain=None, page=None):
                             label={"none": [format]},
                             duration=float(file['length']))
                         body.items.append(r)
+
+                if "Spectrogram" in derivatives[file['name']]:        
+                    print ('Adding seeAlso')
+                    c.seeAlso = [{
+                        "id": f"https://archive.org/download/{identifier}/{normalised_id.replace(' ', '%20')}_spectrogram.png",
+                        "type": "Image",
+                        "label": {"en": ["Spectrogram"]},
+                        "format": "image/png"
+                    }]
             else:
                 # todo: deal with instances where there are no derivatives for whatever reason
                 body = ResourceItem(
