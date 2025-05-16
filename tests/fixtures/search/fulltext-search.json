@@ -1,0 +1,53 @@
+{
+    "ia": "journalofexpedit00ford",
+    "q": "Brunswick",
+    "indexed": true,
+    "matches": [
+        {
+            "text": "Gth  Sept.  1794.  This  day  received. orders  from  Major  Leddle,  to  march with  my  troop  immediately  for  New  <IA_FTS_MATCH>Brunswick</IA_FTS_MATCH>.  I  instantly  gave  the  ne- cessary orders  for  assembling  the  troop.",
+            "par": [
+                {
+                    "l": 1338,
+                    "t": 2851,
+                    "r": 1675,
+                    "b": 2895,
+                    "page": 6,
+                    "boxes": [
+                        {
+                            "l": 1338,
+                            "t": 2851,
+                            "r": 1675,
+                            "b": 2895,
+                            "page": 6
+                        }
+                    ],
+                    "page_width": 2444,
+                    "page_height": 3771
+                }
+            ]
+        },
+        {
+            "text": "lltb.  Long  before  day  my  men  were  ready,  and  at  the  dawn  of  the morning  we  departed  for  <IA_FTS_MATCH>Brunswick</IA_FTS_MATCH>.  I  was  deputed  by  the  Major  to  wait on  General  White,  and  request  that  he  would  honor  the  squadron  with  his presence  into  the  city,  which  he  \\cry  politely  agreed  to  do.  On  our  march we  fell  in  with  the  Bergen  squadron,  and  marched  into  town  together ;  and without  vanity,  we  cut  a  very  fine  figure,  and  much  the  best  of  any  that had  come  in.  Here  our  troops  were  very  much  dissatisfied  with  their  for- age. Orders  are  given  for  all  the  troops  to  march  to-morrow  for  Trenton. We  now  have  the  Essex  squadron,  and  part  of  the  Middlesex,  so  that  we march  near  200  men.  This  afternoon  the  whole  cavalry  paraded  in  the grand  street  to  receive  their  standards,  at  the  delivery  of  which  the  General gave  a  most  elegant  and  honorable  charge  to  the  Coronets  who  were  pres- ent, impressing  on  them  the  confidence  placed  in  them  by  committing  to their  charge  the  standard  of  honor ;  to  which  Coronet  Beach,  in  behalf  of the  whole,  made  a  very  handsome  reply,  pledging  themselves  never  to  dis- grace or  part  with  their  standards,  but  with  their  lives.  After  this  solemn ceremony,  we  were  marched  through  the  principal  strc-ets  to  our  Cjuarters in  the  barracks.",
+            "par": [
+                {
+                    "l": 900,
+                    "t": 1175,
+                    "r": 1238,
+                    "b": 1218,
+                    "page": 7,
+                    "boxes": [
+                        {
+                            "l": 900,
+                            "t": 1175,
+                            "r": 1238,
+                            "b": 1218,
+                            "page": 7
+                        }
+                    ],
+                    "page_width": 2444,
+                    "page_height": 3771
+                }
+            ]
+        }
+    ]
+}

@@ -3,7 +3,9 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, SeeAlso
+
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1
+
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -473,22 +475,29 @@ def addRendering(manifest, identifier, files):
                  })
 
 def addThumbnails(manifest, identifier, files):
-    thumbnails = []
+    """Creates thumbnails based on files.
 
+    If the file appears to be a thumbnail (by format or name) attempt to create a IIIF thumbnail via Cantaloupe.
+    If that fails or isn't possible, fall back to adding a static thumbnail.
+    """
     for file in files:
-        if file['format'] == "Thumbnail":
-            mimetype = "image/jpeg"
-            if file['name'].endswith('.png'):
-                mimetype = "image/png"
+        name = file.get("name", "")
+        file_format = file.get("format", "")
+        is_thumbnail = file_format in {"Thumbnail", "JPEG Thumb"} or name == "__ia_thumb.jpg"
+        if not is_thumbnail:
+            continue
 
-            thumbnails.append({
-                "id": f"{ARCHIVE}/download/{quote(identifier)}/{quote(file['name'])}",
-                "type": "Image",
-                "format": mimetype,
-            })
-
-    if thumbnails:
-        manifest.thumbnail = thumbnails
+        encoded_name = quote(name.replace('/', '%2f'))
+        # Forward solidus before thumbnail uri must always be %2f
+        iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
+        try:
+            manifest.create_thumbnail_from_iiif(iiif_url)
+        except requests.HTTPError:
+            print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url}")
+            mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
+            static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
+            manifest.add_thumbnail(static_url, format=mimetype)
+    return
 
 def addPartOfCollection(resource, collections, domain=None):
     # metadata["collections"] can be a list or str so we need to test what we have
@@ -631,6 +640,18 @@ def create_manifest3(identifier, domain=None, page=None):
 
         # Add annotations if djvu file is present
         if djvuFile:
+            # Add search service
+            service = {
+                "@context": "http://iiif.io/api/search/1/context.json",
+                "@id": f"{domain.replace("https","http")}search/{identifier}",
+                "@type": "SearchService1",
+                "profile": "http://iiif.io/api/search/1/search"
+            }
+            if manifest.service:
+                manifest.service.append(service)
+            else:
+                manifest.service = [service]    
+
             count = 1
             for canvas in manifest.items:
                 if 'annotations' in canvas:
@@ -871,7 +892,9 @@ def create_manifest3(identifier, domain=None, page=None):
     return json.loads(manifest.jsonld())
 
 def create_annotations(version: int, identifier: str, fileName: str, canvas_no: int, domain: str | None = None):
-    annotationPage = AnnotationPage(id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json")
+    annotationPage = AnnotationPage(
+        id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json"
+    )
     annotationPage.items = []
     index = canvas_no - 1
     url = f"{ARCHIVE}/download/{identifier}/{fileName}"
@@ -918,6 +941,29 @@ def create_annotations(version: int, identifier: str, fileName: str, canvas_no: 
         raise ValueError("Failed to process {url}")
 
     return json.loads(annotationPage.jsonld())
+
+def create_annotations_from_comments(identifier, domain=None):
+    annotation_page = AnnotationPage(
+        id=f"{domain}3/annotations/{identifier}/comments.json"
+    )
+    metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
+    i = 0
+    for comment in metadata.get('reviews', []):
+        anno_body = ResourceItem1(
+            type="TextualBody",
+            language="none",
+            format="text/html",
+            value=f"<span><p>{comment.get('reviewtitle')}:</p><p>{comment.get('reviewbody')}</p></span>"
+        )
+        anno = Annotation(
+            id=f"{domain}3/annotations/{identifier}/comments/{i}",
+            motivation="commenting",
+            body = anno_body,
+            target= f"{domain}3/{identifier}/manifest.json"
+        )
+        annotation_page.add_item(anno)
+        i += 1
+    return json.loads(annotation_page.jsonld())
 
 def create_vtt_stream(identifier): 
     """

@@ -19,23 +19,26 @@
     </header>
     <div id="container">
 
-<h1>IIIF Presentation API Audio Helper</h1>
+        <h1>IIIF Presentation API Audio Helper</h1>
 
-<p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
+        <p>The IA item page URL is: <a href="https://archive.org/details/{{ identifier }}">https://archive.org/details/{{ identifier }}</a></p>
 
-<p>The IA identifier is: {{ identifier }}</p>
+        <p>The IA identifier is: {{ identifier }}</p>
 
-<p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json</a></p>
+        <p>The IIIF manifest URL is: <a href="https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">https://iiif.archive.org/iiif/3/{{ identifier }}/manifest.json</a></p>
 
-<h2>IIIF player options for this mediatype:</h2>
-<ul>
-    <li><a href="https://uv-v4.netlify.app/#?manifest=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Universal Viewer</a></li>
-    <li><a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Mirador comparison viewer/player</a></li>
-    <li><a href="https://iiif-react-media-player.netlify.app//?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Ramp</a></li>
-    <li><a href="https://iiif.aviaryplatform.com/player?manifest=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Aviary</a></li>
-    <li><a href="https://samvera-labs.github.io/clover-iiif?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Clover</a></li>
+        <h2>IIIF player options for this mediatype:</h2>
+        <ul>
+            <li><a href="https://uv-v4.netlify.app/#?manifest=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Universal Viewer</a></li>
+            <li><a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Mirador comparison viewer/player</a></li>
+            <li><a href="https://iiif-react-media-player.netlify.app//?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Ramp</a></li>
+            <li><a href="https://iiif.aviaryplatform.com/player?manifest=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Aviary</a></li>
+            <li><a href="https://samvera-labs.github.io/clover-iiif?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Clover</a></li>
 
-</ul>
+        </ul>
+
+        {% include "partials/reviews_block.html" %}
+    </div>
 
     </body>
 </html>
