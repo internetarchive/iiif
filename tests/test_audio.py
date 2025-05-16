@@ -32,7 +32,7 @@ class TestAudio(unittest.TestCase):
 
             self.assertTrue('accompanyingCanvas' in canvas)
             accCanvas = canvas['accompanyingCanvas']
-            self.assetEqual(accCanvas["type"], "Canvas")
-            self.assetEqual(accCanvas["label"]["en"][0], "Waveform")
+            self.assertEqual(accCanvas["type"], "Canvas")
+            self.assertEqual(accCanvas["label"]["en"][0], "Waveform")
             self.assertTrue("height" in accCanvas)
             self.assertTrue("width" in accCanvas)
