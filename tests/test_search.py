@@ -33,6 +33,19 @@ class TestSearch(unittest.TestCase):
 
         self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
 
+    def test_search_in_manifest(self):    
+        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json?recache=true")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json    
+
+        self.assertTrue("service" in manifest, "Failed to find search service in manifest")
+        self.assertEqual(len(manifest['service']), 1, "Expected a single search service")
+        service = manifest['service'][0]
+        self.assertEqual(service['@id'], "https://localhost/iiif/search/journalofexpedit00ford")
+        self.assertEqual(service['@type'], "SearchService1")
+        self.assertEqual(service['profile'], "http://iiif.io/api/search/1/search")
+
+
     @patch("requests.get")
     def test_fixture(self, searchPatch):
             # Define mock response for the specific URLs
