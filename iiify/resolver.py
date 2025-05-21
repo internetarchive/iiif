@@ -559,13 +559,11 @@ def create_manifest3(identifier, domain=None, page=None):
 
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
     if 'reviews' in metadata:
-        annotation_collection = AnnotationPageRef(
+        reviews_as_annotations = AnnotationPageRef(
             id=f"{domain.replace('iiif/', 'iiif/3/annotations/')}{identifier}/comments.json",
             type="AnnotationPage",
         )
-        manifest.add_annotation(
-            annotation_collection
-        )
+        manifest.annotations=[reviews_as_annotations]
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
