@@ -19,7 +19,10 @@ import re
 app = Flask(__name__)
 # disabling sorting of the output json
 app.config['JSON_SORT_KEYS'] = False
-app.config['CACHE_TYPE'] = "FileSystemCache" if os.environ.get("FLASK_CACHE_DISABLE", None) != "true" else "NullCache"
+# To disable the cache you must call 
+# app.config['CACHE_TYPE'] = "NullCache"
+# as this code is run before the test.setUp 
+app.config['CACHE_TYPE'] = "FileSystemCache" 
 app.config['CACHE_DIR'] = "cache"
 cors = CORS(app) if cors else None
 cache = Cache(app)
@@ -27,7 +30,6 @@ cache = Cache(app)
 ARCHIVE = 'https://archive.org'
 
 # cache.init_app(app)
-
 
 def cache_bust():
     return request.args.get("recache", "") in ["True", "true", "1"]
