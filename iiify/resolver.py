@@ -3,7 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -558,7 +558,12 @@ def create_manifest3(identifier, domain=None, page=None):
     config.configs['helpers.auto_fields.AutoLang'].auto_lang = "none"
 
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
-
+    if 'reviews' in metadata:
+        reviews_as_annotations = AnnotationPageRef(
+            id=f"{domain.replace('iiif/', 'iiif/3/annotations/')}{identifier}/comments.json",
+            type="AnnotationPage",
+        )
+        manifest.annotations=[reviews_as_annotations]
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
