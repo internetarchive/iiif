@@ -41,6 +41,9 @@ def iiif_search(identifier, query):
             largeResults = False
             soup = BeautifulSoup(match['text'], 'html.parser')
             match = [tag.text for tag in soup.find_all('ia_fts_match')]
+            if len(match) != len(paragraph['boxes']):
+                for i in range(len(paragraph['boxes']) - len(match)):
+                    match.append(query)
         else:
             text = query    
 
@@ -49,8 +52,19 @@ def iiif_search(identifier, query):
         for box in paragraph['boxes']:
             x = int(box['l'])
             y = int (box['t'])
-            width = int(box['r']) - x
+            right = 0
+            # If r is missing then use the paragraph
+            if 'r' in box:
+                right = int(box['r'])
+            else:
+                right = paragraph['r'] 
+
+            width = right - x
             height = int(box['b']) - y
+            page = int(paragraph['page']) - 1
+            if "leaf0_missing" in ia_response and ia_response['leaf0_missing'] == False:
+                page = int(paragraph['page'])
+
             searchResponse['resources'].append({
                 "@id": f"{URI_PRIFIX}/{identifier}/annotation/anno{count}",
                 "@type": "oa:Annotation",
@@ -59,7 +73,7 @@ def iiif_search(identifier, query):
                     "@type": "cnt:ContentAsText",
                     "chars": text if largeResults else match[matchNo] 
                 },
-                "on": f"{URI_PRIFIX}/{identifier}${int(paragraph['page']) - 1}/canvas#xywh={x},{y},{width},{height}",
+                "on": f"{URI_PRIFIX}/{identifier}${page}/canvas#xywh={x},{y},{width},{height}",
                 "within": {
                     "@id": f"{URI_PRIFIX}/{identifier}/manifest.json",
                     "type": "sc:Manifest"

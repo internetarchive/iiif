@@ -646,7 +646,7 @@ def create_manifest3(identifier, domain=None, page=None):
             # Add search service
             service = {
                 "@context": "http://iiif.io/api/search/1/context.json",
-                "@id": f"{domain.replace("https","http")}search/{identifier}",
+                "@id": f"{domain}search/{identifier}",
                 "@type": "SearchService1",
                 "profile": "http://iiif.io/api/search/1/search"
             }

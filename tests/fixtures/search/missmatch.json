@@ -1,0 +1,55 @@
+{
+    "ia": "mrr_401",
+    "q": "top",
+    "indexed": true,
+    "leaf0_missing": false,
+    "page_count": 136,
+    "matches": [
+        {
+            "text": "SONYA: I have a lot going on right now. I just decided to retire all the jeans. Now I am working on a cut-and-sew line but it’s <IA_FTS_MATCH>TOP</IA_FTS_MATCH> secret so don’t tell anyone. I am currently making a jacket that is an interpretation of a Vito Acconci piece.",
+            "par": [
+                {
+                    "t": 1661,
+                    "b": 2351,
+                    "l": 3632,
+                    "r": 4694,
+                    "boxes": [
+                        {
+                            "t": 1927,
+                            "b": 1998,
+                            "l": 4586,
+                            "page": 78,
+                            "r": 4678
+                        },
+                        {
+                            "t": 2015,
+                            "b": 2086,
+                            "l": 3651,
+                            "r": 4678
+                        },
+                        {
+                            "t": 2104,
+                            "b": 2176,
+                            "l": 3651,
+                            "r": 4678
+                        },
+                        {
+                            "t": 2192,
+                            "b": 2263,
+                            "l": 3650,
+                            "r": 4679
+                        },
+                        {
+                            "t": 2284,
+                            "b": 2351,
+                            "l": 3650
+                        }
+                    ],
+                    "page": 78,
+                    "page_width": 5105,
+                    "page_height": 6492
+                }
+            ]
+        }
+    ]
+}

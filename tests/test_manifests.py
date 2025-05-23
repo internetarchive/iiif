@@ -7,7 +7,7 @@ from iiify.app import app
 class TestManifests(unittest.TestCase):
 
     def setUp(self) -> None:
-        os.environ["FLASK_CACHE_DISABLE"] = "true"
+        app.config['CACHE_TYPE'] = "NullCache"
         self.test_app = FlaskClient(app)
 
     def test_no_version(self):

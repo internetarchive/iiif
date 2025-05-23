@@ -2,10 +2,11 @@ import os
 
 import unittest
 from iiify.resolver import purify_domain, collection, manifest_page
+from iiify.app import app
 
 class TestResolver(unittest.TestCase):
     def setUp(self) -> None:
-        os.environ["FLASK_CACHE_DISABLE"] = "true"
+        app.config['CACHE_TYPE'] = "NullCache"
 
     def test_purify(self):
         domain = purify_domain("https://example.org/iiif/")
