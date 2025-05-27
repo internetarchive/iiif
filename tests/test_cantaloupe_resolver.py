@@ -2,11 +2,12 @@ import os
 
 import unittest
 from iiify.resolver import cantaloupe_resolver
+from iiify.app import app
 
 class TestCantaloupeResolver(unittest.TestCase):
 
     def setUp(self) -> None:
-        os.environ["FLASK_CACHE_DISABLE"] = "true"
+        app.config['CACHE_TYPE'] = "NullCache"
 
     def test_single_image(self):
         cid = cantaloupe_resolver("img-8664_202009")

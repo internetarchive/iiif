@@ -8,6 +8,7 @@ from iiify.app import app
 class TestHelper(unittest.TestCase):
 
     def setUp(self) -> None:
+        app.config['CACHE_TYPE'] = "NullCache"
         self.test_app = FlaskClient(app)
 
     def test_single_image(self):

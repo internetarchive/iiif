@@ -23,7 +23,7 @@ def mockResponse(fixture):
 class TestSearch(unittest.TestCase):
 
     def setUp(self) -> None:
-        os.environ["FLASK_CACHE_DISABLE"] = "true"
+        app.config['CACHE_TYPE'] = "NullCache"
         self.test_app = FlaskClient(app)
 
     def test_live(self):
@@ -32,6 +32,19 @@ class TestSearch(unittest.TestCase):
         results = resp.json    
 
         self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
+
+    def test_search_in_manifest(self):    
+        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json?recache=true")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json    
+
+        self.assertTrue("service" in manifest, "Failed to find search service in manifest")
+        self.assertEqual(len(manifest['service']), 1, "Expected a single search service")
+        service = manifest['service'][0]
+        self.assertEqual(service['@id'], "https://localhost/iiif/search/journalofexpedit00ford")
+        self.assertEqual(service['@type'], "SearchService1")
+        self.assertEqual(service['profile'], "http://iiif.io/api/search/1/search")
+
 
     @patch("requests.get")
     def test_fixture(self, searchPatch):
@@ -115,6 +128,34 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(results[1]["resource"]["chars"], "pleasure", "Unexpected search match")
         self.assertEqual(results[2]["resource"]["chars"], "to", "Unexpected search match")
         self.assertEqual(results[3]["resource"]["chars"], "observe", "Unexpected search match")
+
+    @patch("requests.get")
+    def multi_box(self, searchPatch):
+        # Define mock response for the specific URLs
+        def mock_response(url, *args, **kwargs):
+            if "fulltext/inside.php" in url:
+                return mockResponse("tests/fixtures/search/missmatch.json")
+            elif "metadata" in url:
+                # Although this doesn't match the item used in the 
+                # search above it shouldn't matter for this test
+                return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
+
+        searchPatch.side_effect = mock_response    
+
+        resp = self.test_app.get("/iiif/search/mrr_401/?q=top")
+        self.assertEqual(resp.status_code, 200)
+        results = resp.json        
+
+        # this doesn't have the r field in the box:
+        anno5 = results["resources"][4]
+        self.assertEqual(anno5['on'], "https://iiif.archive.org/iiif/mrr_401$78/canvas#xywh=3650,2284,1044,67")
+        anno1 = results["resources"][0]
+        # First anno should use the IA_FTS_MATCH
+        self.assertEqual(anno1["resource"]["chars"], "TOP")
+        # The rest should use the query 
+        for anno in results["resources"][1:]:
+            self.assertEqual(anno["resource"]["chars"], "top")
+
 
     def test_matching_characters_not_empty(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
