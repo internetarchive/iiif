@@ -3,7 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1, CanvasRef
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -701,12 +701,28 @@ def create_manifest3(identifier, domain=None, page=None):
             manifest.behavior = "auto-advance"
 
         # create the canvases for each original
+        total_audio_files = len([file for file in [f for f in originals if f['format'] in AUDIO_FORMATS]])
+        if total_audio_files > 1:
+            top_range = manifest.make_range(
+                id=f"{URI_PRIFIX}/{identifier}/range/1",
+                label="Track List"
+            )
         for file in [f for f in originals if f['format'] in AUDIO_FORMATS]:
             normalised_id = file['name'].rsplit(".", 1)[0]
             slugged_id = normalised_id.replace(" ", "-")
             c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
             c = Canvas(id=c_id, label=normalised_id, duration=float(file['length']))
-
+            if total_audio_files > 1:
+                track = top_range.make_range(
+                    id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/range",
+                    label=file.get('title', slugged_id)
+                )
+                track.add_item(
+                    CanvasRef(
+                        id=c_id,
+                        type="Canvas"
+                    )
+                )
             # create intermediary objects
             ap = AnnotationPage(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page")
             anno = Annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation", motivation="painting", target=c.id)
