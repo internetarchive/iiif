@@ -587,6 +587,7 @@ def create_manifest3(identifier, domain=None, page=None):
         bookreader = requests.get(bookReaderURL).json()
         if 'error' in bookreader:
             # Image stack not found. Maybe a single image
+            print('yep')
             singleImage(metadata, identifier, manifest, uri)
         else:
             pageCount = 0
@@ -712,6 +713,8 @@ def create_manifest3(identifier, domain=None, page=None):
             slugged_id = normalised_id.replace(" ", "-")
             c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
             c = Canvas(id=c_id, label=normalised_id, duration=float(file['length']))
+
+            # if multiple files, also add a range
             if total_audio_files > 1:
                 track = top_range.make_range(
                     id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/range",
