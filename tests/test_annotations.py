@@ -7,7 +7,7 @@ from iiify.app import app
 class TestAnnotations(unittest.TestCase):
 
     def setUp(self) -> None:
-        os.environ["FLASK_CACHE_DISABLE"] = "true"
+        app.config['CACHE_TYPE'] = "NullCache"
         self.test_app = FlaskClient(app)
 
     def test_v3_manifest_has_annotations(self):
@@ -73,4 +73,12 @@ class TestAnnotations(unittest.TestCase):
             self.assertTrue(anno['id'] not in ids, f"Duplicate ID: {anno['id']}")
             self.assertEqual(anno['body']['format'], "text/html", "Expected format to be a text/html")
             self.assertEqual(anno['motivation'], "commenting", "Expected motivation of commenting")
-            
+
+    def test_review_annotations_on_manifest(self):
+        resp = self.test_app.get(
+            "/iiif/3/goodytwoshoes00newyiala/manifest.json?recache=true"
+        )
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        self.assertEqual(len(manifest['annotations']), 1)
+        self.assertEqual(manifest["annotations"][0]["type"], "AnnotationPage")

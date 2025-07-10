@@ -586,7 +586,12 @@ def create_manifest3(identifier, domain=None, page=None):
     config.configs['helpers.auto_fields.AutoLang'].auto_lang = "none"
 
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
-
+    if 'reviews' in metadata:
+        reviews_as_annotations = AnnotationPageRef(
+            id=f"{domain.replace('iiif/', 'iiif/3/annotations/')}{identifier}/comments.json",
+            type="AnnotationPage",
+        )
+        manifest.annotations=[reviews_as_annotations]
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
@@ -669,7 +674,7 @@ def create_manifest3(identifier, domain=None, page=None):
             # Add search service
             service = {
                 "@context": "http://iiif.io/api/search/1/context.json",
-                "@id": f"{domain.replace("https","http")}search/{identifier}",
+                "@id": f"{domain}search/{identifier}",
                 "@type": "SearchService1",
                 "profile": "http://iiif.io/api/search/1/search"
             }
