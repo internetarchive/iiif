@@ -3,7 +3,9 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1
+
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage,AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1, AccompanyingCanvas
+
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -445,7 +447,7 @@ def addSeeAlso(manifest, identifier, files):
         "Djvu XML": "OCR Data",
         "Scandata": "OCR Data",
         "Archive BitTorrent": "Torrent",
-        "Metadata": "Metadata",
+        "Metadata": "Metadata"
     }
 
     for file in files:
@@ -458,6 +460,32 @@ def addSeeAlso(manifest, identifier, files):
                  "format": seeAlso['format']
                  })
 
+def addAccompanying(identifier, slugged_id, filename):
+    # This should be the Wave form
+    accompanying_canvas = AccompanyingCanvas(
+        id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas/accompanying",
+        label={ "en": ["Waveform"]}
+    )
+    imgId = f"{identifier}/{filename}".replace('/','%2f')
+    imgURL = f"{IMG_SRV}/3/{imgId}".replace(' ', '%20')
+    body = ResourceItem(id="http://example.com", type="Image")
+    infoJson = body.set_hwd_from_iiif(imgURL)
+
+    service = ServiceItem(id=infoJson['id'], profile=infoJson['profile'], type=infoJson['type'])
+    body.service = [service]
+    body.id = f'{infoJson["id"]}/full/max/0/default.jpg'
+    body.format = "image/jpeg"
+
+    annotation = Annotation(id=f"{accompanying_canvas.id}/anno", motivation='painting', body=body, target=accompanying_canvas.id)
+
+    annotationPage = AnnotationPage(id=f"{accompanying_canvas.id}/annoPage")
+    annotationPage.add_item(annotation)
+
+    accompanying_canvas.add_item(annotationPage)
+    accompanying_canvas.height = infoJson['height']
+    accompanying_canvas.width = infoJson['width']
+
+    return accompanying_canvas
 
 def addRendering(manifest, identifier, files):
     manifest.rendering = []
@@ -731,6 +759,18 @@ def create_manifest3(identifier, domain=None, page=None):
                             label={"none": [format]},
                             duration=float(file['length']))
                         body.items.append(r)
+
+                if "Spectrogram" in derivatives[file['name']]:        
+                    c.seeAlso = [{
+                        "id": f"https://archive.org/download/{identifier}/{normalised_id.replace(' ', '%20')}_spectrogram.png",
+                        "type": "Image",
+                        "label": {"en": ["Spectrogram"]},
+                        "format": "image/png"
+                    }]
+
+                if "PNG" in derivatives[file['name']]:   
+                    # This should be the Wave form
+                    c.accompanyingCanvas = addAccompanying(identifier, slugged_id, derivatives[file['name']]["PNG"]["name"])
             else:
                 # todo: deal with instances where there are no derivatives for whatever reason
                 body = ResourceItem(
