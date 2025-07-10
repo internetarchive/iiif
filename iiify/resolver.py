@@ -716,7 +716,7 @@ def create_manifest3(identifier, domain=None, page=None):
             # if multiple files, also add a range
             if total_audio_files > 1:
                 track = top_range.make_range(
-                    id = f"{URI_PRIFIX}/{identifier}/{normalised_id}/range",
+                    id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/range",
                     label=file.get('title', normalised_id)
                 )
                 track.add_item(
