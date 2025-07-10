@@ -587,7 +587,6 @@ def create_manifest3(identifier, domain=None, page=None):
         bookreader = requests.get(bookReaderURL).json()
         if 'error' in bookreader:
             # Image stack not found. Maybe a single image
-            print('yep')
             singleImage(metadata, identifier, manifest, uri)
         else:
             pageCount = 0
