@@ -701,7 +701,7 @@ def create_manifest3(identifier, domain=None, page=None):
             manifest.behavior = "auto-advance"
 
         # create the canvases for each original
-        total_audio_files = len([file for file in [f for f in originals if f['format'] in AUDIO_FORMATS]])
+        total_audio_files = len([f for f in originals if f['format'] in AUDIO_FORMATS])
         if total_audio_files > 1:
             top_range = manifest.make_range(
                 id=f"{URI_PRIFIX}/{identifier}/range/1",
@@ -716,8 +716,8 @@ def create_manifest3(identifier, domain=None, page=None):
             # if multiple files, also add a range
             if total_audio_files > 1:
                 track = top_range.make_range(
-                    id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/range",
-                    label=file.get('title', slugged_id)
+                    id = f"{URI_PRIFIX}/{identifier}/{normalised_id}/range",
+                    label=file.get('title', normalised_id)
                 )
                 track.add_item(
                     CanvasRef(
