@@ -705,7 +705,7 @@ def create_manifest3(identifier, domain=None, page=None):
         if total_audio_files > 1:
             top_range = manifest.make_range(
                 id=f"{URI_PRIFIX}/{identifier}/range/1",
-                label="Track List"
+                label={"en": ["Track List"]}
             )
         for file in [f for f in originals if f['format'] in AUDIO_FORMATS]:
             normalised_id = file['name'].rsplit(".", 1)[0]

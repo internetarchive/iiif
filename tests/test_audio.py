@@ -24,7 +24,7 @@ class TestAudio(unittest.TestCase):
         manifest = resp.json
 
         self.assertEqual(len(manifest["structures"]), 1, f"Expected a top level range to serve as the track list but got {len(manifest['items'])}")
-        self.assertEqual(manifest["structures"][0]["label"]["none"][0], "Track List", f"Expected a top level range to be labeled 'Track List' but got {manifest["structures"][0]["label"]["none"][0]}")
+        self.assertEqual(manifest["structures"][0]["label"]["en"][0], "Track List", f"Expected a top level range to be labeled 'Track List' but got {manifest["structures"][0]["label"]["en"][0]}")
         self.assertEqual(len(manifest["structures"][0]["items"]), 15, f"Expected 15 tracks but got {len(manifest["structures"][0]["items"])}")
     
     def test_single_track_audio_gets_no_ranges(self):
