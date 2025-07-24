@@ -390,7 +390,7 @@ def sanitize_html(value):
         value,
         tags=allowed_tags,
         attributes=allowed_attributes,
-        strip=True  # Strip disallowed tags instead of escaping
+        strip=True
     )
     
 
