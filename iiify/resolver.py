@@ -10,6 +10,7 @@ import math
 import re
 import xml.etree.ElementTree as ET
 from datetime import timedelta
+import bleach
 
 SCRAPE_API = 'https://archive.org/services/search/v1/scrape'
 ADVANCED_SEARCH = 'https://archive.org/advancedsearch.php'
@@ -378,6 +379,21 @@ def singleImage(metadata, identifier, manifest, uri):
                                     anno_page_id=f"{uri}/annotationPage/1",
                                     anno_id=f"{uri}/annotation/1")
 
+def sanitize_html(value):
+    allowed_tags = ['a', 'b', 'br', 'i', 'img', 'p', 'small', 'span', 'sub', 'sup']
+    allowed_attributes = {
+        'a': ['href', 'rel'],
+        'img': ['src', 'alt', 'title'],
+        '*': []
+    }
+    return bleach.clean(
+        value,
+        tags=allowed_tags,
+        attributes=allowed_attributes,
+        strip=True  # Strip disallowed tags instead of escaping
+    )
+    
+
 def addMetadata(item, identifier, metadata, collection=False):
     item.homepage = [{"id": f"https://archive.org/details/{identifier}",
                          "type": "Text",
@@ -405,9 +421,9 @@ def addMetadata(item, identifier, metadata, collection=False):
 
     if "description" in metadata:
         if type(metadata["description"]) != list:
-            item.summary = {"none": [metadata["description"]]}
+            item.summary = {"none": [sanitize_html(metadata["description"])]}
         else:
-            item.summary = {"none": metadata["description"]}
+            item.summary = {"none": sanitize_html(metadata['description'])}
 
     excluded_fields = [
         'avg_rating', 'backup_location', 'btih', 'description', 'downloads',
