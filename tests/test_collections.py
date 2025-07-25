@@ -36,9 +36,16 @@ class TestCollections(unittest.TestCase):
         collection = resp.json
         self.assertEqual(len(collection['partOf']), 1, f"Expected 1 parent collection but got: {len(collection['partOf'])}")
 
-def test_v3_collection_detection(self):
-        resp = self.test_app.get("/iiif/frankbford/manifest.json")
-        self.assertEqual(resp.status_code, 302)
+    def test_sanitized_summary(self):
+        resp = self.test_app.get("/iiif/terminal-escape-collection/collection.json")
+        self.assertEqual(resp.status_code, 200)
+        collection = resp.json
+        self.assertEqual(
+            collection['summary']['none'][0],
+            """<p>TERMINAL ESCAPE. DAILY CASSETTE RIPS SINCE 2009. \"The wizard\" has been ripping and posting tapes daily on his <a href=\"https://terminalescape.blogspot.com/\" rel=\"noreferrer\">https://terminalescape.blogspot.com</a>&nbsp;blog since 2009. This massive collection covers DIY and underground releases from punk, hardcore, and all related and unrelated genre. There are both demos from contemporary bands and rare tapes, bootlegs, compilations, etc from his own personal collection, which is extensive due to his long-standing participation in undergound tape-trading scenes.<br>\n<br>\nPreviously all these tapes were uploaded to a variety of temporary upload sites and many of the older download links have gone dead (out of nearly 5000 posts since 2009, nearly 1500 are lost). This collection at the Internet Archive seeks to preserve these tape rips in a permanent home, alongside the wizard's commentary and reviews that accompanied each post.&nbsp;</p>""",
+            f"Expected summary to be sanitized but got: {collection['summary']['none'][0]}"
+        )
+        
 
 if __name__ == '__main__':
     unittest.main()
