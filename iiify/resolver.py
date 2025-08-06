@@ -682,8 +682,8 @@ def create_manifest3(identifier, domain=None, page=None):
                         manifest.make_canvas_from_iiif(url=imgURL,
                                                     id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
                                                     label=f"{file['name']}",
-                                                    anno_page_id=f"{uri}/annotationPage/1",
-                                                    anno_id=f"{uri}/annotation/1")
+                                                    anno_page_id=f"{URI_PRIFIX}/{identifier}${pageCount}/annotationPage/1",
+                                                    anno_id=f"{URI_PRIFIX}/{identifier}${pageCount}/annotation/1")
                     except requests.exceptions.HTTPError as error:
                         print (f'Failed to get {imgURL}')
                         manifest.make_canvas(label=f"Failed to load {file['name']} from Image Server",
