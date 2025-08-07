@@ -58,7 +58,8 @@ setup(
     install_requires=[
         'flask',
         'flask-cors',
-        'beautifulsoup4'
+        'beautifulsoup4',
+        'bleach'
         ],
     include_package_data=True
     )

@@ -10,6 +10,8 @@ import math
 import re
 import xml.etree.ElementTree as ET
 from datetime import timedelta
+import bleach
+from bs4 import BeautifulSoup
 
 SCRAPE_API = 'https://archive.org/services/search/v1/scrape'
 ADVANCED_SEARCH = 'https://archive.org/advancedsearch.php'
@@ -378,6 +380,36 @@ def singleImage(metadata, identifier, manifest, uri):
                                     anno_page_id=f"{uri}/annotationPage/1",
                                     anno_id=f"{uri}/annotation/1")
 
+def sanitize_html(value):
+    allowed_tags = ['a', 'b', 'br', 'i', 'img', 'p', 'small', 'span', 'sub', 'sup']
+    allowed_attributes = {
+        'a': ['href', 'rel'],
+        'img': ['src', 'alt', 'title'],
+        '*': []
+    }
+    cleaned = bleach.clean(
+        value,
+        tags=allowed_tags,
+        attributes=allowed_attributes,
+        strip=True,
+        strip_comments=True
+    )
+    soup = BeautifulSoup(cleaned, 'html.parser')
+
+    # If it's wrapped in a parent </p> just return the cleaned value in the parent
+    top_level_elements = [el for el in soup.contents if not str(el).isspace()]
+    if len(top_level_elements) == 1 and getattr(top_level_elements[0], 'name', None) == 'p':
+        return cleaned
+
+    # Otherwise, if there is allowed HTML present, take the cleaned thing and wrap in it a <p/> to ensure it's well formed 
+    contains_html = any(tag.name in allowed_tags for tag in soup.find_all())
+    if contains_html:
+        return f"<p>{cleaned}</p>"
+
+    # Finally, just make sure no disallowed HTML is present
+    return cleaned
+    
+
 def addMetadata(item, identifier, metadata, collection=False):
     item.homepage = [{"id": f"https://archive.org/details/{identifier}",
                          "type": "Text",
@@ -404,10 +436,10 @@ def addMetadata(item, identifier, metadata, collection=False):
         item.rights = metadata["licenseurl"].replace("https", "http", 1)
 
     if "description" in metadata:
-        if type(metadata["description"]) != list:
-            item.summary = {"none": [metadata["description"]]}
+        if not isinstance(metadata["description"], list):
+            item.summary = [sanitize_html(metadata["description"])]
         else:
-            item.summary = {"none": metadata["description"]}
+            item.summary = {"none": [sanitize_html(d) for d in metadata["description"]]}
 
     excluded_fields = [
         'avg_rating', 'backup_location', 'btih', 'description', 'downloads',
