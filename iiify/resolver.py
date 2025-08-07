@@ -464,15 +464,26 @@ def addAccompanying(identifier, slugged_id, filename):
         id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas/accompanying",
         label={ "en": ["Waveform"]}
     )
-    imgId = f"{identifier}/{filename}".replace('/','%2f')
-    imgURL = f"{IMG_SRV}/3/{imgId}".replace(' ', '%20')
-    body = ResourceItem(id="http://example.com", type="Image")
-    infoJson = body.set_hwd_from_iiif(imgURL)
+    hardCode = True # hard code the height and width as 200 by 800 for a waveform  
+    if hardCode:
+        width = 800
+        height = 200
+        body = ResourceItem(id=f"https://archive.org/download/{identifier}/{filename.replace(' ', '%20')}", type="Image", width=width, height=height)
+        body.format = "image/jpeg"
+    else:
+        imgId = f"{identifier}/{filename}".replace('/','%2f')
+        imgURL = f"{IMG_SRV}/3/{imgId}".replace(' ', '%20')
+        # Find the width and height from the image server
+        body = ResourceItem(id="http://example.com", type="Image")
+        infoJson = body.set_hwd_from_iiif(imgURL)
 
-    service = ServiceItem(id=infoJson['id'], profile=infoJson['profile'], type=infoJson['type'])
-    body.service = [service]
-    body.id = f'{infoJson["id"]}/full/max/0/default.jpg'
-    body.format = "image/jpeg"
+        service = ServiceItem(id=infoJson['id'], profile=infoJson['profile'], type=infoJson['type'])
+        body.service = [service]
+        body.id = f'{infoJson["id"]}/full/max/0/default.jpg'
+        body.format = "image/jpeg"
+
+        width = infoJson['width']
+        height = infoJson['height']
 
     annotation = Annotation(id=f"{accompanying_canvas.id}/anno", motivation='painting', body=body, target=accompanying_canvas.id)
 
@@ -480,8 +491,8 @@ def addAccompanying(identifier, slugged_id, filename):
     annotationPage.add_item(annotation)
 
     accompanying_canvas.add_item(annotationPage)
-    accompanying_canvas.height = infoJson['height']
-    accompanying_canvas.width = infoJson['width']
+    accompanying_canvas.height = height
+    accompanying_canvas.width = width
 
     return accompanying_canvas
 
