@@ -436,10 +436,9 @@ def addMetadata(item, identifier, metadata, collection=False):
         item.rights = metadata["licenseurl"].replace("https", "http", 1)
 
     if "description" in metadata:
-        if type(metadata["description"]) != list:
-            item.summary = {"none": [sanitize_html(metadata["description"])]}
-        else:
-            item.summary = {"none": sanitize_html(metadata['description'])}
+        if not isinstance(metadata["description"], list):
+            descriptions = [metadata["description"]]
+        item.summary = {"none": [sanitize_html(d) for d in metadata["description"]]}
 
     excluded_fields = [
         'avg_rating', 'backup_location', 'btih', 'description', 'downloads',
