@@ -437,8 +437,9 @@ def addMetadata(item, identifier, metadata, collection=False):
 
     if "description" in metadata:
         if not isinstance(metadata["description"], list):
-            descriptions = [metadata["description"]]
-        item.summary = {"none": [sanitize_html(d) for d in metadata["description"]]}
+            item.summary = [sanitize_html(metadata["description"])]
+        else:
+            item.summary = {"none": [sanitize_html(d) for d in metadata["description"]]}
 
     excluded_fields = [
         'avg_rating', 'backup_location', 'btih', 'description', 'downloads',
