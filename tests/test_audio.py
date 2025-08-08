@@ -34,7 +34,7 @@ class TestAudio(unittest.TestCase):
             self.assertEqual(accCanvas["type"], "Canvas")
             self.assertEqual(accCanvas["label"]["en"][0], "Waveform")
             self.assertTrue("height" in accCanvas and accCanvas["height"] == 200)
-            self.assertTrue("width" in accCanvas and accCanvas["width"] == 200)
+            self.assertTrue("width" in accCanvas and accCanvas["width"] == 800)
 
     def test_multi_track_audio_gets_ranges(self):
         resp = self.test_app.get("/iiif/Weirdos_demo-1978/manifest.json")
