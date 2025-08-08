@@ -677,13 +677,16 @@ def create_manifest3(identifier, domain=None, page=None):
                     imgId = f"{identifier}/{file['name']}".replace('/','%2f')
                     imgURL = f"{IMG_SRV}/3/{imgId}"
                     pageCount += 1
+                    slugged_id = file['name'].replace(" ", "-")
 
                     try:
-                        manifest.make_canvas_from_iiif(url=imgURL,
-                                                    id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
-                                                    label=f"{file['name']}",
-                                                    anno_page_id=f"{URI_PRIFIX}/{identifier}${pageCount}/annotationPage/1",
-                                                    anno_id=f"{URI_PRIFIX}/{identifier}${pageCount}/annotation/1")
+                        manifest.make_canvas_from_iiif(
+                            url=imgURL,
+                            id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
+                            label=f"{file['name']}",
+                            anno_page_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page",
+                            anno_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation"
+                        )
                     except requests.exceptions.HTTPError as error:
                         print (f'Failed to get {imgURL}')
                         manifest.make_canvas(label=f"Failed to load {file['name']} from Image Server",
