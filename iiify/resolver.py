@@ -458,14 +458,31 @@ def addSeeAlso(manifest, identifier, files):
                  "format": seeAlso['format']
                  })
 
-def addAccompanying(identifier, slugged_id, filename):
+def addWaveform(identifier, slugged_id, filename, hard_code_size=True):
+    """
+        Create an IIIF AccompanyingCanvas representing a waveform image.
+
+        This function generates an IIIF AccompanyingCanvas containing a waveform image, 
+        associated with an audio file. By default, the image dimensions are hardcoded, 
+        but if `hard_code_size` is False, the image's width and height will be retrieved 
+        dynamically from a IIIF image server.
+
+        Parameters:
+            identifier (str): The archive.org identifier for the resource (e.g. item ID).
+            slugged_id (str): A slugified version of the identifier used in the canvas ID.
+            filename (str): The filename of the waveform image (PNG).
+            hard_code_size (bool): If True, sets the image size to 800x200; if False, fetches dimensions from IIIF image server.
+
+        Returns:
+            AccompanyingCanvas: An IIIF-compliant AccompanyingCanvas object representing the waveform image.
+    """
+
     # This should be the Wave form
     accompanying_canvas = AccompanyingCanvas(
         id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas/accompanying",
         label={ "en": ["Waveform"]}
     )
-    hardCode = True # hard code the height and width as 200 by 800 for a waveform  
-    if hardCode:
+    if hard_code_size:
         width = 800
         height = 200
         body = ResourceItem(id=f"https://archive.org/download/{identifier}/{filename.replace(' ', '%20')}", type="Image", width=width, height=height)
@@ -797,7 +814,7 @@ def create_manifest3(identifier, domain=None, page=None):
 
                 if "PNG" in derivatives[file['name']]:   
                     # This should be the Wave form
-                    c.accompanyingCanvas = addAccompanying(identifier, slugged_id, derivatives[file['name']]["PNG"]["name"])
+                    c.accompanyingCanvas = addWaveform(identifier, slugged_id, derivatives[file['name']]["PNG"]["name"])
             else:
                 # todo: deal with instances where there are no derivatives for whatever reason
                 body = ResourceItem(
