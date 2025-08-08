@@ -18,6 +18,24 @@ class TestAudio(unittest.TestCase):
 
         self.assertEqual(len(manifest['items']),114,f"Expected 114 canvases but got: {len(manifest['items'])}") 
 
+    def test_spectrogram_waveforms(self):
+        resp = self.test_app.get("/iiif/3/hhfbc-cyl26/manifest.json?recache=True")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json        
+
+        for canvas in manifest['items']:
+            self.assertTrue('seeAlso' in canvas)
+            spectrogram = canvas['seeAlso'][0]
+            self.assertEqual(spectrogram["format"], "image/png")
+            self.assertEqual(spectrogram["label"]["en"][0], "Spectrogram")
+
+            self.assertTrue('accompanyingCanvas' in canvas)
+            accCanvas = canvas['accompanyingCanvas']
+            self.assertEqual(accCanvas["type"], "Canvas")
+            self.assertEqual(accCanvas["label"]["en"][0], "Waveform")
+            self.assertTrue("height" in accCanvas and accCanvas["height"] == 200)
+            self.assertTrue("width" in accCanvas and accCanvas["width"] == 800)
+
     def test_multi_track_audio_gets_ranges(self):
         resp = self.test_app.get("/iiif/Weirdos_demo-1978/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -33,3 +51,4 @@ class TestAudio(unittest.TestCase):
         manifest = resp.json
 
         self.assertNotIn("structures", manifest, "Expected single file audio to have no structures or ranges.")
+
