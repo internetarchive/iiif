@@ -102,4 +102,4 @@ class TestLinking(unittest.TestCase):
 
 		# Thumbnail - thumbnail
         # 19 thumbs
-        self.assertEqual(len(manifest['thumbnail']), 20, f"Expected 19 thumbnails: {manifest['thumbnail']}")
+        self.assertEqual(len(manifest['thumbnail']), 19, f"Expected 19 thumbnails: {manifest['thumbnail']}")
