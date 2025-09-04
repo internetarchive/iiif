@@ -977,7 +977,7 @@ def create_manifest3(identifier, domain=None, page=None):
                         if format in derivatives[file['name']]:
                             r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
                                             type='Video',
-                                            format=to_mimetype(file['name'], format),
+                                            format=to_mimetype(derivatives[file['name']][format]['name'], format),
                                             label={"none": [format]},
                                             duration=float(file['length']), 
                                             height=int(file['height']),

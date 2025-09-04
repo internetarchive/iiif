@@ -19,7 +19,9 @@ class TestVideo(unittest.TestCase):
         self.assertEqual(len(manifest['items']),1,f"Expected 1 canvas but got: {len(manifest['items'])}")   
 
     def test_v3_h264_MPEG4_OGG_Theora(self):
+        print ("Getting URL")
         resp = self.test_app.get("/iiif/3/taboca_201002_03/manifest.json")
+        print ("checking response")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['items']),251,f"Expected 251 canvases but got: {len(manifest['items'])}")
@@ -107,7 +109,7 @@ class TestVideo(unittest.TestCase):
             if name.endswith("mov"):
                 self.assertEqual("video/quicktime", format, "Unexpected mimetype for Analyzing Ten_Rings.HD.mov")
             elif name.endswith("mp4"):
-                self.assertEqual("video/mp4", format, "Unexpected mime typ for Legend_of_the_Ten_Rings.mp4")
+                self.assertEqual("video/mp4", format, "Unexpected mime type for Legend_of_the_Ten_Rings.mp4")
 
 
 if __name__ == '__main__':
