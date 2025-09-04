@@ -46,7 +46,7 @@ class TestAudio(unittest.TestCase):
             if name.endswith(".mp3"):
                 self.assertEqual(format, "audio/mpeg", f"Unexpected mimetype for {name}")
             elif name.endswith(".flac"):
-                self.assertEqual(format, "audio/x-flac", f"Unexpected mimetype for {name}")
+                self.assertEqual(format, "audio/flac", f"Unexpected mimetype for {name}")
             elif name.endswith(".ogg"):
                 self.assertEqual(format, "audio/ogg", f"Unexpected mimetype for {name}")
             elif name.endswith(".wav"):
