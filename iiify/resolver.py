@@ -564,13 +564,28 @@ def addThumbnails(manifest, identifier, files):
     If the file appears to be a thumbnail (by format or name) attempt to create a IIIF thumbnail via Cantaloupe.
     If that fails or isn't possible, fall back to adding a static thumbnail.
     """
+    thumbnail_files = []
+    ia_thumb_files = []
+    
     for file in files:
         name = file.get("name", "")
         file_format = file.get("format", "")
-        is_thumbnail = file_format in {"Thumbnail", "JPEG Thumb"} or name == "__ia_thumb.jpg"
-        if not is_thumbnail:
-            continue
+        
+        if name == "__ia_thumb.jpg":
+            ia_thumb_files.append(file)
+        elif file_format in {"Thumbnail", "JPEG Thumb"}:
+            thumbnail_files.append(file)
 
+    files_to_process = []
+    
+    if thumbnail_files:
+        files_to_process = thumbnail_files
+    
+    elif ia_thumb_files:
+        files_to_process = ia_thumb_files
+    
+    for file in files_to_process:
+        name = file.get("name", "")
         encoded_name = quote(name.replace('/', '%2f'))
         # Forward solidus before thumbnail uri must always be %2f
         iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
