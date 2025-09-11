@@ -165,8 +165,8 @@ def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
     # Get item metadata
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
 
-    # Used to build up URIs for the manifest
-    uri = f"{domain}{identifier}/collection.json"
+    # Write Collection uri with conditional page segment
+    uri = f"{domain}{identifier}{f'/{page}' if page != 1 else ''}/collection.json"
 
     config.configs['helpers.auto_fields.AutoLang'].auto_lang = "none"
     collection = Collection(id=uri, label=metadata["metadata"]["title"])
