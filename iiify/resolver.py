@@ -11,6 +11,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import timedelta
 import bleach
+import mimetypes
 from bs4 import BeautifulSoup
 
 SCRAPE_API = 'https://archive.org/services/search/v1/scrape'
@@ -115,7 +116,7 @@ def checkMultiItem(metadata):
 
     return (False, None)
 
-def to_mimetype(format):
+def to_mimetype(filename, format):
     formats = {
         "VBR MP3": "audio/mp3",
         "32Kbps MP3": "audio/mp3",
@@ -142,7 +143,11 @@ def to_mimetype(format):
         "Apple Lossless Audio": "audio/x-m4a",
         "MPEG-4 Audio": "audio/mp4"
     }
-    return formats.get(format, "application/octet-stream")
+    mime, encoding = mimetypes.guess_type(filename)
+    if mime is None:
+        return formats.get(format, "application/octet-stream")
+    else:
+        return mime
 
 def collection(domain, identifiers, label='Custom Archive.org IIIF Collection'):
     cs = {
@@ -841,7 +846,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     if format in derivatives[file['name']]:
                         r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
                                          type='Sound',
-                                         format=to_mimetype(format),
+                                         format=to_mimetype(derivatives[file['name']][format]['name'], format),
                                          label={"none": [format]},
                                          duration=float(file['length']))
                         body.items.append(r)
@@ -849,7 +854,7 @@ def create_manifest3(identifier, domain=None, page=None):
                         r = ResourceItem(
                             id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                             type='Sound',
-                            format=to_mimetype(format),
+                            format=to_mimetype(file['name'], format),
                             label={"none": [format]},
                             duration=float(file['length']))
                         body.items.append(r)
@@ -870,7 +875,7 @@ def create_manifest3(identifier, domain=None, page=None):
                 body = ResourceItem(
                             id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                             type='Sound',
-                            format=to_mimetype(file['format']),
+                            format=to_mimetype(file['name'], file['format']),
                             label={"none": [file['format']]},
                             duration=float(file['length']))
 
@@ -987,7 +992,7 @@ def create_manifest3(identifier, domain=None, page=None):
                         if format in derivatives[file['name']]:
                             r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
                                             type='Video',
-                                            format=to_mimetype(format),
+                                            format=to_mimetype(derivatives[file['name']][format]['name'], format),
                                             label={"none": [format]},
                                             duration=float(file['length']), 
                                             height=int(file['height']),
@@ -998,7 +1003,7 @@ def create_manifest3(identifier, domain=None, page=None):
                             r = ResourceItem(
                                 id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                                 type='Video',
-                                format=to_mimetype(format),
+                                format=to_mimetype(file['name'], format),
                                 label={"none": [format]},
                                 duration=float(file['length']),
                                 height=int(file['height']),

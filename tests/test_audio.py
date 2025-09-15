@@ -36,6 +36,22 @@ class TestAudio(unittest.TestCase):
             self.assertTrue("height" in accCanvas and accCanvas["height"] == 200)
             self.assertTrue("width" in accCanvas and accCanvas["width"] == 800)
 
+
+        # Test mime types
+        body = manifest["items"][0]["items"][0]["items"][0]["body"]["items"]
+
+        for item in body:
+            name = item['id']
+            format = item['format']   
+            if name.endswith(".mp3"):
+                self.assertEqual(format, "audio/mpeg", f"Unexpected mimetype for {name}")
+            elif name.endswith(".flac"):
+                self.assertEqual(format, "audio/flac", f"Unexpected mimetype for {name}")
+            elif name.endswith(".ogg"):
+                self.assertEqual(format, "audio/ogg", f"Unexpected mimetype for {name}")
+            elif name.endswith(".wav"):
+                self.assertEqual(format, "audio/x-wav", f"Unexpected mimetype for {name}")
+
     def test_multi_track_audio_gets_ranges(self):
         resp = self.test_app.get("/iiif/Weirdos_demo-1978/manifest.json")
         self.assertEqual(resp.status_code, 200)
