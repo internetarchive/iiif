@@ -597,8 +597,8 @@ def addThumbnails(manifest, identifier, files, mediatype):
             manifest.add_thumbnail(
                 static_url,
                 format=mimetype,
-                **({"width": file["width"]} if "width" in file else {}),
-                **({"height": file["height"]} if "height" in file else {})
+                **({"width": file["width"]} if "width" in file else {"width": 192}),
+                **({"height": file["height"]} if "height" in file else {"height": 108})
             )
         else:
             encoded_name = quote(name.replace('/', '%2f'))
