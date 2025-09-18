@@ -571,11 +571,11 @@ def addThumbnails(manifest, identifier, files):
     """
     thumbnail_files = []
     ia_thumb_files = []
-    
+
     for file in files:
         name = file.get("name", "")
         file_format = file.get("format", "")
-        
+
         if name == "__ia_thumb.jpg":
             ia_thumb_files.append(file)
         elif file_format in {"Thumbnail", "JPEG Thumb"}:
@@ -591,16 +591,14 @@ def addThumbnails(manifest, identifier, files):
     
     for file in files_to_process:
         name = file.get("name", "")
-        encoded_name = quote(name.replace('/', '%2f'))
-        # Forward solidus before thumbnail uri must always be %2f
-        iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
-        try:
-            manifest.create_thumbnail_from_iiif(iiif_url)
-        except requests.HTTPError:
-            print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url}")
-            mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
-            static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
-            manifest.add_thumbnail(static_url, format=mimetype)
+        mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
+        static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
+        manifest.add_thumbnail(
+            static_url,
+            format=mimetype,
+            **({"width": file["width"]} if "width" in file else {}),
+            **({"height": file["height"]} if "height" in file else {})
+        )
     return
 
 def addPartOfCollection(resource, collections, domain=None):
