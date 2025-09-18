@@ -633,12 +633,7 @@ def addThumbnailNav(manifest, identifier, files):
             # Pull out number at the end
             current = int(thumb['name'].rsplit("_", 1)[-1].split(".")[0])
             section = Range(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/thumbnails/{count}")
-            section.items = [
-                {
-                    "type": "Canvas",
-                    "id": "{URI_PRIFIX}/{identifier}/{slugged_id}/canvas#t={last},{current}"
-                }
-            ]
+            section.items = [ CanvasRef(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas#t={last},{current}", type="Canvas") ]
             section.thumbnail = [{
                 "id": f"https://archive.org/download/{identifier}/{identifier}.thumbs/{thumb['name']}",
                 "type": "Image",
@@ -647,7 +642,8 @@ def addThumbnailNav(manifest, identifier, files):
                 "width": 160
                 }]
 
-            thumb_nav_range.items.append(section)    
+            thumb_nav_range.items.append(section) 
+            last = current   
             count += 1    
 
         manifest.structures.append(thumb_nav_range)
