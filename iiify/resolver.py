@@ -969,25 +969,17 @@ def create_manifest3(identifier, domain=None, page=None):
                     body = Choice(items=[])
                     # add the choices in order per https://github.com/ArchiveLabs/iiif.archivelab.org/issues/77#issuecomment-1499672734
                     for format in VIDEO_FORMATS:
-                        if format in derivatives[file['name']]:
-                            r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
-                                            type='Video',
-                                            format=to_mimetype(format),
-                                            label={"none": [format]},
-                                            duration=float(file['length']), 
-                                            height=int(file['height']),
-                                            width=int(file['width']),                      
-                            )
-                            body.items.append(r)
-                        elif file['format'] == format:
+                        if format in derivatives[file['name']] or file['format'] == format:
+                            url = f"https://{metadata.get('d1', metadata.get('d2'))}{metadata['dir']}/{file['name'].replace(' ', '%20')}"
                             r = ResourceItem(
-                                id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
+                                id=url,
                                 type='Video',
                                 format=to_mimetype(format),
                                 label={"none": [format]},
                                 duration=float(file['length']),
                                 height=int(file['height']),
-                                width=int(file['width']))
+                                width=int(file['width']),
+                            )
                             body.items.append(r)
                 else:
                     # todo: deal with instances where there are no derivatives for whatever reason
