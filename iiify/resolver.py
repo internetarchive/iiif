@@ -605,8 +605,15 @@ def addThumbnails(manifest, identifier, files):
     return
 
 def addThumbnailNav(manifest, identifier, files):
+    """Creates thumbnails navigation for Videos.
+
+    If the file appears to be a thumbnail (by format or name) attempt to create a IIIF thumbnail via Cantaloupe.
+    If that fails or isn't possible, fall back to adding a static thumbnail.
+    """
+
     nav_thumbs = {}
-    # Organise thums be original file as this is used for the canvas id. 
+    # Organise thumbs by original file as this is used for the canvas id. 
+    # This in case an item had two videos and different thumbnails for each 
     for thumb in files:
         if ".thumbs" in thumb['name'] and thumb['format'] == "Thumbnail":
             if thumb['original'] not in nav_thumbs:
@@ -623,7 +630,7 @@ def addThumbnailNav(manifest, identifier, files):
 
         thumb_nav_range = Range(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/thumbnails")
         thumb_nav_range.label = {"en": ["Thumbnail Navigation"]}
-        #thumb_nav_range.behavior = "thumbnail-nav"
+        thumb_nav_range.behavior = "thumbnail-nav"
         thumb_nav_range.items = []
 
         count = 0
@@ -635,7 +642,7 @@ def addThumbnailNav(manifest, identifier, files):
             section = Range(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/thumbnails/{count}")
             section.items = [ CanvasRef(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas#t={last},{current}", type="Canvas") ]
             section.thumbnail = [{
-                "id": f"https://archive.org/download/{identifier}/{identifier}.thumbs/{thumb['name']}",
+                "id": f"https://archive.org/download/{identifier}/{thumb['name'].replace(" ", "%20")}",
                 "type": "Image",
                 "format": "image/png",
                 "height": 110,

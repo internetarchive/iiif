@@ -19,9 +19,7 @@ class TestVideo(unittest.TestCase):
         self.assertEqual(len(manifest['items']),1,f"Expected 1 canvas but got: {len(manifest['items'])}")   
 
     def test_v3_h264_MPEG4_OGG_Theora(self):
-        print ("Getting URL")
         resp = self.test_app.get("/iiif/3/taboca_201002_03/manifest.json")
-        print ("checking response")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['items']),251,f"Expected 251 canvases but got: {len(manifest['items'])}")
@@ -70,7 +68,7 @@ class TestVideo(unittest.TestCase):
                 self.assertEqual(item['body']['id'], 'https://localhost/iiif/resource/cruz-test/cruz-test.cy.vtt', 'Unexpected link for the Welsh vtt file')
 
     def test_newsitem(self):
-        resp = self.test_app.get("/iiif/3/CSPAN3_20180217_164800_Poplar_Forest_Archaeology/manifest.json")
+        resp = self.test_app.get("/iiif/3/CSPAN3_20180217_164800_Poplar_Forest_Archaeology/manifest.json?recache=true")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
 
@@ -95,6 +93,21 @@ class TestVideo(unittest.TestCase):
         # 28
         # 00:01:02.000 -> 00:01:02.000
         # I AM THE DIRECTOR OF ARCHAEOLOGY
+
+        # Test thumbnail nav
+        self.assertTrue("structures" in manifest, "Expected manifest to have a structure")
+
+        range = manifest["structures"][0]
+        self.assertTrue("behavior" in range, "Range should have a behavior property")
+        self.assertTrue(isinstance(range["behavior"], list), "Behavior should be a list")
+        self.assertEqual("thumbnail-nav", range["behavior"][0], "Range should have the thumbnail-nav behavior")
+
+        self.assertEqual(26, len(range["items"]), "Expected 26 thumbnails")
+
+        second_thumb = range["items"][1]
+        self.assertEqual("https://iiif.archive.org/iiif/CSPAN3_20180217_164800_Poplar_Forest_Archaeology/CSPAN3_20180217_164800_Poplar_Forest_Archaeology/canvas#t=1,57", second_thumb["items"][0]["id"], "Link to canvas not correct in thumbnail range")
+
+        self.assertEqual("https://archive.org/download/CSPAN3_20180217_164800_Poplar_Forest_Archaeology/CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000057.jpg", second_thumb["thumbnail"][0]["id"], "Thumbnail-nav link not correct.")
 
     def test_media_types(self):
         resp = self.test_app.get("/iiif/3/coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings/manifest.json?recache=true")
