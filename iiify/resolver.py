@@ -588,7 +588,7 @@ def addThumbnails(manifest, identifier, files, mediatype):
     
     elif ia_thumb_files:
         files_to_process = ia_thumb_files
-    av_types = ("audio", "video", "etree")
+    av_types = ("audio", "movies", "etree")
     for file in files_to_process:
         name = file.get("name", "")
         if mediatype in av_types:
