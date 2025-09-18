@@ -3,7 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1, AccompanyingCanvas, CanvasRef
+from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1, AccompanyingCanvas, CanvasRef, Range
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -578,7 +578,8 @@ def addThumbnails(manifest, identifier, files):
         
         if name == "__ia_thumb.jpg":
             ia_thumb_files.append(file)
-        elif file_format in {"Thumbnail", "JPEG Thumb"}:
+        # ignore thumbnails in .thumbs as these are for video thumbnail navigation    
+        elif file_format in {"Thumbnail", "JPEG Thumb"} and f"{identifier}.thumbs" not in name:
             thumbnail_files.append(file)
 
     files_to_process = []
@@ -602,6 +603,54 @@ def addThumbnails(manifest, identifier, files):
             static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
             manifest.add_thumbnail(static_url, format=mimetype)
     return
+
+def addThumbnailNav(manifest, identifier, files):
+    nav_thumbs = {}
+    # Organise thums be original file as this is used for the canvas id. 
+    for thumb in files:
+        if ".thumbs" in thumb['name'] and thumb['format'] == "Thumbnail":
+            if thumb['original'] not in nav_thumbs:
+                nav_thumbs[thumb['original']] = []
+
+            nav_thumbs[thumb['original']].append(thumb)
+            
+    if manifest.structures is None or not isinstance(manifest.structures, list):
+        manifest.structures = []
+
+    for original in nav_thumbs:
+        normalised_id = original.rsplit(".", 1)[0]
+        slugged_id = normalised_id.replace(" ", "-")
+
+        thumb_nav_range = Range(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/thumbnails")
+        thumb_nav_range.label = {"en": ["Thumbnail Navigation"]}
+        #thumb_nav_range.behavior = "thumbnail-nav"
+        thumb_nav_range.items = []
+
+        count = 0
+        last = 0
+        for thumb in nav_thumbs[original]:            
+            # Filename example: CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000237.jpg
+            # Pull out number at the end
+            current = int(thumb['name'].rsplit("_", 1)[-1].split(".")[0])
+            section = Range(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/thumbnails/{count}")
+            section.items = [
+                {
+                    "type": "Canvas",
+                    "id": "{URI_PRIFIX}/{identifier}/{slugged_id}/canvas#t={last},{current}"
+                }
+            ]
+            section.thumbnail = [{
+                "id": f"https://archive.org/download/{identifier}/{identifier}.thumbs/{thumb['name']}",
+                "type": "Image",
+                "format": "image/png",
+                "height": 110,
+                "width": 160
+                }]
+
+            thumb_nav_range.items.append(section)    
+            count += 1    
+
+        manifest.structures.append(thumb_nav_range)
 
 def addPartOfCollection(resource, collections, domain=None):
     # metadata["collections"] can be a list or str so we need to test what we have
@@ -889,6 +938,8 @@ def create_manifest3(identifier, domain=None, page=None):
         # Make behavior "auto-advance if more than one original"
         if sum(f['format'] in VIDEO_FORMATS for f in originals) > 1:
             manifest.behavior = "auto-advance"
+
+        addThumbnailNav(manifest, identifier, metadata["files"])    
 
         if 'access-restricted-item' in metadata['metadata'] and metadata['metadata']['access-restricted-item']:
             # this is a news item so has to be treated differently
