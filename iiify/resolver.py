@@ -3,7 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1, AccompanyingCanvas, CanvasRef, Range
+from iiif_prezi3 import config, Collection, Manifest, Canvas, Annotation, AnnotationPage, CollectionRef, ManifestRef, CanvasRef, AnnotationPageRef, AnnotationPageRefExtended, AnnotationBody, ServiceV3, Choice, TextualBody, AccompanyingCanvas
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -522,16 +522,16 @@ def addWaveform(identifier, slugged_id, filename, hard_code_size=True):
     if hard_code_size:
         width = 800
         height = 200
-        body = ResourceItem(id=f"https://archive.org/download/{identifier}/{filename.replace(' ', '%20')}", type="Image", width=width, height=height)
+        body = AnnotationBody(id=f"https://archive.org/download/{identifier}/{filename.replace(' ', '%20')}", type="Image", width=width, height=height)
         body.format = "image/jpeg"
     else:
         imgId = f"{identifier}/{filename}".replace('/','%2f')
         imgURL = f"{IMG_SRV}/3/{imgId}".replace(' ', '%20')
         # Find the width and height from the image server
-        body = ResourceItem(id="http://example.com", type="Image")
+        body = AnnotationBody(id="http://example.com", type="Image")
         infoJson = body.set_hwd_from_iiif(imgURL)
 
-        service = ServiceItem(id=infoJson['id'], profile=infoJson['profile'], type=infoJson['type'])
+        service = ServiceV3(id=infoJson['id'], profile=infoJson['profile'], type=infoJson['type'])
         body.service = [service]
         body.id = f'{infoJson["id"]}/full/max/0/default.jpg'
         body.format = "image/jpeg"
@@ -717,10 +717,10 @@ def create_manifest3(identifier, domain=None, page=None):
 
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
     if 'reviews' in metadata:
-        reviews_as_annotations = AnnotationPageRef(
+        reviews_as_annotations = AnnotationPageRef(__root__=AnnotationPageRefExtended(
             id=f"{domain.replace('iiif/', 'iiif/3/annotations/')}{identifier}/comments.json",
             type="AnnotationPage",
-        )
+        ))
         manifest.annotations=[reviews_as_annotations]
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
@@ -760,9 +760,9 @@ def create_manifest3(identifier, domain=None, page=None):
 
                     canvas = Canvas(id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas", label=f"{page['leafNum']}")
 
-                    body = ResourceItem(id=f"{imgURL}/full/max/0/default.jpg", type="Image")
+                    body = AnnotationBody(id=f"{imgURL}/full/max/0/default.jpg", type="Image")
                     body.format = "image/jpeg"
-                    body.service = [ServiceItem(id=imgURL, profile="level2", type="ImageService3")]
+                    body.service = [ServiceV3(id=imgURL, profile="level2", type="ImageService3")]
 
                     annotation = Annotation(id=f"{uri}/annotation/{pageCount}", motivation='painting', body=body, target=canvas.id)
 
@@ -821,9 +821,10 @@ def create_manifest3(identifier, domain=None, page=None):
                     annotations = []
 
                 annotations.append(
-                    AnnotationPageRef(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage")
+                    AnnotationPageRef(__root__=AnnotationPageRefExtended(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage"))
                 )
                 canvas.annotations = annotations
+
                 count += 1
     elif mediatype == 'image':
         (multiFile, format) = checkMultiItem(metadata)
@@ -896,14 +897,14 @@ def create_manifest3(identifier, domain=None, page=None):
                 # add the choices in order per https://github.com/ArchiveLabs/iiif.archivelab.org/issues/77#issuecomment-1499672734
                 for format in AUDIO_FORMATS:
                     if format in derivatives[file['name']]:
-                        r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
+                        r = AnnotationBody(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
                                          type='Sound',
                                          format=to_mimetype(derivatives[file['name']][format]['name'], format),
                                          label={"none": [format]},
                                          duration=float(file['length']))
                         body.items.append(r)
                     elif file['format'] == format:
-                        r = ResourceItem(
+                        r = AnnotationBody(
                             id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                             type='Sound',
                             format=to_mimetype(file['name'], format),
@@ -924,7 +925,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     c.accompanyingCanvas = addWaveform(identifier, slugged_id, derivatives[file['name']]["PNG"]["name"])
             else:
                 # todo: deal with instances where there are no derivatives for whatever reason
-                body = ResourceItem(
+                body = AnnotationBody(
                             id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                             type='Sound',
                             format=to_mimetype(file['name'], file['format']),
@@ -986,7 +987,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     #print (f"Start: {start} End: {end}, Duration: {float(end) - float(start)} full duration: {duration}")
                     anno = Annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation/{i}", motivation="painting", target=f"{c.id}#t={start},{end}")
                     streamurl = f"https://{metadata['server']}{metadata['dir']}/{mp4File}?start={start}&end={end}&ignore=x.mp4&cnt=0"        
-                    body = ResourceItem(id=streamurl,
+                    body = AnnotationBody(id=streamurl,
                                         type='Video',
                                         format="video/mp4",
                                         label={"en": [f"Part {i + 1} of {segments}"]},
@@ -1044,7 +1045,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     # add the choices in order per https://github.com/ArchiveLabs/iiif.archivelab.org/issues/77#issuecomment-1499672734
                     for format in VIDEO_FORMATS:
                         if format in derivatives[file['name']]:
-                            r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
+                            r = AnnotationBody(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
                                             type='Video',
                                             format=to_mimetype(derivatives[file['name']][format]['name'], format),
                                             label={"none": [format]},
@@ -1054,7 +1055,7 @@ def create_manifest3(identifier, domain=None, page=None):
                             )
                             body.items.append(r)
                         elif file['format'] == format:
-                            r = ResourceItem(
+                            r = AnnotationBody(
                                 id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                                 type='Video',
                                 format=to_mimetype(file['name'], format),
@@ -1136,7 +1137,7 @@ def create_annotations_from_comments(identifier, domain=None):
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
     i = 0
     for comment in metadata.get('reviews', []):
-        anno_body = ResourceItem1(
+        anno_body = TextualBody(
             type="TextualBody",
             language="none",
             format="text/html",
