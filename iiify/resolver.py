@@ -3,7 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import config, Collection, Manifest, Canvas, Annotation, AnnotationPage, CollectionRef, ManifestRef, CanvasRef, AnnotationPageRefExtended, AnnotationBody, ServiceV3, Choice, TextualBody, AccompanyingCanvas
+from iiif_prezi3 import config, Collection, Manifest, Canvas, Annotation, AnnotationPage, CollectionRef, ManifestRef, CanvasRef, AnnotationPageRef, AnnotationPageRefExtended, AnnotationBody, ServiceV3, Choice, TextualBody, AccompanyingCanvas
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -665,10 +665,10 @@ def create_manifest3(identifier, domain=None, page=None):
 
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
     if 'reviews' in metadata:
-        reviews_as_annotations = AnnotationPageRefExtended(
+        reviews_as_annotations = AnnotationPageRef(__root__=AnnotationPageRefExtended(
             id=f"{domain.replace('iiif/', 'iiif/3/annotations/')}{identifier}/comments.json",
             type="AnnotationPage",
-        )
+        ))
         manifest.annotations=[reviews_as_annotations]
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
@@ -769,9 +769,10 @@ def create_manifest3(identifier, domain=None, page=None):
                     annotations = []
 
                 annotations.append(
-                    AnnotationPageRefExtended(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage")
+                    AnnotationPageRef(__root__=AnnotationPageRefExtended(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage"))
                 )
                 canvas.annotations = annotations
+
                 count += 1
     elif mediatype == 'image':
         (multiFile, format) = checkMultiItem(metadata)
