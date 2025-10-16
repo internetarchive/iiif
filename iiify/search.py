@@ -6,8 +6,7 @@ def build_search_url(identifier, query):
     response = requests.get(f"{ARCHIVE}/metadata/{identifier}")
     response.raise_for_status()
     metadata = response.json()
-    # doc = metadata['files'][0]['name'].split('.')[0]
-    doc = [file['name'].split('_')[0] for file in metadata["files"] if '_djvu.xml' in file['name']][0]
+    doc = [file['name'].split('_djvu.xml')[0] for file in metadata["files"] if '_djvu.xml' in file['name']][0]
     return f"https://{metadata['server']}/fulltext/inside.php?item_id={identifier}&doc={doc}&path={metadata['dir']}&q={query}"
 
 def iiif_search(identifier, query):
