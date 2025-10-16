@@ -72,3 +72,15 @@ class TestManifests(unittest.TestCase):
         # "https://iiif.archive.org/image/iiif/2
         self.assertTrue(imgSrv['@id'].startswith("https://iiif.archive.org/image/iiif/2"),"Expected v2 image service to use cantaloupe")
 
+
+    def test_single_page_of_multipage(self):
+        resp = self.test_app.get("/iiif/2/bub_gb_3Kt5kiw9KYcC$8/manifest.json")
+
+        self.assertEqual(resp.status_code, 200)
+
+        manifest = resp.json
+        self.assertEqual(len(manifest['sequences'][0]['canvases']), 1, "There should only be one canvas")
+
+        imgSrv = manifest['sequences'][0]['canvases'][0]['images'][0]['resource']['service']['@id']
+        self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/2/bub_gb_3Kt5kiw9KYcC%2fbub_gb_3Kt5kiw9KYcC_jp2.zip%2fbub_gb_3Kt5kiw9KYcC_jp2%2fbub_gb_3Kt5kiw9KYcC_0008.jp2")
+
