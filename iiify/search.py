@@ -1,29 +1,25 @@
 import requests
 from .resolver import ARCHIVE, URI_PRIFIX
 from bs4 import BeautifulSoup
-import json
 
-def buildSearchURL(identifier, query):
+def build_search_url(identifier, query):
     response = requests.get(f"{ARCHIVE}/metadata/{identifier}")
-    response.raise_for_status() 
-
+    response.raise_for_status()
     metadata = response.json()
-
-    return f"https://{metadata['server']}/fulltext/inside.php?item_id={identifier}&doc={identifier}&path={metadata['dir']}&q={query}"
+    # doc = metadata['files'][0]['name'].split('.')[0]
+    doc = [file['name'].split('_')[0] for file in metadata["files"] if '_djvu.xml' in file['name']][0]
+    return f"https://{metadata['server']}/fulltext/inside.php?item_id={identifier}&doc={doc}&path={metadata['dir']}&q={query}"
 
 def iiif_search(identifier, query):
-    url = buildSearchURL(identifier, query)
-
-    # print (f"Search URL:\n{url}")
+    url = build_search_url(identifier, query)
     response = requests.get(url)
     response.raise_for_status() 
     ia_response = response.json()
-    # print (json.dumps(ia_response, indent=4))
 
     searchResponse = {
         "@context":"http://iiif.io/api/presentation/2/context.json",
         "@id": f"{URI_PRIFIX}/search/{identifier}?q={query}",
-        "@type":"sc:AnnotationList",
+        "@type": "sc:AnnotationList",
 
         "resources": [
         ]
@@ -51,8 +47,7 @@ def iiif_search(identifier, query):
 
         for box in paragraph['boxes']:
             x = int(box['l'])
-            y = int (box['t'])
-            right = 0
+            y = int(box['t'])
             # If r is missing then use the paragraph
             if 'r' in box:
                 right = int(box['r'])
@@ -61,7 +56,7 @@ def iiif_search(identifier, query):
 
             width = right - x
             height = int(box['b']) - y
-            page = int(paragraph['page']) - 1
+            page = int(paragraph['page'])  - 1
             if "leaf0_missing" in ia_response and ia_response['leaf0_missing'] == False:
                 page = int(paragraph['page'])
 
