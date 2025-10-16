@@ -74,7 +74,7 @@ class TestSearch(unittest.TestCase):
 
         metadataPatch.side_effect = mock_response
     
-        self.assertEqual(search.buildSearchURL("journalofexpedit00ford", "query"), "https://ia601302.us.archive.org/fulltext/inside.php?item_id=journalofexpedit00ford&doc=journalofexpedit00ford&path=/31/items/journalofexpedit00ford&q=query", "Unexpected search query")
+        self.assertEqual(search.build_search_url("journalofexpedit00ford", "query"), "https://ia601302.us.archive.org/fulltext/inside.php?item_id=journalofexpedit00ford&doc=journalofexpedit00ford&path=/31/items/journalofexpedit00ford&q=query", "Unexpected search query")
 
     @patch("requests.get")
     def multi_box(self, searchPatch):
