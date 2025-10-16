@@ -704,6 +704,39 @@ def sortDerivatives(metadata, includeVtt=False):
     else:    
         return (originals, derivatives)
 
+def create_canvas_from_br(br_page, zipFile, identifier, pageCount, uri):
+    """Create a canvas from Book Reader JSON.
+        e.g {
+            "width": 1976,
+            "height": 2500,
+            "uri": "https://ia800309.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0000.jp2&id=bub_gb_3Kt5kiw9KYcC",
+            "leafNum": 0,
+            "pageType": "Normal",
+            "pageSide": "R"
+        }
+    """
+
+    fileUrl = urlparse(br_page['uri'])
+    fileName = parse_qs(fileUrl.query).get('file')[0]
+    imgId = f"{zipFile}/{fileName}"
+    imgURL = f"{IMG_SRV}/3/{quote(imgId, safe='()')}"
+
+    canvas = Canvas(id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas", label=f"{br_page['leafNum']}")
+
+    body = AnnotationBody(id=f"{imgURL}/full/max/0/default.jpg", type="Image")
+    body.format = "image/jpeg"
+    body.service = [ServiceV3(id=imgURL, profile="level2", type="ImageService3")]
+
+    annotation = Annotation(id=f"{uri}/annotation/{pageCount}", motivation='painting', body=body, target=canvas.id)
+
+    annotationPage = AnnotationPage(id=f"{uri}/annotationPage/{pageCount}")
+    annotationPage.add_item(annotation)
+
+    canvas.add_item(annotationPage)
+    canvas.set_hwd(br_page['height'], br_page['width'])
+
+    return canvas
+
 def create_manifest3(identifier, domain=None, page=None):
     # Get item metadata
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
@@ -751,33 +784,23 @@ def create_manifest3(identifier, domain=None, page=None):
             # In json: /29/items/goody/goody_jp2.zip convert to goody/good_jp2.zip
             zipFile = '/'.join(bookreader['data']['brOptions']['zip'].split('/')[-2:])
 
-            for pageSpread in bookreader['data']['brOptions']['data']:
-                for page in pageSpread:
-                    fileUrl = urlparse(page['uri'])
-                    fileName = parse_qs(fileUrl.query).get('file')[0]
-                    imgId = f"{zipFile}/{fileName}"
-                    imgURL = f"{IMG_SRV}/3/{quote(imgId, safe='()')}"
+            # Single page of a manifest requested
+            if page:
+                # Book reader supplies pages in spread form
+                # e.g. opening, page1 + page2, page3 + page4, end page
+                # this removes the first page divides by 2 to find the spread
+                # then adds one back to get the index. 
+                spread=math.floor((page-1)/2) + 1
+                canvas = create_canvas_from_br(bookreader['data']['brOptions']['data'][spread][(page + 1) % 2], zipFile, identifier, pageCount, uri)
 
-                    canvas = Canvas(id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas", label=f"{page['leafNum']}")
+                manifest.add_item(canvas)
+            else:
+                for pageSpread in bookreader['data']['brOptions']['data']:
+                    for page in pageSpread:
+                        canvas = create_canvas_from_br(page, zipFile, identifier, pageCount, uri)
 
-                    body = AnnotationBody(id=f"{imgURL}/full/max/0/default.jpg", type="Image")
-                    body.format = "image/jpeg"
-                    body.service = [ServiceV3(id=imgURL, profile="level2", type="ImageService3")]
-
-                    annotation = Annotation(id=f"{uri}/annotation/{pageCount}", motivation='painting', body=body, target=canvas.id)
-
-                    annotationPage = AnnotationPage(id=f"{uri}/annotationPage/{pageCount}")
-                    annotationPage.add_item(annotation)
-
-                    canvas.add_item(annotationPage)
-                    canvas.set_hwd(page['height'], page['width'])
-
-                    manifest.add_item(canvas)
-                    # Create canvas from IIIF image service. Note this is very slow:
-                    #canvas = manifest.make_canvas_from_iiif(url=imgURL,
-                    #                            id=f"https://iiif.archivelab.org/iiif/{identifier}${pageCount}/canvas",
-                    #                            label=f"{page['leafNum']}")
-                    pageCount += 1
+                        manifest.add_item(canvas)
+                        pageCount += 1
 
 
             # Setting logic for paging behavior and starting canvases

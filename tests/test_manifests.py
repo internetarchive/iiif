@@ -200,12 +200,28 @@ class TestManifests(unittest.TestCase):
         manifest = resp.json
         self.assertEqual(len(manifest['partOf']), 3, f"Expected 3 parent collections but got: {len(manifest['partOf'])}")
 
+    def test_single_page_of_multipage(self):
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$8/manifest.json?recache=true")
 
-''' to test:
-kaled_jalil (no derivatives)
-Dokku_obrash (geo-restricted?)
-m4a filetypes (No length to files?)
-'''
+        self.assertEqual(resp.status_code, 200)
+
+        manifest = resp.json
+        self.assertEqual(len(manifest['items']), 1, "There should only be one canvas")
+
+        imgSrv = manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']
+        self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0008.jp2")
+
+        # Check first page
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$0/manifest.json?recache=true")
+        manifest = resp.json
+        imgSrv = manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']
+        self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0000.jp2")
+
+        # Check last page
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$366/manifest.json?recache=true")
+        manifest = resp.json
+        imgSrv = manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']
+        self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0366.jp2")
 
 if __name__ == '__main__':
     unittest.main()
