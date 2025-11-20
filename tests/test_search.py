@@ -1,5 +1,3 @@
-import os
-
 import unittest
 from unittest.mock import patch
 from flask.testing import FlaskClient
@@ -162,4 +160,17 @@ class TestSearch(unittest.TestCase):
         results = resp.json
         for result in results["resources"]:
             self.assertTrue(isinstance(result, dict))
-            self.assertEqual(result["resource"]["chars"], "Brunswick")    
+            self.assertEqual(result["resource"]["chars"], "Brunswick")
+
+
+class TestBuildSearchUrl(unittest.TestCase):
+    def test_real_gray_diary_item(self):
+        """Test that doc parameter matches the original filename minus extension"""
+        result = search.build_search_url('gray-diary', 'Houston')
+
+        self.assertIn('item_id=gray-diary', result)
+        self.assertIn('doc=GrayDiary', result)
+        self.assertIn('q=Houston', result)
+
+        response = requests.get(result)
+        self.assertEqual(response.status_code, 200)
