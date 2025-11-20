@@ -163,7 +163,6 @@ class TestSearch(unittest.TestCase):
             self.assertEqual(result["resource"]["chars"], "Brunswick")
 
 
-class TestBuildSearchUrl(unittest.TestCase):
     def test_real_gray_diary_item(self):
         """Test that doc parameter matches the original filename minus extension"""
         result = search.build_search_url('gray-diary', 'Houston')
