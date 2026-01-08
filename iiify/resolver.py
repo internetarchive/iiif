@@ -340,7 +340,7 @@ def create_manifest(identifier, domain=None, page=None):
             if page:
                 manifest['sequences'][0]['canvases'].append(
                     manifest_page(
-                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(f"{identifier}${page}", metadata=resp)}",
+                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(identifier + '$' + str(page), metadata=resp)}",
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
                         height=data['pageHeights'][page],
@@ -352,7 +352,7 @@ def create_manifest(identifier, domain=None, page=None):
             for page in range(0, len(data.get('leafNums', []))):
                 manifest['sequences'][0]['canvases'].append(
                     manifest_page(
-                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(f"{identifier}${page}", metadata=resp)}",
+                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(identifier + '$' + str(page), metadata=resp)}",
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
                         height=data['pageHeights'][page],
@@ -594,12 +594,17 @@ def addThumbnails(manifest, identifier, files, mediatype):
         if mediatype in av_types:
             mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
             static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
-            manifest.add_thumbnail(
-                static_url,
-                format=mimetype,
-                **({"width": file["width"]} if "width" in file else {"width": 192}),
-                **({"height": file["height"]} if "height" in file else {"height": 108})
-            )
+
+            if mediatype == "movies":
+                # Videos should not get height and width
+                manifest.add_thumbnail(static_url, format=mimetype)
+            elif mediatype in ("audio", "etree"):
+                manifest.add_thumbnail(
+                    static_url,
+                    format=mimetype,
+                    **({"width": file["width"]} if "width" in file else {"width": 192}),
+                    **({"height": file["height"]} if "height" in file else {"height": 108})
+                )
         else:
             encoded_name = quote(name.replace('/', '%2f'))
             # Forward solidus before thumbnail uri must always be %2f
