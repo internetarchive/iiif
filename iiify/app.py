@@ -190,10 +190,16 @@ def collectionPage(identifier, page):
 @app.route('/iiif/3/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest3(identifier):
-    validate_ia_identifier(identifier, page_suffix=False)
+    validate_ia_identifier(identifier, page_suffix=True)
 
     domain = purify_domain(request.args.get('domain', request.url_root))
+    # Asking for a manifest of a single page
+    # identifier would look like:
+    # bub_gb_3Kt5kiw9KYcC$8
     page = None
+    if '$' in identifier:
+        identifier, page = identifier.split('$')
+        page = int(page)
 
     try:
         return ldjsonify(create_manifest3(identifier, domain=domain, page=page))
@@ -237,7 +243,7 @@ def search(identifier):
 @app.route('/iiif/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest(identifier):
-    validate_ia_identifier(identifier, page_suffix=False)
+    validate_ia_identifier(identifier, page_suffix=True)
     return manifest3(identifier)
 
 @app.route('/iiif/2/<identifier>/manifest.json')
