@@ -9,7 +9,8 @@ from flask_caching import Cache
 from .search import iiif_search    
 from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
     collection, purify_domain, cantaloupe_resolver, create_collection3, IsCollection, \
-    create_annotations, create_vtt_stream, infojson, create_annotations_from_comments
+    create_annotations, create_vtt_stream, infojson, create_annotations_from_comments, \
+    retrieve_collection, MAX_API_LIMIT, MAX_SCRAPE_LIMIT
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
@@ -111,7 +112,9 @@ def helper(identifier):
     elif mediatype == "texts":
         return render_template('helpers/texts.html', identifier=identifier, reviews=reviews)
     elif mediatype == "collection":
-        return render_template('helpers/collection.html', identifier=identifier, reviews=reviews)
+        # Work out number of pages for the collection. 
+        results = retrieve_collection(identifier)
+        return render_template('helpers/collection.html', identifier=identifier, reviews=reviews, page_size=MAX_API_LIMIT, max_results=MAX_SCRAPE_LIMIT, result_num=results['response']['numFound'])
     else:
         return render_template('helpers/unknown.html', identifier=identifier, reviews=reviews)
 
