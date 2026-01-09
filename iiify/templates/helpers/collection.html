@@ -35,6 +35,19 @@
 
         </ul>
 
+        <p><b>Note:</b> collections will be limited to {{max_results}} items due to API limits.</p>
+        {% set total_pages = (result_num / page_size) | round(0, 'ceil') | int %}
+        <p>This collection has {{result_num}} items and is split into {{ total_pages }} pages with each page 
+          containing {{page_size}} items. The last item in the collection points to the next collection page.</p>
+        <p>This collection consists of the following pages:
+          <ul>
+            {% for page_num in range(1, total_pages + 1) %}
+              <li><a href="https://iiif.archive.org/iiif/{{ identifier }}/{{page_num}}/collection.json">Page {{page_num}}: https://iiif.archive.org/iiif/{{ identifier }}/{{page_num}}/collection.json</a></li>
+            {% endfor %}
+          </ul>
+
+        </p>  
+
         {% include "partials/reviews_block.html" %}
     </div>
 
