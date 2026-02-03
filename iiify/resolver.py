@@ -33,6 +33,7 @@ class MaxLimitException(Exception):
 valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
 AUDIO_FORMATS = ['VBR MP3', '32Kbps MP3', '56Kbps MP3', '64Kbps MP3', '96Kbps MP3', '128Kbps MP3', 'MPEG-4 Audio', 'Flac', 'AIFF', 'Apple Lossless Audio', 'Ogg Vorbis', 'WAVE', '24bit Flac', 'Shorten']
 VIDEO_FORMATS = ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack','QuickTime']
+IMAGE_FORMATS = ['JPEG', 'PNG', 'GIF', 'TIFF']
 
 class IsCollection(Exception):
     # Used for when we need to raise to the route handler from inside the manifest function
@@ -758,8 +759,7 @@ def check_mixed_media(metadata):
             has_videos = True
         
         # Check for image formats (excluding thumbnails)
-        # JPEG is the primary format, but also check for other valid image types
-        if (file_format in ['JPEG', 'PNG', 'GIF', 'TIFF'] and 
+        if (file_format in IMAGE_FORMATS and 
             'thumb' not in file_name.lower() and
             file_format not in ['JPEG Thumb', 'Thumbnail']):
             has_images = True
@@ -954,7 +954,7 @@ def create_manifest3(identifier, domain=None, page=None):
             file_name = file.get('name', '')
             
             # Add image canvas
-            if (file_format in ['JPEG', 'PNG', 'GIF', 'TIFF'] and 
+            if (file_format in IMAGE_FORMATS and 
                 'thumb' not in file_name.lower() and
                 file_format not in ['JPEG Thumb', 'Thumbnail']):
                 try:
