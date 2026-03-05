@@ -1,0 +1,18 @@
+{# 
+    Takes two parameters:
+
+    iiif_content: the URL to the Manifest or Collection
+    mode: One of image, audio, video, collection or texts. Used to show specific content viewer types
+#}
+<h2>IIIF viewer options</h2>
+<ul>
+    <li><a href="https://projectmirador.org/embed/?iiif-content={{iiif_content}}">Mirador comparison viewer/player</a></li>
+    <li><a href="https://uv-v4.netlify.app/#?manifest={{iiif_content}}">Universal Viewer</a></li>
+    <li><a href="https://samvera-labs.github.io/clover-iiif/docs/viewer/demo?iiif-content={{iiif_content}}">Clover</a></li>
+    <li><a href="https://theseusviewer.org/?iiif-content={{iiif_content}}">Theseus</a></li>
+
+    {% if mode == "audio" or mode == "video": %}
+        <li><a href="https://iiif-react-media-player.netlify.app//?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Ramp</a></li>
+        <li><a href="https://iiif.aviaryplatform.com/player?manifest=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Aviary</a></li>
+    {% endif %}    
+</ul>
