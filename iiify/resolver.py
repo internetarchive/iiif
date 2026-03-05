@@ -166,6 +166,11 @@ def collection(domain, identifiers, label='Custom Archive.org IIIF Collection'):
         })
     return cs
 
+def retrieve_collection(identifier, page=1, rows=MAX_API_LIMIT):
+    asURL = f'{ADVANCED_SEARCH}?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
+    itemsSearch = requests.get(asURL).json()
+    return itemsSearch
+
 def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
     # Get item metadata
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
@@ -179,8 +184,7 @@ def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
     addMetadata(collection, identifier, metadata['metadata'], collection=True)
     addPartOfCollection(collection, metadata.get('metadata').get('collection', []), domain)
 
-    asURL = f'{ADVANCED_SEARCH}?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
-    itemsSearch = requests.get(asURL).json()
+    itemsSearch = retrieve_collection(identifier, page, rows)
     total = itemsSearch['response']['numFound']
     # There is a max of 10,000 items that can be retrieved from the advanced search
     if total > MAX_SCRAPE_LIMIT:
