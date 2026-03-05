@@ -31,6 +31,7 @@ class MaxLimitException(Exception):
     pass
 
 valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
+IMG_FORMATS = ['JPEG']
 AUDIO_FORMATS = ['VBR MP3', '32Kbps MP3', '56Kbps MP3', '64Kbps MP3', '96Kbps MP3', '128Kbps MP3', 'MPEG-4 Audio', 'Flac', 'AIFF', 'Apple Lossless Audio', 'Ogg Vorbis', 'WAVE', '24bit Flac', 'Shorten']
 VIDEO_FORMATS = ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack','QuickTime']
 
@@ -967,7 +968,8 @@ def create_manifest3(identifier, domain=None, page=None):
     elif mediatype == "movies":
         (originals, derivatives, vttfiles) = sortDerivatives(metadata, includeVtt=True)
         # Make behavior "auto-advance if more than one original"
-        if sum(f['format'] in VIDEO_FORMATS for f in originals) > 1:
+        video_count = sum(f['format'] in VIDEO_FORMATS for f in originals)
+        if video_count > 1:
             manifest.behavior = "auto-advance"
 
         addThumbnailNav(manifest, identifier, metadata["files"])    
@@ -1099,6 +1101,23 @@ def create_manifest3(identifier, domain=None, page=None):
                 ap.add_item(anno)
                 c.add_item(ap)
                 manifest.add_item(c)
+
+        imgs = [f for f in originals if f['format'] in IMG_FORMATS]
+        if imgs:
+            pageCount = video_count 
+            for file in imgs:
+                imgId = f"{identifier}/{file['name']}".replace('/','%2f')
+                imgURL = f"{IMG_SRV}/3/{imgId}"
+                pageCount += 1
+                slugged_id = file['name'].replace(" ", "-")
+
+                manifest.make_canvas_from_iiif(
+                    url=imgURL,
+                    id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
+                    label=f"{file['name']}",
+                    anno_page_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page",
+                    anno_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation"
+                )        
     elif mediatype == "collection":
         raise IsCollection
     else:
