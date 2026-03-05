@@ -32,7 +32,7 @@ from .image import ImageManifestBuilder, checkMultiItem
 from .audio import AudioManifestBuilder
 from .video import VideoManifestBuilder
 
-from ..configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
+from ..configs import media_root
 
 
 class IsCollection(Exception):

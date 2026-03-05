@@ -8,7 +8,7 @@ from iiif_prezi3 import (
 )
 
 from .base import BaseManifestBuilder
-from .constants import ARCHIVE, IMG_SRV, URI_PRIFIX
+from .constants import IMG_SRV, URI_PRIFIX
 from .helpers import singleImage
 
 

@@ -9,7 +9,7 @@ from iiif_prezi3 import (
     ServiceV3, Range, AccompanyingCanvas,
 )
 
-from .constants import ARCHIVE, IMG_SRV, URI_PRIFIX, AUDIO_FORMATS, VIDEO_FORMATS
+from .constants import ARCHIVE, IMG_SRV, URI_PRIFIX
 from .utils import valid_filetype
 from ..configs import LINKS
 
