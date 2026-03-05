@@ -124,6 +124,14 @@ class TestVideo(unittest.TestCase):
             elif name.endswith("mp4"):
                 self.assertEqual("video/mp4", format, "Unexpected mime type for Legend_of_the_Ten_Rings.mp4")
 
+    def test_multitype_video(self):
+        # Video with images as well as an mp4. 
+        # Should have both video and image canvases 
+        resp = self.test_app.get("/iiif/3/2025-highland-house-walkthrough-ma/manifest.json?recache=true")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+        
+        self.assertEqual(28, len(manifest["items"]), "Expected 28 canvases")
 
 if __name__ == '__main__':
     unittest.main()
