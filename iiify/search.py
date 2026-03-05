@@ -42,7 +42,7 @@ def iiif_search(identifier, query):
         else:
             text = query    
 
-        matchNo = 0
+        match_num = 0
 
         for box in paragraph['boxes']:
             x = int(box['l'])
@@ -65,7 +65,7 @@ def iiif_search(identifier, query):
                 "motivation": "sc:painting",
                 "resource": {
                     "@type": "cnt:ContentAsText",
-                    "chars": text if largeResults else match[matchNo] 
+                    "chars": text if largeResults else match[match_num] 
                 },
                 "on": f"{URI_PRIFIX}/{identifier}${page}/canvas#xywh={x},{y},{width},{height}",
                 "within": {
@@ -73,7 +73,7 @@ def iiif_search(identifier, query):
                     "type": "sc:Manifest"
                 }
             })
-            matchNo += 1
+            match_num += 1
             count += 1
 
     return searchResponse
