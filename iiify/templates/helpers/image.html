@@ -30,13 +30,9 @@
 
         <p>The Image API info.json  for the image is: <a href="https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/info.json">https://iiif.archive.org/image/iiif/3/{{ cantaloupe_id }}/info.json</a></p>
 
-        <h2>IIIF viewer options</h2>
-        <ul>
-            <li><a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Mirador</a></li>
-            <li><a href="https://uv-v4.netlify.app/#?manifest=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Universal Viewer</a></li>
-            <li><a href="https://samvera-labs.github.io/clover-iiif?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/manifest.json">Clover</a></li>
-
-        </ul>
+        {% set iiif_content = "https://iiif.archive.org/iiif/" ~ identifier ~ "/manifest.json" %}
+        {% set mode = "image" %}
+        {% include "partials/viewers.html"%}
 
         <h2>IIIF image tool options</h2>
         <ul>

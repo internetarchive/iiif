@@ -26,15 +26,37 @@
 
         <p>The IIIF collection URL is: <a href="https://iiif.archive.org/iiif/{{ identifier }}/collection.json">https://iiif.archive.org/iiif/{{ identifier }}/collection.json</a></p>
 
-        <h2>IIIF viewer options</h2>
-        <ul>
-            <li><a href="https://projectmirador.org/embed/?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/collection.json">Mirador</a></li>
-            <li><a href="https://uv-v4.netlify.app/#?manifest=https://iiif.archive.org/iiif/{{ identifier }}/collection.json">Universal Viewer</a></li>
-            <li><a href="https://samvera-labs.github.io/clover-iiif?iiif-content=https://iiif.archive.org/iiif/{{ identifier }}/collection.json">Clover</a></li>
+        {% set iiif_content = "https://iiif.archive.org/iiif/" ~ identifier ~ "/collection.json" %}
+        {% set mode = "collection" %}
+        {% include "partials/viewers.html"%} 
 
-        </ul>
+        <p><b>Note:</b> collections will be limited to {{max_results}} items due to API limits.</p>
+        {% set total_pages = (result_num / page_size) | round(0, 'ceil') | int %}
+        <p>This collection has {{result_num}} items and is split into {{ total_pages }} pages with each page 
+          containing {{page_size}} items. The last item in the collection points to the next collection page.</p>
+        <p>This collection consists of the following pages:
+          <ul>
+            {% for page_num in range(1, total_pages + 1) %}
+              <li><a href="https://iiif.archive.org/iiif/{{ identifier }}/{{page_num}}/collection.json">Page {{page_num}}: https://iiif.archive.org/iiif/{{ identifier }}/{{page_num}}/collection.json</a></li>
+            {% endfor %}
+          </ul>
+
+        </p>  
 
         {% include "partials/reviews_block.html" %}
+
+        <p><b>Note:</b> collections will be limited to {{max_results}} items due to API limits.</p>
+        {% set total_pages = (result_num / page_size) | round(0, 'ceil') | int %}
+        <p>This collection has {{result_num}} items and is split into {{ total_pages }} pages with each page 
+          containing {{page_size}} items. The last item in the collection points to the next collection page.</p>
+        <p>This collection consists of the following pages:
+          <ul>
+            {% for page_num in range(1, total_pages + 1) %}
+              <li><a href="https://iiif.archive.org/iiif/{{ identifier }}/{{page_num}}/collection.json">Page {{page_num}}: https://iiif.archive.org/iiif/{{ identifier }}/{{page_num}}/collection.json</a></li>
+            {% endfor %}
+          </ul>
+
+        </p>  
     </div>
 
     </body>

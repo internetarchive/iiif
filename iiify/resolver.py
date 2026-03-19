@@ -3,7 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
-from iiif_prezi3 import Manifest, config, Annotation, AnnotationPage, AnnotationPageRef, Canvas, Manifest, ResourceItem, ServiceItem, Choice, Collection, ManifestRef, CollectionRef, ResourceItem1, AccompanyingCanvas, CanvasRef
+from iiif_prezi3 import config, Collection, Manifest, Canvas, Annotation, AnnotationPage, CollectionRef, ManifestRef, CanvasRef, AnnotationPageRef, AnnotationPageRefExtended, AnnotationBody, ServiceV3, Choice, TextualBody, AccompanyingCanvas, Range
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -11,6 +11,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import timedelta
 import bleach
+import mimetypes
 from bs4 import BeautifulSoup
 
 SCRAPE_API = 'https://archive.org/services/search/v1/scrape'
@@ -30,6 +31,7 @@ class MaxLimitException(Exception):
     pass
 
 valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
+IMG_FORMATS = ['JPEG']
 AUDIO_FORMATS = ['VBR MP3', '32Kbps MP3', '56Kbps MP3', '64Kbps MP3', '96Kbps MP3', '128Kbps MP3', 'MPEG-4 Audio', 'Flac', 'AIFF', 'Apple Lossless Audio', 'Ogg Vorbis', 'WAVE', '24bit Flac', 'Shorten']
 VIDEO_FORMATS = ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack','QuickTime']
 
@@ -115,7 +117,7 @@ def checkMultiItem(metadata):
 
     return (False, None)
 
-def to_mimetype(format):
+def to_mimetype(filename, format):
     formats = {
         "VBR MP3": "audio/mp3",
         "32Kbps MP3": "audio/mp3",
@@ -142,7 +144,11 @@ def to_mimetype(format):
         "Apple Lossless Audio": "audio/x-m4a",
         "MPEG-4 Audio": "audio/mp4"
     }
-    return formats.get(format, "application/octet-stream")
+    mime, encoding = mimetypes.guess_type(filename)
+    if mime is None:
+        return formats.get(format, "application/octet-stream")
+    else:
+        return mime
 
 def collection(domain, identifiers, label='Custom Archive.org IIIF Collection'):
     cs = {
@@ -161,6 +167,11 @@ def collection(domain, identifiers, label='Custom Archive.org IIIF Collection'):
         })
     return cs
 
+def retrieve_collection(identifier, page=1, rows=MAX_API_LIMIT):
+    asURL = f'{ADVANCED_SEARCH}?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
+    itemsSearch = requests.get(asURL).json()
+    return itemsSearch
+
 def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
     # Get item metadata
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
@@ -174,8 +185,7 @@ def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
     addMetadata(collection, identifier, metadata['metadata'], collection=True)
     addPartOfCollection(collection, metadata.get('metadata').get('collection', []), domain)
 
-    asURL = f'{ADVANCED_SEARCH}?q=collection%3A{identifier}&fl[]=identifier&fl[]=mediatype&fl[]=title&fl[]=description&sort[]=&sort[]=&sort[]=&rows={rows}&page={page}&output=json&save=yes'
-    itemsSearch = requests.get(asURL).json()
+    itemsSearch = retrieve_collection(identifier, page, rows)
     total = itemsSearch['response']['numFound']
     # There is a max of 10,000 items that can be retrieved from the advanced search
     if total > MAX_SCRAPE_LIMIT:
@@ -517,16 +527,16 @@ def addWaveform(identifier, slugged_id, filename, hard_code_size=True):
     if hard_code_size:
         width = 800
         height = 200
-        body = ResourceItem(id=f"https://archive.org/download/{identifier}/{filename.replace(' ', '%20')}", type="Image", width=width, height=height)
+        body = AnnotationBody(id=f"https://archive.org/download/{identifier}/{filename.replace(' ', '%20')}", type="Image", width=width, height=height)
         body.format = "image/jpeg"
     else:
         imgId = f"{identifier}/{filename}".replace('/','%2f')
         imgURL = f"{IMG_SRV}/3/{imgId}".replace(' ', '%20')
         # Find the width and height from the image server
-        body = ResourceItem(id="http://example.com", type="Image")
+        body = AnnotationBody(id="http://example.com", type="Image")
         infoJson = body.set_hwd_from_iiif(imgURL)
 
-        service = ServiceItem(id=infoJson['id'], profile=infoJson['profile'], type=infoJson['type'])
+        service = ServiceV3(id=infoJson['id'], profile=infoJson['profile'], type=infoJson['type'])
         body.service = [service]
         body.id = f'{infoJson["id"]}/full/max/0/default.jpg'
         body.format = "image/jpeg"
@@ -573,7 +583,8 @@ def addThumbnails(manifest, identifier, files):
         
         if name == "__ia_thumb.jpg":
             ia_thumb_files.append(file)
-        elif file_format in {"Thumbnail", "JPEG Thumb"}:
+        # ignore thumbnails in .thumbs as these are for video thumbnail navigation    
+        elif file_format in {"Thumbnail", "JPEG Thumb"} and f"{identifier}.thumbs" not in name:
             thumbnail_files.append(file)
 
     files_to_process = []
@@ -597,6 +608,57 @@ def addThumbnails(manifest, identifier, files):
             static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
             manifest.add_thumbnail(static_url, format=mimetype)
     return
+
+def addThumbnailNav(manifest, identifier, files):
+    """Creates thumbnails navigation for Videos.
+
+    If the file appears to be a thumbnail (by format or name) attempt to create a IIIF thumbnail via Cantaloupe.
+    If that fails or isn't possible, fall back to adding a static thumbnail.
+    """
+
+    nav_thumbs = {}
+    # Organise thumbs by original file as this is used for the canvas id. 
+    # This in case an item had two videos and different thumbnails for each 
+    for thumb in files:
+        if ".thumbs" in thumb['name'] and thumb['format'] == "Thumbnail":
+            if thumb['original'] not in nav_thumbs:
+                nav_thumbs[thumb['original']] = []
+
+            nav_thumbs[thumb['original']].append(thumb)
+            
+    if manifest.structures is None or not isinstance(manifest.structures, list):
+        manifest.structures = []
+
+    for original in nav_thumbs:
+        normalised_id = original.rsplit(".", 1)[0]
+        slugged_id = normalised_id.replace(" ", "-")
+
+        thumb_nav_range = Range(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/thumbnails")
+        thumb_nav_range.label = {"en": ["Thumbnail Navigation"]}
+        thumb_nav_range.behavior = "thumbnail-nav"
+        thumb_nav_range.items = []
+
+        count = 0
+        last = 0
+        for thumb in nav_thumbs[original]:            
+            # Filename example: CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000237.jpg
+            # Pull out number at the end
+            current = int(thumb['name'].rsplit("_", 1)[-1].split(".")[0])
+            section = Range(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/thumbnails/{count}")
+            section.items = [ CanvasRef(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas#t={last},{current}", type="Canvas") ]
+            section.thumbnail = [{
+                "id": f"https://archive.org/download/{identifier}/{thumb['name'].replace(" ", "%20")}",
+                "type": "Image",
+                "format": "image/png",
+                "height": 110,
+                "width": 160
+                }]
+
+            thumb_nav_range.items.append(section) 
+            last = current   
+            count += 1    
+
+        manifest.structures.append(thumb_nav_range)
 
 def addPartOfCollection(resource, collections, domain=None):
     # metadata["collections"] can be a list or str so we need to test what we have
@@ -647,6 +709,39 @@ def sortDerivatives(metadata, includeVtt=False):
     else:    
         return (originals, derivatives)
 
+def create_canvas_from_br(br_page, zipFile, identifier, pageCount, uri):
+    """Create a canvas from Book Reader JSON.
+        e.g {
+            "width": 1976,
+            "height": 2500,
+            "uri": "https://ia800309.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0000.jp2&id=bub_gb_3Kt5kiw9KYcC",
+            "leafNum": 0,
+            "pageType": "Normal",
+            "pageSide": "R"
+        }
+    """
+
+    fileUrl = urlparse(br_page['uri'])
+    fileName = parse_qs(fileUrl.query).get('file')[0]
+    imgId = f"{zipFile}/{fileName}"
+    imgURL = f"{IMG_SRV}/3/{quote(imgId, safe='()')}"
+
+    canvas = Canvas(id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas", label=f"{br_page['leafNum']}")
+
+    body = AnnotationBody(id=f"{imgURL}/full/max/0/default.jpg", type="Image")
+    body.format = "image/jpeg"
+    body.service = [ServiceV3(id=imgURL, profile="level2", type="ImageService3")]
+
+    annotation = Annotation(id=f"{uri}/annotation/{pageCount}", motivation='painting', body=body, target=canvas.id)
+
+    annotationPage = AnnotationPage(id=f"{uri}/annotationPage/{pageCount}")
+    annotationPage.add_item(annotation)
+
+    canvas.add_item(annotationPage)
+    canvas.set_hwd(br_page['height'], br_page['width'])
+
+    return canvas
+
 def create_manifest3(identifier, domain=None, page=None):
     # Get item metadata
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
@@ -660,10 +755,10 @@ def create_manifest3(identifier, domain=None, page=None):
 
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
     if 'reviews' in metadata:
-        reviews_as_annotations = AnnotationPageRef(
+        reviews_as_annotations = AnnotationPageRef(__root__=AnnotationPageRefExtended(
             id=f"{domain.replace('iiif/', 'iiif/3/annotations/')}{identifier}/comments.json",
             type="AnnotationPage",
-        )
+        ))
         manifest.annotations=[reviews_as_annotations]
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
@@ -694,33 +789,23 @@ def create_manifest3(identifier, domain=None, page=None):
             # In json: /29/items/goody/goody_jp2.zip convert to goody/good_jp2.zip
             zipFile = '/'.join(bookreader['data']['brOptions']['zip'].split('/')[-2:])
 
-            for pageSpread in bookreader['data']['brOptions']['data']:
-                for page in pageSpread:
-                    fileUrl = urlparse(page['uri'])
-                    fileName = parse_qs(fileUrl.query).get('file')[0]
-                    imgId = f"{zipFile}/{fileName}"
-                    imgURL = f"{IMG_SRV}/3/{quote(imgId, safe='()')}"
+            # Single page of a manifest requested
+            if page:
+                # Book reader supplies pages in spread form
+                # e.g. opening, page1 + page2, page3 + page4, end page
+                # this removes the first page divides by 2 to find the spread
+                # then adds one back to get the index. 
+                spread=math.floor((page-1)/2) + 1
+                canvas = create_canvas_from_br(bookreader['data']['brOptions']['data'][spread][(page + 1) % 2], zipFile, identifier, pageCount, uri)
 
-                    canvas = Canvas(id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas", label=f"{page['leafNum']}")
+                manifest.add_item(canvas)
+            else:
+                for pageSpread in bookreader['data']['brOptions']['data']:
+                    for page in pageSpread:
+                        canvas = create_canvas_from_br(page, zipFile, identifier, pageCount, uri)
 
-                    body = ResourceItem(id=f"{imgURL}/full/max/0/default.jpg", type="Image")
-                    body.format = "image/jpeg"
-                    body.service = [ServiceItem(id=imgURL, profile="level2", type="ImageService3")]
-
-                    annotation = Annotation(id=f"{uri}/annotation/{pageCount}", motivation='painting', body=body, target=canvas.id)
-
-                    annotationPage = AnnotationPage(id=f"{uri}/annotationPage/{pageCount}")
-                    annotationPage.add_item(annotation)
-
-                    canvas.add_item(annotationPage)
-                    canvas.set_hwd(page['height'], page['width'])
-
-                    manifest.add_item(canvas)
-                    # Create canvas from IIIF image service. Note this is very slow:
-                    #canvas = manifest.make_canvas_from_iiif(url=imgURL,
-                    #                            id=f"https://iiif.archivelab.org/iiif/{identifier}${pageCount}/canvas",
-                    #                            label=f"{page['leafNum']}")
-                    pageCount += 1
+                        manifest.add_item(canvas)
+                        pageCount += 1
 
 
             # Setting logic for paging behavior and starting canvases
@@ -764,9 +849,10 @@ def create_manifest3(identifier, domain=None, page=None):
                     annotations = []
 
                 annotations.append(
-                    AnnotationPageRef(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage")
+                    AnnotationPageRef(__root__=AnnotationPageRefExtended(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage"))
                 )
                 canvas.annotations = annotations
+
                 count += 1
     elif mediatype == 'image':
         (multiFile, format) = checkMultiItem(metadata)
@@ -839,17 +925,17 @@ def create_manifest3(identifier, domain=None, page=None):
                 # add the choices in order per https://github.com/ArchiveLabs/iiif.archivelab.org/issues/77#issuecomment-1499672734
                 for format in AUDIO_FORMATS:
                     if format in derivatives[file['name']]:
-                        r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
+                        r = AnnotationBody(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
                                          type='Sound',
-                                         format=to_mimetype(format),
+                                         format=to_mimetype(derivatives[file['name']][format]['name'], format),
                                          label={"none": [format]},
                                          duration=float(file['length']))
                         body.items.append(r)
                     elif file['format'] == format:
-                        r = ResourceItem(
+                        r = AnnotationBody(
                             id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                             type='Sound',
-                            format=to_mimetype(format),
+                            format=to_mimetype(file['name'], format),
                             label={"none": [format]},
                             duration=float(file['length']))
                         body.items.append(r)
@@ -867,10 +953,10 @@ def create_manifest3(identifier, domain=None, page=None):
                     c.accompanyingCanvas = addWaveform(identifier, slugged_id, derivatives[file['name']]["PNG"]["name"])
             else:
                 # todo: deal with instances where there are no derivatives for whatever reason
-                body = ResourceItem(
+                body = AnnotationBody(
                             id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                             type='Sound',
-                            format=to_mimetype(file['format']),
+                            format=to_mimetype(file['name'], file['format']),
                             label={"none": [file['format']]},
                             duration=float(file['length']))
 
@@ -882,8 +968,11 @@ def create_manifest3(identifier, domain=None, page=None):
     elif mediatype == "movies":
         (originals, derivatives, vttfiles) = sortDerivatives(metadata, includeVtt=True)
         # Make behavior "auto-advance if more than one original"
-        if sum(f['format'] in VIDEO_FORMATS for f in originals) > 1:
+        video_count = sum(f['format'] in VIDEO_FORMATS for f in originals)
+        if video_count > 1:
             manifest.behavior = "auto-advance"
+
+        addThumbnailNav(manifest, identifier, metadata["files"])    
 
         if 'access-restricted-item' in metadata['metadata'] and metadata['metadata']['access-restricted-item']:
             # this is a news item so has to be treated differently
@@ -927,7 +1016,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     #print (f"Start: {start} End: {end}, Duration: {float(end) - float(start)} full duration: {duration}")
                     anno = Annotation(id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation/{i}", motivation="painting", target=f"{c.id}#t={start},{end}")
                     streamurl = f"https://{metadata['server']}{metadata['dir']}/{mp4File}?start={start}&end={end}&ignore=x.mp4&cnt=0"        
-                    body = ResourceItem(id=streamurl,
+                    body = AnnotationBody(id=streamurl,
                                         type='Video',
                                         format="video/mp4",
                                         label={"en": [f"Part {i + 1} of {segments}"]},
@@ -985,9 +1074,9 @@ def create_manifest3(identifier, domain=None, page=None):
                     # add the choices in order per https://github.com/ArchiveLabs/iiif.archivelab.org/issues/77#issuecomment-1499672734
                     for format in VIDEO_FORMATS:
                         if format in derivatives[file['name']]:
-                            r = ResourceItem(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
+                            r = AnnotationBody(id=f"https://archive.org/download/{identifier}/{derivatives[file['name']][format]['name'].replace(' ', '%20')}",
                                             type='Video',
-                                            format=to_mimetype(format),
+                                            format=to_mimetype(derivatives[file['name']][format]['name'], format),
                                             label={"none": [format]},
                                             duration=float(file['length']), 
                                             height=int(file['height']),
@@ -995,10 +1084,10 @@ def create_manifest3(identifier, domain=None, page=None):
                             )
                             body.items.append(r)
                         elif file['format'] == format:
-                            r = ResourceItem(
+                            r = AnnotationBody(
                                 id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                                 type='Video',
-                                format=to_mimetype(format),
+                                format=to_mimetype(file['name'], format),
                                 label={"none": [format]},
                                 duration=float(file['length']),
                                 height=int(file['height']),
@@ -1012,6 +1101,23 @@ def create_manifest3(identifier, domain=None, page=None):
                 ap.add_item(anno)
                 c.add_item(ap)
                 manifest.add_item(c)
+
+        imgs = [f for f in originals if f['format'] in IMG_FORMATS]
+        if imgs:
+            pageCount = video_count 
+            for file in imgs:
+                imgId = f"{identifier}/{file['name']}".replace('/','%2f')
+                imgURL = f"{IMG_SRV}/3/{imgId}"
+                pageCount += 1
+                slugged_id = file['name'].replace(" ", "-")
+
+                manifest.make_canvas_from_iiif(
+                    url=imgURL,
+                    id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
+                    label=f"{file['name']}",
+                    anno_page_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page",
+                    anno_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation"
+                )        
     elif mediatype == "collection":
         raise IsCollection
     else:
@@ -1077,7 +1183,7 @@ def create_annotations_from_comments(identifier, domain=None):
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
     i = 0
     for comment in metadata.get('reviews', []):
-        anno_body = ResourceItem1(
+        anno_body = TextualBody(
             type="TextualBody",
             language="none",
             format="text/html",

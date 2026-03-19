@@ -75,10 +75,10 @@ class TestManifests(unittest.TestCase):
         self.assertEqual("128kbps mp3".lower() in resp.text.lower(), True, f"Expected the string '128kbps mp3'")
 
     def test_v3_aiff(self):
-        resp = self.test_app.get("/iiif/3/PDextend_AIFF/manifest.json")
+        resp = self.test_app.get("/iiif/3/julian-damian-marley-with-the-uprising-band-shoreline-81697/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(len(manifest['items']),38,f"Expected 38 canvases but got: {len(manifest['items'])}")
+        self.assertEqual(len(manifest['items']),6,f"Expected 6 canvases but got: {len(manifest['items'])}")
         self.assertEqual("AIFF".lower() in resp.text.lower(), True, f"Expected the string 'AIFF'")
 
     def test_provider_logo(self):
@@ -148,7 +148,7 @@ class TestManifests(unittest.TestCase):
         resp = self.test_app.get("/iiif/3/steamboat-willie-16mm-film-scan-4k-lossless/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(len(manifest['thumbnail']),16, f"Expected 16 thumbnails, but got {len(manifest['thumbnail'])}")
+        self.assertEqual(len(manifest['thumbnail']),1, f"Expected 1 thumbnails, but got {len(manifest['thumbnail'])}")
         self.assertEqual(manifest['thumbnail'][0]['id'],"https://iiif.archive.org/image/iiif/2/steamboat-willie-16mm-film-scan-4k-lossless%2fSteamboat%20Willie%20%5B16mm%20Film%20Scan%5D_ProRes%20%283400x2550%29.01_thumb.jpg/full/192,/0/default.jpg", f"Expected URL to be encoded")
 
         self.assertEqual(len(manifest['items']),1, f"Expected 1 canvas, but got {len(manifest['items'])}")
@@ -200,12 +200,28 @@ class TestManifests(unittest.TestCase):
         manifest = resp.json
         self.assertEqual(len(manifest['partOf']), 3, f"Expected 3 parent collections but got: {len(manifest['partOf'])}")
 
+    def test_single_page_of_multipage(self):
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$8/manifest.json?recache=true")
 
-''' to test:
-kaled_jalil (no derivatives)
-Dokku_obrash (geo-restricted?)
-m4a filetypes (No length to files?)
-'''
+        self.assertEqual(resp.status_code, 200)
+
+        manifest = resp.json
+        self.assertEqual(len(manifest['items']), 1, "There should only be one canvas")
+
+        imgSrv = manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']
+        self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0008.jp2")
+
+        # Check first page
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$0/manifest.json?recache=true")
+        manifest = resp.json
+        imgSrv = manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']
+        self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0000.jp2")
+
+        # Check last page
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$366/manifest.json?recache=true")
+        manifest = resp.json
+        imgSrv = manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']
+        self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0366.jp2")
 
 if __name__ == '__main__':
     unittest.main()

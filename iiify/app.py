@@ -9,7 +9,8 @@ from flask_caching import Cache
 from .search import iiif_search    
 from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
     collection, purify_domain, cantaloupe_resolver, create_collection3, IsCollection, \
-    create_annotations, create_vtt_stream, infojson, create_annotations_from_comments
+    create_annotations, create_vtt_stream, infojson, create_annotations_from_comments, \
+    retrieve_collection, MAX_API_LIMIT, MAX_SCRAPE_LIMIT
 from .configs import options, cors, approot, cache_root, media_root, \
     cache_expr, version, image_server, cache_timeouts
 from urllib.parse import quote
@@ -111,7 +112,9 @@ def helper(identifier):
     elif mediatype == "texts":
         return render_template('helpers/texts.html', identifier=identifier, reviews=reviews)
     elif mediatype == "collection":
-        return render_template('helpers/collection.html', identifier=identifier, reviews=reviews)
+        # Work out number of pages for the collection. 
+        results = retrieve_collection(identifier)
+        return render_template('helpers/collection.html', identifier=identifier, reviews=reviews, page_size=MAX_API_LIMIT, max_results=MAX_SCRAPE_LIMIT, result_num=results['response']['numFound'])
     else:
         return render_template('helpers/unknown.html', identifier=identifier, reviews=reviews)
 
@@ -190,10 +193,16 @@ def collectionPage(identifier, page):
 @app.route('/iiif/3/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest3(identifier):
-    validate_ia_identifier(identifier, page_suffix=False)
+    validate_ia_identifier(identifier, page_suffix=True)
 
     domain = purify_domain(request.args.get('domain', request.url_root))
+    # Asking for a manifest of a single page
+    # identifier would look like:
+    # bub_gb_3Kt5kiw9KYcC$8
     page = None
+    if '$' in identifier:
+        identifier, page = identifier.split('$')
+        page = int(page)
 
     try:
         return ldjsonify(create_manifest3(identifier, domain=domain, page=page))
@@ -237,7 +246,7 @@ def search(identifier):
 @app.route('/iiif/<identifier>/manifest.json')
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def manifest(identifier):
-    validate_ia_identifier(identifier, page_suffix=False)
+    validate_ia_identifier(identifier, page_suffix=True)
     return manifest3(identifier)
 
 @app.route('/iiif/2/<identifier>/manifest.json')
