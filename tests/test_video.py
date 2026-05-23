@@ -16,7 +16,7 @@ class TestVideo(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
 
-        self.assertEqual(len(manifest['items']),1,f"Expected 1 canvas but got: {len(manifest['items'])}")   
+        self.assertEqual(len(manifest['items']),2,f"Expected 2 canvas but got: {len(manifest['items'])}")   
 
     def test_v3_h264_MPEG4_OGG_Theora(self):
         resp = self.test_app.get("/iiif/3/taboca_201002_03/manifest.json")

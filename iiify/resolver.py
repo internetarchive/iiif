@@ -614,7 +614,7 @@ def addThumbnails(manifest, identifier, files):
             # Forward solidus before thumbnail uri must always be %2f
             iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
             try:
-                session = timeout_session(timeout=0.2,retry=1)
+                session = timeout_session(timeout=1,retry=1)
                 # print(f'Getting image {iiif_url}')
                 manifest.create_thumbnail_from_iiif(iiif_url, iiif_session=session)
             except requests.exceptions.RequestException as e:
