@@ -31,7 +31,7 @@ class TestVideo(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
 
-        self.assertEqual(len(manifest['items']),1,f"Expected 1 canvas but got: {len(manifest['items'])}")
+        self.assertEqual(len(manifest['items']),2,f"Expected 2 canvas but got: {len(manifest['items'])}")
         self.assertTrue('annotations' in manifest['items'][0], "Expected annotations in manifest")
         self.assertTrue(isinstance(manifest['items'][0]['annotations'], list), "Expected annotations to be a list")
         self.assertEqual(len(manifest['items'][0]['annotations']), 1, "Expected 1 item in annotations")
