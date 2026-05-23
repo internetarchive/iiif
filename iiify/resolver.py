@@ -601,6 +601,7 @@ def addThumbnails(manifest, identifier, files):
     # its likely to be too slow and will fail to generate
     if len(files_to_process) > MAX_IIIF_THUMB:
         for file in files_to_process:
+            # print (f"Getting static thumbnail for {file['name']}")
             name = file.get("name", "")
             mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
             static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
@@ -614,7 +615,7 @@ def addThumbnails(manifest, identifier, files):
             iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
             try:
                 session = timeout_session(timeout=0.2,retry=1)
-                print(f'Getting image {iiif_url}')
+                # print(f'Getting image {iiif_url}')
                 manifest.create_thumbnail_from_iiif(iiif_url, iiif_session=session)
             except requests.exceptions.RequestException as e:
                 print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url} due to {e}")
@@ -1120,6 +1121,7 @@ def create_manifest3(identifier, domain=None, page=None):
         if imgs:
             pageCount = video_count 
             for file in imgs:
+                # print (f"Making canvas for {file['name']}")
                 imgId = f"{identifier}/{file['name']}".replace('/','%2f')
                 imgURL = f"{IMG_SRV}/3/{imgId}"
                 pageCount += 1
@@ -1131,7 +1133,8 @@ def create_manifest3(identifier, domain=None, page=None):
                     label=f"{file['name']}",
                     anno_page_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page",
                     anno_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation",
-                    iiif_session=timeout_session(retry=2)
+                    iiif_session=timeout_session(retry=2, timeout=3
+                    )
                 )        
     elif mediatype == "collection":
         raise IsCollection

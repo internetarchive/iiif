@@ -22,7 +22,7 @@ class TestVideo(unittest.TestCase):
         resp = self.test_app.get("/iiif/3/taboca_201002_03/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(len(manifest['items']),251,f"Expected 251 canvases but got: {len(manifest['items'])}")
+        self.assertEqual(len(manifest['items']),503,f"Expected 503 canvases but got: {len(manifest['items'])}")
         self.assertEqual("h.264 MPEG4".lower() in resp.text.lower(), True, f"Expected the string 'h.264 MPEG4'")
         self.assertEqual("OGG Theora".lower() in resp.text.lower(), True, f"Expected the string 'OGG Theora'")
 
