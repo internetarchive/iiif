@@ -3,6 +3,7 @@
 import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
+from .utils.http_config import timeout_session
 from iiif_prezi3 import config, Collection, Manifest, Canvas, Annotation, AnnotationPage, CollectionRef, ManifestRef, CanvasRef, AnnotationPageRef, AnnotationPageRefExtended, AnnotationBody, ServiceV3, Choice, TextualBody, AccompanyingCanvas, Range
 from urllib.parse import urlparse, parse_qs, quote
 import json
@@ -176,8 +177,8 @@ def create_collection3(identifier, domain, page=1, rows=MAX_API_LIMIT):
     # Get item metadata
     metadata = requests.get('%s/metadata/%s' % (ARCHIVE, identifier)).json()
 
-    # Used to build up URIs for the manifest
-    uri = f"{domain}{identifier}/collection.json"
+    # Write Collection uri with conditional page segment
+    uri = f"{domain}{identifier}{f'/{page}' if page != 1 else ''}/collection.json"
 
     config.configs['helpers.auto_fields.AutoLang'].auto_lang = "none"
     collection = Collection(id=uri, label=metadata["metadata"]["title"])
@@ -595,18 +596,32 @@ def addThumbnails(manifest, identifier, files):
     elif ia_thumb_files:
         files_to_process = ia_thumb_files
     
-    for file in files_to_process:
-        name = file.get("name", "")
-        encoded_name = quote(name.replace('/', '%2f'))
-        # Forward solidus before thumbnail uri must always be %2f
-        iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
-        try:
-            manifest.create_thumbnail_from_iiif(iiif_url)
-        except requests.HTTPError:
-            print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url}")
+    MAX_IIIF_THUMB = 15
+    # if we use cantaloupe for more than MAX_IIIF_THUMB
+    # its likely to be too slow and will fail to generate
+    if len(files_to_process) > MAX_IIIF_THUMB:
+        for file in files_to_process:
+            # print (f"Getting static thumbnail for {file['name']}")
+            name = file.get("name", "")
             mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
             static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
             manifest.add_thumbnail(static_url, format=mimetype)
+
+    else:    
+        for file in files_to_process:
+            name = file.get("name", "")
+            encoded_name = quote(name.replace('/', '%2f'))
+            # Forward solidus before thumbnail uri must always be %2f
+            iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
+            try:
+                session = timeout_session(timeout=1,retry=1)
+                # print(f'Getting image {iiif_url}')
+                manifest.create_thumbnail_from_iiif(iiif_url, iiif_session=session)
+            except requests.exceptions.RequestException as e:
+                print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url} due to {e}")
+                mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
+                static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
+                manifest.add_thumbnail(static_url, format=mimetype)
     return
 
 def addThumbnailNav(manifest, identifier, files):
@@ -755,10 +770,10 @@ def create_manifest3(identifier, domain=None, page=None):
 
     manifest = Manifest(id=f"{uri}/manifest.json", label=metadata["metadata"]["title"])
     if 'reviews' in metadata:
-        reviews_as_annotations = AnnotationPageRef(__root__=AnnotationPageRefExtended(
+        reviews_as_annotations = AnnotationPageRefExtended(
             id=f"{domain.replace('iiif/', 'iiif/3/annotations/')}{identifier}/comments.json",
             type="AnnotationPage",
-        ))
+        )
         manifest.annotations=[reviews_as_annotations]
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
@@ -1106,6 +1121,7 @@ def create_manifest3(identifier, domain=None, page=None):
         if imgs:
             pageCount = video_count 
             for file in imgs:
+                # print (f"Making canvas for {file['name']}")
                 imgId = f"{identifier}/{file['name']}".replace('/','%2f')
                 imgURL = f"{IMG_SRV}/3/{imgId}"
                 pageCount += 1
@@ -1116,7 +1132,9 @@ def create_manifest3(identifier, domain=None, page=None):
                     id=f"{URI_PRIFIX}/{identifier}${pageCount}/canvas",
                     label=f"{file['name']}",
                     anno_page_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/page",
-                    anno_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation"
+                    anno_id=f"{URI_PRIFIX}/{identifier}/{slugged_id}/annotation",
+                    iiif_session=timeout_session(retry=2, timeout=3
+                    )
                 )        
     elif mediatype == "collection":
         raise IsCollection

@@ -46,6 +46,11 @@ class TestCollections(unittest.TestCase):
             f"Expected summary to be sanitized but got: {collection['summary']['none'][0]}"
         )
         
+    def test_unique_id_sub_page(self):
+        resp = self.test_app.get("/iiif/usgs_tx/2/collection.json?recache=True")
+        self.assertEqual(resp.status_code, 200)
+        collection = resp.json
+        self.assertEqual(collection['id'], "https://localhost/iiif/usgs_tx/2/collection.json", f"Expected unique ID for the second page of the results but got: {collection['id']}")
 
 if __name__ == '__main__':
     unittest.main()
