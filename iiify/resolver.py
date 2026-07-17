@@ -345,7 +345,7 @@ def create_manifest(identifier, domain=None, page=None):
             if page:
                 manifest['sequences'][0]['canvases'].append(
                     manifest_page(
-                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(f"{identifier}${page}", metadata=resp)}",
+                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(identifier + '$' + str(page), metadata=resp)}",
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
                         height=data['pageHeights'][page],
@@ -357,7 +357,7 @@ def create_manifest(identifier, domain=None, page=None):
             for page in range(0, len(data.get('leafNums', []))):
                 manifest['sequences'][0]['canvases'].append(
                     manifest_page(
-                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(f"{identifier}${page}", metadata=resp)}",
+                        identifier = f"{IMG_SRV}/2/{cantaloupe_resolver(identifier + '$' + str(page), metadata=resp)}",
                         label=data['pageNums'][page],
                         width=data['pageWidths'][page],
                         height=data['pageHeights'][page],
@@ -568,7 +568,7 @@ def addRendering(manifest, identifier, files):
                  "format": rendering['format']
                  })
 
-def addThumbnails(manifest, identifier, files):
+def addThumbnails(manifest, identifier, files, mediatype):
     """Creates thumbnails based on files.
 
     If the file appears to be a thumbnail (by format or name) attempt to create a IIIF thumbnail via Cantaloupe.
@@ -576,11 +576,11 @@ def addThumbnails(manifest, identifier, files):
     """
     thumbnail_files = []
     ia_thumb_files = []
-    
+
     for file in files:
         name = file.get("name", "")
         file_format = file.get("format", "")
-        
+
         if name == "__ia_thumb.jpg":
             ia_thumb_files.append(file)
         # ignore thumbnails in .thumbs as these are for video thumbnail navigation    
@@ -594,19 +594,34 @@ def addThumbnails(manifest, identifier, files):
     
     elif ia_thumb_files:
         files_to_process = ia_thumb_files
-    
+    av_types = ("audio", "movies", "etree")
     for file in files_to_process:
         name = file.get("name", "")
-        encoded_name = quote(name.replace('/', '%2f'))
-        # Forward solidus before thumbnail uri must always be %2f
-        iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
-        try:
-            manifest.create_thumbnail_from_iiif(iiif_url)
-        except requests.HTTPError:
-            print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url}")
+        if mediatype in av_types:
             mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
             static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
-            manifest.add_thumbnail(static_url, format=mimetype)
+
+            if mediatype == "movies":
+                # Videos should not get height and width
+                manifest.add_thumbnail(static_url, format=mimetype)
+            elif mediatype in ("audio", "etree"):
+                manifest.add_thumbnail(
+                    static_url,
+                    format=mimetype,
+                    **({"width": file["width"]} if "width" in file else {"width": 192}),
+                    **({"height": file["height"]} if "height" in file else {"height": 108})
+                )
+        else:
+            encoded_name = quote(name.replace('/', '%2f'))
+            # Forward solidus before thumbnail uri must always be %2f
+            iiif_url = f"{IMG_SRV}/2/{identifier.strip()}%2f{encoded_name}"
+            try:
+                manifest.create_thumbnail_from_iiif(iiif_url)
+            except requests.HTTPError:
+                print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url}")
+                mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
+                static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
+                manifest.add_thumbnail(static_url, format=mimetype)
     return
 
 def addThumbnailNav(manifest, identifier, files):
@@ -763,7 +778,7 @@ def create_manifest3(identifier, domain=None, page=None):
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
-    addThumbnails(manifest, identifier, metadata['files'])
+    addThumbnails(manifest, identifier, metadata['files'], mediatype)
     addPartOfCollection(manifest, metadata.get('metadata').get('collection', []), domain)
 
     if mediatype == 'texts':
