@@ -1,0 +1,585 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn790000.ca.archive.org",
+                "dir": "/0/items/DontBeaS1947"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn790000.ca.archive.org",
+                "dir": "/0/items/DontBeaS1947"
+            }
+        ]
+    },
+    "created": 1789489075,
+    "d1": "dn601203.us.archive.org",
+    "dir": "/0/items/DontBeaS1947",
+    "files": [
+        {
+            "name": "DontBeaS1947.asr.js",
+            "source": "original",
+            "format": "Unknown",
+            "mtime": "1472355060",
+            "size": "199549",
+            "md5": "4151a8cd13e79eb5fc9efbbd4f3b5979",
+            "crc32": "a6a5c56b",
+            "sha1": "1eacedf29ea25f389ac4c5dfed43bfee4858e0b2"
+        },
+        {
+            "name": "DontBeaS1947.asr.srt",
+            "source": "original",
+            "format": "SubRip",
+            "mtime": "1472355060",
+            "size": "17231",
+            "md5": "700fc52b8a9da410b0eedaea88d372d2",
+            "crc32": "a54a943a",
+            "sha1": "4e2ad943bc7d2ad7a01176caf69249bec856023c"
+        },
+        {
+            "name": "DontBeaS1947.asr.vtt",
+            "source": "derivative",
+            "format": "Web Video Text Tracks",
+            "original": "DontBeaS1947_intermediate_asr.json",
+            "mtime": "1691229078",
+            "size": "17786",
+            "md5": "e48b60796bb1cb7a9dd77586e35c3cbc",
+            "crc32": "deaaf71e",
+            "sha1": "c5083f7b3c111fcdfc1fafb813def3055d105e27"
+        },
+        {
+            "name": "DontBeaS1947.avi",
+            "source": "original",
+            "format": "Cinepack",
+            "md5": "41333bd144ee67ee2c0586cef79ff518",
+            "mtime": "1046170656",
+            "size": "60066072",
+            "crc32": "5a521fbc",
+            "sha1": "1bf6518feac2760f820ae7deec39cc932dcc83a4",
+            "length": "1041.64",
+            "height": "240",
+            "width": "320"
+        },
+        {
+            "name": "DontBeaS1947.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "0ddc801c87859c90feeff4364f1d04e7",
+            "mtime": "1227505340",
+            "size": "252811",
+            "crc32": "1b411ba9",
+            "sha1": "45e1867b4528faff8254a132577d16bbb7729dc0"
+        },
+        {
+            "name": "DontBeaS1947.mp3",
+            "source": "derivative",
+            "bitrate": "64",
+            "length": "17:20",
+            "format": "MP3",
+            "original": "DontBeaS1947.mpeg",
+            "mtime": "1472142758",
+            "size": "8328704",
+            "md5": "fb12262a671ff36dbc8535fe11abb451",
+            "crc32": "ec12ed9d",
+            "sha1": "c722a02f91d14e721a984ffb6a6ad30b158fb17b",
+            "height": "0",
+            "width": "0"
+        },
+        {
+            "name": "DontBeaS1947.mp4",
+            "source": "derivative",
+            "format": "h.264",
+            "original": "DontBeaS1947.mpeg",
+            "mtime": "1472145520",
+            "size": "108346030",
+            "md5": "58a312a5e178112102e790686e512cb4",
+            "crc32": "bd265e90",
+            "sha1": "6cdc426cea9006bd3486ec02683c854ba0d45fbf",
+            "length": "1041.41",
+            "height": "480",
+            "width": "640"
+        },
+        {
+            "name": "DontBeaS1947.mpeg",
+            "source": "original",
+            "format": "MPEG2",
+            "md5": "8fbccd56017dee6b7b8026fd9af17b68",
+            "mtime": "1046170884",
+            "size": "480910246",
+            "crc32": "597484b6",
+            "sha1": "6b5abe9fe57c7f5ab2a9065dbd6599847c299bb6",
+            "length": "1041.37",
+            "height": "480",
+            "width": "640"
+        },
+        {
+            "name": "DontBeaS1947.ogv",
+            "source": "derivative",
+            "format": "Ogg Video",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "ef164e61610088cc871636e88238b33c",
+            "mtime": "1227505250",
+            "size": "74700391",
+            "crc32": "ce355aed",
+            "sha1": "043bdd3ea6efe4a5ce5c84a37c9e42451aa4a558",
+            "length": "1041.4",
+            "height": "300",
+            "width": "400"
+        },
+        {
+            "name": "DontBeaS1947.pack-car.log",
+            "source": "derivative",
+            "filecoin_toolchain": "ipfs_car,stream-commp",
+            "derive_car_module_version": "1.0.1",
+            "stream_commp_version": "1.0.1",
+            "car_format_version": "CARv1",
+            "commp": "baga6ea4seaqiz22tdimvy3nr4lmi5oxcknsclou2zdicx7u5jqvxsgrydip4keq",
+            "root_cid": "bafybeicj2hqeyitdssr4vz4pavyn2jigasr2r35yncsni6tds6mux5xkou",
+            "padded_piece": "2147483648",
+            "unpadded_piece": "2130706432",
+            "format": "Content Addressable aRchive Log",
+            "original": "DontBeaS1947.pack-car.trigger",
+            "mtime": "1675955561",
+            "size": "0",
+            "md5": "d41d8cd98f00b204e9800998ecf8427e",
+            "crc32": "00000000",
+            "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "name": "DontBeaS1947.pack-car.trigger",
+            "source": "original",
+            "mtime": "1675874334",
+            "size": "0",
+            "md5": "d41d8cd98f00b204e9800998ecf8427e",
+            "crc32": "00000000",
+            "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "format": "Content Addressable aRchive Trigger"
+        },
+        {
+            "name": "DontBeaS1947.png",
+            "source": "derivative",
+            "format": "PNG",
+            "original": "DontBeaS1947.mp3",
+            "mtime": "1472145560",
+            "size": "7963",
+            "md5": "c93fee03cae6501329d1eb81a28406fa",
+            "crc32": "c561ab8a",
+            "sha1": "31f4435f5ac77d9516f13732bd9b1c6f7f732cf0"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000001.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "dc11b92072e5cfb18922296c48e8af45",
+            "mtime": "1227505341",
+            "size": "6160",
+            "crc32": "6ce58615",
+            "sha1": "b66d0568f994ad81aba02c7b0c64addeea2065f1"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000060.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "c35ccd60e97fdfa6962ffb0013c4b08b",
+            "mtime": "1227505344",
+            "size": "6106",
+            "crc32": "6a0df4a4",
+            "sha1": "e063e05146754bb815cccb928943f89b95377a38"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000120.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "6a6454e6da0a6062dedb514ed924c9ef",
+            "mtime": "1227505347",
+            "size": "5278",
+            "crc32": "bea73a09",
+            "sha1": "e85a770509e00ffe555ace5f54fa5c6587a34927"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000180.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "9ed4f53851382cba3a8853503832d989",
+            "mtime": "1227505350",
+            "size": "7166",
+            "crc32": "aee37e41",
+            "sha1": "e811476861acd8b952d3c84c289627bc5a4f0db6"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000240.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "458900e4b05089e028e99c94fdf5dfd3",
+            "mtime": "1227505353",
+            "size": "9914",
+            "crc32": "70737d67",
+            "sha1": "49bcd1842b4f9fc0651b6489b05a0ce54169045b"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000300.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "3a6540ba2a27e1d2f98a8df2ecce7ef4",
+            "mtime": "1227505356",
+            "size": "6840",
+            "crc32": "98c75fc6",
+            "sha1": "d21e2360e95df21c9593e0cd312429570feda4c5"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000360.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "6466d0bc5c08cb354bbc42e4a6987821",
+            "mtime": "1227505359",
+            "size": "8966",
+            "crc32": "431407eb",
+            "sha1": "a5ea7eb4ec6705af3291ff9caff4c48ea127050e"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000420.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "591ffc6e78d4c01fab1ac2f26f7b4a15",
+            "mtime": "1227505363",
+            "size": "7519",
+            "crc32": "186eb7b3",
+            "sha1": "1d8669909160e7bdaa1bf9250943c7cac812d8ea"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000480.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "43a4eb090682df53bb2f816f42c02508",
+            "mtime": "1227505366",
+            "size": "7307",
+            "crc32": "34c8f0ad",
+            "sha1": "d645d2b40290b4fff626df3245fbd65a56fd8eda"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000540.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "71df53124ac8c3e0a1b5ffcd518d16ca",
+            "mtime": "1227505369",
+            "size": "5779",
+            "crc32": "5130595",
+            "sha1": "b175528110a903926833f652956196aabfa3885f"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000600.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "326a6e99ba98b8b2700260122feba2af",
+            "mtime": "1227505372",
+            "size": "5683",
+            "crc32": "f65fb794",
+            "sha1": "b6c000ad3c6d74d241a545e4caf15aa7c4e3ed83"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000660.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "0368c72adcfd47290901f2b4ba96eaae",
+            "mtime": "1227505375",
+            "size": "5327",
+            "crc32": "ffb907f4",
+            "sha1": "9b889fed89a63173890033b3f49f8dec12e46c52"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000720.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "8a4c0eaf6ba14902bca6148c5068be41",
+            "mtime": "1227505378",
+            "size": "7429",
+            "crc32": "cba2b5ae",
+            "sha1": "54e1b551cea83c2cbaf16334c3eda6cabb9b3895"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000780.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "746a0d51ba044f27bca406eb0330fd68",
+            "mtime": "1227505382",
+            "size": "7062",
+            "crc32": "195c6d40",
+            "sha1": "114f8d2dd8a85e87f1ef5339932e6a8aa3782205"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000840.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "64f5372236d61977d7498b371d9d458d",
+            "mtime": "1227505385",
+            "size": "6749",
+            "crc32": "7dfa5e7e",
+            "sha1": "24da903a514f6c0617bdfb4d570f2ee4a4b17b20"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000900.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "0c89289e88ea701762f5e5d3aee63a24",
+            "mtime": "1227505388",
+            "size": "7711",
+            "crc32": "9cf3621e",
+            "sha1": "ec3c0c979f7677a9ab4dac30be6481907051be40"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_000960.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "2bfeea35cba21ba6b05301f5bd6d91d1",
+            "mtime": "1227505391",
+            "size": "7440",
+            "crc32": "2372f740",
+            "sha1": "ab490116219b22f34a1795d0c6fafeb1495c3e31"
+        },
+        {
+            "name": "DontBeaS1947.thumbs/DontBeaS1947_001020.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "def5d85263bfb58f609f9f0827c5ed48",
+            "mtime": "1227505394",
+            "size": "7853",
+            "crc32": "76e61ba9",
+            "sha1": "310b49538623283633bba7b547e6a091ba53128c"
+        },
+        {
+            "name": "DontBeaS1947.transmit-car-offline.log",
+            "source": "original",
+            "mtime": "1677021470",
+            "size": "383",
+            "md5": "838d9b675230041664bacf9e5f957b65",
+            "crc32": "0d2537e1",
+            "sha1": "228dbcd302b581b4edfc504543535dfeb170d698",
+            "format": "CAR Transmit Log (Offline)"
+        },
+        {
+            "name": "DontBeaS1947_256kb.rm",
+            "source": "original",
+            "format": "256Kb Real Media",
+            "md5": "4a7ce195e0ea4dc43a50305bdc777345",
+            "mtime": "1046170641",
+            "size": "181625006",
+            "crc32": "2d2d6fff",
+            "sha1": "d490ce9d048eef33a42d2a2acfbdbbc3b917481b",
+            "length": "1042.1",
+            "height": "240",
+            "width": "320"
+        },
+        {
+            "name": "DontBeaS1947_512kb.mp4",
+            "source": "derivative",
+            "format": "512Kb MPEG4",
+            "original": "DontBeaS1947.mpeg",
+            "md5": "7135bf57cb29bb11160ec2940a130455",
+            "mtime": "1227507055",
+            "size": "74149387",
+            "crc32": "940909ee",
+            "sha1": "559f65897ac73fac1fb3f55176cab4affb146b02",
+            "length": "1041.4",
+            "height": "240",
+            "width": "320"
+        },
+        {
+            "name": "DontBeaS1947_64kb.rm",
+            "source": "original",
+            "format": "64Kb Real Media",
+            "md5": "cfe67ac573696f4c267dd01887d81c71",
+            "mtime": "1046170650",
+            "size": "76382196",
+            "crc32": "273a8a6e",
+            "sha1": "8664e65c3cefc80a2661d229a6c3d5e5b992313b",
+            "length": "1042.57",
+            "height": "120",
+            "width": "160"
+        },
+        {
+            "name": "DontBeaS1947_archive.torrent",
+            "source": "metadata",
+            "btih": "a76374f4bf1eb6cff9b19982633fd870d4060907",
+            "mtime": "1767478938",
+            "size": "32269",
+            "md5": "a00b09ad4e8eb18212725ef9c48a39ba",
+            "crc32": "4b54aed7",
+            "sha1": "bedb94d8b7a9c07c6f6ef7bcdfc52bee4f505dd8",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "DontBeaS1947_edit.mp4",
+            "source": "original",
+            "format": "HiRes MPEG4",
+            "md5": "e9d2066cec3604e46e42cf18da0d6009",
+            "mtime": "1057704620",
+            "size": "364563936",
+            "crc32": "b0f5785a",
+            "sha1": "692a266cef5f7a2cea0435bad70a1d128e650680",
+            "length": "1041.34",
+            "height": "240",
+            "width": "320"
+        },
+        {
+            "name": "DontBeaS1947_files.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "102761b4282ac00637e683ec7b9d4467",
+            "summation": "md5"
+        },
+        {
+            "name": "DontBeaS1947_intermediate_asr.json",
+            "source": "derivative",
+            "format": "Intermediate ASR JSON",
+            "original": "DontBeaS1947_whisper_asr.json",
+            "mtime": "1691229005",
+            "size": "22710",
+            "md5": "82988591607e095ead9246a06db249a5",
+            "crc32": "1af361d3",
+            "sha1": "147bdbde4e449c1b69a57a73a4129ce773ae76d5"
+        },
+        {
+            "name": "DontBeaS1947_meta.sqlite",
+            "source": "original",
+            "mtime": "1694709811",
+            "size": "20480",
+            "md5": "951697bf149c9237f9b9fec606c1a766",
+            "crc32": "0c8f85a5",
+            "sha1": "95e87e4ae84acfd181c198caa68cb8aefe7cb014",
+            "format": "Metadata"
+        },
+        {
+            "name": "DontBeaS1947_meta.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1691229116",
+            "size": "3816",
+            "md5": "c2cd6fa67b433897d4542274b22f6af2",
+            "crc32": "fe5094d1",
+            "sha1": "43f42b8bbbc19c624f02a56c227c07f0ba5ae88f"
+        },
+        {
+            "name": "DontBeaS1947_reviews.xml",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1781247205",
+            "size": "48858",
+            "md5": "470bc143d2a157fdfe54055626bd72d6",
+            "crc32": "ab466902",
+            "sha1": "e24c547eae77a5f53579e17b8a9a854e8ce5e01c"
+        },
+        {
+            "name": "DontBeaS1947_whisper_asr.json",
+            "source": "derivative",
+            "whisper_asr_module_version": "20230731.02",
+            "whisper_version": "20230314",
+            "whisper_model_name": "small.en",
+            "whisper_model_hash": "sha256:f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "asr_detected_lang": "en",
+            "asr_detected_lang_conf": "0.99453389644623",
+            "asr_transcribed_lang": "en",
+            "format": "Whisper ASR JSON",
+            "original": "DontBeaS1947.mp4",
+            "mtime": "1691228904",
+            "size": "246779",
+            "md5": "b6762cca78594c1b29f768e0412ae4b9",
+            "crc32": "1ed8f5b7",
+            "sha1": "1e0fc3d6cc62f7aba78c31864de82f7b06110607"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1767478926",
+            "size": "7414",
+            "md5": "18356c6916185a3ec7df0a7b4599bb2e",
+            "crc32": "edce065b",
+            "sha1": "c7914c2a6b42e72346e3702513e92c1513685895",
+            "format": "Item Tile",
+            "rotation": "0"
+        }
+    ],
+    "files_count": 43,
+    "item_last_updated": 1781247206,
+    "item_size": 1430076306,
+    "metadata": {
+        "mediatype": "movies",
+        "identifier": "DontBeaS1947",
+        "publicdate": "2002-07-16 00:00:00",
+        "creator": "U.S. War Department",
+        "description": "Admonishes Americans that they will lose their country if they let fanaticism and hatred turn them into \"suckers.\"  \"Let's forget about 'we' and 'they' -- let's think about us!\" In the context of the emerging Cold War, this film appears paradoxical.",
+        "date": "1947",
+        "licenseurl": "http://creativecommons.org/licenses/publicdomain/",
+        "color": "B&W",
+        "sound": "Sd",
+        "collection": "prelinger",
+        "title": "Don't Be a Sucker",
+        "addeddate": "2002-07-16 00:00:00",
+        "sponsor": "U.S. War Department",
+        "pick": "0",
+        "runtime": "17:21",
+        "shotlist": "Like The House I Live In, this film warns that Americans will lose their country if they let themselves be turned into \"suckers\" by the forces of fanaticism and hatred. This thesis is rendered more powerful by the ever-present example of Nazi Germany, whose capsule history is dramatized as part of this film. There's a great deal of good sense in this film and more than a bit of wartime populism: \"Let's not think about 'we' and 'they.' Let's think about 'us'!\"]\n It's interesting to think of this film in the light of Cold War anti-Communist politics, which really came into their own in the year this film was made. Were the witch-hunting politicians and citizens of the late Forties and early Fifties protecting the people, or were they themselves acting like \"suckers?\"\n\n     \n\n\n   Ken Smith sez:  Everyone has something that can be taken away, explains the narrator of this film, and so does average everyman \"sucker\" Mike -- he stands to lose \"America.\"\n     Mike watches idly while a street corner soapbox orator rants against Negroes, \"alien foreigners\" and Catholics.  Mike thinks this is pretty agreeable, until the rabble-rouser adds \"freemasons\" to his list.  Hey, wait a second, Mike says, I'm a freemason.  Over wanders an elderly man with a Hungarian accent (so he says) who proceeds to set dizzy Mike straight.\n     The Hungarian reminds Mike that Germany was \"a nation of suckers\" who allowed \"crazy people; stupid fanatics\" to use prejudice to \"cripple the nation.\"  \"We must guard everyone's liberties, or we can lose our own,\" he declares.  \"Let's not be suckers!  Let's be selfish about it; let's not think about 'we' and 'they'.  Let's think about 'us'!\"\n     Good direction and an obviously decent budget make this film very watchable, and it's interesting to hear the old man appeal to our \"good, hard, common sense\" in that Bugs Bunny/blue-collar worker colloquial slang that was the accepted voice of Average Joe in postwar America.  \"America is minorities,\" the old man proclaims, \"and that means you and me!\"  This populist New Deal view would disappear as quickly as evil German references in the Republican 1950s.\n\n\n<BR>",
+        "updatedate": "2005-01-13 09:36:44",
+        "updater": "Rick Prelinger",
+        "country": "United States",
+        "subject": "Prejudice;Cold War;Racism",
+        "numeric_id": "360",
+        "type": "MovingImage",
+        "proddate": "1947",
+        "collectionid": "19574",
+        "backup_location": "ia903600_3",
+        "closed_captioning": "no",
+        "identifier-commp": "baga6ea4seaqiz22tdimvy3nr4lmi5oxcknsclou2zdicx7u5jqvxsgrydip4keq",
+        "fil-transport": "boost",
+        "external-identifier": "urn:cid:bafybeicj2hqeyitdssr4vz4pavyn2jigasr2r35yncsni6tds6mux5xkou",
+        "whisper_asr_module_version": "20230731.02",
+        "ccnum": "asr"
+    },
+    "reviews": [
+        {
+            "review_id": "718",
+            "reviewbody": "Apeals to the Americans to feel as one in opposition to discriminate minorities which would lead to threaten everyone, because everyone is a minority.\n\nSo far so good, the movie describes Nazi Germany in a distorted view: \n1. The Nazis were a minority, which took the power by dividing the rest (majority) of the people.\n2. The Catholic Church is seen as prosecuted as well as the Jews (for example!).\n\nFirst, one can say that the Nazis haven't been a minority seducing everybody (or dividing all people). The majority of the people went along with the nazis! They did nothing, they participated! They are fully blamable for also being Nazis.\n\nThe second is that the Catholic church was not that affected by the Government, they even sacrificed the weapons of the military (political power often goes along with considering religous elements).\n\nNice film to see how people are being manipulated with right arguments, as well as changed historical facts.",
+            "reviewtitle": "Unity, Nazi Germany and Suckers",
+            "reviewer": "m.com",
+            "reviewdate": "2002-12-23 16:00:25",
+            "createdate": "2002-12-23 16:00:25",
+            "stars": "4"
+        }
+    ],
+    "server": "dn601203.us.archive.org",
+    "simplelists": {
+        "solo_manifest": {
+            "solo_manifest_dn601203": {
+                "sys_changed_by": {
+                    "source": "task",
+                    "task_id": "5432632198"
+                },
+                "sys_last_changed": "2026-06-12 06:53:36.91521"
+            }
+        }
+    },
+    "solo": true,
+    "uniq": 1343255444,
+    "workable_servers": [
+        "dn601203.us.archive.org"
+    ]
+}

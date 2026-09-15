@@ -1,9 +1,26 @@
 import os
 
 import unittest
+import json
 import math
+from unittest.mock import patch
 from flask.testing import FlaskClient
 from iiify.app import app
+
+def mockJsonResponse(payload):
+    class MockResponse:
+        status_code = 200
+        def json(self):
+            return payload
+
+        def raise_for_status(self):
+            return
+
+    return MockResponse()
+
+def mockResponse(fixture):
+    with open(fixture, "r") as file:
+        return mockJsonResponse(json.load(file))
 
 class TestVideo(unittest.TestCase):
 
@@ -132,6 +149,131 @@ class TestVideo(unittest.TestCase):
         manifest = resp.json
         
         self.assertEqual(28, len(manifest["items"]), "Expected 28 canvases")
+
+    @patch("requests.get")
+    def test_v3_video_original_without_derivatives(self, metadataPatch):
+        """https://github.com/internetarchive/iiif/issues/171
+
+        DontBeaS1947 is a 1947 film uploaded with three separate originals whose format
+        is in VIDEO_FORMATS, but only DontBeaS1947.mpeg has derivatives of its own:
+
+            DontBeaS1947.avi       Cinepack      no derivatives, video/x-msvideo
+            DontBeaS1947.mpeg      MPEG2         derivatives: h.264, 512Kb MPEG4, Ogg Video
+            DontBeaS1947_edit.mp4  HiRes MPEG4   no derivatives, video/mp4
+
+        The .avi sorts first, so the first iteration used to fall through an `else: pass`
+        and leave `body` unbound, 500ing the whole manifest. Had it sorted last, `body`
+        would instead have still held the .mpeg canvas's Choice and painted this canvas
+        with another original's derivatives - which is what the disjointness assertion
+        at the end of this test guards against.
+
+        Deliberately fixture-backed rather than live: this item's derivative set is
+        precisely what is under test, so a future re-derive on the item must not be able
+        to turn this test green for the wrong reason.
+        """
+        def mock_get(url, *args, **kwargs):
+            if "/metadata/" in url:
+                return mockResponse("tests/fixtures/metadata/DontBeaS1947.json")
+            if url.endswith("info.json"):
+                # Cantaloupe, called for the item's thumbnails - not under test here.
+                return mockJsonResponse({
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": url[:-len("/info.json")],
+                    "protocol": "http://iiif.io/api/image",
+                    "profile": ["http://iiif.io/api/image/2/level2.json"],
+                    "width": 320,
+                    "height": 240,
+                })
+            raise AssertionError(f"Unexpected request while building the manifest: {url}")
+
+        metadataPatch.side_effect = mock_get
+
+        # recache=true is required: setUp's NullCache never takes effect (flask_caching is
+        # already initialised against the FileSystemCache in ./cache by import time), so
+        # without it this asserts against whatever a previous run left on disk.
+        resp = self.test_app.get("/iiif/3/DontBeaS1947/manifest.json?recache=true")
+        self.assertEqual(resp.status_code, 200)
+        manifest = resp.json
+
+        canvases = {canvas['id']: canvas for canvas in manifest['items']}
+        prefix = "https://iiif.archive.org/iiif/DontBeaS1947"
+        self.assertEqual(
+            set(canvases),
+            {f"{prefix}/DontBeaS1947/canvas", f"{prefix}/DontBeaS1947_edit/canvas"},
+            "Expected a canvas for the .mpeg and for the playable _edit.mp4, and none "
+            "for the underived, unplayable .avi")
+
+        def bodyItems(canvas):
+            body = canvas['items'][0]['items'][0]['body']
+            return body['items'] if body['type'] == 'Choice' else [body]
+
+        # The .mpeg original has derivatives, so its canvas is a Choice over them plus
+        # the original itself.
+        mpeg = bodyItems(canvases[f"{prefix}/DontBeaS1947/canvas"])
+        self.assertEqual(
+            [item['id'] for item in mpeg],
+            [f"https://archive.org/download/DontBeaS1947/DontBeaS1947{suffix}"
+             for suffix in ("_512kb.mp4", ".mpeg", ".mp4", ".ogv")],
+            "Expected the .mpeg canvas to offer its derivatives in VIDEO_FORMATS order")
+
+        # The _edit.mp4 original has no derivatives but is itself playable, so its canvas
+        # gets a single body built from the original, as the audio branch does.
+        edit = bodyItems(canvases[f"{prefix}/DontBeaS1947_edit/canvas"])
+        self.assertEqual(len(edit), 1, "Expected a single body for the _edit.mp4 canvas")
+        self.assertEqual(
+            edit[0]['id'],
+            "https://archive.org/download/DontBeaS1947/DontBeaS1947_edit.mp4")
+        self.assertEqual(edit[0]['type'], 'Video')
+        self.assertEqual(edit[0]['format'], 'video/mp4')
+
+        # The regression guard: no canvas may be painted with another original's bodies.
+        self.assertEqual(
+            {item['id'] for item in mpeg} & {item['id'] for item in edit},
+            set(),
+            "A canvas is showing another original's derivatives")
+
+        self.assertNotIn(
+            "DontBeaS1947.avi", resp.text,
+            "The underived, unplayable .avi should not appear in the manifest at all")
+
+    @patch("requests.get")
+    def test_v3_video_with_no_renderable_original(self, metadataPatch):
+        """An item where every video original is underived and unplayable.
+
+        Pins the edge case that skipping creates: such an item used to 500 and now
+        returns a manifest with no canvases rather than one canvas per dead player.
+        Documented deliberately - see https://github.com/internetarchive/iiif/issues/171.
+        """
+        with open("tests/fixtures/metadata/DontBeaS1947.json", "r") as file:
+            metadata = json.load(file)
+
+        # Strip the item back to its one underived, unplayable original (the Cinepack .avi).
+        metadata['files'] = [
+            f for f in metadata['files']
+            if f.get('source') != 'derivative'
+            and f['name'] not in ('DontBeaS1947.mpeg', 'DontBeaS1947_edit.mp4')]
+
+        def mock_get(url, *args, **kwargs):
+            if "/metadata/" in url:
+                return mockJsonResponse(metadata)
+            if url.endswith("info.json"):
+                return mockJsonResponse({
+                    "@context": "http://iiif.io/api/image/2/context.json",
+                    "@id": url[:-len("/info.json")],
+                    "protocol": "http://iiif.io/api/image",
+                    "profile": ["http://iiif.io/api/image/2/level2.json"],
+                    "width": 320,
+                    "height": 240,
+                })
+            raise AssertionError(f"Unexpected request while building the manifest: {url}")
+
+        metadataPatch.side_effect = mock_get
+
+        resp = self.test_app.get("/iiif/3/DontBeaS1947/manifest.json?recache=true")
+        self.assertEqual(resp.status_code, 200, "Expected a manifest rather than a 500")
+        self.assertEqual(resp.json['items'], [], "Expected no canvases")
+        self.assertNotIn('behavior', resp.json, "auto-advance makes no sense with no canvases")
+
 
 if __name__ == '__main__':
     unittest.main()
