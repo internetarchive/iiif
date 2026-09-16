@@ -34,9 +34,10 @@ valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
 IMG_FORMATS = ['JPEG']
 AUDIO_FORMATS = ['VBR MP3', '32Kbps MP3', '56Kbps MP3', '64Kbps MP3', '96Kbps MP3', '128Kbps MP3', 'MPEG-4 Audio', 'Flac', 'AIFF', 'Apple Lossless Audio', 'Ogg Vorbis', 'WAVE', '24bit Flac', 'Shorten']
 VIDEO_FORMATS = ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack','QuickTime']
-# Mimetypes a browser can play as-is. An original with no derivatives of its own is
-# only worth a canvas if it is one of these, otherwise the canvas has nothing playable.
-WEB_VIDEO_MIMETYPES = ['video/mp4', 'video/webm', 'video/ogg']
+# Extensions a browser plays as-is, so an original with no video derivative is still
+# worth a canvas. Matched on the name, not to_mimetype(): that guesses over a URL and
+# maps several formats to mimetypes their own filenames contradict.
+PLAYABLE_VIDEO_EXTENSIONS = ('.mp4', '.m4v', '.webm', '.ogv', '.ogg')
 
 class IsCollection(Exception):
     # Used for when we need to raise to the route handler from inside the manifest function
@@ -683,6 +684,17 @@ def addPartOfCollection(resource, collections, domain=None):
             }
         ]
 
+def hasPlayableBody(file, derivatives):
+    """Whether a video original can be painted onto a canvas.
+
+    Either it has a derivative in a format we can offer, or it plays as it stands.
+    Note sortDerivatives buckets *every* derivative - thumbnails, GIFs, waveforms -
+    so "is a key in derivatives" is much weaker than "has something playable".
+    """
+    if any(format in VIDEO_FORMATS for format in derivatives.get(file['name'], {})):
+        return True
+    return file['name'].lower().endswith(PLAYABLE_VIDEO_EXTENSIONS)
+
 def sortDerivatives(metadata, includeVtt=False):
     """
         Sort the files into originals and derivatives, splitting the derivatives into buckets based on the original
@@ -1031,17 +1043,12 @@ def create_manifest3(identifier, domain=None, page=None):
                 c.add_item(ap)
                 manifest.add_item(c)
         else:
-            # An original with no derivatives of its own has nothing to paint onto a canvas
-            # unless it is playable as it stands, so drop those rather than emitting a canvas
-            # that cannot be played: https://github.com/internetarchive/iiif/issues/171
-            videos = [
-                f for f in videos
-                if f['name'] in derivatives
-                or to_mimetype(f['name'], f['format']) in WEB_VIDEO_MIMETYPES
-            ]
-
             # create the canvases for each original
             for file in videos:
+                # nothing playable to paint: https://github.com/internetarchive/iiif/issues/171
+                if not hasPlayableBody(file, derivatives):
+                    continue
+
                 normalised_id = file['name'].rsplit(".", 1)[0]
                 slugged_id = normalised_id.replace(" ", "-")
                 c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
@@ -1103,8 +1110,7 @@ def create_manifest3(identifier, domain=None, page=None):
                                 width=int(file['width']))
                             body.items.append(r)
                 else:
-                    # No derivatives, but the filter above guarantees this original is
-                    # playable on its own, so paint it directly - as the audio branch does.
+                    # no derivatives, so paint the original - as the audio branch does
                     body = AnnotationBody(
                         id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
                         type='Video',
@@ -1120,7 +1126,7 @@ def create_manifest3(identifier, domain=None, page=None):
                 manifest.add_item(c)
 
         # Make behavior "auto-advance if more than one canvas"
-        video_count = len(videos)
+        video_count = len(manifest.items)
         if video_count > 1:
             manifest.behavior = "auto-advance"
 
