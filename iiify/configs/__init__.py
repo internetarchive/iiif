@@ -45,6 +45,15 @@ if CRT and KEY:
 cors = bool(int(config.getdef('server', 'cors', 1)))
 
 iiif_domain = config.getdef('server', 'domain', 'https://iiif.archivelab.org')
+
+# Hosts accepted in a ?domain= query parameter. The value is baked into cached
+# responses, so anything unlisted falls back to the requesting host.
+allowed_domains = [
+    host.strip() for host
+    in config.getdef('server', 'allowed_domains',
+                     'iiif.archive.org,iiif.archivelab.org').split(',')
+    if host.strip()
+]
 media_root = config.getdef('media', 'root', 'media')
 if not os.path.isabs(media_root):
     media = os.path.join(approot, media_root)

@@ -12,8 +12,8 @@ from .resolver import ia_resolver, create_manifest, create_manifest3, scrape, \
     create_annotations, create_vtt_stream, infojson, create_annotations_from_comments, \
     retrieve_collection, MAX_API_LIMIT, MAX_SCRAPE_LIMIT
 from .configs import options, cors, approot, cache_root, media_root, \
-    cache_expr, version, image_server, cache_timeouts
-from urllib.parse import quote
+    cache_expr, version, image_server, cache_timeouts, allowed_domains
+from urllib.parse import quote, urlparse
 import re
 
 
@@ -34,6 +34,24 @@ ARCHIVE = 'https://archive.org'
 
 def cache_bust():
     return request.args.get("recache", "") in ["True", "true", "1"]
+
+def requested_domain():
+    """The base URI to build this response's URIs from.
+
+    Never trust ?domain= blindly. Flask-Caching keys on the path alone, so a
+    caller-supplied value ends up in a cached response that later, parameter-free
+    requests are served - one request would poison what everyone else sees.
+    Anything not explicitly allowed falls back to the requesting host.
+
+    For the same reason, do not add a query parameter that changes a cached
+    response's body without also keying the cache on it.
+    """
+    requested = request.args.get('domain')
+    if requested:
+        permitted = set(allowed_domains) | {urlparse(request.url_root).hostname}
+        if urlparse(requested).hostname in permitted:
+            return purify_domain(requested)
+    return purify_domain(request.url_root)
 
 @app.route('/')
 def mainentry():
@@ -57,7 +75,7 @@ def catalog():
     cursor = request.args.get('cursor', '')
     fields = request.args.get('fields', '')
     sorts = request.args.get('sorts', '')
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    domain = requested_domain()
     identifiers = [
         i.get('identifier') for i in scrape(
             q, cursor=cursor, fields=fields, sorts=sorts, restrict_to_iiif=True
@@ -123,7 +141,7 @@ def helper(identifier):
 def view(identifier):
     validate_ia_identifier(identifier, page_suffix=True)
 
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    domain = requested_domain()
     uri = '%s%s' % (domain, identifier)
     page = request.args.get('page', None)
     citation = request.args.get('citation', None)
@@ -143,7 +161,7 @@ def view(identifier):
 @cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust)
 def collection3JSON(identifier):
     validate_ia_identifier(identifier, page_suffix=False)
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    domain = requested_domain()
 
     try:
         collection = create_collection3(identifier, domain=domain)
@@ -161,7 +179,7 @@ def collection3JSON(identifier):
 @cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust)
 def collection3page(identifier, page):
     validate_ia_identifier(identifier, page_suffix=False)
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    domain = requested_domain()
 
     try:
         collection = create_collection3(identifier, domain=domain, page=int(page))
@@ -195,7 +213,7 @@ def collectionPage(identifier, page):
 def manifest3(identifier):
     validate_ia_identifier(identifier, page_suffix=True)
 
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    domain = requested_domain()
     # Asking for a manifest of a single page
     # identifier would look like:
     # bub_gb_3Kt5kiw9KYcC$8
@@ -219,14 +237,14 @@ def manifest3(identifier):
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def annnotations(version: str, identifier: str, fileName: str, canvas_no: int):
     validate_ia_identifier(identifier, page_suffix=False)
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    domain = requested_domain()
     return ldjsonify(create_annotations(version, identifier, fileName, canvas_no, domain=domain))
 
 @app.route("/iiif/3/annotations/<identifier>/comments.json")
 @cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
 def commenting_annotations(identifier: str):
     validate_ia_identifier(identifier, page_suffix=False)
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    domain = requested_domain()
     return ldjsonify(create_annotations_from_comments(identifier, domain=domain))
 
 @app.route('/iiif/vtt/streaming/<identifier>.vtt')
@@ -252,7 +270,7 @@ def manifest(identifier):
 @app.route('/iiif/2/<identifier>/manifest.json')
 def manifest2(identifier):
     validate_ia_identifier(identifier, page_suffix=True)
-    domain = purify_domain(request.args.get('domain', request.url_root))
+    domain = requested_domain()
     page = None
     if '$' in identifier:
         identifier, page = identifier.split('$')
