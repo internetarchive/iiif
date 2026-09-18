@@ -36,22 +36,28 @@ def cache_bust():
     return request.args.get("recache", "") in ["True", "true", "1"]
 
 def requested_domain():
-    """The base URI to build this response's URIs from.
+    """The base URI this response's URIs are built from.
 
-    Never trust ?domain= blindly. Flask-Caching keys on the path alone, so a
-    caller-supplied value ends up in a cached response that later, parameter-free
-    requests are served - one request would poison what everyone else sees.
-    Anything not explicitly allowed falls back to the requesting host.
-
-    For the same reason, do not add a query parameter that changes a cached
-    response's body without also keying the cache on it.
+    Rebuilt from the allowlist entry that matched, never echoed back from the
+    caller: validating one component of a URL and then emitting the whole string
+    lets `https://evil.example\\@iiif.archive.org/` past a hostname check.
     """
     requested = request.args.get('domain')
     if requested:
-        permitted = set(allowed_domains) | {urlparse(request.url_root).hostname}
-        if urlparse(requested).hostname in permitted:
-            return purify_domain(requested)
+        host = urlparse(requested).hostname
+        if host in allowed_domains:
+            return purify_domain('https://%s/' % host)
     return purify_domain(request.url_root)
+
+def cache_key():
+    """Every request input a cached response body varies on.
+
+    Flask-Caching keys on request.path alone. The domain is drawn from ?domain=
+    and from the Host header, so without it here one request's manifest is served
+    to the next caller. If you make a cached response depend on anything else -
+    another query parameter, another header - it has to appear here too.
+    """
+    return 'view/%s|%s' % (request.path, requested_domain())
 
 @app.route('/')
 def mainentry():
@@ -158,7 +164,7 @@ def view(identifier):
 
 
 @app.route('/iiif/3/<identifier>/collection.json')
-@cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust, key_prefix=cache_key)
 def collection3JSON(identifier):
     validate_ia_identifier(identifier, page_suffix=False)
     domain = requested_domain()
@@ -176,7 +182,7 @@ def collection3JSON(identifier):
 
 
 @app.route('/iiif/3/<identifier>/<page>/collection.json')
-@cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["med"], forced_update=cache_bust, key_prefix=cache_key)
 def collection3page(identifier, page):
     validate_ia_identifier(identifier, page_suffix=False)
     domain = requested_domain()
@@ -195,21 +201,21 @@ def collection3page(identifier, page):
 
 
 @app.route('/iiif/<identifier>/collection.json')
-@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust, key_prefix=cache_key)
 def collectionJSON(identifier):
     validate_ia_identifier(identifier, page_suffix=False)
     return collection3JSON(identifier)
 
 
 @app.route('/iiif/<identifier>/<page>/collection.json')
-@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust, key_prefix=cache_key)
 def collectionPage(identifier, page):
     validate_ia_identifier(identifier, page_suffix=False)
     return collection3page(identifier, page)
 
 
 @app.route('/iiif/3/<identifier>/manifest.json')
-@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust, key_prefix=cache_key)
 def manifest3(identifier):
     validate_ia_identifier(identifier, page_suffix=True)
 
@@ -234,21 +240,21 @@ def manifest3(identifier):
         # abort(404)
 
 @app.route('/iiif/<int:version>/annotations/<identifier>/<fileName>/<int:canvas_no>.json')
-@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust, key_prefix=cache_key)
 def annnotations(version: str, identifier: str, fileName: str, canvas_no: int):
     validate_ia_identifier(identifier, page_suffix=False)
     domain = requested_domain()
     return ldjsonify(create_annotations(version, identifier, fileName, canvas_no, domain=domain))
 
 @app.route("/iiif/3/annotations/<identifier>/comments.json")
-@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust, key_prefix=cache_key)
 def commenting_annotations(identifier: str):
     validate_ia_identifier(identifier, page_suffix=False)
     domain = requested_domain()
     return ldjsonify(create_annotations_from_comments(identifier, domain=domain))
 
 @app.route('/iiif/vtt/streaming/<identifier>.vtt')
-@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust, key_prefix=cache_key)
 def vtt_stream(identifier):
     validate_ia_identifier(identifier, page_suffix=False)
     response = make_response(create_vtt_stream(identifier))
@@ -262,7 +268,7 @@ def search(identifier):
     return ldjsonify(iiif_search(identifier, query))
 
 @app.route('/iiif/<identifier>/manifest.json')
-@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust)
+@cache.cached(timeout=cache_timeouts["long"], forced_update=cache_bust, key_prefix=cache_key)
 def manifest(identifier):
     validate_ia_identifier(identifier, page_suffix=True)
     return manifest3(identifier)

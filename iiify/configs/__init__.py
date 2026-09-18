@@ -15,6 +15,7 @@ import sys
 import types
 import configparser
 import json
+from urllib.parse import urlparse
 
 path = os.path.dirname(os.path.realpath(__file__))
 approot = os.path.abspath(os.path.join(path, os.pardir))
@@ -46,14 +47,15 @@ cors = bool(int(config.getdef('server', 'cors', 1)))
 
 iiif_domain = config.getdef('server', 'domain', 'https://iiif.archivelab.org')
 
-# Hosts accepted in a ?domain= query parameter. The value is baked into cached
-# responses, so anything unlisted falls back to the requesting host.
-allowed_domains = [
-    host.strip() for host
-    in config.getdef('server', 'allowed_domains',
-                     'iiif.archive.org,iiif.archivelab.org').split(',')
-    if host.strip()
-]
+# Hosts this deployment will mint URIs for when asked via ?domain= . A deployment
+# that sets server.domain allows itself automatically; anything else falls back to
+# the host the request actually arrived on.
+allowed_domains = frozenset(
+    [host.strip() for host
+     in config.getdef('server', 'allowed_domains', 'iiif.archive.org').split(',')
+     if host.strip()]
+    + [host for host in [urlparse(iiif_domain).hostname] if host]
+)
 media_root = config.getdef('media', 'root', 'media')
 if not os.path.isabs(media_root):
     media = os.path.join(approot, media_root)
