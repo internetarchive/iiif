@@ -67,6 +67,9 @@ class TestVideo(unittest.TestCase):
 
     def tearDown(self) -> None:
         shutil.rmtree(self.cache_dir, ignore_errors=True)
+        # The module-global cache outlives this class, so leave it pointing somewhere
+        # that exists - otherwise later test modules write into a deleted directory.
+        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
 
     def test_v3_single_video_manifest(self):
         resp = self.test_app.get("/iiif/3/youtube-7w8F2Xi3vFw/manifest.json")
