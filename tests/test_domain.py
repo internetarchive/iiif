@@ -66,6 +66,24 @@ class TestRequestedDomain(unittest.TestCase):
                                      headers={"Host": "iiif.archive.org"})
         self.assertEqual(resp.json['id'], CANONICAL)
 
+    def test_refused_domain_is_logged(self):
+        """A refusal degrades an integrator silently, so it has to be greppable."""
+        with patch("iiify.app.create_manifest3", side_effect=fakeManifest):
+            with self.assertLogs('iiify.app', level='WARNING') as logged:
+                self.test_app.get(f"{MANIFEST}?domain=https://evil.example/",
+                                  headers={"Host": "iiif.archive.org"})
+        self.assertIn('evil.example', logged.output[0])
+
+    def test_refused_domain_cannot_forge_log_lines(self):
+        """The caller's raw string must not reach the log, or a crafted domain
+        writes its own entries."""
+        with patch("iiify.app.create_manifest3", side_effect=fakeManifest):
+            with self.assertLogs('iiify.app', level='WARNING') as logged:
+                self.test_app.get(f"{MANIFEST}?domain=https://a.example/%0d%0aFAKE",
+                                  headers={"Host": "iiif.archive.org"})
+        self.assertNotIn('\n', logged.output[0])
+        self.assertNotIn('FAKE', logged.output[0])
+
     def test_allowed_domain_is_honoured(self):
         with patch("iiify.app.create_manifest3", side_effect=fakeManifest):
             resp = self.test_app.get(f"{MANIFEST}?domain=https://iiif.archive.org/",

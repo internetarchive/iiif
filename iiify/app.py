@@ -47,6 +47,11 @@ def requested_domain():
         host = urlparse(requested).hostname
         if host in allowed_domains:
             return purify_domain('https://%s/' % host)
+        # Otherwise this is silent: an integrator passing a domain we do not list
+        # gets archive.org URIs instead of its own, with nothing to grep for. Log
+        # the parsed host rather than the caller's raw string, so a crafted value
+        # cannot inject line breaks into the log.
+        app.logger.warning('Ignoring unlisted ?domain= host %r', host)
     return purify_domain(request.url_root)
 
 def cache_key():
