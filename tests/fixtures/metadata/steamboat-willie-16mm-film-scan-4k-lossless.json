@@ -1,0 +1,366 @@
+{
+  "created": 1790361259,
+  "d1": "dn801207.us.archive.org",
+  "dir": "/0/items/steamboat-willie-16mm-film-scan-4k-lossless",
+  "files": [
+    {
+      "name": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).01.png",
+      "source": "original",
+      "mtime": "1705178585",
+      "size": "5657193",
+      "md5": "da3dcbfcd74c1966c7a36a1d8fc5c477",
+      "crc32": "6b08a3eb",
+      "sha1": "daad4b89bbbfacc90f75585d7c889b368550aef9",
+      "format": "PNG"
+    },
+    {
+      "name": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).01_thumb.jpg",
+      "source": "derivative",
+      "format": "JPEG Thumb",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).01.png",
+      "mtime": "1705179705",
+      "size": "8307",
+      "md5": "f118f49fc690ffc05a786f709b6f3a63",
+      "crc32": "a455a96a",
+      "sha1": "376ee25eee54d8d4251bf7e743063843e82450c4"
+    },
+    {
+      "name": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "source": "original",
+      "mtime": "1705174832",
+      "size": "36674687342",
+      "md5": "928b0e6ede37c62b099cd775f1ff4b46",
+      "crc32": "51fb3b14",
+      "sha1": "44c34cbb1d3e3c13d24b9cffed9330242decf03d",
+      "format": "QuickTime",
+      "length": "422.96",
+      "width": "3400",
+      "height": "2550"
+    },
+    {
+      "name": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mp4",
+      "source": "derivative",
+      "format": "h.264",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705179098",
+      "size": "41260741",
+      "md5": "5bf939b7ba7f1291ec2e02f3b38a915d",
+      "crc32": "9570beb9",
+      "sha1": "01bc066020c9cc90a6973c01273c402a84ed4830",
+      "length": "423",
+      "width": "640",
+      "height": "480"
+    },
+    {
+      "name": "__ia_thumb.jpg",
+      "source": "original",
+      "mtime": "1705179249",
+      "size": "9453",
+      "md5": "7719fcc98beec37f2f4d824312f0e292",
+      "crc32": "1d1063a5",
+      "sha1": "dcc5bbda68d5f264773e59f9d9cdff37a25b7d32",
+      "format": "Item Tile",
+      "rotation": "0"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000001.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176235",
+      "size": "19141",
+      "md5": "c06af1d6f002ce08d2869aba47be8ac5",
+      "crc32": "d7594979",
+      "sha1": "200c95d149e53f1dcfc04f2b41bbf9bf26b4b44d"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000057.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176270",
+      "size": "47137",
+      "md5": "7dba2c3c3e9328def2f0b85c2c74e467",
+      "crc32": "7644041e",
+      "sha1": "a5f97d5d6d341b98c8d19420f0789f75fc90bf02"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000087.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176309",
+      "size": "72542",
+      "md5": "306e1ea14a95b528953570b51f451a3d",
+      "crc32": "0958d06e",
+      "sha1": "255d3843c9874c575f43b8df1a6018e1ac42bd7b"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000117.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176344",
+      "size": "54401",
+      "md5": "8c7f5ba85091317f91a1e4cbd8c7a45b",
+      "crc32": "0f119374",
+      "sha1": "05ad175b5b7841f62fd0a4cad844c781c927f147"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000147.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176378",
+      "size": "78350",
+      "md5": "b6215a70da93ddb3d9223906f1529fd2",
+      "crc32": "67ec383c",
+      "sha1": "b626c27c815d4e0880844533784309911495fe16"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000177.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176414",
+      "size": "66418",
+      "md5": "be74064dc05a5e8bd2113efbcdf71a29",
+      "crc32": "83ea12a2",
+      "sha1": "f1993d4047d4dabf703d508e6ef5696cbf9d6453"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000207.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176450",
+      "size": "66621",
+      "md5": "b8ef9a245c43fd1ae7158d1b46ff093c",
+      "crc32": "9303dc54",
+      "sha1": "439f7c88c3f527880759cb69fa08f93a4842b60c"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000237.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176511",
+      "size": "71643",
+      "md5": "860453e98efc008fab85e0c7ab1f6a91",
+      "crc32": "1dc78165",
+      "sha1": "59701627d1e8708fef33513ebc7b71bafb837a5f"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000267.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176632",
+      "size": "62017",
+      "md5": "9e84d7ae4e9f4a1495dd6c2cc3d1170a",
+      "crc32": "cae1c871",
+      "sha1": "fd16115d3f1c6ee85e5c2dab3956f35b7c6c1eeb"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000297.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176769",
+      "size": "74684",
+      "md5": "f71fb4de1079c8de20256259ae1ad87c",
+      "crc32": "51b5b561",
+      "sha1": "c393e1c948d24075cba3cbed070102468012d0b5"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000327.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705176905",
+      "size": "70807",
+      "md5": "c9ae2039d54c999d976907585c074349",
+      "crc32": "9d53084a",
+      "sha1": "92b7da4934ec2185107e5e4c8a14a44f9ef042f7"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000357.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705177032",
+      "size": "63656",
+      "md5": "ff33da17ee511e6e768ea749710a66cf",
+      "crc32": "ce63046a",
+      "sha1": "146200d9269b0e74dd5896ded71ab9d06eb51b10"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000387.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705177132",
+      "size": "72636",
+      "md5": "658ca84eb8987cf2e8f0c3ba6db93bef",
+      "crc32": "00035123",
+      "sha1": "ff382f413b53eeadcfa3ca192551143942b461d7"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000417.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705177211",
+      "size": "70835",
+      "md5": "713bd7ec3ef8f717ddc3c10ceae77dbb",
+      "crc32": "e588c88f",
+      "sha1": "2a48909333700578c9a401b45a32f4ea984b50ad"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless.thumbs/Steamboat Willie [16mm Film Scan]_ProRes (3400x2550)_000422.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "Steamboat Willie [16mm Film Scan]_ProRes (3400x2550).mov",
+      "mtime": "1705177221",
+      "size": "64135",
+      "md5": "f1b869d0716627d822694656945582e9",
+      "crc32": "8d2d66a1",
+      "sha1": "45d29ad858f135ce4abc6e5bdc61609f97c387f3"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless_archive.torrent",
+      "source": "metadata",
+      "btih": "e0b8d33c9174b7cf42f8bb806cc2e3504d6b8c12",
+      "mtime": "1705179716",
+      "size": "178384",
+      "md5": "4439cec2f08a531811a3642fb3a77559",
+      "crc32": "472137f8",
+      "sha1": "9a120add0fab9de097b6e0b654034b92ea02428e",
+      "format": "Archive BitTorrent"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless_files.xml",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "2da24cd3559ce660810bb65e8b4e0aec",
+      "summation": "md5"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless_meta.sqlite",
+      "source": "original",
+      "mtime": "1705179296",
+      "size": "20480",
+      "md5": "d6c87c4bb0b8ab42158e209c3f8f23f7",
+      "crc32": "68e81c5e",
+      "sha1": "58113849676161300a6866485f6a3cdfb87466d9",
+      "format": "Metadata"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless_meta.xml",
+      "source": "original",
+      "mtime": "1705175896",
+      "size": "1208",
+      "md5": "bafd21dfef5c03287a86d432590ace8f",
+      "crc32": "628be541",
+      "sha1": "03788c3bbcfd393cc2b0749f7a75cfa7a998d4ff",
+      "format": "Metadata"
+    },
+    {
+      "name": "steamboat-willie-16mm-film-scan-4k-lossless_reviews.xml",
+      "source": "original",
+      "mtime": "1705959557",
+      "size": "2770",
+      "md5": "f3021fbb1c0123403b9aac13aceb01b3",
+      "crc32": "1d6f1fc2",
+      "sha1": "8af7772d85b67d77d66923754689c76f1cdb7859",
+      "format": "Metadata"
+    }
+  ],
+  "files_count": 25,
+  "item_last_updated": 1705959558,
+  "item_size": 36722780901,
+  "metadata": {
+    "identifier": "steamboat-willie-16mm-film-scan-4k-lossless",
+    "mediatype": "movies",
+    "collection": "opensource_movies",
+    "description": "<div>Scanned by Reel Revival Film</div><div><br /></div><div><span class=\"css-1qaijid r-bcqeeo r-qvutc0 r-poiln3\">A 16mm film scan of the now public domain Steamboat Willie cartoon. It's incomplete, missing a small scene due to early censorship of the animation.</span></div>",
+    "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+    "subject": [
+      "Steamboat Willie",
+      "Public Domain",
+      "Film Scan",
+      "Film",
+      "16mm Film"
+    ],
+    "title": "Steamboat Willie - 16mm Film Scan [4K - ProRes 4:2:2]",
+    "uploader": "captain_vg@protonmail.com",
+    "publicdate": "2024-01-13 19:40:58",
+    "addeddate": "2024-01-13 19:40:58",
+    "curation": "[curator]validator@archive.org[/curator][date]20240113195816[/date][comment]checked for malware[/comment]"
+  },
+  "reviews": [
+    {
+      "reviewtitle": "Thanks for uploading this. \ud83d\udd25\ud83d\udc4d",
+      "reviewbody": "neat. sorry, not much to say. Just thought it was cool that somebody uploaded a 16mm film scan of steamboat willie. and the comment section seemed empty, so figured I might just give it something so it didn't look so empty. \ud83e\udd37\u200d\u2642\ufe0f",
+      "stars": "5",
+      "reviewer": "BookWyrm33",
+      "reviewdate": "2024-01-14 15:50:35",
+      "createdate": "2024-01-14 15:50:35",
+      "reviewer_itemname": "@bookwyrm33"
+    },
+    {
+      "reviewtitle": "I love this",
+      "reviewbody": "It's great to see this archived and preserved in such high quality. It really gives you the ability to see just how much work and technology went into these.",
+      "stars": "5",
+      "reviewer": "breakingitdown",
+      "reviewdate": "2024-01-15 16:17:37",
+      "createdate": "2024-01-15 16:17:37",
+      "reviewer_itemname": "@breakitdownforme"
+    },
+    {
+      "reviewtitle": "frame by frame: and with visible soundtrack",
+      "reviewbody": "\nThis is nifty, and can step each frame.   great.    Love the visible soundtrack.\n\ntoot'ed: https://mastodon.archive.org/@brewsterkahle/111768093985792235",
+      "stars": "5",
+      "reviewer": "brewster",
+      "reviewdate": "2024-01-16 23:38:01",
+      "createdate": "2024-01-16 23:38:01",
+      "reviewer_itemname": "@brewster"
+    },
+    {
+      "reviewtitle": "A Special Moment",
+      "reviewbody": "\"Steamboat Willie\" is indeed one of the finest cartoons of its time.",
+      "stars": "5",
+      "reviewer": "Thundera87",
+      "reviewdate": "2024-01-17 20:26:37",
+      "createdate": "2024-01-17 20:26:37",
+      "reviewer_itemname": "@thundera87"
+    },
+    {
+      "reviewtitle": "Incomplete ersion",
+      "reviewbody": "Excludes opening and closing cards and pig-accordion nipple-playing scene (@5:39:22). Interesting though to see how the censored print plays. Otherwise, an authentic 24 fps scan with scratches and dust particles preserved. Hay truck reveals a small-cap \"D\" before the word \"HAY\" that is mostly cropped out of other prints (@2:39:05).",
+      "stars": "4",
+      "reviewer": "G. James Berigan",
+      "reviewdate": "2024-01-22 21:39:15",
+      "createdate": "2024-01-22 21:39:15",
+      "reviewer_itemname": "@g_james_berigan"
+    }
+  ],
+  "server": "dn801207.us.archive.org",
+  "simplelists": {
+    "solo_manifest": {
+      "solo_manifest_dn801207": {
+        "sys_changed_by": {
+          "source": "task",
+          "task_id": "5464731149"
+        },
+        "sys_last_changed": "2026-06-25 08:42:44.001711"
+      }
+    }
+  },
+  "solo": true,
+  "uniq": 1767348833,
+  "workable_servers": [
+    "dn801207.us.archive.org"
+  ]
+}
