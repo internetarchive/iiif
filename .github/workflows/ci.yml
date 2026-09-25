@@ -2,9 +2,13 @@
 
 name: Run-tests
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
-on: [pull_request]
+# Controls when the action will run: pushes to the default branch, and every pull
+# request. Without the push trigger there is no baseline on main, so a failure that
+# arrives with a merge is indistinguishable from one a pull request introduced.
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   build:
