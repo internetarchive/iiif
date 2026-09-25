@@ -34,6 +34,10 @@ valid_filetypes = ['jpg', 'jpeg', 'png', 'gif', 'tif', 'jp2', 'pdf', 'tiff']
 IMG_FORMATS = ['JPEG']
 AUDIO_FORMATS = ['VBR MP3', '32Kbps MP3', '56Kbps MP3', '64Kbps MP3', '96Kbps MP3', '128Kbps MP3', 'MPEG-4 Audio', 'Flac', 'AIFF', 'Apple Lossless Audio', 'Ogg Vorbis', 'WAVE', '24bit Flac', 'Shorten']
 VIDEO_FORMATS = ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4', 'MPEG2', 'h.264', 'Matroska', 'Ogg Video', 'Ogg Theora', 'WebM', 'Windows Media', 'Cinepack','QuickTime']
+# Extensions a browser plays as-is, so an original with no video derivative is still
+# worth a canvas. Matched on the name, not to_mimetype(): that guesses over a URL and
+# maps several formats to mimetypes their own filenames contradict.
+PLAYABLE_VIDEO_EXTENSIONS = ('.mp4', '.m4v', '.webm', '.ogv', '.ogg')
 
 class IsCollection(Exception):
     # Used for when we need to raise to the route handler from inside the manifest function
@@ -680,6 +684,17 @@ def addPartOfCollection(resource, collections, domain=None):
             }
         ]
 
+def hasPlayableBody(file, derivatives):
+    """Whether a video original can be painted onto a canvas.
+
+    Either it has a derivative in a format we can offer, or it plays as it stands.
+    Note sortDerivatives buckets *every* derivative - thumbnails, GIFs, waveforms -
+    so "is a key in derivatives" is much weaker than "has something playable".
+    """
+    if any(format in VIDEO_FORMATS for format in derivatives.get(file['name'], {})):
+        return True
+    return file['name'].lower().endswith(PLAYABLE_VIDEO_EXTENSIONS)
+
 def sortDerivatives(metadata, includeVtt=False):
     """
         Sort the files into originals and derivatives, splitting the derivatives into buckets based on the original
@@ -967,10 +982,7 @@ def create_manifest3(identifier, domain=None, page=None):
 
     elif mediatype == "movies":
         (originals, derivatives, vttfiles) = sortDerivatives(metadata, includeVtt=True)
-        # Make behavior "auto-advance if more than one original"
-        video_count = sum(f['format'] in VIDEO_FORMATS for f in originals)
-        if video_count > 1:
-            manifest.behavior = "auto-advance"
+        videos = [f for f in originals if f['format'] in VIDEO_FORMATS]
 
         addThumbnailNav(manifest, identifier, metadata["files"])    
 
@@ -987,7 +999,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     filedata = file
 
             # create the canvases for each original
-            for file in [f for f in originals if f['format'] in VIDEO_FORMATS]:
+            for file in videos:
                 normalised_id = file['name'].rsplit(".", 1)[0]
                 slugged_id = normalised_id.replace(" ", "-")
                 c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
@@ -1032,7 +1044,11 @@ def create_manifest3(identifier, domain=None, page=None):
                 manifest.add_item(c)
         else:
             # create the canvases for each original
-            for file in [f for f in originals if f['format'] in VIDEO_FORMATS]:
+            for file in videos:
+                # nothing playable to paint: https://github.com/internetarchive/iiif/issues/171
+                if not hasPlayableBody(file, derivatives):
+                    continue
+
                 normalised_id = file['name'].rsplit(".", 1)[0]
                 slugged_id = normalised_id.replace(" ", "-")
                 c_id = f"{URI_PRIFIX}/{identifier}/{slugged_id}/canvas"
@@ -1094,13 +1110,25 @@ def create_manifest3(identifier, domain=None, page=None):
                                 width=int(file['width']))
                             body.items.append(r)
                 else:
-                    # todo: deal with instances where there are no derivatives for whatever reason
-                    pass
+                    # no derivatives, so paint the original - as the audio branch does
+                    body = AnnotationBody(
+                        id=f"https://archive.org/download/{identifier}/{file['name'].replace(' ', '%20')}",
+                        type='Video',
+                        format=to_mimetype(file['name'], file['format']),
+                        label={"none": [file['format']]},
+                        duration=float(file['length']),
+                        height=int(file['height']),
+                        width=int(file['width']))
 
                 anno.body = body
                 ap.add_item(anno)
                 c.add_item(ap)
                 manifest.add_item(c)
+
+        # Make behavior "auto-advance if more than one canvas"
+        video_count = len(manifest.items)
+        if video_count > 1:
+            manifest.behavior = "auto-advance"
 
         imgs = [f for f in originals if f['format'] in IMG_FORMATS]
         if imgs:
