@@ -72,7 +72,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['items']),12,f"Expected 12 canvases but got: {len(manifest['items'])}")
-        self.assertEqual("128kbps mp3".lower() in resp.text.lower(), True, f"Expected the string '128kbps mp3'")
+        self.assertEqual("64kbps mp3".lower() in resp.text.lower(), True, f"Expected the string '64kbps mp3'")
 
     def test_v3_aiff(self):
         resp = self.test_app.get("/iiif/3/julian-damian-marley-with-the-uprising-band-shoreline-81697/manifest.json")
