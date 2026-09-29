@@ -65,7 +65,9 @@ class TestAnnotations(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         self.assertEqual(annotations['@context'], "http://iiif.io/api/presentation/3/context.json","Unexpected context")
         self.assertEqual(annotations['type'], "AnnotationPage", "Unexpected type, expected AnnotationPage")
-        self.assertEqual(len(annotations['items']), 38, "Unexpected number of annotations")
+        # Live item: review annotations only accrue over time, so assert a floor
+        # rather than an exact count to avoid drift-induced flakiness (see #177).
+        self.assertGreaterEqual(len(annotations['items']), 38, "Unexpected number of annotations")
         ids = []
         for anno in annotations['items']:
             self.assertEqual(anno['type'], "Annotation", "Expected type of Annotation")
