@@ -1,14 +1,53 @@
 import os
 
+import json
+import shutil
+import tempfile
 import unittest
+from unittest.mock import patch
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
+
+
+def mockMetadataOnly(metadata):
+    """A requests.get stand-in serving `metadata` and refusing everything else.
+
+    Any other call - Cantaloupe above all - raises, so a test asserting that no image
+    server was contacted fails loudly instead of quietly succeeding against a live one.
+    """
+    class MockResponse:
+        status_code = 200
+
+        def json(self):
+            return metadata
+
+        def raise_for_status(self):
+            return
+
+    def mock_get(url, *args, **kwargs):
+        if "/metadata/" in url:
+            return MockResponse()
+        raise AssertionError(f"Unexpected request while building the manifest: {url}")
+
+    return mock_get
+
 
 class TestManifests(unittest.TestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        # flask_caching binds a FileSystemCache in ./cache at import time, so setting
+        # CACHE_TYPE here is too late - rebind it at a throwaway directory instead, or
+        # these tests both assert against and overwrite the application's real cache.
+        self.cache_dir = tempfile.mkdtemp()
+        cache.init_app(app, config={'CACHE_TYPE': 'FileSystemCache',
+                                    'CACHE_DIR': self.cache_dir})
         self.test_app = FlaskClient(app)
+
+    def tearDown(self) -> None:
+        shutil.rmtree(self.cache_dir, ignore_errors=True)
+        # The module-global cache outlives this class, so leave it pointing somewhere
+        # that exists - otherwise later test modules write into a deleted directory.
+        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
 
     def test_no_version(self):
         resp = self.test_app.get("/iiif/rashodgson68/manifest.json")
@@ -144,12 +183,27 @@ class TestManifests(unittest.TestCase):
         manifest = resp.json
         self.assertEqual(len(manifest['items']),6, f"Expected five canvases, but got {len(manifest['items'])}")
 
-    def test_encoded_thumb(self):    
-        resp = self.test_app.get("/iiif/3/steamboat-willie-16mm-film-scan-4k-lossless/manifest.json")
+    def test_encoded_thumb(self):
+        # A movies item: its thumbnail is a still, not an image derivative, so it is
+        # linked straight from archive.org and Cantaloupe is never asked (issue #141).
+        # The mock refuses every non-metadata request, which is what proves that.
+        with open("tests/fixtures/metadata/steamboat-willie-16mm-film-scan-4k-lossless.json") as fh:
+            metadata = json.load(fh)
+
+        with patch('requests.get', mockMetadataOnly(metadata)):
+            resp = self.test_app.get("/iiif/3/steamboat-willie-16mm-film-scan-4k-lossless/manifest.json")
+
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(len(manifest['thumbnail']),1, f"Expected 1 thumbnails, but got {len(manifest['thumbnail'])}")
-        self.assertEqual(manifest['thumbnail'][0]['id'],"https://iiif.archive.org/image/iiif/2/steamboat-willie-16mm-film-scan-4k-lossless%2fSteamboat%20Willie%20%5B16mm%20Film%20Scan%5D_ProRes%20%283400x2550%29.01_thumb.jpg/full/192,/0/default.jpg", f"Expected URL to be encoded")
+        # 16 files are thumbnail-formatted, but 15 of them live under .thumbs/ and are
+        # video navigation frames, so only the one JPEG Thumb becomes a thumbnail.
+        self.assertEqual(len(manifest['thumbnail']),1, f"Expected 1 thumbnail, but got {len(manifest['thumbnail'])}")
+        self.assertEqual(manifest['thumbnail'][0]['id'],"https://archive.org/download/steamboat-willie-16mm-film-scan-4k-lossless/Steamboat%20Willie%20%5B16mm%20Film%20Scan%5D_ProRes%20%283400x2550%29.01_thumb.jpg", f"Expected URL to be encoded")
+        self.assertEqual(manifest['thumbnail'][0]['format'],"image/jpeg", f"Unexpected thumbnail format")
+        # A movie thumbnail gets no width/height: the canvas is sized by its video body,
+        # and the file metadata has no dimensions to give, so any would be invented.
+        self.assertNotIn('width', manifest['thumbnail'][0], "Movie thumbnails should not carry a width")
+        self.assertNotIn('height', manifest['thumbnail'][0], "Movie thumbnails should not carry a height")
 
         self.assertEqual(len(manifest['items']),1, f"Expected 1 canvas, but got {len(manifest['items'])}")
 

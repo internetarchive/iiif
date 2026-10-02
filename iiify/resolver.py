@@ -39,6 +39,9 @@ VIDEO_FORMATS = ['MPEG4', 'h.264 HD', 'h.264 MPEG4', '512Kb MPEG4', 'HiRes MPEG4
 # worth a canvas. Matched on the name, not to_mimetype(): that guesses over a URL and
 # maps several formats to mimetypes their own filenames contradict.
 PLAYABLE_VIDEO_EXTENSIONS = ('.mp4', '.m4v', '.webm', '.ogv', '.ogg')
+# Mediatypes whose thumbnails are not image derivatives, so there is nothing for
+# an image server to serve from them.
+AV_MEDIATYPES = ('audio', 'movies', 'etree')
 
 class IsCollection(Exception):
     # Used for when we need to raise to the route handler from inside the manifest function
@@ -573,11 +576,38 @@ def addRendering(manifest, identifier, files):
                  "format": rendering['format']
                  })
 
-def addThumbnails(manifest, identifier, files):
+def intOrDefault(value, default):
+    """File metadata dimensions arrive as strings, and are absent more often than not."""
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+def addStaticThumbnail(manifest, identifier, file, with_dimensions=False):
+    """Links the file on archive.org directly, with no image server involved."""
+    name = file.get("name", "")
+    mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
+    static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
+    if not with_dimensions:
+        return manifest.add_thumbnail(static_url, format=mimetype)
+
+    # Fall back to a 16:9 box when the file metadata carries no dimensions.
+    return manifest.add_thumbnail(
+        static_url,
+        format=mimetype,
+        width=intOrDefault(file.get("width"), 192),
+        height=intOrDefault(file.get("height"), 108),
+    )
+
+def addThumbnails(manifest, identifier, files, mediatype=None):
     """Creates thumbnails based on files.
 
-    If the file appears to be a thumbnail (by format or name) attempt to create a IIIF thumbnail via Cantaloupe.
-    If that fails or isn't possible, fall back to adding a static thumbnail.
+    For audio / video items the thumbnail is not an image derivative, so routing it
+    through Cantaloupe buys nothing and costs a round trip per file plus a dependency
+    on the image server being up (issue #141). Those link the static file directly.
+
+    Otherwise attempt to create a IIIF thumbnail via Cantaloupe. If that fails or
+    isn't possible, fall back to adding a static thumbnail.
     """
     thumbnail_files = []
     ia_thumb_files = []
@@ -601,15 +631,20 @@ def addThumbnails(manifest, identifier, files):
         files_to_process = ia_thumb_files
     
     MAX_IIIF_THUMB = 15
+
+    if mediatype in AV_MEDIATYPES:
+        for file in files_to_process:
+            # A video canvas is sized by its own body, so an AV thumbnail with
+            # guessed dimensions would only mislead; audio has no body to size from.
+            addStaticThumbnail(manifest, identifier, file,
+                               with_dimensions=mediatype != "movies")
+
     # if we use cantaloupe for more than MAX_IIIF_THUMB
     # its likely to be too slow and will fail to generate
-    if len(files_to_process) > MAX_IIIF_THUMB:
+    elif len(files_to_process) > MAX_IIIF_THUMB:
         for file in files_to_process:
             # print (f"Getting static thumbnail for {file['name']}")
-            name = file.get("name", "")
-            mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
-            static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
-            manifest.add_thumbnail(static_url, format=mimetype)
+            addStaticThumbnail(manifest, identifier, file)
 
     else:    
         for file in files_to_process:
@@ -623,9 +658,7 @@ def addThumbnails(manifest, identifier, files):
                 manifest.create_thumbnail_from_iiif(iiif_url, iiif_session=session)
             except requests.exceptions.RequestException as e:
                 print(f"Failed to generate thumbnail from Cantaloupe: {iiif_url} due to {e}")
-                mimetype = "image/png" if name.endswith(".png") else "image/jpeg"
-                static_url = f"{ARCHIVE}/download/{quote(identifier)}/{quote(name)}"
-                manifest.add_thumbnail(static_url, format=mimetype)
+                addStaticThumbnail(manifest, identifier, file)
     return
 
 def addThumbnailNav(manifest, identifier, files):
@@ -793,7 +826,7 @@ def create_manifest3(identifier, domain=None, page=None):
     addMetadata(manifest, identifier, metadata['metadata'])
     addSeeAlso(manifest, identifier, metadata['files'])
     addRendering(manifest, identifier, metadata['files'])
-    addThumbnails(manifest, identifier, metadata['files'])
+    addThumbnails(manifest, identifier, metadata['files'], mediatype)
     addPartOfCollection(manifest, metadata.get('metadata').get('collection', []), domain)
 
     if mediatype == 'texts':
