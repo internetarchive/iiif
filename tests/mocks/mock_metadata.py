@@ -42,6 +42,8 @@ KNOWN_URLS = {
     # images
     "/metadata/jewishinterpreta00morg": "tests/fixtures/metadata/jewishinterpreta00morg.json",
     "/metadata/Codex-Cuara": "tests/fixtures/metadata/Codex-Cuara.json",
+    # Links
+    "/metadata/DuckandC1951": "tests/fixtures/metadata/DuckandC1951.json",
 
     # Image info
     "journalofexpedit00ford%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json",
@@ -67,6 +69,7 @@ KNOWN_URLS = {
     "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf7r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf7r.tif.info.json",
     "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf8r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf8r.tif.info.json",
     "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf9r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf9r.tif.info.json",
+    "DuckandC1951%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/DuckandC1951__ia_thumb.jpg.info.json",
 
     # BookReader
     "BookReaderJSIA.php?id=journalofexpedit00ford": "tests/fixtures/bookreader/journalofexpedit00ford.json",

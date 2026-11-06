@@ -2,12 +2,13 @@ import os
 
 import unittest
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
+from tests.mocks.mock_metadata import log_requests, mock_urls
 
 class TestLinking(unittest.TestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
         self.test_app = FlaskClient(app)
 
     def convertListToHash(self, items):
@@ -21,8 +22,9 @@ class TestLinking(unittest.TestCase):
 
         self.assertEqual(map[name]['id'], value, f"Expected {value} in {map[name]}")
 
+    @mock_urls
     def test_v3_image_links(self):
-        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json?recache=true")
+        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json    
 
@@ -74,8 +76,9 @@ class TestLinking(unittest.TestCase):
         # Scandata - seeAlso
         self.checkLink(seeAlsoMap, "seeAlso", "Scandata", "https://archive.org/download/journalofexpedit00ford/journalofexpedit00ford_scandata.xml")
 
+    @mock_urls
     def test_v3_video_links(self):
-        resp = self.test_app.get("/iiif/3/DuckandC1951/manifest.json?recache=true")
+        resp = self.test_app.get("/iiif/3/DuckandC1951/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json    
 
