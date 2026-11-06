@@ -1,0 +1,267 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721605.ca.archive.org",
+                "dir": "/0/items/university_pittsburgh"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721605.ca.archive.org",
+                "dir": "/0/items/university_pittsburgh"
+            }
+        ]
+    },
+    "created": 1793955641,
+    "d1": "ia601604.us.archive.org",
+    "d2": "ia801604.us.archive.org",
+    "dir": "/19/items/university_pittsburgh",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1602702277",
+            "size": "6751",
+            "md5": "5c63215ffdefc754751fa519ad72d365",
+            "crc32": "9e6acbb6",
+            "sha1": "4d5a5e56031e4972e26f09668e418946af6628d3",
+            "format": "JPEG Thumb",
+            "rotation": "0"
+        },
+        {
+            "name": "history/files/ULSLogoInternetArchive.jpg.~1~",
+            "source": "original",
+            "format": "JPEG",
+            "mtime": "1255467047",
+            "size": "7916",
+            "md5": "5025776950bd40716a71f6ef1bf23812",
+            "crc32": "9594d181",
+            "sha1": "585889e997f649b3eaae072aff144751964cb547",
+            "rotation": "0",
+            "old_version": "true"
+        },
+        {
+            "name": "pitt_ULS_Logo.jpg",
+            "source": "original",
+            "format": "JPEG",
+            "mtime": "1226591333",
+            "size": "35536",
+            "md5": "d16a6578edcbad66cc783b04fcbb1b49",
+            "crc32": "503a7291",
+            "sha1": "f35084b12de2a3746fdb91e5ede7cecf25a8a60c",
+            "rotation": "0"
+        },
+        {
+            "name": "pitt_ULS_Logo_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "pitt_ULS_Logo.jpg",
+            "mtime": "1602711782",
+            "size": "3795",
+            "md5": "03a1e4852bcce9bdb1d47fd8ba0543bc",
+            "crc32": "6fa42b81",
+            "sha1": "b45b07a4ee62a1504141bb40c8a84d3659c3f3e5"
+        },
+        {
+            "name": "pitt_logo.gif",
+            "source": "original",
+            "format": "JPEG",
+            "md5": "885c001ceacc3348a7e275fdbcea5fe3",
+            "mtime": "1225089432",
+            "size": "2132",
+            "crc32": "a54ccd0b",
+            "sha1": "8445b36cd4154db3459d249dbb7898bdf972cfb1",
+            "rotation": "0"
+        },
+        {
+            "name": "pitt_logo_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "pitt_logo.gif",
+            "mtime": "1602711775",
+            "size": "2084",
+            "md5": "0b462f80635407e7a3d77714ed5755aa",
+            "crc32": "410e3df9",
+            "sha1": "4fb48f12db01ace07457d5cf45fff9bf7143f0b6"
+        },
+        {
+            "name": "pitts_logo.jpg",
+            "source": "original",
+            "format": "JPEG",
+            "mtime": "1226438734",
+            "size": "17247",
+            "md5": "7aa024c60eb8894b3db5a6fb77eaee45",
+            "crc32": "299854d8",
+            "sha1": "812b7dfe82729f792ecdf33ae9e0c7ff1dbbbd29",
+            "rotation": "0"
+        },
+        {
+            "name": "pitts_logo_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "pitts_logo.jpg",
+            "mtime": "1602711778",
+            "size": "4782",
+            "md5": "3f991a296cc869a7926416664c79485d",
+            "crc32": "803228a8",
+            "sha1": "265ea0cdcf15a4474c6980a4418893e3c29d9908"
+        },
+        {
+            "name": "univ_pittsburgh.jpg",
+            "source": "original",
+            "format": "JPEG",
+            "mtime": "1225400903",
+            "size": "37626",
+            "md5": "03d2c5beca8ba96ca287fa565874a4a4",
+            "crc32": "c160f078",
+            "sha1": "2c099d641430cf9405532f1679a1ece986170273",
+            "rotation": "0"
+        },
+        {
+            "name": "univ_pittsburgh_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "univ_pittsburgh.jpg",
+            "mtime": "1602711784",
+            "size": "5152",
+            "md5": "5a52812a97fe8c06bb93deadf70c5ab6",
+            "crc32": "15c6d232",
+            "sha1": "49b713341458316143c5937444a076478e12e175"
+        },
+        {
+            "name": "university_pittsburgh_archive.torrent",
+            "source": "metadata",
+            "btih": "1803e09914bc7d604c0f01929026eb247844d2e0",
+            "mtime": "1602711792",
+            "size": "3461",
+            "md5": "4ec1dc28c330d23247de8ad6fc92ebb2",
+            "crc32": "e85f0b2e",
+            "sha1": "2e368201be5397c74ad7ef2f921c44e59b97194a",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "university_pittsburgh_files.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "fbe9042f687dbd3484870524daa54865",
+            "summation": "md5"
+        },
+        {
+            "name": "university_pittsburgh_itemimage.jpg",
+            "source": "original",
+            "mtime": "1602702152",
+            "size": "7916",
+            "md5": "5025776950bd40716a71f6ef1bf23812",
+            "crc32": "9594d181",
+            "sha1": "585889e997f649b3eaae072aff144751964cb547",
+            "format": "Item Image",
+            "rotation": "0"
+        },
+        {
+            "name": "university_pittsburgh_meta.sqlite",
+            "source": "original",
+            "mtime": "1602702325",
+            "size": "8192",
+            "md5": "5c87d7455e920cd24ab7ec11d10521d4",
+            "crc32": "7a261450",
+            "sha1": "e52427f95fead67cfa23eda9044b8e41bcebc8ab",
+            "format": "Metadata"
+        },
+        {
+            "name": "university_pittsburgh_meta.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1547536979",
+            "size": "2761",
+            "md5": "c467a4533735ef44f5501d45eb0b5754",
+            "crc32": "705b50bc",
+            "sha1": "6cdf99a3d669202944baecf8d9cde93683571f1a"
+        },
+        {
+            "name": "university_pittsburgh_reviews.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "dd77e251d3f011eaaa84236fdd8d999c",
+            "mtime": "1225089177",
+            "size": "185",
+            "crc32": "4a879cef",
+            "sha1": "2462c8f1a7ccf63aab11eab0483419b0d7d3ca5a"
+        }
+    ],
+    "files_count": 16,
+    "is_collection": true,
+    "item_last_updated": 1681002557,
+    "item_size": 145536,
+    "metadata": {
+        "identifier": "university_pittsburgh",
+        "title": "University of Pittsburgh Library System",
+        "mediatype": "collection",
+        "collection": "texts",
+        "description": "<img src=\"http://www.archive.org/download/university_pittsburgh/ULSLogoInternetArchive.jpg\"></a> <br>\r\nBooks contributed by <a href=\"http://www.pitt.edu/libraries.html\">University of Pittsburgh Library System</a>.",
+        "hidden": "true",
+        "publicdate": "2008-10-27 06:37:55",
+        "addeddate": "2008-10-27 06:37:17",
+        "uploader": "julie@archive.org",
+        "updater": [
+            "julielefevre",
+            "JillianSlater",
+            "julielefevre",
+            "julielefevre",
+            "julielefevre",
+            "julielefevre",
+            "julielefevre",
+            "CallieLamkin",
+            "CallieLamkin",
+            "CallieLamkin",
+            "CallieLamkin",
+            "CallieLamkin",
+            "CallieLamkin",
+            "krisbrix",
+            "krisbrix",
+            "krisbrix",
+            "CallieLamkin",
+            "CallieLamkin",
+            "CallieLamkin",
+            "CallieLamkin",
+            "CallieLamkin",
+            "CallieLamkin"
+        ],
+        "updatedate": [
+            "2008-10-27 06:40:05",
+            "2008-10-28 18:46:01",
+            "2008-10-30 19:34:49",
+            "2008-10-30 19:36:05",
+            "2008-10-31 00:32:19",
+            "2008-11-11 21:29:49",
+            "2008-11-13 15:50:23",
+            "2009-04-07 13:10:20",
+            "2009-04-27 13:01:57",
+            "2009-06-09 16:39:26",
+            "2009-07-08 16:42:15",
+            "2009-07-21 17:53:17",
+            "2009-08-26 19:29:38",
+            "2009-10-13 20:12:57",
+            "2009-10-13 20:57:40",
+            "2009-10-13 21:12:26",
+            "2009-10-29 14:21:57",
+            "2009-12-11 20:26:37",
+            "2010-01-12 16:18:11",
+            "2010-01-20 14:58:18",
+            "2010-02-18 15:39:01",
+            "2010-03-15 15:20:53"
+        ],
+        "search_collection": "mediatype:(texts) AND contributor:(university pittsburgh system)",
+        "spotlight_identifier": "centuryafterpict00shin",
+        "title_message": "Free Books",
+        "backup_location": "ia903602_17",
+        "show_search_by_year": "true"
+    },
+    "reviews": [],
+    "server": "ia601604.us.archive.org",
+    "uniq": 1777851477,
+    "workable_servers": [
+        "ia601604.us.archive.org",
+        "ia801604.us.archive.org"
+    ]
+}

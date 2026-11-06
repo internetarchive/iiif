@@ -34,6 +34,11 @@ KNOWN_URLS = {
     "/metadata/footmouthdisease00reyn": "tests/fixtures/metadata/footmouthdisease00reyn.json",
     "/metadata/drug-use-and-abuse-collection-of-pamphlets": "tests/fixtures/metadata/drug-use-and-abuse-collection-of-pamphlets.json",
     "/metadata/engflowergarden00robirich": "tests/fixtures/metadata/engflowergarden00robirich.json",
+    # Collections
+    "/metadata/frankbford": "tests/fixtures/metadata/frankbford.json",
+    "/metadata/university_pittsburgh": "tests/fixtures/metadata/university_pittsburgh.json",
+    "/metadata/terminal-escape-collection": "tests/fixtures/metadata/terminal-escape-collection.json",
+    "/metadata/usgs_tx": "tests/fixtures/metadata/usgs_tx.json",
 
     # Image info
     "journalofexpedit00ford%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json",
@@ -52,6 +57,12 @@ KNOWN_URLS = {
     "journalofexpedit00ford&q=pleasure%20to%20observe": "tests/fixtures/search/multi_word.json",
     "mrr_401&q=top": "tests/fixtures/search/missmatch.json",
     "gray-diary&q=Houston": "tests/fixtures/search/Houston.json",
+
+    # Advanced search for building collections:
+    "advancedsearch.php?q=collection%3Afrankbford":"tests/fixtures/advanced/frankbford.json",
+    "advancedsearch.php?q=collection%3Auniversity_pittsburgh": "tests/fixtures/advanced/university_pittsburgh.json",
+    "advancedsearch.php?q=collection%3Aterminal-escape-collection": "tests/fixtures/advanced/terminal-escape-collection.json",
+    "advancedsearch.php?q=collection%3Ausgs_tx":"tests/fixtures/advanced/usgs_tx.json",
 
     # Files:
     "journalofexpedit00ford_djvu.xml": "tests/fixtures/files/journalofexpedit00ford_djvu.xml"
