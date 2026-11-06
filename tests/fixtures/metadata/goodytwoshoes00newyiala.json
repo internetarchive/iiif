@@ -1,0 +1,918 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721606.ca.archive.org",
+                "dir": "/0/items/goodytwoshoes00newyiala"
+            },
+            {
+                "server": "dn760108.eu.archive.org",
+                "dir": "/0/items/goodytwoshoes00newyiala"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721606.ca.archive.org",
+                "dir": "/0/items/goodytwoshoes00newyiala"
+            },
+            {
+                "server": "dn760108.eu.archive.org",
+                "dir": "/0/items/goodytwoshoes00newyiala"
+            }
+        ]
+    },
+    "created": 1793986913,
+    "d1": "ia903103.us.archive.org",
+    "d2": "ia803103.us.archive.org",
+    "dir": "/14/items/goodytwoshoes00newyiala",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1774437231",
+            "size": "22591",
+            "md5": "cc3dcb6924e69ce7a65605b75312763c",
+            "crc32": "1c923b6a",
+            "sha1": "0b14273369431b0bed6a520d00e84a96bcf8c22c",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "goodytwoshoes00newyiala.djvu",
+            "source": "derivative",
+            "format": "DjVu",
+            "original": "goodytwoshoes00newyiala_djvu.xml",
+            "md5": "972b60d99fdedc9e69a9381a732dfca1",
+            "mtime": "1165607823",
+            "size": "1060487",
+            "crc32": "7e4ef3d6",
+            "sha1": "3d926743aad2dfeefb49c1177b87206c25c0eb3b"
+        },
+        {
+            "name": "goodytwoshoes00newyiala.epub",
+            "source": "derivative",
+            "original": "goodytwoshoes00newyiala_abbyy.gz",
+            "mtime": "1700105585",
+            "size": "9002939",
+            "md5": "eb963ad890b522dbab9a7b409643d5f0",
+            "crc32": "48f27ec8",
+            "sha1": "f998b007f440983daf0d5ac0558ff77e947e6f5e",
+            "format": "EPUB"
+        },
+        {
+            "name": "goodytwoshoes00newyiala.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "goodytwoshoes00newyiala_jp2.zip",
+            "mtime": "1320678411",
+            "size": "181553",
+            "md5": "212bf2839b7916ee9ff8805d497ac871",
+            "crc32": "1566e961",
+            "sha1": "342cf2decad23ebaedc0c99c4298cfeeec9c79e5"
+        },
+        {
+            "name": "goodytwoshoes00newyiala.pdf",
+            "source": "derivative",
+            "format": "Text PDF",
+            "original": "goodytwoshoes00newyiala_page_numbers.json",
+            "mtime": "1699765380",
+            "size": "1508606",
+            "md5": "717e1ea2b94388c485ea9833a38be6ab",
+            "crc32": "f2b064d9",
+            "sha1": "e4c4b301eecd818f245f17273ffb2764f3e5cedf"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "goodytwoshoes00newyiala_jp2.zip",
+            "md5": "6ede2b5342436241e51c680a431ac190",
+            "mtime": "1165607734",
+            "size": "185494",
+            "crc32": "d1814a11",
+            "sha1": "1260484ebcc22fcbc276d662e10193ddd4c2d9b4"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_archive.torrent",
+            "source": "metadata",
+            "btih": "7111af5edacec7355d89c7f2b1680b996eaf25c3",
+            "mtime": "1789493561",
+            "size": "8498",
+            "md5": "ae7d315e4e0da1ceb49541d8e5878581",
+            "crc32": "7a773639",
+            "sha1": "5aecaf149e548a1445e10a8325ac8447d2555b32",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_bw.pdf",
+            "source": "derivative",
+            "format": "Grayscale PDF",
+            "original": "goodytwoshoes00newyiala_page_numbers.json",
+            "mtime": "1699765380",
+            "size": "1730066",
+            "md5": "bf1a81f5709ba041b6aa8f9289f47802",
+            "crc32": "fe397564",
+            "sha1": "cfd59b712fa7184419dad4afd474e87198eb62ca"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_chocr.html.gz",
+            "source": "derivative",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "chOCR",
+            "original": "goodytwoshoes00newyiala_abbyy.gz",
+            "mtime": "1699765097",
+            "size": "159639",
+            "md5": "7ee1cc00e06411037059ff71eb12ae67",
+            "crc32": "cd9ffff0",
+            "sha1": "4251e5c4935967e1a56b26d9f7b635e13c520f44"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_cover_image.jpg",
+            "source": "original",
+            "format": "Book Cover Image",
+            "mtime": "1192337843",
+            "size": "1251389",
+            "md5": "34a4555e298dca82c987e6dfe4c66706",
+            "crc32": "be701e18",
+            "sha1": "9326cdcfabc6aa6c43ad2e58ca9713efa9ddd6fe",
+            "rotation": "0"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_daisy.zip",
+            "source": "derivative",
+            "original": "goodytwoshoes00newyiala_abbyy.gz",
+            "mtime": "1700452231",
+            "size": "47829",
+            "md5": "103e7643c787471722e85ec3d9f1136d",
+            "crc32": "b0d66a01",
+            "sha1": "70b1303075a7e44dd9b7e81d087f642463a07a9f",
+            "format": "Daisy",
+            "filecount": "9"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_dc.xml",
+            "source": "metadata",
+            "format": "Dublin Core",
+            "md5": "ce11e92496380ebfabca6259b5e688f6",
+            "mtime": "1649033246",
+            "size": "778",
+            "crc32": "1f3f991c",
+            "sha1": "649bc01397a697f86b24dec13a6f8d3950b00f35"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "goodytwoshoes00newyiala_djvu.xml",
+            "mtime": "1699765348",
+            "size": "15118",
+            "md5": "63ddbc83e39f5a6113119420a0d9593c",
+            "crc32": "c309b95c",
+            "sha1": "5bd04f33c4e0f6d7089030fbe1d28b42b95f5616"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "goodytwoshoes00newyiala_hocr.html",
+            "mtime": "1699765199",
+            "size": "195505",
+            "md5": "42351485de524f2c0a2fbf9c7ff93963",
+            "crc32": "3173b685",
+            "sha1": "7a0081cf36484cab932232f0511d199ed47e1713"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_files.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "fe7428d0ab22c3f719adf6ba24653e67",
+            "summation": "md5"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.2.0",
+            "hocr_char_to_word_hocr_version": "1.1.45",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "hOCR",
+            "original": "goodytwoshoes00newyiala_chocr.html.gz",
+            "mtime": "1699765115",
+            "size": "361432",
+            "md5": "4357a7718df727643a3c0ba84c6e2c9a",
+            "crc32": "f2da2b50",
+            "sha1": "b55c05caca5c87ebc7182c5539416a4be9501120"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "goodytwoshoes00newyiala_hocr.html",
+            "mtime": "1699765241",
+            "size": "212",
+            "md5": "d570954deda4b46ab4c10a4f0e2fa6a9",
+            "crc32": "f214aa8c",
+            "sha1": "e9d792b4d9f8fd27de8e4ea9935598c0378d8d8a"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "34",
+            "word_conf_11_20": "31",
+            "word_conf_21_30": "2388",
+            "word_conf_31_40": "0",
+            "word_conf_41_50": "0",
+            "word_conf_51_60": "0",
+            "word_conf_61_70": "0",
+            "word_conf_71_80": "0",
+            "word_conf_81_90": "0",
+            "word_conf_91_100": "0",
+            "format": "OCR Search Text",
+            "original": "goodytwoshoes00newyiala_hocr.html",
+            "mtime": "1699765284",
+            "size": "5614",
+            "md5": "68b459fe942604b6e47d22305af124d0",
+            "crc32": "c01c6239",
+            "sha1": "7b814b8d29b23306af1705490f6b72e22ff2e1ad"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_jp2.zip",
+            "source": "original",
+            "format": "Single Page Processed JP2 ZIP",
+            "md5": "2ff1510e07d0b9b258e5fb375f1416e2",
+            "mtime": "1165595322",
+            "size": "12895553",
+            "crc32": "d13439f3",
+            "sha1": "c56e8ce19e759d85fba6a379bdd8ea1905de7b5a",
+            "filecount": "20"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_marc.xml",
+            "source": "metadata",
+            "format": "MARC",
+            "md5": "c655e81dad879ec35e21775d5dce36d6",
+            "mtime": "1165345309",
+            "size": "3114",
+            "crc32": "d5c92ac1",
+            "sha1": "a60e190f7a2e215420f1813fa1221aa0992d6196"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_meta.mrc",
+            "source": "metadata",
+            "format": "MARC Binary",
+            "md5": "7d5e3ecf141356c54ea2bc5b0997fbcd",
+            "mtime": "1165345309",
+            "size": "987",
+            "crc32": "ceaf268a",
+            "sha1": "8d2800e425d4d502e58849a7200ea29f8f580b25"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_meta.sqlite",
+            "source": "original",
+            "mtime": "1464736221",
+            "size": "6144",
+            "format": "Metadata",
+            "md5": "cb7ef5fa5ab7028eb73d8ca53c1773cd",
+            "crc32": "d74c6bab",
+            "sha1": "9ef445c3cc8fe09e52116fc0ae79dc1ebac1fb64"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_meta.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1723832028",
+            "size": "3128",
+            "md5": "5a34ee1f4773ceece690c3498d2666fd",
+            "crc32": "22ea29e0",
+            "sha1": "d15b9840129b569aa21f667ac36c4ae1de464f2c"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_metasource.xml",
+            "source": "metadata",
+            "format": "MARC Source",
+            "md5": "754d06ca9e9d6dffebc0edb15e40ed5a",
+            "mtime": "1165345309",
+            "size": "391",
+            "crc32": "bed3866a",
+            "sha1": "7360135638c295aa07184bec1a2db83ffe4ed78c"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.3",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "0",
+            "format": "Page Numbers JSON",
+            "original": "goodytwoshoes00newyiala_hocr.html",
+            "mtime": "1699765326",
+            "size": "2855",
+            "md5": "13a544b34f0a70d7d24c3d3877811c5d",
+            "crc32": "416abdc5",
+            "sha1": "f71379b3f8341c1e9b24e029837f66003c2e830a"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_raw_jp2.zip",
+            "source": "original",
+            "format": "Single Page Raw JP2 ZIP",
+            "md5": "5a63b4c1f4137b659d554b8e95177e5e",
+            "mtime": "1165595322",
+            "size": "20160678",
+            "crc32": "fdac3c56",
+            "sha1": "e031edf714bcb4bf349c915d1966722b1167e088",
+            "filecount": "20"
+        },
+        {
+            "name": "goodytwoshoes00newyiala_reviews.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1789493558",
+            "size": "18505",
+            "md5": "9bd6b5e32ca193ab7a3b47bc2f80fcdc",
+            "crc32": "c062087c",
+            "sha1": "20ce6864e69c8f5f93aa44cf85a71caf22b967ff"
+        },
+        {
+            "name": "scandata.zip",
+            "source": "metadata",
+            "format": "Scribe Scandata ZIP",
+            "md5": "bee2f1def97fc20bd4f9c2b4b64b17c1",
+            "mtime": "1165594476",
+            "size": "45791029",
+            "crc32": "6e194930",
+            "sha1": "0dd62c5263c7659e70b29034f6b003862f455a1f",
+            "filecount": "11"
+        }
+    ],
+    "files_count": 28,
+    "item_last_updated": 1789493561,
+    "item_size": 94620134,
+    "metadata": {
+        "identifier": "goodytwoshoes00newyiala",
+        "title": "Goody Two-Shoes",
+        "mediatype": "texts",
+        "description": [
+            "Publisher's chromolithographed pictorial wrappers",
+            "Ex libris Elvah Karshner"
+        ],
+        "date": "c1888",
+        "year": "1888",
+        "subject": [
+            "Brothers and sisters",
+            "Orphans",
+            "Conduct of life",
+            "Education"
+        ],
+        "publicdate": "2006-12-05 11:01:57",
+        "addeddate": "2006-12-05 19:01:51",
+        "uploader": "scanner-alyson-wieczorek@archive.org",
+        "updater": [
+            "ARossi",
+            "ARossi",
+            "ARossi"
+        ],
+        "updatedate": [
+            "2006-12-05 19:01:49",
+            "2006-12-11 19:23:45",
+            "2007-06-19 21:03:21",
+            "2007-08-30 02:52:19"
+        ],
+        "notes": "notes",
+        "contributor": "University of California Libraries",
+        "publisher": "New-York : McLoughlin Bro's",
+        "language": "eng",
+        "copyright-evidence-operator": "alyson-wieczorek",
+        "possible-copyright-status": "NOT_IN_COPYRIGHT",
+        "copyright-region": "US",
+        "copyright-evidence": "Evidence reported by alyson-wieczorek for item goodytwoshoes00newyiala on December 5, 2006: visible notice of copyright; stated date is 1888.",
+        "copyright-evidence-date": "20061205190126",
+        "sponsor": "msn",
+        "scanningcenter": "iala",
+        "call_number": "srlf_ucla:LAGE-1529577",
+        "collection-library": "ucla_spec",
+        "identifier-bib": "LAGE-1529577",
+        "identifier-access": "http://www.archive.org/details/goodytwoshoes00newyiala",
+        "imagecount": "20",
+        "ppi": "500",
+        "lcamid": "1420900961",
+        "rcamid": "1020705645",
+        "camera": "5D",
+        "operator": "scanner-kelly-critch@archive.org",
+        "scanner": "iala9",
+        "scandate": "20061208161222",
+        "identifier-ark": "ark:/13960/t53f4ms96",
+        "curation": "[curator]marcus@archive.org[/curator][date]20070112012407[/date][state]approved[/state]",
+        "sponsordate": "20080430",
+        "filesxml": [
+            "Sat Oct 13 5:50:07 UTC 2007",
+            "Thu Dec 24 11:20:19 UTC 2020",
+            "Mon Oct 4 20:35:05 UTC 2021"
+        ],
+        "collection": [
+            "cdl",
+            "yrlsc",
+            "iacl",
+            "americana"
+        ],
+        "foldoutcount": "0",
+        "repub_state": "4",
+        "backup_location": "ia903600_26",
+        "openlibrary_edition": "OL7095326M",
+        "openlibrary_work": "OL16077419W",
+        "external-identifier": "urn:oclc:record:1045551362",
+        "oclc-id": "32678428",
+        "ocr_module_version": "0.0.21",
+        "ocr_converted": "abbyy-to-hocr 1.1.37",
+        "page_number_confidence": "0",
+        "page_number_module_version": "1.0.3"
+    },
+    "page_numbers": {
+        "identifier": "goodytwoshoes00newyiala",
+        "format-version": "2",
+        "archive-hocr-tools-version": "1.1.54",
+        "confidence": 0,
+        "pages": [
+            {
+                "leafNum": 1,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 2,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 3,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 4,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 5,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 6,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 7,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 8,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 9,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 10,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 11,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 12,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 13,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 14,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 15,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 16,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            }
+        ]
+    },
+    "reviews": [
+        {
+            "reviewbody": "These where the types of stories my Grandmother would recite to me as a child. Simple and good read for the children.\n\nGood bedtime story.",
+            "reviewtitle": "Typical Turn of the Century story.",
+            "reviewer": "TallpailofH20",
+            "reviewdate": "2007-04-21 04:10:46",
+            "createdate": "2007-04-21 04:10:46",
+            "stars": "4"
+        },
+        {
+            "reviewbody": "This is an enjoyable read.",
+            "reviewtitle": "Fun",
+            "reviewer": "ErniePye",
+            "reviewdate": "2007-09-06 03:26:39",
+            "createdate": "2007-09-06 03:26:39",
+            "stars": "4"
+        },
+        {
+            "reviewbody": "Great fun this book.",
+            "reviewtitle": "Yeah.",
+            "reviewer": "kiju7",
+            "reviewdate": "2007-09-17 23:49:18",
+            "createdate": "2007-09-17 23:49:18",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "Nice Text.",
+            "reviewtitle": "Excellent Example",
+            "reviewer": "Cindy Joffrion",
+            "reviewdate": "2007-10-21 04:29:50",
+            "createdate": "2007-10-21 04:29:50",
+            "stars": "3"
+        },
+        {
+            "reviewbody": "perfect book good good",
+            "reviewtitle": "ff",
+            "reviewer": "korean",
+            "reviewdate": "2007-11-01 23:49:02",
+            "createdate": "2007-11-01 23:49:02",
+            "stars": "3"
+        },
+        {
+            "reviewbody": "\u201cGoody Two Shoes\u201d was published in April 1765, and few nursery books have had a wider circulation, or have retained their position so long. The number of editions that have been published both in England and America is legion, and it has appeared in mutilated versions under the auspices of numerous publishing houses in London and the provinces, although of late years there have been no new issues. Even in 1802, Charles Lamb in writing to Coleridge, said\u2013\n\n \u201c\"Goody Two Shoes\u201d is almost out of print. Mrs Barbauld\u2019s stuff has\n  banished all the old classics of the nursery, and the shopman at\n  Newbery\u2019s hardly deigned to reach them off an old exploded corner of\n  a shelf, when Mary asked for them. Mrs Barbauld\u2019s and Mrs Trimmer\u2019s\n  nonsense lay in piles about. Knowledge, insignificant and vapid as Mrs\n  Barbauld\u2019s books convey, it seems must come to a child in the shape of\n  knowledge; and his empty noddle must be turned with conceit of his own\n  powers when he has learnt that a horse is an animal, and Billy is\n  better than a horse, and such like, instead of that beautiful interest\n  in wild tales, which made the child a man, while all the time he\n  suspected himself to be no bigger than a child. Science has succeeded\n  to poetry no less in the little walks of children than with men. Is\n  there no possibility of averting this sore evil? Think what you would\n  have been now, if instead of being fed with tales and old wives\u2019\n  fables in childhood, you had been crammed with geography and natural\n  history!\n\n \u201cHang them!\u2013I mean the cursed Barbauld crew, those blights and blasts\n  of all that is human in man and child.\"[B]\n\nThere must, however, be many parents still living who remember the delight that the little story gave them in their younger days, and they will, no doubt, be pleased to see it once more in the form which was then so familiar to them. The children of to-day, too, will look on it with some curiosity, on account of the fact that it is one of the oldest of our nursery tales, and amused and edified their grand-parents and great grand-parents when they were children, while they cannot fail to be attracted by its simple, pretty, and interesting story.\n\n-http://www.authorama.com/goody-two-shoes-1.html",
+            "reviewtitle": "From authorama.com",
+            "reviewer": "marcus lucero",
+            "reviewdate": "2008-01-13 06:25:40",
+            "createdate": "2008-01-13 06:25:40",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "just see it",
+            "reviewtitle": "look at it",
+            "reviewer": "wszk12",
+            "reviewdate": "2008-11-29 02:13:10",
+            "createdate": "2008-11-29 02:13:10",
+            "stars": "3"
+        },
+        {
+            "reviewbody": "i never red it!",
+            "reviewtitle": "a book",
+            "reviewer": "yxb",
+            "reviewdate": "2009-03-28 03:30:56",
+            "createdate": "2009-03-28 03:30:56",
+            "stars": "5"
+        },
+        {
+            "reviewer": "<a9bian>",
+            "reviewdate": "2009-07-28 11:48:17",
+            "createdate": "2009-07-28 11:48:17",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "download it, just see it!",
+            "reviewtitle": "good .book",
+            "reviewer": "negatlov",
+            "reviewdate": "2010-01-10 10:02:52",
+            "createdate": "2010-01-10 10:02:52",
+            "stars": "0"
+        },
+        {
+            "reviewbody": "What a nice story!",
+            "reviewtitle": "Love it!",
+            "reviewer": "mjswilliams",
+            "reviewdate": "2010-08-18 00:34:10",
+            "createdate": "2010-08-18 00:34:10",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "Very good !!",
+            "reviewtitle": "Thank you",
+            "reviewer": "aqwtoto12laposte",
+            "reviewdate": "2011-01-25 12:33:18",
+            "createdate": "2011-01-25 12:33:18",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "Enjoyable Thanks",
+            "reviewtitle": "enjoyable",
+            "reviewer": "Karam Sayegh",
+            "reviewdate": "2011-03-11 11:29:07",
+            "createdate": "2011-03-11 11:29:07",
+            "stars": "3"
+        },
+        {
+            "reviewbody": "really enjoy and easy to read",
+            "reviewtitle": "Enjoy",
+            "reviewer": "armyship",
+            "reviewdate": "2011-09-30 01:57:24",
+            "createdate": "2011-09-30 01:57:24",
+            "stars": "4"
+        },
+        {
+            "reviewbody": "I really enjoyed this story. We need more stories like this to pick us up when we are down. Thank you for sharing.",
+            "reviewtitle": "Very nice story",
+            "reviewer": "zigvab25",
+            "reviewdate": "2011-11-13 00:33:44",
+            "createdate": "2011-11-13 00:33:44",
+            "stars": "4"
+        },
+        {
+            "reviewbody": "Very useful for education; a kind of Cinderella but far more useful for children education. I think they will like this book even today.",
+            "reviewtitle": "Wonderful book",
+            "reviewer": "Biluta",
+            "reviewdate": "2012-04-07 08:58:53",
+            "createdate": "2012-04-07 08:58:53",
+            "stars": "4"
+        },
+        {
+            "reviewbody": "A truly charming story.  However it is somewhat noticeable that the text of the book differs from the picture titled \"The Orphans\" (page 4) in describing their shoes.  The picture shows the brother as having no shoes and Margery as having only one, whereas the text says the brother has two shoes and Margery none at all.",
+            "reviewtitle": "How many shoes?",
+            "reviewer": "jghbrown",
+            "reviewdate": "2012-11-16 14:46:57",
+            "createdate": "2012-11-16 14:46:57",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "Simple and good read for the children.",
+            "reviewtitle": "Good",
+            "reviewer": "Bob345",
+            "reviewdate": "2013-12-16 03:14:48",
+            "createdate": "2013-12-16 03:14:48",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "This Goody Two Shoes term has been popular threw out world communitys for years its excellent. Signed Coherst Live 2013.",
+            "reviewtitle": "Popular Concept",
+            "reviewer": "regardlessdv",
+            "reviewdate": "2015-03-06 21:29:59",
+            "createdate": "2015-03-06 21:29:02",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "A truly charming story",
+            "reviewtitle": "thanks",
+            "reviewer": "bazaarbargh",
+            "reviewdate": "2017-04-21 02:33:51",
+            "createdate": "2017-04-21 02:33:51",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "How to download the book ...can any one suggest me to get the book",
+            "reviewtitle": "Nice",
+            "reviewer": "Devu Hoolageri",
+            "reviewer_itemname": "@devu_hoolageri",
+            "reviewdate": "2018-01-12 15:17:59",
+            "createdate": "2018-01-12 15:17:56",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "@Devu Hoolageri - Check the download options and choose one you like. PDF is recommended, get Kindle if you have the platform :D",
+            "reviewtitle": "Nice story!",
+            "reviewer": "truth800",
+            "reviewer_itemname": "@truth800",
+            "reviewdate": "2018-04-30 15:15:36",
+            "createdate": "2018-04-30 15:15:36",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "Do read this book at least once.",
+            "reviewtitle": "Amazing!!",
+            "reviewer": "Testerorg",
+            "reviewer_itemname": "@testerorg",
+            "reviewdate": "2018-09-04 11:50:09",
+            "createdate": "2018-09-04 11:50:09",
+            "stars": "4"
+        },
+        {
+            "reviewbody": "No book here. Just a black screen. Not exactly a gripping novel if there is nothing to read...",
+            "reviewtitle": "It's just a blank screen",
+            "reviewer": "CrocRock",
+            "reviewer_itemname": "@crocrock",
+            "reviewdate": "2018-10-19 14:26:19",
+            "createdate": "2018-10-19 14:26:19",
+            "stars": "1"
+        },
+        {
+            "reviewbody": "Such a delightful book.  A must read....",
+            "reviewtitle": "AMaggardKY",
+            "reviewer": "AngelaLee43",
+            "reviewer_itemname": "@angelalee43",
+            "reviewdate": "2018-11-21 20:50:15",
+            "createdate": "2018-11-21 20:50:15",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "This really is a good book, it was published in 1888 but can easily be understood.\nEveryone should read this!",
+            "reviewtitle": "Good book",
+            "reviewer": "PlutoniumYT",
+            "reviewer_itemname": "@plutoniumyt",
+            "reviewdate": "2019-03-18 13:30:35",
+            "createdate": "2019-03-18 13:30:35",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "Really liked the book",
+            "reviewtitle": "Lovely Book",
+            "reviewer": "shreyansh0",
+            "reviewer_itemname": "@shreyansh0",
+            "reviewdate": "2019-03-28 02:16:49",
+            "createdate": "2019-03-28 02:16:49",
+            "stars": "4"
+        },
+        {
+            "reviewbody": "This book is inspiring to say the least :)",
+            "reviewtitle": "Inspirational",
+            "reviewer": "cece1188",
+            "reviewer_itemname": "@cece1188",
+            "reviewdate": "2020-03-28 03:49:48",
+            "createdate": "2020-03-28 03:49:48",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "nice sharing",
+            "reviewtitle": "reading",
+            "reviewer": "99 toefl",
+            "reviewer_itemname": "@99_toefl",
+            "reviewdate": "2020-04-06 06:16:28",
+            "createdate": "2020-04-06 06:16:28",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "What a heartwarming story about character.",
+            "reviewtitle": "A Charming Story",
+            "reviewer": "Saristrawberry",
+            "reviewer_itemname": "@saristrawberry",
+            "reviewdate": "2020-04-25 00:42:39",
+            "createdate": "2020-04-25 00:42:39",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "i wish they made a seconed one",
+            "reviewtitle": "yas amazing",
+            "reviewer": "mcoffey5",
+            "reviewer_itemname": "@mcoffey5",
+            "reviewdate": "2020-05-20 17:18:34",
+            "createdate": "2020-05-20 17:18:34",
+            "stars": "5"
+        },
+        {
+            "reviewbody": "I was always called a \"goody two shoes\" in elementary school, I didn't know that this is where it came from! A good story for kids.",
+            "reviewtitle": "I never knew",
+            "reviewer": "lienoir",
+            "reviewer_itemname": "@lienoir",
+            "reviewdate": "2020-07-03 02:02:24",
+            "createdate": "2020-07-03 02:02:24",
+            "stars": "5"
+        },
+        {
+            "reviewtitle": "Free ebooks",
+            "reviewbody": "https://t.me/ebooks_2\n\nJoin our telegram channel to get free ebooks ",
+            "stars": "4",
+            "reviewer": "Joy0839",
+            "reviewdate": "2023-09-07 09:35:06",
+            "createdate": "2023-09-07 09:35:06",
+            "reviewer_itemname": "@joy0839"
+        },
+        {
+            "reviewtitle": "\ud83d\ude04",
+            "reviewbody": "Great book",
+            "stars": "5",
+            "reviewer": "Jpow25",
+            "reviewdate": "2023-09-12 19:47:41",
+            "createdate": "2023-09-12 19:47:41",
+            "reviewer_itemname": "@jpow25"
+        },
+        {
+            "reviewtitle": "Old but good",
+            "reviewbody": "This book is old but good ",
+            "stars": "5",
+            "reviewer": "JimMuh",
+            "reviewdate": "2024-01-11 21:53:23",
+            "createdate": "2024-01-11 21:53:23",
+            "reviewer_itemname": "@jimmuh"
+        },
+        {
+            "reviewtitle": "Sua criatividade",
+            "reviewbody": "\u00c9 incr\u00edvel! Cada linha revela uma nova descoberta e isso n\u00e3o se limite a somente com os que se destacam! Eu acredito que esse \u00e9 um dos melhores livros desse site e minha opini\u00e3o vai se manter durante um longo tempo!",
+            "stars": "5",
+            "reviewer": "Sienna Santer",
+            "reviewdate": "2024-08-02 01:27:16",
+            "createdate": "2024-08-02 01:27:16",
+            "reviewer_itemname": "@sienna_santer"
+        },
+        {
+            "reviewtitle": "A Timeless Tale of Triumph: A Review of \"Goody Two Shoes\"",
+            "reviewbody": "I recently had the pleasure of revisiting a classic tale, \"Goody Two Shoes.\" Originally published in 1888 by the McLaughlin Bros., this charming story continues to captivate readers of all ages.\n\nThe narrative follows the journey of a young girl, simply known as Goody Two Shoes, who faces numerous challenges with unwavering resilience. Her unwavering commitment to doing what is right and fair serves as a beacon of hope in a world often filled with adversity. \n\nWhat truly sets \"Goody Two Shoes\" apart is its timeless message. The book's underlying theme of perseverance and the power of kindness resonates deeply, even in today's world. Through the eyes of Goody Two Shoes, we witness the transformative impact of empathy and the courage to stand up for what is just.\n\nThe illustrations, though vintage, add a delightful charm to the story. They bring the characters and settings to life, enhancing the overall reading experience. \n\nIf you're looking for a heartwarming tale that inspires and uplifts, \"Goody Two Shoes\" is a must-read. Whether you're a parent seeking a classic bedtime story or an adult looking for a nostalgic escape, this book offers a timeless message that will stay with you long after the final page.\n\n#bookreview #bookstagram #bookworm #booklover #reading #books #bookrecommendations #bibliophile #bookish\n#bookaddict\n",
+            "stars": "5",
+            "reviewer": "vishalasrani",
+            "reviewdate": "2024-08-23 13:04:32",
+            "createdate": "2024-08-23 13:04:32",
+            "reviewer_itemname": "@vishalasrani"
+        },
+        {
+            "reviewtitle": "A reflection",
+            "reviewbody": "This old story mada me reflect about how everyone from having a poor life can become a great person with only having a nice heart.\n\nShe became from having a poor life to being loved and a great person with only doing good actions with her heart.",
+            "stars": "5",
+            "reviewer": "Pol Coll Garcia",
+            "reviewdate": "2026-03-25 11:13:45",
+            "createdate": "2026-03-25 11:13:45",
+            "reviewer_itemname": "@pol_coll_garcia"
+        },
+        {
+            "reviewtitle": "test",
+            "reviewbody": "asfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfasfasfasdfa",
+            "stars": "5",
+            "reviewer": "Isa H802",
+            "reviewdate": "2026-09-11 03:29:40",
+            "createdate": "2026-09-11 03:29:40",
+            "reviewer_itemname": "@isa_h802"
+        },
+        {
+            "reviewtitle": "A classic",
+            "reviewbody": "A classic",
+            "stars": "3",
+            "reviewer": "NA_Mr_Seamus",
+            "reviewdate": "2026-09-15 17:00:00",
+            "createdate": "2026-09-15 16:59:33",
+            "reviewer_itemname": "@mr_seamus_noad"
+        },
+        {
+            "reviewtitle": "Wonderful",
+            "reviewbody": "A classic",
+            "stars": "3",
+            "reviewer": "Mr_Swan",
+            "reviewdate": "2026-09-15 17:32:11",
+            "createdate": "2026-09-15 17:31:54",
+            "reviewer_itemname": "@mr_swan"
+        }
+    ],
+    "server": "ia803103.us.archive.org",
+    "simplelists": {
+        "flagged_as_bad-data": {
+            "@norcal7071": {
+                "sys_changed_by": {
+                    "source": "details page"
+                },
+                "sys_last_changed": "2019-03-29 22:11:20.943411"
+            }
+        }
+    },
+    "uniq": 2038714584,
+    "workable_servers": [
+        "ia803103.us.archive.org",
+        "ia903103.us.archive.org"
+    ]
+}

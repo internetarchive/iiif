@@ -2,16 +2,18 @@ import os
 
 import unittest
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
+from tests.mocks.mock_metadata import log_requests, mock_urls
 
 class TestAnnotations(unittest.TestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
         self.test_app = FlaskClient(app)
 
+    @mock_urls
     def test_v3_manifest_has_annotations(self):
-        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json?recache=true")
+        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json    
 
@@ -29,8 +31,9 @@ class TestAnnotations(unittest.TestCase):
             self.assertTrue(found, f"Expected to find {annotations_url} in {canvas['annotations']}")   
             count += 1
 
+    @mock_urls
     def test_v3_annotations(self):
-        resp = self.test_app.get("/iiif/3/annotations/journalofexpedit00ford/journalofexpedit00ford_djvu.xml/1.json?recache=true")
+        resp = self.test_app.get("/iiif/3/annotations/journalofexpedit00ford/journalofexpedit00ford_djvu.xml/1.json")
         self.assertEqual(resp.status_code, 200)
         annotations = resp.json   
 
@@ -57,6 +60,7 @@ class TestAnnotations(unittest.TestCase):
             self.assertEqual(anno['motivation'], "supplementing", "Expected motivation of supplementing")
             first=False
 
+    @mock_urls
     def test_review_annotations(self):
         resp = self.test_app.get(
             "/iiif/3/annotations/goodytwoshoes00newyiala/comments.json"
@@ -76,9 +80,10 @@ class TestAnnotations(unittest.TestCase):
             self.assertEqual(anno['body']['format'], "text/html", "Expected format to be a text/html")
             self.assertEqual(anno['motivation'], "commenting", "Expected motivation of commenting")
 
+    @mock_urls
     def test_review_annotations_on_manifest(self):
         resp = self.test_app.get(
-            "/iiif/3/goodytwoshoes00newyiala/manifest.json?recache=true"
+            "/iiif/3/goodytwoshoes00newyiala/manifest.json"
         )
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json

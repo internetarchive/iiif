@@ -11,14 +11,16 @@ KNOWN_URLS = {
     # Metadata
     "/metadata/journalofexpedit00ford": "tests/fixtures/metadata/journalofexpedit00ford.json",
     "/metadata/gray-diary": "tests/fixtures/metadata/gray-diary.json",
-    # No mrr_401 fixture exists. The journal's metadata is enough for test_search_missing_r.
     "/metadata/mrr_401": "tests/fixtures/metadata/mrr_401.json",
+    "/metadata/goodytwoshoes00newyiala": "tests/fixtures/metadata/goodytwoshoes00newyiala.json",
 
     # Image info
     "journalofexpedit00ford%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json",
+    "goodytwoshoes00newyiala%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/goodytwoshoes00newyiala__ia_thumb.jpg.info.json",
 
     # BookReader
     "BookReaderJSIA.php?id=journalofexpedit00ford": "tests/fixtures/bookreader/journalofexpedit00ford.json",
+    "BookReaderJSIA.php?id=goodytwoshoes00newyiala": "tests/fixtures/bookreader/goodytwoshoes.json",
 
     # Full text search, identified by the search term
     "journalofexpedit00ford&q=Brunswick": "tests/fixtures/search/fulltext-search.json",
@@ -26,12 +28,24 @@ KNOWN_URLS = {
     "journalofexpedit00ford&q=pleasure%20to%20observe": "tests/fixtures/search/multi_word.json",
     "mrr_401&q=top": "tests/fixtures/search/missmatch.json",
     "gray-diary&q=Houston": "tests/fixtures/search/Houston.json",
+
+    # Files:
+    "journalofexpedit00ford_djvu.xml": "tests/fixtures/files/journalofexpedit00ford_djvu.xml"
 }
 
 
 def mockResponse(fixture):
     class MockResponse:
         status_code = 200
+
+        @property
+        def content(self):
+            with open(fixture, "rb") as file:
+                return file.read()
+
+        @property
+        def text(self):
+            return self.content.decode("utf-8")
 
         def json(self):
             with open(fixture, "r") as file:
