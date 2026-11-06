@@ -10,6 +10,8 @@ import json
 import math
 import re
 import xml.etree.ElementTree as ET
+from defusedxml.ElementTree import fromstring as defused_fromstring
+from defusedxml.common import DefusedXmlException
 from datetime import timedelta
 import bleach
 import mimetypes
@@ -1176,6 +1178,16 @@ def create_annotations(version: int, identifier: str, fileName: str, canvas_no: 
         id=f"{domain}{version}/annotations/{identifier}/{quote(fileName, safe='()')}/{canvas_no}.json"
     )
     annotationPage.items = []
+    # canvas_no is interpolated into an ElementPath query below and used as an
+    # integer index; coerce it to a positive integer and reject anything else
+    # so it can't carry an injected ElementPath predicate (CodeQL #13,
+    # py/xpath-injection). ElementPath positions are 1-based, so require >= 1.
+    try:
+        canvas_no = int(canvas_no)
+    except (TypeError, ValueError):
+        raise ValueError("canvas_no must be a positive integer")
+    if canvas_no < 1:
+        raise ValueError("canvas_no must be a positive integer")
     index = canvas_no - 1
     url = f"{ARCHIVE}/download/{identifier}/{fileName}"
     try:
@@ -1183,8 +1195,14 @@ def create_annotations(version: int, identifier: str, fileName: str, canvas_no: 
         response = requests.get(url)
         response.raise_for_status()  # Raise an error for bad status codes
 
-        # Parse the XML content
-        djfu = ET.fromstring(response.content)
+        # Parse the XML content with a hardened parser that forbids entity
+        # expansion and external entities (billion-laughs / XXE). The XML is
+        # fetched from a user-influenced URL, so a stdlib parser would be
+        # vulnerable (CodeQL #9, py/xml-bomb).
+        try:
+            djfu = defused_fromstring(response.content)
+        except DefusedXmlException as e:
+            raise ValueError(f"Refused to parse untrusted XML from {url}: {e}")
         page = djfu.findall(f".//OBJECT[{canvas_no}]")[0]
         words = page.findall(".//WORD")
         count = 1
