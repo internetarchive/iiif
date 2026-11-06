@@ -1,0 +1,128 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn711003.ca.archive.org",
+                "dir": "/0/items/opencontext-10-1998fig2tr52late-wall-west-face"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn711003.ca.archive.org",
+                "dir": "/0/items/opencontext-10-1998fig2tr52late-wall-west-face"
+            }
+        ]
+    },
+    "created": 1793998053,
+    "d1": "ia600607.us.archive.org",
+    "d2": "ia800607.us.archive.org",
+    "dir": "/11/items/opencontext-10-1998fig2tr52late-wall-west-face",
+    "files": [
+        {
+            "name": "10-1998fig2tr52late-wall-west-face.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "10-1998fig2tr52late-wall-west-face.tiff",
+            "mtime": "1493089237",
+            "size": "116641",
+            "md5": "cce08b3b32b25293d8bb20a89de9d6b7",
+            "crc32": "f923f3ff",
+            "sha1": "965f43c06e2433ed71ec77f9d6ef5339fbf32199"
+        },
+        {
+            "name": "10-1998fig2tr52late-wall-west-face.tiff",
+            "source": "original",
+            "mtime": "1485118693",
+            "size": "626314",
+            "md5": "f9ec80597004574d326f8035de51092f",
+            "crc32": "1852947d",
+            "sha1": "da15b4561001527aee23be7ac52c18b9be9bb7b0",
+            "format": "TIFF"
+        },
+        {
+            "name": "10-1998fig2tr52late-wall-west-face_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "10-1998fig2tr52late-wall-west-face.tiff",
+            "mtime": "1493089237",
+            "size": "4942",
+            "md5": "4306aafa5068c8ba622499f69e613bf4",
+            "crc32": "02c3ed9e",
+            "sha1": "fb23b78d0df726640bafa4cc4af4d2f23c2d3ac3"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1540220843",
+            "size": "5369",
+            "md5": "dc1366ea003655b266e65f3a3ac1ebb0",
+            "crc32": "b27dfcdd",
+            "sha1": "853622cdd5b153421b115507c23f59e918d9da14",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "opencontext-10-1998fig2tr52late-wall-west-face_archive.torrent",
+            "source": "metadata",
+            "btih": "48168d49723521fa1623dcf9a460e26e366ec659",
+            "mtime": "1540220843",
+            "size": "2527",
+            "md5": "232c31ca44049b7f2feeb8f15bfb0216",
+            "crc32": "0ea5081a",
+            "sha1": "f6c72cb88c4f26fe86cb204e70f47273aca470b1",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "opencontext-10-1998fig2tr52late-wall-west-face_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "456e288c1197cf4733a30a8a542226c7",
+            "summation": "md5"
+        },
+        {
+            "name": "opencontext-10-1998fig2tr52late-wall-west-face_meta.sqlite",
+            "source": "original",
+            "mtime": "1485118705",
+            "size": "11264",
+            "md5": "8b8a83ad50c0d86e6cab9879bfc1c291",
+            "crc32": "b0624980",
+            "sha1": "229162472a251550e2717d6d0e9af0c37a320d9c",
+            "format": "Metadata"
+        },
+        {
+            "name": "opencontext-10-1998fig2tr52late-wall-west-face_meta.xml",
+            "source": "original",
+            "mtime": "1792481933",
+            "size": "1343",
+            "format": "Metadata",
+            "md5": "4486542557d084db75bb81af59930197",
+            "crc32": "073c75f0",
+            "sha1": "ebf3ffafe9ea4d70d7a0679633436911ad6faab9"
+        }
+    ],
+    "files_count": 8,
+    "item_last_updated": 1792481933,
+    "item_size": 768400,
+    "metadata": {
+        "identifier": "opencontext-10-1998fig2tr52late-wall-west-face",
+        "collection": "opencontext",
+        "description": "<div>Image: \"1998.Fig2.Tr52.late wall west face\" , published by Open Context at: <a href=\"http://opencontext.org/media/3A442673-EE50-493B-C9FC-2ABAEA0C788E\" rel=\"ugc nofollow\">http://opencontext.org/media/3A442673-EE50-493B-C9FC-2ABAEA0C788E</a>; as part of the \"<a href=\"http://opencontext.org/projects/A5DDBEA2-B3C8-43F9-8151-33343CBDC857\" rel=\"ugc nofollow\">Petra Great Temple Excavations</a>\" data publication.</div>",
+        "licenseurl": "http://creativecommons.org/licenses/by/4.0/",
+        "mediatype": "image",
+        "partof": "http://opencontext.org/projects/A5DDBEA2-B3C8-43F9-8151-33343CBDC857",
+        "publisher": "Open Context (http://opencontext.org)",
+        "scanner": "Internet Archive Python library 1.1.0",
+        "title": "1998.Fig2.Tr52.late wall west face from Jordan/Petra Great Temple/Lower Temenos/Trench 52",
+        "uri": "http://opencontext.org/media/3A442673-EE50-493B-C9FC-2ABAEA0C788E",
+        "publicdate": "2017-01-22 20:58:13",
+        "uploader": "kansaeric@gmail.com",
+        "addeddate": "2017-01-22 20:58:13",
+        "backup_location": "ia906305_19"
+    },
+    "server": "ia600607.us.archive.org",
+    "uniq": 1689098432,
+    "workable_servers": [
+        "ia600607.us.archive.org",
+        "ia800607.us.archive.org"
+    ]
+}

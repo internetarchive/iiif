@@ -1,0 +1,822 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760105.eu.archive.org",
+                "dir": "/0/items/pennsylvaniavege14penn"
+            },
+            {
+                "server": "dn790009.ca.archive.org",
+                "dir": "/0/items/pennsylvaniavege14penn"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn760105.eu.archive.org",
+                "dir": "/0/items/pennsylvaniavege14penn"
+            },
+            {
+                "server": "dn790009.ca.archive.org",
+                "dir": "/0/items/pennsylvaniavege14penn"
+            }
+        ]
+    },
+    "created": 1793997978,
+    "d1": "ia601401.us.archive.org",
+    "d2": "ia801401.us.archive.org",
+    "dir": "/1/items/pennsylvaniavege14penn",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1693276470",
+            "size": "4950",
+            "md5": "f699e463cd9e6c0c70aaaed9775259ad",
+            "crc32": "9aadd82d",
+            "sha1": "995883b9fc4826da36593a3b19104f69b5481002",
+            "format": "JPEG Thumb",
+            "rotation": "0"
+        },
+        {
+            "name": "pennsylvaniavege14penn.djvu",
+            "source": "derivative",
+            "format": "DjVu",
+            "original": "pennsylvaniavege14penn_djvu.xml",
+            "md5": "fe56de98e6efe4941c8c45e1cf9a226e",
+            "mtime": "1278794174",
+            "size": "8852734",
+            "crc32": "9a96b6b8",
+            "sha1": "b8b4c0f9073143fee39b072c61395db66d2a8725"
+        },
+        {
+            "name": "pennsylvaniavege14penn.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "pennsylvaniavege14penn_jp2.zip",
+            "md5": "cd42cc46e1ef12f69c79a270ba66d326",
+            "mtime": "1278789584",
+            "size": "336393",
+            "crc32": "1c789108",
+            "sha1": "7328ef4146a22073538f38fcbf7ae9494132b387"
+        },
+        {
+            "name": "pennsylvaniavege14penn.pdf",
+            "source": "derivative",
+            "format": "Text PDF",
+            "original": "pennsylvaniavege14penn_page_numbers.json",
+            "mtime": "1702315040",
+            "size": "12250936",
+            "md5": "e9aa3b4b14d4b8ba15b00cb48587335c",
+            "crc32": "62f0c005",
+            "sha1": "2194f1561fc991d108c31d71f85ab40d98ed673c"
+        },
+        {
+            "name": "pennsylvaniavege14penn_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "pennsylvaniavege14penn_jp2.zip",
+            "md5": "9af3c0efc471a025dde40524523ecbae",
+            "mtime": "1278792960",
+            "size": "3060888",
+            "crc32": "3022e84c",
+            "sha1": "ff61a1f6c21d1f59d01587ff23ecf467185c26b7"
+        },
+        {
+            "name": "pennsylvaniavege14penn_archive.torrent",
+            "source": "metadata",
+            "btih": "633f632e91531b6ea80169ba831069be7b0d8106",
+            "mtime": "1770328515",
+            "size": "9505",
+            "md5": "dcaf408fa6d043cdc8ec26babcaf0fe7",
+            "crc32": "d3621f51",
+            "sha1": "f06c41c62d781595f20bbb1e84f308b073067956",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "pennsylvaniavege14penn_chocr.html.gz",
+            "source": "derivative",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "chOCR",
+            "original": "pennsylvaniavege14penn_abbyy.gz",
+            "mtime": "1702314620",
+            "size": "3386844",
+            "md5": "231954f782999a6b953f83c980e735c9",
+            "crc32": "69cdfa59",
+            "sha1": "ebf9fb898c2add4ad2a29b1c95b488a0ec76b5ca"
+        },
+        {
+            "name": "pennsylvaniavege14penn_dc.xml",
+            "source": "original",
+            "format": "Dublin Core",
+            "md5": "ef694f13b2cfead550d2fc3ff39e5bcd",
+            "mtime": "1649143200",
+            "size": "1447",
+            "crc32": "24e3ffd8",
+            "sha1": "97867f69049953b0849abf596a5682cfdcc7e953"
+        },
+        {
+            "name": "pennsylvaniavege14penn_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "pennsylvaniavege14penn_djvu.xml",
+            "mtime": "1702314715",
+            "size": "315659",
+            "md5": "9ea63b50adad677e82305dd17b16cd7e",
+            "crc32": "cafd16e1",
+            "sha1": "de7539bc9aebc52e73739f76c91de08d8eba2569"
+        },
+        {
+            "name": "pennsylvaniavege14penn_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "pennsylvaniavege14penn_hocr.html",
+            "mtime": "1702314668",
+            "size": "3832445",
+            "md5": "79f5a2f20b1a53134746d89444cf0c17",
+            "crc32": "d12e22a9",
+            "sha1": "57509c488581a5e2b145d85bb66e8a973a2899e7"
+        },
+        {
+            "name": "pennsylvaniavege14penn_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "6867e001dcdfbb0193988c1e39782988",
+            "summation": "md5"
+        },
+        {
+            "name": "pennsylvaniavege14penn_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.2.0",
+            "hocr_char_to_word_hocr_version": "1.1.45",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "hOCR",
+            "original": "pennsylvaniavege14penn_chocr.html.gz",
+            "mtime": "1702314655",
+            "size": "7471278",
+            "md5": "38df74296a08f96a22106db5ffb186de",
+            "crc32": "8221e0e0",
+            "sha1": "860c3eed20243255d1ded6a73f37614765b6a872"
+        },
+        {
+            "name": "pennsylvaniavege14penn_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "pennsylvaniavege14penn_hocr.html",
+            "mtime": "1702314677",
+            "size": "808",
+            "md5": "1f6134a1b0826af71c0c11933d2f4ff5",
+            "crc32": "370c0b4c",
+            "sha1": "e153a41bcef9c43919fbd94821f748efae81abc0"
+        },
+        {
+            "name": "pennsylvaniavege14penn_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "0",
+            "word_conf_11_20": "0",
+            "word_conf_21_30": "0",
+            "word_conf_31_40": "0",
+            "word_conf_41_50": "0",
+            "word_conf_51_60": "0",
+            "word_conf_61_70": "0",
+            "word_conf_71_80": "0",
+            "word_conf_81_90": "0",
+            "word_conf_91_100": "44793",
+            "format": "OCR Search Text",
+            "original": "pennsylvaniavege14penn_hocr.html",
+            "mtime": "1702314687",
+            "size": "108463",
+            "md5": "ff4ce202e38845401d4eebd28b962e00",
+            "crc32": "e2c66a39",
+            "sha1": "a3ee8418e8cbff6c7351d2a355cdc4e7382e214a"
+        },
+        {
+            "name": "pennsylvaniavege14penn_jp2.zip",
+            "source": "original",
+            "format": "Single Page Processed JP2 ZIP",
+            "md5": "3df5a3e013e76ca822834ff0d21aa378",
+            "mtime": "1278713156",
+            "size": "85359313",
+            "crc32": "26c85b21",
+            "sha1": "4327a489d9c87d19d7b797844685007cc7d9927e",
+            "filecount": "67"
+        },
+        {
+            "name": "pennsylvaniavege14penn_marc.xml",
+            "source": "original",
+            "format": "MARC",
+            "md5": "60cbce8933143be66e65d45fcf8276bf",
+            "mtime": "1276642202",
+            "size": "14029",
+            "crc32": "39efeb0b",
+            "sha1": "1ec2b422d56022b52e32746f42dd54d892f74a44"
+        },
+        {
+            "name": "pennsylvaniavege14penn_meta.mrc",
+            "source": "original",
+            "format": "MARC Binary",
+            "md5": "33624c977ad975fe1807db7831067e81",
+            "mtime": "1276642202",
+            "size": "4638",
+            "crc32": "498940e7",
+            "sha1": "2ad8b0f27bfd8fc63a0376099b18ac6d64bf48cd"
+        },
+        {
+            "name": "pennsylvaniavege14penn_meta.xml",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1770328512",
+            "size": "3058",
+            "md5": "49a0198efacf514ad41ff5509145da04",
+            "crc32": "69dc83fe",
+            "sha1": "5d31348971d253ed52dcb4fb71d031726436de21"
+        },
+        {
+            "name": "pennsylvaniavege14penn_metasource.xml",
+            "source": "original",
+            "format": "MARC Source",
+            "md5": "2333040c49b8d9f41051fc3bef875414",
+            "mtime": "1276642202",
+            "size": "384",
+            "crc32": "aacc0c79",
+            "sha1": "c78d02ed1b079a0cfe6386f7ce164027bd805aa0"
+        },
+        {
+            "name": "pennsylvaniavege14penn_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.3",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "0",
+            "format": "Page Numbers JSON",
+            "original": "pennsylvaniavege14penn_hocr.html",
+            "mtime": "1702314707",
+            "size": "11472",
+            "md5": "b3bf684b2916c661a9aeb91842ecb1a4",
+            "crc32": "2e00f6d8",
+            "sha1": "a965ead1f248129b25f4a0c46c6009c917a673cd"
+        },
+        {
+            "name": "pennsylvaniavege14penn_scandata.xml",
+            "source": "original",
+            "format": "Scandata",
+            "md5": "ddf514f2f1104cceee16eb0b58cfd786",
+            "mtime": "1278713102",
+            "size": "36913",
+            "crc32": "39b51522",
+            "sha1": "2d8478e7c21fa55255f628eb7cd71e93aba13c6b"
+        }
+    ],
+    "files_count": 21,
+    "item_last_updated": 1770328515,
+    "item_size": 125062157,
+    "metadata": {
+        "title": "Pennsylvania vegetable growers' news, v. 14",
+        "creator": "Pennsylvania Vegetable Growers' Association",
+        "subject": [
+            "Pennsylvania Vegetable Growers' Association",
+            "Vegetable gardening"
+        ],
+        "description": [
+            "Subtitle varies",
+            "Published: Richmond, Pa., ",
+            "Publication suspended for several decades. Suspended sometime in the 1950s; resumed publication in the early years of 2000s",
+            "Vol. 10, no. 1 (Mar. 1940)- also called 15th annual meeting-",
+            "Issues for Jan. 1929 and Apr. 1929 called Vol. 2, no. 1 and v. 2, no. 2. Publication lapsed until Apr. 1932. Issues for Apr. 1932- also called Vol. 2, no. 1-",
+            "Occasional irregularities in numbering",
+            "Microfilm",
+            "Archival master stored at National Agricultural Library, Beltsville, MD : print master stored at remote facility",
+            "30 31 33",
+            "28",
+            "31"
+        ],
+        "publisher": "[State College, Pa.] : Pennsylvania Vegetable Growers' Association",
+        "date": "1928",
+        "language": "eng",
+        "page-progression": "lr",
+        "sponsor": "Lyrasis Members and Sloan Foundation",
+        "contributor": "Penn State University",
+        "scanningcenter": "sanfrancisco",
+        "mediatype": "texts",
+        "shiptracking": "b0084",
+        "call_number": "LIAS223950",
+        "notes": "Film/Fiche is presented as originally captured.",
+        "repub_state": "6",
+        "updatedate": "2010-06-15 22:50:02",
+        "updater": "JeanL",
+        "identifier": "pennsylvaniavege14penn",
+        "uploader": "jean.l@archive.org",
+        "addeddate": "2010-06-15 22:50:04",
+        "publicdate": "2010-06-15 22:50:08",
+        "split_item": "true",
+        "scanner": "microfilm05p.sanfrancisco.archive.org",
+        "scandate": "20100709215323",
+        "imagecount": "67",
+        "ppi": "300",
+        "foldoutcount": "0",
+        "identifier-access": "http://www.archive.org/details/pennsylvaniavege14penn",
+        "identifier-ark": "ark:/13960/t0bv86k14",
+        "curation": "[curator]paul.n@archive.org[/curator][date]20100802204009[/date][state]approved[/state]",
+        "sponsordate": "20100731",
+        "collection": [
+            "penn_state_univ",
+            "microfilm",
+            "americana"
+        ],
+        "backup_location": "ia903605_23",
+        "external-identifier": "urn:oclc:record:1050710511",
+        "oclc-id": "38228722",
+        "associated-names": "Pennsylvania Vegetable Growers' Association",
+        "ocr_module_version": "0.0.21",
+        "ocr_converted": "abbyy-to-hocr 1.1.37",
+        "page_number_confidence": "0",
+        "page_number_module_version": "1.0.3"
+    },
+    "page_numbers": {
+        "identifier": "pennsylvaniavege14penn",
+        "format-version": "2",
+        "archive-hocr-tools-version": "1.1.54",
+        "confidence": 0,
+        "pages": [
+            {
+                "leafNum": 0,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 1,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 2,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 3,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 4,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 5,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 6,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 7,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 8,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 9,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 10,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 11,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 12,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 13,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 14,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 15,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 16,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 17,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 18,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 19,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 20,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 21,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 22,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 23,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 24,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 25,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 26,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 27,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 28,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 29,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 30,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 31,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 32,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 33,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 34,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 35,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 36,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 37,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 38,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 39,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 40,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 41,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 42,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 43,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 44,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 45,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 46,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 47,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 48,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 49,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 50,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 51,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 52,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 53,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 54,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 55,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 56,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 57,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 58,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 59,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 60,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 61,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 62,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 63,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 64,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 65,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 66,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            }
+        ]
+    },
+    "server": "ia601401.us.archive.org",
+    "uniq": 844162566,
+    "workable_servers": [
+        "ia601401.us.archive.org",
+        "ia801401.us.archive.org"
+    ]
+}

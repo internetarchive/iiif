@@ -1,0 +1,571 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760002.eu.archive.org",
+                "dir": "/0/items/CAT31108226"
+            }
+        ]
+    },
+    "created": 1793998181,
+    "d1": "ia600107.us.archive.org",
+    "d2": "ia800107.us.archive.org",
+    "dir": "/7/items/CAT31108226",
+    "files": [
+        {
+            "name": "CAT31108226.djvu",
+            "source": "derivative",
+            "format": "DjVu",
+            "original": "CAT31108226_djvu.xml",
+            "mtime": "1413457849",
+            "size": "2325617",
+            "md5": "85dc57591d2092d34652401bc509728d",
+            "crc32": "5b880838",
+            "sha1": "0a6a6dde53f9f39232b4b10214752edc39e98602"
+        },
+        {
+            "name": "CAT31108226.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "CAT31108226_jp2.zip",
+            "mtime": "1413457416",
+            "size": "268460",
+            "md5": "2e761e293b4d20a6461ed3a0b65b3a24",
+            "crc32": "649200c7",
+            "sha1": "5b42a6d862f3af002a386885f6fe51a80b06400b"
+        },
+        {
+            "name": "CAT31108226.pdf",
+            "source": "derivative",
+            "format": "Text PDF",
+            "original": "CAT31108226_page_numbers.json",
+            "mtime": "1698721170",
+            "size": "3924775",
+            "md5": "c5d0e8849cd627d298a9d7f76ce04d5b",
+            "crc32": "e244f469",
+            "sha1": "73cc0725859766b983a7dc2db91b80d3fd9d54fb"
+        },
+        {
+            "name": "CAT31108226_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "CAT31108226_jp2.zip",
+            "mtime": "1413457678",
+            "size": "602781",
+            "md5": "1e6aa513b9322811da4ffb41862ceb7d",
+            "crc32": "05dd031b",
+            "sha1": "36fdbd79b54dddf31561602873de9253462dfedd"
+        },
+        {
+            "name": "CAT31108226_archive.torrent",
+            "source": "metadata",
+            "btih": "23a99b59f2cea921395a1313c7bb9ff47b84afe5",
+            "mtime": "1713581970",
+            "size": "6513",
+            "md5": "38680357355e4b9624c85d89403b1472",
+            "crc32": "a3a9f8fd",
+            "sha1": "f0c2aa9edbd76216d466a05402b81063a97dd5c3",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "CAT31108226_chocr.html.gz",
+            "source": "derivative",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "chOCR",
+            "original": "CAT31108226_abbyy.gz",
+            "mtime": "1698721105",
+            "size": "545742",
+            "md5": "5ac0b9dfea2c03db9ab5c6aaaa66f730",
+            "crc32": "2b0e7a94",
+            "sha1": "b8059babd88ab6fda33154ca31f6ce5ffe5c2b17"
+        },
+        {
+            "name": "CAT31108226_cloth_detection.log",
+            "source": "derivative",
+            "cloth_cover_detection_module_version": "1.2",
+            "format": "Cloth Cover Detection Log",
+            "original": "CAT31108226_scandata.xml",
+            "mtime": "1698721582",
+            "size": "734",
+            "md5": "af94f4baf1787c116734d54867a4c658",
+            "crc32": "8f205815",
+            "sha1": "f1ebdda9946f3611e51ed5bc86ab07c33fe766fa"
+        },
+        {
+            "name": "CAT31108226_dc.xml",
+            "source": "original",
+            "format": "Dublin Core",
+            "mtime": "1647905620",
+            "size": "745",
+            "md5": "739f42b08b0980abcbb9a33814f05551",
+            "crc32": "2ab1f570",
+            "sha1": "aecc03a30fd802a732780efc20aaea02ac19c4f4"
+        },
+        {
+            "name": "CAT31108226_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "CAT31108226_djvu.xml",
+            "mtime": "1698721155",
+            "size": "48449",
+            "md5": "8fe5e641c7b799b2e6c765fdc7873b60",
+            "crc32": "3ecfbb4a",
+            "sha1": "aa6f5604daacf937aed26e6179fa71d82d41e3ea"
+        },
+        {
+            "name": "CAT31108226_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "CAT31108226_hocr.html",
+            "mtime": "1698721122",
+            "size": "601425",
+            "md5": "0033eeef7761eb34bc06780d9d5f2c29",
+            "crc32": "d8b00709",
+            "sha1": "68f6d34d9a3a2869a74cec504aa505c04a83417d"
+        },
+        {
+            "name": "CAT31108226_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "5dbff14721e41ea2af472450d6a91663",
+            "summation": "md5"
+        },
+        {
+            "name": "CAT31108226_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.2.0",
+            "hocr_char_to_word_hocr_version": "1.1.45",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "hOCR",
+            "original": "CAT31108226_chocr.html.gz",
+            "mtime": "1698721115",
+            "size": "1181025",
+            "md5": "56b2f8a881196824be8ed4a529120f7c",
+            "crc32": "56a963da",
+            "sha1": "823129ae10c1a59a5c67f5368304d23ed23e9e27"
+        },
+        {
+            "name": "CAT31108226_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "CAT31108226_hocr.html",
+            "mtime": "1698721125",
+            "size": "326",
+            "md5": "4051c90206f7e6b7a22481f382b3f3fc",
+            "crc32": "e1bbf70a",
+            "sha1": "9e2bece495ff3dbb1a2ca069f16168c739b39d08"
+        },
+        {
+            "name": "CAT31108226_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "340",
+            "word_conf_11_20": "66",
+            "word_conf_21_30": "133",
+            "word_conf_31_40": "211",
+            "word_conf_41_50": "522",
+            "word_conf_51_60": "709",
+            "word_conf_61_70": "937",
+            "word_conf_71_80": "1396",
+            "word_conf_81_90": "987",
+            "word_conf_91_100": "1657",
+            "format": "OCR Search Text",
+            "original": "CAT31108226_hocr.html",
+            "mtime": "1698721134",
+            "size": "15765",
+            "md5": "9830eba0d327ad2b6199003898745bc1",
+            "crc32": "d9dccfef",
+            "sha1": "f8bc5147379c378ff0a3e91ca1da71af2dcf1409"
+        },
+        {
+            "name": "CAT31108226_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "CAT31108226_orig_jp2.tar",
+            "mtime": "1413457391",
+            "size": "30538240",
+            "md5": "fe8d6068872ac593a6e1786bb144cbec",
+            "crc32": "e6261e28",
+            "sha1": "cdb072d9f50a4f4329772920ad0de9ff2b75ba9a",
+            "filecount": "28",
+            "preview-image": "n2"
+        },
+        {
+            "name": "CAT31108226_marc.xml",
+            "source": "original",
+            "format": "MARC",
+            "mtime": "1413311669",
+            "size": "4018",
+            "md5": "0ba4326f5465c5e33c650bdd43219822",
+            "crc32": "33aadd0d",
+            "sha1": "f201933273c272afe85b8e0c3c0a8eb50867c979"
+        },
+        {
+            "name": "CAT31108226_meta.mrc",
+            "source": "original",
+            "format": "MARC Binary",
+            "mtime": "1413311669",
+            "size": "1177",
+            "md5": "4e5895a2d725db5b77b3a7b83c9e3776",
+            "crc32": "4643feb9",
+            "sha1": "dc45330cf0ae6aec3ace45a4573ccabb13d158dd"
+        },
+        {
+            "name": "CAT31108226_meta.sqlite",
+            "source": "original",
+            "mtime": "1467484353",
+            "size": "6144",
+            "format": "Metadata",
+            "md5": "c55e3ed23fc1fcd1916dc126c02b7a7f",
+            "crc32": "3d7859df",
+            "sha1": "474d919af8f30a905fc345f96eb98d350f7f9edb"
+        },
+        {
+            "name": "CAT31108226_meta.xml",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1713581967",
+            "size": "3180",
+            "md5": "6a930aaf0926c88ca46734e5bab2a6d0",
+            "crc32": "840d9df4",
+            "sha1": "a9ce4e8c7cacd391b67eab9b4494442c246b9f6c"
+        },
+        {
+            "name": "CAT31108226_metasource.xml",
+            "source": "original",
+            "format": "MARC Source",
+            "mtime": "1413311669",
+            "size": "307",
+            "md5": "738a7eb0020fda5fc662a3c2298045d0",
+            "crc32": "41996078",
+            "sha1": "c9b87f9534d02288e89a7c80b2cc598b443e2e89"
+        },
+        {
+            "name": "CAT31108226_orig_jp2.tar",
+            "source": "original",
+            "mtime": "1413456766",
+            "size": "34129920",
+            "md5": "df51f372a9afe1c91a05c0efc8415820",
+            "crc32": "713f35e6",
+            "sha1": "98351770853297f0170fce3f608c93702f91e476",
+            "format": "Single Page Original JP2 Tar",
+            "filecount": "28"
+        },
+        {
+            "name": "CAT31108226_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.3",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "84",
+            "format": "Page Numbers JSON",
+            "original": "CAT31108226_hocr.html",
+            "mtime": "1698721147",
+            "size": "4438",
+            "md5": "de52153220a13d35ff6ec9cdd01dc988",
+            "crc32": "53db090e",
+            "sha1": "d8e33a5601bde325c71aaa2b3f83f2f4339c2d69"
+        },
+        {
+            "name": "CAT31108226_scandata.xml",
+            "source": "original",
+            "mtime": "1698721582",
+            "size": "37086",
+            "md5": "51a35bb9e5dfc9b685d93488243f2864",
+            "crc32": "08c922a9",
+            "sha1": "1c22e51ea445bea53b643c0f5e32b8c57f721e69",
+            "format": "Scandata"
+        },
+        {
+            "name": "CAT31108226_toc.xml",
+            "source": "derivative",
+            "format": "Contents",
+            "original": "CAT31108226_djvu.xml",
+            "mtime": "1698721199",
+            "size": "10925",
+            "md5": "47e3e0c1bba8e3937f0151e44b2c9b22",
+            "crc32": "be3c1725",
+            "sha1": "4547905f7f46147b9ea6490cd819163b72d142a6"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1766904937",
+            "size": "18897",
+            "md5": "8b839e6618da520afa4e87b69a35a3bc",
+            "crc32": "ba0690ce",
+            "sha1": "d0924f40fb4a6a4202374b9c511ff27f51f84b43",
+            "format": "Item Tile",
+            "rotation": "0"
+        }
+    ],
+    "files_count": 25,
+    "item_last_updated": 1766904937,
+    "item_size": 74276689,
+    "metadata": {
+        "language": "eng",
+        "scanningcenter": "beltsville",
+        "sponsor": "U.S. Department of Agriculture, National Agricultural Library",
+        "contributor": "U.S. Department of Agriculture, National Agricultural Library",
+        "date": "1964",
+        "subject": "Caterpillars Control Southern States",
+        "title": "Control of caterpillars on commercial cabbage and other cole crops in the South",
+        "creator": [
+            "Reid, W. J. (William John), 1902-",
+            "Cuthbert, Frank P., 1922-"
+        ],
+        "collection": [
+            "usda-farmersbulletin",
+            "usdanationalagriculturallibrary",
+            "fedlink",
+            "americana"
+        ],
+        "shiptracking": "ST002570",
+        "partner_shiptracking": "NAL15_0011",
+        "volume": "no.2099",
+        "unique_id": "CAT31108226",
+        "nal_call_number": "1 Ag84F",
+        "series": "Farmers' bulletin / United States Department of Agriculture",
+        "subcollection": "usda-farmersbulletin",
+        "publisher": "Washington, D.C. : U.S. Dept. of Agriculture",
+        "mediatype": "texts",
+        "repub_state": "4",
+        "page-progression": "lr",
+        "publicdate": "2014-10-14 17:33:52",
+        "updatedate": "2014-10-14 18:34:29",
+        "updater": "associate-manuel-dennis@archive.org",
+        "identifier": "CAT31108226",
+        "uploader": "associate-manuel-dennis@archive.org",
+        "addeddate": "2014-10-14 18:34:32.08328",
+        "notes": "No copyright page found.",
+        "repub_seconds": "91",
+        "ppi": "500",
+        "camera": "Canon EOS 5D Mark II",
+        "operator": "associate-saw-thein@archive.org",
+        "scanner": "scribe2.beltsville.archive.org",
+        "scandate": "20141014173635",
+        "republisher": "associate-marc-adona@archive.org",
+        "imagecount": "28",
+        "foldoutcount": "0",
+        "identifier-access": "http://archive.org/details/CAT31108226",
+        "identifier-ark": "ark:/13960/t5s787m54",
+        "scanfee": "100",
+        "invoice": "3",
+        "curation": "[curator]admin-shelia-deroche@archive.org[/curator][date]20150105145446[/date][state]approved[/state][comment]invoice201412[/comment]",
+        "sponsordate": "20141231",
+        "rights": "The contributing institution believes that this item is not in copyright.",
+        "backup_location": "ia905905_15",
+        "openlibrary_edition": "OL25630796M",
+        "openlibrary_work": "OL17061512W",
+        "external-identifier": "urn:oclc:record:1037722775",
+        "oclc-id": "16986579",
+        "description": "24 p. : 23 cm",
+        "associated-names": "Cuthbert, Frank P., 1922-",
+        "republisher_operator": "associate-marc-adona@archive.org",
+        "republisher_date": "20141016105118",
+        "ocr_module_version": "0.0.21",
+        "ocr_converted": "abbyy-to-hocr 1.1.37",
+        "page_number_confidence": "84",
+        "page_number_module_version": "1.0.3"
+    },
+    "page_numbers": {
+        "identifier": "CAT31108226",
+        "format-version": "2",
+        "archive-hocr-tools-version": "1.1.54",
+        "confidence": 84,
+        "pages": [
+            {
+                "leafNum": 1,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 2,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 3,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 4,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 5,
+                "confidence": 85,
+                "pageNumber": "3",
+                "pageProb": 75,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 6,
+                "confidence": 88,
+                "pageNumber": "4",
+                "pageProb": 78,
+                "wordConf": 2
+            },
+            {
+                "leafNum": 7,
+                "confidence": 89,
+                "pageNumber": "5",
+                "pageProb": 79,
+                "wordConf": 64
+            },
+            {
+                "leafNum": 8,
+                "confidence": 83,
+                "pageNumber": "6",
+                "pageProb": 73,
+                "wordConf": 26
+            },
+            {
+                "leafNum": 9,
+                "confidence": 92,
+                "pageNumber": "7",
+                "pageProb": 82,
+                "wordConf": 13
+            },
+            {
+                "leafNum": 10,
+                "confidence": 85,
+                "pageNumber": "8",
+                "pageProb": 75,
+                "wordConf": 27
+            },
+            {
+                "leafNum": 11,
+                "confidence": 92,
+                "pageNumber": "9",
+                "pageProb": 82,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 12,
+                "confidence": 79,
+                "pageNumber": "10",
+                "pageProb": 69,
+                "wordConf": 14
+            },
+            {
+                "leafNum": 13,
+                "confidence": 89,
+                "pageNumber": "11",
+                "pageProb": 79,
+                "wordConf": 64
+            },
+            {
+                "leafNum": 14,
+                "confidence": 80,
+                "pageNumber": "12",
+                "pageProb": 70,
+                "wordConf": 5
+            },
+            {
+                "leafNum": 15,
+                "confidence": 87,
+                "pageNumber": "13",
+                "pageProb": 77,
+                "wordConf": 86
+            },
+            {
+                "leafNum": 16,
+                "confidence": 81,
+                "pageNumber": "14",
+                "pageProb": 71,
+                "wordConf": 36
+            },
+            {
+                "leafNum": 17,
+                "confidence": 89,
+                "pageNumber": "15",
+                "pageProb": 79,
+                "wordConf": 12
+            },
+            {
+                "leafNum": 18,
+                "confidence": 80,
+                "pageNumber": "16",
+                "pageProb": 70,
+                "wordConf": 41
+            },
+            {
+                "leafNum": 19,
+                "confidence": 90,
+                "pageNumber": "17",
+                "pageProb": 80,
+                "wordConf": 4
+            },
+            {
+                "leafNum": 20,
+                "confidence": 84,
+                "pageNumber": "18",
+                "pageProb": 74,
+                "wordConf": 57
+            },
+            {
+                "leafNum": 21,
+                "confidence": 89,
+                "pageNumber": "19",
+                "pageProb": 79,
+                "wordConf": 18
+            },
+            {
+                "leafNum": 22,
+                "confidence": 81,
+                "pageNumber": "20",
+                "pageProb": 71,
+                "wordConf": 63
+            },
+            {
+                "leafNum": 23,
+                "confidence": 90,
+                "pageNumber": "21",
+                "pageProb": 80,
+                "wordConf": 11
+            },
+            {
+                "leafNum": 24,
+                "confidence": 63,
+                "pageNumber": "22",
+                "pageProb": 53,
+                "wordConf": 25
+            },
+            {
+                "leafNum": 25,
+                "confidence": 84,
+                "pageNumber": "23",
+                "pageProb": 74,
+                "wordConf": 73
+            },
+            {
+                "leafNum": 26,
+                "confidence": 68,
+                "pageNumber": "24",
+                "pageProb": 58,
+                "wordConf": 68
+            }
+        ]
+    },
+    "server": "ia800107.us.archive.org",
+    "uniq": 1021528302,
+    "workable_servers": [
+        "ia800107.us.archive.org",
+        "ia600107.us.archive.org"
+    ]
+}

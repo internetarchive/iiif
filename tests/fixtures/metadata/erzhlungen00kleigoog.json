@@ -1,0 +1,236 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn720705.ca.archive.org",
+                "dir": "/0/items/erzhlungen00kleigoog"
+            },
+            {
+                "server": "dn760102.eu.archive.org",
+                "dir": "/0/items/erzhlungen00kleigoog"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn720705.ca.archive.org",
+                "dir": "/0/items/erzhlungen00kleigoog"
+            },
+            {
+                "server": "dn760102.eu.archive.org",
+                "dir": "/0/items/erzhlungen00kleigoog"
+            }
+        ]
+    },
+    "created": 1793995425,
+    "d1": "ia600900.us.archive.org",
+    "d2": "ia800900.us.archive.org",
+    "dir": "/6/items/erzhlungen00kleigoog",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1539221753",
+            "size": "11939",
+            "md5": "39302aca536663bf8c75540b00b34ecc",
+            "crc32": "e2840723",
+            "sha1": "587d25a4b5341e6efe33574208208a370a30e962",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "erzhlungen00kleigoog.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "erzhlungen00kleigoog_tif.zip",
+            "md5": "9a315e2a5d3cb498e82fe845f94e8c62",
+            "mtime": "1233029956",
+            "size": "169673",
+            "crc32": "166254c1",
+            "sha1": "0eb46c6c43e3d41060ff17f9e89fd77089962788"
+        },
+        {
+            "name": "erzhlungen00kleigoog.pdf",
+            "source": "original",
+            "format": "Image Container PDF",
+            "original-name": "Erz__hlungen.pdf?id=S_VKAAAAMAAJ&output=pdf&sig=ACfU3U3sS_NQJK25G1oI9KOLu60_ZcaHag&source=gbs_summary_r&cad=0",
+            "size": "4186449",
+            "atime": "1216511102",
+            "mtime": "1216511105",
+            "ctime": "1216511102",
+            "md5": "c6b23ae39d4b5f61943da27bb265ff41",
+            "sha1": "4028a700208716f0d3520af7c1a8663d7f3008c7",
+            "crc32": "66ac52ae"
+        },
+        {
+            "name": "erzhlungen00kleigoog_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "erzhlungen00kleigoog_tif.zip",
+            "md5": "a5957bbb67466bf26daaae025425e67f",
+            "mtime": "1233038172",
+            "size": "11371385",
+            "crc32": "013d5891",
+            "sha1": "10960c4eb0dc8dac4005a91dd343d48a26a9347d"
+        },
+        {
+            "name": "erzhlungen00kleigoog_archive.torrent",
+            "source": "metadata",
+            "btih": "979cc39418ea3566c6dc25c3f817eef66ba41f9e",
+            "mtime": "1577153689",
+            "size": "5319",
+            "md5": "8bacb81a6f00754a2bc63c5efd0bb1a3",
+            "crc32": "a1b5a9de",
+            "sha1": "b330ea47573a0bffb766629d5de6174c4ed6f479",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "erzhlungen00kleigoog_dc.xml",
+            "source": "original",
+            "format": "Dublin Core",
+            "md5": "23b32a7ca0dc380a96fdd60f86b53a05",
+            "mtime": "1233029524",
+            "size": "456",
+            "crc32": "18a942ff",
+            "sha1": "97c65f2d885dc82e0b617283092b280765d5a9bf"
+        },
+        {
+            "name": "erzhlungen00kleigoog_desc.html",
+            "source": "original",
+            "format": "Metadata",
+            "original-name": "books?id=S_VKAAAAMAAJ&oe=UTF-8",
+            "size": "36878",
+            "atime": "1216323706",
+            "mtime": "1215945212",
+            "ctime": "1216330597",
+            "md5": "2b9aa861e95ca4f0375df49ee48c9c94",
+            "sha1": "d7439e54df7aaf3a7d08979e7553e8e87cc4a9f8",
+            "crc32": "f659195a"
+        },
+        {
+            "name": "erzhlungen00kleigoog_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "erzhlungen00kleigoog_djvu.xml",
+            "mtime": "1456711729",
+            "size": "678342",
+            "md5": "c182b898be94b901735b1a9c758850a8",
+            "crc32": "38df1a21",
+            "sha1": "0c122488d126cec2c6f9be9159bdf830fd131a85"
+        },
+        {
+            "name": "erzhlungen00kleigoog_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "erzhlungen00kleigoog_abbyy.gz",
+            "md5": "cae479e1089c16d2169bce51c803d2b2",
+            "mtime": "1233038706",
+            "size": "5551148",
+            "crc32": "bc9b044e",
+            "sha1": "2b5845098b1d583373e5d02703415c81f1c52842"
+        },
+        {
+            "name": "erzhlungen00kleigoog_files.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "f1b6043b47353ac1fc955fb81660ffc5",
+            "summation": "md5"
+        },
+        {
+            "name": "erzhlungen00kleigoog_marc.xml",
+            "source": "original",
+            "format": "MARC",
+            "md5": "39d17dc98743a75e6d2431f09229481a",
+            "mtime": "1233029524",
+            "size": "5691",
+            "crc32": "8ea483f9",
+            "sha1": "1f949f8139385d0eff028bbdd2a2a43a1de4e49b"
+        },
+        {
+            "name": "erzhlungen00kleigoog_meta.sqlite",
+            "source": "original",
+            "mtime": "1463935686",
+            "size": "6144",
+            "format": "Metadata",
+            "md5": "2a6f0c7eeb27066496e1c0cf0bf68c76",
+            "crc32": "cd442559",
+            "sha1": "93a75a9bcb42e281c2827a88715ea8aa29fb0992"
+        },
+        {
+            "name": "erzhlungen00kleigoog_meta.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1577153688",
+            "size": "1505",
+            "md5": "02780ab579894202c64507928e6e038a",
+            "crc32": "11cf0df9",
+            "sha1": "45d2b9bf0e93d20b4d7cb2fa30b6db6ecca81c2e"
+        },
+        {
+            "name": "erzhlungen00kleigoog_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "erzhlungen00kleigoog_djvu.xml",
+            "md5": "4f0d4be0fa16bc2809dd25f6ae0f83af",
+            "mtime": "1243233239",
+            "size": "96701",
+            "crc32": "2812af8d",
+            "sha1": "c0bc2c6bc724df8fe49f130508d9836ae24a77d2"
+        },
+        {
+            "name": "erzhlungen00kleigoog_tif.zip",
+            "source": "derivative",
+            "format": "Single Page Processed TIFF ZIP",
+            "original": "erzhlungen00kleigoog.pdf",
+            "md5": "93b11bc86ceff6f48a7c3271969092f7",
+            "mtime": "1233029934",
+            "size": "25588666",
+            "crc32": "df9a31f5",
+            "sha1": "0d3f21b894f569afcf1c41ee58715bd050c61d1d",
+            "filecount": "322"
+        }
+    ],
+    "files_count": 15,
+    "item_last_updated": 1681043231,
+    "item_size": 47710296,
+    "metadata": {
+        "publisher": "Leipzig, Insel-verlag",
+        "identifier": "erzhlungen00kleigoog",
+        "scanner": "google",
+        "title": "Erz\u00e4hlungen..",
+        "creator": "Kleist, Heinrich von, 1777-1811",
+        "contributor": "University of Michigan",
+        "mediatype": "texts",
+        "collection": "americana",
+        "possible-copyright-status": "NOT_IN_COPYRIGHT",
+        "year": "1908",
+        "date": "1908",
+        "scandate": "20071001000000",
+        "copyright-region": "US",
+        "description": [
+            "Book digitized by Google from the library of the University of Michigan and uploaded to the Internet Archive by user tpb.",
+            "Mode of access: Internet"
+        ],
+        "source": "http://books.google.com/books?id=S_VKAAAAMAAJ&oe=UTF-8",
+        "sponsor": "Google",
+        "uploader": "tpb",
+        "oclc-id": "10836026",
+        "language": "ger",
+        "identifier-access": "http://www.archive.org/details/erzhlungen00kleigoog",
+        "identifier-ark": "ark:/13960/t83j3s003",
+        "imagecount": "322",
+        "ocr": "ABBYY FineReader 8.0",
+        "publicdate": "2009-01-27 06:45:47",
+        "repub_state": "4",
+        "foldoutcount": "0",
+        "backup_location": "ia903602_25",
+        "openlibrary_edition": "OL20531192M",
+        "openlibrary_work": "OL1451531W",
+        "addeddate": "2009-01-27 06:45:47"
+    },
+    "server": "ia800900.us.archive.org",
+    "uniq": 1867487255,
+    "workable_servers": [
+        "ia800900.us.archive.org",
+        "ia600900.us.archive.org"
+    ]
+}

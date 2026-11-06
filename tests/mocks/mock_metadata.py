@@ -8,15 +8,32 @@ import requests
 # A part of a URL that identifies it, and the fixture to serve for it. Parts are
 # matched against the URL as @log_requests prints it, so spaces appear as %20.
 KNOWN_URLS = {
-    # Metadata
+    # Search
     "/metadata/journalofexpedit00ford": "tests/fixtures/metadata/journalofexpedit00ford.json",
     "/metadata/gray-diary": "tests/fixtures/metadata/gray-diary.json",
     "/metadata/mrr_401": "tests/fixtures/metadata/mrr_401.json",
+    # Annotations 
     "/metadata/goodytwoshoes00newyiala": "tests/fixtures/metadata/goodytwoshoes00newyiala.json",
+    # Audio
     "/metadata/kaled_jalil": "tests/fixtures/metadata/kaled_jalil.json",
     "/metadata/hhfbc-cyl26": "tests/fixtures/metadata/hhfbc-cyl26.json",
     "/metadata/Weirdos_demo-1978": "tests/fixtures/metadata/Weirdos_demo-1978.json",
     "/metadata/2021-04-06": "tests/fixtures/metadata/2021-04-06.json",
+    # Cantaloupe resolver
+    "/metadata/img-8664_202009": "tests/fixtures/metadata/img-8664_202009.json",
+    "/metadata/wg35-2-388": "tests/fixtures/metadata/wg35-2-388.json",
+    "/metadata/pennsylvaniavege14penn": "tests/fixtures/metadata/pennsylvaniavege14penn.json",
+    "/metadata/mobot31753002307400": "tests/fixtures/metadata/mobot31753002307400.json",
+    "/metadata/opencontext-10-1998fig2tr52late-wall-west-face": "tests/fixtures/metadata/opencontext-10-1998fig2tr52late-wall-west-face.json",
+    "/metadata/v52n2gullv52ngold": "tests/fixtures/metadata/v52n2gullv52ngold.json",
+    "/metadata/erzhlungen00kleigoog": "tests/fixtures/metadata/erzhlungen00kleigoog.json",
+    "/metadata/1994harlequinducksurreicrich": "tests/fixtures/metadata/1994harlequinducksurreicrich.json",
+    "/metadata/CAT31108226": "tests/fixtures/metadata/CAT31108226.json",
+    "/metadata/CAT31151811": "tests/fixtures/metadata/CAT31151811.json",
+    "/metadata/opencontext-22-e-2-203-4-1-p-3jpg": "tests/fixtures/metadata/opencontext-22-e-2-203-4-1-p-3jpg.json",
+    "/metadata/footmouthdisease00reyn": "tests/fixtures/metadata/footmouthdisease00reyn.json",
+    "/metadata/drug-use-and-abuse-collection-of-pamphlets": "tests/fixtures/metadata/drug-use-and-abuse-collection-of-pamphlets.json",
+    "/metadata/engflowergarden00robirich": "tests/fixtures/metadata/engflowergarden00robirich.json",
 
     # Image info
     "journalofexpedit00ford%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json",
