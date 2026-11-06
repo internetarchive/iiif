@@ -5,6 +5,30 @@ from unittest.mock import patch
 import requests
 
 
+# A part of a URL that identifies it, and the fixture to serve for it. Parts are
+# matched against the URL as @log_requests prints it, so spaces appear as %20.
+KNOWN_URLS = {
+    # Metadata
+    "/metadata/journalofexpedit00ford": "tests/fixtures/metadata/journalofexpedit00ford.json",
+    "/metadata/gray-diary": "tests/fixtures/metadata/gray-diary.json",
+    # No mrr_401 fixture exists. The journal's metadata is enough for test_search_missing_r.
+    "/metadata/mrr_401": "tests/fixtures/metadata/mrr_401.json",
+
+    # Image info
+    "journalofexpedit00ford%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json",
+
+    # BookReader
+    "BookReaderJSIA.php?id=journalofexpedit00ford": "tests/fixtures/bookreader/journalofexpedit00ford.json",
+
+    # Full text search, identified by the search term
+    "journalofexpedit00ford&q=Brunswick": "tests/fixtures/search/fulltext-search.json",
+    "journalofexpedit00ford&q=much": "tests/fixtures/search/2_boxes.json",
+    "journalofexpedit00ford&q=pleasure%20to%20observe": "tests/fixtures/search/multi_word.json",
+    "mrr_401&q=top": "tests/fixtures/search/missmatch.json",
+    "gray-diary&q=Houston": "tests/fixtures/search/Houston.json",
+}
+
+
 def mockResponse(fixture):
     class MockResponse:
         status_code = 200
@@ -19,54 +43,65 @@ def mockResponse(fixture):
     return MockResponse()
 
 
-def mock_url(fragment, fixture):
-    """Serve `fixture` for any HTTP request whose URL contains `fragment`.
+def prepared_url(method, url, kwargs):
+    return requests.Request(method, url, params=kwargs.get("params")).prepare().url
 
-    This covers requests.get and calls made through a requests.Session. Stack
-    one per URL. Fragments are checked top to bottom and the first match wins.
-    A URL with no match raises an error, so a live call can't slip through.
+
+def find_fixture(url):
+    matches = [part for part in KNOWN_URLS if part in url]
+    if not matches:
+        raise RuntimeError(f"URL not found in registry please add a fixture for: {url}")
+    if len(matches) > 1:
+        raise RuntimeError(
+            f"{url} matches more than one KNOWN_URLS entry: {matches}. "
+            "Make those URL parts more specific."
+        )
+    return KNOWN_URLS[matches[0]]
+
+
+def mock_urls(test):
+    """Answer every HTTP request made while `test` runs from KNOWN_URLS.
+
+    This covers requests.get and calls made through a requests.Session. A URL
+    that doesn't match exactly one entry raises a RuntimeError that fails the test.
     """
-    def decorate(test):
-        # Decorators apply bottom-up, so insert at the front to keep reading order.
-        if hasattr(test, "_mock_routes"):
-            test._mock_routes.insert(0, (fragment, fixture))
-            return test
-
-        routes = [(fragment, fixture)]
+    @wraps(test)
+    def wrapper(*args, **kwargs):
+        errors = []
 
         def fake_request(session, method, url, *args, **kwargs):
-            for known_fragment, known_fixture in routes:
-                if known_fragment in url:
-                    return mockResponse(known_fixture)
-            raise AssertionError(f"Unexpected request: {url}")
+            try:
+                return mockResponse(find_fixture(prepared_url(method, url, kwargs)))
+            except RuntimeError as error:
+                errors.append(error)
+                raise
 
-        @wraps(test)
-        def wrapper(*args, **kwargs):
-            with patch("requests.Session.request", fake_request):
+        with patch("requests.Session.request", fake_request):
+            try:
                 return test(*args, **kwargs)
+            finally:
+                # Flask turns the exception into a 500, and resolver.py has bare
+                # excepts that could hide it completely, so raise it again here.
+                if errors:
+                    raise errors[0]
 
-        wrapper._mock_routes = routes
-        return wrapper
-
-    return decorate
+    return wrapper
 
 
 def log_requests(test):
     """Print the URL of every HTTP request made while `test` runs.
 
     Use this to work out which fixtures a test needs. On its own, requests still
-    go to the network. To use it with @mock_url, put it below the @mock_url lines:
-    it then prints each request and @mock_url answers it. Placed above them, it
-    prints nothing.
+    go to the network. To use it with @mock_urls, put it below @mock_urls: it then
+    prints each request and @mock_urls answers it. Placed above, it prints nothing.
     """
     @wraps(test)
     def wrapper(*args, **kwargs):
-        # Look this up per run so a @mock_url above this decorator still applies.
+        # Look this up per run so a @mock_urls above this decorator still applies.
         next_request = requests.Session.request
 
         def logging_request(session, method, url, *args, **kwargs):
-            full_url = requests.Request(method, url, params=kwargs.get("params")).prepare().url
-            print(f"[{test.__name__}] {method.upper()} {full_url}")
+            print(f"[{test.__name__}] {method.upper()} {prepared_url(method, url, kwargs)}")
             return next_request(session, method, url, *args, **kwargs)
 
         with patch("requests.Session.request", logging_request):

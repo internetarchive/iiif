@@ -3,9 +3,7 @@ from flask.testing import FlaskClient
 from iiify.app import app, cache
 from iiify import search
 import requests
-from tests.mocks.mock_metadata import log_requests, mock_url
-
-journal_metadata = mock_url("metadata", "tests/fixtures/metadata/journalofexpedit00ford.json")
+from tests.mocks.mock_metadata import log_requests, mock_urls
 
 class TestSearch(unittest.TestCase):
 
@@ -13,8 +11,7 @@ class TestSearch(unittest.TestCase):
         cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
         self.test_app = FlaskClient(app)
 
-    @journal_metadata
-    @mock_url("fulltext/inside.php","tests/fixtures/search/fulltext-search.json")
+    @mock_urls
     def test_basic(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
         self.assertEqual(resp.status_code, 200)
@@ -22,9 +19,7 @@ class TestSearch(unittest.TestCase):
 
         self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
 
-    @journal_metadata
-    @mock_url("info.json", "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json")
-    @mock_url("BookReaderJSIA.php", "tests/fixtures/bookreader/journalofexpedit00ford.json")
+    @mock_urls
     def test_search_in_manifest(self):    
         resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -38,8 +33,7 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(service['profile'], "http://iiif.io/api/search/1/search")
 
 
-    @mock_url("fulltext/inside.php", "tests/fixtures/search/fulltext-search.json")
-    @journal_metadata
+    @mock_urls
     def test_fixture(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
         self.assertEqual(resp.status_code, 200)
@@ -50,12 +44,11 @@ class TestSearch(unittest.TestCase):
         result1 = results["resources"][0]
         self.assertEqual(result1["on"], "https://iiif.archive.org/iiif/journalofexpedit00ford$5/canvas#xywh=1338,2851,337,44", "Canvas id or bounding box is wrong")
 
-    @journal_metadata
+    @mock_urls
     def test_search_url(self):
         self.assertEqual(search.build_search_url("journalofexpedit00ford", "query"), "https://ia601302.us.archive.org/fulltext/inside.php?item_id=journalofexpedit00ford&doc=journalofexpedit00ford&path=/31/items/journalofexpedit00ford&q=query", "Unexpected search query")
 
-    @mock_url("fulltext/inside.php", "tests/fixtures/search/2_boxes.json")
-    @journal_metadata
+    @mock_urls
     def test_multi_box(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=much")
         self.assertEqual(resp.status_code, 200)
@@ -76,8 +69,7 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(results[2]["resource"]["chars"], "much", "Unexpected search match")
         self.assertEqual(results[2]["on"], "https://iiif.archive.org/iiif/journalofexpedit00ford$6/canvas#xywh=1336,1520,171,42", "Canvas or box is incorrect")
 
-    @mock_url("fulltext/inside.php", "tests/fixtures/search/multi_word.json")
-    @journal_metadata
+    @mock_urls
     def test_multi_word(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=pleasure to observe")
         self.assertEqual(resp.status_code, 200)
@@ -91,10 +83,7 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(results[2]["resource"]["chars"], "to", "Unexpected search match")
         self.assertEqual(results[3]["resource"]["chars"], "observe", "Unexpected search match")
 
-    # Although the metadata fixture doesn't match the item searched for
-    # below it shouldn't matter for this test
-    @mock_url("fulltext/inside.php", "tests/fixtures/search/missmatch.json")
-    @journal_metadata
+    @mock_urls
     def test_search_missing_r(self):
         resp = self.test_app.get("/iiif/search/mrr_401/?q=top")
         self.assertEqual(resp.status_code, 200)
@@ -111,8 +100,7 @@ class TestSearch(unittest.TestCase):
             self.assertEqual(anno["resource"]["chars"], "top")
 
 
-    @journal_metadata
-    @mock_url("fulltext/inside.php","tests/fixtures/search/fulltext-search.json")
+    @mock_urls
     def test_matching_characters_not_empty(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
         results = resp.json
@@ -120,8 +108,7 @@ class TestSearch(unittest.TestCase):
             self.assertTrue(isinstance(result, dict))
             self.assertEqual(result["resource"]["chars"], "Brunswick")
 
-    @mock_url("metadata", "tests/fixtures/metadata/gray-diary.json")
-    @mock_url("fulltext/inside.php", "tests/fixtures/search/Houston.json")
+    @mock_urls
     def test_real_gray_diary_item(self):
         """Test that doc parameter matches the original filename minus extension"""
         result = search.build_search_url('gray-diary', 'Houston')
