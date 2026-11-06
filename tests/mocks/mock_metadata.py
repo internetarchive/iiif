@@ -39,6 +39,9 @@ KNOWN_URLS = {
     "/metadata/university_pittsburgh": "tests/fixtures/metadata/university_pittsburgh.json",
     "/metadata/terminal-escape-collection": "tests/fixtures/metadata/terminal-escape-collection.json",
     "/metadata/usgs_tx": "tests/fixtures/metadata/usgs_tx.json",
+    # images
+    "/metadata/jewishinterpreta00morg": "tests/fixtures/metadata/jewishinterpreta00morg.json",
+    "/metadata/Codex-Cuara": "tests/fixtures/metadata/Codex-Cuara.json",
 
     # Image info
     "journalofexpedit00ford%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json",
@@ -46,6 +49,24 @@ KNOWN_URLS = {
     "2/hhfbc-cyl26%2FFlandersFairbanks_thumb.jpg/info.json":"tests/fixtures/info/hhfbc-cyl26FlandersFairbanks_thumb.jpg.info.json",
     "2/Weirdos_demo-1978%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/Weirdos_demo-1978__ia_thumb.jpg.info.json",
     "2021-04-06%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/2021-04-06__ia_thumb.jpg.info.json",
+    "Codex-Cuara%2F00000031.tif/info.json": "tests/fixtures/info/Codex-Cuara00000031.tif.info.json",
+    "Codex-Cuara%2F00000036.tif/info.json": "tests/fixtures/info/Codex-Cuara00000036.tif.info.json",
+    "Codex-Cuara%2F00000038.tif/info.json": "tests/fixtures/info/Codex-Cuara00000038.tif.info.json",
+    "Codex-Cuara%2F00000039.tif/info.json": "tests/fixtures/info/Codex-Cuara00000039.tif.info.json",
+    "Codex-Cuara%2F00000040.tif/info.json": "tests/fixtures/info/Codex-Cuara00000040.tif.info.json",
+    "Codex-Cuara%2F00000043.tif/info.json": "tests/fixtures/info/Codex-Cuara00000043.tif.info.json",
+    "Codex-Cuara%2F00000045.tif/info.json": "tests/fixtures/info/Codex-Cuara00000045.tif.info.json",
+    "Codex-Cuara%2F00000047.tif/info.json": "tests/fixtures/info/Codex-Cuara00000047.tif.info.json",
+    "Codex-Cuara%2F00000050.tif/info.json": "tests/fixtures/info/Codex-Cuara00000050.tif.info.json",
+    "Codex-Cuara%2F00000051.tif/info.json": "tests/fixtures/info/Codex-Cuara00000051.tif.info.json",
+    "Codex-Cuara%2F00000053.tif/info.json": "tests/fixtures/info/Codex-Cuara00000053.tif.info.json",
+    "Codex-Cuara%2F00000054.tif/info.json": "tests/fixtures/info/Codex-Cuara00000054.tif.info.json",
+    "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf%201r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf%201r.tif.info.json",
+    "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf10r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf10r.tif.info.json",
+    "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf1v.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf1v.tif.info.json",
+    "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf7r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf7r.tif.info.json",
+    "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf8r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf8r.tif.info.json",
+    "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf9r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf9r.tif.info.json",
 
     # BookReader
     "BookReaderJSIA.php?id=journalofexpedit00ford": "tests/fixtures/bookreader/journalofexpedit00ford.json",

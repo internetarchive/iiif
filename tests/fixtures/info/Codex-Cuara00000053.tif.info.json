@@ -1,0 +1,91 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/Codex-Cuara%2F00000053.tif",
+    "protocol": "http://iiif.io/api/image",
+    "width": 5021,
+    "height": 7200,
+    "sizes": [
+        {
+            "width": 78,
+            "height": 113
+        },
+        {
+            "width": 157,
+            "height": 225
+        },
+        {
+            "width": 314,
+            "height": 450
+        },
+        {
+            "width": 628,
+            "height": 900
+        },
+        {
+            "width": 1255,
+            "height": 1800
+        },
+        {
+            "width": 2511,
+            "height": 3600
+        },
+        {
+            "width": 5021,
+            "height": 7200
+        }
+    ],
+    "tiles": [
+        {
+            "width": 512,
+            "height": 512,
+            "scaleFactors": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+                64
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "tif",
+                "jpg",
+                "gif",
+                "png"
+            ],
+            "maxArea": 36151200,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}
