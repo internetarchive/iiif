@@ -1,22 +1,11 @@
 import unittest
-from unittest.mock import patch
 from flask.testing import FlaskClient
 from iiify.app import app
 from iiify import search
-import json
 import requests
+from tests.mocks.mock_metadata import mock_url
 
-def mockResponse(fixture):
-    class MockResponse:
-        status_code = 200
-        def json(self):
-            with open(fixture, "r") as file:
-                return json.load(file)
-
-        def raise_for_status(self):
-            return        
-
-    return MockResponse()
+journal_metadata = mock_url("metadata", "tests/fixtures/metadata/journalofexpedit00ford.json")
 
 class TestSearch(unittest.TestCase):
 
@@ -44,47 +33,25 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(service['profile'], "http://iiif.io/api/search/1/search")
 
 
-    @patch("requests.get")
-    def test_fixture(self, searchPatch):
-            # Define mock response for the specific URLs
-            def mock_response(url, *args, **kwargs):
-                if "fulltext/inside.php" in url:
-                    return mockResponse("tests/fixtures/search/fulltext-search.json")
-                elif "metadata" in url:
-                    return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
+    @mock_url("fulltext/inside.php", "tests/fixtures/search/fulltext-search.json")
+    @journal_metadata
+    def test_fixture(self):
+        resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
+        self.assertEqual(resp.status_code, 200)
+        results = resp.json    
 
-            searchPatch.side_effect = mock_response    
+        self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
 
-            resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
-            self.assertEqual(resp.status_code, 200)
-            results = resp.json    
+        result1 = results["resources"][0]
+        self.assertEqual(result1["on"], "https://iiif.archive.org/iiif/journalofexpedit00ford$5/canvas#xywh=1338,2851,337,44", "Canvas id or bounding box is wrong")
 
-            self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
-
-            result1 = results["resources"][0]
-            self.assertEqual(result1["on"], "https://iiif.archive.org/iiif/journalofexpedit00ford$5/canvas#xywh=1338,2851,337,44", "Canvas id or bounding box is wrong")
-
-    @patch("requests.get")
-    def test_search_url(self,metadataPatch):
-         # Define mock response for the specific URLs
-        def mock_response(url, *args, **kwargs):
-            return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
-
-        metadataPatch.side_effect = mock_response
-    
+    @journal_metadata
+    def test_search_url(self):
         self.assertEqual(search.build_search_url("journalofexpedit00ford", "query"), "https://ia601302.us.archive.org/fulltext/inside.php?item_id=journalofexpedit00ford&doc=journalofexpedit00ford&path=/31/items/journalofexpedit00ford&q=query", "Unexpected search query")
 
-    @patch("requests.get")
-    def multi_box(self, searchPatch):
-        # Define mock response for the specific URLs
-        def mock_response(url, *args, **kwargs):
-            if "fulltext/inside.php" in url:
-                return mockResponse("tests/fixtures/search/2_boxes.json")
-            elif "metadata" in url:
-                return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
-
-        searchPatch.side_effect = mock_response    
-
+    @mock_url("fulltext/inside.php", "tests/fixtures/search/2_boxes.json")
+    @journal_metadata
+    def test_multi_box(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=much")
         self.assertEqual(resp.status_code, 200)
         results = resp.json    
@@ -104,17 +71,9 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(results[2]["resource"]["chars"], "much", "Unexpected search match")
         self.assertEqual(results[2]["on"], "https://iiif.archive.org/iiif/journalofexpedit00ford$6/canvas#xywh=1336,1520,171,42", "Canvas or box is incorrect")
 
-    @patch("requests.get")
-    def multi_word(self, searchPatch):    
-        # Define mock response for the specific URLs
-        def mock_response(url, *args, **kwargs):
-            if "fulltext/inside.php" in url:
-                return mockResponse("tests/fixtures/search/multi_word.json")
-            elif "metadata" in url:
-                return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
-
-        searchPatch.side_effect = mock_response    
-
+    @mock_url("fulltext/inside.php", "tests/fixtures/search/multi_word.json")
+    @journal_metadata
+    def test_multi_word(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=pleasure to observe")
         self.assertEqual(resp.status_code, 200)
         results = resp.json    
@@ -127,19 +86,11 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(results[2]["resource"]["chars"], "to", "Unexpected search match")
         self.assertEqual(results[3]["resource"]["chars"], "observe", "Unexpected search match")
 
-    @patch("requests.get")
-    def multi_box(self, searchPatch):
-        # Define mock response for the specific URLs
-        def mock_response(url, *args, **kwargs):
-            if "fulltext/inside.php" in url:
-                return mockResponse("tests/fixtures/search/missmatch.json")
-            elif "metadata" in url:
-                # Although this doesn't match the item used in the 
-                # search above it shouldn't matter for this test
-                return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
-
-        searchPatch.side_effect = mock_response    
-
+    # Although the metadata fixture doesn't match the item searched for
+    # below it shouldn't matter for this test
+    @mock_url("fulltext/inside.php", "tests/fixtures/search/missmatch.json")
+    @journal_metadata
+    def test_search_missing_r(self):
         resp = self.test_app.get("/iiif/search/mrr_401/?q=top")
         self.assertEqual(resp.status_code, 200)
         results = resp.json        
