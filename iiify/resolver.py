@@ -1322,6 +1322,33 @@ def valid_filetype(filename):
     f = filename.lower()
     return any(f.endswith('.%s' % ext) for ext in valid_filetypes)
 
+def safe_media_path(identifier):
+    """Build the on-disk cache path for ``identifier``, confined to ``media_root``.
+
+    ``identifier`` is user-influenced (it may also carry ``$filepath`` / ``:document``
+    suffixes). A crafted value such as ``../../etc/passwd``, an absolute path like
+    ``/etc/passwd``, or one containing a null byte could otherwise escape the media
+    cache directory and be used to probe (``os.path.exists``) or clobber (``open(...,
+    'wb')``) arbitrary files on disk. This is the single source-side sanitizer for
+    CodeQL py/path-injection alerts #11 and #91.
+
+    The joined path is normalised with ``os.path.realpath`` (collapsing ``..`` and
+    resolving symlinks) and rejected unless it resolves to a location strictly
+    inside ``media_root``. Returns the normalised absolute path.
+    """
+    if not identifier or "\x00" in identifier:
+        raise ValueError("Invalid identifier: %r" % (identifier,))
+
+    media_base = os.path.realpath(media_root)
+    path = os.path.realpath(os.path.join(media_base, identifier))
+
+    if not path.startswith(media_base + os.sep):
+        raise ValueError(
+            "Invalid identifier (path traversal detected): %r" % (identifier,)
+        )
+    return path
+
+
 def ia_resolver(identifier):
     """Resolves a iiif identifier to the resource's path on disk.
 
@@ -1329,7 +1356,9 @@ def ia_resolver(identifier):
     opposed to a remote storage host, like Internet Archive) and first
     fetches it, if it doesn't exist on disk..
     """
-    path = os.path.join(media_root, identifier)
+    # Sanitize at the source: ``path`` feeds both os.path.exists() and open(...,
+    # 'wb') below, so confining it to media_root here closes CodeQL #11 and #91.
+    path = safe_media_path(identifier)
 
     leaf = None
     if "$" not in identifier:
