@@ -59,7 +59,8 @@ setup(
         'flask',
         'flask-cors',
         'beautifulsoup4',
-        'bleach'
+        'bleach',
+        'defusedxml'
         ],
     include_package_data=True
     )

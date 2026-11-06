@@ -264,7 +264,12 @@ def commenting_annotations(identifier: str):
 def vtt_stream(identifier):
     validate_ia_identifier(identifier, page_suffix=False)
     response = make_response(create_vtt_stream(identifier))
-    response.headers['Content-Type'] = 'text/vtt'
+    # The VTT body reflects remote .srt content fetched from archive.org, which is
+    # not under our control. Pin the content type (with charset) and forbid MIME
+    # sniffing so a browser cannot reinterpret the text/vtt response as HTML and
+    # execute injected markup (CodeQL #10, py/reflective-xss).
+    response.headers['Content-Type'] = 'text/vtt; charset=utf-8'
+    response.headers['X-Content-Type-Options'] = 'nosniff'
     return response
 
 @app.route('/iiif/search/<identifier>/')
