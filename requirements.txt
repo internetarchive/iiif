@@ -21,7 +21,7 @@ jsonpatch==1.33
 jsonpointer==3.0.0
 MarkupSafe==3.0.2
 pillow==11.0.0
-pydantic==1.10.19
+pydantic==2.0
 requests==2.34.2
 schema==0.7.7
 six==1.16.0
