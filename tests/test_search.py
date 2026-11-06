@@ -1,27 +1,32 @@
 import unittest
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
 from iiify import search
 import requests
-from tests.mocks.mock_metadata import mock_url
+from tests.mocks.mock_metadata import log_requests, mock_url
 
 journal_metadata = mock_url("metadata", "tests/fixtures/metadata/journalofexpedit00ford.json")
 
 class TestSearch(unittest.TestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
         self.test_app = FlaskClient(app)
 
-    def test_live(self):
+    @journal_metadata
+    @mock_url("fulltext/inside.php","tests/fixtures/search/fulltext-search.json")
+    def test_basic(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
         self.assertEqual(resp.status_code, 200)
         results = resp.json    
 
         self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
 
+    @journal_metadata
+    @mock_url("info.json", "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json")
+    @mock_url("BookReaderJSIA.php", "tests/fixtures/bookreader/journalofexpedit00ford.json")
     def test_search_in_manifest(self):    
-        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json?recache=true")
+        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json    
 
@@ -106,6 +111,8 @@ class TestSearch(unittest.TestCase):
             self.assertEqual(anno["resource"]["chars"], "top")
 
 
+    @journal_metadata
+    @mock_url("fulltext/inside.php","tests/fixtures/search/fulltext-search.json")
     def test_matching_characters_not_empty(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
         results = resp.json
@@ -113,7 +120,8 @@ class TestSearch(unittest.TestCase):
             self.assertTrue(isinstance(result, dict))
             self.assertEqual(result["resource"]["chars"], "Brunswick")
 
-
+    @mock_url("metadata", "tests/fixtures/metadata/gray-diary.json")
+    @mock_url("fulltext/inside.php", "tests/fixtures/search/Houston.json")
     def test_real_gray_diary_item(self):
         """Test that doc parameter matches the original filename minus extension"""
         result = search.build_search_url('gray-diary', 'Houston')
