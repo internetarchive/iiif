@@ -13,10 +13,17 @@ KNOWN_URLS = {
     "/metadata/gray-diary": "tests/fixtures/metadata/gray-diary.json",
     "/metadata/mrr_401": "tests/fixtures/metadata/mrr_401.json",
     "/metadata/goodytwoshoes00newyiala": "tests/fixtures/metadata/goodytwoshoes00newyiala.json",
+    "/metadata/kaled_jalil": "tests/fixtures/metadata/kaled_jalil.json",
+    "/metadata/hhfbc-cyl26": "tests/fixtures/metadata/hhfbc-cyl26.json",
+    "/metadata/Weirdos_demo-1978": "tests/fixtures/metadata/Weirdos_demo-1978.json",
+    "/metadata/2021-04-06": "tests/fixtures/metadata/2021-04-06.json",
 
     # Image info
     "journalofexpedit00ford%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json",
     "goodytwoshoes00newyiala%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/goodytwoshoes00newyiala__ia_thumb.jpg.info.json",
+    "2/hhfbc-cyl26%2FFlandersFairbanks_thumb.jpg/info.json":"tests/fixtures/info/hhfbc-cyl26FlandersFairbanks_thumb.jpg.info.json",
+    "2/Weirdos_demo-1978%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/Weirdos_demo-1978__ia_thumb.jpg.info.json",
+    "2021-04-06%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/2021-04-06__ia_thumb.jpg.info.json",
 
     # BookReader
     "BookReaderJSIA.php?id=journalofexpedit00ford": "tests/fixtures/bookreader/journalofexpedit00ford.json",
