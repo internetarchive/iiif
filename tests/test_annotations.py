@@ -89,4 +89,4 @@ class TestAnnotations(unittest.TestCase):
             "/iiif/3/goodytwoshoes00newyiala/manifest.json"
         )
         self.assertEqual(resp.status_code, 200)
-        self.assertEqual(len(resp.json['items']), 5)
+        self.assertEqual(len(resp.json['items']), 16)
