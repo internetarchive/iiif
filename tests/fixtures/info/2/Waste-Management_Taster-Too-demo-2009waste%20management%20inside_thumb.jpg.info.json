@@ -1,0 +1,61 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/Waste-Management_Taster-Too-demo-2009%2Fwaste%20management%20inside_thumb.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 192,
+    "height": 68,
+    "sizes": [
+        {
+            "width": 192,
+            "height": 68
+        }
+    ],
+    "tiles": [
+        {
+            "width": 192,
+            "height": 68,
+            "scaleFactors": [
+                1
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "tif",
+                "jpg",
+                "gif",
+                "png"
+            ],
+            "maxArea": 13056,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "created": 1794014875,
+    "d1": "ia601901.us.archive.org",
+    "d2": "ia801901.us.archive.org",
+    "dir": "/16/items/opencontext-41-nippur-excavation-units",
+    "files": [
+        {
+            "name": "41-nippur-excavation-units.jpg",
+            "source": "original",
+            "mtime": "1484874289",
+            "size": "515449",
+            "md5": "fbbf132d0409cc271fa3be244147f776",
+            "crc32": "8186896c",
+            "sha1": "cd404e886163c2ebfc845f5dd7446fac147d096e",
+            "format": "JPEG",
+            "rotation": "0"
+        },
+        {
+            "name": "41-nippur-excavation-units_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "41-nippur-excavation-units.jpg",
+            "mtime": "1484874313",
+            "size": "3832",
+            "md5": "596a8fc9977b0aa28b3682e5e2d9de7d",
+            "crc32": "c575a0c8",
+            "sha1": "5aecf876b509c9023687bc6407841571e8802434"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1538853425",
+            "size": "11093",
+            "md5": "8f65d67f71975efd598e514e5a7b9806",
+            "crc32": "4a9a70d1",
+            "sha1": "21ee057e77d3ff61d46395210d0b43a62e35ef91",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "opencontext-41-nippur-excavation-units_archive.torrent",
+            "source": "metadata",
+            "btih": "160fc515a8641ac7bb8b1b3f09e5a5e41d57ff66",
+            "mtime": "1538853425",
+            "size": "2245",
+            "md5": "bad954f1a48470d3a8cbc59380e848ea",
+            "crc32": "bbfcb197",
+            "sha1": "7f4e2985ba1d48f9c90c1e1b94a32466bf2ba811",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "opencontext-41-nippur-excavation-units_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "5f1c2a3c3167eba3473c318200e5fd75"
+        },
+        {
+            "name": "opencontext-41-nippur-excavation-units_meta.sqlite",
+            "source": "original",
+            "mtime": "1484874303",
+            "size": "9216",
+            "md5": "ecaf0da8b13cf102c86667e0e5b77e01",
+            "crc32": "88f21c72",
+            "sha1": "b480c18dfc52e9ecd8387e8d7915af1c9ffce34e",
+            "format": "Metadata"
+        },
+        {
+            "name": "opencontext-41-nippur-excavation-units_meta.xml",
+            "source": "original",
+            "mtime": "1538853424",
+            "size": "1267",
+            "format": "Metadata",
+            "md5": "b4551375384dcde7da746029be217404",
+            "crc32": "3e75f880",
+            "sha1": "d3ee986becf4d2301f666305a45393d770b2c56e"
+        }
+    ],
+    "files_count": 7,
+    "item_last_updated": 1538853425,
+    "item_size": 543102,
+    "metadata": {
+        "identifier": "opencontext-41-nippur-excavation-units",
+        "collection": "opencontext",
+        "description": "<div>Image: \"Nippur Excavation Units\" , published by Open Context at: <a href=\"http://opencontext.org/media/EB336FBD-53F1-42F7-6CCB-50772F590F3A\" rel=\"nofollow\">http://opencontext.org/media/EB336FBD-53F1-42F7-6CCB-50772F590F3A</a>; as part of the \"<a href=\"http://opencontext.org/projects/8F947319-3C69-4847-B7A2-09E00ED90B32\" rel=\"nofollow\">Balance Pan Weights from Nippur</a>\" data publication.</div>",
+        "licenseurl": "http://creativecommons.org/licenses/by/4.0/",
+        "mediatype": "image",
+        "partof": "http://opencontext.org/projects/8F947319-3C69-4847-B7A2-09E00ED90B32",
+        "publisher": "Open Context (http://opencontext.org)",
+        "scanner": "Internet Archive Python library 1.1.0",
+        "title": "Nippur Excavation Units from Iraq/Nippur",
+        "uri": "http://opencontext.org/media/EB336FBD-53F1-42F7-6CCB-50772F590F3A",
+        "publicdate": "2017-01-20 01:04:50",
+        "uploader": "kansaeric@gmail.com",
+        "addeddate": "2017-01-20 01:04:50",
+        "backup_location": "ia906305_7"
+    },
+    "server": "ia801901.us.archive.org",
+    "uniq": 671002030,
+    "workable_servers": [
+        "ia801901.us.archive.org",
+        "ia601901.us.archive.org"
+    ]
+}

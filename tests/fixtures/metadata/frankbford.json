@@ -1,0 +1,108 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721808.ca.archive.org",
+                "dir": "/0/items/frankbford"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721808.ca.archive.org",
+                "dir": "/0/items/frankbford"
+            }
+        ]
+    },
+    "created": 1793995441,
+    "d1": "ia600404.us.archive.org",
+    "d2": "ia800404.us.archive.org",
+    "dir": "/11/items/frankbford",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1682483217",
+            "size": "13164",
+            "md5": "f9b6a5933ce45a3e95dcd474afea466f",
+            "crc32": "34bd1782",
+            "sha1": "3a64692fdf85dc4e23abdcbe2c5a3f5aabd05891",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "frankbford_archive.torrent",
+            "source": "metadata",
+            "btih": "0692781a844c86da765d87494a5b74ee1a6048ce",
+            "mtime": "1751053651",
+            "size": "1800",
+            "md5": "d7bf3e1d8eb5fd4f62f89d4c565dafde",
+            "crc32": "3f070a09",
+            "sha1": "26f207b50aa8653d004cdb02a5ce972c45a92def",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "frankbford_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "9d98212c22e81f5e809cfe49759dc946",
+            "summation": "md5"
+        },
+        {
+            "name": "frankbford_meta.sqlite",
+            "source": "original",
+            "mtime": "1682483186",
+            "size": "20480",
+            "md5": "f65cd5a0e1869937c33fe8233a9d2281",
+            "crc32": "e9ff615e",
+            "sha1": "8ca33f090e0f57285f4e0e8b11d387addcd16e36",
+            "format": "Metadata"
+        },
+        {
+            "name": "frankbford_meta.xml",
+            "source": "original",
+            "mtime": "1751053648",
+            "size": "10390",
+            "md5": "d7aee5d2068ac48cf74cba3c5a945740",
+            "crc32": "e5535393",
+            "sha1": "75ff5bd58dce73bc4447957b737f358c15703819",
+            "format": "Metadata"
+        },
+        {
+            "name": "logo_header.jpg",
+            "source": "original",
+            "mtime": "1682483167",
+            "size": "21245",
+            "md5": "33018b5b0174f2c761b23a67ef178b45",
+            "crc32": "147820b6",
+            "sha1": "b1c80bef80e8c805cfb537427d4cc001048e3368",
+            "format": "JPEG",
+            "rotation": "0"
+        }
+    ],
+    "files_count": 6,
+    "is_collection": true,
+    "item_last_updated": 1751053651,
+    "item_size": 67079,
+    "metadata": {
+        "identifier": "frankbford",
+        "collection": "patron-library-collection",
+        "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">Frank B. Ford (1932-2023):&nbsp;<a href=\"https://archive.org/details/frankbford\" rel=\"nofollow\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; box-sizing: border-box;\">Works</a>,&nbsp;<a href=\"https://archive.org/details/fbford_cv_202304\" rel=\"nofollow\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; box-sizing: border-box;\">Short CV</a>,&nbsp;<a href=\"https://archive.org/details/fbford_obituary\" rel=\"nofollow\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; box-sizing: border-box;\">Obituary</a>,&nbsp;<a href=\"https://archive.org/details/motleycrisp\" rel=\"nofollow\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; box-sizing: border-box;\">Blog</a></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">Frank B. Ford (1932-2023) was an experimental poet and playwright, and it was his wish to have his work publicly archived online after his death.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\"><b>Biography:&nbsp;</b>Ford was born April 16, 1932, in New Haven, Connecticut. He enjoyed a varied life: He served&nbsp;in the Korean War, obtained a Master\u2019s Degree from the University of Connecticut, taught&nbsp;English in Turkey at a U.S. Air Force base, and became a professor of creative writing at West&nbsp;Chester University (then State College) in West Chester, PA.&nbsp;</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">There he was \u201cUncle Frank\u201d\u2014a teacher known for his warm encouragement towards student writers\u2014especially in his role as advisor to the campus literary magazine, Daedalus. A&nbsp;relentless experimentalist, he wrote novels, short stories, plays (both traditional and, with&nbsp;Wilma Ford, for puppets), and poetry. Frank achieved a notable success when his play&nbsp;Waterman, about experiences in Korea, was produced by the Guthrie 2 Theater in Minneapolis during their 1976-77 season. He published widely, and later in life wrote poems for&nbsp;Counterpunch.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">Frank retired from teaching in 1986, but continued to write, and became an avid runner and&nbsp;cyclist. He was a founding member/resident of the Greene Street Artists Cooperative in&nbsp;Philadelphia and lived there through the 1990s, before moving to Cocoa Beach, Florida,&nbsp;where he enjoyed the weather and the occasional dolphin sighting. In 2022 he moved to&nbsp;Caritas House in Baltimore to be closer to family. His last months were marked by frequent&nbsp;visits from his sons and their families. While his health diminished over the last few years, his&nbsp;spirits were good, and he took great joy in playing one of his many harmonicas. He even sent&nbsp;in a harmonica audition tape to America\u2019s Got Talent. He also maintained a poetry blog at&nbsp;<a href=\"https://motleycrisp.blogspot.com/\">motleycrisp.blogspot.com</a>&nbsp;from 2005 until 2022 (<a href=\"https://archive.org/details/motleycrisp\">also archived here</a>).</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">Frank was survived by his former wife, Wilma Yocom Ford, by his two sons, Greg, in Baltimore,&nbsp;MD, and Paul, in Brooklyn, NY. Greg's wife Tricia and Paul\u2019s wife Maureen were extremely&nbsp;active in caring for Frank over the last decade. Frank is survived by many grandchildren: In&nbsp;the Baltimore area, William and his wife Diana, and their son Malcolm\u2014Frank\u2019s great-grandchild\u2014as well Noelle and her husband Nate, and Maura and her husband Richi; in&nbsp;Brooklyn, lvy and Abraham, 11-year-old twins. Of special note is his long friendship with Bill&nbsp;Scott, a former student, with whom he spoke almost every day for decades.&nbsp;</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\"><b>About the Archive: </b>Ford wrote almost every day into his 90th year, sometimes producing several short poems a day, one document per poem. He asked his son Paul to preserve his work multiple times, and Paul and Frank discussed it the day before Frank passed away.&nbsp;</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">In general the goal was to preserve documents as-is, whether on paper or digital, to best preserve Ford's intent, without editorializing or guessing as to structure. Uncollated works remain uncollated, etc.<br></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">This archive was prepared by scanning in published works, taking iPhone photos of published works, and performing sheet-fed scanning of several thousand manuscript pages in roughly the order they were placed into two boxes, discarding obvious duplicate manuscripts. Nearly 70 years of manuscripts were in the box, and not all pages are in order and some had deteriorated. Such is life.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">Ford adopted word processing early so there were perhaps 43 years of poems and stories in various digital formats. Thousands of files were duplicated, and then some edited slightly. Some folders were full of poems, some were organized by date, some contained sets of poems and stories, some were alphabetical.&nbsp;</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">Over the decades Ford moved texts from floppies on an IBM PC to floppies on an Amiga to one of a variety of laptops and PCs, and ultimately onto a Google Drive, across multiple word processing formats. Thus there is little assuredness about dates of publication on either the scanned or the digital data. The directory in which the first timestamped edition of a file was found has been turned into a tag on each manuscript. Further tags were automatically extracted using the SpaCY natural language toolkit in Python (Ford also created his own tagging system for his blog, which has been captured but is not reflected in the tagging here).</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">An attempt of middling valiance has been made to de-duplicate identical files, keeping only the \"oldest\" by the timestamp in the directory. The pipeline was, roughly:&nbsp;</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\"></p><ol><li>Load all files into SQLite using its archive tools, and hash all files;<br></li><li>Deduplicate based on hash;<br></li><li>Convert files from text, AbiWord, WordPerfect (Amiga, PC, Windows), MS Word .doc and MS Word .docx into Libre/Star/OpenOffice ODT files, using the command line tools that come with LibreOffice;<br></li><li>Extract text from ODT files using Pandoc;<br></li><li>Convert text to best-guess titles, falling back on filename as title when no title could be guessed &nbsp;(this is why many objects are named \"Frank B. Ford,\" because they were mailed out to editors);<br></li><li>Extract tags using SpaCY;<br></li><li>Bucket objects into \"poems\" (short word count) and \"longer works\" (longer word count);&nbsp;<br></li><li>Upload to Internet Archive with files, tags, and the above metadata.<br></li></ol><p></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">This approach seemed like a reasonable compromise because the conversion process would preserve nearly all word processing semantics (tabs, spaces, etc). While an enthusiastic adopter of computers, Ford was typographically of the typewriter school and lived a double-spaced Courier lifestyle, and rarely changed fonts. Also because the Internet Archive's transformation pipeline has robust support for LibreOffice documents.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">Finally, Ford's blog was downloaded using the wget web mirroring utility and parsed using some custom Python, turned into a massive ODT document, and uploaded along with a zip file of the entire blog.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">While there is no intent to repeat this process or add to the archive, Paul plans to zip everything digital up and store it on a few cloud services, and store paper originals of scanned documents for several years or longer.</p>",
+        "hidden": "true",
+        "mediatype": "collection",
+        "title": "Frank B. Ford: Collected Publications and Manuscripts",
+        "uploader": "jscott@archive.org",
+        "publicdate": "2023-04-26 04:26:18",
+        "addeddate": "2023-04-26 04:26:18",
+        "summary": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px;\">Frank B. Ford (1932-2023) was an experimental poet and playwright, and it was his wish to have his work publicly archived online after his death. The collection is comprised of multiple plays, dozens of short stories, and thousands of short poems. All content is released under the CC0 Creative Commons license.</p>",
+        "subject": "Experimental Literature, Poetry, Prose, Plays",
+        "rights": "These manuscripts are shared with the world under Creative Commons 0 \"No Rights Reserved.\" See: https://creativecommons.org/share-your-work/public-domain/cc0/",
+        "creator": "Paul Ford",
+        "collectionsource": "patron"
+    },
+    "server": "ia600404.us.archive.org",
+    "uniq": 121112028,
+    "workable_servers": [
+        "ia600404.us.archive.org",
+        "ia800404.us.archive.org"
+    ]
+}

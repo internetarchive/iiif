@@ -1,0 +1,121 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn710806.ca.archive.org",
+                "dir": "/0/items/opencontext-22-e-2-203-4-1-p-3jpg"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn710806.ca.archive.org",
+                "dir": "/0/items/opencontext-22-e-2-203-4-1-p-3jpg"
+            }
+        ]
+    },
+    "created": 1793998056,
+    "d1": "ia601901.us.archive.org",
+    "d2": "ia801901.us.archive.org",
+    "dir": "/16/items/opencontext-22-e-2-203-4-1-p-3jpg",
+    "files": [
+        {
+            "name": "22-e-2-203-4-1-p-3jpg.JPG",
+            "source": "original",
+            "mtime": "1483242990",
+            "size": "1518484",
+            "md5": "b7258d6b89166a5aa3381c0f431346b4",
+            "crc32": "b288ec2c",
+            "sha1": "04a2a7897d0597f6a246ffd7fa859130122ffabf",
+            "format": "JPEG",
+            "rotation": "270"
+        },
+        {
+            "name": "22-e-2-203-4-1-p-3jpg_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "22-e-2-203-4-1-p-3jpg.JPG",
+            "mtime": "1483243021",
+            "size": "2435",
+            "md5": "3c7419e37171eb5decbbb3115c39793d",
+            "crc32": "f4bd820e",
+            "sha1": "6b87cd6de0929985e9773313aab19c41697edd33"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1530987426",
+            "size": "8764",
+            "md5": "d402e7b66f5f78276c650b059f4ce730",
+            "crc32": "a59b53a0",
+            "sha1": "37704e51dc50b0988062fe283b88fdc5ebfb09ae",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "opencontext-22-e-2-203-4-1-p-3jpg_archive.torrent",
+            "source": "metadata",
+            "btih": "55f9b26b953868f644e181d3b1deedc88650720c",
+            "mtime": "1535507709",
+            "size": "2207",
+            "md5": "6e63bb730412caea4bde5fa5bd68a375",
+            "crc32": "144b96c6",
+            "sha1": "6f586a699a74d119292f55c48746615b4e124c45",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "opencontext-22-e-2-203-4-1-p-3jpg_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "9bd5f301fdfb257ef022703f4af0ef53"
+        },
+        {
+            "name": "opencontext-22-e-2-203-4-1-p-3jpg_meta.sqlite",
+            "source": "original",
+            "mtime": "1483243008",
+            "size": "9216",
+            "md5": "16d3915e1f00b358a6fa74bce53d5984",
+            "crc32": "e5daf920",
+            "sha1": "6fbd3c7f6aa37ed957fb9175de947a642c00f6e2",
+            "format": "Metadata"
+        },
+        {
+            "name": "opencontext-22-e-2-203-4-1-p-3jpg_meta.xml",
+            "source": "original",
+            "mtime": "1535507705",
+            "size": "1449",
+            "format": "Metadata",
+            "md5": "b0175e2aa6a7a722b2b5f91c28796c17",
+            "crc32": "6283cc06",
+            "sha1": "e291a980d811ad48d1fb8865d2e785801b84a16f"
+        }
+    ],
+    "files_count": 7,
+    "item_last_updated": 1535507709,
+    "item_size": 1542555,
+    "metadata": {
+        "identifier": "opencontext-22-e-2-203-4-1-p-3jpg",
+        "description": "<div>Image: \"E_2_203_4_1_P_3.JPG\" , published by Open Context at: <a href=\"http://opencontext.org/media/F7880E49-8FAA-4C61-8AF1-A15433878374\" rel=\"nofollow\">http://opencontext.org/media/F7880E49-8FAA-4C61-8AF1-A15433878374</a>; as part of the \"<a href=\"http://opencontext.org/projects/3DE4CD9C-259E-4C14-9B03-8B10454BA66E\" rel=\"nofollow\">Kenan Tepe</a>\" data publication.</div>",
+        "licenseurl": "http://creativecommons.org/licenses/by/4.0/",
+        "mediatype": "image",
+        "partof": "http://opencontext.org/projects/3DE4CD9C-259E-4C14-9B03-8B10454BA66E",
+        "publisher": "Open Context (http://opencontext.org)",
+        "scanner": "Internet Archive Python library 1.1.0",
+        "title": "E_2_203_4_1_P_3.JPG from Turkey/Kenan Tepe/Area E/Trench 2/Locus 203/Finds Bag 4/Object 1",
+        "uri": "http://opencontext.org/media/F7880E49-8FAA-4C61-8AF1-A15433878374",
+        "publicdate": "2017-01-01 03:56:30",
+        "uploader": "kansaeric@gmail.com",
+        "addeddate": "2017-01-01 03:56:30",
+        "curation": "[curator]validator@archive.org[/curator][date]20170101035656[/date][comment]checked for malware[/comment]",
+        "collection": [
+            "opencontext",
+            "image"
+        ],
+        "backup_location": "ia906303_15"
+    },
+    "server": "ia601901.us.archive.org",
+    "uniq": 963864136,
+    "workable_servers": [
+        "ia601901.us.archive.org",
+        "ia801901.us.archive.org"
+    ]
+}

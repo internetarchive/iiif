@@ -1,0 +1,66 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/st-anthony-relics-01%2FStAnthony-Relics_01_thumb.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 128,
+    "height": 192,
+    "sizes": [
+        {
+            "width": 64,
+            "height": 96
+        },
+        {
+            "width": 128,
+            "height": 192
+        }
+    ],
+    "tiles": [
+        {
+            "width": 128,
+            "height": 192,
+            "scaleFactors": [
+                1,
+                2
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "tif",
+                "jpg",
+                "gif",
+                "png"
+            ],
+            "maxArea": 24576,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,496 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760104.eu.archive.org",
+                "dir": "/0/items/v52n2gullv52ngold"
+            },
+            {
+                "server": "dn790001.ca.archive.org",
+                "dir": "/0/items/v52n2gullv52ngold"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn760104.eu.archive.org",
+                "dir": "/0/items/v52n2gullv52ngold"
+            },
+            {
+                "server": "dn790001.ca.archive.org",
+                "dir": "/0/items/v52n2gullv52ngold"
+            }
+        ]
+    },
+    "created": 1793998067,
+    "d1": "ia600508.us.archive.org",
+    "d2": "ia800508.us.archive.org",
+    "dir": "/1/items/v52n2gullv52ngold",
+    "events": {
+        "checkin_0": [
+            "associate-osamu-sueyoshi",
+            1462558904,
+            ""
+        ]
+    },
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1659827558",
+            "size": "23207",
+            "md5": "25996fa66ba83b54f3ae5257bf5904c4",
+            "crc32": "54355967",
+            "sha1": "2a474168379ca8a24bbc88d6fa2c34126acbaeaf",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "bak/2016/v52n2gullv52ngold_meta.sqlite.bak",
+            "source": "original",
+            "mtime": "1461703432",
+            "size": "10240",
+            "md5": "c01540a408c3d7e1401a7df5224d52e1",
+            "crc32": "4fade936",
+            "sha1": "54f20e630730481b04a485bcd0e8d14ddc882602",
+            "format": "Backup"
+        },
+        {
+            "name": "v52n2gullv52ngold.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "v52n2gullv52ngold_jp2.zip",
+            "mtime": "1462559033",
+            "size": "93241",
+            "md5": "aa3845fc0d708649e64abdf41e006cb4",
+            "crc32": "a3a357df",
+            "sha1": "8580dc44bd8cdf71753af5dd5806addc5bb152bd"
+        },
+        {
+            "name": "v52n2gullv52ngold.pdf",
+            "source": "derivative",
+            "format": "Text PDF",
+            "original": "v52n2gullv52ngold_page_numbers.json",
+            "mtime": "1703306017",
+            "size": "459557",
+            "md5": "a492ae423781019ad48daf125b49057f",
+            "crc32": "bf397237",
+            "sha1": "3d7371cae31e3d1efb20dab18c1b53cbe3c41866"
+        },
+        {
+            "name": "v52n2gullv52ngold_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "v52n2gullv52ngold_jp2.zip",
+            "mtime": "1462559969",
+            "size": "332569",
+            "md5": "b76cad863dab67c286f2648d65bc850a",
+            "crc32": "54714926",
+            "sha1": "03feada62c6c30567ea43b527d8ace5974e468e4"
+        },
+        {
+            "name": "v52n2gullv52ngold_archive.torrent",
+            "source": "metadata",
+            "btih": "f4de1d509975c2c6366e2d2e368da53ea5202ec5",
+            "mtime": "1751872497",
+            "size": "6138",
+            "md5": "0b7adf4b2fedb1117b0d397cfb4b5450",
+            "crc32": "d114c47e",
+            "sha1": "1c767b561fd09ae1f566cfccf5f44f558e2757d7",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "v52n2gullv52ngold_bhlmets.xml",
+            "source": "original",
+            "mtime": "1751872454",
+            "size": "8683",
+            "format": "Biodiversity Heritage Library METS",
+            "md5": "df94a947a02737edc9ca84589139e7b1",
+            "crc32": "e853c4ce",
+            "sha1": "41b9bbc8eb0900f49b0db84650b2af27ec24aadb"
+        },
+        {
+            "name": "v52n2gullv52ngold_bw.pdf",
+            "source": "derivative",
+            "format": "Grayscale PDF",
+            "original": "v52n2gullv52ngold_page_numbers.json",
+            "mtime": "1703306017",
+            "size": "435899",
+            "md5": "8ca579fb9f8f67fba04a8fdad1203c6d",
+            "crc32": "2c05ae4a",
+            "sha1": "da3d9615857107465691e88191c5be0248462ce4"
+        },
+        {
+            "name": "v52n2gullv52ngold_chocr.html.gz",
+            "source": "derivative",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "chOCR",
+            "original": "v52n2gullv52ngold_abbyy.gz",
+            "mtime": "1703305852",
+            "size": "285273",
+            "md5": "5c1d5831a90f31ab3b286de8d6c315f0",
+            "crc32": "7ad561b8",
+            "sha1": "e2f54a608a517fca367e988262f599f336bd2260"
+        },
+        {
+            "name": "v52n2gullv52ngold_cloth_detection.log",
+            "source": "derivative",
+            "cloth_cover_detection_module_version": "2.1",
+            "format": "Cloth Cover Detection Log",
+            "original": "v52n2gullv52ngold_scandata.xml",
+            "mtime": "1703306096",
+            "size": "1471",
+            "md5": "781eb4b3873aa73760b33c9c08f394db",
+            "crc32": "5169873e",
+            "sha1": "9a3247ce5da791a63c7f0916e47cc1c719bd7386"
+        },
+        {
+            "name": "v52n2gullv52ngold_dc.xml",
+            "source": "original",
+            "format": "Dublin Core",
+            "mtime": "1649215721",
+            "size": "905",
+            "md5": "fe43425c16b0ed3d82e7a2d4e732aaff",
+            "crc32": "812adc00",
+            "sha1": "538da781c1fb2f923522134592a4e705cfcd3722"
+        },
+        {
+            "name": "v52n2gullv52ngold_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "v52n2gullv52ngold_djvu.xml",
+            "mtime": "1703305907",
+            "size": "25890",
+            "md5": "df32fd5d8df26259eea18efc0deb4e7a",
+            "crc32": "7a8f9a99",
+            "sha1": "85bb32c6f8db37396d427a9483d2b1bbdf7aa45b"
+        },
+        {
+            "name": "v52n2gullv52ngold_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "v52n2gullv52ngold_hocr.html",
+            "mtime": "1703305869",
+            "size": "290028",
+            "md5": "864f9d841ae057bdb3cc3e7670fb170d",
+            "crc32": "52f5fd03",
+            "sha1": "2a8866a3c94e487fb6fe50c0ff385417bc24ed5d"
+        },
+        {
+            "name": "v52n2gullv52ngold_events.json",
+            "source": "original",
+            "mtime": "1462558905",
+            "size": "56",
+            "md5": "a0c58aca3838f4fb0924dfbbac5fac1c",
+            "crc32": "109974fc",
+            "sha1": "85b114467e70d48a6feb2949a14e060058f70d27",
+            "format": "JSON"
+        },
+        {
+            "name": "v52n2gullv52ngold_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "8dfd2396d1a9f248d9cc0a2c19223f63",
+            "summation": "md5"
+        },
+        {
+            "name": "v52n2gullv52ngold_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.2.0",
+            "hocr_char_to_word_hocr_version": "1.1.45",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "hOCR",
+            "original": "v52n2gullv52ngold_chocr.html.gz",
+            "mtime": "1703305861",
+            "size": "556301",
+            "md5": "63c259ad321ff83dcb9fb5e397bdd76e",
+            "crc32": "0d0e3d9f",
+            "sha1": "cc8ed0086e7429ed54b8e4f24ff87229e15226c3"
+        },
+        {
+            "name": "v52n2gullv52ngold_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "v52n2gullv52ngold_hocr.html",
+            "mtime": "1703305877",
+            "size": "144",
+            "md5": "8ec16caed24ac90d34e15c6e1bc9a48c",
+            "crc32": "c0835e5e",
+            "sha1": "3171d8dc1f9c41d359c201de6fe2d16b24cc93e4"
+        },
+        {
+            "name": "v52n2gullv52ngold_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "87",
+            "word_conf_11_20": "35",
+            "word_conf_21_30": "53",
+            "word_conf_31_40": "57",
+            "word_conf_41_50": "119",
+            "word_conf_51_60": "259",
+            "word_conf_61_70": "328",
+            "word_conf_71_80": "393",
+            "word_conf_81_90": "480",
+            "word_conf_91_100": "1966",
+            "format": "OCR Search Text",
+            "original": "v52n2gullv52ngold_hocr.html",
+            "mtime": "1703305889",
+            "size": "10957",
+            "md5": "3d0fc0fd3d4d97f2e565e1ff9743ca57",
+            "crc32": "73669b81",
+            "sha1": "c3061c30003e2dcdf9bc62545ab9a7b87a458e22"
+        },
+        {
+            "name": "v52n2gullv52ngold_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "v52n2gullv52ngold_orig_jp2.tar",
+            "mtime": "1462559023",
+            "size": "4202940",
+            "md5": "9a99e547d3f1d8398d4b4fdefde82f6c",
+            "crc32": "b8ead8dd",
+            "sha1": "872ec756095996007ece138e058691202e2747ff",
+            "filecount": "10"
+        },
+        {
+            "name": "v52n2gullv52ngold_marc.xml",
+            "source": "original",
+            "format": "MARC",
+            "mtime": "1461786092",
+            "size": "5988",
+            "md5": "eb2c89bc906fd0795dc2138c0e702009",
+            "crc32": "61f894ab",
+            "sha1": "2319fdcaac085857e0f1fddc4623d3c90d8b651c"
+        },
+        {
+            "name": "v52n2gullv52ngold_meta.mrc",
+            "source": "original",
+            "format": "MARC Binary",
+            "mtime": "1461786092",
+            "size": "1671",
+            "md5": "12720af8fc126f31312431fce384e5fa",
+            "crc32": "8b0d3aae",
+            "sha1": "f41ef805c697e857ba24f75ddde2a85641ef2e37"
+        },
+        {
+            "name": "v52n2gullv52ngold_meta.sqlite",
+            "source": "original",
+            "mtime": "1751872459",
+            "size": "16384",
+            "format": "Metadata",
+            "md5": "c79d874df515b52aa7f1089b1447bf3d",
+            "crc32": "28c9a1f4",
+            "sha1": "670800a9f63519d86e29bbb9ccdd6fef2bae8e17"
+        },
+        {
+            "name": "v52n2gullv52ngold_meta.xml",
+            "source": "original",
+            "mtime": "1726356080",
+            "size": "2765",
+            "format": "Metadata",
+            "md5": "eab29dd3d1ced33eb7dac859ad583ba4",
+            "crc32": "3e62c96d",
+            "sha1": "e99ab1ff6df285aa0cfb0cd931b9903653421ed4"
+        },
+        {
+            "name": "v52n2gullv52ngold_metasource.xml",
+            "source": "original",
+            "mtime": "1461785037",
+            "size": "222",
+            "md5": "9a3714bd55e60aa5e234906a5951f824",
+            "crc32": "33965933",
+            "sha1": "a83d274f0f99615d9529956f998cb8a051d412f6",
+            "format": "MARC Source"
+        },
+        {
+            "name": "v52n2gullv52ngold_names.xml",
+            "source": "original",
+            "mtime": "1463038821",
+            "size": "2065",
+            "md5": "3ce74ccb0bc425fe7e9cb4913f679acf",
+            "crc32": "bd0ecc7f",
+            "sha1": "3c2afc28bc71fad1bf1a979b8fe01cf03f4799f6",
+            "format": "Name Metadata"
+        },
+        {
+            "name": "v52n2gullv52ngold_orig_jp2.tar",
+            "source": "original",
+            "mtime": "1462558923",
+            "size": "63109120",
+            "format": "Single Page Original JP2 Tar",
+            "md5": "4b1e24af6a8d59b69b97443afc67db70",
+            "crc32": "fcaf7428",
+            "sha1": "6d73b350c2e77833bcccd793abbc1297eb1b05d4",
+            "filecount": "10"
+        },
+        {
+            "name": "v52n2gullv52ngold_origin.txt",
+            "source": "original",
+            "mtime": "1461703407",
+            "size": "43",
+            "md5": "942f5d9b56c6b8ea73aff5edf6166eb6",
+            "crc32": "b9f3eede",
+            "sha1": "9915ae441a2f9ade87c23fb083e4ce395de5e6cf",
+            "format": "Text"
+        },
+        {
+            "name": "v52n2gullv52ngold_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.3",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "0",
+            "format": "Page Numbers JSON",
+            "original": "v52n2gullv52ngold_hocr.html",
+            "mtime": "1703305899",
+            "size": "1498",
+            "md5": "3c6f77925fef1e75c75164702a04f471",
+            "crc32": "93c047bd",
+            "sha1": "81ecb0b79ee312e3bdeaf04a9431bf18803aa8be"
+        },
+        {
+            "name": "v52n2gullv52ngold_scandata.xml",
+            "source": "original",
+            "mtime": "1703306096",
+            "size": "10204",
+            "format": "Scandata",
+            "md5": "6803becaf6b7402d25c3d9a5e2b7cbd7",
+            "crc32": "9b27b520",
+            "sha1": "1372469beaad66f533df7ed8df00e6ab07af39f4"
+        }
+    ],
+    "files_count": 29,
+    "item_last_updated": 1751872497,
+    "item_size": 69893459,
+    "metadata": {
+        "identifier": "v52n2gullv52ngold",
+        "collection": [
+            "calacademy",
+            "biodiversity",
+            "americana",
+            "globallibraries"
+        ],
+        "collection_set": "biodiversity",
+        "contributor": "California Academy of Sciences",
+        "creator": "Golden Gate Audubon Society.; Audubon Association of the Pacific.; Audubon Society of the Pacific.",
+        "language": "eng",
+        "mediatype": "texts",
+        "repub_state": "19",
+        "scanner": "scribett0131",
+        "scanningcenter": "tt_calacademy",
+        "sponsor": "California Academy of Sciences",
+        "title": "The Gull",
+        "volume": "v.52:no.2 (1970:Feb.)",
+        "publicdate": "2016-04-26 20:43:28",
+        "uploader": "scribett0131@archive.org",
+        "addeddate": "2016-04-26 20:43:28",
+        "imagecount": "10",
+        "scandate": "20160426212536",
+        "shiptracking": "TTCAAC07",
+        "publisher": "Berkeley, Calif., Golden Gate Audubon Society",
+        "date": "1919",
+        "subject": [
+            "Birds",
+            "Birds"
+        ],
+        "lccn": "sn 78001376",
+        "description": "Name of issuing body varies: 1919- Audubon Association of the Pacific; 19 - Audubon Society of the Pacific; 19 - Golden Gate Audubon Society",
+        "year": "1970",
+        "possible-copyright-status": "In copyright. Digitized with the permission of the rights holder.",
+        "licenseurl": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "rights": "http://biodiversitylibrary.org/permissions",
+        "notes": "There is no title page. There is no copyright page. There is no table of contents page.",
+        "ppi": "300",
+        "foldoutcount": "0",
+        "identifier-access": "http://archive.org/details/v52n2gullv52ngold",
+        "identifier-ark": "ark:/13960/t6rz3xh4w",
+        "scanfee": "40",
+        "invoice": "1127",
+        "sponsordate": "20160531",
+        "backup_location": "ia906107_9",
+        "operator": "operator1.calacademy@archive.org",
+        "filesxml": "Sat Dec 26 15:51:38 UTC 2020",
+        "oclc-id": "1458098",
+        "associated-names": "Golden Gate Audubon Society; Audubon Association of the Pacific; Audubon Society of the Pacific",
+        "republisher_operator": "associate-osamu-sueyoshi@archive.org",
+        "republisher_date": "20160506142142",
+        "republisher_time": "102",
+        "ocr_module_version": "0.0.21",
+        "ocr_converted": "abbyy-to-hocr 1.1.37",
+        "page_number_confidence": "0",
+        "page_number_module_version": "1.0.3"
+    },
+    "page_numbers": {
+        "identifier": "v52n2gullv52ngold",
+        "format-version": "2",
+        "archive-hocr-tools-version": "1.1.54",
+        "confidence": 0,
+        "pages": [
+            {
+                "leafNum": 1,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 2,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 3,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 4,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 5,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 6,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 7,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 8,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            }
+        ]
+    },
+    "server": "ia600508.us.archive.org",
+    "uniq": 1207971999,
+    "workable_servers": [
+        "ia600508.us.archive.org",
+        "ia800508.us.archive.org"
+    ]
+}

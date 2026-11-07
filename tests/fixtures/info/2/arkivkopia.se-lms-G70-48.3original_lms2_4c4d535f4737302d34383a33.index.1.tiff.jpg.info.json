@@ -1,0 +1,86 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/arkivkopia.se-lms-G70-48.3%2Foriginal_lms2_4c4d535f4737302d34383a33.index.1.tiff.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 14252,
+    "height": 3493,
+    "sizes": [
+        {
+            "width": 445,
+            "height": 109
+        },
+        {
+            "width": 891,
+            "height": 218
+        },
+        {
+            "width": 1782,
+            "height": 437
+        },
+        {
+            "width": 3563,
+            "height": 873
+        },
+        {
+            "width": 7126,
+            "height": 1747
+        },
+        {
+            "width": 14252,
+            "height": 3493
+        }
+    ],
+    "tiles": [
+        {
+            "width": 512,
+            "height": 512,
+            "scaleFactors": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                32
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "jpg",
+                "tif",
+                "gif",
+                "png"
+            ],
+            "maxArea": 49782236,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

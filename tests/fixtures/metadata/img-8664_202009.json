@@ -1,0 +1,122 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn710004.ca.archive.org",
+                "dir": "/0/items/img-8664_202009"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn710004.ca.archive.org",
+                "dir": "/0/items/img-8664_202009"
+            }
+        ]
+    },
+    "created": 1793996192,
+    "d1": "ia601907.us.archive.org",
+    "d2": "ia801907.us.archive.org",
+    "dir": "/19/items/img-8664_202009",
+    "files": [
+        {
+            "name": "IMG_8664.jpg",
+            "source": "original",
+            "mtime": "1600913915",
+            "size": "4311138",
+            "md5": "5473e7471e96470fcb368033b0bf7048",
+            "crc32": "a5f3298d",
+            "sha1": "c3412feb8f9528d486b3835ea86845e7606fea68",
+            "format": "JPEG",
+            "rotation": "0"
+        },
+        {
+            "name": "IMG_8664_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "IMG_8664.jpg",
+            "mtime": "1600916315",
+            "size": "7160",
+            "md5": "26f94ce913162e6046ad5cf4ced281a7",
+            "crc32": "69020d0f",
+            "sha1": "674f1627969ccc1b0e81a72a7c728f8ff95c99b8"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1613401482",
+            "size": "14721",
+            "md5": "2c75ecb33bead5a88665e0e243b59ebb",
+            "crc32": "47125728",
+            "sha1": "9b0f6c8530efd99b649a7dd3c5235fdadf2b2e24",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "img-8664_202009_archive.torrent",
+            "source": "metadata",
+            "btih": "4f8441004113d62d2f8f1b5ff32233062be53a02",
+            "mtime": "1613401482",
+            "size": "2144",
+            "md5": "11625480c88d309171659e27b7cd190b",
+            "crc32": "39bcde28",
+            "sha1": "8f81ac69500dc06f10eda19c830eba6873012c90",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "img-8664_202009_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "cac5ac8c830a9612a8b89d70963458c7"
+        },
+        {
+            "name": "img-8664_202009_meta.sqlite",
+            "source": "original",
+            "mtime": "1600913980",
+            "size": "11264",
+            "md5": "d30a79515fa3ef1231fa8f40a030c8e3",
+            "crc32": "215bc636",
+            "sha1": "14efe2ce4eab3460787f1d78c85a3eb1c0312d1b",
+            "format": "Metadata"
+        },
+        {
+            "name": "img-8664_202009_meta.xml",
+            "source": "original",
+            "mtime": "1613401480",
+            "size": "919",
+            "md5": "6538255e996fefca7743f89f83d237a2",
+            "crc32": "c0e5c433",
+            "sha1": "f0775d456c1fe2e74b2fe5077b3190ad8e9d3719",
+            "format": "Metadata"
+        }
+    ],
+    "files_count": 7,
+    "item_last_updated": 1613401482,
+    "item_size": 4347346,
+    "metadata": {
+        "identifier": "img-8664_202009",
+        "mediatype": "image",
+        "collection": [
+            "opensource_image",
+            "community"
+        ],
+        "creator": "Glen Robson",
+        "description": "<span></span><h2 class=\"qrShPb kno-ecr-pt PZPZlf mfMhoc EaHP9c\"><span>Butchart Gardens Victoria<br /></span></h2>",
+        "licenseurl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+        "subject": [
+            "Garden",
+            "Victoria"
+        ],
+        "title": "IMG 8664",
+        "uploader": "glen.robson@gmail.com",
+        "publicdate": "2020-09-24 02:19:19",
+        "addeddate": "2020-09-24 02:19:19",
+        "curation": "[curator]validator@archive.org[/curator][date]20200924022234[/date][comment]checked for malware[/comment]"
+    },
+    "server": "ia801907.us.archive.org",
+    "uniq": 2113321024,
+    "workable_servers": [
+        "ia801907.us.archive.org",
+        "ia601907.us.archive.org"
+    ]
+}

@@ -1,0 +1,419 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn790006.ca.archive.org",
+                "dir": "/0/items/footmouthdisease00reyn"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn790006.ca.archive.org",
+                "dir": "/0/items/footmouthdisease00reyn"
+            }
+        ]
+    },
+    "created": 1793996161,
+    "d1": "ia600800.us.archive.org",
+    "d2": "ia800800.us.archive.org",
+    "dir": "/19/items/footmouthdisease00reyn",
+    "files": [
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath.djvu",
+            "source": "derivative",
+            "format": "DjVu",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_djvu.xml",
+            "mtime": "1354056930",
+            "size": "2046945",
+            "md5": "7144c3a83f5ae0000b7e95fa7e5158d3",
+            "crc32": "c6808842",
+            "sha1": "cabe183d4318ba3b5a28a013b41f67fb47243acb"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_jp2.zip",
+            "mtime": "1354051950",
+            "size": "148590",
+            "md5": "ea1cc1e483c41f474f512ddbf048ab4b",
+            "crc32": "3bd96075",
+            "sha1": "2cf4d5a89a75990fd2b7ee6fb05a10d3d3aaa82e"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath.pdf",
+            "source": "original",
+            "format": "Text PDF",
+            "title": "Foot and Mouth Disease- The 1967 outbreak and its aftermath",
+            "mtime": "1354045263",
+            "size": "2004299",
+            "md5": "9088f94ace812c0396794f68e7965b0c",
+            "crc32": "7a9d72c4",
+            "sha1": "618cf2eb52bfc9554f91b0cc9458e50c9aa7ad8b"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_jp2.zip",
+            "mtime": "1354056585",
+            "size": "3933425",
+            "md5": "0d3b1611ae01435877b89d3050b5d2c5",
+            "crc32": "1367b707",
+            "sha1": "493706a0ef5e9a2a5fca7e81976eb67c5da7b8ed"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_chocr.html.gz",
+            "source": "derivative",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "chOCR",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_abbyy.gz",
+            "mtime": "1699719235",
+            "size": "3317971",
+            "md5": "93761247487f503d222be3a7f917699b",
+            "crc32": "6c16cb84",
+            "sha1": "5a79ac8017f23ecc8a1586e4834f4024079ea8bf"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_cloth_detection.log",
+            "source": "derivative",
+            "format": "Cloth Cover Detection Log",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_scandata.xml",
+            "mtime": "1699720732",
+            "size": "541",
+            "md5": "ed617e9daf7bced62bfa0bbd3b62db77",
+            "crc32": "30ccd3b5",
+            "sha1": "fbdbba2ab1724b8d392c908d97979a59f0bc3c46"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_djvu.xml",
+            "mtime": "1699720585",
+            "size": "340765",
+            "md5": "57ef5cdd704002907e951ff55ae02edb",
+            "crc32": "cbf25eb4",
+            "sha1": "a54e221046de29548a91c699de4979b4608c83eb"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_hocr.html",
+            "mtime": "1699719944",
+            "size": "3902964",
+            "md5": "799affd5ca3ef78b5c931771cce3caed",
+            "crc32": "7c34be4a",
+            "sha1": "f6a925e206a231870917007a5c70e13c2dc75717"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.2.0",
+            "hocr_char_to_word_hocr_version": "1.1.45",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "hOCR",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_chocr.html.gz",
+            "mtime": "1699719771",
+            "size": "7284446",
+            "md5": "77c1fef9fca61a75ae5eaeed88262b25",
+            "crc32": "5cc50b7d",
+            "sha1": "fc531cf13c200a0fc0e9846e6b1f8ca82adc1936"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_hocr.html",
+            "mtime": "1699720097",
+            "size": "1664",
+            "md5": "77047025715803d6b4ce36d3b792f39d",
+            "crc32": "5e914a8b",
+            "sha1": "664b970ad42cf0f2fcc6cd2e83481a3e6272901e"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "1522",
+            "word_conf_11_20": "1139",
+            "word_conf_21_30": "3414",
+            "word_conf_31_40": "2416",
+            "word_conf_41_50": "7580",
+            "word_conf_51_60": "7939",
+            "word_conf_61_70": "9368",
+            "word_conf_71_80": "7254",
+            "word_conf_81_90": "3911",
+            "word_conf_91_100": "4328",
+            "format": "OCR Search Text",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_hocr.html",
+            "mtime": "1699720241",
+            "size": "111032",
+            "md5": "57d46f35abd26ed64f0e42610a14acea",
+            "crc32": "2f0d0288",
+            "sha1": "100d69e828514e499c97b24302160c3580b80a01"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath.pdf",
+            "mtime": "1354051930",
+            "size": "52445456",
+            "md5": "2e47595e532b218e1ea2f74fc65a2fbd",
+            "crc32": "be1358aa",
+            "sha1": "0ba5ef6d3bed0e3158bf303ae02fcbdf3681bd0e",
+            "filecount": "140"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.3",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "95",
+            "format": "Page Numbers JSON",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_hocr.html",
+            "mtime": "1699720525",
+            "size": "23571",
+            "md5": "c060f4efb486d0bba8a9067392f875c8",
+            "crc32": "05410d2a",
+            "sha1": "2d37cece40d06052639fc2a98cceb83429a1c61e"
+        },
+        {
+            "name": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "FootAndMouthDisease-The1967OutbreakAndItsAftermath_djvu.xml",
+            "mtime": "1699720525",
+            "size": "45750",
+            "md5": "528dd9fb70a99b33bcb6b1def067cad8",
+            "crc32": "d480a6d0",
+            "sha1": "893db70069ac168d045e1b89e0ab1fe39fe0a61c"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1699720592",
+            "size": "3509",
+            "md5": "04c1a86fe1e6fef9cd2e5dc00a84503f",
+            "crc32": "c208091a",
+            "sha1": "9697fa6516b9b56f41aa2aae448d9efc74be6460",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "footmouthdisease00reyn_archive.torrent",
+            "source": "metadata",
+            "btih": "b0894563bcd30eac613e47a26e9cd0103dec40a0",
+            "mtime": "1742367253",
+            "size": "8765",
+            "md5": "e813e2fde82d5aa3e537615829b2bfa2",
+            "crc32": "6ab765c9",
+            "sha1": "8f27397efea00cbc84075c877e962f09a5091e5e",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "footmouthdisease00reyn_dc.xml",
+            "source": "original",
+            "format": "Dublin Core",
+            "mtime": "1353968558",
+            "size": "1147",
+            "md5": "c93abde99ec97eef8a62b1a64e340ddf",
+            "crc32": "176c0d46",
+            "sha1": "7a7622902b773c3c6cbda6f0829d6836dfc97187"
+        },
+        {
+            "name": "footmouthdisease00reyn_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "ccbecda593eb321d594adcf77b71efeb",
+            "summation": "md5"
+        },
+        {
+            "name": "footmouthdisease00reyn_marc.xml",
+            "source": "original",
+            "format": "MARC",
+            "mtime": "1353968558",
+            "size": "5515",
+            "md5": "79ae71d979bdb440918e6776e86b1508",
+            "crc32": "7d9ceb41",
+            "sha1": "c56eddf060421bdd4e335ea7e8283cc3391eaaaf"
+        },
+        {
+            "name": "footmouthdisease00reyn_meta.log",
+            "source": "derivative",
+            "format": "Metadata Log",
+            "original": "footmouthdisease00reyn_xisbn.json",
+            "mtime": "1455650739",
+            "size": "464",
+            "md5": "bc82f032b0ffe0bbe8b9b479528f69d7",
+            "crc32": "fdfcc60b",
+            "sha1": "648b6037254545d72e3e223818efa0fd0f1233a8"
+        },
+        {
+            "name": "footmouthdisease00reyn_meta.mrc",
+            "source": "original",
+            "format": "MARC Binary",
+            "mtime": "1353968558",
+            "size": "1882",
+            "md5": "5932f73218f5efa8957b6762af2c7254",
+            "crc32": "44095ef1",
+            "sha1": "2f802c06aa56f10f752e7eddc13ed1168cf3385f"
+        },
+        {
+            "name": "footmouthdisease00reyn_meta.sqlite",
+            "source": "original",
+            "mtime": "1463356421",
+            "size": "6144",
+            "format": "Metadata",
+            "md5": "2b6b6b99dcadc2c24b4b6dd8b7a2e68c",
+            "crc32": "ee5901ec",
+            "sha1": "1e2cd94bbc7689cd405d3ca71cc828c993ee475f"
+        },
+        {
+            "name": "footmouthdisease00reyn_meta.xml",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1742367251",
+            "size": "2679",
+            "md5": "0db056fe37a776bd9607acca8fd20a6d",
+            "crc32": "e517f4b3",
+            "sha1": "69aa0b461f3693c376da3a71e09ec2b78ea7ef2b"
+        },
+        {
+            "name": "footmouthdisease00reyn_metasource.xml",
+            "source": "original",
+            "format": "MARC Source",
+            "mtime": "1353968558",
+            "size": "416",
+            "md5": "034582c851daa8c25d651429779e6ff0",
+            "crc32": "3ada1599",
+            "sha1": "fd037df6275bb37d866222de124d9936ff654315"
+        },
+        {
+            "name": "footmouthdisease00reyn_xisbn.json",
+            "source": "original",
+            "mtime": "1455433457",
+            "size": "475",
+            "md5": "6351270ae15cdbb0e9b3770e132d94db",
+            "crc32": "03004640",
+            "sha1": "0d5dc9a2a7ed0f92f56a1ca2c5a838aa9766d8a7",
+            "format": "OCLC xISBN JSON"
+        }
+    ],
+    "files_count": 25,
+    "item_last_updated": 1742367253,
+    "item_size": 75638415,
+    "metadata": {
+        "title": "Foot and mouth disease : the 1967 outbreak and its aftermath : the transcript of a Witness Seminar held by the Wellcome Trust Centre for the History of Medicine at UCL, London, on 11 December 2001",
+        "creator": [
+            "Reynolds, L. A",
+            "Tansey, E. M",
+            "Wellcome Trust (London, England). Centre for the History of Medicine"
+        ],
+        "subject": [
+            "Medical Research Council (Great Britain). Applied Psychology Unit",
+            "Psychology, Applied",
+            "Medicine",
+            "History of Medicine, 20th Cent",
+            "genealogy"
+        ],
+        "description": "Includes bibliographical references and indexes",
+        "publisher": "London: Wellcome Trust Centre for the History of Medicine at UCL",
+        "date": "2003",
+        "language": "eng",
+        "isbn": [
+            "0854840966",
+            "9780854840960"
+        ],
+        "page-progression": "lr",
+        "sponsor": "Internet Archive",
+        "contributor": "History of Modern Biomedicine Research Group",
+        "scanningcenter": "uoft",
+        "mediatype": "texts",
+        "collection": [
+            "wellcomewitnesses",
+            "medicalheritagelibrary",
+            "europeanlibraries",
+            "medicallibrary"
+        ],
+        "call_number": "54499671",
+        "repub_state": "4",
+        "updatedate": "2012-11-26 22:22:38",
+        "updater": "admin-andrea-mills",
+        "identifier": "footmouthdisease00reyn",
+        "uploader": "admin-andrea-mills@archive.org",
+        "addeddate": "2012-11-26 22:22:41",
+        "publicdate": "2012-11-26 22:22:44",
+        "copyright": "\u00a9 Wellcome Trust",
+        "identifier-access": "http://archive.org/details/footmouthdisease00reyn",
+        "identifier-ark": "ark:/13960/t5hb0ds4g",
+        "ppi": "300",
+        "year": "2003",
+        "city": "London",
+        "oclc-id": [
+            "437544938",
+            "54499671",
+            "59274113",
+            "606611069",
+            "643389334",
+            "66545996",
+            "78322084",
+            "795438233",
+            "82191602"
+        ],
+        "backup_location": "ia905602_6",
+        "openlibrary_edition": "OL25422753M",
+        "openlibrary_work": "OL16800595W",
+        "external-identifier": "urn:oclc:record:1045548537",
+        "ocr_module_version": "0.0.21",
+        "ocr_converted": "abbyy-to-hocr 1.1.37",
+        "page_number_confidence": "95",
+        "page_number_module_version": "1.0.3"
+    },
+    "server": "ia600800.us.archive.org",
+    "uniq": 1485279708,
+    "workable_servers": [
+        "ia600800.us.archive.org",
+        "ia800800.us.archive.org"
+    ],
+    "xisbn": {
+        "stat": "ok",
+        "list": [
+            {
+                "url": [
+                    "http://www.worldcat.org/oclc/437544938?referer=xid"
+                ],
+                "publisher": "Wellcome Trust Centre for the History of Medicine at UCL",
+                "form": [
+                    "BC"
+                ],
+                "lang": "eng",
+                "city": "London",
+                "author": "edited by L. A. Reynolds and E. M. Tansey. [Introduction by Lise Wilkinson].",
+                "year": "2003",
+                "isbn": [
+                    "0854840966"
+                ],
+                "title": "Foot and mouth disease",
+                "oclcnum": [
+                    "437544938",
+                    "54499671",
+                    "59274113",
+                    "606611069",
+                    "643389334",
+                    "66545996",
+                    "78322084",
+                    "795438233",
+                    "82191602"
+                ]
+            }
+        ]
+    }
+}

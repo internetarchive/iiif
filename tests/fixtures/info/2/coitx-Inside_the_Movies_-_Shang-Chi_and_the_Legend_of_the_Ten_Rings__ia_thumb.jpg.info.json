@@ -1,0 +1,61 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings%2F__ia_thumb.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 180,
+    "height": 102,
+    "sizes": [
+        {
+            "width": 180,
+            "height": 102
+        }
+    ],
+    "tiles": [
+        {
+            "width": 180,
+            "height": 102,
+            "scaleFactors": [
+                1
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "jpg",
+                "tif",
+                "gif",
+                "png"
+            ],
+            "maxArea": 18360,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

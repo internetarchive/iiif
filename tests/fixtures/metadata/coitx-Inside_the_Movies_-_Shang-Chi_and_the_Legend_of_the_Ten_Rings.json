@@ -1,0 +1,334 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn720402.ca.archive.org",
+                "dir": "/0/items/coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn720402.ca.archive.org",
+                "dir": "/0/items/coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings"
+            }
+        ]
+    },
+    "created": 1794021832,
+    "d1": "dn800208.us.archive.org",
+    "dir": "/0/items/coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings",
+    "files": [
+        {
+            "name": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "source": "original",
+            "mtime": "1630542732",
+            "size": "63645400",
+            "md5": "91482cf32751bb2a407a934e1d000e99",
+            "crc32": "59ee0ca4",
+            "sha1": "c66417da0473722e603f3441c80bca17ae829817",
+            "format": "h.264 HD",
+            "length": "280.45",
+            "height": "720",
+            "width": "1280"
+        },
+        {
+            "name": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.en.vtt",
+            "source": "original",
+            "mtime": "1630608676",
+            "size": "26197",
+            "md5": "8de290d35cec0a173830246e9bf57be0",
+            "crc32": "41a9dd3a",
+            "sha1": "a4a8f781f80ae61845346b5ddab0ed749e3cecaa",
+            "format": "Web Video Text Tracks"
+        },
+        {
+            "name": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.es.vtt",
+            "source": "original",
+            "mtime": "1630608688",
+            "size": "25617",
+            "md5": "7ab5db3232a8d6d960f3abdc443c6f2c",
+            "crc32": "e0c98bab",
+            "sha1": "bad91665ff836a858b31a452f40f8570f9f51df2",
+            "format": "Web Video Text Tracks"
+        },
+        {
+            "name": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.mp3",
+            "source": "derivative",
+            "bitrate": "96",
+            "format": "MP3",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543017",
+            "size": "3370563",
+            "md5": "e8f7652cf4a7b390fcfaa36fcde6175e",
+            "crc32": "5640695d",
+            "sha1": "b6e0142638a8c3d8eeff731cea30f859e9474f94",
+            "length": "280.48",
+            "height": "0",
+            "width": "0"
+        },
+        {
+            "name": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.mp4",
+            "source": "derivative",
+            "format": "h.264",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543487",
+            "size": "26984424",
+            "md5": "880d978298e10588ddf6e7ac5bfb5b0d",
+            "crc32": "63e27087",
+            "sha1": "96ba63c95abebd8b5438ea7b9fe0c4b38b06303d",
+            "length": "280.5",
+            "height": "480",
+            "width": "853"
+        },
+        {
+            "name": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.png",
+            "source": "derivative",
+            "format": "PNG",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.mp3",
+            "mtime": "1630543541",
+            "size": "39084",
+            "md5": "fcff1592b5394f294f219640423a6b36",
+            "crc32": "ccd46f30",
+            "sha1": "81a1a4cfc773de2108f8e2da743390a850f5472d"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1630612087",
+            "size": "7650",
+            "md5": "f469f5435c2dcb5a41d1046613845d16",
+            "crc32": "fc792926",
+            "sha1": "6001b5d856d8543ca3ca718602ccae09af314850",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000001.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543088",
+            "size": "15376",
+            "md5": "6e1866263a3187cc0a29a831f58c0791",
+            "crc32": "6a0ce366",
+            "sha1": "cfce8623a061aac48b14d8647d4f8ebda5effe19"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000030.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543095",
+            "size": "48247",
+            "md5": "4367d5ac40f5233b8fb45ca38c212ced",
+            "crc32": "0ffad5f0",
+            "sha1": "ca616ec8400593c317f2e182ad520aef717621c2"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000057.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543101",
+            "size": "48120",
+            "md5": "eab4034bf2b4a642c6e258ce4947849a",
+            "crc32": "2cf8aaa7",
+            "sha1": "c0a446988d5d2317a8aeed7b572aba51f5153bad"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000091.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543107",
+            "size": "47561",
+            "md5": "2c94464c69d73eadb00d7e3fe544f4c8",
+            "crc32": "9e427d6e",
+            "sha1": "e9a617698081d1ac4db029e57bb0c275d88b39c0"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000119.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543113",
+            "size": "39363",
+            "md5": "1d0415810cc2a4303949485cf2d51cdc",
+            "crc32": "607607b6",
+            "sha1": "364563ade68b209f50e8b3085125ee8d7bb0c62a"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000147.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543119",
+            "size": "41298",
+            "md5": "5a07dd8615f10e10d21f4adc93b2ef10",
+            "crc32": "7c0a0fff",
+            "sha1": "647f4a58ee9507001306b8f384e0b5e4db916b87"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000177.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543125",
+            "size": "48737",
+            "md5": "f65d2cfacd3d429ed35cdf8236327c68",
+            "crc32": "1c47b757",
+            "sha1": "ec86cc250580f777ca89112421f18848a5032faa"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000207.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543132",
+            "size": "45897",
+            "md5": "b8d0c1dc4c4a7f526281eb5694d65ef9",
+            "crc32": "1cf55e15",
+            "sha1": "ffe98ed480eaa350989d70ba6d1b612c9bd3c0f2"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000238.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543139",
+            "size": "49046",
+            "md5": "895e0a62bab33c49dbb521c906f97774",
+            "crc32": "990f53ba",
+            "sha1": "c4f44e43ea9e1b36b9fc595ca006c42e0e20cd5a"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.thumbs/Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_000268.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings.HD.mov",
+            "mtime": "1630543145",
+            "size": "18192",
+            "md5": "5f7fa189da515c2f8525c889c0f82be7",
+            "crc32": "8011fb8d",
+            "sha1": "9cf7af881ff6fddfd4f8014290bca160b2162dd2"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_archive.torrent",
+            "source": "metadata",
+            "btih": "af478efcfcdf6432db4e91c18be6204f7eb076f8",
+            "mtime": "1630608892",
+            "size": "7025",
+            "md5": "f0d495e0ddb23d2daaea9191feda6476",
+            "crc32": "64fe8a7f",
+            "sha1": "adc0e86332abdd941d9231bc62a7c363f9f06540",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "ceab86f72d304cd04c94b97b4c0a09e5",
+            "summation": "md5"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_meta.sqlite",
+            "source": "original",
+            "mtime": "1630608851",
+            "size": "28672",
+            "md5": "b91a5266bdf1bad0bb9c59ea00196d71",
+            "crc32": "256bec53",
+            "sha1": "1cb3e20551a0c2998cff053d50f10a0bed2e15e9",
+            "format": "Metadata"
+        },
+        {
+            "name": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings_meta.xml",
+            "source": "original",
+            "mtime": "1630542782",
+            "size": "2721",
+            "md5": "da690673e3e4efd0f52c234ab4382811",
+            "crc32": "75886631",
+            "sha1": "0ec02c29996b727cbdaa1addbbe8e8a35dac9605",
+            "format": "Metadata"
+        }
+    ],
+    "files_count": 21,
+    "item_last_updated": 1630612087,
+    "item_size": 94539190,
+    "metadata": {
+        "identifier": "coitx-Inside_the_Movies_-_Shang-Chi_and_the_Legend_of_the_Ten_Rings",
+        "collection": [
+            "coitx",
+            "community_media",
+            "newsandpublicaffairs"
+        ],
+        "creator": "The City of Irving",
+        "date": "2021-08-31",
+        "description": "\u201cShang-Chi and the Legend of the Ten Rings\u201d is Marvel Studios\u2019 newest gem. Shang-Chi (Simu Liu) is a skilled Kung-Fu fighter, who\u2019s forced to confront his past and return to the Ten Rings organization he ran away from. Susan Stephens shares her thoughts on the film. \u201cShang-Chi and the Legend of the Ten Rings\u201d opens in theaters September 3, 2021. For more stories like this one, watch ICTN. For more information on ICTN, visit http://ictn.tv",
+        "duration": "280",
+        "language": "English",
+        "mediatype": "movies",
+        "runtime": "00:04:40",
+        "scanner": "Internet Archive Python library 2.0.3",
+        "series": "Inside the Movies",
+        "subject": [
+            "Texas",
+            "Irving",
+            "ICTN",
+            "The City of Irving",
+            "Government Access TV",
+            "Community Media",
+            "PEG",
+            "Youtube",
+            "ICTN",
+            "Irving Community TV",
+            "Television",
+            "City of Irving",
+            "Irving",
+            "About Towne",
+            "Susan Kamyab Stephens",
+            "Disney",
+            "Walt Disney Pictures",
+            "Marvel",
+            "Shang-Chi and the Legend of the Ten Rings",
+            "Simu Liu",
+            "Awkwafina",
+            "action",
+            "kung-fu",
+            "Asian American",
+            "The Avengers",
+            "2021",
+            "Inside the Movies"
+        ],
+        "title": "Inside the Movies: \"Shang-Chi and the Legend of the Ten Rings\"",
+        "year": "2021",
+        "youtube-height": "720",
+        "youtube-id": "EZxmm4kbGoc",
+        "youtube-n-entries": "50",
+        "youtube-playlist": "The City of Irving - Videos",
+        "youtube-playlist-index": "2",
+        "youtube-uploader": "The City of Irving",
+        "youtube-uploader-id": "thecityofirving",
+        "youtube-view-count": "79",
+        "youtube-webpage-url": "https://www.youtube.com/watch?v=EZxmm4kbGoc",
+        "youtube-width": "1280",
+        "uploader": "jhauser@pobox.com",
+        "publicdate": "2021-09-02 00:33:02",
+        "addeddate": "2021-09-02 00:33:02"
+    },
+    "server": "dn800208.us.archive.org",
+    "simplelists": {
+        "solo_manifest": {
+            "solo_manifest_dn800208": {
+                "sys_changed_by": {
+                    "source": "task",
+                    "task_id": "5426721559"
+                },
+                "sys_last_changed": "2026-06-09 10:50:00.486404"
+            }
+        }
+    },
+    "solo": true,
+    "uniq": 1475650081,
+    "workable_servers": [
+        "dn800208.us.archive.org"
+    ]
+}

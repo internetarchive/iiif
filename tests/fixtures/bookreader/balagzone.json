@@ -1,0 +1,1112 @@
+{
+    "data": {
+        "data": {
+            "streamOnly": false,
+            "isRestricted": false,
+            "id": "balagzone_gmail",
+            "subPrefix": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd",
+            "bookUrl": "/details/balagzone_gmail",
+            "bookUri": "https://archive.org/details/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D",
+            "downloadUrls": [
+                [
+                    "PDF",
+                    "//archive.org/download/balagzone_gmail/\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd.pdf"
+                ],
+                [
+                    "ePub",
+                    "//archive.org/download/balagzone_gmail/\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd.epub"
+                ],
+                [
+                    "Plain Text",
+                    "//archive.org/download/balagzone_gmail/\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_djvu.txt"
+                ],
+                [
+                    "DAISY",
+                    "//archive.org/download/balagzone_gmail/\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_daisy.zip"
+                ],
+                [
+                    "Kindle",
+                    "//archive.org/download/balagzone_gmail/\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd.mobi"
+                ]
+            ]
+        },
+        "brOptions": {
+            "bookId": "balagzone_gmail",
+            "bookPath": "/9/items/balagzone_gmail/\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd",
+            "imageFormat": "jp2",
+            "server": "ia600106.us.archive.org",
+            "subPrefix": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd",
+            "zip": "/9/items/balagzone_gmail/\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_jp2.zip",
+            "bookTitle": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd",
+            "bookLanguage": "Tamil",
+            "ppi": "300",
+            "defaultStartLeaf": 0,
+            "pageProgression": "lr",
+            "vars": {
+                "bookId": "balagzone_gmail",
+                "bookPath": "/9/items/balagzone_gmail/\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd",
+                "server": "ia600106.us.archive.org",
+                "subPrefix": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd"
+            },
+            "plugins": {
+                "chapters": {
+                    "openLibraryId": null,
+                    "internetArchiveId": "balagzone_gmail",
+                    "enabled": false
+                },
+                "search": {
+                    "enabled": true,
+                    "preTag": "<IA_FTS_MATCH>",
+                    "postTag": "</IA_FTS_MATCH>",
+                    "searchInsideUrl": "//{{server}}/fulltext/inside.php?item_id={{bookId|urlencode}}&doc={{subPrefix|urlencode}}&q={{query|urlencode}}&path=/9/items/balagzone_gmail&pre_tag={{preTag|urlencode}}&post_tag={{postTag|urlencode}}"
+                },
+                "tts": {
+                    "enabled": true,
+                    "pageChunkUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&page={{pageIndex}}&callback=false",
+                    "remoteTtsUrl": "https://{{server}}/BookReader/BookReaderGetTTS.php?string={{text|urlencode}}&format={{format}}"
+                },
+                "textSelection": {
+                    "enabled": true,
+                    "singlePageDjvuXmlUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&mode=djvu_xml&page={{pageIndex}}"
+                }
+            },
+            "unviewablePageURI": "/bookreader/static/preview-default.png",
+            "data": [
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0000.jp2&id=balagzone_gmail",
+                        "leafNum": 0,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0001.jp2&id=balagzone_gmail",
+                        "leafNum": 1,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0002.jp2&id=balagzone_gmail",
+                        "leafNum": 2,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0003.jp2&id=balagzone_gmail",
+                        "leafNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0004.jp2&id=balagzone_gmail",
+                        "leafNum": 4,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0005.jp2&id=balagzone_gmail",
+                        "leafNum": 5,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0006.jp2&id=balagzone_gmail",
+                        "leafNum": 6,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0007.jp2&id=balagzone_gmail",
+                        "leafNum": 7,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0008.jp2&id=balagzone_gmail",
+                        "leafNum": 8,
+                        "pageType": "Normal",
+                        "pageNum": 9,
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0009.jp2&id=balagzone_gmail",
+                        "leafNum": 9,
+                        "pageNum": 10,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0010.jp2&id=balagzone_gmail",
+                        "leafNum": 10,
+                        "pageNum": 11,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0011.jp2&id=balagzone_gmail",
+                        "leafNum": 11,
+                        "pageNum": 12,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0012.jp2&id=balagzone_gmail",
+                        "leafNum": 12,
+                        "pageNum": 13,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0013.jp2&id=balagzone_gmail",
+                        "leafNum": 13,
+                        "pageNum": 14,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0014.jp2&id=balagzone_gmail",
+                        "leafNum": 14,
+                        "pageNum": 15,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0015.jp2&id=balagzone_gmail",
+                        "leafNum": 15,
+                        "pageNum": 16,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0016.jp2&id=balagzone_gmail",
+                        "leafNum": 16,
+                        "pageNum": 17,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0017.jp2&id=balagzone_gmail",
+                        "leafNum": 17,
+                        "pageNum": 18,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0018.jp2&id=balagzone_gmail",
+                        "leafNum": 18,
+                        "pageNum": 19,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0019.jp2&id=balagzone_gmail",
+                        "leafNum": 19,
+                        "pageNum": 20,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0020.jp2&id=balagzone_gmail",
+                        "leafNum": 20,
+                        "pageNum": 21,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0021.jp2&id=balagzone_gmail",
+                        "leafNum": 21,
+                        "pageNum": 22,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0022.jp2&id=balagzone_gmail",
+                        "leafNum": 22,
+                        "pageNum": 23,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0023.jp2&id=balagzone_gmail",
+                        "leafNum": 23,
+                        "pageNum": 24,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0024.jp2&id=balagzone_gmail",
+                        "leafNum": 24,
+                        "pageNum": 25,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0025.jp2&id=balagzone_gmail",
+                        "leafNum": 25,
+                        "pageNum": 26,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0026.jp2&id=balagzone_gmail",
+                        "leafNum": 26,
+                        "pageNum": 27,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0027.jp2&id=balagzone_gmail",
+                        "leafNum": 27,
+                        "pageNum": 28,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0028.jp2&id=balagzone_gmail",
+                        "leafNum": 28,
+                        "pageNum": 29,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0029.jp2&id=balagzone_gmail",
+                        "leafNum": 29,
+                        "pageNum": 30,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0030.jp2&id=balagzone_gmail",
+                        "leafNum": 30,
+                        "pageNum": 31,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0031.jp2&id=balagzone_gmail",
+                        "leafNum": 31,
+                        "pageNum": 32,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0032.jp2&id=balagzone_gmail",
+                        "leafNum": 32,
+                        "pageNum": 33,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0033.jp2&id=balagzone_gmail",
+                        "leafNum": 33,
+                        "pageNum": 34,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0034.jp2&id=balagzone_gmail",
+                        "leafNum": 34,
+                        "pageNum": 35,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0035.jp2&id=balagzone_gmail",
+                        "leafNum": 35,
+                        "pageNum": 36,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0036.jp2&id=balagzone_gmail",
+                        "leafNum": 36,
+                        "pageNum": 37,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0037.jp2&id=balagzone_gmail",
+                        "leafNum": 37,
+                        "pageNum": 38,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0038.jp2&id=balagzone_gmail",
+                        "leafNum": 38,
+                        "pageNum": 39,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0039.jp2&id=balagzone_gmail",
+                        "leafNum": 39,
+                        "pageNum": 40,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0040.jp2&id=balagzone_gmail",
+                        "leafNum": 40,
+                        "pageNum": 41,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0041.jp2&id=balagzone_gmail",
+                        "leafNum": 41,
+                        "pageNum": 42,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0042.jp2&id=balagzone_gmail",
+                        "leafNum": 42,
+                        "pageNum": 43,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0043.jp2&id=balagzone_gmail",
+                        "leafNum": 43,
+                        "pageNum": 44,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0044.jp2&id=balagzone_gmail",
+                        "leafNum": 44,
+                        "pageNum": 45,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0045.jp2&id=balagzone_gmail",
+                        "leafNum": 45,
+                        "pageNum": 46,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0046.jp2&id=balagzone_gmail",
+                        "leafNum": 46,
+                        "pageNum": 47,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0047.jp2&id=balagzone_gmail",
+                        "leafNum": 47,
+                        "pageNum": 48,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0048.jp2&id=balagzone_gmail",
+                        "leafNum": 48,
+                        "pageNum": 49,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0049.jp2&id=balagzone_gmail",
+                        "leafNum": 49,
+                        "pageNum": 50,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0050.jp2&id=balagzone_gmail",
+                        "leafNum": 50,
+                        "pageNum": 51,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0051.jp2&id=balagzone_gmail",
+                        "leafNum": 51,
+                        "pageNum": 52,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0052.jp2&id=balagzone_gmail",
+                        "leafNum": 52,
+                        "pageNum": 53,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0053.jp2&id=balagzone_gmail",
+                        "leafNum": 53,
+                        "pageNum": 54,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0054.jp2&id=balagzone_gmail",
+                        "leafNum": 54,
+                        "pageNum": 55,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0055.jp2&id=balagzone_gmail",
+                        "leafNum": 55,
+                        "pageNum": 56,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0056.jp2&id=balagzone_gmail",
+                        "leafNum": 56,
+                        "pageNum": 57,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0057.jp2&id=balagzone_gmail",
+                        "leafNum": 57,
+                        "pageNum": 58,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0058.jp2&id=balagzone_gmail",
+                        "leafNum": 58,
+                        "pageNum": 59,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0059.jp2&id=balagzone_gmail",
+                        "leafNum": 59,
+                        "pageNum": 60,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0060.jp2&id=balagzone_gmail",
+                        "leafNum": 60,
+                        "pageNum": 61,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0061.jp2&id=balagzone_gmail",
+                        "leafNum": 61,
+                        "pageNum": 62,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0062.jp2&id=balagzone_gmail",
+                        "leafNum": 62,
+                        "pageNum": 63,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0063.jp2&id=balagzone_gmail",
+                        "leafNum": 63,
+                        "pageNum": 64,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0064.jp2&id=balagzone_gmail",
+                        "leafNum": 64,
+                        "pageNum": 65,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0065.jp2&id=balagzone_gmail",
+                        "leafNum": 65,
+                        "pageNum": 66,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0066.jp2&id=balagzone_gmail",
+                        "leafNum": 66,
+                        "pageNum": 67,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0067.jp2&id=balagzone_gmail",
+                        "leafNum": 67,
+                        "pageNum": 68,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0068.jp2&id=balagzone_gmail",
+                        "leafNum": 68,
+                        "pageNum": 69,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0069.jp2&id=balagzone_gmail",
+                        "leafNum": 69,
+                        "pageNum": 70,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0070.jp2&id=balagzone_gmail",
+                        "leafNum": 70,
+                        "pageNum": 71,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0071.jp2&id=balagzone_gmail",
+                        "leafNum": 71,
+                        "pageNum": 72,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0072.jp2&id=balagzone_gmail",
+                        "leafNum": 72,
+                        "pageNum": 73,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0073.jp2&id=balagzone_gmail",
+                        "leafNum": 73,
+                        "pageNum": 74,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0074.jp2&id=balagzone_gmail",
+                        "leafNum": 74,
+                        "pageNum": 75,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0075.jp2&id=balagzone_gmail",
+                        "leafNum": 75,
+                        "pageNum": 76,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0076.jp2&id=balagzone_gmail",
+                        "leafNum": 76,
+                        "pageNum": 77,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0077.jp2&id=balagzone_gmail",
+                        "leafNum": 77,
+                        "pageNum": 78,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0078.jp2&id=balagzone_gmail",
+                        "leafNum": 78,
+                        "pageNum": 79,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0079.jp2&id=balagzone_gmail",
+                        "leafNum": 79,
+                        "pageNum": 80,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0080.jp2&id=balagzone_gmail",
+                        "leafNum": 80,
+                        "pageNum": 81,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0081.jp2&id=balagzone_gmail",
+                        "leafNum": 81,
+                        "pageNum": 82,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0082.jp2&id=balagzone_gmail",
+                        "leafNum": 82,
+                        "pageNum": 83,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0083.jp2&id=balagzone_gmail",
+                        "leafNum": 83,
+                        "pageNum": 84,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0084.jp2&id=balagzone_gmail",
+                        "leafNum": 84,
+                        "pageNum": 85,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0085.jp2&id=balagzone_gmail",
+                        "leafNum": 85,
+                        "pageNum": 86,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0086.jp2&id=balagzone_gmail",
+                        "leafNum": 86,
+                        "pageNum": 87,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0087.jp2&id=balagzone_gmail",
+                        "leafNum": 87,
+                        "pageNum": 88,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0088.jp2&id=balagzone_gmail",
+                        "leafNum": 88,
+                        "pageNum": 89,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0089.jp2&id=balagzone_gmail",
+                        "leafNum": 89,
+                        "pageNum": 90,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0090.jp2&id=balagzone_gmail",
+                        "leafNum": 90,
+                        "pageNum": 91,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0091.jp2&id=balagzone_gmail",
+                        "leafNum": 91,
+                        "pageNum": 92,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0092.jp2&id=balagzone_gmail",
+                        "leafNum": 92,
+                        "pageNum": 93,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0093.jp2&id=balagzone_gmail",
+                        "leafNum": 93,
+                        "pageNum": 94,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0094.jp2&id=balagzone_gmail",
+                        "leafNum": 94,
+                        "pageNum": 95,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0095.jp2&id=balagzone_gmail",
+                        "leafNum": 95,
+                        "pageNum": 96,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0096.jp2&id=balagzone_gmail",
+                        "leafNum": 96,
+                        "pageNum": 97,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2480,
+                        "height": 3509,
+                        "uri": "https://ia600106.us.archive.org/BookReader/BookReaderImages.php?zip=/9/items/balagzone_gmail/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip&file=%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2/%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0097.jp2&id=balagzone_gmail",
+                        "leafNum": 97,
+                        "pageNum": 98,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    }
+                ]
+            ]
+        },
+        "lendingInfo": {
+            "lendingStatus": null,
+            "userid": 0,
+            "isAdmin": false,
+            "isArchiveOrgLending": false,
+            "isOpenLibraryLending": false,
+            "isLendingRequired": false,
+            "isBrowserBorrowable": false,
+            "isPrintDisabledOnly": false,
+            "isAvailable": false,
+            "isAvailableForBrowsing": false,
+            "userHasBorrowed": false,
+            "userHasBrowsed": false,
+            "userOnWaitingList": false,
+            "userHoldIsReady": false,
+            "userIsPrintDisabled": false,
+            "shouldProtectImages": false,
+            "daysLeftOnLoan": 0,
+            "secondsLeftOnLoan": 0,
+            "loansUrl": "",
+            "bookUrl": "",
+            "loanCount": 0,
+            "totalWaitlistCount": 0,
+            "userWaitlistPosition": -1,
+            "maxLoans": 10,
+            "loanRecord": []
+        },
+        "metadata": {
+            "identifier": "balagzone_gmail",
+            "mediatype": "texts",
+            "description": "kanakkathikaaram<br />",
+            "scanner": "Internet Archive HTML5 Uploader 1.4.1",
+            "subject": "Kanakkathikaaram",
+            "title": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd",
+            "publicdate": "2013-09-18 08:50:47",
+            "uploader": "balagzone@gmail.com",
+            "addeddate": "2013-09-18 08:50:47",
+            "language": "Tamil",
+            "identifier-access": "http://archive.org/details/balagzone_gmail",
+            "identifier-ark": "ark:/13960/t00z92v78",
+            "ppi": "300",
+            "repub_state": "4",
+            "curation": "[curator]malware@archive.org[/curator][date]20140320153042[/date][comment]checked for malware[/comment]",
+            "backup_location": "ia905707_5",
+            "collection": [
+                "booksbylanguage_tamil",
+                "booksbylanguage"
+            ],
+            "filesxml": "Thu May 1 14:54:05 UTC 2025",
+            "ocr": "tesseract 5.3.0-6-g76ae",
+            "ocr_parameters": "-l Tamil+Tamil",
+            "ocr_module_version": "0.0.21",
+            "ocr_detected_script": "Tamil",
+            "ocr_detected_script_conf": "1.0000",
+            "ocr_detected_lang": "ta",
+            "ocr_detected_lang_conf": "1.0000",
+            "page_number_confidence": "90",
+            "page_number_module_version": "1.0.5",
+            "external-identifier": "urn:lcp:\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd:epub:c081a712-30bb-4f27-8693-24ba2d81072e"
+        }
+    }
+}

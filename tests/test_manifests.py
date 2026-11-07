@@ -1,25 +1,33 @@
 import os
 
 import unittest
+from tests.base import IIIFTestCase
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
 
-class TestManifests(unittest.TestCase):
+from tests.mocks.mock_metadata import log_requests, mock_urls
+
+class TestManifests(IIIFTestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        cache.init_app(app, config={
+                'CACHE_TYPE': 'NullCache',
+                'CACHE_NO_NULL_WARNING': True})
         self.test_app = FlaskClient(app)
 
+    @mock_urls
     def test_no_version(self):
         resp = self.test_app.get("/iiif/rashodgson68/manifest.json")
         self.assertEqual(resp.status_code, 200)
 
+    @mock_urls
     def test_ident(self):
         resp = self.test_app.get("/iiif/3/img-8664_202009/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(manifest['id'], 'https://localhost/iiif/img-8664_202009/manifest.json', 'Unexpected identifier')
 
+    @mock_urls
     def test_v3_image_manifest(self):
         resp = self.test_app.get("/iiif/3/rashodgson68/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -28,6 +36,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(manifest['type'], "Manifest", f"Unexpected type. Expected Manifest go {manifest['type']}")
         self.assertEqual(len(manifest['items']),32,f"Expected 32 canvases but got: {len(manifest['items'])}")
 
+    @mock_urls
     def test_v3_single_image_manifest(self):
         resp = self.test_app.get("/iiif/3/img-8664_202009/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -36,6 +45,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(manifest['type'], "Manifest", f"Unexpected type. Expected Manifest go {manifest['type']}")
         self.assertEqual(len(manifest['items']),1,f"Expected 1 canvas but got: {len(manifest['items'])}")
 
+    @mock_urls
     def test_v3_single_text_manifest(self):
         resp = self.test_app.get("/iiif/3/fbf_3chords_1_/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -44,6 +54,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(manifest['type'], "Manifest", f"Unexpected type. Expected Manifest go {manifest['type']}")
         self.assertEqual(len(manifest['items']),1,f"Expected 1 canvas but got: {len(manifest['items'])}")
 
+    @mock_urls
     def test_v3_vermont_Life_Magazine(self):
         resp = self.test_app.get("/iiif/3/rbmsbk_ap2-v4_2001_V55N4/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -52,6 +63,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(len(manifest['items']),116,f"Expected 116 canvas but got: {len(manifest['items'])}")
     
     #logic to cover etree mediatype github issue #123
+    @mock_urls
     def test_v3_etree_mediatype(self):
         resp = self.test_app.get("/iiif/3/gd72-04-14.aud.vernon.23662.sbeok.shnf/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -60,6 +72,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(len(manifest['items']),36,f"Expected 36 canvases but got: {len(manifest['items'])}")
         self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['items'][0]['type'],"Sound",f"Expected 'Sound' but got: {manifest['items'][0]['items'][0]['items'][0]['body']['items'][0]['type']}")
 
+    @mock_urls
     def test_v3_64Kbps_MP3(self):
         resp = self.test_app.get("/iiif/3/TvQuran.com__Alafasi/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -67,6 +80,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(len(manifest['items']),114,f"Expected 114 canvases but got: {len(manifest['items'])}")
         self.assertEqual("64Kbps MP3".lower() in resp.text.lower(), True, f"Expected the string '64Kbps MP3'")
 
+    @mock_urls
     def test_v3_128Kbps_MP3(self):
         resp = self.test_app.get("/iiif/3/alice_in_wonderland_librivox/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -74,6 +88,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(len(manifest['items']),12,f"Expected 12 canvases but got: {len(manifest['items'])}")
         self.assertEqual("64kbps mp3".lower() in resp.text.lower(), True, f"Expected the string '64kbps mp3'")
 
+    @mock_urls
     def test_v3_aiff(self):
         resp = self.test_app.get("/iiif/3/julian-damian-marley-with-the-uprising-band-shoreline-81697/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -81,13 +96,15 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(len(manifest['items']),6,f"Expected 6 canvases but got: {len(manifest['items'])}")
         self.assertEqual("AIFF".lower() in resp.text.lower(), True, f"Expected the string 'AIFF'")
 
+    @mock_urls
     def test_provider_logo(self):
         resp = self.test_app.get("/iiif/3/rashodgson68/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
-        self.assertEqual(manifest['provider'][0]['homepage'][0]['id'] == "https://archive.org", True, f"Expected 'https://archive.org' but got {manifest['provider'][0]['id']}")
+        self.assertEqual(manifest['provider'][0]['homepage'][0]['id'] == "https://archive.org/", True, f"Expected 'https://archive.org' but got '{manifest['provider'][0]['id']}'")
         self.assertEqual(manifest['provider'][0]['logo'][0]['id'] == "https://archive.org/images/glogo.png", True, f"Expected logo URI but got {manifest['provider'][0]['logo'][0]['id']}")
 
+    @mock_urls
     def test_page_behavior(self):
         resp = self.test_app.get("/iiif/3/rbmsbk_ap2-v4_2001_V55N4/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -96,6 +113,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(manifest['viewingDirection'],"left-to-right",f"Expected 'left-to-right' canvas but got: {manifest['viewingDirection']}")
         self.assertEqual(manifest['behavior'][0],"paged",f"Expected 'paged' but got: {manifest['behavior'][0]}")
 
+    @mock_urls
     def test_page_behavior_r_to_l(self):
         resp = self.test_app.get("/iiif/3/nybc314063/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -103,31 +121,36 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(len(manifest['items']),544,f"Expected 544 canvas but got: {len(manifest['items'])}")
         self.assertEqual(manifest['viewingDirection'],"right-to-left",f"Expected 'right-to-left' canvas but got: {manifest['viewingDirection']}")
         self.assertEqual(manifest['behavior'][0],"paged",f"Expected 'paged' but got: {manifest['behavior'][0]}")
-
+    
+    @mock_urls
     def test_escape_cantaloupe_urls(self):
         resp = self.test_app.get("/iiif/3/0-._20211206/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id'] == "https://iiif.archive.org/image/iiif/3/0-._20211206%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_jp2.zip%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_jp2%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_0000.jp2",True, f"Expected 'https://iiif.archive.org/image/iiif/3/0-._20211206%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_jp2.zip%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_jp2%2F%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D9%84%D9%83%D9%84%D9%88%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%200%20%D8%AF.%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86_0000.jp2' but got {manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']}")
 
+    @mock_urls
     def test_escape_cantaloupe_urls_one(self):
         resp = self.test_app.get("/iiif/3/mareful/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id'] == "https://iiif.archive.org/image/iiif/3/new%2Fmareful-quran-08-new-edition_jp2.zip%2Fmareful-quran-08-new-edition_jp2%2Fmareful-quran-08-new-edition_0000.jp2",True, f"Expected 'https://iiif.archive.org/image/iiif/3/new%2Fmareful-quran-08-new-edition_jp2.zip%2Fmareful-quran-08-new-edition_jp2%2Fmareful-quran-08-new-edition_0000.jp2' but got {manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']}")
 
+    @mock_urls
     def test_escape_cantaloupe_urls_two(self):
         resp = self.test_app.get("/iiif/3/balagzone_gmail/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id'] == "https://iiif.archive.org/image/iiif/3/balagzone_gmail%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0000.jp2",True, f"Expected 'https://iiif.archive.org/image/iiif/3/balagzone_gmail%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2.zip%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_jp2%2F%E0%AE%95%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AE%AE%E0%AF%8D-%20%E0%AE%AE%E0%AF%81%E0%AE%B4%E0%AF%81%20%E0%AE%A8%E0%AF%82%E0%AE%B2%E0%AF%8D_0000.jp2' but got {manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']}")
 
+    @mock_urls
     def test_metadata_array(self):
         resp = self.test_app.get("/iiif/3/annualreport00carn_14/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertTrue(len(manifest['summary']['none']) > 1, f"Expected multiple summary values, but got {manifest['summary']['none']}")
 
+    @mock_urls
     def test_multi_file_image(self):
         resp = self.test_app.get("/iiif/3/arkivkopia.se-lms-G70-48.3/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -138,12 +161,14 @@ class TestManifests(unittest.TestCase):
         for i in range(1, len(manifest['items'])):
             self.assertNotEqual(manifest['items'][i]['id'], firstCanvasId, 'Canvas Ids need to be unique')
 
+    @mock_urls
     def test_multi_file(self):
         resp = self.test_app.get("/iiif/3/st-anthony-relics-01/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['items']),6, f"Expected five canvases, but got {len(manifest['items'])}")
 
+    @mock_urls
     def test_encoded_thumb(self):    
         resp = self.test_app.get("/iiif/3/steamboat-willie-16mm-film-scan-4k-lossless/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -153,6 +178,7 @@ class TestManifests(unittest.TestCase):
 
         self.assertEqual(len(manifest['items']),1, f"Expected 1 canvas, but got {len(manifest['items'])}")
 
+    @mock_urls
     def test_hd_manifest(self):
         resp = self.test_app.get("/iiif/3/cc4ia-Polar_Plunge_Promo_-_2018/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -160,6 +186,7 @@ class TestManifests(unittest.TestCase):
 
         self.assertEqual(len(manifest['items']),1, f"Expected 1 canvas, but got {len(manifest['items'])}")
 
+    @mock_urls
     def test_auto_advance_audio(self):
         resp = self.test_app.get("/iiif/3/beowulf_te_librivox/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -167,6 +194,7 @@ class TestManifests(unittest.TestCase):
 
         self.assertEqual(manifest['behavior'], ["auto-advance"], f"Expected auto-advance on manifest with {len(manifest['items'])} canvases." )
 
+    @mock_urls
     def test_no_auto_advance_audio(self):
         resp = self.test_app.get("/iiif/3/78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -174,6 +202,7 @@ class TestManifests(unittest.TestCase):
 
         self.assertNotEqual(manifest.get('behavior', ['']), ["auto-advance"], "Expected no auto-advance behavior on manifest with 1 canvas." )
 
+    @mock_urls
     def test_auto_advance_video(self):
         resp = self.test_app.get("/iiif/3/captain-n-the-game-master-season-2-mkv/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -181,6 +210,7 @@ class TestManifests(unittest.TestCase):
 
         self.assertEqual(manifest['behavior'], ["auto-advance"], f"Expected auto-advance on manifest with {len(manifest['items'])} canvases." )
 
+    @mock_urls
     def test_no_auto_advance_video(self):
         resp = self.test_app.get("/iiif/3/DONAHUEARTSPECIAL/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -188,20 +218,23 @@ class TestManifests(unittest.TestCase):
 
         self.assertNotEqual(manifest.get('behavior', ['']), ["auto-advance"], "Expected no auto-advance behavior on manifest with 1 canvas." )
 
+    @mock_urls
     def test_thumbnail_on_audio_item(self):
         resp = self.test_app.get("/iiif/3/Waste-Management_Taster-Too-demo-2009/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['thumbnail']),5, f"Expected 5 thumbnails, but got {len(manifest['thumbnail'])}.")
 
+    @mock_urls
     def test_part_of(self):
         resp = self.test_app.get("/iiif/3/cc4ia-Polar_Plunge_Promo_-_2018/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json
         self.assertEqual(len(manifest['partOf']), 3, f"Expected 3 parent collections but got: {len(manifest['partOf'])}")
 
+    @mock_urls
     def test_single_page_of_multipage(self):
-        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$8/manifest.json?recache=true")
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$8/manifest.json")
 
         self.assertEqual(resp.status_code, 200)
 
@@ -212,13 +245,13 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0008.jp2")
 
         # Check first page
-        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$0/manifest.json?recache=true")
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$0/manifest.json")
         manifest = resp.json
         imgSrv = manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']
         self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0000.jp2")
 
         # Check last page
-        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$366/manifest.json?recache=true")
+        resp = self.test_app.get("/iiif/3/bub_gb_3Kt5kiw9KYcC$366/manifest.json")
         manifest = resp.json
         imgSrv = manifest['items'][0]['items'][0]['items'][0]['body']['service'][0]['id']
         self.assertEqual(imgSrv, "https://iiif.archive.org/image/iiif/3/bub_gb_3Kt5kiw9KYcC%2Fbub_gb_3Kt5kiw9KYcC_jp2.zip%2Fbub_gb_3Kt5kiw9KYcC_jp2%2Fbub_gb_3Kt5kiw9KYcC_0366.jp2")

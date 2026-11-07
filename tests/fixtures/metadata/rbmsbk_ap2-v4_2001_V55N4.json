@@ -1,0 +1,200 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760104.eu.archive.org",
+                "dir": "/0/items/rbmsbk_ap2-v4_2001_V55N4"
+            },
+            {
+                "server": "dn790007.ca.archive.org",
+                "dir": "/0/items/rbmsbk_ap2-v4_2001_V55N4"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn760104.eu.archive.org",
+                "dir": "/0/items/rbmsbk_ap2-v4_2001_V55N4"
+            },
+            {
+                "server": "dn790007.ca.archive.org",
+                "dir": "/0/items/rbmsbk_ap2-v4_2001_V55N4"
+            }
+        ]
+    },
+    "created": 1794009787,
+    "d1": "ia902803.us.archive.org",
+    "d2": "ia802803.us.archive.org",
+    "dir": "/7/items/rbmsbk_ap2-v4_2001_V55N4",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1777318031",
+            "size": "28041",
+            "format": "Item Tile",
+            "rotation": "0",
+            "md5": "59282e3cfa000e16e7b0333a60ad2b46",
+            "crc32": "a0336d47",
+            "sha1": "e8192a6c52eeed9cc8df4541c6f8ee4fc1d04112"
+        },
+        {
+            "name": "history/files/rbms.bk_ap2.v4_2001_V55N4_scandata.xml.~1~",
+            "source": "original",
+            "mtime": "1535837570",
+            "size": "34927",
+            "md5": "01a9fb763596ac5c68b9114f5739a8dd",
+            "crc32": "a885c728",
+            "sha1": "297942a8dd66330fd3ccd80f0b8c1ecbe80364e3",
+            "format": "Unknown",
+            "old_version": "true"
+        },
+        {
+            "name": "rbms.bk_ap2.v4_2001_V55N4.pdf",
+            "source": "original",
+            "mtime": "1535834120",
+            "size": "113410810",
+            "md5": "39d01d00452e870dd4f5ee9352fc5dd6",
+            "crc32": "b5e791f3",
+            "sha1": "43b28b86e69a4558c9395b43986abd5192a2a1db",
+            "format": "Text PDF"
+        },
+        {
+            "name": "rbms.bk_ap2.v4_2001_V55N4_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "rbms.bk_ap2.v4_2001_V55N4_jp2.zip",
+            "mtime": "1535837437",
+            "size": "6125475",
+            "md5": "76c41e3e9015b4c1dc97201137765dcc",
+            "crc32": "e95c713b",
+            "sha1": "8df00630d6a3a201da6773f11b36ae95caab2fca"
+        },
+        {
+            "name": "rbms.bk_ap2.v4_2001_V55N4_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "rbms.bk_ap2.v4_2001_V55N4_djvu.xml",
+            "mtime": "1535837567",
+            "size": "375406",
+            "md5": "779ce32181ac30541d7120fcd5e4bc88",
+            "crc32": "95efeb3e",
+            "sha1": "cfba8c68bfc20bb32f49f60b6c7982effcc37bbe"
+        },
+        {
+            "name": "rbms.bk_ap2.v4_2001_V55N4_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "rbms.bk_ap2.v4_2001_V55N4_abbyy.gz",
+            "mtime": "1535837565",
+            "size": "4526206",
+            "md5": "609f4a8fc3b94790118815cfff45afaa",
+            "crc32": "bad19417",
+            "sha1": "d48a818d5ce5efdf3d0d5b98b478c09718b76ca6"
+        },
+        {
+            "name": "rbms.bk_ap2.v4_2001_V55N4_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "rbms.bk_ap2.v4_2001_V55N4.pdf",
+            "mtime": "1535835136",
+            "size": "131274326",
+            "md5": "09c84c97680191fd99eb98a9218ec31d",
+            "crc32": "7c74bdb5",
+            "sha1": "ca14aaf24ec92fe7a9e38de402618d0cbe33179f",
+            "filecount": "116"
+        },
+        {
+            "name": "rbms.bk_ap2.v4_2001_V55N4_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "rbms.bk_ap2.v4_2001_V55N4_djvu.xml",
+            "mtime": "1547491333",
+            "size": "34927",
+            "md5": "bf48d6c11ce509d602eda318c256f806",
+            "crc32": "60750019",
+            "sha1": "c83ccba389ee39fbfd70c10436ad583cc037a976"
+        },
+        {
+            "name": "rbmsbk_ap2-v4_2001_V55N4_archive.torrent",
+            "source": "metadata",
+            "btih": "0a6a787503fb5d549829edb795f2c3bdc86e5d90",
+            "mtime": "1791230154",
+            "size": "12847",
+            "md5": "aa372ac8bc05ef0d726ebda8f938d1b8",
+            "crc32": "39c3af1c",
+            "sha1": "eb1b4ab3ce7871f851ac5b15ead5a4dadce35f27",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "rbmsbk_ap2-v4_2001_V55N4_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "01301afdf1690ba875eee98293a1ba47",
+            "summation": "md5"
+        },
+        {
+            "name": "rbmsbk_ap2-v4_2001_V55N4_meta.sqlite",
+            "source": "original",
+            "mtime": "1547491359",
+            "size": "11264",
+            "format": "Metadata",
+            "md5": "9fa6c91def32ecba3e9a601ce62eb2f6",
+            "crc32": "7d960e33",
+            "sha1": "94462b83a7e8f8d08c293843ae5ff88c69fd869f"
+        },
+        {
+            "name": "rbmsbk_ap2-v4_2001_V55N4_meta.xml",
+            "source": "original",
+            "mtime": "1791230151",
+            "size": "1982",
+            "format": "Metadata",
+            "md5": "6899cf916b996fc041a9a9d420c8ee10",
+            "crc32": "5116dc9b",
+            "sha1": "29c4692a0fed32599fc8dae56c519fc43cc77a97"
+        }
+    ],
+    "files_count": 12,
+    "item_last_updated": 1791230154,
+    "item_size": 255836211,
+    "metadata": {
+        "identifier": "rbmsbk_ap2-v4_2001_V55N4",
+        "creator": "Vermont Department of Tourism and Marketing",
+        "date": "2001",
+        "mediatype": "texts",
+        "publisher": "Montpelier : Agency of Development and Community Affairs",
+        "rights": "Digitized from originals held by Vermont Life magazine and Middlebury College Special Collections. Reproduced with permission from the State of Vermont. For more information, contact the Vermont Department of Tourism & Marketing.",
+        "scanner": "Internet Archive Python library 1.7.3",
+        "subject": [
+            "Vermont Life Magazine",
+            "Vermont",
+            "Vermont \u2013 Periodicals",
+            "Magazines",
+            "Tourism"
+        ],
+        "title": "Vermont life. Vol. 55, Iss. 4",
+        "publicdate": "2018-09-01 20:35:21",
+        "uploader": "specialcollections@middlebury.edu",
+        "addeddate": "2018-09-01 20:35:21",
+        "language": "eng",
+        "identifier-access": "http://archive.org/details/rbmsbk_ap2-v4_2001_V55N4",
+        "identifier-ark": "ark:/13960/t6646xb70",
+        "ppi": "600",
+        "ocr": "ABBYY FineReader 11.0 (Extended OCR)",
+        "collection": [
+            "vermontlifemagazine",
+            "middleburycollege",
+            "americana"
+        ],
+        "backup_location": "ia906801_16",
+        "notes": "Please contact <a href=\"mailto:specialcollections@middlebury.libanswers.com\" rel=\"ugc nofollow\">Middlebury College Special Collections</a> to report errors, provide additional information, or make other suggestions and help improve our cataloging for this item.",
+        "rightsstatement": "http://rightsstatements.org/vocab/CNE/1.0/",
+        "source": "RBMS",
+        "inclusive-description-statement": "https://www.middlebury.edu/library/special-collections/about/language-archival-and-library-catalogs"
+    },
+    "server": "ia802803.us.archive.org",
+    "uniq": 1132858273,
+    "workable_servers": [
+        "ia802803.us.archive.org",
+        "ia902803.us.archive.org"
+    ]
+}

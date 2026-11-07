@@ -1,0 +1,166 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn710905.ca.archive.org",
+                "dir": "/0/items/arkivkopia.se-lms-G70-48.3"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn710905.ca.archive.org",
+                "dir": "/0/items/arkivkopia.se-lms-G70-48.3"
+            }
+        ]
+    },
+    "created": 1794013044,
+    "d1": "ia600407.us.archive.org",
+    "d2": "ia800407.us.archive.org",
+    "dir": "/34/items/arkivkopia.se-lms-G70-48.3",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1530833777",
+            "size": "3305",
+            "md5": "a8b88ab20936d46477a06347e6db816d",
+            "crc32": "f183bc34",
+            "sha1": "2e256884f92b5417fc037dcbc366b6dbb89f251c",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "arkivkopia.se-lms-G70-48.3_archive.torrent",
+            "source": "metadata",
+            "btih": "52dbefacb086239befa4e76b0ba359affb404369",
+            "mtime": "1541177200",
+            "size": "3275",
+            "md5": "b4f1796d7a25497d2528f42bbff110b3",
+            "crc32": "b421a14c",
+            "sha1": "e62cb5add1c6e22e157dd9a300a6cfe0be005f30",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "arkivkopia.se-lms-G70-48.3_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "bd9e67ba5c58e39da3f5f72d7a3d36a3",
+            "summation": "md5"
+        },
+        {
+            "name": "arkivkopia.se-lms-G70-48.3_meta.sqlite",
+            "source": "original",
+            "mtime": "1508757050",
+            "size": "11264",
+            "md5": "1902137a7a73d11bcc4fa7acca209268",
+            "crc32": "b814b74a",
+            "sha1": "0d7657d3456d9bdc150e4c9a35133ec5a23529f1",
+            "format": "Metadata"
+        },
+        {
+            "name": "arkivkopia.se-lms-G70-48.3_meta.xml",
+            "source": "original",
+            "mtime": "1541177186",
+            "size": "933",
+            "format": "Metadata",
+            "md5": "259e36a6c34671a56288095d5b02a66b",
+            "crc32": "35025983",
+            "sha1": "1b79b2e49205e75dace572b6035cb4e47270585f"
+        },
+        {
+            "name": "original_lms2_4c4d535f4737302d34383a33.index.1.tiff.jpg",
+            "source": "original",
+            "mtime": "1508756868",
+            "size": "2038199",
+            "md5": "11c7b417edf56be20ba5ea639fff2af0",
+            "crc32": "f358248a",
+            "sha1": "aab8c52c3ce2bd43192fe214e013fb15622105c4",
+            "format": "JPEG",
+            "rotation": "0"
+        },
+        {
+            "name": "original_lms2_4c4d535f4737302d34383a33.index.1.tiff_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "original_lms2_4c4d535f4737302d34383a33.index.1.tiff.jpg",
+            "mtime": "1508757112",
+            "size": "1807",
+            "md5": "c61f368729d8430e0f0bb3a29dea9d23",
+            "crc32": "99ddd0a2",
+            "sha1": "d3fea44b7fefe98d88e6f88e9e827e581d6bb0c4"
+        },
+        {
+            "name": "original_lms2_4c4d535f4737302d34383a33.index.2.tiff.jpg",
+            "source": "original",
+            "mtime": "1508756882",
+            "size": "2380887",
+            "md5": "01f436d2f179439e052aff42f6238246",
+            "crc32": "79d8078f",
+            "sha1": "4fdde1f6d2c730ceafc04d59755c67e8238908bd",
+            "format": "JPEG",
+            "rotation": "0"
+        },
+        {
+            "name": "original_lms2_4c4d535f4737302d34383a33.index.2.tiff_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "original_lms2_4c4d535f4737302d34383a33.index.2.tiff.jpg",
+            "mtime": "1508757115",
+            "size": "4546",
+            "md5": "11a9540b7f9bccf7ae155ad3abcdd420",
+            "crc32": "66994d24",
+            "sha1": "3c467342b4faa22f9fd4836d2ed7394c5009d1e6"
+        },
+        {
+            "name": "original_lms2_4c4d535f4737302d34383a33.index.3.tiff.jpg",
+            "source": "original",
+            "mtime": "1508756886",
+            "size": "2537291",
+            "md5": "e54d4f8982cf9795eab5fe80ca5774d6",
+            "crc32": "201dba36",
+            "sha1": "5b2e3bbb0a42c14950cd4050eea45b6a421fb69f",
+            "format": "JPEG",
+            "rotation": "0"
+        },
+        {
+            "name": "original_lms2_4c4d535f4737302d34383a33.index.3.tiff_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "original_lms2_4c4d535f4737302d34383a33.index.3.tiff.jpg",
+            "mtime": "1508757121",
+            "size": "4582",
+            "md5": "bafc97e47edb11013c6ef026d38ab71c",
+            "crc32": "cdd145c0",
+            "sha1": "92c8a912f4d89c6b81a71b223fccfb2eac0e3d19"
+        }
+    ],
+    "files_count": 11,
+    "item_last_updated": 1718091616,
+    "item_size": 6986089,
+    "metadata": {
+        "identifier": "arkivkopia.se-lms-G70-48.3",
+        "collection": [
+            "arkivkopia",
+            "image"
+        ],
+        "contributor": "Arkivkopia",
+        "creator": "Lantm\u00e4teristyrelsens arkiv",
+        "date": "1804",
+        "description": "Mer information p\u00e5 <a href=\"http://arkivkopia.se/sak/lms-G70-48:3\" rel=\"nofollow\">http://arkivkopia.se/sak/lms-G70-48:3</a>.",
+        "language": "swe",
+        "mediatype": "image",
+        "scanner": "Internet Archive Python library 1.7.3",
+        "title": "Tulunda nr 1-11",
+        "publicdate": "2017-10-23 11:07:48",
+        "uploader": "arkivbildare@arkivkopia.se",
+        "addeddate": "2017-10-23 11:07:48",
+        "curation": "[curator]validator@archive.org[/curator][date]20171023111131[/date][comment]checked for malware[/comment]",
+        "backup_location": "ia906508_21"
+    },
+    "server": "ia800407.us.archive.org",
+    "uniq": 461931549,
+    "workable_servers": [
+        "ia800407.us.archive.org",
+        "ia600407.us.archive.org"
+    ]
+}

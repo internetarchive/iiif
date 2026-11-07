@@ -1,0 +1,127 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721609.ca.archive.org",
+                "dir": "/0/items/terminal-escape-collection"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721609.ca.archive.org",
+                "dir": "/0/items/terminal-escape-collection"
+            }
+        ]
+    },
+    "created": 1793992648,
+    "d1": "ia600700.us.archive.org",
+    "d2": "ia800700.us.archive.org",
+    "dir": "/23/items/terminal-escape-collection",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1766243052",
+            "size": "6593",
+            "md5": "d2b44381a442effee406b82b7c29436b",
+            "crc32": "2d43fac7",
+            "sha1": "36ee5be03ee15865e161ecd8d6c4664b9a6ab6a6",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "logo_header.jpg",
+            "source": "original",
+            "mtime": "1682392020",
+            "size": "69026",
+            "md5": "d057622d057515914179e380332e8917",
+            "crc32": "58450b83",
+            "sha1": "4c043bcc9177d35370f805db5840d1011f85f775",
+            "format": "JPEG",
+            "rotation": "0"
+        },
+        {
+            "name": "n00q_collection_archive.torrent",
+            "source": "metadata",
+            "btih": "6f7cce857a7b522627a3198cd6b53beab8441a91",
+            "mtime": "1682462005",
+            "size": "1811",
+            "md5": "216d7e4b86b0ccb4c1eea30b89c37b57",
+            "crc32": "6ea58387",
+            "sha1": "2aa1f2e6b101f0106bd456ae632c9802225bb8de",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "terminal-escape-collection_archive.torrent",
+            "source": "metadata",
+            "btih": "bbbdd13a36895e72c6edcc12efbf68149f162c34",
+            "mtime": "1766243053",
+            "size": "2157",
+            "md5": "9b692cbe94d6e201b8269afe29a85ef3",
+            "crc32": "04d3cf74",
+            "sha1": "1c4912f33c875acf634dcd9e8cb20900aa3852a1",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "terminal-escape-collection_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "d4ed103954cc004e6c79d66e4d3882be",
+            "summation": "md5"
+        },
+        {
+            "name": "terminal-escape-collection_itemimage.jpg",
+            "source": "original",
+            "mtime": "1682462301",
+            "size": "476600",
+            "md5": "8a4c753a9ff0ff58562b7d45dff96416",
+            "crc32": "b740a04f",
+            "sha1": "be2857b3723c5fddb22efd40312f8b2b228874dd",
+            "format": "Item Image",
+            "rotation": "0"
+        },
+        {
+            "name": "terminal-escape-collection_meta.sqlite",
+            "source": "original",
+            "mtime": "1682462306",
+            "size": "20480",
+            "md5": "fe1dc08d585ddbada07898fe0ac640be",
+            "crc32": "9e255b58",
+            "sha1": "09b9f3afe1f775655044546285822d467db7f024",
+            "format": "Metadata"
+        },
+        {
+            "name": "terminal-escape-collection_meta.xml",
+            "source": "original",
+            "mtime": "1766243051",
+            "size": "3652",
+            "md5": "7efbafe04b64a14f5421be227ec0034c",
+            "crc32": "35bfaa96",
+            "sha1": "deb5cb5aec47853042355622386ae1f4d0a6bced",
+            "format": "Metadata"
+        }
+    ],
+    "files_count": 8,
+    "is_collection": true,
+    "item_last_updated": 1766243053,
+    "item_size": 580319,
+    "metadata": {
+        "identifier": "terminal-escape-collection",
+        "collection": "folksoundomy",
+        "description": "<div dir=\"auto\" style=\"margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: rgb(255, 255, 255); box-sizing: border-box; color: rgb(47, 57, 65); font-family: system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 14px; user-select: auto; height: initial !important; min-height: initial !important; max-height: initial !important;\">TERMINAL ESCAPE. DAILY CASSETTE RIPS SINCE 2009. \"The wizard\" has been ripping and posting tapes daily on his <a href=\"https://terminalescape.blogspot.com/\" rel=\"noreferrer\" style=\"margin: 0px; padding: 0px; vertical-align: baseline; background: transparent; cursor: pointer; text-decoration-line: none; color: rgb(31, 115, 183); box-sizing: border-box; user-select: auto; height: initial !important; min-height: initial !important; max-height: initial !important;\">https://terminalescape.blogspot.com</a>&nbsp;blog since 2009. This massive collection covers DIY and underground releases from punk, hardcore, and all related and unrelated genre. There are both demos from contemporary bands and rare tapes, bootlegs, compilations, etc from his own personal collection, which is extensive due to his long-standing participation in undergound tape-trading scenes.<br style=\"box-sizing: border-box; height: initial !important; min-height: initial !important; max-height: initial !important; user-select: auto;\"></div><div dir=\"auto\" style=\"margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: rgb(255, 255, 255); box-sizing: border-box; color: rgb(47, 57, 65); font-family: system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 14px; user-select: auto; height: initial !important; min-height: initial !important; max-height: initial !important;\"><br style=\"box-sizing: border-box; height: initial !important; min-height: initial !important; max-height: initial !important; user-select: auto;\"></div><div dir=\"auto\" style=\"margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: rgb(255, 255, 255); box-sizing: border-box; color: rgb(47, 57, 65); font-family: system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 14px; user-select: auto; height: initial !important; min-height: initial !important; max-height: initial !important;\">Previously all these tapes were uploaded to a variety of temporary upload sites and many of the older download links have gone dead (out of nearly 5000 posts since 2009, nearly 1500 are lost). This collection at the Internet Archive seeks to preserve these tape rips in a permanent home, alongside the wizard's commentary and reviews that accompanied each post.&nbsp;</div>",
+        "hidden": "true",
+        "mediatype": "collection",
+        "title": "Terminal Escape",
+        "uploader": "mail@n00q.net",
+        "publicdate": "2023-04-25 03:07:11",
+        "addeddate": "2023-04-25 03:07:11",
+        "subject": "Terminal Escape;cassette;punk;hardcore;tape;DIY",
+        "collectionsource": "patron"
+    },
+    "server": "ia600700.us.archive.org",
+    "uniq": 1239500672,
+    "workable_servers": [
+        "ia600700.us.archive.org",
+        "ia800700.us.archive.org"
+    ]
+}

@@ -1,0 +1,290 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760102.eu.archive.org",
+                "dir": "/0/items/wg35-2-388"
+            },
+            {
+                "server": "dn790008.ca.archive.org",
+                "dir": "/0/items/wg35-2-388"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn760102.eu.archive.org",
+                "dir": "/0/items/wg35-2-388"
+            }
+        ]
+    },
+    "created": 1793996167,
+    "d1": "ia601805.us.archive.org",
+    "d2": "ia801805.us.archive.org",
+    "dir": "/7/items/wg35-2-388",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1772013176",
+            "size": "21713",
+            "md5": "c8b541b648c439a553606bd9ad235cf6",
+            "crc32": "ae7e315a",
+            "sha1": "6dc2e2319e37175d9ba8b41204d2a51e8675a24e",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "wg35-2-388.pdf",
+            "source": "derivative",
+            "format": "Text PDF",
+            "original": "wg35-2-388_page_numbers.json",
+            "mtime": "1607349329",
+            "size": "625800",
+            "md5": "89a43d2be9f24caae32dd0d043c8c976",
+            "crc32": "771c558d",
+            "sha1": "9a110cf1b8b7a6e33e23436d5de12a63ca689551"
+        },
+        {
+            "name": "wg35-2-388_archive.torrent",
+            "source": "metadata",
+            "btih": "65f79a82bfff3e21e455cf8755ff7c9aeb1f3f90",
+            "mtime": "1772013177",
+            "size": "4193",
+            "md5": "1f98c24faaa8c1635a41b662931c505f",
+            "crc32": "b7bb6163",
+            "sha1": "1966844f310c22ac1f2f96aa5675500284d2bd17",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "wg35-2-388_chocr.html.gz",
+            "source": "derivative",
+            "format": "chOCR",
+            "original": "wg35-2-388_jp2.zip",
+            "mtime": "1607349238",
+            "size": "44545",
+            "md5": "713611035b3d51825acbdca144f1cbab",
+            "crc32": "4762fe90",
+            "sha1": "d1be832a1230d07acf5f829982180f6501a23882"
+        },
+        {
+            "name": "wg35-2-388_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "wg35-2-388_djvu.xml",
+            "mtime": "1607349256",
+            "size": "3108",
+            "md5": "bbc4db417cbf0d26384af756db10f179",
+            "crc32": "c30e6aae",
+            "sha1": "5e1a7727fedcf2eb07cf443803951aa5c5d70f2c"
+        },
+        {
+            "name": "wg35-2-388_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "wg35-2-388_chocr.html.gz",
+            "mtime": "1607349254",
+            "size": "48030",
+            "md5": "2a4b9f176d87bdc581cda4c7b239a99f",
+            "crc32": "535ca80b",
+            "sha1": "88b731fa84ebfecb538633d173fba277f601995a"
+        },
+        {
+            "name": "wg35-2-388_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "aff4ef2691a060477546419c21c7f8f2",
+            "summation": "md5"
+        },
+        {
+            "name": "wg35-2-388_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.0.0",
+            "hocr_char_to_word_hocr_version": "1.1.2",
+            "format": "hOCR",
+            "original": "wg35-2-388_chocr.html.gz",
+            "mtime": "1617574996",
+            "size": "98134",
+            "md5": "57520715c51579156fe96c8a2391623a",
+            "crc32": "7252eecb",
+            "sha1": "ed250adfd0b538824ed208594013163bc4a858ef"
+        },
+        {
+            "name": "wg35-2-388_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.0",
+            "format": "OCR Page Index",
+            "original": "wg35-2-388_hocr.html",
+            "mtime": "1617575044",
+            "size": "81",
+            "md5": "05cba27177d0d820c43e7d748b9c29e6",
+            "crc32": "3cfbc3b6",
+            "sha1": "ab6b71e999bdc689c083e0d47def76b78f3140ac"
+        },
+        {
+            "name": "wg35-2-388_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.0",
+            "word_conf_0_10": "15",
+            "word_conf_11_20": "9",
+            "word_conf_21_30": "8",
+            "word_conf_31_40": "7",
+            "word_conf_41_50": "9",
+            "word_conf_51_60": "16",
+            "word_conf_61_70": "10",
+            "word_conf_71_80": "32",
+            "word_conf_81_90": "44",
+            "word_conf_91_100": "386",
+            "format": "OCR Search Text",
+            "original": "wg35-2-388_hocr.html",
+            "mtime": "1617575075",
+            "size": "1706",
+            "md5": "dfe27502c182a68062869dfc91c03eda",
+            "crc32": "135bd05f",
+            "sha1": "85bf99cca5728e4ace65b978036cddd8f098b105"
+        },
+        {
+            "name": "wg35-2-388_images.zip",
+            "source": "original",
+            "mtime": "1607346118",
+            "size": "13590938",
+            "md5": "2d83e786977db46cac77f76301964261",
+            "crc32": "d16e0b36",
+            "sha1": "fa253286d116984a67620fffab484927f3c56028",
+            "format": "Generic Raw Book Zip",
+            "filecount": "4"
+        },
+        {
+            "name": "wg35-2-388_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "wg35-2-388_images.zip",
+            "mtime": "1607349194",
+            "size": "2225698",
+            "md5": "78cc37156101ee2f446303633acc37a5",
+            "crc32": "e58554c5",
+            "sha1": "3c19e5367246aaa13911d9b3aa3e2f2b48ff0847",
+            "filecount": "4"
+        },
+        {
+            "name": "wg35-2-388_meta.sqlite",
+            "source": "original",
+            "mtime": "1607346694",
+            "size": "11264",
+            "md5": "aad0bd6514a35334129a529884134717",
+            "crc32": "ae15e694",
+            "sha1": "8b69804e3c4ed96780fc1aea79e9eb9cc98a74f1",
+            "format": "Metadata"
+        },
+        {
+            "name": "wg35-2-388_meta.xml",
+            "source": "original",
+            "mtime": "1772013176",
+            "size": "1851",
+            "md5": "e47da1ea92c16d2ecec043739f2f3944",
+            "crc32": "418a765a",
+            "sha1": "cffb1ed8fa2c6f728d826c49c367abb5a392695e",
+            "format": "Metadata"
+        },
+        {
+            "name": "wg35-2-388_page_numbers.json",
+            "source": "derivative",
+            "format": "Page Numbers JSON",
+            "original": "wg35-2-388_djvu.xml",
+            "mtime": "1607349266",
+            "size": "683",
+            "md5": "1b2290438b79105f96f2c12e875214f8",
+            "crc32": "e2062411",
+            "sha1": "a02ac26f492269bb1d814a7cffb40c7e7e61b1cd"
+        },
+        {
+            "name": "wg35-2-388_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "wg35-2-388_djvu.xml",
+            "mtime": "1607349261",
+            "size": "1479",
+            "md5": "7c9a1c11781ac648da3fe40c589dbd64",
+            "crc32": "275cd959",
+            "sha1": "6776ee715b400bcf59833b73af705a209829925a"
+        }
+    ],
+    "files_count": 16,
+    "item_last_updated": 1772013177,
+    "item_size": 16679223,
+    "metadata": {
+        "identifier": "wg35-2-388",
+        "collection": [
+            "welsh-ballads",
+            "cardiffuniversitycollection",
+            "patron-library-collection"
+        ],
+        "contributor": "Special Collections and Archives, Cardiff University",
+        "creator": "Williams, Richard (Dic Dywyll), 1790?-1862?",
+        "description": "[18--]: Ballads | 19th century | Judgement Day | Death | Religion",
+        "language": "wel",
+        "licenseurl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "mediatype": "texts",
+        "publisher": "Abertawy: E. Griffiths arg",
+        "scanner": "Internet Archive Python library 1.9.0",
+        "subject": "Welsh ballads",
+        "title": "Can newydd sef myfyrdod ar farwolaeth, ac er anogaeth i bawb ystyried eu diwedd : Cenir ar y do\u0302n Fechan, [gan] Richard Williams a'i ca\u0302nt",
+        "uploader": "specialcollections@cardiff.ac.uk",
+        "publicdate": "2020-12-07 13:07:26",
+        "addeddate": "2020-12-07 13:07:26",
+        "curation": "[curator]validator@archive.org[/curator][date]20201207131343[/date][comment]checked for malware[/comment]",
+        "identifier-access": "http://archive.org/details/wg35-2-388",
+        "identifier-ark": "ark:/13960/t1xf0pc61",
+        "imagecount": "4",
+        "ocr": "tesseract 4.1.1",
+        "ocr_parameters": "-l cym",
+        "ocr_module_version": "0.0.8",
+        "ocr_detected_script": "Latin",
+        "ocr_detected_script_conf": "1.0000",
+        "ocr_detected_lang": "cy",
+        "ocr_detected_lang_conf": "1.0000",
+        "pdf_module_version": "0.0.4",
+        "foldoutcount": "0",
+        "collection_added": "patron-library-collection"
+    },
+    "page_numbers": {
+        "confidence": 0,
+        "identifier": "/var/tmp/autoclean/derive/wg35-2-388/wg35-2-388",
+        "pages": [
+            {
+                "leafNum": 1,
+                "confidence": 0,
+                "ocr_value": [
+                    "6",
+                    "10"
+                ],
+                "pageNumber": "1"
+            },
+            {
+                "leafNum": 2,
+                "confidence": 0,
+                "ocr_value": [
+                    "8",
+                    "16"
+                ],
+                "pageNumber": "2"
+            },
+            {
+                "leafNum": 3,
+                "confidence": 0,
+                "ocr_value": [
+                    "4",
+                    "20"
+                ],
+                "pageNumber": "3"
+            }
+        ]
+    },
+    "server": "ia801805.us.archive.org",
+    "uniq": 719686826,
+    "workable_servers": [
+        "ia801805.us.archive.org",
+        "ia601805.us.archive.org"
+    ]
+}

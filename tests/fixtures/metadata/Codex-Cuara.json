@@ -1,0 +1,835 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721807.ca.archive.org",
+                "dir": "/0/items/Codex-Cuara"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721807.ca.archive.org",
+                "dir": "/0/items/Codex-Cuara"
+            }
+        ]
+    },
+    "created": 1794002417,
+    "d1": "ia600701.us.archive.org",
+    "d2": "ia800701.us.archive.org",
+    "dir": "/17/items/Codex-Cuara",
+    "files": [
+        {
+            "name": "00000031.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000031.tif",
+            "mtime": "1725570545",
+            "size": "9005548",
+            "md5": "5c0644da8b2acb8de172577d99fb9b8c",
+            "crc32": "63ff2228",
+            "sha1": "62931aa407620ebaa986caedc63c08a54cf129d8"
+        },
+        {
+            "name": "00000031.tif",
+            "source": "original",
+            "mtime": "1725502931",
+            "size": "106879696",
+            "md5": "e8a60d1d7e4488dc63db4c10fbee9918",
+            "crc32": "238ff775",
+            "sha1": "0ccd0212e27e659b96d240eb10fa3583776e0334",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000031_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000031.tif",
+            "mtime": "1725570535",
+            "size": "14663",
+            "md5": "42e00be61294c05bc3e1faa730100461",
+            "crc32": "588a64ba",
+            "sha1": "56d19e7c0f027a84841e5b1e827035240b918699"
+        },
+        {
+            "name": "00000036.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000036.tif",
+            "mtime": "1725570509",
+            "size": "9031519",
+            "md5": "823a0578103855c7885c4f2693513f79",
+            "crc32": "945354ab",
+            "sha1": "a072880e891e46c677247cc13817ab0dc47a023d"
+        },
+        {
+            "name": "00000036.tif",
+            "source": "original",
+            "mtime": "1725503085",
+            "size": "108348488",
+            "md5": "c711e382e55b4b6d2841b69b14871169",
+            "crc32": "9ef55769",
+            "sha1": "4976d492998884416d7140f05b53ca8fd2e71ecc",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000036_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000036.tif",
+            "mtime": "1725570505",
+            "size": "14759",
+            "md5": "896fb8822c67960392b13caf3cac4f56",
+            "crc32": "148e2578",
+            "sha1": "dd5b4f966c38da25517d17f4a11daf9480864c7e"
+        },
+        {
+            "name": "00000038.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000038.tif",
+            "mtime": "1725570432",
+            "size": "9355424",
+            "md5": "bd952604ab72630b70febd530e0a37f5",
+            "crc32": "15b9b803",
+            "sha1": "cbc424c9beaced1a6a668d1f787d1ee53a5fccb7"
+        },
+        {
+            "name": "00000038.tif",
+            "source": "original",
+            "mtime": "1725503276",
+            "size": "108348280",
+            "md5": "c4eee7111f8fc079f4667ae5305340f3",
+            "crc32": "febb094b",
+            "sha1": "8474de4c62d7d0460dbc10bf2194d2f2a90ac04c",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000038_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000038.tif",
+            "mtime": "1725570426",
+            "size": "14452",
+            "md5": "aa429da98d89bdac60eed76f7dceeb79",
+            "crc32": "61a963ed",
+            "sha1": "8f43be2d33f8802cec77e558ab2ebb38dfe97424"
+        },
+        {
+            "name": "00000039.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000039.tif",
+            "mtime": "1725570445",
+            "size": "9589907",
+            "md5": "b4382d0f0704d133c0e3c97df1e2dd64",
+            "crc32": "4917705e",
+            "sha1": "de7f1aa6325d66341433b4e36afeee29bf9752be"
+        },
+        {
+            "name": "00000039.tif",
+            "source": "original",
+            "mtime": "1725503596",
+            "size": "107936936",
+            "md5": "eb3022f38b867f31161239f64f6eea2f",
+            "crc32": "09312217",
+            "sha1": "1335ae16db283619f42dfa9af0a15ce21f8c2048",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000039_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000039.tif",
+            "mtime": "1725570441",
+            "size": "13186",
+            "md5": "5fa1627e53662ab7b28c4f2a6e559421",
+            "crc32": "b3fd4118",
+            "sha1": "e6ae1b0d49a6086bed3e832376a757577942ae61"
+        },
+        {
+            "name": "00000040.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000040.tif",
+            "mtime": "1725570456",
+            "size": "9849597",
+            "md5": "fae23e20076e21406610e066fbcea47e",
+            "crc32": "3ad3697c",
+            "sha1": "3c3c91f52cc38db6c49c8331ada169ed7a57d2fa"
+        },
+        {
+            "name": "00000040.tif",
+            "source": "original",
+            "mtime": "1725503803",
+            "size": "107979760",
+            "md5": "c20f839d1fa8388541be270711b6552d",
+            "crc32": "a72c8394",
+            "sha1": "28c8ad25fc75250cff35313b85ec382aebf96bb8",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000040_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000040.tif",
+            "mtime": "1725570453",
+            "size": "12855",
+            "md5": "61c138c7f57f862e2e2eb940f8d6ed45",
+            "crc32": "d684b6a0",
+            "sha1": "9ede5ec5a6f83f3ac55964279796b817c96c3d57"
+        },
+        {
+            "name": "00000043.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000043.tif",
+            "mtime": "1725570467",
+            "size": "8940850",
+            "md5": "f3b2ba4b0dd078f41462c44fba71bd86",
+            "crc32": "88fdabe0",
+            "sha1": "7ff9024d1ad228b1d90ae03afe82df80cf9d4240"
+        },
+        {
+            "name": "00000043.tif",
+            "source": "original",
+            "mtime": "1725504016",
+            "size": "107937340",
+            "md5": "6fb48cc452f252061b3a1520494a3fd3",
+            "crc32": "a04311b6",
+            "sha1": "62d599849990a088afd6757142b52bfbd34cc3cd",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000043_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000043.tif",
+            "mtime": "1725570462",
+            "size": "13896",
+            "md5": "a0bf53a8cab84f0880fe6ac9d156414a",
+            "crc32": "9dfd7a02",
+            "sha1": "7020a7ab27fe94bb40751b38f095cf0cba526c67"
+        },
+        {
+            "name": "00000045.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000045.tif",
+            "mtime": "1725570478",
+            "size": "8851796",
+            "md5": "8b4c41e2f4732af97c81a4a008ccb8a1",
+            "crc32": "50ec3b42",
+            "sha1": "4e9bc65da7ad89cca6a4eb4aeb2122db445802d5"
+        },
+        {
+            "name": "00000045.tif",
+            "source": "original",
+            "mtime": "1725504214",
+            "size": "107937204",
+            "md5": "cb1469b7ec80e15dc7512ca0b0f9b344",
+            "crc32": "9c322ab5",
+            "sha1": "a450c828234e98493f9f7e7bcda662014ef63108",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000045_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000045.tif",
+            "mtime": "1725570473",
+            "size": "13633",
+            "md5": "ce1c3b862a8a8f035147bdcbd701eb5b",
+            "crc32": "ba95d7d6",
+            "sha1": "30b985755b5fa443cd11f5133166eb81e3f65540"
+        },
+        {
+            "name": "00000047.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000047.tif",
+            "mtime": "1725570499",
+            "size": "8963467",
+            "md5": "86442b5d365e432c927f9b7e3d0cd3d5",
+            "crc32": "6e995224",
+            "sha1": "44c7e6572ccff3aed0393c32fd6280c61df73229"
+        },
+        {
+            "name": "00000047.tif",
+            "source": "original",
+            "mtime": "1725504384",
+            "size": "108219056",
+            "md5": "5bd34445b038c3a3b06196a9701c55fb",
+            "crc32": "4c17bfb4",
+            "sha1": "4a7f2f7862ab97d99d9e0fbc5cea40e788857e67",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000047_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000047.tif",
+            "mtime": "1725570491",
+            "size": "15041",
+            "md5": "efe476973fbc3aed7a3e23879810f70f",
+            "crc32": "94fee041",
+            "sha1": "c4c1ee4bac4d4bf8df50b145cb85b32dd33c5a9b"
+        },
+        {
+            "name": "00000050.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000050.tif",
+            "mtime": "1725570419",
+            "size": "10138372",
+            "md5": "595abd0e63f43f84209eb2e5c2d6edbd",
+            "crc32": "417b9213",
+            "sha1": "d92cd5c877fca10d00ab1eb4551ef48eb2b06334"
+        },
+        {
+            "name": "00000050.tif",
+            "source": "original",
+            "mtime": "1725504616",
+            "size": "107981596",
+            "md5": "9f548b18e8826d10877a956e212ca1f5",
+            "crc32": "4843b0c8",
+            "sha1": "e2e7f91328d9659fcd9defddf0e865bdd4d7fe31",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000050_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000050.tif",
+            "mtime": "1725570413",
+            "size": "14957",
+            "md5": "d604d4f47a886eaeb7ae67f1485d8d12",
+            "crc32": "dd48f5fb",
+            "sha1": "8d13db0741904535d887e6cd16109e31694761b6"
+        },
+        {
+            "name": "00000053.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000053.tif",
+            "mtime": "1725570660",
+            "size": "8659723",
+            "md5": "77ae9de79d1dc192f3333a74f35b484c",
+            "crc32": "2c0add79",
+            "sha1": "ec0c38019eff8b5198eac10b074fa07a9f8f2882"
+        },
+        {
+            "name": "00000053.tif",
+            "source": "original",
+            "mtime": "1725504786",
+            "size": "108477672",
+            "md5": "02836fe287663547a00ec6f5ec6306aa",
+            "crc32": "c3052a0a",
+            "sha1": "592d655be850e8d89ac4fe2cc99decfdb883ee19",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000053_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000053.tif",
+            "mtime": "1725570653",
+            "size": "13967",
+            "md5": "a7ac97c3a444cfacfccfaa3d5df1c065",
+            "crc32": "9211911f",
+            "sha1": "73c712440f408a4f1352fade641cc01f6175738f"
+        },
+        {
+            "name": "00000054.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "00000054.tif",
+            "mtime": "1725570521",
+            "size": "10210226",
+            "md5": "229e7cfc054daa2291ab0baa8d652245",
+            "crc32": "bc88e34b",
+            "sha1": "b668676476559ebfb709dcc906b3d3d95be9c32a"
+        },
+        {
+            "name": "00000054.tif",
+            "source": "original",
+            "mtime": "1725504951",
+            "size": "109709412",
+            "md5": "19dfdcd9e3596f3b631698c9468254ad",
+            "crc32": "e94f33b4",
+            "sha1": "958d47a7e35f12eccb374a4f0ee946a2e0f9f7bd",
+            "format": "TIFF"
+        },
+        {
+            "name": "00000054_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "00000054.tif",
+            "mtime": "1725570514",
+            "size": "14538",
+            "md5": "485e79a35ef8fe5bdcb798dcd88656ec",
+            "crc32": "15a343a6",
+            "sha1": "22d7ff0947a33e17be3dd1bf8d92e38eb0078a15"
+        },
+        {
+            "name": "Codex-Cuara_archive.torrent",
+            "source": "metadata",
+            "btih": "54fec590087ca482c9816d5f62d04c8a2667c819",
+            "mtime": "1771951820",
+            "size": "51022",
+            "md5": "5052d1559878d343d0ebf2e23a23f596",
+            "crc32": "05891c5b",
+            "sha1": "92f83e7e86fa39b2bf66899cb25497c81eac1f8a",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "Codex-Cuara_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "f5af2924605f07d18c63fadcd640ab78",
+            "summation": "md5"
+        },
+        {
+            "name": "Codex-Cuara_meta.sqlite",
+            "source": "original",
+            "mtime": "1725567857",
+            "size": "188416",
+            "md5": "8cedf4b54c88fa1045a826e0542a3865",
+            "crc32": "3047738f",
+            "sha1": "feaea1321b807d27a02c4ab1e59c67ff3c1c253a",
+            "format": "Metadata"
+        },
+        {
+            "name": "Codex-Cuara_meta.xml",
+            "source": "original",
+            "mtime": "1771951807",
+            "size": "7148",
+            "md5": "1678655e2e077d3a690e7175dda4b4a6",
+            "crc32": "a8281c75",
+            "sha1": "ca17d34492715a52f98960771bd2200b29ac15da",
+            "format": "Metadata"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf 1r.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "Cuara, Co\u0301dice leaf 1r.tif",
+            "mtime": "1725570581",
+            "size": "9268925",
+            "md5": "d660972121e1588f398addfc92c844d7",
+            "crc32": "8ea5ade0",
+            "sha1": "c13c435661b1a5b822b5f4abb82afb7e3a0a7fcf"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf 1r.tif",
+            "source": "original",
+            "mtime": "1725505087",
+            "size": "108888144",
+            "md5": "ca34b81ba4d11fd8c35fef76938e6008",
+            "crc32": "0cfea7cd",
+            "sha1": "239a78c3eaeab9ce2763d614489453619938d18e",
+            "format": "TIFF"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf 1r_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "Cuara, Co\u0301dice leaf 1r.tif",
+            "mtime": "1725570574",
+            "size": "14388",
+            "md5": "cc5e859b31a5016db7641541931de465",
+            "crc32": "50041e28",
+            "sha1": "0b1ce76777ed1bab999e791f1a66c873a2e970a8"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf10r.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "Cuara, Co\u0301dice leaf10r.tif",
+            "mtime": "1725570565",
+            "size": "8958589",
+            "md5": "a4d1e222ff7b1a442301271fb3e0b259",
+            "crc32": "6023ed17",
+            "sha1": "4db90421e44ccdb3cb6fd0c1096066f8043bb6bb"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf10r.tif",
+            "source": "original",
+            "mtime": "1725567843",
+            "size": "106879020",
+            "md5": "4db348a076b892ddb63d01d2c2b78365",
+            "crc32": "1c907d42",
+            "sha1": "2ad59c22e1a855539cc937b875577edba3de901a",
+            "format": "TIFF"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf10r_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "Cuara, Co\u0301dice leaf10r.tif",
+            "mtime": "1725570556",
+            "size": "13794",
+            "md5": "1156bfb7edf52bc4a927efaee978bb42",
+            "crc32": "8b771cc7",
+            "sha1": "d7dd68a8a27dabf2c6586c57b8275f8809c0f011"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf1v.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "Cuara, Co\u0301dice leaf1v.tif",
+            "mtime": "1725570596",
+            "size": "9328905",
+            "md5": "2371f8ba924e31900dfc85a09cfba9b5",
+            "crc32": "ed59005c",
+            "sha1": "a1b2c0dac613f82972ae6332d38d48a965956be3"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf1v.tif",
+            "source": "original",
+            "mtime": "1725505294",
+            "size": "106943916",
+            "md5": "c818a35710e6c82f03b7d85bf640f88e",
+            "crc32": "e9d5af60",
+            "sha1": "6045cf8fa957774ed021ae36caec36598a24bdee",
+            "format": "TIFF"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf1v_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "Cuara, Co\u0301dice leaf1v.tif",
+            "mtime": "1725570589",
+            "size": "13842",
+            "md5": "de087b05c4536756fccfae4cd6b6b02e",
+            "crc32": "cce0f3e9",
+            "sha1": "149a344253f7c4b5b9e5d138c0aaec548230924d"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf7r.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "Cuara, Co\u0301dice leaf7r.tif",
+            "mtime": "1725570613",
+            "size": "8123646",
+            "md5": "14becc4b508e889be41ca0c3a5589342",
+            "crc32": "aee6b92d",
+            "sha1": "6562fb5b413e536b5fe13f2e9c09d289bed17edb"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf7r.tif",
+            "source": "original",
+            "mtime": "1725545307",
+            "size": "105259868",
+            "md5": "5ab638da1861aa162e7843a8397d3a52",
+            "crc32": "5d125eaa",
+            "sha1": "a053e521b7b239078bce048a3b4e29f23a1f8d62",
+            "format": "TIFF"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf7r_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "Cuara, Co\u0301dice leaf7r.tif",
+            "mtime": "1725570607",
+            "size": "14635",
+            "md5": "378a60015396b09fc8799ff3355854f3",
+            "crc32": "1816f38b",
+            "sha1": "736574abd50fc1b579e9f18bfd67e839aa40792e"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf8r.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "Cuara, Co\u0301dice leaf8r.tif",
+            "mtime": "1725570629",
+            "size": "7693238",
+            "md5": "53c5136584a260939ff360b66f9fc527",
+            "crc32": "163d4a6c",
+            "sha1": "140277e1c11fe1f0546fcdaebfc0d7b110a3cc71"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf8r.tif",
+            "source": "original",
+            "mtime": "1725545603",
+            "size": "105260152",
+            "md5": "d766d70e03251571e412fb59779b1cba",
+            "crc32": "1d62a21b",
+            "sha1": "0b9bd78f2bcc30c20b8f5fda0b5cc0b39ac9d6ad",
+            "format": "TIFF"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf8r_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "Cuara, Co\u0301dice leaf8r.tif",
+            "mtime": "1725570623",
+            "size": "15001",
+            "md5": "20022b4f8dd3f3ab3d6dbab5e9b62396",
+            "crc32": "da08847f",
+            "sha1": "29ac65620430781af4bfac077ec220c23e88ccd8"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf9r.jpg",
+            "source": "derivative",
+            "format": "JPEG",
+            "original": "Cuara, Co\u0301dice leaf9r.tif",
+            "mtime": "1725570642",
+            "size": "8199167",
+            "md5": "b1e639bfcbce8098d63844004010796a",
+            "crc32": "dcea16fb",
+            "sha1": "1b001c4fc20eaa9ffcc5cdfea5e3e5e114c2c516"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf9r.tif",
+            "source": "original",
+            "mtime": "1725567599",
+            "size": "106210484",
+            "md5": "45629e2c5f632fac3e42840938f2d257",
+            "crc32": "1139fbf9",
+            "sha1": "61b2f924d3c759da558628b9c63b627062c0b131",
+            "format": "TIFF"
+        },
+        {
+            "name": "Cuara, Co\u0301dice leaf9r_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "Cuara, Co\u0301dice leaf9r.tif",
+            "mtime": "1725570636",
+            "size": "14961",
+            "md5": "40156227abb106ddfecd782301f97a99",
+            "crc32": "6f013f6a",
+            "sha1": "24ce50aa8352ebf9aa1ae6d7092703b8b87abecc"
+        },
+        {
+            "name": "Cuara, Co\u0301dice.pdf",
+            "source": "original",
+            "mtime": "1725567849",
+            "size": "21405614",
+            "md5": "ea8138afb518d737ab1e01fafc63ced2",
+            "crc32": "45a2c792",
+            "sha1": "3ec0cd2727218be8a179b65a15cbf5db2e41bdff",
+            "format": "Text PDF",
+            "viruscheck": "1725568396"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_chocr.html.gz",
+            "source": "derivative",
+            "ocr": "tesseract 5.3.0-6-g76ae",
+            "ocr_parameters": "lang-lat;lang-chi_sim;lang-lit;lang-ron;lang-deu;lang-fin;lang-uig;lang-nld;lang-pol;lang-est;lang-urd;lang-ara;lang-eng;lang-pus;lang-fas;lang-ben;lang-spa;lang-swe;lang-Arabic;lang-Bengali;lang-Latin;two-pass-disabled;pass-dpi-disabled;autonomous-mode-enabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_autonomous": "true",
+            "ocr_detected_script": [
+                "Arabic",
+                "Latin",
+                "Bengali"
+            ],
+            "ocr_detected_script_conf": [
+                "0.3857",
+                "0.5010",
+                "0.0231"
+            ],
+            "ocr_detected_lang": "la",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "chOCR",
+            "original": "Cuara, Co\u0301dice_jp2.zip",
+            "mtime": "1725572276",
+            "size": "279888",
+            "md5": "da3868ac03af31d7eb76fe58481a5a9a",
+            "crc32": "550a1df6",
+            "sha1": "f262b0ca3225d657d7a360390f39258de9764764"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "Cuara, Co\u0301dice_djvu.xml",
+            "mtime": "1725572749",
+            "size": "19850",
+            "md5": "dfe3b2d3f79b8a0d0f9366a358f05f80",
+            "crc32": "00d469fc",
+            "sha1": "6f5c07d89d941142ad0ef3ace54af6d1cd2a32bd"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "Cuara, Co\u0301dice_hocr.html",
+            "mtime": "1725572509",
+            "size": "395332",
+            "md5": "cfe3685bdeaf1bd6c5a47ac4a671bb84",
+            "crc32": "f6433316",
+            "sha1": "544a55e766a9d3f0f9d19713b7e9d06d234c19a5"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.3.0",
+            "hocr_char_to_word_hocr_version": "1.1.56",
+            "ocr_parameters": "lang-lat;lang-chi_sim;lang-lit;lang-ron;lang-deu;lang-fin;lang-uig;lang-nld;lang-pol;lang-est;lang-urd;lang-ara;lang-eng;lang-pus;lang-fas;lang-ben;lang-spa;lang-swe;lang-Arabic;lang-Bengali;lang-Latin;two-pass-disabled;pass-dpi-disabled;autonomous-mode-enabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_autonomous": "true",
+            "ocr_detected_script": [
+                "Arabic",
+                "Latin",
+                "Bengali"
+            ],
+            "ocr_detected_script_conf": [
+                "0.3857",
+                "0.5010",
+                "0.0231"
+            ],
+            "ocr_detected_lang": "la",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "hOCR",
+            "original": "Cuara, Co\u0301dice_chocr.html.gz",
+            "mtime": "1725572456",
+            "size": "880518",
+            "md5": "419b0f770afe8c7d500d2617c7256586",
+            "crc32": "8dc95d92",
+            "sha1": "d7a3d5a568fd9293e67483422b758406cca0d4b1"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.1.0",
+            "hocr_pageindex_hocr_version": "1.1.56",
+            "format": "OCR Page Index",
+            "original": "Cuara, Co\u0301dice_hocr.html",
+            "mtime": "1725572571",
+            "size": "657",
+            "md5": "89552d0f6c5b085055988b79edbe6e84",
+            "crc32": "990e0b16",
+            "sha1": "7db5fa187695686db3f882ff3ce900457bf84861"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.2.0",
+            "hocr_fts_text_hocr_version": "1.1.56",
+            "word_conf_0_10": "114",
+            "word_conf_11_20": "132",
+            "word_conf_21_30": "330",
+            "word_conf_31_40": "505",
+            "word_conf_41_50": "546",
+            "word_conf_51_60": "567",
+            "word_conf_61_70": "474",
+            "word_conf_71_80": "482",
+            "word_conf_81_90": "549",
+            "word_conf_91_100": "577",
+            "format": "OCR Search Text",
+            "original": "Cuara, Co\u0301dice_hocr.html",
+            "mtime": "1725572700",
+            "size": "11227",
+            "md5": "7d64d9e7955f4315564588448f5797b4",
+            "crc32": "7c37ccb4",
+            "sha1": "87be33ca6d45b136f89d998ac3417ae3cd67822c"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "Cuara, Co\u0301dice.pdf",
+            "mtime": "1725570404",
+            "size": "18884190",
+            "md5": "984f77a29e0b1083f1edd817d4791172",
+            "crc32": "d3c5c554",
+            "sha1": "d00192a70afa8ee3c531bf3bfc265ec01525924c",
+            "filecount": "65"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.5",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "0",
+            "format": "Page Numbers JSON",
+            "original": "Cuara, Co\u0301dice_hocr.html",
+            "mtime": "1725572883",
+            "size": "11123",
+            "md5": "fe8d3240ccd39945f8f3f79c7b033013",
+            "crc32": "af63da98",
+            "sha1": "470d7f6d35f84b7b0aa060c31153020a1ee0f373"
+        },
+        {
+            "name": "Cuara, Co\u0301dice_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "Cuara, Co\u0301dice_djvu.xml",
+            "mtime": "1725572883",
+            "size": "21053",
+            "md5": "1cf2c39ed480d809c95e132ff08e058b",
+            "crc32": "53657458",
+            "sha1": "4817678cf9074eb3d89f8f7d3dc3b4d6f5443861"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1771951807",
+            "size": "15411",
+            "md5": "2e00a218e95480c7f632bcc29c507cf8",
+            "crc32": "cd3a6175",
+            "sha1": "6d9044f2b9c7930086ca5fc4e605e340bb9521b0",
+            "format": "Item Tile"
+        }
+    ],
+    "files_count": 66,
+    "item_last_updated": 1771951820,
+    "item_size": 2025779940,
+    "metadata": {
+        "identifier": "Codex-Cuara",
+        "mediatype": "image",
+        "collection": [
+            "whirl-archive",
+            "patron-library-collection"
+        ],
+        "creator": "Unknown Pur\u00e9pecha Scribe",
+        "description": "<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">This description is machine translated from the original on Filologica<br /></span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Synonyms: Codex (Genealogy) of the Cuara Family. Genealogy of the Cuara Irecha Caciques of Patzcuaro.</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Location: Princeton University Library[1].</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">History: Ex-Le\u00f3n collection, Museo Regional Michoacano (Morelia), Mexlibris (Mexico) and Garrett (USA) collections.</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Publication status: Partially published.</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Typological classification: Economic (ownership plans) and genealogical.</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Regional Classification: Patzcuaro, Mich.</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Date: 18th century.</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Physical Description: European paper, originally 22 pages, now only 16, 30 x 20 cm.</span></p><br /><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Cuara family land titles containing glossed drawings of don Miguel Cuara's descendants, several property plans, a fragmentary calendar wheel with the names of the European months, and glossed pages in Pur\u00e9pecha and Spanish. The manuscript at the Princeton University Library contains six pages of text in Pur\u00e9pecha and Spanish and six other white pages that were not mentioned in previous descriptions, nor were they included in an 1892 copy made by Aguilar. In addition, a comparison with the copy (Glass, 1964) shows that the order of the folios in the original has been changed and it appears that some of the pages with drawings are missing, probably due to the theft from the Museo Regional Michoacano in the late 19th century.</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:Arial, sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\"><br /></span></p>\"<a href=\"https://www.iifilologicas.unam.mx/wikfil/index.php/Cuara,_C%C3%B3dice\" rel=\"ugc nofollow\">Cuara, C\u00f3dice</a>\" by Hans Roskamp is licensed under CC BY-SA 3.0<br />",
+        "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+        "subject": [
+            "mesoamerican",
+            "Cuara",
+            "codex",
+            "codices",
+            "writing",
+            "tarascan",
+            "pur\u00e9pecha",
+            "manuscript",
+            "WHIRLarchive"
+        ],
+        "title": "Codex Cuara",
+        "uploader": "evpaulso@proton.me",
+        "publicdate": "2024-09-05 02:22:31",
+        "addeddate": "2024-09-05 02:22:31",
+        "curation": "[curator]validator@archive.org[/curator][date]20240905022406[/date][comment]checked for malware[/comment]",
+        "ppi": "300",
+        "ocr": "tesseract 5.3.0-6-g76ae",
+        "ocr_parameters": "-l lat+chi_sim+lit+ron+deu+fin+uig+nld+pol+est+urd+ara+eng+pus+fas+ben+spa+swe+Arabic+Bengali+Latin",
+        "ocr_module_version": "0.0.21",
+        "ocr_autonomous": "true",
+        "ocr_detected_script": [
+            "Arabic",
+            "Latin",
+            "Bengali"
+        ],
+        "ocr_detected_script_conf": [
+            "0.3857",
+            "0.5010",
+            "0.0231"
+        ],
+        "ocr_detected_lang": "la",
+        "ocr_detected_lang_conf": "1.0000",
+        "page_number_confidence": "0",
+        "page_number_module_version": "1.0.5",
+        "collection_added": [
+            "additional_collections",
+            "patron-library-collection"
+        ]
+    },
+    "server": "ia800701.us.archive.org",
+    "uniq": 1637494204,
+    "workable_servers": [
+        "ia800701.us.archive.org",
+        "ia600701.us.archive.org"
+    ]
+}

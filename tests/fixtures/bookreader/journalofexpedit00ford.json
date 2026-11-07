@@ -1,0 +1,371 @@
+{
+    "data": {
+        "data": {
+            "streamOnly": false,
+            "isRestricted": false,
+            "id": "journalofexpedit00ford",
+            "subPrefix": "journalofexpedit00ford",
+            "bookUrl": "/details/journalofexpedit00ford",
+            "bookUri": "https://archive.org/details/journalofexpedit00ford",
+            "downloadUrls": [
+                [
+                    "PDF",
+                    "//archive.org/download/journalofexpedit00ford/journalofexpedit00ford.pdf"
+                ],
+                [
+                    "ePub",
+                    "//archive.org/download/journalofexpedit00ford/journalofexpedit00ford.epub"
+                ],
+                [
+                    "Plain Text",
+                    "//archive.org/download/journalofexpedit00ford/journalofexpedit00ford_djvu.txt"
+                ],
+                [
+                    "DAISY",
+                    "//archive.org/download/journalofexpedit00ford/journalofexpedit00ford_daisy.zip"
+                ],
+                [
+                    "Kindle",
+                    "//archive.org/download/journalofexpedit00ford/journalofexpedit00ford.mobi"
+                ]
+            ]
+        },
+        "brOptions": {
+            "bookId": "journalofexpedit00ford",
+            "bookPath": "/10/items/journalofexpedit00ford/journalofexpedit00ford",
+            "imageFormat": "jp2",
+            "server": "ia903101.us.archive.org",
+            "subPrefix": "journalofexpedit00ford",
+            "zip": "/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip",
+            "bookTitle": "Journal of an expedition made in the autumn of 1794, with a detachment of New Jersey troops into western Pennsylvania to aid in suppressing the \"Whiskey rebellion.\"",
+            "bookLanguage": "eng",
+            "ppi": "500",
+            "titleLeaf": 5,
+            "coverLeaf": 1,
+            "defaultStartLeaf": 1,
+            "pageProgression": "lr",
+            "vars": {
+                "bookId": "journalofexpedit00ford",
+                "bookPath": "/10/items/journalofexpedit00ford/journalofexpedit00ford",
+                "server": "ia903101.us.archive.org",
+                "subPrefix": "journalofexpedit00ford"
+            },
+            "plugins": {
+                "chapters": {
+                    "openLibraryId": "OL24467395M",
+                    "internetArchiveId": "journalofexpedit00ford"
+                },
+                "search": {
+                    "enabled": true,
+                    "preTag": "<IA_FTS_MATCH>",
+                    "postTag": "</IA_FTS_MATCH>",
+                    "searchInsideUrl": "//{{server}}/fulltext/inside.php?item_id={{bookId|urlencode}}&doc={{subPrefix|urlencode}}&q={{query|urlencode}}&path=/10/items/journalofexpedit00ford&pre_tag={{preTag|urlencode}}&post_tag={{postTag|urlencode}}"
+                },
+                "tts": {
+                    "enabled": true,
+                    "pageChunkUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&page={{pageIndex}}&callback=false",
+                    "remoteTtsUrl": "https://{{server}}/BookReader/BookReaderGetTTS.php?string={{text|urlencode}}&format={{format}}"
+                },
+                "textSelection": {
+                    "enabled": true,
+                    "singlePageDjvuXmlUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&mode=djvu_xml&page={{pageIndex}}"
+                }
+            },
+            "unviewablePageURI": "/bookreader/static/preview-default.png",
+            "data": [
+                [
+                    {
+                        "width": 2519,
+                        "height": 4070,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0001.jp2&id=journalofexpedit00ford",
+                        "leafNum": 1,
+                        "pageType": "Cover",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1747,
+                        "height": 2620,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0002.jp2&id=journalofexpedit00ford",
+                        "leafNum": 2,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1747,
+                        "height": 2620,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0003.jp2&id=journalofexpedit00ford",
+                        "leafNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2456,
+                        "height": 3550,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0004.jp2&id=journalofexpedit00ford",
+                        "leafNum": 4,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2456,
+                        "height": 3550,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0005.jp2&id=journalofexpedit00ford",
+                        "leafNum": 5,
+                        "pageType": "Title",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2444,
+                        "height": 3771,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0006.jp2&id=journalofexpedit00ford",
+                        "leafNum": 6,
+                        "pageType": "Copyright",
+                        "pageNum": 2,
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2444,
+                        "height": 3771,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0007.jp2&id=journalofexpedit00ford",
+                        "leafNum": 7,
+                        "pageNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0008.jp2&id=journalofexpedit00ford",
+                        "leafNum": 8,
+                        "pageNum": 4,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0009.jp2&id=journalofexpedit00ford",
+                        "leafNum": 9,
+                        "pageNum": 5,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0010.jp2&id=journalofexpedit00ford",
+                        "leafNum": 10,
+                        "pageNum": 6,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0011.jp2&id=journalofexpedit00ford",
+                        "leafNum": 11,
+                        "pageNum": 7,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0012.jp2&id=journalofexpedit00ford",
+                        "leafNum": 12,
+                        "pageNum": 8,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0013.jp2&id=journalofexpedit00ford",
+                        "leafNum": 13,
+                        "pageNum": 9,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0014.jp2&id=journalofexpedit00ford",
+                        "leafNum": 14,
+                        "pageNum": 10,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0015.jp2&id=journalofexpedit00ford",
+                        "leafNum": 15,
+                        "pageNum": 11,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2469,
+                        "height": 3491,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0016.jp2&id=journalofexpedit00ford",
+                        "leafNum": 16,
+                        "pageNum": 12,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2469,
+                        "height": 3491,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0017.jp2&id=journalofexpedit00ford",
+                        "leafNum": 17,
+                        "pageNum": 13,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2398,
+                        "height": 3496,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0018.jp2&id=journalofexpedit00ford",
+                        "leafNum": 18,
+                        "pageNum": 14,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2398,
+                        "height": 3496,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0019.jp2&id=journalofexpedit00ford",
+                        "leafNum": 19,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0020.jp2&id=journalofexpedit00ford",
+                        "leafNum": 20,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2307,
+                        "height": 3501,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0021.jp2&id=journalofexpedit00ford",
+                        "leafNum": 21,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2393,
+                        "height": 4127,
+                        "uri": "https://ia903101.us.archive.org/BookReader/BookReaderImages.php?zip=/10/items/journalofexpedit00ford/journalofexpedit00ford_jp2.zip&file=journalofexpedit00ford_jp2/journalofexpedit00ford_0022.jp2&id=journalofexpedit00ford",
+                        "leafNum": 22,
+                        "pageType": "Cover",
+                        "pageSide": "L"
+                    }
+                ]
+            ]
+        },
+        "lendingInfo": {
+            "lendingStatus": null,
+            "userid": 0,
+            "isAdmin": false,
+            "isArchiveOrgLending": false,
+            "isOpenLibraryLending": false,
+            "isLendingRequired": false,
+            "isBrowserBorrowable": false,
+            "isPrintDisabledOnly": false,
+            "isAvailable": false,
+            "isAvailableForBrowsing": false,
+            "userHasBorrowed": false,
+            "userHasBrowsed": false,
+            "userOnWaitingList": false,
+            "userHoldIsReady": false,
+            "userIsPrintDisabled": false,
+            "shouldProtectImages": false,
+            "daysLeftOnLoan": 0,
+            "secondsLeftOnLoan": 0,
+            "loansUrl": "",
+            "bookUrl": "",
+            "loanCount": 0,
+            "totalWaitlistCount": 0,
+            "userWaitlistPosition": -1,
+            "maxLoans": 10,
+            "loanRecord": []
+        },
+        "metadata": {
+            "title": "Journal of an expedition made in the autumn of 1794, with a detachment of New Jersey troops into western Pennsylvania to aid in suppressing the \"Whiskey rebellion.\"",
+            "creator": [
+                "Ford, David, 1761-1835",
+                "Hough, Franklin Benjamin, 1822-1885. dn"
+            ],
+            "subject": "Whiskey Rebellion, Pa., 1794",
+            "publisher": "Albany : New York Census Bureau",
+            "date": "1700",
+            "language": "eng",
+            "page-progression": "lr",
+            "sponsor": "University of Pittsburgh Library System",
+            "contributor": "University of Pittsburgh Library System",
+            "scanningcenter": "indiana",
+            "mediatype": "texts",
+            "call_number": "31735060392028",
+            "updatedate": "2009-11-20 19:46:39",
+            "updater": "CallieLamkin",
+            "identifier": "journalofexpedit00ford",
+            "uploader": "callie@archive.org",
+            "addeddate": "2009-11-20 19:46:41",
+            "publicdate": "2009-11-20 19:46:49",
+            "ppi": "500",
+            "camera": "Canon 5D",
+            "operator": "scanner-maria-fox@archive.org",
+            "scanner": "scribe7.indiana.archive.org",
+            "scandate": "20091125154836",
+            "imagecount": "26",
+            "foldoutcount": "0",
+            "identifier-access": "http://www.archive.org/details/journalofexpedit00ford",
+            "identifier-ark": "ark:/13960/t6pz5sq9g",
+            "repub_state": "4",
+            "curation": "[curator]callie@archive.org[/curator][date]20091202142711[/date][state]approved[/state]",
+            "sponsordate": "20091130",
+            "collection": [
+                "university_pittsburgh",
+                "americana"
+            ],
+            "backup_location": "ia903604_14",
+            "openlibrary_edition": "OL24467395M",
+            "openlibrary_work": "OL15506436W",
+            "external-identifier": "urn:oclc:record:1047486030",
+            "filesxml": "Thu Dec 24 21:12:08 UTC 2020",
+            "lccn": "a  33000172",
+            "oclc-id": "11607125",
+            "description": "14 p. ; 22 cm",
+            "associated-names": "Hough, Franklin Benjamin, 1822-1885. dn",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "page_number_confidence": "61",
+            "page_number_module_version": "1.0.3"
+        }
+    }
+}

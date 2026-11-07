@@ -1,0 +1,452 @@
+{
+    "data": {
+        "data": {
+            "streamOnly": false,
+            "isRestricted": false,
+            "id": "rashodgson68",
+            "subPrefix": "rashodgson68",
+            "bookUrl": "/details/rashodgson68",
+            "bookUri": "https://archive.org/details/rashodgson68",
+            "downloadUrls": [
+                [
+                    "PDF",
+                    "//archive.org/download/rashodgson68/rashodgson68.pdf"
+                ],
+                [
+                    "ePub",
+                    "//archive.org/download/rashodgson68/rashodgson68.epub"
+                ],
+                [
+                    "Plain Text",
+                    "//archive.org/download/rashodgson68/rashodgson68_djvu.txt"
+                ],
+                [
+                    "DAISY",
+                    "//archive.org/download/rashodgson68/rashodgson68_daisy.zip"
+                ],
+                [
+                    "Kindle",
+                    "//archive.org/download/rashodgson68/rashodgson68.mobi"
+                ]
+            ]
+        },
+        "brOptions": {
+            "bookId": "rashodgson68",
+            "bookPath": "/11/items/rashodgson68/rashodgson68",
+            "imageFormat": "jp2",
+            "server": "ia800409.us.archive.org",
+            "subPrefix": "rashodgson68",
+            "zip": "/11/items/rashodgson68/rashodgson68_jp2.zip",
+            "bookTitle": "\u1e62a\u1e0da\u1e45gayoga\u1e6dippa\u1e47\u012b",
+            "bookLanguage": "san",
+            "defaults": "mode/1up",
+            "ppi": "300",
+            "coverLeaf": 2,
+            "defaultStartLeaf": 2,
+            "pageProgression": "lr",
+            "vars": {
+                "bookId": "rashodgson68",
+                "bookPath": "/11/items/rashodgson68/rashodgson68",
+                "server": "ia800409.us.archive.org",
+                "subPrefix": "rashodgson68"
+            },
+            "plugins": {
+                "chapters": {
+                    "openLibraryId": null,
+                    "internetArchiveId": "rashodgson68",
+                    "enabled": false
+                },
+                "search": {
+                    "enabled": true,
+                    "preTag": "<IA_FTS_MATCH>",
+                    "postTag": "</IA_FTS_MATCH>",
+                    "searchInsideUrl": "//{{server}}/fulltext/inside.php?item_id={{bookId|urlencode}}&doc={{subPrefix|urlencode}}&q={{query|urlencode}}&path=/11/items/rashodgson68&pre_tag={{preTag|urlencode}}&post_tag={{postTag|urlencode}}"
+                },
+                "tts": {
+                    "enabled": true,
+                    "pageChunkUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&page={{pageIndex}}&callback=false",
+                    "remoteTtsUrl": "https://{{server}}/BookReader/BookReaderGetTTS.php?string={{text|urlencode}}&format={{format}}"
+                },
+                "textSelection": {
+                    "enabled": true,
+                    "singlePageDjvuXmlUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&mode=djvu_xml&page={{pageIndex}}"
+                }
+            },
+            "unviewablePageURI": "/bookreader/static/preview-default.png",
+            "data": [
+                [
+                    {
+                        "width": 7379,
+                        "height": 1699,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0002.jp2&id=rashodgson68",
+                        "leafNum": 2,
+                        "pageType": "Cover",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0003.jp2&id=rashodgson68",
+                        "leafNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0004.jp2&id=rashodgson68",
+                        "leafNum": 4,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0005.jp2&id=rashodgson68",
+                        "leafNum": 5,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0006.jp2&id=rashodgson68",
+                        "leafNum": 6,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0007.jp2&id=rashodgson68",
+                        "leafNum": 7,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0008.jp2&id=rashodgson68",
+                        "leafNum": 8,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0009.jp2&id=rashodgson68",
+                        "leafNum": 9,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0010.jp2&id=rashodgson68",
+                        "leafNum": 10,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0011.jp2&id=rashodgson68",
+                        "leafNum": 11,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0012.jp2&id=rashodgson68",
+                        "leafNum": 12,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0013.jp2&id=rashodgson68",
+                        "leafNum": 13,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0014.jp2&id=rashodgson68",
+                        "leafNum": 14,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0015.jp2&id=rashodgson68",
+                        "leafNum": 15,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0016.jp2&id=rashodgson68",
+                        "leafNum": 16,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0017.jp2&id=rashodgson68",
+                        "leafNum": 17,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0018.jp2&id=rashodgson68",
+                        "leafNum": 18,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0019.jp2&id=rashodgson68",
+                        "leafNum": 19,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0020.jp2&id=rashodgson68",
+                        "leafNum": 20,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0021.jp2&id=rashodgson68",
+                        "leafNum": 21,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0022.jp2&id=rashodgson68",
+                        "leafNum": 22,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0023.jp2&id=rashodgson68",
+                        "leafNum": 23,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0024.jp2&id=rashodgson68",
+                        "leafNum": 24,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0025.jp2&id=rashodgson68",
+                        "leafNum": 25,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0026.jp2&id=rashodgson68",
+                        "leafNum": 26,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0027.jp2&id=rashodgson68",
+                        "leafNum": 27,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0028.jp2&id=rashodgson68",
+                        "leafNum": 28,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0029.jp2&id=rashodgson68",
+                        "leafNum": 29,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0030.jp2&id=rashodgson68",
+                        "leafNum": 30,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0031.jp2&id=rashodgson68",
+                        "leafNum": 31,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 7367,
+                        "height": 2964,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0032.jp2&id=rashodgson68",
+                        "leafNum": 32,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 7355,
+                        "height": 1668,
+                        "uri": "https://ia800409.us.archive.org/BookReader/BookReaderImages.php?zip=/11/items/rashodgson68/rashodgson68_jp2.zip&file=rashodgson68_jp2/rashodgson68_0033.jp2&id=rashodgson68",
+                        "leafNum": 33,
+                        "pageType": "Cover",
+                        "pageSide": "L"
+                    }
+                ]
+            ]
+        },
+        "lendingInfo": {
+            "lendingStatus": null,
+            "userid": 0,
+            "isAdmin": false,
+            "isArchiveOrgLending": false,
+            "isOpenLibraryLending": false,
+            "isLendingRequired": false,
+            "isBrowserBorrowable": false,
+            "isPrintDisabledOnly": false,
+            "isAvailable": false,
+            "isAvailableForBrowsing": false,
+            "userHasBorrowed": false,
+            "userHasBrowsed": false,
+            "userOnWaitingList": false,
+            "userHoldIsReady": false,
+            "userIsPrintDisabled": false,
+            "shouldProtectImages": false,
+            "daysLeftOnLoan": 0,
+            "secondsLeftOnLoan": 0,
+            "loansUrl": "",
+            "bookUrl": "",
+            "loanCount": 0,
+            "totalWaitlistCount": 0,
+            "userWaitlistPosition": -1,
+            "maxLoans": 10,
+            "loanRecord": []
+        },
+        "metadata": {
+            "language": "san",
+            "scanningcenter": "euston",
+            "contributor": "The Royal Asiatic Society of Great Britain and Ireland",
+            "title": "\u1e62a\u1e0da\u1e45gayoga\u1e6dippa\u1e47\u012b",
+            "shiptracking": "ST010655",
+            "call_number": "[RAS Hodgson MS 68]",
+            "year": "[undated]",
+            "description": "Palm leaf; 6 or 7 lines on each folio. Cowell and Eggeling describe the manuscript as \"oldish\". Text begins: \u015br\u012bk\u0101lacakram\u012b\u015bvaramabhivandya gu\u1e47airgur\u016bngur\u016b\u1e43\u015bca may\u0101 \u015br\u012bmati \u1e63a\u1e0da\u1e45gayoge gu\u1e47abhara\u1e47\u012b \u1e6dippa\u1e47\u012b kriyate | iha khalu vahiradhy\u0101tmavidy\u0101bhy\u0101sabh\u0101vitacitta sannatir\u0101c\u0101ry\u0101nupamarak\u1e63ito nir\u0101lambakalpatatvopade\u015babh\u0101vanay\u0101 \u015br\u012bsa\u015barppa\u1e47e (?) dv\u0101da\u015ba samvatsar\u0101nanai\u1e63\u012bt | - It ends: \u1e63a\u1e0da\u1e45gayoga\u1e6dippa\u1e47\u012b sam\u0101pt\u0101 || k\u1e5btiriya\u1e43 mah\u0101pa\u1e47\u1e0ditaravi\u015br\u012bj\u00f1\u0101nap\u0101d\u0101n\u0101\u1e43 || Manuscript acquired by Hodgson in Nepal. See p. 46 in Cowell, E. B. and Eggeling, J. 'Catalogue of Buddhist Sanskrit manuscripts in the possession of the Royal Asiatic Society (Hodgson Collection)', published in the Journal of the Royal Asiatic Society, 1875, Pt. 1, pp.1-56. Brian Houghton Hodgson, gift, 1835-6. Text in Sanskrit.",
+            "bookreader-defaults": "mode/1up",
+            "source": "folio",
+            "repub_state": "19",
+            "page-progression": "lr",
+            "publicdate": "2019-02-21 11:53:25",
+            "mediatype": "texts",
+            "updatedate": "2019-02-21 12:47:16",
+            "updater": "associate-sophie-flynn-piercy@archive.org",
+            "identifier": "rashodgson68",
+            "uploader": "associate-sophie-flynn-piercy@archive.org",
+            "addeddate": "2019-02-21 12:47:18",
+            "operator": "associate-caoimhe-ogorman@archive.org",
+            "tts_version": "1.64-initial-38-g228844e",
+            "camera": "Sony Alpha-A7r II (Control)",
+            "scanner": "fold1.euston.archive.org",
+            "imagecount": "34",
+            "scandate": "20190221175204",
+            "ppi": "300",
+            "republisher_operator": "associate-eric-cabuenas@archive.org",
+            "republisher_date": "20190222215444",
+            "republisher_time": "198",
+            "foldoutcount": "0",
+            "identifier-access": "http://archive.org/details/rashodgson68",
+            "identifier-ark": "ark:/13960/t6938bq77",
+            "scanfee": "300;25;240",
+            "invoice": "1606",
+            "sponsordate": "20190228",
+            "republisher_sponsordate": "201902",
+            "collection": [
+                "hodgsoncollection",
+                "royalasiaticsociety",
+                "europeanlibraries"
+            ],
+            "script": "Pracalit",
+            "backup_location": "ia906808_0",
+            "ocr": "tesseract 5.3.0-6-g76ae",
+            "ocr_parameters": "-l san",
+            "ocr_module_version": "0.0.21",
+            "ocr_detected_script": "Latin",
+            "ocr_detected_script_conf": "0.9237",
+            "ocr_detected_lang": "mr",
+            "ocr_detected_lang_conf": "1.0000",
+            "page_number_confidence": "0",
+            "page_number_module_version": "1.0.3",
+            "pdf_module_version": "0.0.23"
+        }
+    }
+}

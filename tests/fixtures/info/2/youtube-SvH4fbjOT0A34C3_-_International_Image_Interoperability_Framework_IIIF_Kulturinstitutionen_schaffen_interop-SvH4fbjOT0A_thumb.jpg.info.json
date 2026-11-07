@@ -1,0 +1,61 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/youtube-SvH4fbjOT0A%2F34C3_-_International_Image_Interoperability_Framework_IIIF_Kulturinstitutionen_schaffen_interop-SvH4fbjOT0A_thumb.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 192,
+    "height": 108,
+    "sizes": [
+        {
+            "width": 192,
+            "height": 108
+        }
+    ],
+    "tiles": [
+        {
+            "width": 192,
+            "height": 108,
+            "scaleFactors": [
+                1
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "jpg",
+                "tif",
+                "gif",
+                "png"
+            ],
+            "maxArea": 20736,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

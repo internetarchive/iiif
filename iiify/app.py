@@ -20,9 +20,10 @@ import re
 app = Flask(__name__)
 # disabling sorting of the output json
 app.config['JSON_SORT_KEYS'] = False
-# To disable the cache you must call 
-# app.config['CACHE_TYPE'] = "NullCache"
-# as this code is run before the test.setUp 
+# Cache(app) below creates the backend at import time, so changing
+# app.config['CACHE_TYPE'] afterwards has no effect. To disable the cache,
+# for example in a test's setUp, call:
+# cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
 app.config['CACHE_TYPE'] = "FileSystemCache" 
 app.config['CACHE_DIR'] = "cache"
 cors = CORS(app) if cors else None

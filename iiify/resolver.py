@@ -4,7 +4,7 @@ import os
 import requests
 from .configs import options, cors, approot, cache_root, media_root, apiurl, LINKS
 from .utils.http_config import timeout_session
-from iiif_prezi3 import config, Collection, Manifest, Canvas, Annotation, AnnotationPage, CollectionRef, ManifestRef, CanvasRef, AnnotationPageRef, AnnotationPageRefExtended, AnnotationBody, ServiceV3, Choice, TextualBody, AccompanyingCanvas, Range
+from iiif_prezi3 import config, Collection, Manifest, Canvas, Annotation, AnnotationPage, CollectionRef, ManifestRef, CanvasRef, AnnotationPageRef, AnnotationPageRefExtended, AnnotationBody, ServiceV3, Choice, TextualBody, AccompanyingCanvas, Range, LinkedResource
 from urllib.parse import urlparse, parse_qs, quote
 import json
 import math
@@ -322,9 +322,9 @@ def create_manifest(identifier, domain=None, page=None):
         # XXX Use https://api.archivelab.org/books/:id/metadata API
 
         r = requests.get(bookdata % server, params={
+            'itemId': identifier,
             'server': server,
-            'itemPath': subPrefix,
-            'itemId': identifier
+            'itemPath': subPrefix
         })
         if r.status_code != 200:
             # If the bookdata failed then treat as a single image
@@ -479,13 +479,12 @@ def addMetadata(item, identifier, metadata, collection=False):
     item.metadata = manifest_metadata
 
 def addSeeAlso(manifest, identifier, files):
-
-    manifest.seeAlso = [
-        {"id": f"{ARCHIVE}/metadata/{identifier}",
-         "type": "Metadata",
-         "label": {"en": ["Item Metadata"]},
-         "format": "application/json"}
-    ]
+    links = []
+    links.append(LinkedResource(id=f"{ARCHIVE}/metadata/{identifier}",
+         type="Metadata",
+         label={"en": ["Item Metadata"]},
+         format="application/json")
+    )
 
     # Type format from IA Metadata -> Type description in IIIF
     SEEALSO_TYPES = {
@@ -500,12 +499,13 @@ def addSeeAlso(manifest, identifier, files):
     for file in files:
         if file['format'] in LINKS and LINKS[file['format']]['field'] == 'seeAlso':
             seeAlso = LINKS[file['format']]
-            manifest.seeAlso.append(
-                {"id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
-                 "type": seeAlso['type'],
-                 "label": {"en": [file["format"]]},
-                 "format": seeAlso['format']
-                 })
+            links.append(LinkedResource(
+                id= f"{ARCHIVE}/download/{identifier}/{file['name']}",
+                type=seeAlso['type'],
+                label={"en": [file["format"]]},
+                format=seeAlso['format']
+                 ))
+    manifest.seeAlso = links
 
 def addWaveform(identifier, slugged_id, filename, hard_code_size=True):
     """
@@ -563,17 +563,19 @@ def addWaveform(identifier, slugged_id, filename, hard_code_size=True):
     return accompanying_canvas
 
 def addRendering(manifest, identifier, files):
-    manifest.rendering = []
+    renderings = []
 
     for file in files:
         if file['format'] in LINKS and LINKS[file['format']]['field'] == 'rendering':
             rendering = LINKS[file['format']]
-            manifest.rendering.append(
+            renderings.append(
                 {"id": f"{ARCHIVE}/download/{identifier}/{file['name']}",
                  "type": rendering['type'],
                  "label": {"en": [file["format"]]},
-                 "format": rendering['format']
+                 "format": rendering['format'] + "1"
                  })
+
+    manifest.rendering = renderings
 
 def addThumbnails(manifest, identifier, files):
     """Creates thumbnails based on files.
@@ -881,7 +883,7 @@ def create_manifest3(identifier, domain=None, page=None):
                     annotations = []
 
                 annotations.append(
-                    AnnotationPageRef(__root__=AnnotationPageRefExtended(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage"))
+                    AnnotationPageRef(AnnotationPageRefExtended(id=f"{domain}3/annotations/{identifier}/{quote(djvuFile, safe='()')}/{count}.json", type="AnnotationPage"))
                 )
                 canvas.annotations = annotations
 

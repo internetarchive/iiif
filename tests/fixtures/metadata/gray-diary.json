@@ -1,0 +1,281 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721605.ca.archive.org",
+                "dir": "/0/items/gray-diary"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721605.ca.archive.org",
+                "dir": "/0/items/gray-diary"
+            }
+        ]
+    },
+    "created": 1793986487,
+    "d1": "ia903204.us.archive.org",
+    "d2": "ia803204.us.archive.org",
+    "dir": "/26/items/gray-diary",
+    "files": [
+        {
+            "name": "GrayDiary.pdf",
+            "source": "original",
+            "mtime": "1760474084",
+            "size": "320190605",
+            "md5": "3b3ca1802bb9beffb8faac62daa79e10",
+            "crc32": "3af1d490",
+            "sha1": "a8380014dd0c0011be862363c1f01a0d339a461c",
+            "format": "Text PDF"
+        },
+        {
+            "name": "GrayDiary_chocr.html.gz",
+            "source": "derivative",
+            "ocr": "tesseract 5.3.0-6-g76ae",
+            "ocr_parameters": "lang-eng;lang-Latin;two-pass-disabled;pass-dpi-disabled;autonomous-mode-enabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_autonomous": "true",
+            "ocr_detected_script": [
+                "Latin",
+                "Arabic"
+            ],
+            "ocr_detected_script_conf": [
+                "0.9755",
+                "0.0245"
+            ],
+            "ocr_detected_lang": "en",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "chOCR",
+            "original": "GrayDiary_jp2.zip",
+            "mtime": "1760480849",
+            "size": "7771701",
+            "md5": "501ba0836d229953ac07f8a3af6588b6",
+            "crc32": "4ab8e028",
+            "sha1": "ff879305cd5742b891a0d23ca95059974db311ce"
+        },
+        {
+            "name": "GrayDiary_daisy.zip",
+            "source": "derivative",
+            "hocr_epub_module_version": "0.0.1",
+            "hocr_epub_hocr_version": "1.1.66",
+            "format": "Daisy",
+            "original": "GrayDiary_hocr.html",
+            "mtime": "1763084599",
+            "size": "48256",
+            "md5": "01f56a279548e7f6af7dcc991347fa47",
+            "crc32": "eb457e5e",
+            "sha1": "a38928b7539b28e12df5e0651eca8a86a6a03c11",
+            "filecount": "9"
+        },
+        {
+            "name": "GrayDiary_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "GrayDiary_djvu.xml",
+            "mtime": "1760480930",
+            "size": "565460",
+            "md5": "27fdef0bfac9f9c025803b7cdff18d11",
+            "crc32": "85ac1334",
+            "sha1": "179db606abe4d8f7e5a455af03989ddc3a488ede"
+        },
+        {
+            "name": "GrayDiary_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "GrayDiary_hocr.html",
+            "mtime": "1760480888",
+            "size": "7687484",
+            "md5": "e5021bf796bb35d91d01ff082361a55e",
+            "crc32": "c44c6f23",
+            "sha1": "245586f6ad4ea43962b4867668a3cbc712f7f49f"
+        },
+        {
+            "name": "GrayDiary_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.3.0",
+            "hocr_char_to_word_hocr_version": "1.1.56",
+            "ocr_parameters": "lang-eng;lang-Latin;two-pass-disabled;pass-dpi-disabled;autonomous-mode-enabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_autonomous": "true",
+            "ocr_detected_script": [
+                "Latin",
+                "Arabic"
+            ],
+            "ocr_detected_script_conf": [
+                "0.9755",
+                "0.0245"
+            ],
+            "ocr_detected_lang": "en",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "hOCR",
+            "original": "GrayDiary_chocr.html.gz",
+            "mtime": "1760480873",
+            "size": "14394852",
+            "md5": "27540554daaf57094202d9781dc71084",
+            "crc32": "24c481a3",
+            "sha1": "e4f65cec82ccf9792cf0acee7c6941511b5925f4"
+        },
+        {
+            "name": "GrayDiary_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.1.0",
+            "hocr_pageindex_hocr_version": "1.1.56",
+            "format": "OCR Page Index",
+            "original": "GrayDiary_hocr.html",
+            "mtime": "1760480898",
+            "size": "2969",
+            "md5": "0a36e9ff2d96bd7c4c3599864f345c6b",
+            "crc32": "bf5c89ef",
+            "sha1": "fcb35a9110f13fe5895200bc65cb7a6a888d6eaa"
+        },
+        {
+            "name": "GrayDiary_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.2.0",
+            "hocr_fts_text_hocr_version": "1.1.56",
+            "word_conf_0_10": "337",
+            "word_conf_11_20": "281",
+            "word_conf_21_30": "330",
+            "word_conf_31_40": "288",
+            "word_conf_41_50": "223",
+            "word_conf_51_60": "239",
+            "word_conf_61_70": "335",
+            "word_conf_71_80": "658",
+            "word_conf_81_90": "3484",
+            "word_conf_91_100": "92832",
+            "format": "OCR Search Text",
+            "original": "GrayDiary_hocr.html",
+            "mtime": "1760480916",
+            "size": "211949",
+            "md5": "aa8ea1cc7d11eb5e2eb0ce30a210fea4",
+            "crc32": "c67c8a5d",
+            "sha1": "8735423f3ee0de8b2b9d455a4a21483efe2621f1"
+        },
+        {
+            "name": "GrayDiary_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "GrayDiary.pdf",
+            "mtime": "1760474878",
+            "size": "123772144",
+            "md5": "4c2aced427d056af1ab4183c582e555c",
+            "crc32": "5726db47",
+            "sha1": "827079c51a9cc03babc3ac759b8017da903b7b3d",
+            "filecount": "246"
+        },
+        {
+            "name": "GrayDiary_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.5",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "100",
+            "format": "Page Numbers JSON",
+            "original": "GrayDiary_hocr.html",
+            "mtime": "1760481035",
+            "size": "41477",
+            "md5": "28faf9aa97f7c955f1c5d0d81de26d3c",
+            "crc32": "f49fdef6",
+            "sha1": "671f216c6d34a2fb2dcb089bed163ee6ae59359a"
+        },
+        {
+            "name": "GrayDiary_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "GrayDiary_djvu.xml",
+            "mtime": "1760481036",
+            "size": "87029",
+            "md5": "b7b6432bbf9654d1be646157b74f7a47",
+            "crc32": "572b45e0",
+            "sha1": "a7dadda87374b7fec616dc3ce07b6f4e86ae9ff5"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1760481061",
+            "size": "9709",
+            "md5": "ced78b259588d8b394d5e3da87f344d2",
+            "crc32": "90fd6526",
+            "sha1": "873faa92392b36091f63001b1f94299c67761b9f",
+            "format": "Item Tile"
+        },
+        {
+            "name": "gray-diary_archive.torrent",
+            "source": "metadata",
+            "btih": "0054e85d2d28d0b0fe74c6e233c08b9fbfecfcd2",
+            "mtime": "1763084661",
+            "size": "21682",
+            "md5": "ddef06dcde2608e1890a18c9e7d67460",
+            "crc32": "03cb88e9",
+            "sha1": "743c4226fa76f9837c88b59c5e3b3027349f8376",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "gray-diary_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "c455910d3c6c9a386004c7b8bd443e04",
+            "summation": "md5"
+        },
+        {
+            "name": "gray-diary_meta.sqlite",
+            "source": "original",
+            "mtime": "1760474140",
+            "size": "20480",
+            "md5": "3d9b5ef81752178b452745e6abfd4623",
+            "crc32": "4b79c2dc",
+            "sha1": "cf92fc28f766e891e7f0af3f45bc4723a0668926",
+            "format": "Metadata"
+        },
+        {
+            "name": "gray-diary_meta.xml",
+            "source": "original",
+            "mtime": "1763084659",
+            "size": "1367",
+            "md5": "63b900d604292d5bec9ad383349b1d7f",
+            "crc32": "0c5a2b05",
+            "sha1": "37a0da73a3013a799d64f8b335cec1346a59f3d0",
+            "format": "Metadata"
+        }
+    ],
+    "files_count": 16,
+    "item_last_updated": 1763084662,
+    "item_size": 474827164,
+    "metadata": {
+        "identifier": "gray-diary",
+        "mediatype": "texts",
+        "collection": "opensource",
+        "description": "an old book",
+        "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+        "subject": "book",
+        "title": "A.C. Gray",
+        "uploader": "markpbaggett@gmail.com",
+        "publicdate": "2025-10-14 20:35:07",
+        "addeddate": "2025-10-14 20:35:07",
+        "curation": "[curator]validator@archive.org[/curator][date]20251014203601[/date][comment]checked for malware[/comment]",
+        "identifier-access": "http://archive.org/details/gray-diary",
+        "identifier-ark": "ark:/13960/s2pxr0f6tjx",
+        "ppi": "400",
+        "ocr": "tesseract 5.3.0-6-g76ae",
+        "ocr_parameters": "-l eng+Latin",
+        "ocr_module_version": "0.0.21",
+        "ocr_autonomous": "true",
+        "ocr_detected_script": [
+            "Latin",
+            "Arabic"
+        ],
+        "ocr_detected_script_conf": [
+            "0.9755",
+            "0.0245"
+        ],
+        "ocr_detected_lang": "en",
+        "ocr_detected_lang_conf": "1.0000",
+        "page_number_confidence": "100",
+        "page_number_module_version": "1.0.5"
+    },
+    "server": "ia803204.us.archive.org",
+    "uniq": 1947834138,
+    "workable_servers": [
+        "ia803204.us.archive.org",
+        "ia903204.us.archive.org"
+    ]
+}

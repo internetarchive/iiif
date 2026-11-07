@@ -1,0 +1,206 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721302.ca.archive.org",
+                "dir": "/0/items/78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721302.ca.archive.org",
+                "dir": "/0/items/78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar"
+            }
+        ]
+    },
+    "created": 1794013822,
+    "d1": "ia902807.us.archive.org",
+    "d2": "ia802807.us.archive.org",
+    "dir": "/32/items/78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar",
+    "files": [
+        {
+            "name": "23980 Der er ma\u030aske en lille pige, der dr\u00f8mmer om dig.afpk",
+            "source": "derivative",
+            "format": "Columbia Peaks",
+            "original": "23980 Der er ma\u030aske en lille pige, der dr\u00f8mmer om dig.mp3",
+            "mtime": "1606314959",
+            "size": "36736",
+            "md5": "77f79a4c177d64a42d16662fad810872",
+            "crc32": "c30af31e",
+            "sha1": "e01df4cda5163d68fd6c1a93e089b6cf30af934f"
+        },
+        {
+            "name": "23980 Der er ma\u030aske en lille pige, der dr\u00f8mmer om dig.mp3",
+            "source": "original",
+            "mtime": "1606312933",
+            "size": "7731242",
+            "md5": "e6bde736f5ead00ae7778bfddcab8227",
+            "crc32": "1410d606",
+            "sha1": "f24888113e43cfdd3bd00d30cfb3b055db39eb1e",
+            "format": "VBR MP3",
+            "length": "193.25",
+            "height": "0",
+            "width": "0"
+        },
+        {
+            "name": "23980 Der er ma\u030aske en lille pige, der dr\u00f8mmer om dig.png",
+            "source": "derivative",
+            "format": "PNG",
+            "original": "23980 Der er ma\u030aske en lille pige, der dr\u00f8mmer om dig.mp3",
+            "mtime": "1606314906",
+            "size": "38286",
+            "md5": "241394b73a27a0ac44fa3f0e5d49f3b2",
+            "crc32": "d89363ac",
+            "sha1": "b8241753bcbcce625ceca9a5833e48dcac71e1b2"
+        },
+        {
+            "name": "23980 Der er ma\u030aske en lille pige, der dr\u00f8mmer om dig_spectrogram.png",
+            "source": "derivative",
+            "format": "Spectrogram",
+            "original": "23980 Der er ma\u030aske en lille pige, der dr\u00f8mmer om dig.mp3",
+            "mtime": "1606314913",
+            "size": "289166",
+            "md5": "2b9743fb577f59bd44d1d10e154ebacb",
+            "crc32": "ec59ef5e",
+            "sha1": "17df76b814ea7589332d0d7b47d1336e6d24e22a"
+        },
+        {
+            "name": "78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar_archive.torrent",
+            "source": "metadata",
+            "btih": "4b6b06d8fd55c92aaf4290bb1c6d9d8c54ce6cde",
+            "mtime": "1790786311",
+            "size": "3300",
+            "md5": "9346a0d6d48cd733d5f5c5f3390e18ee",
+            "crc32": "acb969fa",
+            "sha1": "88165d3365f3aab8175b115be73da06889927dc2",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "1ed7711ad422156d6abf731b9373a0e5",
+            "summation": "md5"
+        },
+        {
+            "name": "78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar_meta.sqlite",
+            "source": "original",
+            "mtime": "1606313098",
+            "size": "8192",
+            "md5": "1e15b8885b59f1eaebdb6bb5b8970652",
+            "crc32": "b1b3d41b",
+            "sha1": "fc7de6a113241b7f5a84a969dd709afc97022295",
+            "format": "Metadata"
+        },
+        {
+            "name": "78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar_meta.xml",
+            "source": "original",
+            "mtime": "1690220168",
+            "size": "787",
+            "md5": "dcc9612be6e9e944ddace308ebea2ac8",
+            "crc32": "562271b0",
+            "sha1": "ade035a08b7ba9a23d0dfc847a69e309fae1c4cf",
+            "format": "Metadata"
+        },
+        {
+            "name": "78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar_reviews.xml",
+            "source": "original",
+            "mtime": "1790786307",
+            "size": "2207",
+            "md5": "b6baacca183495cd635d05e488afbfcc",
+            "crc32": "672fa79c",
+            "sha1": "8b63c690b2f5f8d23e7e0d552d6699da47d1c1ff",
+            "format": "Metadata"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1672473452",
+            "size": "4283",
+            "md5": "714a107d54316621e7e841b8d740e126",
+            "crc32": "f079a19e",
+            "sha1": "6b46d6fe021e2bbbf214490d33e4aef5470b5ded",
+            "format": "Item Tile",
+            "rotation": "0"
+        }
+    ],
+    "files_count": 10,
+    "item_last_updated": 1790786312,
+    "item_size": 8114199,
+    "metadata": {
+        "identifier": "78_der-er-maske-en-lille-pige-der-drommer-om-dig-skuespiller-edgar",
+        "collection": [
+            "78rpm_leif-druedahl",
+            "78rpm",
+            "audio_music"
+        ],
+        "scanner": "Internet Archive Python library 1.9.6",
+        "mediatype": "audio",
+        "uploader": "jake@archive.org",
+        "title": "Der er m\u00e5ske en lille pige, der dr\u00f8mmer om dig",
+        "publicdate": "2020-11-25 14:04:35",
+        "addeddate": "2020-12-10 20:57:36",
+        "publisher-catalog-number": "XS 42463",
+        "date": "9771",
+        "genre": "sang",
+        "creator": [
+            "Henry Carlsen",
+            "Skuespiller Edgar Hansen",
+            "Alexander Yrneh"
+        ]
+    },
+    "reviews": [
+        {
+            "reviewtitle": "Title of review:",
+            "reviewbody": "Boy, I can't wait until the year 9771 until I can finally listen to this in full quality!\n\nOk, jokes aside, whoever transferred this probably didn't know they had to type in the year or maybe it was made by a troll. Gave it 3 stars because it's an actual transfer. I didn't find any other renditions online so maybe you are a time traveller from 9771...",
+            "stars": "3",
+            "reviewer": "RandomUserOfThis",
+            "reviewdate": "2022-12-31 07:57:27",
+            "createdate": "2022-12-31 07:57:27",
+            "reviewer_itemname": "@randomuserofthis"
+        },
+        {
+            "reviewtitle": "Still in good condition",
+            "reviewbody": "was mesmerized by it even by not knowing what year it was, since it said it was from the 20th century but I am   glad it got put here from the past.",
+            "stars": "4",
+            "reviewer": "Give me coffee",
+            "reviewdate": "2023-05-05 09:58:37",
+            "createdate": "2023-05-05 09:58:37",
+            "reviewer_itemname": "@give_me_coffee"
+        },
+        {
+            "reviewtitle": "\"Publication date: 9771\"",
+            "reviewbody": "The year of publication is incorrect. This is causing chaos in the Internet Archive.",
+            "stars": "2",
+            "reviewer": "Korwin",
+            "reviewdate": "2024-09-11 16:16:05",
+            "createdate": "2024-09-11 16:16:05",
+            "reviewer_itemname": "@korwin"
+        },
+        {
+            "reviewtitle": "l'm pretty sure the \"date\" is mis-purposed information about the record this song was on",
+            "reviewbody": "or sang as the \"genre\" says",
+            "stars": "4",
+            "reviewer": "Daniel YouTubeChannel",
+            "reviewdate": "2026-09-30 16:38:11",
+            "createdate": "2026-09-30 16:38:11",
+            "reviewer_itemname": "@daniel_youtubechannel"
+        }
+    ],
+    "server": "ia902807.us.archive.org",
+    "simplelists": {
+        "flagged_as_bad_metadata": {
+            "@cyber-uber": {
+                "sys_changed_by": {
+                    "source": "details page"
+                },
+                "sys_last_changed": "2025-11-07 18:23:12.846547"
+            }
+        }
+    },
+    "uniq": 63571329,
+    "workable_servers": [
+        "ia902807.us.archive.org",
+        "ia802807.us.archive.org"
+    ]
+}
