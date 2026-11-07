@@ -1,7 +1,5 @@
-import json
-import shutil
-import tempfile
 import unittest
+from tests.base import IIIFTestCase
 from unittest.mock import patch
 
 from flask.testing import FlaskClient
@@ -47,17 +45,13 @@ def mockVttStream(identifier, srt_text):
     return mock_get
 
 
-class TestVttSecurity(unittest.TestCase):
+class TestVttSecurity(IIIFTestCase):
 
     def setUp(self) -> None:
-        self.cache_dir = tempfile.mkdtemp()
-        cache.init_app(app, config={'CACHE_TYPE': 'FileSystemCache',
-                                    'CACHE_DIR': self.cache_dir})
+        cache.init_app(app, config={
+                'CACHE_TYPE': 'NullCache',
+                'CACHE_NO_NULL_WARNING': True})
         self.test_app = FlaskClient(app)
-
-    def tearDown(self) -> None:
-        shutil.rmtree(self.cache_dir, ignore_errors=True)
-        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
 
     @patch("requests.get")
     def test_vtt_stream_sets_nosniff_and_vtt_content_type(self, requestsGet):

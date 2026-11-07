@@ -3,16 +3,18 @@ import os
 import json
 import shutil
 import tempfile
-import unittest
+from tests.base import IIIFTestCase
 from unittest.mock import patch
 from flask.testing import FlaskClient
 from iiify.app import app, cache
 from tests.mocks.mock_metadata import log_requests, mock_urls
 
-class TestAnnotations(unittest.TestCase):
+class TestAnnotations(IIIFTestCase):
 
     def setUp(self) -> None:
-        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
+        cache.init_app(app, config={
+                'CACHE_TYPE': 'NullCache',
+                'CACHE_NO_NULL_WARNING': True})
         self.test_app = FlaskClient(app)
 
     @mock_urls

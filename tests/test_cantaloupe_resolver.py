@@ -1,14 +1,17 @@
 import os
 
 import unittest
+from tests.base import IIIFTestCase
 from iiify.resolver import cantaloupe_resolver
 from iiify.app import app, cache
 from tests.mocks.mock_metadata import log_requests, mock_urls
 
-class TestCantaloupeResolver(unittest.TestCase):
+class TestCantaloupeResolver(IIIFTestCase):
 
     def setUp(self) -> None:
-        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
+        cache.init_app(app, config={
+                'CACHE_TYPE': 'NullCache',
+                'CACHE_NO_NULL_WARNING': True})
 
     @mock_urls
     def test_single_image(self):
