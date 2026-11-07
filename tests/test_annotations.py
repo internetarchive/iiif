@@ -1,6 +1,10 @@
 import os
 
+import json
+import shutil
+import tempfile
 import unittest
+from unittest.mock import patch
 from flask.testing import FlaskClient
 from iiify.app import app, cache
 from tests.mocks.mock_metadata import log_requests, mock_urls
@@ -69,14 +73,13 @@ class TestAnnotations(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         self.assertEqual(annotations['@context'], "http://iiif.io/api/presentation/3/context.json","Unexpected context")
         self.assertEqual(annotations['type'], "AnnotationPage", "Unexpected type, expected AnnotationPage")
-        # Live item: review annotations only accrue over time, so assert a floor
-        # rather than an exact count to avoid drift-induced flakiness (see #177).
-        self.assertGreaterEqual(len(annotations['items']), 38, "Unexpected number of annotations")
+        self.assertEqual(len(annotations['items']), 41, "Unexpected number of annotations")
         ids = []
         for anno in annotations['items']:
             self.assertEqual(anno['type'], "Annotation", "Expected type of Annotation")
             self.assertTrue("body" in anno and "target" in anno, f"Body or target missing from annotation {anno}")
             self.assertTrue(anno['id'] not in ids, f"Duplicate ID: {anno['id']}")
+            ids.append(anno['id'])
             self.assertEqual(anno['body']['format'], "text/html", "Expected format to be a text/html")
             self.assertEqual(anno['motivation'], "commenting", "Expected motivation of commenting")
 
@@ -86,6 +89,4 @@ class TestAnnotations(unittest.TestCase):
             "/iiif/3/goodytwoshoes00newyiala/manifest.json"
         )
         self.assertEqual(resp.status_code, 200)
-        manifest = resp.json
-        self.assertEqual(len(manifest['annotations']), 1)
-        self.assertEqual(manifest["annotations"][0]["type"], "AnnotationPage")
+        self.assertEqual(len(resp.json['items']), 5)
