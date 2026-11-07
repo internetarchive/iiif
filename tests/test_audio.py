@@ -4,6 +4,7 @@ import unittest
 import math
 from flask.testing import FlaskClient
 from iiify.app import app
+from tests.imageserver import without_image_server
 
 class TestAudio(unittest.TestCase):
 
@@ -18,6 +19,7 @@ class TestAudio(unittest.TestCase):
 
         self.assertEqual(len(manifest['items']),114,f"Expected 114 canvases but got: {len(manifest['items'])}") 
 
+    @without_image_server
     def test_spectrogram_waveforms(self):
         resp = self.test_app.get("/iiif/3/hhfbc-cyl26/manifest.json?recache=True")
         self.assertEqual(resp.status_code, 200)
