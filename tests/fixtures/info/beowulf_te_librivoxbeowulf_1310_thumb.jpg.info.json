@@ -1,0 +1,66 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/beowulf_te_librivox%2Fbeowulf_1310_thumb.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 150,
+    "height": 150,
+    "sizes": [
+        {
+            "width": 75,
+            "height": 75
+        },
+        {
+            "width": 150,
+            "height": 150
+        }
+    ],
+    "tiles": [
+        {
+            "width": 150,
+            "height": 150,
+            "scaleFactors": [
+                1,
+                2
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "tif",
+                "jpg",
+                "gif",
+                "png"
+            ],
+            "maxArea": 22500,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

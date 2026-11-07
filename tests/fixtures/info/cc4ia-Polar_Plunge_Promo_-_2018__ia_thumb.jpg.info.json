@@ -1,0 +1,61 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/cc4ia-Polar_Plunge_Promo_-_2018%2F__ia_thumb.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 180,
+    "height": 124,
+    "sizes": [
+        {
+            "width": 180,
+            "height": 124
+        }
+    ],
+    "tiles": [
+        {
+            "width": 180,
+            "height": 124,
+            "scaleFactors": [
+                1
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "tif",
+                "jpg",
+                "gif",
+                "png"
+            ],
+            "maxArea": 22320,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

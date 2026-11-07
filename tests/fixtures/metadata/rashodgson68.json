@@ -1,0 +1,609 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760103.eu.archive.org",
+                "dir": "/0/items/rashodgson68"
+            },
+            {
+                "server": "dn790003.ca.archive.org",
+                "dir": "/0/items/rashodgson68"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn760103.eu.archive.org",
+                "dir": "/0/items/rashodgson68"
+            },
+            {
+                "server": "dn790003.ca.archive.org",
+                "dir": "/0/items/rashodgson68"
+            }
+        ]
+    },
+    "created": 1794011097,
+    "d1": "ia600409.us.archive.org",
+    "d2": "ia800409.us.archive.org",
+    "dir": "/11/items/rashodgson68",
+    "events": {
+        "checkin_0": [
+            "associate-eric-cabuenas",
+            1550843685,
+            ""
+        ]
+    },
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1695034738",
+            "size": "2500",
+            "format": "Item Tile",
+            "rotation": "0",
+            "md5": "ac46a8ae6dab18c8e52ed64fb9f31d16",
+            "crc32": "a23e16f5",
+            "sha1": "831ffe0dae4badb44697c1abf8aafbf74cdd29f2"
+        },
+        {
+            "name": "logs/rashodgson68_iabdash_2019-02-2116:38:08.log",
+            "source": "original",
+            "mtime": "1550767094",
+            "size": "640",
+            "md5": "621227c2208334b9f4227676e04ab711",
+            "crc32": "d0c365b1",
+            "sha1": "186ee8b3621614282423a6333a1902e7727b37c2",
+            "format": "Log"
+        },
+        {
+            "name": "logs/rashodgson68_scanning_2019-02-2116:38:03.log",
+            "source": "original",
+            "mtime": "1550767088",
+            "size": "306314",
+            "md5": "a55bda817e541569422320c145533a41",
+            "crc32": "7b447f57",
+            "sha1": "1788b350cadec835bb6f99da289ecd2bdaa56e8f",
+            "format": "Log"
+        },
+        {
+            "name": "rashodgson68.pdf",
+            "source": "derivative",
+            "pdf_module_version": "0.0.23",
+            "format": "Text PDF",
+            "original": "rashodgson68_page_numbers.json",
+            "mtime": "1702596313",
+            "size": "17851920",
+            "md5": "1d19a57f5f7396e855ab27121208a997",
+            "crc32": "ed9434c8",
+            "sha1": "b656d549a0bcf694b376ab0a4e1d9ba2d03de79d"
+        },
+        {
+            "name": "rashodgson68_archive.torrent",
+            "source": "metadata",
+            "btih": "9eee549519d8cb103684501848602b94dc03f315",
+            "mtime": "1721516272",
+            "size": "7211",
+            "md5": "cb3e29e00756b61b197b55f9321c4f69",
+            "crc32": "0ae1fd2f",
+            "sha1": "98d16d84583bca3d7d360243f45153b62fdf63d0",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "rashodgson68_chocr.html.gz",
+            "source": "derivative",
+            "ocr": "tesseract 5.3.0-6-g76ae",
+            "ocr_parameters": "lang-san;two-pass-disabled;pass-dpi-disabled;autonomous-mode-disabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_detected_script": "Latin",
+            "ocr_detected_script_conf": "0.9237",
+            "ocr_detected_lang": "mr",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "chOCR",
+            "original": "rashodgson68_jp2.zip",
+            "mtime": "1702595146",
+            "size": "216337",
+            "md5": "e394b2c512fc7c3055a3b687d2897af5",
+            "crc32": "b6acb846",
+            "sha1": "4d9f251ca62927982b8a3b11f2e132653bf9b3a5"
+        },
+        {
+            "name": "rashodgson68_cloth_detection.log",
+            "source": "derivative",
+            "cloth_cover_detection_module_version": "2.1",
+            "format": "Cloth Cover Detection Log",
+            "original": "rashodgson68_scandata.xml",
+            "mtime": "1702596719",
+            "size": "1443",
+            "md5": "f47625455a8a75be1ba4474de85c96d6",
+            "crc32": "86fafcb1",
+            "sha1": "5ea15d48e108b638ed88f5a68f8d45056f11cd9c"
+        },
+        {
+            "name": "rashodgson68_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "rashodgson68_djvu.xml",
+            "mtime": "1702595641",
+            "size": "29454",
+            "md5": "1f291e55c9cd4a2ea3b8aaca9388de5a",
+            "crc32": "04554c6c",
+            "sha1": "b323ffaa752851f619183059e1a052cddbf161eb"
+        },
+        {
+            "name": "rashodgson68_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "rashodgson68_hocr.html",
+            "mtime": "1702595401",
+            "size": "220366",
+            "md5": "ced720c4566739af800b748acb8b51cd",
+            "crc32": "ddd61dba",
+            "sha1": "96fe31ffdd9d5b02f0ed30863b6f5d9f946b2363"
+        },
+        {
+            "name": "rashodgson68_events.json",
+            "source": "original",
+            "mtime": "1550843686",
+            "size": "55",
+            "md5": "5a74079c838d185afbf7e3849e1eecdc",
+            "crc32": "eb7ea5d9",
+            "sha1": "20efb8e6f3f5a8c3a16facf86466c12e31dd1d74",
+            "format": "JSON"
+        },
+        {
+            "name": "rashodgson68_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "763fbd658693d4c1a77291c75f6931c1",
+            "summation": "md5"
+        },
+        {
+            "name": "rashodgson68_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.2.0",
+            "hocr_char_to_word_hocr_version": "1.1.45",
+            "ocr_parameters": "lang-san;two-pass-disabled;pass-dpi-disabled;autonomous-mode-disabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_detected_script": "Latin",
+            "ocr_detected_script_conf": "0.9237",
+            "ocr_detected_lang": "mr",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "hOCR",
+            "original": "rashodgson68_chocr.html.gz",
+            "mtime": "1702595330",
+            "size": "415171",
+            "md5": "8921b4753c971beb2881b9b1b7ec6884",
+            "crc32": "77613d46",
+            "sha1": "19173ad4465202fb47cb5c51b31f241d677ee218"
+        },
+        {
+            "name": "rashodgson68_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "rashodgson68_hocr.html",
+            "mtime": "1702595500",
+            "size": "368",
+            "md5": "10413f90aa73e526ae8d74a50d13f1b2",
+            "crc32": "9ba1f770",
+            "sha1": "7399ceec598049819a22050ba785e4c7c3a77297"
+        },
+        {
+            "name": "rashodgson68_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "701",
+            "word_conf_11_20": "238",
+            "word_conf_21_30": "278",
+            "word_conf_31_40": "312",
+            "word_conf_41_50": "270",
+            "word_conf_51_60": "173",
+            "word_conf_61_70": "85",
+            "word_conf_71_80": "47",
+            "word_conf_81_90": "33",
+            "word_conf_91_100": "2",
+            "format": "OCR Search Text",
+            "original": "rashodgson68_hocr.html",
+            "mtime": "1702595584",
+            "size": "10285",
+            "md5": "4a941c9ee699e298448938387cab9e4d",
+            "crc32": "01b54009",
+            "sha1": "ab76092764fad6ab81cde051680fa6e15551e3f5"
+        },
+        {
+            "name": "rashodgson68_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "rashodgson68_orig_jp2.tar",
+            "mtime": "1558006940",
+            "size": "55157623",
+            "md5": "d0f6e51375468d7e426555316c5ac68b",
+            "crc32": "3eac73eb",
+            "sha1": "0a397fed07f13fa411e84c2be41a2f8fb14089fd",
+            "filecount": "35"
+        },
+        {
+            "name": "rashodgson68_meta.sqlite",
+            "source": "original",
+            "mtime": "1550843700",
+            "size": "13312",
+            "format": "Metadata",
+            "md5": "5e851f9b722cb81ef34c18d7f65e6fe3",
+            "crc32": "bf6c060d",
+            "sha1": "10f3c9dd29819c58af177d4d134fbea72566a011"
+        },
+        {
+            "name": "rashodgson68_meta.xml",
+            "source": "original",
+            "mtime": "1721516257",
+            "size": "3295",
+            "format": "Metadata",
+            "md5": "d4b2e384b6dfdc3be44f92a1682df4ee",
+            "crc32": "74554b47",
+            "sha1": "d287ee31a13dd9c62672c0ad367fa00cd627fe4d"
+        },
+        {
+            "name": "rashodgson68_metasource.xml",
+            "source": "original",
+            "mtime": "1550753236",
+            "size": "233",
+            "md5": "fc2d739d298c5ee10f6e8ea6f6972879",
+            "crc32": "4cb2cc7f",
+            "sha1": "c4f734339da292f91b14b43f26de410999b7e913",
+            "format": "MARC Source"
+        },
+        {
+            "name": "rashodgson68_orig_jp2.tar",
+            "source": "original",
+            "mtime": "1550843700",
+            "size": "75653120",
+            "format": "Single Page Original JP2 Tar",
+            "md5": "336fe1fc150646bda2fa41831b0a648e",
+            "crc32": "ee2faabb",
+            "sha1": "dea7bf81421f0c881208bc9691c3e1d81dab66dd",
+            "filecount": "35"
+        },
+        {
+            "name": "rashodgson68_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.3",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "0",
+            "format": "Page Numbers JSON",
+            "original": "rashodgson68_hocr.html",
+            "mtime": "1702595626",
+            "size": "5549",
+            "md5": "7cb0bd68c7a33ee58c45d53bc84b92ba",
+            "crc32": "d0ae168f",
+            "sha1": "ea5bb25c050d4a941b560a81da6a4cbe2e220ba3"
+        },
+        {
+            "name": "rashodgson68_reviews.xml",
+            "source": "original",
+            "mtime": "1618335828",
+            "size": "1141",
+            "md5": "5d5f627b5e5db94bd96c853192f9e2f5",
+            "crc32": "904ea0f2",
+            "sha1": "7acb017fe34c1a04d934f096cbfa42dd3753f18b",
+            "format": "Metadata"
+        },
+        {
+            "name": "rashodgson68_scandata.xml",
+            "source": "original",
+            "mtime": "1702596719",
+            "size": "17532",
+            "format": "Scandata",
+            "md5": "17dcf7ad9db589169e066f0a9f3e0e29",
+            "crc32": "864778aa",
+            "sha1": "d4155cf25a558a0041a07774bb7220afe20a4bfe"
+        }
+    ],
+    "files_count": 22,
+    "item_last_updated": 1721516273,
+    "item_size": 149913869,
+    "metadata": {
+        "language": "san",
+        "scanningcenter": "euston",
+        "contributor": "The Royal Asiatic Society of Great Britain and Ireland",
+        "title": "\u1e62a\u1e0da\u1e45gayoga\u1e6dippa\u1e47\u012b",
+        "shiptracking": "ST010655",
+        "call_number": "[RAS Hodgson MS 68]",
+        "year": "[undated]",
+        "description": "Palm leaf; 6 or 7 lines on each folio. Cowell and Eggeling describe the manuscript as \"oldish\". Text begins: \u015br\u012bk\u0101lacakram\u012b\u015bvaramabhivandya gu\u1e47airgur\u016bngur\u016b\u1e43\u015bca may\u0101 \u015br\u012bmati \u1e63a\u1e0da\u1e45gayoge gu\u1e47abhara\u1e47\u012b \u1e6dippa\u1e47\u012b kriyate | iha khalu vahiradhy\u0101tmavidy\u0101bhy\u0101sabh\u0101vitacitta sannatir\u0101c\u0101ry\u0101nupamarak\u1e63ito nir\u0101lambakalpatatvopade\u015babh\u0101vanay\u0101 \u015br\u012bsa\u015barppa\u1e47e (?) dv\u0101da\u015ba samvatsar\u0101nanai\u1e63\u012bt | - It ends: \u1e63a\u1e0da\u1e45gayoga\u1e6dippa\u1e47\u012b sam\u0101pt\u0101 || k\u1e5btiriya\u1e43 mah\u0101pa\u1e47\u1e0ditaravi\u015br\u012bj\u00f1\u0101nap\u0101d\u0101n\u0101\u1e43 || Manuscript acquired by Hodgson in Nepal. See p. 46 in Cowell, E. B. and Eggeling, J. 'Catalogue of Buddhist Sanskrit manuscripts in the possession of the Royal Asiatic Society (Hodgson Collection)', published in the Journal of the Royal Asiatic Society, 1875, Pt. 1, pp.1-56. Brian Houghton Hodgson, gift, 1835-6. Text in Sanskrit.",
+        "bookreader-defaults": "mode/1up",
+        "source": "folio",
+        "repub_state": "19",
+        "page-progression": "lr",
+        "publicdate": "2019-02-21 11:53:25",
+        "mediatype": "texts",
+        "updatedate": "2019-02-21 12:47:16",
+        "updater": "associate-sophie-flynn-piercy@archive.org",
+        "identifier": "rashodgson68",
+        "uploader": "associate-sophie-flynn-piercy@archive.org",
+        "addeddate": "2019-02-21 12:47:18",
+        "operator": "associate-caoimhe-ogorman@archive.org",
+        "tts_version": "1.64-initial-38-g228844e",
+        "camera": "Sony Alpha-A7r II (Control)",
+        "scanner": "fold1.euston.archive.org",
+        "imagecount": "34",
+        "scandate": "20190221175204",
+        "ppi": "300",
+        "republisher_operator": "associate-eric-cabuenas@archive.org",
+        "republisher_date": "20190222215444",
+        "republisher_time": "198",
+        "foldoutcount": "0",
+        "identifier-access": "http://archive.org/details/rashodgson68",
+        "identifier-ark": "ark:/13960/t6938bq77",
+        "scanfee": "300;25;240",
+        "invoice": "1606",
+        "sponsordate": "20190228",
+        "republisher_sponsordate": "201902",
+        "collection": [
+            "hodgsoncollection",
+            "royalasiaticsociety",
+            "europeanlibraries"
+        ],
+        "script": "Pracalit",
+        "backup_location": "ia906808_0",
+        "ocr": "tesseract 5.3.0-6-g76ae",
+        "ocr_parameters": "-l san",
+        "ocr_module_version": "0.0.21",
+        "ocr_detected_script": "Latin",
+        "ocr_detected_script_conf": "0.9237",
+        "ocr_detected_lang": "mr",
+        "ocr_detected_lang_conf": "1.0000",
+        "page_number_confidence": "0",
+        "page_number_module_version": "1.0.3",
+        "pdf_module_version": "0.0.23"
+    },
+    "page_numbers": {
+        "identifier": "rashodgson68",
+        "format-version": "2",
+        "archive-hocr-tools-version": "1.1.54",
+        "confidence": 0,
+        "pages": [
+            {
+                "leafNum": 2,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 3,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 4,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 5,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 6,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 7,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 8,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 9,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 10,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 11,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 12,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 13,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 14,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 15,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 16,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 17,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 18,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 19,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 20,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 21,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 22,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 23,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 24,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 25,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 26,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 27,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 28,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 29,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 30,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 31,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 32,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 33,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            }
+        ]
+    },
+    "reviews": [
+        {
+            "reviewtitle": "bibliographical info",
+            "reviewbody": "This is a historically important manuscript and the only surviving copy of this work\n\nLink to the 1876 catalogue, published in the JRAS (free download):\nhttps://www.jstor.org/stable/25207721 \n\nThis is the commentary titled Gu\u1e47abhara\u1e47\u012b by Ravi\u015br\u012bj\u00f1\u0101na on the work called the \u1e62a\u1e0da\u1e45gayoga.   See NCC v.36, p. 256\n\nEdn. Gunter Gronbold on the basis of this MS,  and revised with the help of Tibetan trans.; Munchen, 1969. (Worldcat Permalink: http://www.worldcat.org/oclc/68169120)  \n\nAlso edited and translated in 2000 by Francesco Sferr\n(Worldcat Permalink: http://www.worldcat.org/oclc/717433012)\nDownload: https://www.academia.edu/5713085/",
+            "stars": "0",
+            "reviewer": "wujastyk",
+            "reviewdate": "2021-04-13 17:43:42",
+            "createdate": "2021-04-13 17:23:16",
+            "reviewer_itemname": "@wujastyk"
+        }
+    ],
+    "server": "ia800409.us.archive.org",
+    "uniq": 800928834,
+    "workable_servers": [
+        "ia800409.us.archive.org",
+        "ia600409.us.archive.org"
+    ]
+}

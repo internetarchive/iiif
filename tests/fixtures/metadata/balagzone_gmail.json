@@ -1,0 +1,323 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760005.eu.archive.org",
+                "dir": "/0/items/balagzone_gmail"
+            },
+            {
+                "server": "dn790003.ca.archive.org",
+                "dir": "/0/items/balagzone_gmail"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn760005.eu.archive.org",
+                "dir": "/0/items/balagzone_gmail"
+            },
+            {
+                "server": "dn790003.ca.archive.org",
+                "dir": "/0/items/balagzone_gmail"
+            }
+        ]
+    },
+    "created": 1794009756,
+    "d1": "ia600106.us.archive.org",
+    "d2": "ia800106.us.archive.org",
+    "dir": "/9/items/balagzone_gmail",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1789300897",
+            "size": "12379",
+            "md5": "1bb5522aeddf7440d6635897aec1fbe8",
+            "crc32": "6264df14",
+            "sha1": "7ddbaee159976cc4c3559bc0ca90bc630db31046",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "balagzone_gmail_archive.torrent",
+            "source": "metadata",
+            "btih": "e4626543c6b808c91ba6df6a7f1fb81c8954cc69",
+            "mtime": "1789300979",
+            "size": "6799",
+            "md5": "0ff7a79b3b3a9e0f51225e844f2f7ff1",
+            "crc32": "5515e01a",
+            "sha1": "f9bbc30854bcdbd5072e6e6d05d67802e9cc2e33",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "balagzone_gmail_files.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "856a401ee1fca2079864efc0341fdd24",
+            "summation": "md5"
+        },
+        {
+            "name": "balagzone_gmail_meta.sqlite",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1379494265",
+            "size": "11264",
+            "md5": "525ee892b4a2c2b462be823b484b6a50",
+            "crc32": "e7acbfc6",
+            "sha1": "265d22de0ee5c4702bb8d57b946a81b5a0b871bf"
+        },
+        {
+            "name": "balagzone_gmail_meta.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1789300976",
+            "size": "1671",
+            "md5": "d0fb21184b68f85b4a54bdce95ab0a61",
+            "crc32": "59d8846b",
+            "sha1": "86e9bb5cb52e9d04c8ea2e52da173f0491338667"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd.epub",
+            "source": "derivative",
+            "hocr_epub_module_version": "0.0.1",
+            "hocr_epub_hocr_version": "1.1.62",
+            "format": "EPUB",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr.html",
+            "mtime": "1753921528",
+            "size": "400009",
+            "md5": "704ff46164bbedeeea8d37bf3cbdaf64",
+            "crc32": "8327c33c",
+            "sha1": "aac14e05cbe543bbccb94f6f24c8e52e6859a029"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_jp2.zip",
+            "mtime": "1379494398",
+            "size": "88570",
+            "md5": "0bc47f92d55110c780457e1de7f460e8",
+            "crc32": "14dcb04b",
+            "sha1": "da86916460c4452f89acfcb58214aec915a292af"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd.pdf",
+            "source": "original",
+            "format": "Text PDF",
+            "mtime": "1379494246",
+            "size": "202589",
+            "md5": "1e6a8ee1762dd2aba7ad2e24bb68e6da",
+            "crc32": "e1da7e61",
+            "sha1": "da817b16b28788f84709e02b435d64725e012028"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_chocr.html.gz",
+            "source": "derivative",
+            "ocr": "tesseract 5.3.0-6-g76ae",
+            "ocr_parameters": "lang-Tamil;lang-Tamil;two-pass-disabled;pass-dpi-disabled;autonomous-mode-disabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_detected_script": "Tamil",
+            "ocr_detected_script_conf": "1.0000",
+            "ocr_detected_lang": "ta",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "chOCR",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_jp2.zip",
+            "mtime": "1746112285",
+            "size": "1966936",
+            "md5": "2ad41171e7ee813b14413195cb89c910",
+            "crc32": "63476ea7",
+            "sha1": "ab3938003e3b08f9b73ab3ae87906748a081f06a"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_cloth_detection.log",
+            "source": "derivative",
+            "format": "Cloth Cover Detection Log",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_scandata.xml",
+            "mtime": "1746114321",
+            "size": "717",
+            "md5": "d16701982422503062e5272c1f411ee2",
+            "crc32": "0508877c",
+            "sha1": "732c20f67c18977dda674875ca083e2c79955ed2"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_daisy.zip",
+            "source": "derivative",
+            "hocr_epub_module_version": "0.0.1",
+            "hocr_epub_hocr_version": "1.1.66",
+            "format": "Daisy",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr.html",
+            "mtime": "1789300932",
+            "size": "44239",
+            "md5": "e0695d851c0b0126308cc2fbcd5aa67c",
+            "crc32": "10ddfd64",
+            "sha1": "ae4325168deb1b2cb5e79539b4348b475de5f8d3",
+            "filecount": "9"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_djvu.xml",
+            "mtime": "1746113205",
+            "size": "355003",
+            "md5": "2a11dd23a705d5c837d6099c62dde45c",
+            "crc32": "0a10c616",
+            "sha1": "624d286ff9a856a4929671c273e37e4f3c5e7c0a"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr.html",
+            "mtime": "1746112621",
+            "size": "1874413",
+            "md5": "e66bf86922ee21345b5aec5f5cb695d5",
+            "crc32": "9e8ce568",
+            "sha1": "78f8914b859d4381e42672000edb9a2d24c76d46"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.3.0",
+            "hocr_char_to_word_hocr_version": "1.1.56",
+            "ocr_parameters": "lang-Tamil;lang-Tamil;two-pass-disabled;pass-dpi-disabled;autonomous-mode-disabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_detected_script": "Tamil",
+            "ocr_detected_script_conf": "1.0000",
+            "ocr_detected_lang": "ta",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "hOCR",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_chocr.html.gz",
+            "mtime": "1746112576",
+            "size": "3323307",
+            "md5": "64a8e51ac9bb184a23442a46af53cd0c",
+            "crc32": "cabd3779",
+            "sha1": "d1c8e75839f096dbf97780546b754dc07ef73352"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.1.0",
+            "hocr_pageindex_hocr_version": "1.1.56",
+            "format": "OCR Page Index",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr.html",
+            "mtime": "1746112741",
+            "size": "1124",
+            "md5": "e8f497a2a28b63038e0503b0c8f8b6c6",
+            "crc32": "8ffecb05",
+            "sha1": "09b908966a93cccf24a911e260c8ebdab15633de"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.2.0",
+            "hocr_fts_text_hocr_version": "1.1.56",
+            "word_conf_0_10": "761",
+            "word_conf_11_20": "298",
+            "word_conf_21_30": "444",
+            "word_conf_31_40": "601",
+            "word_conf_41_50": "720",
+            "word_conf_51_60": "810",
+            "word_conf_61_70": "982",
+            "word_conf_71_80": "1474",
+            "word_conf_81_90": "5140",
+            "word_conf_91_100": "7868",
+            "format": "OCR Search Text",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr.html",
+            "mtime": "1746112891",
+            "size": "61813",
+            "md5": "fd62310e93b776a068959db19f1749b6",
+            "crc32": "00afc9da",
+            "sha1": "70c09c4952fc2e3035572c459d70b0907e702c50"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd.pdf",
+            "mtime": "1379494378",
+            "size": "35432944",
+            "md5": "0f6e5f421283da35b1169cf0496688f0",
+            "crc32": "3b934457",
+            "sha1": "d24eac1b674d6c1674c6c15224c7997f2fb8343a",
+            "filecount": "98"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_lcp.epub",
+            "source": "derivative",
+            "format": "LCP Encrypted EPUB",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd.epub",
+            "mtime": "1753922262",
+            "size": "564594",
+            "md5": "103f1efd7820fe6ad57c06424f687aa6",
+            "crc32": "e3faa4ef",
+            "sha1": "7b6d17b3b63d3722fc44ea652660ff8aa2410256"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.5",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "90",
+            "format": "Page Numbers JSON",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_hocr.html",
+            "mtime": "1746113962",
+            "size": "16439",
+            "md5": "6fe5de4bdad1b5f0fa13d1c32e8bfb33",
+            "crc32": "ab496731",
+            "sha1": "6aae884583ebb054d27f1f0ddd7be0dc21664094"
+        },
+        {
+            "name": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd_djvu.xml",
+            "mtime": "1746113963",
+            "size": "32586",
+            "md5": "381c18c0bd07539d975a176263d5a054",
+            "crc32": "cd98f507",
+            "sha1": "a40879c805b0aad92a09b02f358605f7683c9008"
+        }
+    ],
+    "files_count": 20,
+    "item_last_updated": 1789300980,
+    "item_size": 44397396,
+    "metadata": {
+        "identifier": "balagzone_gmail",
+        "mediatype": "texts",
+        "description": "kanakkathikaaram<br />",
+        "scanner": "Internet Archive HTML5 Uploader 1.4.1",
+        "subject": "Kanakkathikaaram",
+        "title": "\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd",
+        "publicdate": "2013-09-18 08:50:47",
+        "uploader": "balagzone@gmail.com",
+        "addeddate": "2013-09-18 08:50:47",
+        "language": "Tamil",
+        "identifier-access": "http://archive.org/details/balagzone_gmail",
+        "identifier-ark": "ark:/13960/t00z92v78",
+        "ppi": "300",
+        "repub_state": "4",
+        "curation": "[curator]malware@archive.org[/curator][date]20140320153042[/date][comment]checked for malware[/comment]",
+        "backup_location": "ia905707_5",
+        "collection": [
+            "booksbylanguage_tamil",
+            "booksbylanguage"
+        ],
+        "filesxml": "Thu May 1 14:54:05 UTC 2025",
+        "ocr": "tesseract 5.3.0-6-g76ae",
+        "ocr_parameters": "-l Tamil+Tamil",
+        "ocr_module_version": "0.0.21",
+        "ocr_detected_script": "Tamil",
+        "ocr_detected_script_conf": "1.0000",
+        "ocr_detected_lang": "ta",
+        "ocr_detected_lang_conf": "1.0000",
+        "page_number_confidence": "90",
+        "page_number_module_version": "1.0.5",
+        "external-identifier": "urn:lcp:\u0b95\u0ba3\u0b95\u0bcd\u0b95\u0ba4\u0bbf\u0b95\u0bbe\u0bb0\u0bae\u0bcd- \u0bae\u0bc1\u0bb4\u0bc1 \u0ba8\u0bc2\u0bb2\u0bcd:epub:c081a712-30bb-4f27-8693-24ba2d81072e"
+    },
+    "server": "ia600106.us.archive.org",
+    "uniq": 161450998,
+    "workable_servers": [
+        "ia600106.us.archive.org",
+        "ia800106.us.archive.org"
+    ]
+}

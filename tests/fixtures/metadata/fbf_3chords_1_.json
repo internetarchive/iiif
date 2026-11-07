@@ -1,0 +1,269 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721603.ca.archive.org",
+                "dir": "/0/items/fbf_3chords_1_"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721603.ca.archive.org",
+                "dir": "/0/items/fbf_3chords_1_"
+            }
+        ]
+    },
+    "created": 1794011356,
+    "d1": "ia601604.us.archive.org",
+    "d2": "ia801604.us.archive.org",
+    "dir": "/18/items/fbf_3chords_1_",
+    "files": [
+        {
+            "name": "3chords(1).odt",
+            "source": "original",
+            "mtime": "1682354397",
+            "size": "13836",
+            "md5": "3268e8c32716df8cab554757945af246",
+            "crc32": "d52a473b",
+            "sha1": "edaf7cbd5fc18f00faccf3e8da59fa51dc8bfa85",
+            "format": "OpenDocument Text Document",
+            "viruscheck": "1682354752"
+        },
+        {
+            "name": "3chords(1).pdf",
+            "source": "derivative",
+            "pdf_module_version": "0.0.22",
+            "format": "Text PDF",
+            "original": "3chords(1).odt",
+            "mtime": "1682356208",
+            "size": "12749",
+            "md5": "928bae899f9556b233750413c7df2054",
+            "crc32": "24445cc1",
+            "sha1": "75c5ef4feda88dc4dc8eb721ace4e717716c05a9"
+        },
+        {
+            "name": "3chords(1)_chocr.html.gz",
+            "source": "derivative",
+            "ocr": "tesseract 5.3.0-3-g9920",
+            "ocr_parameters": "lang-eng;two-pass-disabled;pass-dpi-disabled;autonomous-mode-disabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_detected_script": "Latin",
+            "ocr_detected_script_conf": "1.0000",
+            "ocr_detected_lang": "en",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "chOCR",
+            "original": "3chords(1)_jp2.zip",
+            "mtime": "1682356827",
+            "size": "4456",
+            "md5": "333a7fc1ce9540eaa34f02073abc562f",
+            "crc32": "2b3006fd",
+            "sha1": "d906a1a4e252ec646abbd857880d93fe929cba62"
+        },
+        {
+            "name": "3chords(1)_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "3chords(1)_djvu.xml",
+            "mtime": "1682358653",
+            "size": "273",
+            "md5": "123717abb17289b2ae9150901c4160f0",
+            "crc32": "62f7ed88",
+            "sha1": "abe122fc51494ac36c2cd4641a9f13b1cce792ba"
+        },
+        {
+            "name": "3chords(1)_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "3chords(1)_hocr.html",
+            "mtime": "1682358163",
+            "size": "4156",
+            "md5": "016ea16d017a418d9ba33164f0e4f8a9",
+            "crc32": "1548dba4",
+            "sha1": "c2ff7d11028bc647f72bc126130c045a30ba8c07"
+        },
+        {
+            "name": "3chords(1)_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.1.0",
+            "hocr_char_to_word_hocr_version": "1.1.15",
+            "ocr_parameters": "lang-eng;two-pass-disabled;pass-dpi-disabled;autonomous-mode-disabled;binarisation-method-otsu",
+            "ocr_module_version": "0.0.21",
+            "ocr_detected_script": "Latin",
+            "ocr_detected_script_conf": "1.0000",
+            "ocr_detected_lang": "en",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "hOCR",
+            "original": "3chords(1)_chocr.html.gz",
+            "mtime": "1682358110",
+            "size": "8357",
+            "md5": "fdb866bdd924543b76c40c243ce82e54",
+            "crc32": "06571ad8",
+            "sha1": "c16129d3b10310dc026cce0d9470f815f78d7ab6"
+        },
+        {
+            "name": "3chords(1)_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "3chords(1)_hocr.html",
+            "mtime": "1682358274",
+            "size": "38",
+            "md5": "d0f5663ae90bec4a28e45bbece6c126f",
+            "crc32": "80a6b179",
+            "sha1": "f92f7eadae0602ac2873d4d0286cda0ad436c512"
+        },
+        {
+            "name": "3chords(1)_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "0",
+            "word_conf_11_20": "0",
+            "word_conf_21_30": "0",
+            "word_conf_31_40": "0",
+            "word_conf_41_50": "0",
+            "word_conf_51_60": "0",
+            "word_conf_61_70": "0",
+            "word_conf_71_80": "0",
+            "word_conf_81_90": "3",
+            "word_conf_91_100": "39",
+            "format": "OCR Search Text",
+            "original": "3chords(1)_hocr.html",
+            "mtime": "1682358627",
+            "size": "222",
+            "md5": "891ce735e4624a1896a70ad42c3dba0e",
+            "crc32": "525173d6",
+            "sha1": "f3d80a8205ca7859a4a00c25658fcd6fa8af72ba"
+        },
+        {
+            "name": "3chords(1)_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "3chords(1).pdf",
+            "mtime": "1682356356",
+            "size": "71073",
+            "md5": "d512d45e9cf8c42334a6dacb4380b903",
+            "crc32": "047b6f9a",
+            "sha1": "2479130267c982f68b009e044dba827381011c52",
+            "filecount": "1"
+        },
+        {
+            "name": "3chords(1)_page_numbers.json",
+            "source": "derivative",
+            "format": "Page Numbers JSON",
+            "original": "3chords(1)_djvu.xml",
+            "mtime": "1682358656",
+            "size": "113",
+            "md5": "4ea80b32778c3dc9d16e94e18abe94b9",
+            "crc32": "15d51ef9",
+            "sha1": "5db44273055f7bae6bf34ec0dd625391da647a94"
+        },
+        {
+            "name": "3chords(1)_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "3chords(1)_djvu.xml",
+            "mtime": "1682358654",
+            "size": "545",
+            "md5": "b22693fb881a826de63eefbb6d21e2a6",
+            "crc32": "fee20fc4",
+            "sha1": "137b415c02b6dec61e5c124bc997d64d4c608181"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1771950888",
+            "size": "2554",
+            "md5": "92a242e488adf786d09cdc32ae2dd2c4",
+            "crc32": "50350d11",
+            "sha1": "0f3f6dc49729ca51d57db15765704860b01b8da5",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "fbf_3chords_1__archive.torrent",
+            "source": "metadata",
+            "btih": "2ace86c1dbbdb5027682e9c41fd4513fe146d807",
+            "mtime": "1771950888",
+            "size": "3590",
+            "md5": "e2cb0ab30f8676c2946a98bc279055d7",
+            "crc32": "4e64ccfb",
+            "sha1": "9dff1d5fda6625db48840112fa2ccb910c11e026",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "fbf_3chords_1__files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "9556ba5e3c8452d3a31bf65b3443498f",
+            "summation": "md5"
+        },
+        {
+            "name": "fbf_3chords_1__meta.sqlite",
+            "source": "original",
+            "mtime": "1682354417",
+            "size": "20480",
+            "md5": "e2c38b9baad417adb730c07c806916c9",
+            "crc32": "4e0bdc8c",
+            "sha1": "5f80efcaed9e6bef504129fd67d2f04c2f73e18f",
+            "format": "Metadata"
+        },
+        {
+            "name": "fbf_3chords_1__meta.xml",
+            "source": "original",
+            "mtime": "1771950887",
+            "size": "2841",
+            "md5": "fa2f2ab6f64f06ddbfe56fd0834ccf2d",
+            "crc32": "16984cb1",
+            "sha1": "b9cefa9f051bd8a359aca2fffc65147425dcb442",
+            "format": "Metadata"
+        }
+    ],
+    "files_count": 16,
+    "item_last_updated": 1771950888,
+    "item_size": 145283,
+    "metadata": {
+        "identifier": "fbf_3chords_1_",
+        "collection": [
+            "frankbford",
+            "patron-library-collection"
+        ],
+        "creator": "Frank B. Ford",
+        "date": "2013-02-25 18:50:10",
+        "description": "\n\n    \n\n    <p>A poem or fragment, derived from <a href=\"https://archive.org/search?query=creator%3A%22Frank+B.+Ford%22&sort=date\" rel=\"ugc nofollow\">Frank\n    B. Ford</a>'s Google Drive. Ford was an experimental poet and playwright, and it\n    was his wish to have his work publicly archived online after his death.</p>\n\n    <p>The file was automatically converted into an OpenOffice document from\n    WordPerfect, AbiWord, Microsoft Word, or text, and was located at:\n    <tt>./myfiles/oldplpoemsetc/recentlite/WINDOWS/DESKTOP/recentlite/3chords(1).odt</tt> on the drive. The file date may not be accurate, especially if\n    it is dated after 2022.</p>\n\n    <p></p>\n\n    <p>Frank B. Ford (1932-2023): <a href=\"https://archive.org/search?query=creator%3A%22Frank+B.+Ford%22&sort=date\" rel=\"ugc nofollow\">Works</a>,\n    <a href=\"https://archive.org/details/fbford_cv_202304\" rel=\"ugc nofollow\">Short CV</a>,\n    <a href=\"https://archive.org/details/fbford_obituary\" rel=\"ugc nofollow\">Obituary</a>,\n    <a href=\"https://archive.org/details/motleycrisp\" rel=\"ugc nofollow\">Blog</a></p>\n    ",
+        "language": "English",
+        "licenseurl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "mediatype": "texts",
+        "scanner": "Internet Archive Python library 3.4.0",
+        "subject": [
+            "Frank B. Ford (1932-2023)",
+            "Experimental Literature",
+            "Poem",
+            "./myfiles/oldplpoemsetc/recentlite/WINDOWS/DESKTOP/recentlite/"
+        ],
+        "title": "3 Chords & the Truth-- (Poem)",
+        "uploader": "ford@ftrain.com",
+        "publicdate": "2023-04-24 16:40:12",
+        "addeddate": "2023-04-24 16:40:12",
+        "curation": "[curator]validator@archive.org[/curator][date]20230424164552[/date][comment]checked for malware[/comment]",
+        "identifier-access": "http://archive.org/details/fbf_3chords_1_",
+        "identifier-ark": "ark:/13960/s2hc8c3f4jn",
+        "pdf_module_version": "0.0.22",
+        "ppi": "300",
+        "ocr": "tesseract 5.3.0-3-g9920",
+        "ocr_parameters": "-l eng",
+        "ocr_module_version": "0.0.21",
+        "ocr_detected_script": "Latin",
+        "ocr_detected_script_conf": "1.0000",
+        "ocr_detected_lang": "en",
+        "ocr_detected_lang_conf": "1.0000",
+        "collection_added": "patron-library-collection"
+    },
+    "server": "ia801604.us.archive.org",
+    "uniq": 1178530848,
+    "workable_servers": [
+        "ia801604.us.archive.org",
+        "ia601604.us.archive.org"
+    ]
+}

@@ -1,0 +1,1182 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760104.eu.archive.org",
+                "dir": "/0/items/annualreport00carn_14"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn760104.eu.archive.org",
+                "dir": "/0/items/annualreport00carn_14"
+            }
+        ]
+    },
+    "created": 1794012859,
+    "d1": "ia600803.us.archive.org",
+    "d2": "ia800803.us.archive.org",
+    "dir": "/8/items/annualreport00carn_14",
+    "events": {
+        "checkin_0": [
+            "associate-joseph-ondreicka",
+            1517515556,
+            ""
+        ]
+    },
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1692994450",
+            "size": "7926",
+            "md5": "b8ff52b50eb1940b7350de50e15d01f5",
+            "crc32": "7aade882",
+            "sha1": "6214b93a3cb4a6acb573b800cd55e252703a18ea",
+            "format": "JPEG Thumb",
+            "rotation": "0"
+        },
+        {
+            "name": "annualreport00carn_14.pdf",
+            "source": "derivative",
+            "format": "Text PDF",
+            "original": "annualreport00carn_14_page_numbers.json",
+            "mtime": "1698872637",
+            "size": "6237311",
+            "md5": "16f3af620edf696bc5df3c4a9091853f",
+            "crc32": "f09e6560",
+            "sha1": "92df053c680b7965348845b986f76207b586d131"
+        },
+        {
+            "name": "annualreport00carn_14_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "annualreport00carn_14_jp2.zip",
+            "mtime": "1517518166",
+            "size": "2979634",
+            "md5": "2c1cda864df22499e4200e19a3a1b4c6",
+            "crc32": "9656a270",
+            "sha1": "f81d37531ed8e25e760e0eb71935cd4beb9a432a"
+        },
+        {
+            "name": "annualreport00carn_14_archive.torrent",
+            "source": "metadata",
+            "btih": "d1c9589b60aa13fb33b1d605b070894e355551a0",
+            "mtime": "1714706793",
+            "size": "8242",
+            "md5": "5d691fc97fe7fcbff4bf8b40629b9519",
+            "crc32": "06f47883",
+            "sha1": "c093ef4710a7c19f24803077e8613eda54dcbd79",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "annualreport00carn_14_chocr.html.gz",
+            "source": "derivative",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "chOCR",
+            "original": "annualreport00carn_14_abbyy.gz",
+            "mtime": "1698872027",
+            "size": "2573696",
+            "md5": "a8724c76d07c0007d54f49a3c7911f57",
+            "crc32": "bbf2a881",
+            "sha1": "6cd5b279a1a340ab7d54a31e5e5cf2f69118378a"
+        },
+        {
+            "name": "annualreport00carn_14_cloth_detection.log",
+            "source": "derivative",
+            "cloth_cover_detection_module_version": "1.2",
+            "format": "Cloth Cover Detection Log",
+            "original": "annualreport00carn_14_scandata.xml",
+            "mtime": "1698872906",
+            "size": "773",
+            "md5": "61a620422b1e52641773b95098fc9bc8",
+            "crc32": "a41b0552",
+            "sha1": "11b0358f4dd642456d0dc1b2b60fd5d62cb7ef99"
+        },
+        {
+            "name": "annualreport00carn_14_dc.xml",
+            "source": "original",
+            "format": "Dublin Core",
+            "mtime": "1648168624",
+            "size": "1795",
+            "md5": "47ec45ec6cc323159bddfff397a4746f",
+            "crc32": "18311e29",
+            "sha1": "2719c8c13acf2edee55777346087ff6dcd01e422"
+        },
+        {
+            "name": "annualreport00carn_14_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "annualreport00carn_14_djvu.xml",
+            "mtime": "1698872571",
+            "size": "228798",
+            "md5": "cd8bbce69e617ba67cf9d9f4371e75a4",
+            "crc32": "dd723b41",
+            "sha1": "543b011b87bdf8be37aabb44f19e217d8d48e43b"
+        },
+        {
+            "name": "annualreport00carn_14_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "annualreport00carn_14_hocr.html",
+            "mtime": "1698872409",
+            "size": "2543232",
+            "md5": "e393d1f59a78a23f6607dcf841310c7b",
+            "crc32": "e48bd955",
+            "sha1": "df6ee962ce284be3cf957097886ca6d7c3f88ea9"
+        },
+        {
+            "name": "annualreport00carn_14_events.json",
+            "source": "original",
+            "mtime": "1517515558",
+            "size": "58",
+            "md5": "1f322ae3dc8e6d93d7d7178eb414c0e0",
+            "crc32": "c3c9cf49",
+            "sha1": "3cc3931ff3460f9ec5c441e61221e310f6f7eb07",
+            "format": "JSON"
+        },
+        {
+            "name": "annualreport00carn_14_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "4c401ffcd67223add5287a3e7c95059d",
+            "summation": "md5"
+        },
+        {
+            "name": "annualreport00carn_14_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.2.0",
+            "hocr_char_to_word_hocr_version": "1.1.45",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "hOCR",
+            "original": "annualreport00carn_14_chocr.html.gz",
+            "mtime": "1698872386",
+            "size": "5458591",
+            "md5": "16f080fe0e18c5b3fd3dbdd9b0dba56b",
+            "crc32": "1b8810be",
+            "sha1": "238b5573c501bc337fb6d3b304192e34bb000c99"
+        },
+        {
+            "name": "annualreport00carn_14_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.15",
+            "format": "OCR Page Index",
+            "original": "annualreport00carn_14_hocr.html",
+            "mtime": "1698872430",
+            "size": "1285",
+            "md5": "ffea4ce8c4ba082d5e1501b3b55641f7",
+            "crc32": "193ad231",
+            "sha1": "36353e957598162f9642b2ba2d8da8f2d4ff3998"
+        },
+        {
+            "name": "annualreport00carn_14_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.15",
+            "word_conf_0_10": "77",
+            "word_conf_11_20": "34",
+            "word_conf_21_30": "99",
+            "word_conf_31_40": "344",
+            "word_conf_41_50": "893",
+            "word_conf_51_60": "1446",
+            "word_conf_61_70": "2753",
+            "word_conf_71_80": "5566",
+            "word_conf_81_90": "9146",
+            "word_conf_91_100": "9451",
+            "format": "OCR Search Text",
+            "original": "annualreport00carn_14_hocr.html",
+            "mtime": "1698872467",
+            "size": "68315",
+            "md5": "fd8ca9a6109e469639be596aa11ee221",
+            "crc32": "1c9e1c12",
+            "sha1": "7e4e14e0242dcd19794d18f8d3e2d7d2b5f70af1"
+        },
+        {
+            "name": "annualreport00carn_14_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "annualreport00carn_14_orig_jp2.tar",
+            "mtime": "1517517336",
+            "size": "56045134",
+            "md5": "9a1dc0b152936abad3b74407f398f264",
+            "crc32": "81d3c2f1",
+            "sha1": "6f173bda4a58a6487bd93b375eee62e8dd43a6aa",
+            "filecount": "114"
+        },
+        {
+            "name": "annualreport00carn_14_marc.xml",
+            "source": "original",
+            "format": "MARC",
+            "mtime": "1515605318",
+            "size": "7045",
+            "md5": "f41cb3e38f0c96bb28d1a6da72820ac9",
+            "crc32": "40cf3ceb",
+            "sha1": "f1efc5215f80b0c7f50d0cab6fadfa10b1024b99"
+        },
+        {
+            "name": "annualreport00carn_14_meta.mrc",
+            "source": "original",
+            "format": "MARC Binary",
+            "mtime": "1515605318",
+            "size": "2544",
+            "md5": "f73499d7695ec41032f5535b7ac51e2c",
+            "crc32": "722e4fe9",
+            "sha1": "97e7b337993ec1b3bc5a074a51534e962128238e"
+        },
+        {
+            "name": "annualreport00carn_14_meta.sqlite",
+            "source": "original",
+            "mtime": "1517515595",
+            "size": "13312",
+            "format": "Metadata",
+            "md5": "e4e114a669e5140cfffd296208b4b1d3",
+            "crc32": "edd65b94",
+            "sha1": "6e9fc3e1a46cdfcc850ea36f6816454cd72f24d5"
+        },
+        {
+            "name": "annualreport00carn_14_meta.xml",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1714706786",
+            "size": "17504",
+            "md5": "1eb438b994468b5da631bcccd6db31f8",
+            "crc32": "64475799",
+            "sha1": "75a95c4a48e762851c328a6359a7a18576c81f21"
+        },
+        {
+            "name": "annualreport00carn_14_metasource.xml",
+            "source": "original",
+            "format": "MARC Source",
+            "mtime": "1515605318",
+            "size": "309",
+            "md5": "ada36cf76a2815ace430f64ff7289300",
+            "crc32": "6dde4346",
+            "sha1": "cefef81704dbd4e1f2990024818fd5f8158a517c"
+        },
+        {
+            "name": "annualreport00carn_14_orig_jp2.tar",
+            "source": "original",
+            "mtime": "1517515595",
+            "size": "141117440",
+            "format": "Single Page Original JP2 Tar",
+            "md5": "5a7550f4dd663ce1057c0e7a24c22b1c",
+            "crc32": "a1a99492",
+            "sha1": "0a6a5bee6ee80a5bcb74d2387d329b9c526998e2",
+            "filecount": "114"
+        },
+        {
+            "name": "annualreport00carn_14_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.3",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "100",
+            "format": "Page Numbers JSON",
+            "original": "annualreport00carn_14_hocr.html",
+            "mtime": "1698872515",
+            "size": "18870",
+            "md5": "7d2ded8ca79154d4cd555258f94e72d5",
+            "crc32": "684ff1a3",
+            "sha1": "4519b809664e223f964c60880fa3de8c2a6514f9"
+        },
+        {
+            "name": "annualreport00carn_14_scandata.xml",
+            "source": "original",
+            "mtime": "1698872906",
+            "size": "116349",
+            "format": "Scandata",
+            "md5": "32e7780df8a07a7312dbd6b220fadd0d",
+            "crc32": "c2a932ed",
+            "sha1": "df21d09b848bc5e512c69f4e9a83bd67705fddbb"
+        },
+        {
+            "name": "logs/annualreport00carn_14_iabdash_2018-01-31164159.log",
+            "source": "original",
+            "mtime": "1517434941",
+            "size": "343",
+            "md5": "36d27f9aceea3d2722740c44631a5323",
+            "crc32": "0eb83c8a",
+            "sha1": "f9351945c48036ae71e9f5387d23c44808299800",
+            "format": "Log"
+        },
+        {
+            "name": "logs/annualreport00carn_14_scanning_2018-01-31164148.log",
+            "source": "original",
+            "mtime": "1517434932",
+            "size": "135284",
+            "md5": "e972e821ee6bb1d82764127a3bb4bc1c",
+            "crc32": "cd1813d3",
+            "sha1": "237e3959c6fe2621fecadc1910fa8a9d3f328714",
+            "format": "Log"
+        }
+    ],
+    "files_count": 25,
+    "item_last_updated": 1714706794,
+    "item_size": 217583790,
+    "metadata": {
+        "language": "eng",
+        "scanningcenter": "nj",
+        "sponsor": "Columbia University Libraries",
+        "contributor": "Columbia University Libraries",
+        "date": "1954",
+        "subject": [
+            "Carnegie Corporation of New York",
+            "Carnegie Corporation of New York",
+            "Carnegie Corporation of New York",
+            "\u0152uvres de bienfaisance"
+        ],
+        "title": "Annual report",
+        "creator": "Carnegie Corporation of New York",
+        "shiptracking": "CoCa181",
+        "year": [
+            "1954",
+            "1969"
+        ],
+        "publisher": "New York [Carnegie Corporation of New York]",
+        "mediatype": "texts",
+        "repub_state": "19",
+        "page-progression": "lr",
+        "publicdate": "2018-01-10 16:34:12",
+        "updatedate": "2018-01-10 17:28:38",
+        "updater": "associate-cheri-destefano@archive.org",
+        "identifier": "annualreport00carn_14",
+        "uploader": "associate-cheri-destefano@archive.org",
+        "addeddate": "2018-01-10 17:28:40",
+        "scanner": "scribe2.nj.archive.org",
+        "operator": "associate-mario-dibartolo@archive.org",
+        "tts_version": "v1.57-initial-85-gb810232",
+        "imagecount": "114",
+        "scandate": "20180131224851",
+        "ppi": "300",
+        "republisher_operator": "associate-joseph-ondreicka@archive.org",
+        "republisher_date": "20180201150553",
+        "republisher_time": "165",
+        "foldoutcount": "0",
+        "identifier-access": "http://archive.org/details/annualreport00carn_14",
+        "identifier-ark": "ark:/13960/t6g22fr6c",
+        "bookplateleaf": "0005",
+        "scanfee": "100",
+        "invoice": "86",
+        "curation": "[curator]lenscriv@archive.org[/curator][date]20180205143204[/date][state]approved[/state][comment]199[/comment]",
+        "sponsordate": "20180131",
+        "external-identifier": "urn:oclc:record:1014025650",
+        "collection": [
+            "culcarnegiecorp",
+            "ColumbiaUniversityLibraries",
+            "americana"
+        ],
+        "description": [
+            "Report year ends Sept. 30",
+            "1951-71. 1 v",
+            "Grant and appropriations information reprinted as: Carnegie Corporation of New York. List of grants and appropriations, 19 -198 ; Carnegie Corporation of New York. Grants and appropriations, 1989-",
+            "Latest issue consulted: 2002/2003",
+            "<h2>Other volumes</h2>\n\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_001\" rel=\"nofollow\">Annual report, 1954</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_002\" rel=\"nofollow\">Annual report, 1955</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_003\" rel=\"nofollow\">Annual report, 1956</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_004\" rel=\"nofollow\">Annual report, 1957</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_005\" rel=\"nofollow\">Annual report, 1958</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_006\" rel=\"nofollow\">Annual report, 1959</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_007\" rel=\"nofollow\">Annual report, 1960</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_008\" rel=\"nofollow\">Annual report, 1961</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_009\" rel=\"nofollow\">Annual report, 1962</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_010\" rel=\"nofollow\">Annual report, 1963</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_011\" rel=\"nofollow\">Annual report, 1964</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_012\" rel=\"nofollow\">Annual report, 1965</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_013\" rel=\"nofollow\">Annual report, 1966</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_014\" rel=\"nofollow\">Annual report, 1967</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_015\" rel=\"nofollow\">Annual report, 1968</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_017\" rel=\"nofollow\">Annual report, 1970</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_018\" rel=\"nofollow\">Annual report, 1971</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_019\" rel=\"nofollow\">Annual report, 1972</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_020\" rel=\"nofollow\">Annual report, 1973</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_021\" rel=\"nofollow\">Annual report, 1974</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_022\" rel=\"nofollow\">Annual report, 1975</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_023\" rel=\"nofollow\">Annual report, 1976</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_024\" rel=\"nofollow\">Annual report, 1977</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_025\" rel=\"nofollow\">Annual report, 1978</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_026\" rel=\"nofollow\">Annual report, 1979</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_027\" rel=\"nofollow\">Annual report, 1980</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_028\" rel=\"nofollow\">Annual report, 1981</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_029\" rel=\"nofollow\">Annual report, 1982</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_030\" rel=\"nofollow\">Annual report, 1983</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_031\" rel=\"nofollow\">Annual report, 1984</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_032\" rel=\"nofollow\">Annual report, 1985</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_033\" rel=\"nofollow\">Annual report, 1986</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_034\" rel=\"nofollow\">Annual report, 1987</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_035\" rel=\"nofollow\">Annual report, 1988</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_036\" rel=\"nofollow\">Annual report, 1989</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_037\" rel=\"nofollow\">Annual report, 1990</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_038\" rel=\"nofollow\">Annual report, 1991</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_039\" rel=\"nofollow\">Annual report, 1992</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_040\" rel=\"nofollow\">Annual report, 1993</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_041\" rel=\"nofollow\">Annual report, 1994</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_042\" rel=\"nofollow\">Annual report, 1995</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_043\" rel=\"nofollow\">Annual report, 1996</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_044\" rel=\"nofollow\">Annual report, 1997</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_045\" rel=\"nofollow\">Annual report, 1998</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_046\" rel=\"nofollow\">Annual report, 1999</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_047\" rel=\"nofollow\">Annual report, 2000</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_048\" rel=\"nofollow\">Annual report, 2001</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_049\" rel=\"nofollow\">Annual report, 2002-2003</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_050\" rel=\"nofollow\">Annual report, 2004-2005</a>"
+        ],
+        "backup_location": "ia906605_32",
+        "oclc-id": "1014025650",
+        "ocr_module_version": "0.0.21",
+        "ocr_converted": "abbyy-to-hocr 1.1.37",
+        "page_number_confidence": "100",
+        "page_number_module_version": "1.0.3"
+    },
+    "page_numbers": {
+        "identifier": "annualreport00carn_14",
+        "format-version": "2",
+        "archive-hocr-tools-version": "1.1.54",
+        "confidence": 100,
+        "pages": [
+            {
+                "leafNum": 1,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 2,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 3,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 4,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 5,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 6,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 7,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 8,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 9,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 10,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 11,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 12,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 13,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 14,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 15,
+                "confidence": 100,
+                "pageNumber": "3",
+                "pageProb": 90,
+                "wordConf": 10
+            },
+            {
+                "leafNum": 16,
+                "confidence": 100,
+                "pageNumber": "4",
+                "pageProb": 93,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 17,
+                "confidence": 100,
+                "pageNumber": "5",
+                "pageProb": 93,
+                "wordConf": 29
+            },
+            {
+                "leafNum": 18,
+                "confidence": 100,
+                "pageNumber": "6",
+                "pageProb": 93,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 19,
+                "confidence": 100,
+                "pageNumber": "7",
+                "pageProb": 93,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 20,
+                "confidence": 100,
+                "pageNumber": "8",
+                "pageProb": 91,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 21,
+                "confidence": 100,
+                "pageNumber": "9",
+                "pageProb": 94,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 22,
+                "confidence": 100,
+                "pageNumber": "10",
+                "pageProb": 92,
+                "wordConf": 28
+            },
+            {
+                "leafNum": 23,
+                "confidence": 100,
+                "pageNumber": "11",
+                "pageProb": 94,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 24,
+                "confidence": 100,
+                "pageNumber": "12",
+                "pageProb": 91,
+                "wordConf": 50
+            },
+            {
+                "leafNum": 25,
+                "confidence": null,
+                "pageNumber": "13",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 26,
+                "confidence": 100,
+                "pageNumber": "14",
+                "pageProb": 92,
+                "wordConf": 96
+            },
+            {
+                "leafNum": 27,
+                "confidence": null,
+                "pageNumber": "15",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 28,
+                "confidence": null,
+                "pageNumber": "16",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 29,
+                "confidence": 100,
+                "pageNumber": "17",
+                "pageProb": 94,
+                "wordConf": 45
+            },
+            {
+                "leafNum": 30,
+                "confidence": 100,
+                "pageNumber": "18",
+                "pageProb": 94,
+                "wordConf": 96
+            },
+            {
+                "leafNum": 31,
+                "confidence": 100,
+                "pageNumber": "19",
+                "pageProb": 94,
+                "wordConf": 89
+            },
+            {
+                "leafNum": 32,
+                "confidence": 100,
+                "pageNumber": "20",
+                "pageProb": 94,
+                "wordConf": 52
+            },
+            {
+                "leafNum": 33,
+                "confidence": 100,
+                "pageNumber": "21",
+                "pageProb": 95,
+                "wordConf": 46
+            },
+            {
+                "leafNum": 34,
+                "confidence": 100,
+                "pageNumber": "22",
+                "pageProb": 94,
+                "wordConf": 19
+            },
+            {
+                "leafNum": 35,
+                "confidence": 100,
+                "pageNumber": "23",
+                "pageProb": 94,
+                "wordConf": 28
+            },
+            {
+                "leafNum": 36,
+                "confidence": 100,
+                "pageNumber": "24",
+                "pageProb": 93,
+                "wordConf": 57
+            },
+            {
+                "leafNum": 37,
+                "confidence": 100,
+                "pageNumber": "25",
+                "pageProb": 95,
+                "wordConf": 18
+            },
+            {
+                "leafNum": 38,
+                "confidence": 100,
+                "pageNumber": "26",
+                "pageProb": 94,
+                "wordConf": 54
+            },
+            {
+                "leafNum": 39,
+                "confidence": 100,
+                "pageNumber": "27",
+                "pageProb": 93,
+                "wordConf": 72
+            },
+            {
+                "leafNum": 40,
+                "confidence": 100,
+                "pageNumber": "28",
+                "pageProb": 95,
+                "wordConf": 65
+            },
+            {
+                "leafNum": 41,
+                "confidence": 100,
+                "pageNumber": "29",
+                "pageProb": 95,
+                "wordConf": 58
+            },
+            {
+                "leafNum": 42,
+                "confidence": 100,
+                "pageNumber": "30",
+                "pageProb": 95,
+                "wordConf": 40
+            },
+            {
+                "leafNum": 43,
+                "confidence": null,
+                "pageNumber": "31",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 44,
+                "confidence": 100,
+                "pageNumber": "32",
+                "pageProb": 94,
+                "wordConf": 36
+            },
+            {
+                "leafNum": 45,
+                "confidence": 100,
+                "pageNumber": "33",
+                "pageProb": 95,
+                "wordConf": 7
+            },
+            {
+                "leafNum": 46,
+                "confidence": 100,
+                "pageNumber": "34",
+                "pageProb": 95,
+                "wordConf": 11
+            },
+            {
+                "leafNum": 47,
+                "confidence": 100,
+                "pageNumber": "35",
+                "pageProb": 95,
+                "wordConf": 18
+            },
+            {
+                "leafNum": 48,
+                "confidence": 100,
+                "pageNumber": "36",
+                "pageProb": 96,
+                "wordConf": 36
+            },
+            {
+                "leafNum": 49,
+                "confidence": 100,
+                "pageNumber": "37",
+                "pageProb": 95,
+                "wordConf": 30
+            },
+            {
+                "leafNum": 50,
+                "confidence": 100,
+                "pageNumber": "38",
+                "pageProb": 93,
+                "wordConf": 31
+            },
+            {
+                "leafNum": 51,
+                "confidence": 100,
+                "pageNumber": "39",
+                "pageProb": 90,
+                "wordConf": 38
+            },
+            {
+                "leafNum": 52,
+                "confidence": 100,
+                "pageNumber": "40",
+                "pageProb": 95,
+                "wordConf": 40
+            },
+            {
+                "leafNum": 53,
+                "confidence": 100,
+                "pageNumber": "41",
+                "pageProb": 95,
+                "wordConf": 20
+            },
+            {
+                "leafNum": 54,
+                "confidence": 100,
+                "pageNumber": "42",
+                "pageProb": 93,
+                "wordConf": 28
+            },
+            {
+                "leafNum": 55,
+                "confidence": 100,
+                "pageNumber": "43",
+                "pageProb": 95,
+                "wordConf": 31
+            },
+            {
+                "leafNum": 56,
+                "confidence": 100,
+                "pageNumber": "44",
+                "pageProb": 93,
+                "wordConf": 56
+            },
+            {
+                "leafNum": 57,
+                "confidence": 100,
+                "pageNumber": "45",
+                "pageProb": 95,
+                "wordConf": 54
+            },
+            {
+                "leafNum": 58,
+                "confidence": 100,
+                "pageNumber": "46",
+                "pageProb": 94,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 59,
+                "confidence": 100,
+                "pageNumber": "47",
+                "pageProb": 94,
+                "wordConf": 82
+            },
+            {
+                "leafNum": 60,
+                "confidence": 100,
+                "pageNumber": "48",
+                "pageProb": 94,
+                "wordConf": 63
+            },
+            {
+                "leafNum": 61,
+                "confidence": 100,
+                "pageNumber": "49",
+                "pageProb": 95,
+                "wordConf": 77
+            },
+            {
+                "leafNum": 62,
+                "confidence": 100,
+                "pageNumber": "50",
+                "pageProb": 94,
+                "wordConf": 54
+            },
+            {
+                "leafNum": 63,
+                "confidence": 100,
+                "pageNumber": "51",
+                "pageProb": 93,
+                "wordConf": 29
+            },
+            {
+                "leafNum": 64,
+                "confidence": 100,
+                "pageNumber": "52",
+                "pageProb": 95,
+                "wordConf": 23
+            },
+            {
+                "leafNum": 65,
+                "confidence": 100,
+                "pageNumber": "53",
+                "pageProb": 95,
+                "wordConf": 13
+            },
+            {
+                "leafNum": 66,
+                "confidence": 100,
+                "pageNumber": "54",
+                "pageProb": 95,
+                "wordConf": 18
+            },
+            {
+                "leafNum": 67,
+                "confidence": 100,
+                "pageNumber": "55",
+                "pageProb": 95,
+                "wordConf": 21
+            },
+            {
+                "leafNum": 68,
+                "confidence": null,
+                "pageNumber": "56",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 69,
+                "confidence": null,
+                "pageNumber": "57",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 70,
+                "confidence": null,
+                "pageNumber": "58",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 71,
+                "confidence": 100,
+                "pageNumber": "59",
+                "pageProb": 93,
+                "wordConf": 69
+            },
+            {
+                "leafNum": 72,
+                "confidence": 100,
+                "pageNumber": "60",
+                "pageProb": 94,
+                "wordConf": 51
+            },
+            {
+                "leafNum": 73,
+                "confidence": 100,
+                "pageNumber": "61",
+                "pageProb": 92,
+                "wordConf": 77
+            },
+            {
+                "leafNum": 74,
+                "confidence": 100,
+                "pageNumber": "62",
+                "pageProb": 92,
+                "wordConf": 51
+            },
+            {
+                "leafNum": 75,
+                "confidence": null,
+                "pageNumber": "63",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 76,
+                "confidence": null,
+                "pageNumber": "64",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 77,
+                "confidence": 100,
+                "pageNumber": "65",
+                "pageProb": 92,
+                "wordConf": 38
+            },
+            {
+                "leafNum": 78,
+                "confidence": 100,
+                "pageNumber": "66",
+                "pageProb": 93,
+                "wordConf": 60
+            },
+            {
+                "leafNum": 79,
+                "confidence": 100,
+                "pageNumber": "67",
+                "pageProb": 95,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 80,
+                "confidence": 100,
+                "pageNumber": "68",
+                "pageProb": 95,
+                "wordConf": 44
+            },
+            {
+                "leafNum": 81,
+                "confidence": 100,
+                "pageNumber": "69",
+                "pageProb": 97,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 82,
+                "confidence": 100,
+                "pageNumber": "70",
+                "pageProb": 92,
+                "wordConf": 85
+            },
+            {
+                "leafNum": 83,
+                "confidence": 100,
+                "pageNumber": "71",
+                "pageProb": 93,
+                "wordConf": 73
+            },
+            {
+                "leafNum": 84,
+                "confidence": 100,
+                "pageNumber": "72",
+                "pageProb": 92,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 85,
+                "confidence": 100,
+                "pageNumber": "73",
+                "pageProb": 93,
+                "wordConf": 45
+            },
+            {
+                "leafNum": 86,
+                "confidence": 100,
+                "pageNumber": "74",
+                "pageProb": 93,
+                "wordConf": 15
+            },
+            {
+                "leafNum": 87,
+                "confidence": 100,
+                "pageNumber": "75",
+                "pageProb": 92,
+                "wordConf": 49
+            },
+            {
+                "leafNum": 88,
+                "confidence": 100,
+                "pageNumber": "76",
+                "pageProb": 92,
+                "wordConf": 47
+            },
+            {
+                "leafNum": 89,
+                "confidence": 100,
+                "pageNumber": "77",
+                "pageProb": 92,
+                "wordConf": 97
+            },
+            {
+                "leafNum": 90,
+                "confidence": 100,
+                "pageNumber": "78",
+                "pageProb": 93,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 91,
+                "confidence": 100,
+                "pageNumber": "79",
+                "pageProb": 94,
+                "wordConf": 92
+            },
+            {
+                "leafNum": 92,
+                "confidence": 100,
+                "pageNumber": "80",
+                "pageProb": 93,
+                "wordConf": 64
+            },
+            {
+                "leafNum": 93,
+                "confidence": 100,
+                "pageNumber": "81",
+                "pageProb": 95,
+                "wordConf": 55
+            },
+            {
+                "leafNum": 94,
+                "confidence": 100,
+                "pageNumber": "82",
+                "pageProb": 91,
+                "wordConf": 56
+            },
+            {
+                "leafNum": 95,
+                "confidence": 100,
+                "pageNumber": "83",
+                "pageProb": 90,
+                "wordConf": 40
+            },
+            {
+                "leafNum": 96,
+                "confidence": 100,
+                "pageNumber": "84",
+                "pageProb": 94,
+                "wordConf": 51
+            },
+            {
+                "leafNum": 97,
+                "confidence": 100,
+                "pageNumber": "85",
+                "pageProb": 93,
+                "wordConf": 70
+            },
+            {
+                "leafNum": 98,
+                "confidence": 100,
+                "pageNumber": "86",
+                "pageProb": 96,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 99,
+                "confidence": 100,
+                "pageNumber": "87",
+                "pageProb": 93,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 100,
+                "confidence": 100,
+                "pageNumber": "88",
+                "pageProb": 94,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 101,
+                "confidence": 100,
+                "pageNumber": "89",
+                "pageProb": 91,
+                "wordConf": 100
+            },
+            {
+                "leafNum": 102,
+                "confidence": 100,
+                "pageNumber": "90",
+                "pageProb": 94,
+                "wordConf": 68
+            },
+            {
+                "leafNum": 103,
+                "confidence": 100,
+                "pageNumber": "91",
+                "pageProb": 91,
+                "wordConf": 73
+            },
+            {
+                "leafNum": 104,
+                "confidence": 100,
+                "pageNumber": "92",
+                "pageProb": 95,
+                "wordConf": 57
+            },
+            {
+                "leafNum": 105,
+                "confidence": 99,
+                "pageNumber": "93",
+                "pageProb": 89,
+                "wordConf": 50
+            },
+            {
+                "leafNum": 106,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 107,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 108,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 109,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 110,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 111,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            },
+            {
+                "leafNum": 112,
+                "confidence": null,
+                "pageNumber": "",
+                "pageProb": null,
+                "wordConf": null
+            }
+        ]
+    },
+    "server": "ia800803.us.archive.org",
+    "uniq": 1755593017,
+    "workable_servers": [
+        "ia800803.us.archive.org",
+        "ia600803.us.archive.org"
+    ]
+}

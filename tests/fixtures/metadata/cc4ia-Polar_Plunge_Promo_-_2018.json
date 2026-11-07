@@ -1,0 +1,428 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn711103.ca.archive.org",
+                "dir": "/0/items/cc4ia-Polar_Plunge_Promo_-_2018"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn711103.ca.archive.org",
+                "dir": "/0/items/cc4ia-Polar_Plunge_Promo_-_2018"
+            }
+        ]
+    },
+    "created": 1793998134,
+    "d1": "dn601208.us.archive.org",
+    "dir": "/0/items/cc4ia-Polar_Plunge_Promo_-_2018",
+    "files": [
+        {
+            "name": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "source": "original",
+            "mtime": "1520151264",
+            "size": "23070994",
+            "md5": "070f788d001ac4e469f0e4a2720df98f",
+            "crc32": "84c9b43f",
+            "sha1": "927670eded4d0fa096e119fecf6a9180b89b3f6d",
+            "format": "h.264 HD",
+            "length": "91.39",
+            "height": "720",
+            "width": "1280"
+        },
+        {
+            "name": "Polar_Plunge_Promo_-_2018.asr.js",
+            "source": "original",
+            "format": "ASR",
+            "mtime": "1520344018",
+            "size": "7428",
+            "md5": "9ebb6ae426c03a4c6d3a55f7b30c1e1e",
+            "crc32": "89c095b8",
+            "sha1": "5ee54fd1ca6ce0d5469e88eeab6ffbe4e320b445"
+        },
+        {
+            "name": "Polar_Plunge_Promo_-_2018.asr.srt",
+            "source": "original",
+            "format": "SubRip",
+            "mtime": "1520344017",
+            "size": "961",
+            "md5": "933dde26ec7518a742f7a5553d8a2d75",
+            "crc32": "d47b0d5b",
+            "sha1": "3f344270c613904bb1f53cee051ad6ba17173b78"
+        },
+        {
+            "name": "Polar_Plunge_Promo_-_2018.en.vtt",
+            "source": "original",
+            "mtime": "1558024364",
+            "size": "7078",
+            "format": "Web Video Text Tracks",
+            "md5": "ce77b65c8b06a867526c0e8eb119aeaf",
+            "crc32": "a5687516",
+            "sha1": "67da46f31d27e9bc6757a27c61bd4c7a694a7298"
+        },
+        {
+            "name": "Polar_Plunge_Promo_-_2018.es.vtt",
+            "source": "original",
+            "mtime": "1558024368",
+            "size": "1876",
+            "md5": "4ddd3499a16fa461c3bd252cf93bebc2",
+            "crc32": "907bea24",
+            "sha1": "78af3bbffdd2abf6770b9cc5725dbb65d0e43fd3",
+            "format": "Web Video Text Tracks"
+        },
+        {
+            "name": "Polar_Plunge_Promo_-_2018.mp3",
+            "source": "derivative",
+            "bitrate": "96",
+            "length": "01:31",
+            "format": "MP3",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156195",
+            "size": "1099679",
+            "md5": "1cde115ace91a3bbf40f29177eefa8cd",
+            "crc32": "ae32caf0",
+            "sha1": "c9b70f7088304dbbebe4c3766a4b9ca1396da9d2",
+            "height": "0",
+            "width": "0"
+        },
+        {
+            "name": "Polar_Plunge_Promo_-_2018.mp4",
+            "source": "derivative",
+            "format": "h.264",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156629",
+            "size": "9512945",
+            "md5": "a406f6bdaeb7c414ef8d9c6b1c06dcc9",
+            "crc32": "71468fc7",
+            "sha1": "6a2b25dbe398cec9e26ca698e63502c9a4b64577",
+            "length": "91.42",
+            "height": "360",
+            "width": "640"
+        },
+        {
+            "name": "Polar_Plunge_Promo_-_2018.ogv",
+            "source": "derivative",
+            "format": "Ogg Video",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156904",
+            "size": "6975402",
+            "md5": "4613a0e6805562d8eabdb2772b195050",
+            "crc32": "a982efc7",
+            "sha1": "1ea83c9dc0b46e25394dd92860825a24ebbab9cd",
+            "length": "91.39",
+            "height": "300",
+            "width": "533"
+        },
+        {
+            "name": "Polar_Plunge_Promo_-_2018.png",
+            "source": "derivative",
+            "format": "PNG",
+            "original": "Polar_Plunge_Promo_-_2018.mp3",
+            "mtime": "1520156913",
+            "size": "11013",
+            "md5": "e7d9ccb56fc13e54622abba95e42ad59",
+            "crc32": "9010bb54",
+            "sha1": "98630aedb8f945f8cbfa7864896a0eb509d8ec04"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1549090146",
+            "size": "6297",
+            "md5": "2f1f1c28ebe3dfdb06a29c83e8c92fed",
+            "crc32": "aa2c8a78",
+            "sha1": "b1045e27553619ca63c86e060409c52ab8e09c53",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000001.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156201",
+            "size": "7472",
+            "md5": "7574d24030ea69650ca8d8e3b4a3f359",
+            "crc32": "5396f20d",
+            "sha1": "a659898e3066981464f636e26ba181e960a01daa"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000009.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156206",
+            "size": "5950",
+            "md5": "4381285cbb5ed94361b39ec975dd581b",
+            "crc32": "095680f1",
+            "sha1": "832517d79fd2f33929ba99da75a93089f4d3cfc1"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000014.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156211",
+            "size": "4406",
+            "md5": "dd36e55da358aa32c33af5efe622209a",
+            "crc32": "4d8a4f9a",
+            "sha1": "a926defe5f5865d368670dd0287ee63db893893e"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000019.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156217",
+            "size": "5038",
+            "md5": "cd92df4e9d5d47e468ddcc4e5e4ae2e3",
+            "crc32": "993d6cea",
+            "sha1": "e3c0a7c67b9a1f3bb7cbc1d5f868d9643c4fcaf0"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000024.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156221",
+            "size": "4144",
+            "md5": "0bc41242e2ea1904958747359bfcb192",
+            "crc32": "2f358246",
+            "sha1": "4299d44189d3b3dfc15e0eaaa795aa680ce267f3"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000029.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156226",
+            "size": "3000",
+            "md5": "c68fddbabf08129770389e081df286e9",
+            "crc32": "b2af54d4",
+            "sha1": "43961c70dcf9578737b5bdba7d89d5849b2e608a"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000034.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156231",
+            "size": "2386",
+            "md5": "372770c930d464b35a47f0a4000f319d",
+            "crc32": "4265e386",
+            "sha1": "c20474b66fe1ad9b5d47e334b74be2edbf268b6f"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000039.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156236",
+            "size": "2714",
+            "md5": "114fd2fad6652703192d452bf9c30d27",
+            "crc32": "110255e8",
+            "sha1": "7f01fe059fdfd40487b6a4a262b3e1e352fa759a"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000044.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156241",
+            "size": "2190",
+            "md5": "2a6549b8096099c7e03a3e6de09daae1",
+            "crc32": "1b3e5b07",
+            "sha1": "7e1048056e3e93dfc19bb3c7a184a58f73797a35"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000049.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156245",
+            "size": "1933",
+            "md5": "a1d8b4efae198918e978e10c5276947a",
+            "crc32": "544cc1a0",
+            "sha1": "189de9991adf1f9fdb4b86ee64e9b683815040d9"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000054.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156250",
+            "size": "1768",
+            "md5": "9bb4627e830b55344da55003461baee1",
+            "crc32": "15b98fb4",
+            "sha1": "8d7af0491d99fe597b3626c1fd2adcd6db3dd137"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000059.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156255",
+            "size": "1994",
+            "md5": "65c9df17c5ede6f9c401d5e40c9bed87",
+            "crc32": "e127c308",
+            "sha1": "042117cd376874bc37fc2f59d1e8dfe09ddc16c7"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000064.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156259",
+            "size": "1912",
+            "md5": "379f1795fa8a52c13ad6348b5e9cbbad",
+            "crc32": "56b577d1",
+            "sha1": "8b88933af77171c0c700989bdb2e5e353143a632"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000069.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156264",
+            "size": "1759",
+            "md5": "3c8b7549d15d8e5b0ebe208b3f47ae85",
+            "crc32": "9288ce65",
+            "sha1": "7e3cc4f1be655a12dff47f610837e72f2158d0ab"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000074.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156268",
+            "size": "1523",
+            "md5": "e4e9975b12e74b787b096bd3aada8729",
+            "crc32": "887f4a5c",
+            "sha1": "4759ecede352c68109f6c409a1440a10cdae05ed"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000079.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156272",
+            "size": "1696",
+            "md5": "3e5a7a24297e156cab5ebe26c80a0271",
+            "crc32": "1440d54c",
+            "sha1": "a46493858a0bf348efe8a00bb1dc1a727af42c33"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000084.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156276",
+            "size": "1596",
+            "md5": "4b9a1c0c053b2b4f7722444e5cddd2e5",
+            "crc32": "88dc4e57",
+            "sha1": "8401ce1fd178ccebdc1b920133a7e1ef7fa87fba"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018.thumbs/Polar_Plunge_Promo_-_2018_000089.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "Polar_Plunge_Promo_-_2018.HD.mov",
+            "mtime": "1520156280",
+            "size": "1962",
+            "md5": "5d3c3d9cf78b20ceb99efd8123f12b8c",
+            "crc32": "c4a2e5bb",
+            "sha1": "9b36bb7ee1ca1c2a3dee65c1250d6f0c6e0cb9d5"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "dfdf623b64f516ce683dc102d20803ea",
+            "summation": "md5"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018_meta.sqlite",
+            "source": "original",
+            "mtime": "1558024370",
+            "size": "12288",
+            "format": "Metadata",
+            "md5": "615aa588010bf73405e3909a115755a7",
+            "crc32": "96d83c6b",
+            "sha1": "844cb23708c415935312c568a8c21c10219c6d5e"
+        },
+        {
+            "name": "cc4ia-Polar_Plunge_Promo_-_2018_meta.xml",
+            "source": "original",
+            "mtime": "1582450946",
+            "size": "1826",
+            "format": "Metadata",
+            "md5": "ff2f564458a509b1a89410c6b840231d",
+            "crc32": "aef3be8e",
+            "sha1": "b7c951b37ee2546b72cba249146195c2b3af2acf"
+        }
+    ],
+    "files_count": 31,
+    "item_last_updated": 1781680065,
+    "item_size": 40761230,
+    "metadata": {
+        "identifier": "cc4ia-Polar_Plunge_Promo_-_2018",
+        "collection": [
+            "cc4ia",
+            "community_media",
+            "newsandpublicaffairs"
+        ],
+        "creator": "CC4",
+        "date": "2018-03-01",
+        "description": "Get your team signed up for the Iowa City Polar Plunge, which will take place on April 14th at Coralville Lake. Find event details and registration information at soiowa.org/plunge.",
+        "duration": "91",
+        "language": "English",
+        "mediatype": "movies",
+        "runtime": "00:01:31",
+        "title": "Polar Plunge Promo - 2018",
+        "year": "2018",
+        "youtube-height": "720",
+        "youtube-id": "ZH5xkErhiFY",
+        "youtube-n-entries": "1148",
+        "youtube-playlist": "Uploads from citychannel4",
+        "youtube-playlist-index": "1147",
+        "youtube-uploader": "citychannel4",
+        "youtube-uploader-id": "citychannel4",
+        "youtube-view-count": "8",
+        "youtube-webpage-url": "https://www.youtube.com/watch?v=ZH5xkErhiFY",
+        "youtube-width": "1280",
+        "subject": [
+            "Iowa",
+            "Iowa City",
+            "citychannel4",
+            "CC4",
+            "Government Access TV",
+            "Community Media",
+            "PEG",
+            "Youtube",
+            "2018"
+        ],
+        "publicdate": "2018-03-04 08:14:25",
+        "uploader": "jhauser@pobox.com",
+        "addeddate": "2018-03-04 08:14:25",
+        "backup_location": "ia906700_9",
+        "noarchivetorrent": "true",
+        "curation": "[curator]jscott@archive.org[/curator][date]20200223092003[/date][state]un-dark[/state]"
+    },
+    "server": "dn601208.us.archive.org",
+    "simplelists": {
+        "solo_manifest": {
+            "solo_manifest_dn601208": {
+                "sys_changed_by": {
+                    "source": "task",
+                    "task_id": "5445580147"
+                },
+                "sys_last_changed": "2026-06-17 07:07:51.962411"
+            }
+        }
+    },
+    "solo": true,
+    "uniq": 2117050498,
+    "workable_servers": [
+        "dn601208.us.archive.org"
+    ]
+}

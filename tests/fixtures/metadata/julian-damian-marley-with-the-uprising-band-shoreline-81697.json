@@ -1,0 +1,152 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721609.ca.archive.org",
+                "dir": "/0/items/julian-damian-marley-with-the-uprising-band-shoreline-81697"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721609.ca.archive.org",
+                "dir": "/0/items/julian-damian-marley-with-the-uprising-band-shoreline-81697"
+            }
+        ]
+    },
+    "created": 1794012081,
+    "d1": "ia600608.us.archive.org",
+    "d2": "ia800608.us.archive.org",
+    "dir": "/1/items/julian-damian-marley-with-the-uprising-band-shoreline-81697",
+    "files": [
+        {
+            "name": "01 JDM - Intro.aiff",
+            "source": "original",
+            "mtime": "1738706326",
+            "size": "30025632",
+            "md5": "29cb0646c884fec071500c20058e443a",
+            "crc32": "ef1cd48d",
+            "sha1": "d944605bf8c72ca4f9d93630e5a142125e456779",
+            "format": "AIFF",
+            "length": "170.2"
+        },
+        {
+            "name": "02 JDM - Mr. Marley.aiff",
+            "source": "original",
+            "mtime": "1738706366",
+            "size": "55784736",
+            "md5": "3ecad35b7e8f5f3c16e1cb4dd0717d28",
+            "crc32": "0983b41e",
+            "sha1": "792035942418ce4a71b95956fb4d813a7a1708e1",
+            "format": "AIFF",
+            "length": "316.23"
+        },
+        {
+            "name": "03 JDM - Rastaman Vibration.aiff",
+            "source": "original",
+            "mtime": "1738706384",
+            "size": "48902784",
+            "md5": "630b56b4fe6db052c0442140e1de7c5c",
+            "crc32": "9084ef0c",
+            "sha1": "4e859b8c3cdf0b4b60e37b9fd796dca7c837f4d2",
+            "format": "AIFF",
+            "length": "277.21"
+        },
+        {
+            "name": "04 JDM - Chase Those Crazy Baldheads.aiff",
+            "source": "original",
+            "mtime": "1738706410",
+            "size": "74838288",
+            "md5": "2dd155b5aa293c253da9c9d2624a2143",
+            "crc32": "07a0855d",
+            "sha1": "476c74b8be77b52af5495815d7e74148a1dda6f7",
+            "format": "AIFF",
+            "length": "424.24"
+        },
+        {
+            "name": "05 JDM.aiff",
+            "source": "original",
+            "mtime": "1738706429",
+            "size": "48434736",
+            "md5": "409f965003ef6171ec96744a03b64a74",
+            "crc32": "043cd80a",
+            "sha1": "4ec27ab605eeaaf842dd2b1a3de6ecf25693ec6c",
+            "format": "AIFF",
+            "length": "274.56"
+        },
+        {
+            "name": "06 JDM - I Shot The Sheriff.aiff",
+            "source": "original",
+            "mtime": "1738706444",
+            "size": "46687200",
+            "md5": "49ba2e7fb0094299be629a22ca869ceb",
+            "crc32": "9a5cab01",
+            "sha1": "60cc4a0de4ec145582a1d9cd02480f4a5f157b36",
+            "format": "AIFF",
+            "length": "264.65"
+        },
+        {
+            "name": "julian-damian-marley-with-the-uprising-band-shoreline-81697_archive.torrent",
+            "source": "metadata",
+            "btih": "f87eb1e61c048a1ad8c39351fa4c892a045cc86f",
+            "mtime": "1757868258",
+            "size": "14626",
+            "md5": "93f6b14bdd8ed5c523d1005b25def713",
+            "crc32": "bbc9d89c",
+            "sha1": "095650bb3079883da0a389ab37ac6f1013c1c51e",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "julian-damian-marley-with-the-uprising-band-shoreline-81697_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "10b27baca96c853f83f53a8ef55bc854",
+            "summation": "md5"
+        },
+        {
+            "name": "julian-damian-marley-with-the-uprising-band-shoreline-81697_meta.sqlite",
+            "source": "original",
+            "mtime": "1738706450",
+            "size": "32768",
+            "md5": "4c00d60fc66d265e4266d57c38b602e9",
+            "crc32": "17728b06",
+            "sha1": "644c1728296d887aff0c7d0cc7a84ecffb0abc23",
+            "format": "Metadata"
+        },
+        {
+            "name": "julian-damian-marley-with-the-uprising-band-shoreline-81697_meta.xml",
+            "source": "original",
+            "mtime": "1757868256",
+            "size": "923",
+            "md5": "c88ed5190d97736c150f9f07f9894b12",
+            "crc32": "24f87be7",
+            "sha1": "686ea37464ff1d1c8931b8347c98c452c7b3f1bc",
+            "format": "Metadata"
+        }
+    ],
+    "files_count": 10,
+    "item_last_updated": 1757868259,
+    "item_size": 304721693,
+    "metadata": {
+        "identifier": "julian-damian-marley-with-the-uprising-band-shoreline-81697",
+        "mediatype": "audio",
+        "collection": [
+            "roiocollection",
+            "folksoundomy"
+        ],
+        "description": "Julian &amp; Damian Marley with The Uprising Band - Shoreline - 8/16/97",
+        "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+        "subject": "Julian & Damian Marley with The Uprising Band - Shoreline - 8/16/97",
+        "title": "Julian & Damian Marley with The Uprising Band - Shoreline - 8/16/97",
+        "uploader": "neekrive@gmail.com",
+        "publicdate": "2025-02-04 21:59:17",
+        "addeddate": "2025-02-04 21:59:17",
+        "curation": "[curator]validator@archive.org[/curator][date]20250204220251[/date][comment]checked for malware[/comment]",
+        "collection_added": "folksoundomy"
+    },
+    "server": "ia800608.us.archive.org",
+    "uniq": 314710247,
+    "workable_servers": [
+        "ia800608.us.archive.org",
+        "ia600608.us.archive.org"
+    ]
+}

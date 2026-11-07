@@ -1,0 +1,299 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn760102.eu.archive.org",
+                "dir": "/0/items/0-._20211206"
+            },
+            {
+                "server": "dn790006.ca.archive.org",
+                "dir": "/0/items/0-._20211206"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn760102.eu.archive.org",
+                "dir": "/0/items/0-._20211206"
+            },
+            {
+                "server": "dn790006.ca.archive.org",
+                "dir": "/0/items/0-._20211206"
+            }
+        ]
+    },
+    "created": 1794011873,
+    "d1": "ia601506.us.archive.org",
+    "d2": "ia801506.us.archive.org",
+    "dir": "/21/items/0-._20211206",
+    "files": [
+        {
+            "name": "0-._20211206_archive.torrent",
+            "source": "metadata",
+            "btih": "89ef1ad0f0ef2294e7bb76c9849478fb306ca0e3",
+            "mtime": "1788251129",
+            "size": "7278",
+            "md5": "ab3fa466e5071688a4a7b3422df055bf",
+            "crc32": "cd2b093a",
+            "sha1": "e07c72c8dc191935e5a88be85c1e0b85a86db7f6",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "0-._20211206_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "129e215e60e694b4d2b39261a72ecba7",
+            "summation": "md5"
+        },
+        {
+            "name": "0-._20211206_meta.sqlite",
+            "source": "original",
+            "mtime": "1638756376",
+            "size": "28672",
+            "md5": "3aa27a95f4a0e2739148c66185a8dbaa",
+            "crc32": "5c806dbc",
+            "sha1": "0665fda1c49a5942931cb2e4a24c684166c0c998",
+            "format": "Metadata"
+        },
+        {
+            "name": "0-._20211206_meta.xml",
+            "source": "original",
+            "mtime": "1788251127",
+            "size": "1829",
+            "md5": "50b515d2b9c1618672ea5207703ff106",
+            "crc32": "6c30c3d6",
+            "sha1": "ae1596450453ac474637ede6febe9879ef3f0336",
+            "format": "Metadata"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1685334263",
+            "size": "20965",
+            "md5": "ae387829880f6fe0505b48540d397a90",
+            "crc32": "f067f340",
+            "sha1": "3ff35cfe89a03d2d3bef5936054393bf9aaa83cb",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646.pdf",
+            "source": "original",
+            "mtime": "1638756342",
+            "size": "4620908",
+            "md5": "9a64cc483347399feee98d6f6ec4624d",
+            "crc32": "3baedd28",
+            "sha1": "abf66b3447699377b9a50b7d602e7c8f066baf4a",
+            "format": "Image Container PDF",
+            "viruscheck": "1638756692"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_chocr.html.gz",
+            "source": "derivative",
+            "ocr": "tesseract 5.0.0-rc2-1-gf788",
+            "ocr_parameters": "-l ara+Arabic",
+            "ocr_module_version": "0.0.14",
+            "ocr_autonomous": "true",
+            "ocr_detected_script": "Arabic",
+            "ocr_detected_script_conf": "0.9999",
+            "ocr_detected_lang": "ar",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "chOCR",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_jp2.zip",
+            "mtime": "1638760008",
+            "size": "2233842",
+            "md5": "dde13f90b6deb29e2b8601705152d262",
+            "crc32": "eca96f13",
+            "sha1": "692aa872bd477e8fea5e1646839720c95350ce84"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_daisy.zip",
+            "source": "derivative",
+            "hocr_epub_module_version": "0.0.1",
+            "hocr_epub_hocr_version": "1.1.66",
+            "format": "Daisy",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_hocr.html",
+            "mtime": "1788249779",
+            "size": "132639",
+            "md5": "bc9579eba204d843f0e7cbc91e8026d4",
+            "crc32": "cfccb410",
+            "sha1": "969240cdbbdf9e06f303d03b28604b45fbabf396",
+            "filecount": "9"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_djvu.xml",
+            "mtime": "1638760193",
+            "size": "270558",
+            "md5": "1618f819bb08bbd0e52a7e08058e22a6",
+            "crc32": "586afb74",
+            "sha1": "680663e5189409af00ef0c7a0e1354c8970e8b1e"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_hocr.html",
+            "mtime": "1638760116",
+            "size": "2284309",
+            "md5": "1964a389fb084f6a8ada7ff3ea6fb18c",
+            "crc32": "333f86a0",
+            "sha1": "ac577e07d42c83b96e0c750fa0516d7693adaf04"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.0.0",
+            "hocr_char_to_word_hocr_version": "1.1.2",
+            "ocr_parameters": "-l ara+Arabic",
+            "ocr_module_version": "0.0.14",
+            "ocr_autonomous": "true",
+            "ocr_detected_script": "Arabic",
+            "ocr_detected_script_conf": "0.9999",
+            "ocr_detected_lang": "ar",
+            "ocr_detected_lang_conf": "1.0000",
+            "format": "hOCR",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_chocr.html.gz",
+            "mtime": "1638760094",
+            "size": "4309924",
+            "md5": "fae6dc5dc192812b0771b8d40a4689f3",
+            "crc32": "f742b040",
+            "sha1": "a833f9cfc4401a31b89b52d8b092ea7684506b7e"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.0.0",
+            "hocr_pageindex_hocr_version": "1.1.0",
+            "format": "OCR Page Index",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_hocr.html",
+            "mtime": "1638760139",
+            "size": "2038",
+            "md5": "e1adab7954257223c5eb0045045db299",
+            "crc32": "06378663",
+            "sha1": "16956292dcd655ec0de24e1a16cb9cfdd36f246b"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.1.0",
+            "hocr_fts_text_hocr_version": "1.1.0",
+            "word_conf_0_10": "237",
+            "word_conf_11_20": "128",
+            "word_conf_21_30": "222",
+            "word_conf_31_40": "335",
+            "word_conf_41_50": "412",
+            "word_conf_51_60": "439",
+            "word_conf_61_70": "576",
+            "word_conf_71_80": "745",
+            "word_conf_81_90": "4855",
+            "word_conf_91_100": "17964",
+            "format": "OCR Search Text",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_hocr.html",
+            "mtime": "1638760179",
+            "size": "75030",
+            "md5": "77684bb52ab54d962c1bda6df98366c4",
+            "crc32": "f0c4fdbe",
+            "sha1": "677c7251f7502ac80c2b8591288bb96df273b093"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646.pdf",
+            "mtime": "1638757578",
+            "size": "49183946",
+            "md5": "3a397197aa18df5509841e815591a03a",
+            "crc32": "5fd8cb36",
+            "sha1": "155626f06096db89006eaf3902c9a09c18308b17",
+            "filecount": "178"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.5",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "24",
+            "format": "Page Numbers JSON",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_hocr.html",
+            "mtime": "1788249842",
+            "size": "30450",
+            "md5": "fad23ce0e4f940efcfa73f863a35914d",
+            "crc32": "0d2c2812",
+            "sha1": "6b49eed5a88465da3519a6bfa1579b7256b727e4"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_djvu.xml",
+            "mtime": "1788249842",
+            "size": "59647",
+            "md5": "76e510d16cb7edc55e87b5571d184c66",
+            "crc32": "181edb44",
+            "sha1": "ff57327c39d9c05d979602046a32bc845b64cd73"
+        },
+        {
+            "name": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_text.pdf",
+            "source": "derivative",
+            "pdf_module_version": "0.0.25",
+            "pdf_degraded": "invalid-jp2-headers",
+            "format": "Additional Text PDF",
+            "original": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646_page_numbers.json",
+            "mtime": "1788250750",
+            "size": "4852261",
+            "md5": "d695007f7134f28686023c3a87ebaf09",
+            "crc32": "c45b0ced",
+            "sha1": "a8b4dc9ca1ac912963c2db5bfedaced1420c0fb3"
+        }
+    ],
+    "files_count": 17,
+    "item_last_updated": 1788251129,
+    "item_size": 68114296,
+    "metadata": {
+        "identifier": "0-._20211206",
+        "mediatype": "texts",
+        "description": "\u062f\u0631\u0627\u0633\u0627\u062a, \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631, \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a,\u00a0 -0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646, \u0633\u0644\u064a\u0645\u0627\u0646",
+        "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+        "subject": [
+            "\u062f\u0631\u0627\u0633\u0627\u062a",
+            "\u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631",
+            "\u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a",
+            "-0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646",
+            "\u0633\u0644\u064a\u0645\u0627\u0646"
+        ],
+        "title": "\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0644\u0643\u0644\u0648\u0631 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a 0 \u062f.\u0646\u0635\u0631\u0627\u0644\u062f\u064a\u0646 \u0633\u0644\u064a\u0645\u0627\u0646",
+        "uploader": "yasiralfadil@ymail.com",
+        "publicdate": "2021-12-06 02:06:08",
+        "addeddate": "2021-12-06 02:06:08",
+        "curation": "[curator]validator@archive.org[/curator][date]20211206021132[/date][comment]checked for malware[/comment]",
+        "identifier-access": "http://archive.org/details/0-._20211206",
+        "identifier-ark": "ark:/13960/s2sbwrzjrm7",
+        "ppi": "300",
+        "ocr": "tesseract 5.0.0-rc2-1-gf788",
+        "ocr_parameters": "-l ara+Arabic",
+        "ocr_module_version": "0.0.14",
+        "ocr_autonomous": "true",
+        "ocr_detected_script": "Arabic",
+        "ocr_detected_script_conf": "0.9999",
+        "ocr_detected_lang": "ar",
+        "ocr_detected_lang_conf": "1.0000",
+        "collection": [
+            "booksbylanguage_arabic",
+            "booksbylanguage"
+        ],
+        "language": "Arabic",
+        "collection_added": "booksbylanguage",
+        "page_number_confidence": "24",
+        "page_number_module_version": "1.0.5",
+        "pdf_degraded": "invalid-jp2-headers",
+        "pdf_module_version": "0.0.25"
+    },
+    "server": "ia601506.us.archive.org",
+    "uniq": 339926040,
+    "workable_servers": [
+        "ia601506.us.archive.org",
+        "ia801506.us.archive.org"
+    ]
+}

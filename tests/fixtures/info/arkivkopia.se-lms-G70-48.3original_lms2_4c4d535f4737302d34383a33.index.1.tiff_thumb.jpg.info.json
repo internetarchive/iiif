@@ -1,0 +1,61 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/arkivkopia.se-lms-G70-48.3%2Foriginal_lms2_4c4d535f4737302d34383a33.index.1.tiff_thumb.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 192,
+    "height": 47,
+    "sizes": [
+        {
+            "width": 192,
+            "height": 47
+        }
+    ],
+    "tiles": [
+        {
+            "width": 192,
+            "height": 47,
+            "scaleFactors": [
+                1
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "tif",
+                "jpg",
+                "gif",
+                "png"
+            ],
+            "maxArea": 9024,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

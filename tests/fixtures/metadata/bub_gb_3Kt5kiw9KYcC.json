@@ -1,0 +1,196 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn790008.ca.archive.org",
+                "dir": "/0/items/bub_gb_3Kt5kiw9KYcC"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn790008.ca.archive.org",
+                "dir": "/0/items/bub_gb_3Kt5kiw9KYcC"
+            }
+        ]
+    },
+    "created": 1794014217,
+    "d1": "ia600604.us.archive.org",
+    "d2": "ia800604.us.archive.org",
+    "dir": "/15/items/bub_gb_3Kt5kiw9KYcC",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1711330633",
+            "size": "10135",
+            "md5": "b55a734434f06a2a09d5c81138f70056",
+            "crc32": "41a7c60b",
+            "sha1": "804ecaa0eba6ea64ea62c34aaa51a0cc5a1eafeb",
+            "format": "Item Tile"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "bub_gb_3Kt5kiw9KYcC_jp2.zip",
+            "mtime": "1464932752",
+            "size": "309795",
+            "md5": "af6511697aa864a78d84fc76a4c7fcd6",
+            "crc32": "8f8c295a",
+            "sha1": "99af1d1336e8d835887e33fcc00bc80bd3aba176"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC.pdf",
+            "source": "derivative",
+            "format": "Text PDF",
+            "original": "bub_gb_3Kt5kiw9KYcC_djvu.xml",
+            "mtime": "1464940318",
+            "size": "21014780",
+            "md5": "644818c14af3f86c6f07934fbbeb3c6b",
+            "crc32": "268fc937",
+            "sha1": "a05861896dc616c38edce151158bf3ac7f818402"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "bub_gb_3Kt5kiw9KYcC_jp2.zip",
+            "mtime": "1464939435",
+            "size": "12203615",
+            "md5": "94a75f07d880d1ba1518b052dfa2f9bd",
+            "crc32": "9eca452a",
+            "sha1": "b9bbf4dc78974a82792d77706f3419469b7ff412"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_archive.torrent",
+            "source": "metadata",
+            "btih": "82440e92f3c8b949bf7aa9cdcba95180ccac77a9",
+            "mtime": "1711330639",
+            "size": "16443",
+            "md5": "e9bf61029d4ead5391bfb942f366f3fd",
+            "crc32": "39ad5eac",
+            "sha1": "d062654dd362634b62ee363d565709ffce7c2a2b",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "bub_gb_3Kt5kiw9KYcC_djvu.xml",
+            "mtime": "1464939602",
+            "size": "746746",
+            "md5": "46371bd275d488e93ace5f17456250ac",
+            "crc32": "546db5f1",
+            "sha1": "2a7d2f69d041e014cf8d091fa8c08ca5657a90eb"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "bub_gb_3Kt5kiw9KYcC_abbyy.gz",
+            "mtime": "1464939593",
+            "size": "6281327",
+            "md5": "7be5da922338a2b0f994e1e677e972c9",
+            "crc32": "718eaeca",
+            "sha1": "a23b68bc0c8b8d3fbed2d0cb822777b5aaec9526"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "bd1f809b21aebfc0f096bd5b8f07542e",
+            "summation": "md5"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_images.tar",
+            "source": "original",
+            "mtime": "1464932074",
+            "size": "198082560",
+            "md5": "548a7e7fcd5792dcc21afdede6ef5aec",
+            "crc32": "94c5f606",
+            "sha1": "8f5a1f864600214ed326fa79350d953cc0a6bd4c",
+            "format": "Generic Raw Book Tar",
+            "filecount": "367"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "bub_gb_3Kt5kiw9KYcC_images.tar",
+            "mtime": "1464932735",
+            "size": "109241441",
+            "md5": "77b4fa958f9a54a5bd661cce3e99d143",
+            "crc32": "67df4795",
+            "sha1": "6c8418cee0a9ce8924b183064b172ab198df0b84",
+            "filecount": "367"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_meta.sqlite",
+            "source": "original",
+            "mtime": "1464932091",
+            "size": "9216",
+            "md5": "116d66cb900e6878be579e0677685d38",
+            "crc32": "5b6c8fef",
+            "sha1": "a4b29fc01eab6b53a37b46c8eeb07cda19eb2f4e",
+            "format": "Metadata"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_meta.xml",
+            "source": "original",
+            "mtime": "1482690912",
+            "size": "1479",
+            "format": "Metadata",
+            "md5": "8b42635609cfcf9ac31c8041f3ab748e",
+            "crc32": "f4466b84",
+            "sha1": "9e944a747753fe05e0f427016d1216375189d1a4"
+        },
+        {
+            "name": "bub_gb_3Kt5kiw9KYcC_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "bub_gb_3Kt5kiw9KYcC_djvu.xml",
+            "mtime": "1464939600",
+            "size": "110203",
+            "md5": "44feadfa19676f2df8cd83fa6cdb3b46",
+            "crc32": "fea96915",
+            "sha1": "91fd61b9be3d04788f670566c776d24a468c819d"
+        }
+    ],
+    "files_count": 13,
+    "item_last_updated": 1711330639,
+    "item_size": 348027740,
+    "metadata": {
+        "identifier": "bub_gb_3Kt5kiw9KYcC",
+        "creator": "William Harvey",
+        "date": "1639",
+        "google-id": "3Kt5kiw9KYcC",
+        "language": "Latin",
+        "licenseurl": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "mediatype": "texts",
+        "publisher": "ex officina Ioannis Maire",
+        "scanner": "google",
+        "source": "http://books.google.com/books?id=3Kt5kiw9KYcC&hl=&source=gbs_api",
+        "sponsor": "Google",
+        "subject": "bub_upload",
+        "title": "Gulielmi Harveii, ... De motu cordis & sanguinis in animalibus, anatomica exercitatio. Cum refutationibus Aemylii Parisani, Romani, ... et Iacobi Primirosii, in Londinensi collegio doctoris medici ",
+        "year": "1639",
+        "publicdate": "2016-06-03 05:34:34",
+        "collection": "europeanlibraries",
+        "uploader": "tools.bub@tools.wmflabs.org",
+        "addeddate": "2016-06-03 05:34:34",
+        "curation": "[curator]validator@archive.org[/curator][date]20160603053506[/date][comment]checked for malware[/comment]",
+        "contributor": "National Central Library of Rome",
+        "identifier-access": "http://archive.org/details/bub_gb_3Kt5kiw9KYcC",
+        "identifier-ark": "ark:/13960/t96735b07",
+        "imagecount": "368",
+        "ocr": "ABBYY FineReader 11.0",
+        "repub_state": "4",
+        "backup_location": "ia906109_29"
+    },
+    "server": "ia800604.us.archive.org",
+    "uniq": 982983390,
+    "workable_servers": [
+        "ia800604.us.archive.org",
+        "ia600604.us.archive.org"
+    ]
+}

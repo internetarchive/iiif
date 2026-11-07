@@ -1,0 +1,66 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/balagzone_gmail%2F__ia_thumb.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 180,
+    "height": 255,
+    "sizes": [
+        {
+            "width": 90,
+            "height": 128
+        },
+        {
+            "width": 180,
+            "height": 255
+        }
+    ],
+    "tiles": [
+        {
+            "width": 180,
+            "height": 255,
+            "scaleFactors": [
+                1,
+                2
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "tif",
+                "jpg",
+                "gif",
+                "png"
+            ],
+            "maxArea": 45900,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}
