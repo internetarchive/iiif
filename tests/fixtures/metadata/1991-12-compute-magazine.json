@@ -1,0 +1,327 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn790000.ca.archive.org",
+                "dir": "/0/items/1991-12-compute-magazine"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn790000.ca.archive.org",
+                "dir": "/0/items/1991-12-compute-magazine"
+            }
+        ]
+    },
+    "created": 1794014882,
+    "d1": "ia600107.us.archive.org",
+    "d2": "ia800107.us.archive.org",
+    "dir": "/33/items/1991-12-compute-magazine",
+    "files": [
+        {
+            "name": "1991-12-compute-magazine_archive.torrent",
+            "source": "metadata",
+            "btih": "ea49cdd9eb09d1804fecff85cdceccc49b559629",
+            "mtime": "1767475161",
+            "size": "20180",
+            "md5": "7638de1a0741980732cd747044c14439",
+            "crc32": "422c8495",
+            "sha1": "7be222d2cb210e674efa773184e1a84891bbf512",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "1991-12-compute-magazine_files.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "fb656f89ab2926f19f413de8920fb346",
+            "summation": "md5"
+        },
+        {
+            "name": "1991-12-compute-magazine_meta.sqlite",
+            "source": "original",
+            "mtime": "1463123541",
+            "size": "6144",
+            "format": "Metadata",
+            "md5": "f659c071d1bc8a555555e7fcd242f26e",
+            "crc32": "56b9ac78",
+            "sha1": "bfb442f1ebe996f3c6dd121bdacbf7ccafc58622"
+        },
+        {
+            "name": "1991-12-compute-magazine_meta.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1775549363",
+            "size": "4632",
+            "md5": "f0c15f568c58f3042c76fc1e61a66cad",
+            "crc32": "190d5059",
+            "sha1": "bbbc0ac7815195db7fd10fdf7086e3f2b2d15038"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec.epub",
+            "source": "derivative",
+            "hocr_epub_module_version": "0.0.1",
+            "hocr_epub_hocr_version": "1.1.66",
+            "format": "EPUB",
+            "original": "Compute_Issue_136_1991_Dec_hocr.html",
+            "mtime": "1756252120",
+            "size": "33979340",
+            "md5": "fa03e98dd38961d8b92a06f84061a257",
+            "crc32": "cb21b0f6",
+            "sha1": "752913f3938d1bcfc7eb7bafe7c05b361411693f"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "Compute_Issue_136_1991_Dec_jp2.zip",
+            "mtime": "1314246758",
+            "size": "230473",
+            "md5": "fc02226979f5d0d7855161ce0d77e37f",
+            "crc32": "b5528a5",
+            "sha1": "b0b77b127f09a574342cc3f3058303308f302f3f"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec.pdf",
+            "source": "original",
+            "format": "Text PDF",
+            "mtime": "1314189060",
+            "size": "112964161",
+            "md5": "255bd871129d7afb3fcb408b748866b8",
+            "crc32": "82e84f1a",
+            "sha1": "f25d737d8692b7ee46b3560fa180c6709434a62e"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec.pdf_meta.txt",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1314189060",
+            "size": "496",
+            "md5": "ab79b979f3f7f2836ff16e2c9f9532f0",
+            "crc32": "503ea128",
+            "sha1": "3a50f295f7fd1e3532727c8c314a84133d0dc5af"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "Compute_Issue_136_1991_Dec_jp2.zip",
+            "mtime": "1314283247",
+            "size": "12013150",
+            "md5": "343561e130a3d4105adef4f2a8d2e9b8",
+            "crc32": "6365481e",
+            "sha1": "d8008dc90da1e9b7bbab0128caf71ac03f808937"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_chocr.html.gz",
+            "source": "derivative",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "chOCR",
+            "original": "Compute_Issue_136_1991_Dec_abbyy.gz",
+            "mtime": "1711809173",
+            "size": "9670287",
+            "md5": "2c56efa03ae4c8e50909fa509c1306bb",
+            "crc32": "a605d197",
+            "sha1": "68a303933f7da73cdcd689c106e5714d452294e5"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_cloth_detection.log",
+            "source": "derivative",
+            "format": "Cloth Cover Detection Log",
+            "original": "Compute_Issue_136_1991_Dec_scandata.xml",
+            "mtime": "1711809556",
+            "size": "567",
+            "md5": "8084a02e22db447cf476efaa95bfdc2a",
+            "crc32": "b81931d4",
+            "sha1": "3d9aed3a7ace4e14a113bfdc98cd8379485422bb"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "Compute_Issue_136_1991_Dec_djvu.xml",
+            "mtime": "1711809360",
+            "size": "895932",
+            "md5": "ac6746c8a2b30463a74969484f904949",
+            "crc32": "0a8f2d68",
+            "sha1": "fc363cd5775f554b21c6349f9ee6713c47192092"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "Compute_Issue_136_1991_Dec_hocr.html",
+            "mtime": "1711809278",
+            "size": "11195191",
+            "md5": "2af27dc21c742c7bcbfc0526eec815d6",
+            "crc32": "ed24805d",
+            "sha1": "096e8edc0d82ff5c640b89a8519b27d47edabdd2"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_hocr.html",
+            "source": "derivative",
+            "hocr_char_to_word_module_version": "1.3.0",
+            "hocr_char_to_word_hocr_version": "1.1.56",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "format": "hOCR",
+            "original": "Compute_Issue_136_1991_Dec_chocr.html.gz",
+            "mtime": "1711809252",
+            "size": "24257985",
+            "md5": "27b54aab6ade08db25a7172a53c579a7",
+            "crc32": "19543778",
+            "sha1": "90a1cf3edb247d43ca76cefb097b6211f39cd23b"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_hocr_pageindex.json.gz",
+            "source": "derivative",
+            "hocr_pageindex_module_version": "1.1.0",
+            "hocr_pageindex_hocr_version": "1.1.56",
+            "format": "OCR Page Index",
+            "original": "Compute_Issue_136_1991_Dec_hocr.html",
+            "mtime": "1711809289",
+            "size": "2603",
+            "md5": "1fc0be7a6b4852ccdd2dde7159a4b94d",
+            "crc32": "1b16622a",
+            "sha1": "03ee880ea0332b8a1c5ea2776302f77da582d49e"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_hocr_searchtext.txt.gz",
+            "source": "derivative",
+            "hocr_fts_text_module_version": "1.2.0",
+            "hocr_fts_text_hocr_version": "1.1.56",
+            "word_conf_0_10": "24768",
+            "word_conf_11_20": "18228",
+            "word_conf_21_30": "20178",
+            "word_conf_31_40": "17978",
+            "word_conf_41_50": "18476",
+            "word_conf_51_60": "12585",
+            "word_conf_61_70": "7625",
+            "word_conf_71_80": "3346",
+            "word_conf_81_90": "1409",
+            "word_conf_91_100": "3960",
+            "format": "OCR Search Text",
+            "original": "Compute_Issue_136_1991_Dec_hocr.html",
+            "mtime": "1711809328",
+            "size": "356980",
+            "md5": "d263791bd78e0b62de330c81c9e1c8df",
+            "crc32": "dd0a052d",
+            "sha1": "a83fbcc066d9d50a76c8f4016f4494feab245792"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "Compute_Issue_136_1991_Dec.pdf",
+            "mtime": "1314246728",
+            "size": "167340382",
+            "md5": "33289eea7894d6188c231b51c43eb2b5",
+            "crc32": "586a1b50",
+            "sha1": "a7377c13388061e361790441654ad48926c5dc7e",
+            "filecount": "212"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_lcp.epub",
+            "source": "derivative",
+            "format": "LCP Encrypted EPUB",
+            "original": "Compute_Issue_136_1991_Dec.epub",
+            "mtime": "1756252552",
+            "size": "34038214",
+            "md5": "7a3eac485d3bb7b4832c19f95ff6a5ec",
+            "crc32": "65a4e2fd",
+            "sha1": "cc8bcb68c0e94e9ac821a4ce6599b0eb83c062af"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_page_numbers.json",
+            "source": "derivative",
+            "hocr_pagenumber_module_version": "1.0.5",
+            "hocr_pagenumber_hocr_version": "1.1.54",
+            "hocr_pagenumber_confidence": "56",
+            "format": "Page Numbers JSON",
+            "original": "Compute_Issue_136_1991_Dec_hocr.html",
+            "mtime": "1711809533",
+            "size": "36333",
+            "md5": "0e217f7315399c6565e96f9e453c56a5",
+            "crc32": "111aded7",
+            "sha1": "2f3724232ed50b6dd333e7f9fdd997d3bf24ce99"
+        },
+        {
+            "name": "Compute_Issue_136_1991_Dec_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "Compute_Issue_136_1991_Dec_djvu.xml",
+            "mtime": "1711809533",
+            "size": "69665",
+            "md5": "efbebb27ecafcd60ae56afc43a78b72d",
+            "crc32": "409f80e3",
+            "sha1": "6430c0c5195057b1fd32fb6895a3d10a64b11adf"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1767475158",
+            "size": "21753",
+            "md5": "163dc8723f01e2504f9e4b148ea7b4c6",
+            "crc32": "e4ad9596",
+            "sha1": "c2274cb3a0bc06ae395c542ea7d7ed5f698d6c51",
+            "format": "JPEG Thumb",
+            "rotation": "0"
+        }
+    ],
+    "files_count": 21,
+    "item_last_updated": 1775549365,
+    "item_size": 407104468,
+    "metadata": {
+        "identifier": "1991-12-compute-magazine",
+        "title": "Compute! Magazine Issue 136",
+        "mediatype": "texts",
+        "collection": [
+            "compute-magazine",
+            "computermagazines",
+            "magazine_rack"
+        ],
+        "description": "Compute! Issue 136 - December 1991. 25 top children's programs (Kids & Computers) - Alpha Four (data base management system) (Evaluation) - Andrew Tobias' Managing Your Money (Managing Your Money 7.0, software package) (Evaluation) - Castles (computer game) (Evaluation) - Champions (computer game) (Evaluation) - Christmas wish lists (computer-related gifts) - Color video on the run (color liquid-crystal-display laptop computers) (Column) - Compton's MultiMedia Encyclopedia (Evaluation) - COMPUTE/NET: interactive information (interactive computer system) (Column) - Cumulus GLC (desktop computer) (Evaluation) - Cyberpunk (Cyberpunk: Outlaws and Hackers on the Computer Frontier, authors Katie Hafner and John Markhoff)(column) (Interview) - Demoniak (computer game) (Evaluation) - Designasaurus version II (computer game) (Evaluation) - Editorial license (history of personal computers) (Editorial) - Express Publisher (Express Publisher 2.0, desktop publishing software) (Evaluation) - Extend Visual Basic four ways (Microsoft Visual Basic)(column) (Evaluation) - FaxBuilder (computer graphics software) (Evaluation) - Files under pressure (compressed files) (Column) - Harvard Draw (illustration-design software) (Evaluation) - Heart of China (computer game)(column) (Evaluation) - How to grade a school's use of computers (Kids & Computers) - How to start your child with computers (Kids & Computers) - How to start your child with programming (Kids & Computers) - HP 95LX (palmtop computer) (Evaluation) - Kids & computers glossary (Kids & Computers) (Glossary) - Made to order (Microsoft MS-DOS 5.0 Upgrade as a gift)(column) (Evaluation) - Martian Dreams (Ultima Worlds of Adventure 2 - Martian Dreams computer game) (Evaluation) - Microsoft Flight Simulator Aircraft and Scenery Designer (Evaluation) - Object lessons (programming object-oriented versions of Turbo Pascal) (Column) - Peace on earth (computers' role in social issues) - Remote-control software (Column) - RightWriter (spelling and grammar checker) (Evaluation) - Synthetic stars (computer-generated special effects) (Column) - Telecommunications power (includes related articles) - Test lab (mail-order hard disk drives)(includes related articles) (Evaluation) - The artificial artist (personal computers)(includes related article) - The Bugs Bunny Cartoon Workshop (animation software) (Evaluation) - The incredible expanding RAM (Column) - The infinite crescendo (electronic music)(includes related article) - The Ultimate Computer Software Buyer's Guide (software package) (Evaluation) - Ventura or PageMaker? (Ventura Publisher 3.0 for Windows, PageMaker 4.0)(column) (Evaluation) - Visual Basic (Microsoft Visual Basic)(column) (Evaluation) - Why your child should be using a computer (Kids & Computers) - You're as good as there (remote-control software) - ZOOM/FaxMODEM FC 9624 (fax/modem board) (Evaluation)",
+        "date": "1991-12",
+        "year": "1991",
+        "publicdate": "2011-08-24 12:30:49",
+        "addeddate": "2011-08-24 12:30:49",
+        "uploader": "sketch@cow.net",
+        "language": "eng",
+        "identifier-access": "http://www.archive.org/details/1991-12-compute-magazine",
+        "identifier-ark": "ark:/13960/t59c7wh78",
+        "ppi": "300",
+        "repub_state": "4",
+        "updatedate": "2011-08-28 22:04:38",
+        "updater": "Jason Scott",
+        "subject": [
+            "software",
+            "program",
+            "compute",
+            "computer",
+            "disk",
+            "drive",
+            "data",
+            "ibm",
+            "programs",
+            "compute december",
+            "hard drive",
+            "hard drives",
+            "hard disk",
+            "sound blaster",
+            "visual basic",
+            "test lab"
+        ],
+        "backup_location": "ia903702_24",
+        "ocr_module_version": "0.0.21",
+        "ocr_converted": "abbyy-to-hocr 1.1.37",
+        "page_number_confidence": "56",
+        "page_number_module_version": "1.0.5",
+        "external-identifier": "urn:lcp:Compute_Issue_136_1991_Dec:epub:142f0459-4db5-4fc9-9c31-4fad752ade77"
+    },
+    "server": "ia600107.us.archive.org",
+    "uniq": 2109757868,
+    "workable_servers": [
+        "ia600107.us.archive.org",
+        "ia800107.us.archive.org"
+    ]
+}

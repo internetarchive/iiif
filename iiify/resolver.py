@@ -322,9 +322,9 @@ def create_manifest(identifier, domain=None, page=None):
         # XXX Use https://api.archivelab.org/books/:id/metadata API
 
         r = requests.get(bookdata % server, params={
+            'itemId': identifier,
             'server': server,
-            'itemPath': subPrefix,
-            'itemId': identifier
+            'itemPath': subPrefix
         })
         if r.status_code != 200:
             # If the bookdata failed then treat as a single image

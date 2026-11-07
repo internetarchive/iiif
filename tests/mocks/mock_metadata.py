@@ -67,6 +67,9 @@ KNOWN_URLS = {
     "/metadata/DONAHUEARTSPECIAL": "tests/fixtures/metadata/DONAHUEARTSPECIAL.json",
     "/metadata/Waste-Management_Taster-Too-demo-2009": "tests/fixtures/metadata/Waste-Management_Taster-Too-demo-2009.json",
     "/metadata/bub_gb_3Kt5kiw9KYcC": "tests/fixtures/metadata/bub_gb_3Kt5kiw9KYcC.json",
+    # Manifest v2 tests
+    "/metadata/1991-12-compute-magazine": "tests/fixtures/metadata/1991-12-compute-magazine.json",
+    "/metadata/opencontext-41-nippur-excavation-units": "tests/fixtures/metadata/opencontext-41-nippur-excavation-units.json",
 
     # Image info
     "journalofexpedit00ford%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/journalofexpedit00ford__ia_thumb.jpg.info.json",
@@ -94,7 +97,8 @@ KNOWN_URLS = {
     "Codex-Cuara%2FCuara,%20Co%CC%81dice%20leaf9r.tif/info.json": "tests/fixtures/info/Codex-CuaraCuara,%20Co%CC%81dice%20leaf9r.tif.info.json",
     "DuckandC1951%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/DuckandC1951__ia_thumb.jpg.info.json",
     "img-8664_202009%2FIMG_8664_thumb.jpg/info.json": "tests/fixtures/info/img-8664_202009IMG_8664_thumb.jpg.info.json",
-    "img-8664_202009%2FIMG_8664.jpg/info.json": "tests/fixtures/info/img-8664_202009IMG_8664.jpg.info.json",
+    "/3/img-8664_202009%2FIMG_8664.jpg/info.json": "tests/fixtures/info/3_img-8664_202009IMG_8664.jpg.info.json",
+    "/2/img-8664_202009%2FIMG_8664.jpg/info.json": "tests/fixtures/info/2_img-8664_202009IMG_8664.jpg.info.json",
     "rashodgson68%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/rashodgson68__ia_thumb.jpg.info.json",
     "fbf_3chords_1_%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/fbf_3chords_1___ia_thumb.jpg.info.json",
     "rbmsbk_ap2-v4_2001_V55N4%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/rbmsbk_ap2-v4_2001_V55N4__ia_thumb.jpg.info.json",
@@ -129,6 +133,7 @@ KNOWN_URLS = {
     "Waste-Management_Taster-Too-demo-2009%2Fwaste%20management%20inside_thumb.jpg/info.json": "tests/fixtures/info/Waste-Management_Taster-Too-demo-2009waste%20management%20inside_thumb.jpg.info.json",
     "Waste-Management_Taster-Too-demo-2009%2Fwaste%20management%20outside_thumb.jpg/info.json": "tests/fixtures/info/Waste-Management_Taster-Too-demo-2009waste%20management%20outside_thumb.jpg.info.json",
     "bub_gb_3Kt5kiw9KYcC%2F__ia_thumb.jpg/info.json": "tests/fixtures/info/bub_gb_3Kt5kiw9KYcC__ia_thumb.jpg.info.json",
+    "opencontext-41-nippur-excavation-units%2F41-nippur-excavation-units.jpg/info.json": "tests/fixtures/info/opencontext-41-nippur-excavation-units41-nippur-excavation-units.jpg.info.json",
 
     # BookReader
     "BookReaderJSIA.php?id=journalofexpedit00ford": "tests/fixtures/bookreader/journalofexpedit00ford.json",
@@ -142,8 +147,13 @@ KNOWN_URLS = {
     "BookReaderJSIA.php?id=balagzone_gmail": "tests/fixtures/bookreader/balagzone.json",
     "BookReaderJSIA.php?id=annualreport00carn_14": "tests/fixtures/bookreader/annualreport00carn_14.json",
     "BookReaderJSIA.php?id=st-anthony-relics-01": "tests/fixtures/bookreader/st-anthony-relics-01.json",
-    "BookReaderJSIA.php?id=bub_gb_3Kt5kiw9KYcC": "tests/fixtures/bookreader/bub_gb_3Kt5kiw9KYcC.json",
-
+    
+    # v2 book reader
+    "BookReaderJSON.php?itemId=rashodgson68": "tests/fixtures/bookreader/v2_rashodgson68.json",
+    "BookReaderJSON.php?itemId=1991-12-compute-magazine": "tests/fixtures/bookreader/v2_1991-12-compute-magazine.json",
+    "BookReaderJSON.php?itemId=fbf_3chords_1_": "tests/fixtures/bookreader/v2_fbf_3chords_1_.json",
+    "BookReaderJSON.php?itemId=bub_gb_3Kt5kiw9KYcC": "tests/fixtures/bookreader/bub_gb_3Kt5kiw9KYcC.json",
+    
     # Full text search, identified by the search term
     "journalofexpedit00ford&q=Brunswick": "tests/fixtures/search/fulltext-search.json",
     "journalofexpedit00ford&q=much": "tests/fixtures/search/2_boxes.json",

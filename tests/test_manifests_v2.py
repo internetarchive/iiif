@@ -2,14 +2,16 @@ import os
 
 import unittest
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
+from tests.mocks.mock_metadata import log_requests, mock_urls
 
 class TestManifests(unittest.TestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
         self.test_app = FlaskClient(app)
 
+    @mock_urls
     def test_v2_image_manifest(self):
         resp = self.test_app.get("/iiif/2/rashodgson68/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -21,6 +23,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(manifest['sequences'][0]['canvases'][0]['@id'],"https://iiif.archivelab.org/iiif/rashodgson68$0/canvas",f"v2 canvas id has changed")
 
 
+    @mock_urls
     def test_v2_image_api(self):
         resp = self.test_app.get("/iiif/2/1991-12-compute-magazine/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -31,6 +34,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(image['@id'], "https://iiif.archive.org/image/iiif/2/1991-12-compute-magazine%2fCompute_Issue_136_1991_Dec_jp2.zip%2fCompute_Issue_136_1991_Dec_jp2%2fCompute_Issue_136_1991_Dec_0000.jp2/full/full/0/default.jpg", "Resource not using new image server")
         self.assertEqual(image['service']['@id'], 'https://iiif.archive.org/image/iiif/2/1991-12-compute-magazine%2fCompute_Issue_136_1991_Dec_jp2.zip%2fCompute_Issue_136_1991_Dec_jp2%2fCompute_Issue_136_1991_Dec_0000.jp2', "V2 service not using the new image server")
 
+    @mock_urls
     def test_v2_single_image(self):
         resp = self.test_app.get("/iiif/2/img-8664_202009/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -43,6 +47,7 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(image['@id'], "https://iiif.archive.org/image/iiif/2/img-8664_202009%2FIMG_8664.jpg/full/full/0/default.jpg", "Resource not using new image server")
         self.assertEqual(image['service']['@id'], 'https://iiif.archive.org/image/iiif/2/img-8664_202009%2FIMG_8664.jpg', "V2 service not using the new image server")
 
+    @mock_urls
     def test_v2_single_text_manifest(self):
         resp = self.test_app.get("/iiif/2/fbf_3chords_1_/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -56,11 +61,13 @@ class TestManifests(unittest.TestCase):
         self.assertEqual(image['service']['@id'], 'https://iiif.archive.org/image/iiif/2/fbf_3chords_1_%2f3chords(1)_jp2.zip%2f3chords(1)_jp2%2f3chords(1)_0000.jp2', "V2 service not using the new image server")
 
 
+    @mock_urls
     def test_text_which_is_image(self):
         resp = self.test_app.get("/iiif/2/fbf_3chords_1_/manifest.json")
 
         self.assertEqual(resp.status_code, 200)
 
+    @mock_urls
     def test_brokenv2(self):
         resp = self.test_app.get("/iiif/2/opencontext-41-nippur-excavation-units/manifest.json")
 
@@ -73,6 +80,7 @@ class TestManifests(unittest.TestCase):
         self.assertTrue(imgSrv['@id'].startswith("https://iiif.archive.org/image/iiif/2"),"Expected v2 image service to use cantaloupe")
 
 
+    @mock_urls
     def test_single_page_of_multipage(self):
         resp = self.test_app.get("/iiif/2/bub_gb_3Kt5kiw9KYcC$8/manifest.json")
 
