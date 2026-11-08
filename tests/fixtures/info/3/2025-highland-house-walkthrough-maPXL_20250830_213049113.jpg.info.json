@@ -1,0 +1,77 @@
+{
+    "@context": "http://iiif.io/api/image/3/context.json",
+    "id": "https://iiif.archive.org/image/iiif/3/2025-highland-house-walkthrough-ma%2FPXL_20250830_213049113.jpg",
+    "type": "ImageService3",
+    "protocol": "http://iiif.io/api/image",
+    "profile": "level2",
+    "width": 4032,
+    "height": 3024,
+    "maxArea": 12192768,
+    "sizes": [
+        {
+            "width": 126,
+            "height": 95
+        },
+        {
+            "width": 252,
+            "height": 189
+        },
+        {
+            "width": 504,
+            "height": 378
+        },
+        {
+            "width": 1008,
+            "height": 756
+        },
+        {
+            "width": 2016,
+            "height": 1512
+        },
+        {
+            "width": 4032,
+            "height": 3024
+        }
+    ],
+    "tiles": [
+        {
+            "width": 512,
+            "height": 512,
+            "scaleFactors": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                32
+            ]
+        }
+    ],
+    "extraQualities": [
+        "bitonal",
+        "color",
+        "gray"
+    ],
+    "extraFormats": [
+        "tif",
+        "gif"
+    ],
+    "extraFeatures": [
+        "baseUriRedirect",
+        "canonicalLinkHeader",
+        "cors",
+        "jsonldMediaType",
+        "mirroring",
+        "profileLinkHeader",
+        "regionByPct",
+        "regionByPx",
+        "regionSquare",
+        "rotationArbitrary",
+        "rotationBy90s",
+        "sizeByConfinedWh",
+        "sizeByH",
+        "sizeByPct",
+        "sizeByW",
+        "sizeByWh"
+    ]
+}

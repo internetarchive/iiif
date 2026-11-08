@@ -11,6 +11,7 @@ mocked so the XML payload never leaves this process.
 """
 
 import unittest
+from tests.base import IIIFTestCase
 from unittest.mock import patch
 
 from iiify import resolver
@@ -62,7 +63,7 @@ XXE_PAYLOAD = (
 )
 
 
-class TestXPathInjection(unittest.TestCase):
+class TestXPathInjection(IIIFTestCase):
     """CodeQL #13 — canvas_no must be a positive integer."""
 
     def test_non_integer_canvas_no_rejected(self):
@@ -97,7 +98,7 @@ class TestXPathInjection(unittest.TestCase):
         self.assertTrue(result["items"][0]["target"].endswith("xywh=10,20,20,20"))
 
 
-class TestXmlBomb(unittest.TestCase):
+class TestXmlBomb(IIIFTestCase):
     """CodeQL #9 — hardened parser refuses entity expansion / external refs."""
 
     def test_billion_laughs_refused(self):

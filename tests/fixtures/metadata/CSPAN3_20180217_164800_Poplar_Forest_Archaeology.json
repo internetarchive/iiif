@@ -1,0 +1,557 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn710704.ca.archive.org",
+                "dir": "/0/items/CSPAN3_20180217_164800_Poplar_Forest_Archaeology"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn710704.ca.archive.org",
+                "dir": "/0/items/CSPAN3_20180217_164800_Poplar_Forest_Archaeology"
+            }
+        ]
+    },
+    "created": 1794001271,
+    "d1": "dn800302.us.archive.org",
+    "dir": "/0/items/CSPAN3_20180217_164800_Poplar_Forest_Archaeology",
+    "files": [
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.align.srt",
+            "source": "derivative",
+            "format": "SubRip",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518889345",
+            "size": "13368",
+            "md5": "39e96c8fe0cb0b91a8e96eb8cdca2ea2",
+            "crc32": "cfdfb81f",
+            "sha1": "fdb30a662a33e2faa02bfbba920d0548d39aa7de",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.cc1.srt",
+            "source": "derivative",
+            "format": "SubRip",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518889253",
+            "size": "18179",
+            "md5": "aa33e189e5f78d37d5812b90cd92f4db",
+            "crc32": "2f202387",
+            "sha1": "0028fb25c6d7f59be162e55d1ab9e6c4e86a05f0",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.cc1.txt",
+            "source": "derivative",
+            "format": "Closed Caption Text",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518889248",
+            "size": "12871",
+            "md5": "ad5da40a03ad68231d1c08f481a6a6cf",
+            "crc32": "80daca87",
+            "sha1": "e713ccca8b06f128dcb41690f5b68a806aaebba3",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.cc5.srt",
+            "source": "derivative",
+            "format": "SubRip",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518889253",
+            "size": "17932",
+            "md5": "81be6cac8734f5f88de590536894df88",
+            "crc32": "2ee4ff98",
+            "sha1": "57cabaad9e15d1a470de48c2b0523f75d71a93fb",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.cc5.txt",
+            "source": "derivative",
+            "format": "Closed Caption Text",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518889252",
+            "size": "12863",
+            "md5": "58e57f8b448b89bebf3255f2247c0f86",
+            "crc32": "1fb6c65c",
+            "sha1": "c171134eded914620507254233db618ac6d413fe",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.json",
+            "source": "derivative",
+            "format": "JSON",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.cc1.srt",
+            "mtime": "1518889436",
+            "size": "8814",
+            "md5": "11ae9ed727c9f382e6c1b1b6f0bdf82f",
+            "crc32": "7979746c",
+            "sha1": "9c7553de1d6d022aee20f7bb1400852bb01761ff",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mp3",
+            "source": "derivative",
+            "bitrate": "96",
+            "length": "13:00",
+            "format": "MP3",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887457",
+            "size": "9371080",
+            "md5": "5668e9b8bd78f5381247e7093f6e59c3",
+            "crc32": "ef22f242",
+            "sha1": "5ec2cd862ef9610e4ba28bb5e18b44223ccd0cee",
+            "height": "0",
+            "width": "0",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mp4",
+            "source": "derivative",
+            "format": "h.264",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518889223",
+            "size": "80999971",
+            "md5": "fda37eb6b95dfe9c409a0db2669982c4",
+            "crc32": "145a9b0c",
+            "sha1": "f6d91f2beea36840b81b625722bebd3f22e4bde2",
+            "length": "780.88",
+            "height": "480",
+            "width": "640",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "source": "original",
+            "mtime": "1518887391",
+            "size": "255676416",
+            "md5": "a138817af6ea3cbb0424da3bb75cd279",
+            "crc32": "f92fae20",
+            "sha1": "98e40511ae49ff44efd9da3516e0348e3741d3a3",
+            "format": "MPEG2",
+            "length": "780.89",
+            "height": "480",
+            "width": "640",
+            "private": "true"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000001.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887532",
+            "size": "7457",
+            "md5": "6a90ff946729ceaeff726ae7aef2a588",
+            "crc32": "2a1e770e",
+            "sha1": "076e683f400c6c402d34609db987d1f156bc073b"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000057.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887539",
+            "size": "7164",
+            "md5": "269fc53bb938e5889aa438b991351fb9",
+            "crc32": "2f1a789a",
+            "sha1": "b45e4e399d55b81aa89c0186b471c50c86c78b95"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000087.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887546",
+            "size": "7564",
+            "md5": "a56f3efbc3470508f3428faebfe5401e",
+            "crc32": "e23f93aa",
+            "sha1": "4d7e510c91e8cc061aa50b28ccba9585b30f76fd"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000117.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887553",
+            "size": "7287",
+            "md5": "64ab7efa08ab5d35041adf3f9bcd7278",
+            "crc32": "f2e6dfbe",
+            "sha1": "f295084b6bfd0adf8fb6b1593f7f5893c6bd0c5c"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000147.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887560",
+            "size": "7852",
+            "md5": "c16a7f0ecad33b5c4b338cb3180230a5",
+            "crc32": "9afe193a",
+            "sha1": "0b19e498fe35ca7124653c6b8456e70fe88b45df"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000177.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887567",
+            "size": "6664",
+            "md5": "d26411843254ac1342b1609afee06993",
+            "crc32": "51dbe6ba",
+            "sha1": "0192e91322786b8f25740bab383adfd458df301a"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000207.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887574",
+            "size": "6890",
+            "md5": "075bac9af26b27ac540e4c3958b12c0c",
+            "crc32": "59555e33",
+            "sha1": "1ae348387f6465cca2db25cd01791c931dfe1108"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000237.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887580",
+            "size": "6872",
+            "md5": "2ee5a0be95840df1102ceec4bfb0a745",
+            "crc32": "ab28ea63",
+            "sha1": "7090966d84c9d45fc3c9beb8a0453795f960ae29"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000267.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887588",
+            "size": "6894",
+            "md5": "c44375f3bff9d4dbe1969b574ad2e32c",
+            "crc32": "6f553b3f",
+            "sha1": "cc47846612e6a9bb3d3f02ef97b7173675a21214"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000297.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887595",
+            "size": "7585",
+            "md5": "dc7d1cc9779a507e622de9b4dacb9f32",
+            "crc32": "2ed2a1d6",
+            "sha1": "ea7423c3228375f1191e2ca89e4571fcbf4871da"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000327.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887603",
+            "size": "4554",
+            "md5": "3b1eae53f246e6b55fa85ddbce8848dd",
+            "crc32": "e46dcb84",
+            "sha1": "eb833034d81a7ef019461f8f3acb4e29049f9b7f"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000357.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887610",
+            "size": "8327",
+            "md5": "8a3daca466967d023c740803af8ca5f8",
+            "crc32": "ef2c8c8e",
+            "sha1": "03eb5b8330a9e5d4b73708f8f9ca001ff5ae3861"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000387.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887617",
+            "size": "8883",
+            "md5": "28f6e9090a9ec463d1a9c41d20d77800",
+            "crc32": "ea7c051b",
+            "sha1": "67b56bc5bdd5c41a16c2b3e00b75f5ff7a44043f"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000417.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887625",
+            "size": "6341",
+            "md5": "e5250a61e4a0110d3799ba7399b32e0e",
+            "crc32": "2dfaa9a8",
+            "sha1": "47bea47da90209c58b8b6ce8142dac5a2ca00d9f"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000447.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887632",
+            "size": "6616",
+            "md5": "572e7205b6a97f72068699094c24f98a",
+            "crc32": "96484b34",
+            "sha1": "7e97113ae64f5c6f0d3e2e127026886b263c8fdf"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000477.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887639",
+            "size": "6402",
+            "md5": "1c3d3f6c7d23ad402582a6fbfdee5b0c",
+            "crc32": "6951d425",
+            "sha1": "685b1afdb576bc0cf596bdde0be9b2ed1f1d232a"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000507.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887646",
+            "size": "6716",
+            "md5": "b04fa69199b001db03d0e99950a50396",
+            "crc32": "d2217986",
+            "sha1": "3d4192dddb5b9f377c93425230616ed25b638d38"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000537.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887653",
+            "size": "6302",
+            "md5": "e99a4430305949bc3052d987e40f0801",
+            "crc32": "dc755ff9",
+            "sha1": "ee019c48f591ae0627e4e586c51dc4de36797ea9"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000567.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887660",
+            "size": "6633",
+            "md5": "2f59a348ce8ef574c159376970b808c7",
+            "crc32": "29764186",
+            "sha1": "505579bfc8ba8ad58157de251c2d01a0b745fe4b"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000597.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887667",
+            "size": "5609",
+            "md5": "c006d472861c53a1aecd931fdc428b65",
+            "crc32": "6174abc6",
+            "sha1": "ce88025c3084747aff330d38da171c60606854d3"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000627.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887674",
+            "size": "5734",
+            "md5": "ae95f12aa05926954c2217593fe65e4d",
+            "crc32": "4112de04",
+            "sha1": "cfffc085f2b0d8b8a5775b26c7ba24dce86d5184"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000657.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887681",
+            "size": "5766",
+            "md5": "b8006b25bae20791101b91a991c48872",
+            "crc32": "d5725ed2",
+            "sha1": "3084369e4398a5d1e322119768143dc6a2384045"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000687.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887689",
+            "size": "5734",
+            "md5": "53c3405ad6ddf9b8758d86a9bdb5d672",
+            "crc32": "b250f39d",
+            "sha1": "cdf7c913efe2796cc7c37ee66c5f3c8667899f88"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000717.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887696",
+            "size": "4508",
+            "md5": "0c6c002435f6dd63d7b1b17dcb49cf5a",
+            "crc32": "4d316878",
+            "sha1": "751b6eb7c11c7a9b87571709118cc6eb1e2b54e1"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000747.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887704",
+            "size": "4507",
+            "md5": "d730f3913c40906980fb28a2dd375ea8",
+            "crc32": "70483953",
+            "sha1": "153d1811d6bd33f45c5ae9ffbf33aa8b4b711b02"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.thumbs/CSPAN3_20180217_164800_Poplar_Forest_Archaeology_000777.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mpg",
+            "mtime": "1518887711",
+            "size": "3860",
+            "md5": "aff67ce83dd1e3727f47416216514513",
+            "crc32": "fe5d4255",
+            "sha1": "d11e000dc3ec728b73b7f3617587cc87ada75767"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.xml",
+            "source": "original",
+            "format": "Metadata",
+            "mtime": "1518887392",
+            "size": "749",
+            "md5": "ed20ac9771dbc5f3f1c30d94e9e4ca5f",
+            "crc32": "ca988084",
+            "sha1": "7179412eb043734e43b339b1fe15a5aa8ecb7c47"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "7690d96317ee9d1ec910e444df99b561",
+            "summation": "md5"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology_meta.xml",
+            "source": "original",
+            "mtime": "1576730268",
+            "size": "3601",
+            "format": "Metadata",
+            "md5": "ce70ebc8780dd1438e2b7c0d75e250e3",
+            "crc32": "6d0d3a3b",
+            "sha1": "3f1b0c2ddbaa665d8973c3346229bbd9b76d5295"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology_tva.afpt",
+            "source": "derivative",
+            "format": "Columbia Fingerprint TV",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mp3",
+            "mtime": "1518887512",
+            "size": "449048",
+            "md5": "77925c197bf3f557e91df42a93eb6d11",
+            "crc32": "24de0e3b",
+            "sha1": "937e2892d7c4196c7f40c5070c1c5fb248a61973"
+        },
+        {
+            "name": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology_tva20.afpt",
+            "source": "derivative",
+            "format": "Columbia Sparse Fingerprint TV",
+            "original": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology.mp3",
+            "mtime": "1518887523",
+            "size": "112240",
+            "md5": "c95e791a571a0b0ee7f84eef98c970c1",
+            "crc32": "9be69e2d",
+            "sha1": "361bbe08a9eceb9273b0772d312d50575a4a362e"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1550112198",
+            "size": "7821",
+            "md5": "2d7c8cbde7005b66777a966f88a98a96",
+            "crc32": "2455a026",
+            "sha1": "46304c1da729b0cfb937adc44494ffa06bd776d5",
+            "format": "Item Tile",
+            "rotation": "0"
+        }
+    ],
+    "files_count": 41,
+    "item_last_updated": 1724936252,
+    "item_size": 346873674,
+    "metadata": {
+        "identifier": "CSPAN3_20180217_164800_Poplar_Forest_Archaeology",
+        "mediatype": "movies",
+        "contributor": "CSPAN3",
+        "sound": "sound",
+        "color": "color",
+        "title": "Poplar Forest Archaeology : CSPAN3 : February 17, 2018 11:48am-12:01pm EST",
+        "imagecount": "780",
+        "runtime": "00:13:00",
+        "date": "2018-02-17",
+        "year": "2018",
+        "start_time": "2018-02-17 16:48:00",
+        "stop_time": "2018-02-17 17:01:00",
+        "utc_offset": "-500",
+        "start_localtime": "2018-02-17 11:48:00",
+        "frames_per_second": "29.97",
+        "audio_codec": "ac3",
+        "video_codec": "mpeg2video",
+        "audio_sample_rate": "48000",
+        "source_pixel_width": "720",
+        "source_pixel_height": "480",
+        "aspect_ratio": "4:3",
+        "uploader": "tv@archive.org",
+        "sponsor": "Internet Archive",
+        "identifier-access": "https://archive.org/details/CSPAN3_20180217_164800_Poplar_Forest_Archaeology",
+        "scandate": "20180217164800",
+        "publicdate": "2018-02-17 16:48:00",
+        "language": "eng",
+        "collection": [
+            "TV-CSPAN3",
+            "tvarchive",
+            "tvnews"
+        ],
+        "program": "Poplar Forest Archaeology",
+        "description": "Jack Gary, Director of Archaeology and Landscapes, talked about some of the items found at Thomas Jefferson's Poplar Forest including pieces that tell the story of slave life, trades practiced, and how Jefferson envisioned the site.<br /><br />Sponsor: C-SPAN | Local Content Vehicle",
+        "source": "Comcast Cable",
+        "tuner": "Virtual Ch. 110",
+        "scanningcenter": "San Francisco, CA, USA",
+        "closed_captioning": "yes",
+        "ccnum": "cc5",
+        "subject": [
+            "thomas jefferson",
+            "jefferson",
+            "lynchburg",
+            "virginia"
+        ],
+        "thumbs": "57,87,117,147,177,207,237,267,297,327,357,387,417,447,477,507,537,567,597,627,657,687,717,747,777",
+        "times": "1,3,6,9,11,12,15,16,17,19,22,24,28,28,31,34,36,37,38,41,42,44,46,49,52,54,55,57,61,62,65,66,68,70,72,74,77,79,83,83,87,90,92,93,94,98,100,102,104,107,109,109,111,115,118,118,120,122,126,126,127,129,133,134,138,141,143,144,147,150,152,158,159,162,163,167,169,172,182,186,188,191,194,196,201,205,206,210,212,215,217,221,224,227,231,232,236,237,241,243,244,247,248,254,255,257,258,258,262,265,267,269,269,272,273,279,279,284,285,288,291,294,298,303,304,307,308,309,311,314,319,319,323,326,326,331,336,336,339,341,343,345,350,353,354,354,356,357,360,362,366,368,374,377,378,383,387,389,391,395,397,400,402,406,411,413,415,415,419,422,424,431,432,433,438,439,440,441,443,445,448,451,452,455,458,464,464,466,472,472,475,477,481,482,484,488,492,494,495,500,500,501,505,507,512,516,517,518,520,522,524,527,530,531,532,537,539,541,544,548,552,556,559,569,570,571,576,577,580,584,585,586,589,593,595,597,598,601,605,605,608,609,613,614,616,616,618,622,623,625,628,631,632,635,640,641,647,649,650,651,655,656,659,660,662,666,669,674,676,678,680,683,684,688,693,697,699,700,703,705,708,709,711,715,721,721,725,726,726,733,734,735,737,742,743,744,747,747,749,750,752,756,760,765,766,768,769,771,773,774,778",
+        "notes": "This material may be protected by copyright law (Title 17 U.S. Code).",
+        "backup_location": "ia906608_32",
+        "addeddate": "2018-02-17 16:48:00",
+        "access-restricted-item": "true"
+    },
+    "server": "dn800302.us.archive.org",
+    "simplelists": {
+        "solo_manifest": {
+            "solo_manifest_dn800302": {
+                "sys_changed_by": {
+                    "source": "task",
+                    "task_id": "5433917622"
+                },
+                "sys_last_changed": "2026-06-12 19:01:01.670449"
+            }
+        }
+    },
+    "solo": true,
+    "uniq": 1263312319,
+    "workable_servers": [
+        "dn800302.us.archive.org"
+    ]
+}

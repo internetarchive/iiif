@@ -1,0 +1,3440 @@
+{
+    "data": {
+        "data": {
+            "streamOnly": false,
+            "isRestricted": false,
+            "id": "bub_gb_3Kt5kiw9KYcC",
+            "subPrefix": "bub_gb_3Kt5kiw9KYcC",
+            "bookUrl": "/details/bub_gb_3Kt5kiw9KYcC",
+            "bookUri": "https://archive.org/details/bub_gb_3Kt5kiw9KYcC",
+            "downloadUrls": [
+                [
+                    "PDF",
+                    "//archive.org/download/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC.pdf"
+                ],
+                [
+                    "ePub",
+                    "//archive.org/download/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC.epub"
+                ],
+                [
+                    "Plain Text",
+                    "//archive.org/download/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_djvu.txt"
+                ],
+                [
+                    "DAISY",
+                    "//archive.org/download/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_daisy.zip"
+                ],
+                [
+                    "Kindle",
+                    "//archive.org/download/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC.mobi"
+                ]
+            ]
+        },
+        "brOptions": {
+            "bookId": "bub_gb_3Kt5kiw9KYcC",
+            "bookPath": "/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC",
+            "imageFormat": "jp2",
+            "server": "ia800604.us.archive.org",
+            "subPrefix": "bub_gb_3Kt5kiw9KYcC",
+            "zip": "/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip",
+            "bookTitle": "Gulielmi Harveii, ... De motu cordis & sanguinis in animalibus, anatomica exercitatio. Cum refutationibus Aemylii Parisani, Romani, ... et Iacobi Primirosii, in Londinensi collegio doctoris medici ",
+            "bookLanguage": "Latin",
+            "ppi": 500,
+            "titleLeaf": 4,
+            "defaultStartLeaf": 0,
+            "pageProgression": "lr",
+            "vars": {
+                "bookId": "bub_gb_3Kt5kiw9KYcC",
+                "bookPath": "/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC",
+                "server": "ia800604.us.archive.org",
+                "subPrefix": "bub_gb_3Kt5kiw9KYcC"
+            },
+            "plugins": {
+                "chapters": {
+                    "openLibraryId": null,
+                    "internetArchiveId": "bub_gb_3Kt5kiw9KYcC",
+                    "enabled": false
+                },
+                "search": {
+                    "enabled": true,
+                    "preTag": "<IA_FTS_MATCH>",
+                    "postTag": "</IA_FTS_MATCH>",
+                    "searchInsideUrl": "//{{server}}/fulltext/inside.php?item_id={{bookId|urlencode}}&doc={{subPrefix|urlencode}}&q={{query|urlencode}}&path=/15/items/bub_gb_3Kt5kiw9KYcC&pre_tag={{preTag|urlencode}}&post_tag={{postTag|urlencode}}"
+                },
+                "tts": {
+                    "enabled": true,
+                    "pageChunkUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&page={{pageIndex}}&callback=false",
+                    "remoteTtsUrl": "https://{{server}}/BookReader/BookReaderGetTTS.php?string={{text|urlencode}}&format={{format}}"
+                },
+                "textSelection": {
+                    "enabled": true,
+                    "singlePageDjvuXmlUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&mode=djvu_xml&page={{pageIndex}}"
+                }
+            },
+            "unviewablePageURI": "/bookreader/static/preview-default.png",
+            "data": [
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0000.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 0,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1996,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0001.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 1,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0002.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 2,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0003.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1994,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0004.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 4,
+                        "pageType": "Title",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1986,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0005.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 5,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0006.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 6,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1998,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0007.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 7,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0008.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 8,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0009.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 9,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0010.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 10,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2004,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0011.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 11,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0012.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 12,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2022,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0013.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 13,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0014.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 14,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0015.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 15,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2006,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0016.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 16,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1982,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0017.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 17,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2004,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0018.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 18,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1992,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0019.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 19,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1982,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0020.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 20,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0021.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 21,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0022.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 22,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1974,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0023.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 23,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0024.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 24,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1961,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0025.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 25,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1986,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0026.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 26,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0027.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 27,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0028.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 28,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1934,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0029.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 29,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0030.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 30,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2006,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0031.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 31,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2026,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0032.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 32,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1988,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0033.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 33,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0034.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 34,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1927,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0035.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 35,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1927,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0036.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 36,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0037.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 37,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0038.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 38,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1990,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0039.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 39,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0040.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 40,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1990,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0041.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 41,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2016,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0042.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 42,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0043.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 43,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0044.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 44,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1994,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0045.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 45,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0046.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 46,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0047.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 47,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1940,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0048.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 48,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1982,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0049.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 49,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0050.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 50,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1982,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0051.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 51,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0052.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 52,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1923,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0053.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 53,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0054.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 54,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1944,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0055.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 55,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1998,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0056.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 56,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0057.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 57,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0058.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 58,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1929,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0059.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 59,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0060.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 60,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1974,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0061.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 61,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1994,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0062.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 62,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0063.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 63,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1988,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0064.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 64,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0065.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 65,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0066.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 66,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0067.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 67,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1990,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0068.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 68,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0069.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 69,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1990,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0070.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 70,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0071.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 71,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1998,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0072.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 72,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0073.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 73,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0074.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 74,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0075.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 75,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0076.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 76,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0077.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 77,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0078.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 78,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0079.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 79,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1974,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0080.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 80,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0081.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 81,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2008,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0082.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 82,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1932,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0083.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 83,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0084.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 84,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0085.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 85,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0086.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 86,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1947,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0087.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 87,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0088.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 88,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0089.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 89,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0090.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 90,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0091.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 91,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2022,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0092.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 92,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0093.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 93,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0094.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 94,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0095.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 95,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0096.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 96,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0097.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 97,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0098.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 98,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0099.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 99,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1931,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0100.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 100,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2004,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0101.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 101,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0102.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 102,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0103.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 103,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1938,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0104.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 104,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0105.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 105,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1988,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0106.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 106,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0107.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 107,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0108.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 108,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1988,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0109.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 109,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1961,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0110.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 110,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0111.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 111,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1944,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0112.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 112,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0113.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 113,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0114.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 114,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0115.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 115,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2000,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0116.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 116,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0117.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 117,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2002,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0118.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 118,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0119.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 119,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0120.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 120,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0121.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 121,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0122.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 122,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0123.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 123,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1944,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0124.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 124,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0125.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 125,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0126.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 126,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1961,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0127.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 127,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0128.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 128,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0129.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 129,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1944,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0130.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 130,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1921,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0131.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 131,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1942,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0132.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 132,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1938,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0133.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 133,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1944,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0134.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 134,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1982,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0135.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 135,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0136.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 136,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1929,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0137.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 137,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0138.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 138,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2008,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0139.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 139,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0140.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 140,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2002,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0141.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 141,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0142.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 142,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1990,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0143.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 143,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0144.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 144,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0145.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 145,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1947,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0146.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 146,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2008,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0147.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 147,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0148.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 148,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0149.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 149,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0150.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 150,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1986,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0151.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 151,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1938,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0152.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 152,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0153.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 153,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0154.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 154,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1963,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0155.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 155,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0156.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 156,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0157.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 157,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1961,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0158.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 158,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0159.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 159,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0160.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 160,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0161.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 161,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2018,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0162.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 162,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0163.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 163,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2000,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0164.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 164,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0165.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 165,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0166.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 166,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2004,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0167.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 167,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0168.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 168,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1986,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0169.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 169,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0170.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 170,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1923,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0171.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 171,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0172.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 172,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0173.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 173,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0174.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 174,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0175.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 175,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1992,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0176.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 176,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0177.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 177,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0178.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 178,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0179.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 179,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0180.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 180,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1934,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0181.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 181,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1982,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0182.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 182,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2006,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0183.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 183,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1992,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0184.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 184,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1988,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0185.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 185,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2039,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0186.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 186,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0187.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 187,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0188.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 188,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1990,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0189.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 189,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1963,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0190.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 190,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0191.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 191,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1918,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0192.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 192,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1934,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0193.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 193,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0194.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 194,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0195.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 195,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0196.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 196,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1923,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0197.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 197,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1963,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0198.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 198,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1931,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0199.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 199,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1919,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0200.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 200,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1921,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0201.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 201,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0202.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 202,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1925,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0203.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 203,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0204.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 204,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1961,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0205.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 205,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0206.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 206,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0207.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 207,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1932,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0208.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 208,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1932,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0209.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 209,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1931,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0210.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 210,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1974,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0211.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 211,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1947,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0212.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 212,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0213.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 213,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1918,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0214.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 214,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1947,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0215.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 215,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0216.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 216,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2002,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0217.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 217,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1908,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0218.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 218,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0219.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 219,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1925,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0220.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 220,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1963,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0221.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 221,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0222.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 222,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0223.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 223,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0224.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 224,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0225.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 225,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0226.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 226,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0227.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 227,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0228.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 228,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1974,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0229.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 229,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0230.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 230,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0231.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 231,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0232.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 232,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1988,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0233.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 233,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1974,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0234.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 234,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0235.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 235,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0236.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 236,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0237.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 237,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1947,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0238.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 238,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1998,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0239.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 239,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0240.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 240,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1998,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0241.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 241,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1946,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0242.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 242,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1986,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0243.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 243,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1986,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0244.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 244,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0245.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 245,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0246.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 246,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1963,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0247.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 247,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1963,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0248.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 248,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1988,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0249.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 249,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1990,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0250.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 250,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0251.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 251,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1992,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0252.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 252,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0253.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 253,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1992,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0254.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 254,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0255.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 255,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0256.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 256,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0257.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 257,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0258.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 258,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0259.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 259,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1963,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0260.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 260,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1974,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0261.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 261,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0262.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 262,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1938,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0263.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 263,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1938,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0264.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 264,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1996,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0265.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 265,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1910,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0266.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 266,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1919,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0267.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 267,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1921,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0268.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 268,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0269.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 269,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0270.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 270,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0271.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 271,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1932,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0272.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 272,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0273.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 273,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0274.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 274,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2006,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0275.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 275,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0276.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 276,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2077,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0277.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 277,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0278.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 278,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0279.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 279,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0280.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 280,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0281.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 281,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1992,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0282.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 282,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0283.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 283,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0284.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 284,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1986,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0285.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 285,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0286.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 286,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1961,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0287.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 287,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0288.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 288,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0289.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 289,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0290.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 290,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0291.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 291,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1994,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0292.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 292,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1961,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0293.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 293,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1953,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0294.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 294,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0295.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 295,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1963,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0296.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 296,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0297.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 297,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0298.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 298,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1976,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0299.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 299,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1940,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0300.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 300,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1984,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0301.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 301,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1938,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0302.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 302,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0303.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 303,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0304.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 304,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0305.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 305,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1936,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0306.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 306,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0307.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 307,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0308.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 308,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1982,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0309.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 309,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1934,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0310.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 310,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1996,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0311.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 311,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0312.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 312,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1969,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0313.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 313,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1982,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0314.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 314,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0315.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 315,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1929,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0316.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 316,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0317.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 317,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1934,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0318.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 318,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0319.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 319,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1918,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0320.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 320,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0321.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 321,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1974,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0322.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 322,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0323.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 323,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0324.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 324,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0325.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 325,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1947,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0326.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 326,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1970,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0327.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 327,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1934,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0328.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 328,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0329.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 329,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1932,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0330.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 330,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1947,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0331.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 331,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1938,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0332.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 332,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1967,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0333.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 333,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1947,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0334.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 334,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1940,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0335.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 335,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0336.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 336,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0337.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 337,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1940,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0338.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 338,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1932,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0339.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 339,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1919,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0340.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 340,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1949,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0341.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 341,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1957,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0342.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 342,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1944,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0343.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 343,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1938,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0344.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 344,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0345.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 345,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1942,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0346.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 346,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1942,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0347.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 347,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1936,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0348.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 348,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1910,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0349.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 349,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1914,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0350.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 350,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1940,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0351.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 351,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1907,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0352.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 352,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1978,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0353.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 353,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1951,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0354.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 354,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1961,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0355.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 355,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1955,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0356.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 356,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1931,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0357.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 357,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1980,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0358.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 358,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1972,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0359.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 359,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1916,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0360.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 360,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1901,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0361.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 361,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1959,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0362.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 362,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1910,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0363.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 363,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1936,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0364.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 364,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1914,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0365.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 365,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1965,
+                        "height": 2500,
+                        "uri": "https://ia800604.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/bub_gb_3Kt5kiw9KYcC/bub_gb_3Kt5kiw9KYcC_jp2.zip&file=bub_gb_3Kt5kiw9KYcC_jp2/bub_gb_3Kt5kiw9KYcC_0366.jp2&id=bub_gb_3Kt5kiw9KYcC",
+                        "leafNum": 366,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ]
+            ]
+        },
+        "lendingInfo": {
+            "lendingStatus": null,
+            "userid": 0,
+            "isAdmin": false,
+            "isArchiveOrgLending": false,
+            "isOpenLibraryLending": false,
+            "isLendingRequired": false,
+            "isBrowserBorrowable": false,
+            "isPrintDisabledOnly": false,
+            "isAvailable": false,
+            "isAvailableForBrowsing": false,
+            "userHasBorrowed": false,
+            "userHasBrowsed": false,
+            "userOnWaitingList": false,
+            "userHoldIsReady": false,
+            "userIsPrintDisabled": false,
+            "shouldProtectImages": false,
+            "daysLeftOnLoan": 0,
+            "secondsLeftOnLoan": 0,
+            "loansUrl": "",
+            "bookUrl": "",
+            "loanCount": 0,
+            "totalWaitlistCount": 0,
+            "userWaitlistPosition": -1,
+            "maxLoans": 10,
+            "loanRecord": []
+        },
+        "metadata": {
+            "identifier": "bub_gb_3Kt5kiw9KYcC",
+            "creator": "William Harvey",
+            "date": "1639",
+            "google-id": "3Kt5kiw9KYcC",
+            "language": "Latin",
+            "licenseurl": "http://creativecommons.org/publicdomain/mark/1.0/",
+            "mediatype": "texts",
+            "publisher": "ex officina Ioannis Maire",
+            "scanner": "google",
+            "source": "http://books.google.com/books?id=3Kt5kiw9KYcC&hl=&source=gbs_api",
+            "sponsor": "Google",
+            "subject": "bub_upload",
+            "title": "Gulielmi Harveii, ... De motu cordis & sanguinis in animalibus, anatomica exercitatio. Cum refutationibus Aemylii Parisani, Romani, ... et Iacobi Primirosii, in Londinensi collegio doctoris medici ",
+            "year": "1639",
+            "publicdate": "2016-06-03 05:34:34",
+            "collection": [
+                "europeanlibraries"
+            ],
+            "uploader": "tools.bub@tools.wmflabs.org",
+            "addeddate": "2016-06-03 05:34:34",
+            "curation": "[curator]validator@archive.org[/curator][date]20160603053506[/date][comment]checked for malware[/comment]",
+            "contributor": "National Central Library of Rome",
+            "identifier-access": "http://archive.org/details/bub_gb_3Kt5kiw9KYcC",
+            "identifier-ark": "ark:/13960/t96735b07",
+            "imagecount": "368",
+            "ocr": "ABBYY FineReader 11.0",
+            "repub_state": "4",
+            "backup_location": "ia906109_29"
+        }
+    }
+}

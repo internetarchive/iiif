@@ -1,6 +1,7 @@
 import shutil
 import tempfile
 import unittest
+from tests.base import IIIFTestCase
 from unittest.mock import patch
 
 from flask.testing import FlaskClient
@@ -23,7 +24,7 @@ def cachedViews():
         if hasattr(view, 'uncached'):  # flask_caching marks its decorated views
             yield rule, view
 
-class TestRequestedDomain(unittest.TestCase):
+class TestRequestedDomain(IIIFTestCase):
 
     def setUp(self) -> None:
         # flask_caching binds a FileSystemCache in ./cache at import time, so setting
@@ -39,7 +40,7 @@ class TestRequestedDomain(unittest.TestCase):
         # Leave the binding pointing somewhere that exists: the module-global cache
         # outlives this class, and later test modules would otherwise write into a
         # directory we just deleted.
-        cache.init_app(app, config={'CACHE_TYPE': 'NullCache'})
+        cache.init_app(app, config={'CACHE_TYPE': 'NullCache','CACHE_NO_NULL_WARNING': True})
 
     def assertNotPoisoned(self, attacker, host="iiif.archive.org"):
         """An attacker request must not change what the next plain caller is served.

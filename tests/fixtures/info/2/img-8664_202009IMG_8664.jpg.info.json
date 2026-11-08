@@ -1,0 +1,86 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json",
+    "@id": "https://iiif.archive.org/image/iiif/2/img-8664_202009%2FIMG_8664.jpg",
+    "protocol": "http://iiif.io/api/image",
+    "width": 4032,
+    "height": 3024,
+    "sizes": [
+        {
+            "width": 126,
+            "height": 95
+        },
+        {
+            "width": 252,
+            "height": 189
+        },
+        {
+            "width": 504,
+            "height": 378
+        },
+        {
+            "width": 1008,
+            "height": 756
+        },
+        {
+            "width": 2016,
+            "height": 1512
+        },
+        {
+            "width": 4032,
+            "height": 3024
+        }
+    ],
+    "tiles": [
+        {
+            "width": 512,
+            "height": 512,
+            "scaleFactors": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                32
+            ]
+        }
+    ],
+    "profile": [
+        "http://iiif.io/api/image/2/level2.json",
+        {
+            "formats": [
+                "tif",
+                "jpg",
+                "gif",
+                "png"
+            ],
+            "maxArea": 12192768,
+            "qualities": [
+                "bitonal",
+                "default",
+                "gray",
+                "color"
+            ],
+            "supports": [
+                "regionByPx",
+                "sizeByW",
+                "sizeByWhListed",
+                "cors",
+                "regionSquare",
+                "sizeByDistortedWh",
+                "canonicalLinkHeader",
+                "sizeByConfinedWh",
+                "sizeByPct",
+                "jsonldMediaType",
+                "regionByPct",
+                "rotationArbitrary",
+                "sizeByH",
+                "baseUriRedirect",
+                "rotationBy90s",
+                "profileLinkHeader",
+                "sizeByForcedWh",
+                "sizeByWh",
+                "mirroring"
+            ]
+        }
+    ]
+}

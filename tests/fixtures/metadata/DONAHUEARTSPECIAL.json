@@ -1,0 +1,541 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721605.ca.archive.org",
+                "dir": "/0/items/DONAHUEARTSPECIAL"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721605.ca.archive.org",
+                "dir": "/0/items/DONAHUEARTSPECIAL"
+            }
+        ]
+    },
+    "created": 1794013953,
+    "d1": "dn801200.us.archive.org",
+    "dir": "/0/items/DONAHUEARTSPECIAL",
+    "files": [
+        {
+            "name": "DONAHUEARTSPECIAL.mp4",
+            "source": "derivative",
+            "format": "h.264",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1692008726",
+            "size": "216778329",
+            "md5": "24b022dc8dbc526065ec9728b3304106",
+            "crc32": "546aaa92",
+            "sha1": "b136151599760e2fdd6caf29f079d712e33f8b64",
+            "length": "2177.07",
+            "width": "640",
+            "height": "480"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.mpg",
+            "source": "original",
+            "mtime": "1691997669",
+            "size": "1184307200",
+            "md5": "c71d5e30d218dd094013b989923ff920",
+            "crc32": "dd5b2ed1",
+            "sha1": "bdfba309c2f9b7cf7c29a113399433cb2c07bd12",
+            "format": "MPEG2",
+            "length": "2177.02",
+            "width": "768",
+            "height": "576"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000001.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998703",
+            "size": "41571",
+            "md5": "aff10a78dfcbb61a4527efb531b548aa",
+            "crc32": "7194a833",
+            "sha1": "67c8b5399f9661ce66235faa99a3e53055a7b9a3"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000002.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998950",
+            "size": "56116",
+            "md5": "81e44b8880249c9303e727e0431fa813",
+            "crc32": "68639070",
+            "sha1": "42531087d96dafbcfe482cc688b559ed559eb2e1"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000114.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998715",
+            "size": "53922",
+            "md5": "a9b2e038c1bf01ecc33d53d769af4d48",
+            "crc32": "72008839",
+            "sha1": "f745dd15bbaf2e103e1eefd672ae99651304253f"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000174.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998728",
+            "size": "55707",
+            "md5": "ed7e05eeb5018760b7146eaf82baad8a",
+            "crc32": "d5dfaaea",
+            "sha1": "ec0912ff36a6d71aae0b459afb9cc6dda3671dd6"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000234.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998741",
+            "size": "62876",
+            "md5": "f73df9b484e76f204b6f0f1fc7c70b75",
+            "crc32": "2a3844e5",
+            "sha1": "0f5c601ebcc49cd90339ba175641ca5c72a5316c"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000294.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998753",
+            "size": "67928",
+            "md5": "47f175a53420afc3373673ecb5c7eccb",
+            "crc32": "42d30632",
+            "sha1": "147bcc5fe768c0bd71f10a6d6285e20000b60856"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000354.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998765",
+            "size": "63556",
+            "md5": "ab8b3f365ca71d2e858d1e52e28be94f",
+            "crc32": "122d136f",
+            "sha1": "236d99e0a50615ffc8021741c77d48f3fdc3f38a"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000414.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998777",
+            "size": "44957",
+            "md5": "eb9e91f753ff40cd6ac4fe636f375b9e",
+            "crc32": "da648167",
+            "sha1": "3c3b0aee21d5f6e1be1a5ce3704e0534179716c0"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000474.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998790",
+            "size": "30172",
+            "md5": "7e1d956bbe2823c9e10f34c178792992",
+            "crc32": "92e4723c",
+            "sha1": "f0dd1f92ba3fe2c7c28619db0c4bfff85f73153d"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000534.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998803",
+            "size": "29495",
+            "md5": "8288e298e697a78bdbad1febac01dfab",
+            "crc32": "abb57a1c",
+            "sha1": "ed5503e24f7a454321e38016ce506ed70d40b9c8"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000594.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998816",
+            "size": "28720",
+            "md5": "bb60acdcee5d95116dac0dcf85eb798b",
+            "crc32": "da94a684",
+            "sha1": "e8c09d440f17b26e2a06ce9f62eaa4c1e0e1480b"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000654.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998827",
+            "size": "32883",
+            "md5": "21b57415e11adc0c6981db0e601a4c0a",
+            "crc32": "b0df2a39",
+            "sha1": "7adecd72bb1d9b4e5ee4fd36f95ef91bb8ca40e7"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000714.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998840",
+            "size": "33440",
+            "md5": "77ff97a2c78d9031f1ad0e7624e07451",
+            "crc32": "cff91792",
+            "sha1": "02f6f15c2ea37332860bb6e9bd9fd7d62d134ebc"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000774.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998851",
+            "size": "39552",
+            "md5": "4f5716618ef899f8def57ddfae5ec0de",
+            "crc32": "52bf3357",
+            "sha1": "746c8c1c2f9abe364b66f097337da777fad8171e"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000834.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998864",
+            "size": "38111",
+            "md5": "a68ecbd4a6abef516f7c08d7ba7eea7d",
+            "crc32": "e61e6ee7",
+            "sha1": "cbac9c0b2013c9645101207786b8ebf584e38fa7"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000894.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998878",
+            "size": "67397",
+            "md5": "a5c18d9572b2465173ca70bf9cbff85f",
+            "crc32": "6b5701d2",
+            "sha1": "cf915730af2093800902396a9b9f6e5093124e31"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_000954.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998890",
+            "size": "63124",
+            "md5": "43760878c6e1e7f73a66ba8ea994eed6",
+            "crc32": "f7d7201e",
+            "sha1": "5dd54a872e5d44264cb820aa67eeef8e5a88862f"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001014.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998902",
+            "size": "45480",
+            "md5": "8449ac5a497aaa011cbc06ea931551bb",
+            "crc32": "6df1d91d",
+            "sha1": "69541b76af3ac8d2af7d91320ef6d0ea8327662e"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001074.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998914",
+            "size": "64185",
+            "md5": "88892f90bbc5210973f9a19331898705",
+            "crc32": "6bb81947",
+            "sha1": "3765313edce0cd9377e1d0873fc2627a51f12e9e"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001134.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998926",
+            "size": "58053",
+            "md5": "3ce3d016cf5f1a941d799c21da9206d0",
+            "crc32": "7e56e371",
+            "sha1": "75790930f1c270cdd1c2ff04d2b211481e6779fe"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001194.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998938",
+            "size": "53098",
+            "md5": "0c4fafb1bd13a5b5ba2139291dbccaca",
+            "crc32": "eb3f0b3c",
+            "sha1": "43417b1f86c7869c34fe33562d4ca4bf2f6ccf4a"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001314.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998961",
+            "size": "45971",
+            "md5": "1f11dfc38212d3b4e4999e7a9efdfbc9",
+            "crc32": "43a3af3a",
+            "sha1": "3422ac6b4ac6fa1aecb24a716de0ca301f1554bb"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001374.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998973",
+            "size": "53916",
+            "md5": "b276de75a3feb5e66b3fd2031636f5dc",
+            "crc32": "7a128251",
+            "sha1": "902a0388a33fac0f657486161cf90acdf3924693"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001434.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998985",
+            "size": "44695",
+            "md5": "07bbabc3b885963051230ba614e4da34",
+            "crc32": "147bfc9d",
+            "sha1": "482462ad681337e2a95a9fb136eddc83973666ab"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001494.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691998999",
+            "size": "41043",
+            "md5": "ff18e263d02bc28e58bf26b3328a163b",
+            "crc32": "98b42b21",
+            "sha1": "a8c69a33b327ce64f2a73b30bcafb45a4a2fd21b"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001554.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999012",
+            "size": "58041",
+            "md5": "c4a044635401e2c6e0317abfce0da699",
+            "crc32": "3bb647e4",
+            "sha1": "43e6b01e31a4a7854599d204cb048507c2178fb7"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001614.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999025",
+            "size": "55954",
+            "md5": "b493ef06447c89dec240632939b20f24",
+            "crc32": "ba14b3be",
+            "sha1": "848815a0a5d99da5ccd7d205a6137eb6e4f8f552"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001674.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999038",
+            "size": "65423",
+            "md5": "4aaebde8be023fd0ce5be64a4cb5611d",
+            "crc32": "7f7724f3",
+            "sha1": "6e002d57a060759dc9ebb815365ceb8b2c929469"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001734.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999050",
+            "size": "68094",
+            "md5": "f3e78c1625e29349db7d2640a32c09e4",
+            "crc32": "d8ab84a3",
+            "sha1": "e025ad4478195c5a6d06752014c2388788c8cce6"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001794.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999063",
+            "size": "78846",
+            "md5": "7ea41607413086b01f234c692fcc6295",
+            "crc32": "90497590",
+            "sha1": "858c98c2f11dece56aed3332834edd2cd2852e82"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001854.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999075",
+            "size": "66860",
+            "md5": "aa79a8918559035f8e09b41ec585f32b",
+            "crc32": "00eeb78c",
+            "sha1": "30bf82f5099b47569be5ddaa86b46ec751332024"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001914.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999087",
+            "size": "56931",
+            "md5": "355f02f887f7ab4bb6e8e6d5c4e5c3f8",
+            "crc32": "c574df7e",
+            "sha1": "a322e260e8c866ac5543f3cab6c92fa050b95020"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_001974.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999099",
+            "size": "61833",
+            "md5": "b533779078466599d57d1014f78878a2",
+            "crc32": "49adf64a",
+            "sha1": "648c658323ca7f662dbd8b0372346342437cd0b2"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_002034.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999111",
+            "size": "78210",
+            "md5": "6a0140717fdfd3576d1fe7e2299904b2",
+            "crc32": "e92eacd4",
+            "sha1": "da53b75986de0de64299642ce59cd9a25f82c74d"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_002094.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999123",
+            "size": "61745",
+            "md5": "d0e9afe8f9368fcf136d7180b8ad85d3",
+            "crc32": "9ab3f526",
+            "sha1": "187b7465448278609564f3c3e3eb84aeb5ba08ff"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_002154.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999136",
+            "size": "55310",
+            "md5": "41335206ec9e2241214a24302346bb97",
+            "crc32": "8fa2f624",
+            "sha1": "12b325467bf172bd8a3c055376be885dabdb1ba5"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL.thumbs/DONAHUEARTSPECIAL_002177.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "DONAHUEARTSPECIAL.mpg",
+            "mtime": "1691999141",
+            "size": "67712",
+            "md5": "1fa89e3c74c30289499a8baed263e2da",
+            "crc32": "bb0d3b62",
+            "sha1": "92099e372dcf7a95c92e819495c570161bcb96f7"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL_archive.torrent",
+            "source": "metadata",
+            "btih": "4f788aa55e9197c5f9abae849b88ecfdf56e6ecc",
+            "mtime": "1692243210",
+            "size": "28775",
+            "md5": "4ee82fa4dbbdcfc8bdb333ec749e6c36",
+            "crc32": "a17b2410",
+            "sha1": "fa368916ff47da852b888b670d3023b0e1129110",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "95e5887e926f68054017f3d4ac08c485",
+            "summation": "md5"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL_meta.sqlite",
+            "source": "original",
+            "mtime": "1691997725",
+            "size": "20480",
+            "md5": "cb7e698f2fffbdacc19282dfc32b7205",
+            "crc32": "a6eeaa64",
+            "sha1": "88f91ff3ee146bde2a712bc03d2fc98cc3d1b316",
+            "format": "Metadata"
+        },
+        {
+            "name": "DONAHUEARTSPECIAL_meta.xml",
+            "source": "original",
+            "mtime": "1692243178",
+            "size": "694",
+            "md5": "6423c1d9dfd568380ec54cfb49220cdd",
+            "crc32": "4d1de173",
+            "sha1": "e4f2428bc64d9cdccbf9902ad2c81137c2a71f6d",
+            "format": "Metadata"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1692242691",
+            "size": "10079",
+            "md5": "6635c1fcc3e9f43c4855272ee68162c0",
+            "crc32": "64bf3083",
+            "sha1": "6e42920cf0e318c92d03eee6410b173e4343b4d1",
+            "format": "Item Tile",
+            "rotation": "0"
+        }
+    ],
+    "files_count": 44,
+    "item_last_updated": 1692243210,
+    "item_size": 1403136484,
+    "metadata": {
+        "identifier": "DONAHUEARTSPECIAL",
+        "mediatype": "movies",
+        "collection": [
+            "flemishdog",
+            "vhsvault"
+        ],
+        "creator": "Multimedia Inc.",
+        "description": "Special episode focusing on different types of art. Includes segment with Bob Ross.",
+        "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+        "subject": "1990s",
+        "title": "Donahue - Art Special",
+        "uploader": "flemishdog1@gmail.com",
+        "publicdate": "2023-08-14 07:21:27",
+        "addeddate": "2023-08-14 07:21:27",
+        "closed_captioning": "no"
+    },
+    "server": "dn801200.us.archive.org",
+    "simplelists": {
+        "solo_manifest": {
+            "solo_manifest_dn801200": {
+                "sys_changed_by": {
+                    "source": "task",
+                    "task_id": "5436505950"
+                },
+                "sys_last_changed": "2026-06-13 19:17:27.887153"
+            }
+        }
+    },
+    "solo": true,
+    "uniq": 921600917,
+    "workable_servers": [
+        "dn801200.us.archive.org"
+    ]
+}

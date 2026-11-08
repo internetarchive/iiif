@@ -1,0 +1,203 @@
+{
+    "data": {
+        "data": {
+            "streamOnly": false,
+            "isRestricted": false,
+            "id": "st-anthony-relics-01",
+            "subPrefix": "MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38",
+            "bookUrl": "/details/st-anthony-relics-01",
+            "bookUri": "https://archive.org/details/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38",
+            "downloadUrls": [
+                [
+                    "PDF",
+                    "//archive.org/download/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38.pdf"
+                ],
+                [
+                    "ePub",
+                    "//archive.org/download/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38.epub"
+                ],
+                [
+                    "Plain Text",
+                    "//archive.org/download/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_djvu.txt"
+                ],
+                [
+                    "DAISY",
+                    "//archive.org/download/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_daisy.zip"
+                ],
+                [
+                    "Kindle",
+                    "//archive.org/download/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38.mobi"
+                ]
+            ]
+        },
+        "brOptions": {
+            "bookId": "st-anthony-relics-01",
+            "bookPath": "/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38",
+            "imageFormat": "jp2",
+            "server": "ia903205.us.archive.org",
+            "subPrefix": "MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38",
+            "zip": "/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2.zip",
+            "bookTitle": "St Anthony trademark",
+            "bookLanguage": "bul",
+            "ppi": "190",
+            "defaultStartLeaf": 0,
+            "pageProgression": "lr",
+            "vars": {
+                "bookId": "st-anthony-relics-01",
+                "bookPath": "/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38",
+                "server": "ia903205.us.archive.org",
+                "subPrefix": "MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38"
+            },
+            "plugins": {
+                "chapters": {
+                    "openLibraryId": null,
+                    "internetArchiveId": "st-anthony-relics-01",
+                    "enabled": false
+                },
+                "search": {
+                    "enabled": true,
+                    "preTag": "<IA_FTS_MATCH>",
+                    "postTag": "</IA_FTS_MATCH>",
+                    "searchInsideUrl": "//{{server}}/fulltext/inside.php?item_id={{bookId|urlencode}}&doc={{subPrefix|urlencode}}&q={{query|urlencode}}&path=/32/items/st-anthony-relics-01&pre_tag={{preTag|urlencode}}&post_tag={{postTag|urlencode}}"
+                },
+                "tts": {
+                    "enabled": true,
+                    "pageChunkUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&page={{pageIndex}}&callback=false",
+                    "remoteTtsUrl": "https://{{server}}/BookReader/BookReaderGetTTS.php?string={{text|urlencode}}&format={{format}}"
+                },
+                "textSelection": {
+                    "enabled": true,
+                    "singlePageDjvuXmlUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&mode=djvu_xml&page={{pageIndex}}"
+                }
+            },
+            "unviewablePageURI": "/bookreader/static/preview-default.png",
+            "data": [
+                [
+                    {
+                        "width": 1615,
+                        "height": 2090,
+                        "uri": "https://ia903205.us.archive.org/BookReader/BookReaderImages.php?zip=/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2.zip&file=MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_0000.jp2&id=st-anthony-relics-01",
+                        "leafNum": 0,
+                        "pageType": "Normal",
+                        "ppi": 190,
+                        "pageNum": 1,
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1615,
+                        "height": 2090,
+                        "uri": "https://ia903205.us.archive.org/BookReader/BookReaderImages.php?zip=/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2.zip&file=MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_0001.jp2&id=st-anthony-relics-01",
+                        "leafNum": 1,
+                        "pageNum": 2,
+                        "pageType": "Normal",
+                        "ppi": 190,
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1615,
+                        "height": 2090,
+                        "uri": "https://ia903205.us.archive.org/BookReader/BookReaderImages.php?zip=/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2.zip&file=MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_0002.jp2&id=st-anthony-relics-01",
+                        "leafNum": 2,
+                        "pageNum": 3,
+                        "pageType": "Normal",
+                        "ppi": 190,
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1615,
+                        "height": 2090,
+                        "uri": "https://ia903205.us.archive.org/BookReader/BookReaderImages.php?zip=/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2.zip&file=MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_0003.jp2&id=st-anthony-relics-01",
+                        "leafNum": 3,
+                        "pageNum": 4,
+                        "pageType": "Normal",
+                        "ppi": 190,
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 1615,
+                        "height": 2090,
+                        "uri": "https://ia903205.us.archive.org/BookReader/BookReaderImages.php?zip=/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2.zip&file=MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_0004.jp2&id=st-anthony-relics-01",
+                        "leafNum": 4,
+                        "pageNum": 5,
+                        "pageType": "Normal",
+                        "ppi": 190,
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 1615,
+                        "height": 2090,
+                        "uri": "https://ia903205.us.archive.org/BookReader/BookReaderImages.php?zip=/32/items/st-anthony-relics-01/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2.zip&file=MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_jp2/MMC-Archivio-antico-b305-Taddeo-Jacobi-fX-cc37-38_0005.jp2&id=st-anthony-relics-01",
+                        "leafNum": 5,
+                        "pageType": "Normal",
+                        "ppi": 190,
+                        "pageSide": "L"
+                    }
+                ]
+            ]
+        },
+        "lendingInfo": {
+            "lendingStatus": null,
+            "userid": 0,
+            "isAdmin": false,
+            "isArchiveOrgLending": false,
+            "isOpenLibraryLending": false,
+            "isLendingRequired": false,
+            "isBrowserBorrowable": false,
+            "isPrintDisabledOnly": false,
+            "isAvailable": false,
+            "isAvailableForBrowsing": false,
+            "userHasBorrowed": false,
+            "userHasBrowsed": false,
+            "userOnWaitingList": false,
+            "userHoldIsReady": false,
+            "userIsPrintDisabled": false,
+            "shouldProtectImages": false,
+            "daysLeftOnLoan": 0,
+            "secondsLeftOnLoan": 0,
+            "loansUrl": "",
+            "bookUrl": "",
+            "loanCount": 0,
+            "totalWaitlistCount": 0,
+            "userWaitlistPosition": -1,
+            "maxLoans": 10,
+            "loanRecord": []
+        },
+        "metadata": {
+            "identifier": "st-anthony-relics-01",
+            "mediatype": "texts",
+            "collection": [
+                "opensource"
+            ],
+            "creator": "Martina Diaz",
+            "description": "Trademarks linked to St Anthony Basilica in Padua",
+            "licenseurl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+            "subject": "trademark",
+            "title": "St Anthony trademark",
+            "uploader": "diazm@ethz.ch",
+            "publicdate": "2023-12-11 16:59:26",
+            "addeddate": "2023-12-11 16:59:26",
+            "curation": "[curator]validator@archive.org[/curator][date]20231211170717[/date][comment]checked for malware[/comment]",
+            "ppi": "190",
+            "ocr": "tesseract 5.3.0-6-g76ae",
+            "ocr_parameters": "-l bul+rus+Cyrillic",
+            "ocr_module_version": "0.0.21",
+            "ocr_autonomous": "true",
+            "ocr_detected_script": "Cyrillic",
+            "ocr_detected_script_conf": "0.7222",
+            "ocr_detected_lang": "bg",
+            "ocr_detected_lang_conf": "1.0000",
+            "page_number_confidence": "68",
+            "page_number_module_version": "1.0.3",
+            "pdf_module_version": "0.0.23",
+            "fail-reasons": "JPEGThumb:unknown:StAnthony_trademarks-collection.tiff",
+            "language": "bul"
+        }
+    }
+}

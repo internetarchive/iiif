@@ -1,0 +1,62 @@
+{
+    "@context": "http://iiif.io/api/image/3/context.json",
+    "id": "https://iiif.archive.org/image/iiif/3/taboca_201002_03%2F84133d0fa0364ab83df65881d2695233.mts-jpgbw-272.JPG",
+    "type": "ImageService3",
+    "protocol": "http://iiif.io/api/image",
+    "profile": "level2",
+    "width": 480,
+    "height": 272,
+    "maxArea": 130560,
+    "sizes": [
+        {
+            "width": 120,
+            "height": 68
+        },
+        {
+            "width": 240,
+            "height": 136
+        },
+        {
+            "width": 480,
+            "height": 272
+        }
+    ],
+    "tiles": [
+        {
+            "width": 480,
+            "height": 272,
+            "scaleFactors": [
+                1,
+                2,
+                4
+            ]
+        }
+    ],
+    "extraQualities": [
+        "bitonal",
+        "color",
+        "gray"
+    ],
+    "extraFormats": [
+        "tif",
+        "gif"
+    ],
+    "extraFeatures": [
+        "baseUriRedirect",
+        "canonicalLinkHeader",
+        "cors",
+        "jsonldMediaType",
+        "mirroring",
+        "profileLinkHeader",
+        "regionByPct",
+        "regionByPx",
+        "regionSquare",
+        "rotationArbitrary",
+        "rotationBy90s",
+        "sizeByConfinedWh",
+        "sizeByH",
+        "sizeByPct",
+        "sizeByW",
+        "sizeByWh"
+    ]
+}

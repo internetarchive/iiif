@@ -1,0 +1,230 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn720708.ca.archive.org",
+                "dir": "/0/items/CAT31151811"
+            },
+            {
+                "server": "dn760008.eu.archive.org",
+                "dir": "/0/items/CAT31151811"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn720708.ca.archive.org",
+                "dir": "/0/items/CAT31151811"
+            },
+            {
+                "server": "dn760008.eu.archive.org",
+                "dir": "/0/items/CAT31151811"
+            }
+        ]
+    },
+    "created": 1793998061,
+    "d1": "ia903205.us.archive.org",
+    "d2": "ia803205.us.archive.org",
+    "dir": "/3/items/CAT31151811",
+    "files": [
+        {
+            "name": "CAT31151811_archive.torrent",
+            "source": "metadata",
+            "btih": "575d1761a456085b3b49e9fa078ae67bc470833b",
+            "mtime": "1752687973",
+            "size": "3527",
+            "md5": "223796497f0f18969f07d153d0d85a66",
+            "crc32": "11c4e471",
+            "sha1": "b78dc7873fa46676ff12110846b86bfb3f638eb3",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "CAT31151811_dc.xml",
+            "source": "original",
+            "format": "Dublin Core",
+            "mtime": "1452890510",
+            "size": "1024",
+            "md5": "263e7cd953e8df3ad6c0fa9aeb4fd1f2",
+            "crc32": "de5fef0b",
+            "sha1": "45d79f8df0282db70262f42d6d526ca74a9c609a"
+        },
+        {
+            "name": "CAT31151811_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "c50f24521db836fff80e11b4088ebf64",
+            "summation": "md5"
+        },
+        {
+            "name": "CAT31151811_marc.xml",
+            "source": "original",
+            "format": "MARC",
+            "mtime": "1452890434",
+            "size": "3216",
+            "md5": "65893e9ce7093128d3294c54b200b235",
+            "crc32": "ba1b8dc8",
+            "sha1": "2bb1208d228b8c2cf012e85922d6cc3ff6a36156"
+        },
+        {
+            "name": "CAT31151811_meta.sqlite",
+            "source": "original",
+            "mtime": "1463988819",
+            "size": "9216",
+            "format": "Metadata",
+            "md5": "d57cedec4ce0d548275ca82ebc414208",
+            "crc32": "e28927f5",
+            "sha1": "51311ff4adfc62aec4a9c650c2d4c96d1224b166"
+        },
+        {
+            "name": "CAT31151811_meta.xml",
+            "source": "original",
+            "mtime": "1752687968",
+            "size": "1516",
+            "format": "Metadata",
+            "md5": "9e100a7ad0b985f0bb292604f8685746",
+            "crc32": "95206a48",
+            "sha1": "8f6cb351dd68049d1fe0db9cf8f5319e2317eee2"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1738955970",
+            "size": "14850",
+            "md5": "617e710579f0a28ec8c31b02e7518ec1",
+            "crc32": "102d8890",
+            "sha1": "c054fd8129de9402f43088406d847291e0ce6b7e",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "cat31151811.djvu",
+            "source": "derivative",
+            "format": "DjVu",
+            "original": "cat31151811_djvu.xml",
+            "mtime": "1452174905",
+            "size": "534897",
+            "md5": "aa612af21f5d4af49288a82926844b6f",
+            "crc32": "96fdc4e9",
+            "sha1": "ebae45d56189dde9ae8e01277dcf4dbd41a89180"
+        },
+        {
+            "name": "cat31151811.gif",
+            "source": "derivative",
+            "format": "Animated GIF",
+            "original": "cat31151811_jp2.zip",
+            "mtime": "1451595875",
+            "size": "39422",
+            "md5": "f89dfd98d2f5435869ed4dbf5cce6fb7",
+            "crc32": "45adfa25",
+            "sha1": "5f89959ec860fc4bd5b8f9f3f28da80b34291d7d"
+        },
+        {
+            "name": "cat31151811.pdf",
+            "source": "original",
+            "mtime": "1451595789",
+            "size": "404351",
+            "md5": "ec94f47c0d42e8e8a0812a863954e1de",
+            "crc32": "1266f40f",
+            "sha1": "bc0e224716be9d3a2e0c65f8b8040999652287c7",
+            "format": "Text PDF"
+        },
+        {
+            "name": "cat31151811_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "cat31151811_jp2.zip",
+            "mtime": "1451595934",
+            "size": "118783",
+            "md5": "2ea3a5bf792c324aad91000e9844357d",
+            "crc32": "4857ca4e",
+            "sha1": "408e20f197d06f84e5fc67d9e9398b6c50ef334c"
+        },
+        {
+            "name": "cat31151811_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "cat31151811.djvu",
+            "mtime": "1452174913",
+            "size": "7773",
+            "md5": "e80472927f9c587094a2119bcab1cd2b",
+            "crc32": "4c5795da",
+            "sha1": "f7b08fe2984028dd196e3a9f810bd09940e2430b"
+        },
+        {
+            "name": "cat31151811_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "cat31151811_abbyy.gz",
+            "mtime": "1451595941",
+            "size": "98794",
+            "md5": "c31a7af6a7e5f0315ebe38b9a1a01ac6",
+            "crc32": "38014f4d",
+            "sha1": "673b7671425907f6037a86a69c4b4be32930c6aa"
+        },
+        {
+            "name": "cat31151811_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "cat31151811.pdf",
+            "mtime": "1451595865",
+            "size": "3415345",
+            "md5": "20a1d2abcc812b3441a2e8bf43d5954c",
+            "crc32": "5b7a4fbb",
+            "sha1": "8eb3613e5ba3a54121422e6244048975d308791d",
+            "filecount": "4",
+            "preview-image": "n2"
+        },
+        {
+            "name": "cat31151811_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "cat31151811_djvu.xml",
+            "mtime": "1626983639",
+            "size": "1412",
+            "md5": "385b9ac055491e26938b5d84ef3da79f",
+            "crc32": "02d4db0f",
+            "sha1": "9afca1386119410b76b1b0b275316d9d3374ab95"
+        }
+    ],
+    "files_count": 15,
+    "item_last_updated": 1752687973,
+    "item_size": 4654126,
+    "metadata": {
+        "identifier": "CAT31151811",
+        "contributor": "U.S. Department of Agriculture, National Agricultural Library",
+        "date": "1850",
+        "language": "eng",
+        "mediatype": "texts",
+        "nal_call_number": "62.13 1850",
+        "publisher": "Wethersfield, Conn. : Comstock, Ferre & Co.",
+        "rights": "The contributing institution believes that this item is not in copyright.",
+        "series": "Henry G. Gilbert Nursery and Seed Trade Catalog Collection",
+        "sponsor": "U.S. Department of Agriculture, National Agricultural Library",
+        "title": "Wholesale price list of choice vegetable seeds grown and sold",
+        "unique_id": "CAT31151811",
+        "volume": "1850",
+        "collection": [
+            "usda-nurseryandseedcatalog",
+            "usdanationalagriculturallibrary",
+            "fedlink"
+        ],
+        "publicdate": "2015-12-31 21:03:10",
+        "uploader": "pat.murphy@ars.usda.gov",
+        "addeddate": "2015-12-31 21:03:10",
+        "identifier-access": "http://archive.org/details/CAT31151811",
+        "identifier-ark": "ark:/13960/t6b31rk53",
+        "ppi": "600",
+        "ocr": "ABBYY FineReader 11.0",
+        "repub_state": "4",
+        "subject": "Vegetables Seeds Catalogs",
+        "year": "1850",
+        "backup_location": "ia905507_23",
+        "imagecount": "4",
+        "creator": "Henry G. Gilbert Nursery and Seed Trade Catalog Collection"
+    },
+    "server": "ia803205.us.archive.org",
+    "uniq": 990132750,
+    "workable_servers": [
+        "ia803205.us.archive.org",
+        "ia903205.us.archive.org"
+    ]
+}

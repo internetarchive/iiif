@@ -1,14 +1,17 @@
 import os
 
 import unittest
+from tests.base import IIIFTestCase
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
+from tests.mocks.mock_metadata import log_requests, mock_urls
 
-
-class TestBasic(unittest.TestCase):
+class TestBasic(IIIFTestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        cache.init_app(app, config={
+                'CACHE_TYPE': 'NullCache',
+                'CACHE_NO_NULL_WARNING': True})
         self.test_app = FlaskClient(app)
 
     def test_documentation(self):

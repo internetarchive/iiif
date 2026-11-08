@@ -1,0 +1,1245 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn710803.ca.archive.org",
+                "dir": "/0/items/cruz-test"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn710803.ca.archive.org",
+                "dir": "/0/items/cruz-test"
+            }
+        ]
+    },
+    "created": 1794021322,
+    "d1": "dn800300.us.archive.org",
+    "dir": "/0/items/cruz-test",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1613283623",
+            "size": "6903",
+            "md5": "2b3b552418abe99bad5926f80ce3dbe0",
+            "crc32": "da17bed8",
+            "sha1": "c7bfba6cd50d9e28b0e2df2c02378dd34821e1c9",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "cruz-test.af.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931253",
+            "size": "822",
+            "md5": "3eb19a369783b853577455b21ab5fd1c",
+            "crc32": "20ba3de1",
+            "sha1": "f3b91bdcedeca36f153c29fc894447fd2cc3d38d"
+        },
+        {
+            "name": "cruz-test.am.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931254",
+            "size": "1188",
+            "md5": "c4badd4192596f35afb3ececfdcf9ff1",
+            "crc32": "a74f91c3",
+            "sha1": "aaf1fa9ee18ceaddc51a062af45fbee677ba0703"
+        },
+        {
+            "name": "cruz-test.ar.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931255",
+            "size": "1041",
+            "md5": "d33ab564b1278fc2d677e84c2f3e965e",
+            "crc32": "3e9b27b5",
+            "sha1": "c6ebf79115318234581cd3df9e40f856c0e214d6"
+        },
+        {
+            "name": "cruz-test.az.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931256",
+            "size": "868",
+            "md5": "0b31d26a1f21fcd4ffbe9cc67c11843a",
+            "crc32": "6bbd70f8",
+            "sha1": "8b79404c4568c1aeb0c3390f4741452b3f717b9f"
+        },
+        {
+            "name": "cruz-test.be.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931244",
+            "size": "1202",
+            "md5": "8b86869e8dfe02fe98c67244e54a1ece",
+            "crc32": "eb2977ab",
+            "sha1": "2e1d717544609691358a57d3ee90aa525a4e1940"
+        },
+        {
+            "name": "cruz-test.bg.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931245",
+            "size": "1279",
+            "md5": "a0e80647be66b657014438bb5bac75f8",
+            "crc32": "8ff8fb79",
+            "sha1": "efce790f1a572af5c8b3299bafd4e002e88afb24"
+        },
+        {
+            "name": "cruz-test.bn.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931244",
+            "size": "1610",
+            "md5": "47e0783c7d928a09ffede55d21d0bd8a",
+            "crc32": "8a281353",
+            "sha1": "08d22e684c4ba9f0ad22f703a6a86c7ea3c6ea0f"
+        },
+        {
+            "name": "cruz-test.bs.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931245",
+            "size": "767",
+            "md5": "538e52032f8ea4530b7f5cf7696fe657",
+            "crc32": "bf8a81e1",
+            "sha1": "39bfbe25f95f2aa1334119cea615f407fe52ff3e"
+        },
+        {
+            "name": "cruz-test.ca.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931247",
+            "size": "888",
+            "md5": "1572b49885aa6932cf419b2e55f343ff",
+            "crc32": "f08ee913",
+            "sha1": "8a570e6ec0e1a034382a7aa15310e2ded0dc7e56"
+        },
+        {
+            "name": "cruz-test.ceb.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931241",
+            "size": "899",
+            "md5": "8b693ceca1a6f65a606f2ca681a242a6",
+            "crc32": "4fc9526d",
+            "sha1": "131a3edfa086fb75cbd1571a1291632aba38b66e"
+        },
+        {
+            "name": "cruz-test.co.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931246",
+            "size": "858",
+            "md5": "1d258e95880719b94d786ce04742949f",
+            "crc32": "0d8cee74",
+            "sha1": "da3bd59efe1f2344e641b161b76b3827c7f28c07"
+        },
+        {
+            "name": "cruz-test.cs.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931247",
+            "size": "814",
+            "md5": "0db15926956741670be79f92f951d334",
+            "crc32": "07ec1baa",
+            "sha1": "7a0833a85804aec87675e541e45a1f5b8a05773d"
+        },
+        {
+            "name": "cruz-test.cy.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931247",
+            "size": "831",
+            "md5": "1dfacb0563da71c4e3f9e856e1b2a2d4",
+            "crc32": "0cc01233",
+            "sha1": "4758e5c47272c1fe58882a5e79a456350b834eb3"
+        },
+        {
+            "name": "cruz-test.da.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931242",
+            "size": "790",
+            "md5": "65d67fb07f818d1cb86d03c771da3dd4",
+            "crc32": "9961a616",
+            "sha1": "03a413b30ca4da8c2417bd7ab7cba70b59324443"
+        },
+        {
+            "name": "cruz-test.de.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931242",
+            "size": "899",
+            "md5": "db7348bf9f33301f200575332e6a2383",
+            "crc32": "9fe19ba4",
+            "sha1": "7f2978e72f6af36899836d24918e5ca020924364"
+        },
+        {
+            "name": "cruz-test.el.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931242",
+            "size": "1365",
+            "md5": "127c5d32d97c8aec0cbab136d1bd53b4",
+            "crc32": "b49438e6",
+            "sha1": "7a1de9899b43e1bf1cff94b48b107e57269cb89b"
+        },
+        {
+            "name": "cruz-test.en.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931243",
+            "size": "6223",
+            "md5": "ed675b8fd0e0dcfced5e48e81a6aae21",
+            "crc32": "0397fd6d",
+            "sha1": "6327cd74bcbabd501931cefa479b2309b96b3639"
+        },
+        {
+            "name": "cruz-test.eo.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931243",
+            "size": "803",
+            "md5": "25950034720ea71ebd64101dcf300aea",
+            "crc32": "4347f8cc",
+            "sha1": "6c3b274ff1855d08ed1f725be05b36d06cd20b7b"
+        },
+        {
+            "name": "cruz-test.es.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931243",
+            "size": "900",
+            "md5": "18fc0a14adeb94ad367b23cb0740b90f",
+            "crc32": "1c0a30f4",
+            "sha1": "00cdd70d3f994910c283c3dde134711e0bb62c56"
+        },
+        {
+            "name": "cruz-test.et.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931243",
+            "size": "813",
+            "md5": "420c089eb978f2a4b4bf2b629c01784d",
+            "crc32": "c9047180",
+            "sha1": "948cdcf34bed5af6283f9a2bef423b16c4640e54"
+        },
+        {
+            "name": "cruz-test.eu.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931243",
+            "size": "819",
+            "md5": "a54142a879b460d741e811f0cd8bba28",
+            "crc32": "abb3801c",
+            "sha1": "67cbada08df619a6afabca3d7c81bd1ce0c9fc16"
+        },
+        {
+            "name": "cruz-test.fa.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931258",
+            "size": "1074",
+            "md5": "430626edcbc60eefd8ee7ee99e360b90",
+            "crc32": "9ff5a804",
+            "sha1": "898ecfecd5d641078ad05f93b8a1e42bd18da50d"
+        },
+        {
+            "name": "cruz-test.fi.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931258",
+            "size": "838",
+            "md5": "a660959232c6bef5e65ae17607a231ea",
+            "crc32": "b49d2d88",
+            "sha1": "2d79982e69db3c2788855c03f88f660ee95c234e"
+        },
+        {
+            "name": "cruz-test.fil.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931241",
+            "size": "907",
+            "md5": "976eeae865b4154ffeffe5db0aa072e6",
+            "crc32": "fdee9a37",
+            "sha1": "030ae5da66453587fc848e184c82e462077db6dc"
+        },
+        {
+            "name": "cruz-test.fr.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931257",
+            "size": "852",
+            "md5": "51902c3f24a038bae359dd1b6d06545d",
+            "crc32": "5b4d477a",
+            "sha1": "fd331dcd83089d8a65d95d642e96c1a20459274a"
+        },
+        {
+            "name": "cruz-test.fy.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931258",
+            "size": "853",
+            "md5": "f511ffb36bb7326c490e496c9e63b170",
+            "crc32": "0c0df886",
+            "sha1": "f4b9e2cc3101182d7da2adddb5f5c8083de76bec"
+        },
+        {
+            "name": "cruz-test.ga.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931237",
+            "size": "911",
+            "md5": "9e554aad3fe126620f489861f635f5d6",
+            "crc32": "45753297",
+            "sha1": "ca21aaf1ea192902faf51e68abecba0e0c18bbed"
+        },
+        {
+            "name": "cruz-test.gd.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931237",
+            "size": "954",
+            "md5": "70de7aee266c3fe2cd934225904f3d03",
+            "crc32": "72b29a43",
+            "sha1": "7df0f762bb5f4c6aea4d2615893724d2d1d73d49"
+        },
+        {
+            "name": "cruz-test.gl.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931237",
+            "size": "844",
+            "md5": "480cf8d93499d02e4f2c508f5adf6685",
+            "crc32": "ae7070ae",
+            "sha1": "8523db91a9cc0456215c2ab43a41f1ce04e6f430"
+        },
+        {
+            "name": "cruz-test.gu.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931236",
+            "size": "1488",
+            "md5": "ff09e6a1a0468f857469076fbb060de2",
+            "crc32": "fca5190f",
+            "sha1": "80b20a47e3e39447fc2b44ea9aa2c51449872b87"
+        },
+        {
+            "name": "cruz-test.ha.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931250",
+            "size": "776",
+            "md5": "e7309489c3c844c0465734ab85677cfa",
+            "crc32": "e1f6c059",
+            "sha1": "db29ebf37754389530880c22add48087ec5009ea"
+        },
+        {
+            "name": "cruz-test.haw.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931241",
+            "size": "814",
+            "md5": "1bcef9d3fc01dd969afd723295b99d40",
+            "crc32": "0609a537",
+            "sha1": "f2b94de669eacd8f93f8d235cf781d4fee9621b5"
+        },
+        {
+            "name": "cruz-test.hi.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931250",
+            "size": "1558",
+            "md5": "78d6008b05ae4588c5e92e5ee83c0edd",
+            "crc32": "7467cc47",
+            "sha1": "aba8e76890ffac9923423bffa8f6fc0234a6f9c0"
+        },
+        {
+            "name": "cruz-test.hmn.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931250",
+            "size": "936",
+            "md5": "6d1ce280fe698389dde945715e35ea8e",
+            "crc32": "d3b6010e",
+            "sha1": "257d77687fd1a6d68cdfbb4d57b8b50556c57478"
+        },
+        {
+            "name": "cruz-test.hr.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931249",
+            "size": "775",
+            "md5": "b6c7935221b1cdf040d9dbc73899423e",
+            "crc32": "2262669c",
+            "sha1": "2685004845990d813c9e7833cc639206e09bd0e4"
+        },
+        {
+            "name": "cruz-test.ht.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931249",
+            "size": "804",
+            "md5": "d8607581473e97fac4317d3d4f8338b9",
+            "crc32": "f56071e2",
+            "sha1": "7e78a272dcb716cdabf615fa88174f292cbbdb25"
+        },
+        {
+            "name": "cruz-test.hu.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931249",
+            "size": "840",
+            "md5": "f3f00283674d464be6a44298cea9b349",
+            "crc32": "2705b281",
+            "sha1": "dd39a2389309cdd8600ab3082cdc7d86cb2f9a54"
+        },
+        {
+            "name": "cruz-test.hy.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931248",
+            "size": "1324",
+            "md5": "442de27f2f5150b4adde50589ce3b7a9",
+            "crc32": "1effd1f8",
+            "sha1": "818ab943cbc361603183efe32744b9820785ab50"
+        },
+        {
+            "name": "cruz-test.id.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931256",
+            "size": "828",
+            "md5": "76e3dfec769ee544d9c5ad24925c9f99",
+            "crc32": "f9039e34",
+            "sha1": "341e0fbec3fd92e76926d55a6b4a730122269046"
+        },
+        {
+            "name": "cruz-test.ig.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931256",
+            "size": "847",
+            "md5": "0fbcdca015240a1568e62a67a2bbd1b6",
+            "crc32": "79776f91",
+            "sha1": "15ce72e014ad1204a98b44f42e76afc770ce590f"
+        },
+        {
+            "name": "cruz-test.is.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931254",
+            "size": "857",
+            "md5": "281fbb90d9e25de8ce5136cc8baa72f4",
+            "crc32": "b96151e5",
+            "sha1": "c0f5f579eae2faf242761b7933ef679038b0bc82"
+        },
+        {
+            "name": "cruz-test.it.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931254",
+            "size": "830",
+            "md5": "377346bee301050a226c85a511117053",
+            "crc32": "be459124",
+            "sha1": "377ec399aba1ef8fd092d9db1494c712f2dc76f2"
+        },
+        {
+            "name": "cruz-test.iw.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931254",
+            "size": "982",
+            "md5": "17696df416e1f36c178548abc2483975",
+            "crc32": "52200134",
+            "sha1": "91f67732d0471ccd5fb7b0e696ebfe5453d86cbf"
+        },
+        {
+            "name": "cruz-test.ja.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931246",
+            "size": "1020",
+            "md5": "5928e041bb7301dd5a984e06b4c5eda9",
+            "crc32": "7fecb0d0",
+            "sha1": "1749fd75c1ed4ea3e923e85ee152d440ccda8421"
+        },
+        {
+            "name": "cruz-test.jv.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931245",
+            "size": "797",
+            "md5": "bd28185382b1b6be881e3864b5b404e0",
+            "crc32": "84eb6cb7",
+            "sha1": "09e49c23e01b2d688f6ffac248178c32db9369f2"
+        },
+        {
+            "name": "cruz-test.ka.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931259",
+            "size": "1567",
+            "md5": "9e2749209fa534558aabbcdae40a6027",
+            "crc32": "8620ceb6",
+            "sha1": "774910dc13416fed5ad122f6ae81f998f809304f"
+        },
+        {
+            "name": "cruz-test.kk.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931259",
+            "size": "1283",
+            "md5": "2c7c51925222948829fd612261346a5a",
+            "crc32": "1dfcd4c4",
+            "sha1": "22a5f10a081932af69b8801d26b34f966b5ae53b"
+        },
+        {
+            "name": "cruz-test.km.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931260",
+            "size": "1724",
+            "md5": "a9f0b05157fefc3f4e730228a525c6c9",
+            "crc32": "a79db46b",
+            "sha1": "bec3974764b48aa825a51bfa7fe678299f46726c"
+        },
+        {
+            "name": "cruz-test.kn.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931260",
+            "size": "1688",
+            "md5": "e664d86ab5c10c06c0b66793e4adc2d8",
+            "crc32": "6f1a8424",
+            "sha1": "12288d0efeea57332eb92f256fc8cec23832e1b5"
+        },
+        {
+            "name": "cruz-test.ko.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931260",
+            "size": "891",
+            "md5": "9f4b9827d15046968c52722dc26cd2de",
+            "crc32": "ede09344",
+            "sha1": "5af85e1d5b0368b7ea990967496043f9cdc29cfd"
+        },
+        {
+            "name": "cruz-test.ku.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931258",
+            "size": "807",
+            "md5": "0886d8d040c1961c23510e70c6eca691",
+            "crc32": "144134dd",
+            "sha1": "9edfb44d6d03c32ce247bbee717ec9cc94d99cfd"
+        },
+        {
+            "name": "cruz-test.ky.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931264",
+            "size": "1218",
+            "md5": "c5d8c54926a82555b19884c28614f0cb",
+            "crc32": "78bad6b4",
+            "sha1": "48b903267dfebf859fdbae3b922bf717ef175838"
+        },
+        {
+            "name": "cruz-test.la.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931239",
+            "size": "762",
+            "md5": "69a8489b650fc9513e462236796c57ff",
+            "crc32": "7a26172e",
+            "sha1": "be71f39c18d11e63f45679de50bfbd6681e67974"
+        },
+        {
+            "name": "cruz-test.lb.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931237",
+            "size": "893",
+            "md5": "ccb44a8c1fe75d9db2da2a38daf2fc70",
+            "crc32": "ec69c9d6",
+            "sha1": "b99b098613ebe971064776238ed126f84764c045"
+        },
+        {
+            "name": "cruz-test.lo.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931239",
+            "size": "1729",
+            "md5": "304e8213e698658f36ac36504600e6ea",
+            "crc32": "95e39691",
+            "sha1": "7d9f1a8812ca1a589022add96dd4891bd9ed267a"
+        },
+        {
+            "name": "cruz-test.lt.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931240",
+            "size": "862",
+            "md5": "65b275269d9acafc9e7d07222191270e",
+            "crc32": "b4c0930b",
+            "sha1": "1c1722853d55a14d32f87a0c8e5956f3a39c0f93"
+        },
+        {
+            "name": "cruz-test.lv.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931239",
+            "size": "857",
+            "md5": "9acb324753996b5bdc910b2c6f758b36",
+            "crc32": "d9024f55",
+            "sha1": "487010164035aa80fa532d565e1fdff8ee7d885d"
+        },
+        {
+            "name": "cruz-test.mg.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931250",
+            "size": "846",
+            "md5": "b4eb8a0d3310231b1cd262b3e5422568",
+            "crc32": "0ecea0a3",
+            "sha1": "412f343d7e38e16154cc43cac328669e6c1eda77"
+        },
+        {
+            "name": "cruz-test.mi.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931251",
+            "size": "814",
+            "md5": "a4dbfb9f9bd3351e8fa94765565ed18e",
+            "crc32": "c155fde2",
+            "sha1": "1418bf3ee8a8f0fcb801dce34b071d26c68d3306"
+        },
+        {
+            "name": "cruz-test.mk.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931251",
+            "size": "1239",
+            "md5": "02ea9ff69970dea72d8461d499798ae9",
+            "crc32": "2a10ad35",
+            "sha1": "86ec1f55bcde9494353881625896c64e123a1d2a"
+        },
+        {
+            "name": "cruz-test.ml.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931251",
+            "size": "1767",
+            "md5": "04455e6745643f3f518932dd1361ebf5",
+            "crc32": "807efec4",
+            "sha1": "ec02f13f70fbd9d04dd9c0d455c49d910c8b9673"
+        },
+        {
+            "name": "cruz-test.mn.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931251",
+            "size": "1234",
+            "md5": "7ccc314507fd6f3d88dbf32e067504a7",
+            "crc32": "53e90379",
+            "sha1": "4455e406327eb63d4b2ebfc79744550221d0523a"
+        },
+        {
+            "name": "cruz-test.mp4",
+            "source": "derivative",
+            "format": "h.264",
+            "original": "cruz-test.webm",
+            "mtime": "1519716313",
+            "size": "3131226",
+            "md5": "cb735e6ba016af974b50584ab1189d3a",
+            "crc32": "16fc2070",
+            "sha1": "6b614f04087d1766d1ca7d7b844d38d5edba5f52",
+            "length": "30.07",
+            "height": "360",
+            "width": "640"
+        },
+        {
+            "name": "cruz-test.mr.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931252",
+            "size": "1397",
+            "md5": "9867382d49866cc1dbb750c9be81a6be",
+            "crc32": "0e9f246d",
+            "sha1": "bebcda049daf5fe76b748948b49380fb67c15810"
+        },
+        {
+            "name": "cruz-test.ms.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931252",
+            "size": "834",
+            "md5": "7802588d1bdfa185217dde903da7c20c",
+            "crc32": "9aebc4b8",
+            "sha1": "67b3147d17abd76696f67afce5015f9eceecd6af"
+        },
+        {
+            "name": "cruz-test.mt.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931252",
+            "size": "850",
+            "md5": "7a108bd131a34bf34b76a39b14967360",
+            "crc32": "b4ad4191",
+            "sha1": "b1fa04f91a473ed9bd56eadbe9a5f96e062c4498"
+        },
+        {
+            "name": "cruz-test.my.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931253",
+            "size": "1883",
+            "md5": "869d449e495aabf5ecf14a4d765c502d",
+            "crc32": "7cc69e59",
+            "sha1": "8bbe75f10f96a61f05da236a0fe62073fe5dbaa4"
+        },
+        {
+            "name": "cruz-test.ne.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931257",
+            "size": "1476",
+            "md5": "dbb8d10e0b4587af9d15fc3c95fef892",
+            "crc32": "383a714f",
+            "sha1": "3ee444d9a04dd39fbc48ae81c532aa05b0c2892d"
+        },
+        {
+            "name": "cruz-test.nl.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931256",
+            "size": "838",
+            "md5": "41b9cac581ef770e8c700ede30819dd3",
+            "crc32": "b0e1f93e",
+            "sha1": "90e617bbe0b0f5a5e03ea53b34d53d6f9a67177b"
+        },
+        {
+            "name": "cruz-test.no.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931257",
+            "size": "790",
+            "md5": "e0237133ab91103d3b368435f29a4bc2",
+            "crc32": "0674b38c",
+            "sha1": "a5cfc993ff8a646855765f079702904c12eccca0"
+        },
+        {
+            "name": "cruz-test.ny.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931257",
+            "size": "800",
+            "md5": "f6f4e633f65bb26d42c786e8f9b1e7fc",
+            "crc32": "667d14f0",
+            "sha1": "f76cbf6c5a46cf5a483e74599c149a37482034fa"
+        },
+        {
+            "name": "cruz-test.ogv",
+            "source": "derivative",
+            "format": "Ogg Video",
+            "original": "cruz-test.webm",
+            "mtime": "1519716456",
+            "size": "2349157",
+            "md5": "81a5d36b05b5699bb58cd2f1479c0d73",
+            "crc32": "a2714232",
+            "sha1": "8ef22560f322fe619606dba379eea6d52ac9c264",
+            "length": "30.04",
+            "height": "300",
+            "width": "533"
+        },
+        {
+            "name": "cruz-test.pa.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931248",
+            "size": "1450",
+            "md5": "a1e03e83294762f6684be877276ca741",
+            "crc32": "41c29be9",
+            "sha1": "c5c38bc549e2fa1d5a6be0833eaf2c3519dc834f"
+        },
+        {
+            "name": "cruz-test.pl.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931248",
+            "size": "824",
+            "md5": "77b38fa71ac7ac2387e403468a6f1874",
+            "crc32": "66c92d3d",
+            "sha1": "5559712ea742c0ce62b7c234c0355ed2adead572"
+        },
+        {
+            "name": "cruz-test.ps.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931247",
+            "size": "1058",
+            "md5": "995600e76df919e91e08da2934403716",
+            "crc32": "af91e5f3",
+            "sha1": "e5610f1bae7aa4dbbc746bde10dc255dd0510d7a"
+        },
+        {
+            "name": "cruz-test.pt.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931248",
+            "size": "861",
+            "md5": "35dd245496a22d7f1935686734ef8bf1",
+            "crc32": "0ef2a128",
+            "sha1": "66a092e9a45a03050b7350a403e9c67ff7d7c539"
+        },
+        {
+            "name": "cruz-test.ro.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931244",
+            "size": "872",
+            "md5": "4dc92d54d2a4849bfe805e7a8cfac187",
+            "crc32": "a04e85f7",
+            "sha1": "2bd2131ea24e12fd6eb6423e8c92044babde03a2"
+        },
+        {
+            "name": "cruz-test.ru.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931244",
+            "size": "1223",
+            "md5": "9e0590936fddb0aa1ba28e3e434d51f0",
+            "crc32": "aec17250",
+            "sha1": "ee767c083cca6acb3fa545b48aa6ffba88c05e78"
+        },
+        {
+            "name": "cruz-test.sd.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931265",
+            "size": "1121",
+            "md5": "5990797eb089f0288e9e09cfae25401e",
+            "crc32": "57a3aa9b",
+            "sha1": "8bf92e5beef4640969874c37159b3f8f08a4ea47"
+        },
+        {
+            "name": "cruz-test.si.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931263",
+            "size": "1485",
+            "md5": "6fb4799bd4806fce6da7c64aeace8430",
+            "crc32": "c199358c",
+            "sha1": "a557572ad4474ed48dc4f39a0a016741480234c5"
+        },
+        {
+            "name": "cruz-test.sk.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931262",
+            "size": "826",
+            "md5": "38255f420a56dc9cad3f05b07061d371",
+            "crc32": "a20b70e9",
+            "sha1": "a89c9e709f07a9e513b829ae105d297308b338f2"
+        },
+        {
+            "name": "cruz-test.sl.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931264",
+            "size": "816",
+            "md5": "0b4ad28df72f47e9cb9652f3e155f5d8",
+            "crc32": "51eedf55",
+            "sha1": "38dbfeddd570f9af28abe872636e84d614d9941c"
+        },
+        {
+            "name": "cruz-test.sm.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931263",
+            "size": "871",
+            "md5": "c679cee561ca10f8901367c077dd6da1",
+            "crc32": "792a6e3e",
+            "sha1": "ffb5e91787e67a0558182778f08d249c1e76c2eb"
+        },
+        {
+            "name": "cruz-test.sn.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931263",
+            "size": "800",
+            "md5": "fb0f06383cd0f7fcf12da60d59fa50dc",
+            "crc32": "49ec2221",
+            "sha1": "5758703f273a34640eba89a3617fd03815c2420b"
+        },
+        {
+            "name": "cruz-test.so.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931263",
+            "size": "866",
+            "md5": "864cb127c24682b50840b43366141291",
+            "crc32": "f2bed177",
+            "sha1": "c3c81ecbec1a9300e5bc27ecede2a3778b8d0cf1"
+        },
+        {
+            "name": "cruz-test.sq.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931259",
+            "size": "916",
+            "md5": "fa74d2ed0af85646b8e3c9b0d90c1000",
+            "crc32": "e57ebfdc",
+            "sha1": "eae525672d60ece9b5a9592b3707036e5b34fe2c"
+        },
+        {
+            "name": "cruz-test.sr.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931259",
+            "size": "1133",
+            "md5": "a3798e9410610db32aa2870b9025a2f1",
+            "crc32": "a737d3ae",
+            "sha1": "1a4d22aaa08c72463de57ee68f0c17ef04633cea"
+        },
+        {
+            "name": "cruz-test.st.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931260",
+            "size": "919",
+            "md5": "0704c137d730dd5a7d104b01ee135af5",
+            "crc32": "6ce04890",
+            "sha1": "3a136b4188c1a25e93e512b75ae2d13d203e88e3"
+        },
+        {
+            "name": "cruz-test.su.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931255",
+            "size": "840",
+            "md5": "13c1fc089e77509ce8e9b5d0f2760a01",
+            "crc32": "e9974f94",
+            "sha1": "1f7b30971d6a738bdf31a5be8ff3c5d0ff262062"
+        },
+        {
+            "name": "cruz-test.sv.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931255",
+            "size": "812",
+            "md5": "d5b01fa6acd04d84a7a0dca5bd569872",
+            "crc32": "f018a2f6",
+            "sha1": "b7a30bf4a93f0afac9a96c30f5bf2b3e20271744"
+        },
+        {
+            "name": "cruz-test.sw.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931264",
+            "size": "818",
+            "md5": "bab86e55d7bf3b34a6cf0d8b5f8831ba",
+            "crc32": "72cb5ae5",
+            "sha1": "45b38fd0187a7b0a452c6be682c0f8b062adb718"
+        },
+        {
+            "name": "cruz-test.ta.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931253",
+            "size": "1864",
+            "md5": "a063f1705ec3364ce2ceb360b25a4ec4",
+            "crc32": "a9bf893b",
+            "sha1": "2058981f8c0bca1f2fc102c6474f4ed71dbbd704"
+        },
+        {
+            "name": "cruz-test.te.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931240",
+            "size": "1717",
+            "md5": "3871b556de9f2dbc0b3cfa98ecc98c14",
+            "crc32": "eb1279a9",
+            "sha1": "6864fa5344126ffa507f57b1e1dbdd79724712cf"
+        },
+        {
+            "name": "cruz-test.tg.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931240",
+            "size": "1248",
+            "md5": "1f5e1b63846b54b1c568be7572cc8842",
+            "crc32": "468bc2b8",
+            "sha1": "fdbd026b0dd0b8eab7c8b05614a570f0e4beeda5"
+        },
+        {
+            "name": "cruz-test.th.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931240",
+            "size": "1565",
+            "md5": "7c173f28f4e26a4bfa367e63a71eb892",
+            "crc32": "e0ea12f3",
+            "sha1": "e6154d645333db5f2582e91e144417b7624c759c"
+        },
+        {
+            "name": "cruz-test.thumbs/cruz-test_000001.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "cruz-test.webm",
+            "mtime": "1519716093",
+            "size": "5700",
+            "md5": "71915347ce129cea394bc83690423828",
+            "crc32": "b690ff66",
+            "sha1": "03da475c7b65f88766e67d052c2b01aa96479571"
+        },
+        {
+            "name": "cruz-test.thumbs/cruz-test_000009.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "cruz-test.webm",
+            "mtime": "1519716099",
+            "size": "5520",
+            "md5": "5bfdde43725bfb753fb0f07bdc8b55e2",
+            "crc32": "27c82599",
+            "sha1": "14f6d758f733943b1502e1fe3932d4168b5a4693"
+        },
+        {
+            "name": "cruz-test.thumbs/cruz-test_000014.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "cruz-test.webm",
+            "mtime": "1519716105",
+            "size": "5934",
+            "md5": "bff9e79bb6495a05f9db250ba66a37be",
+            "crc32": "770c8d75",
+            "sha1": "2e8c60dfad65c326eda28e8ee08c78c1e60d5296"
+        },
+        {
+            "name": "cruz-test.thumbs/cruz-test_000019.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "cruz-test.webm",
+            "mtime": "1519716112",
+            "size": "4407",
+            "md5": "15a55716b657f17075e3229592fb5c84",
+            "crc32": "35a948b7",
+            "sha1": "471d8e8448926bb15d28743f2fafd7a986c82310"
+        },
+        {
+            "name": "cruz-test.thumbs/cruz-test_000024.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "cruz-test.webm",
+            "mtime": "1519716119",
+            "size": "4046",
+            "md5": "71d8dc7b8ff37f4fa617e0530ce0b317",
+            "crc32": "602ae7a9",
+            "sha1": "cbc812374997e4e46331bd2f1834884441ed3060"
+        },
+        {
+            "name": "cruz-test.thumbs/cruz-test_000029.jpg",
+            "source": "derivative",
+            "format": "Thumbnail",
+            "original": "cruz-test.webm",
+            "mtime": "1519716125",
+            "size": "2374",
+            "md5": "6860e1d35882df81f5f1fae424129e00",
+            "crc32": "b8265530",
+            "sha1": "68e09bf7bf2944abe31b50b5c162bd2a10abf8b6"
+        },
+        {
+            "name": "cruz-test.tr.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931239",
+            "size": "862",
+            "md5": "904f7388e61033c5973b90e5c38c3ec6",
+            "crc32": "c7ea88cd",
+            "sha1": "d1c298c6d4b8a73e01268bce1a05d2a7e661d0a9"
+        },
+        {
+            "name": "cruz-test.uk.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931245",
+            "size": "1193",
+            "md5": "f99d2402111cfd3f07b4585a8a7c61fe",
+            "crc32": "5470a8a1",
+            "sha1": "3c9da206e86dca896069103e4209714207c3e233"
+        },
+        {
+            "name": "cruz-test.ur.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931252",
+            "size": "1146",
+            "md5": "7123622e7220e5fd6e0e5f29c5581a7c",
+            "crc32": "3ee18cfe",
+            "sha1": "7aa16fb0c36cc433b9e6c931e6ed096bf97c08c9"
+        },
+        {
+            "name": "cruz-test.uz.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931250",
+            "size": "863",
+            "md5": "75ff282680e4a863f73eba2133e278ed",
+            "crc32": "98e422cf",
+            "sha1": "e07a2596f0ff638037f662622abfe3b4b1749381"
+        },
+        {
+            "name": "cruz-test.vi.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931253",
+            "size": "1005",
+            "md5": "5317c6a64b65132e6849e9700228362b",
+            "crc32": "471c4529",
+            "sha1": "e094ce1957072c626c8d5325e0095c539885d61e"
+        },
+        {
+            "name": "cruz-test.webm",
+            "source": "original",
+            "format": "WebM",
+            "length": "30.06",
+            "height": "720",
+            "width": "1280",
+            "mtime": "1457548116",
+            "size": "5027789",
+            "md5": "aac47062cd11574fa49fd7bc06e1eac8",
+            "crc32": "d17bf3b9",
+            "sha1": "c7896efae9927cf494b61d3c13f41e84e75bf406"
+        },
+        {
+            "name": "cruz-test.xh.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931246",
+            "size": "827",
+            "md5": "938759f39775ca087a96d86e37bd740d",
+            "crc32": "781c1375",
+            "sha1": "a8bde45f3f8145d2675c1c7166df7201eeefb3f1"
+        },
+        {
+            "name": "cruz-test.yi.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931241",
+            "size": "1350",
+            "md5": "78b9c2d8706a57bfec90c9bfdc4dd252",
+            "crc32": "7b5388d8",
+            "sha1": "bd7dab8f966432e50efd375b27f235827f5e0969"
+        },
+        {
+            "name": "cruz-test.yo.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931242",
+            "size": "837",
+            "md5": "89dad07a67c588947204269cd309bad3",
+            "crc32": "4db2c1f4",
+            "sha1": "b370acfe803b06c1131699afb7eaa4fd7fd4fd00"
+        },
+        {
+            "name": "cruz-test.zh-Hans.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931236",
+            "size": "777",
+            "md5": "d8159b497c9cba1e2f3957e163fb3be3",
+            "crc32": "fbff45bb",
+            "sha1": "bce6c96bdcd44bfe801a2255f18d6c675fda4cc8"
+        },
+        {
+            "name": "cruz-test.zh-Hant.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931236",
+            "size": "777",
+            "md5": "0bf99e0a799be1bbc6c01746cc73f156",
+            "crc32": "9ef98f2b",
+            "sha1": "203e6ca780cbca928e48b63a4b67060a6010a843"
+        },
+        {
+            "name": "cruz-test.zu.vtt",
+            "source": "original",
+            "format": "Web Video Text Tracks",
+            "mtime": "1477931255",
+            "size": "880",
+            "md5": "d782e7e48a97c6abcc67031a344a9f93",
+            "crc32": "f0308d09",
+            "sha1": "88110be7a1633a68cc8d368ffa38d9c739c3e8ba"
+        },
+        {
+            "name": "cruz-test_archive.torrent",
+            "source": "metadata",
+            "btih": "18f96b32c647be580c75ab67d9194368322226d6",
+            "mtime": "1613283624",
+            "size": "19845",
+            "md5": "21061d5b72785f801d0c4c0ddfa18a03",
+            "crc32": "5c38fb13",
+            "sha1": "2402e284f1d00bbe3ee71697362900e34489e49d",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "cruz-test_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "b3df6139a50dc6245183bc611085f701",
+            "summation": "md5"
+        },
+        {
+            "name": "cruz-test_meta.xml",
+            "source": "original",
+            "mtime": "1613283622",
+            "size": "683",
+            "format": "Metadata",
+            "md5": "7e4295f6cd2f1d5b5e80233928760ff1",
+            "crc32": "88c37874",
+            "sha1": "f5dcd8435d4823f1fda66b1f6d80ae0e4074f3fc"
+        }
+    ],
+    "files_count": 117,
+    "item_last_updated": 1750767041,
+    "item_size": 10676443,
+    "metadata": {
+        "identifier": "cruz-test",
+        "uploader": "tracey@archive.org",
+        "addeddate": "2018-02-27 07:19:31",
+        "title": "cruz-test",
+        "description": "test webvtt",
+        "subject": "test item",
+        "curation": "[curator]validator@archive.org[/curator][date]20180227072010[/date][comment]checked for malware[/comment]",
+        "mediatype": "movies",
+        "collection": [
+            "opensource_movies",
+            "community"
+        ],
+        "sound": "sound",
+        "color": "color",
+        "publicdate": "2018-02-27 07:27:53",
+        "backup_location": "ia906609_27"
+    },
+    "server": "dn800300.us.archive.org",
+    "simplelists": {
+        "solo_manifest": {
+            "solo_manifest_dn800300": {
+                "sys_changed_by": {
+                    "source": "task",
+                    "task_id": "5452897590"
+                },
+                "sys_last_changed": "2026-06-20 03:38:35.891849"
+            }
+        }
+    },
+    "solo": true,
+    "uniq": 1567581377,
+    "workable_servers": [
+        "dn800300.us.archive.org"
+    ]
+}

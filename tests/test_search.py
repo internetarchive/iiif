@@ -1,38 +1,29 @@
-import unittest
-from unittest.mock import patch
+from tests.base import IIIFTestCase
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
 from iiify import search
-import json
 import requests
+from tests.mocks.mock_metadata import log_requests, mock_urls
 
-def mockResponse(fixture):
-    class MockResponse:
-        status_code = 200
-        def json(self):
-            with open(fixture, "r") as file:
-                return json.load(file)
-
-        def raise_for_status(self):
-            return        
-
-    return MockResponse()
-
-class TestSearch(unittest.TestCase):
+class TestSearch(IIIFTestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        cache.init_app(app, config={
+                'CACHE_TYPE': 'NullCache',
+                'CACHE_NO_NULL_WARNING': True})
         self.test_app = FlaskClient(app)
 
-    def test_live(self):
+    @mock_urls
+    def test_basic(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
         self.assertEqual(resp.status_code, 200)
         results = resp.json    
 
         self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
 
+    @mock_urls
     def test_search_in_manifest(self):    
-        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json?recache=true")
+        resp = self.test_app.get("/iiif/3/journalofexpedit00ford/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json    
 
@@ -44,47 +35,23 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(service['profile'], "http://iiif.io/api/search/1/search")
 
 
-    @patch("requests.get")
-    def test_fixture(self, searchPatch):
-            # Define mock response for the specific URLs
-            def mock_response(url, *args, **kwargs):
-                if "fulltext/inside.php" in url:
-                    return mockResponse("tests/fixtures/search/fulltext-search.json")
-                elif "metadata" in url:
-                    return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
+    @mock_urls
+    def test_fixture(self):
+        resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
+        self.assertEqual(resp.status_code, 200)
+        results = resp.json    
 
-            searchPatch.side_effect = mock_response    
+        self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
 
-            resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
-            self.assertEqual(resp.status_code, 200)
-            results = resp.json    
+        result1 = results["resources"][0]
+        self.assertEqual(result1["on"], "https://iiif.archive.org/iiif/journalofexpedit00ford$5/canvas#xywh=1338,2851,337,44", "Canvas id or bounding box is wrong")
 
-            self.assertEqual(len(results["resources"]),2, "Expected two results for Brunswick")
-
-            result1 = results["resources"][0]
-            self.assertEqual(result1["on"], "https://iiif.archive.org/iiif/journalofexpedit00ford$5/canvas#xywh=1338,2851,337,44", "Canvas id or bounding box is wrong")
-
-    @patch("requests.get")
-    def test_search_url(self,metadataPatch):
-         # Define mock response for the specific URLs
-        def mock_response(url, *args, **kwargs):
-            return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
-
-        metadataPatch.side_effect = mock_response
-    
+    @mock_urls
+    def test_search_url(self):
         self.assertEqual(search.build_search_url("journalofexpedit00ford", "query"), "https://ia601302.us.archive.org/fulltext/inside.php?item_id=journalofexpedit00ford&doc=journalofexpedit00ford&path=/31/items/journalofexpedit00ford&q=query", "Unexpected search query")
 
-    @patch("requests.get")
-    def multi_box(self, searchPatch):
-        # Define mock response for the specific URLs
-        def mock_response(url, *args, **kwargs):
-            if "fulltext/inside.php" in url:
-                return mockResponse("tests/fixtures/search/2_boxes.json")
-            elif "metadata" in url:
-                return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
-
-        searchPatch.side_effect = mock_response    
-
+    @mock_urls
+    def test_multi_box(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=much")
         self.assertEqual(resp.status_code, 200)
         results = resp.json    
@@ -104,17 +71,8 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(results[2]["resource"]["chars"], "much", "Unexpected search match")
         self.assertEqual(results[2]["on"], "https://iiif.archive.org/iiif/journalofexpedit00ford$6/canvas#xywh=1336,1520,171,42", "Canvas or box is incorrect")
 
-    @patch("requests.get")
-    def multi_word(self, searchPatch):    
-        # Define mock response for the specific URLs
-        def mock_response(url, *args, **kwargs):
-            if "fulltext/inside.php" in url:
-                return mockResponse("tests/fixtures/search/multi_word.json")
-            elif "metadata" in url:
-                return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
-
-        searchPatch.side_effect = mock_response    
-
+    @mock_urls
+    def test_multi_word(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=pleasure to observe")
         self.assertEqual(resp.status_code, 200)
         results = resp.json    
@@ -127,19 +85,8 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(results[2]["resource"]["chars"], "to", "Unexpected search match")
         self.assertEqual(results[3]["resource"]["chars"], "observe", "Unexpected search match")
 
-    @patch("requests.get")
-    def multi_box(self, searchPatch):
-        # Define mock response for the specific URLs
-        def mock_response(url, *args, **kwargs):
-            if "fulltext/inside.php" in url:
-                return mockResponse("tests/fixtures/search/missmatch.json")
-            elif "metadata" in url:
-                # Although this doesn't match the item used in the 
-                # search above it shouldn't matter for this test
-                return mockResponse("tests/fixtures/metadata/journalofexpedit00ford.json")
-
-        searchPatch.side_effect = mock_response    
-
+    @mock_urls
+    def test_search_missing_r(self):
         resp = self.test_app.get("/iiif/search/mrr_401/?q=top")
         self.assertEqual(resp.status_code, 200)
         results = resp.json        
@@ -155,6 +102,7 @@ class TestSearch(unittest.TestCase):
             self.assertEqual(anno["resource"]["chars"], "top")
 
 
+    @mock_urls
     def test_matching_characters_not_empty(self):
         resp = self.test_app.get("/iiif/search/journalofexpedit00ford/?q=Brunswick")
         results = resp.json
@@ -162,7 +110,7 @@ class TestSearch(unittest.TestCase):
             self.assertTrue(isinstance(result, dict))
             self.assertEqual(result["resource"]["chars"], "Brunswick")
 
-
+    @mock_urls
     def test_real_gray_diary_item(self):
         """Test that doc parameter matches the original filename minus extension"""
         result = search.build_search_url('gray-diary', 'Houston')

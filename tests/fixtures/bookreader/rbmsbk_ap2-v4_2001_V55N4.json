@@ -1,0 +1,1186 @@
+{
+    "data": {
+        "data": {
+            "streamOnly": false,
+            "isRestricted": false,
+            "id": "rbmsbk_ap2-v4_2001_V55N4",
+            "subPrefix": "rbms.bk_ap2.v4_2001_V55N4",
+            "bookUrl": "/details/rbmsbk_ap2-v4_2001_V55N4",
+            "bookUri": "https://archive.org/details/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4",
+            "downloadUrls": [
+                [
+                    "PDF",
+                    "//archive.org/download/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4.pdf"
+                ],
+                [
+                    "ePub",
+                    "//archive.org/download/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4.epub"
+                ],
+                [
+                    "Plain Text",
+                    "//archive.org/download/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_djvu.txt"
+                ],
+                [
+                    "DAISY",
+                    "//archive.org/download/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_daisy.zip"
+                ],
+                [
+                    "Kindle",
+                    "//archive.org/download/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4.mobi"
+                ]
+            ]
+        },
+        "brOptions": {
+            "bookId": "rbmsbk_ap2-v4_2001_V55N4",
+            "bookPath": "/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4",
+            "imageFormat": "jp2",
+            "server": "ia802803.us.archive.org",
+            "subPrefix": "rbms.bk_ap2.v4_2001_V55N4",
+            "zip": "/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip",
+            "bookTitle": "Vermont life. Vol. 55, Iss. 4",
+            "bookLanguage": "eng",
+            "ppi": "600",
+            "defaultStartLeaf": 0,
+            "pageProgression": "lr",
+            "vars": {
+                "bookId": "rbmsbk_ap2-v4_2001_V55N4",
+                "bookPath": "/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4",
+                "server": "ia802803.us.archive.org",
+                "subPrefix": "rbms.bk_ap2.v4_2001_V55N4"
+            },
+            "plugins": {
+                "chapters": {
+                    "openLibraryId": null,
+                    "internetArchiveId": "rbmsbk_ap2-v4_2001_V55N4",
+                    "enabled": false
+                },
+                "search": {
+                    "enabled": true,
+                    "preTag": "<IA_FTS_MATCH>",
+                    "postTag": "</IA_FTS_MATCH>",
+                    "searchInsideUrl": "//{{server}}/fulltext/inside.php?item_id={{bookId|urlencode}}&doc={{subPrefix|urlencode}}&q={{query|urlencode}}&path=/7/items/rbmsbk_ap2-v4_2001_V55N4&pre_tag={{preTag|urlencode}}&post_tag={{postTag|urlencode}}"
+                },
+                "tts": {
+                    "enabled": true,
+                    "pageChunkUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&page={{pageIndex}}&callback=false",
+                    "remoteTtsUrl": "https://{{server}}/BookReader/BookReaderGetTTS.php?string={{text|urlencode}}&format={{format}}"
+                },
+                "textSelection": {
+                    "enabled": true,
+                    "singlePageDjvuXmlUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&mode=djvu_xml&page={{pageIndex}}"
+                }
+            },
+            "unviewablePageURI": "/bookreader/static/preview-default.png",
+            "data": [
+                [
+                    {
+                        "width": 4720,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0000.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 0,
+                        "pageType": "Title",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4755,
+                        "height": 6488,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0001.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 1,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4790,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0002.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 2,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4766,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0003.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4770,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0004.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 4,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4766,
+                        "height": 6493,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0005.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 5,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4775,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0006.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 6,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4763,
+                        "height": 6493,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0007.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 7,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4766,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0008.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 8,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4768,
+                        "height": 6498,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0009.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 9,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4765,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0010.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 10,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4763,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0011.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 11,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4768,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0012.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 12,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4768,
+                        "height": 6490,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0013.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 13,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4761,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0014.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 14,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4768,
+                        "height": 6490,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0015.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 15,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4766,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0016.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 16,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4766,
+                        "height": 6493,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0017.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 17,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4756,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0018.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 18,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4756,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0019.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 19,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4776,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0020.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 20,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4761,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0021.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 21,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4750,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0022.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 22,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4758,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0023.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 23,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4761,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0024.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 24,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4763,
+                        "height": 6488,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0025.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 25,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4731,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0026.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 26,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4756,
+                        "height": 6495,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0027.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 27,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4746,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0028.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 28,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4761,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0029.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 29,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4765,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0030.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 30,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4761,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0031.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 31,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4746,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0032.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 32,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4761,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0033.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 33,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4720,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0034.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 34,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4753,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0035.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 35,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4748,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0036.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 36,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4756,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0037.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 37,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4743,
+                        "height": 6475,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0038.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 38,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4755,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0039.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 39,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4743,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0040.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 40,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4756,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0041.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 41,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4738,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0042.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 42,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4753,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0043.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 43,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4735,
+                        "height": 6493,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0044.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 44,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4783,
+                        "height": 6508,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0045.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 45,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4720,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0046.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 46,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4761,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0047.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 47,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4713,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0048.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 48,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4746,
+                        "height": 6488,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0049.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 49,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4728,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0050.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 50,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4756,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0051.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 51,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4736,
+                        "height": 6488,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0052.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 52,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4733,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0053.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 53,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4728,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0054.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 54,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4750,
+                        "height": 6501,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0055.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 55,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4728,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0056.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 56,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4685,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0057.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 57,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4693,
+                        "height": 6513,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0058.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 58,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4758,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0059.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 59,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4726,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0060.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 60,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4758,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0061.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 61,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4725,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0062.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 62,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4763,
+                        "height": 6495,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0063.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 63,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4738,
+                        "height": 6483,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0064.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 64,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4758,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0065.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 65,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4723,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0066.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 66,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4755,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0067.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 67,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4726,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0068.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 68,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4763,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0069.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 69,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4706,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0070.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 70,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4765,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0071.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 71,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4750,
+                        "height": 6498,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0072.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 72,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4746,
+                        "height": 6473,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0073.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 73,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4696,
+                        "height": 6488,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0074.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 74,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4768,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0075.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 75,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4693,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0076.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 76,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4768,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0077.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 77,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4725,
+                        "height": 6483,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0078.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 78,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4766,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0079.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 79,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4808,
+                        "height": 6496,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0080.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 80,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4763,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0081.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 81,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4838,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0082.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 82,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4763,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0083.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 83,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4775,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0084.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 84,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4765,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0085.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 85,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4763,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0086.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 86,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4768,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0087.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 87,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4770,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0088.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 88,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4770,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0089.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 89,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4773,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0090.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 90,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4765,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0091.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 91,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4785,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0092.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 92,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4768,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0093.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 93,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4766,
+                        "height": 6483,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0094.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 94,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4763,
+                        "height": 6481,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0095.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 95,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4763,
+                        "height": 6483,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0096.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 96,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4770,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0097.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 97,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4768,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0098.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 98,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4770,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0099.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 99,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4766,
+                        "height": 6488,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0100.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 100,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4720,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0101.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 101,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4776,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0102.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 102,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4775,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0103.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 103,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4775,
+                        "height": 6488,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0104.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 104,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4783,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0105.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 105,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4778,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0106.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 106,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4781,
+                        "height": 6503,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0107.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 107,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4781,
+                        "height": 6478,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0108.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 108,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4781,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0109.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 109,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4788,
+                        "height": 6508,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0110.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 110,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4785,
+                        "height": 6476,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0111.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 111,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4805,
+                        "height": 6465,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0112.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 112,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4786,
+                        "height": 6505,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0113.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 113,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 4805,
+                        "height": 6493,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0114.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 114,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 4793,
+                        "height": 6506,
+                        "uri": "https://ia802803.us.archive.org/BookReader/BookReaderImages.php?zip=/7/items/rbmsbk_ap2-v4_2001_V55N4/rbms.bk_ap2.v4_2001_V55N4_jp2.zip&file=rbms.bk_ap2.v4_2001_V55N4_jp2/rbms.bk_ap2.v4_2001_V55N4_0115.jp2&id=rbmsbk_ap2-v4_2001_V55N4",
+                        "leafNum": 115,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    }
+                ]
+            ]
+        },
+        "lendingInfo": {
+            "lendingStatus": null,
+            "userid": 0,
+            "isAdmin": false,
+            "isArchiveOrgLending": false,
+            "isOpenLibraryLending": false,
+            "isLendingRequired": false,
+            "isBrowserBorrowable": false,
+            "isPrintDisabledOnly": false,
+            "isAvailable": false,
+            "isAvailableForBrowsing": false,
+            "userHasBorrowed": false,
+            "userHasBrowsed": false,
+            "userOnWaitingList": false,
+            "userHoldIsReady": false,
+            "userIsPrintDisabled": false,
+            "shouldProtectImages": false,
+            "daysLeftOnLoan": 0,
+            "secondsLeftOnLoan": 0,
+            "loansUrl": "",
+            "bookUrl": "",
+            "loanCount": 0,
+            "totalWaitlistCount": 0,
+            "userWaitlistPosition": -1,
+            "maxLoans": 10,
+            "loanRecord": []
+        },
+        "metadata": {
+            "identifier": "rbmsbk_ap2-v4_2001_V55N4",
+            "creator": "Vermont Department of Tourism and Marketing",
+            "date": "2001",
+            "mediatype": "texts",
+            "publisher": "Montpelier : Agency of Development and Community Affairs",
+            "rights": "Digitized from originals held by Vermont Life magazine and Middlebury College Special Collections. Reproduced with permission from the State of Vermont. For more information, contact the Vermont Department of Tourism & Marketing.",
+            "scanner": "Internet Archive Python library 1.7.3",
+            "subject": [
+                "Vermont Life Magazine",
+                "Vermont",
+                "Vermont \u2013 Periodicals",
+                "Magazines",
+                "Tourism"
+            ],
+            "title": "Vermont life. Vol. 55, Iss. 4",
+            "publicdate": "2018-09-01 20:35:21",
+            "uploader": "specialcollections@middlebury.edu",
+            "addeddate": "2018-09-01 20:35:21",
+            "language": "eng",
+            "identifier-access": "http://archive.org/details/rbmsbk_ap2-v4_2001_V55N4",
+            "identifier-ark": "ark:/13960/t6646xb70",
+            "ppi": "600",
+            "ocr": "ABBYY FineReader 11.0 (Extended OCR)",
+            "collection": [
+                "vermontlifemagazine",
+                "middleburycollege",
+                "americana"
+            ],
+            "backup_location": "ia906801_16",
+            "notes": "Please contact <a href=\"mailto:specialcollections@middlebury.libanswers.com\" rel=\"ugc nofollow\">Middlebury College Special Collections</a> to report errors, provide additional information, or make other suggestions and help improve our cataloging for this item.",
+            "rightsstatement": "http://rightsstatements.org/vocab/CNE/1.0/",
+            "source": "RBMS",
+            "inclusive-description-statement": "https://www.middlebury.edu/library/special-collections/about/language-archival-and-library-catalogs"
+        }
+    }
+}

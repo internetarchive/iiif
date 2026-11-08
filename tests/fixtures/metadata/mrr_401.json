@@ -1,0 +1,188 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn711008.ca.archive.org",
+                "dir": "/0/items/mrr_401"
+            },
+            {
+                "server": "dn760108.eu.archive.org",
+                "dir": "/0/items/mrr_401"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn711008.ca.archive.org",
+                "dir": "/0/items/mrr_401"
+            },
+            {
+                "server": "dn760108.eu.archive.org",
+                "dir": "/0/items/mrr_401"
+            }
+        ]
+    },
+    "created": 1793994481,
+    "d1": "ia903109.us.archive.org",
+    "d2": "ia803109.us.archive.org",
+    "dir": "/26/items/mrr_401",
+    "files": [
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1636918313",
+            "size": "22387",
+            "md5": "2d73d846342f20fcbfe3137357757298",
+            "crc32": "fd3c6ccb",
+            "sha1": "721c10b23724d3b80a2323c88af061c2c415f735",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "mrr_401.pdf",
+            "source": "original",
+            "mtime": "1574255654",
+            "size": "343331939",
+            "md5": "074791fae9c4ffb43dd8ad76e1d2d34a",
+            "crc32": "706815fd",
+            "sha1": "0cf0be40d6a89c6d3116667a0ff1cfa46fec524f",
+            "format": "Image Container PDF"
+        },
+        {
+            "name": "mrr_401_abbyy.gz",
+            "source": "derivative",
+            "format": "Abbyy GZ",
+            "original": "mrr_401_jp2.zip",
+            "mtime": "1574263857",
+            "size": "6611507",
+            "md5": "2b925affc421a1789e92018be0943e78",
+            "crc32": "c402ccfa",
+            "sha1": "e2a94f9eb7d7623ab4e008dd23b3b30289a9549e"
+        },
+        {
+            "name": "mrr_401_archive.torrent",
+            "source": "metadata",
+            "btih": "789d818df1cd6de9ba96ca23c71ea06187f8c6e3",
+            "mtime": "1636917259",
+            "size": "30457",
+            "md5": "68244ecd6f67719f07f0554ff7e22289",
+            "crc32": "b6dc0fc4",
+            "sha1": "a6a6c18b987e5c306bc7cb31dad52d881bb75794",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "mrr_401_djvu.txt",
+            "source": "derivative",
+            "format": "DjVuTXT",
+            "original": "mrr_401_djvu.xml",
+            "mtime": "1574264171",
+            "size": "423806",
+            "md5": "8124b46c95c5a0c1418be7ec88bd8c16",
+            "crc32": "3194cc73",
+            "sha1": "d48d86dc71225c5564bb64fd27ba54132acd4605"
+        },
+        {
+            "name": "mrr_401_djvu.xml",
+            "source": "derivative",
+            "format": "Djvu XML",
+            "original": "mrr_401_abbyy.gz",
+            "mtime": "1574264062",
+            "size": "4674502",
+            "md5": "ab64897551397143ed606b05b5ee693b",
+            "crc32": "fff44a17",
+            "sha1": "ec723ac4f975aa99a93c3623b6120b4f28535177"
+        },
+        {
+            "name": "mrr_401_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "584a9611bb13e427e3f9cfd3573d10f4",
+            "summation": "md5"
+        },
+        {
+            "name": "mrr_401_jp2.zip",
+            "source": "derivative",
+            "format": "Single Page Processed JP2 ZIP",
+            "original": "mrr_401.pdf",
+            "mtime": "1574260683",
+            "size": "331223903",
+            "md5": "ad49e1dc2feb8734984322bb000c5443",
+            "crc32": "0a973b6d",
+            "sha1": "7eec688c5beba3b8e09acec2958877208ba97ffa",
+            "preview-image": "n0"
+        },
+        {
+            "name": "mrr_401_meta.sqlite",
+            "source": "original",
+            "mtime": "1574255675",
+            "size": "9216",
+            "format": "Metadata",
+            "md5": "7d1150c45e79098e71f5f094791685e1",
+            "crc32": "4c7dbc0c",
+            "sha1": "439894d7f01d13f270591c4fc93069f591227b10"
+        },
+        {
+            "name": "mrr_401_meta.xml",
+            "source": "original",
+            "mtime": "1636917253",
+            "size": "1051",
+            "format": "Metadata",
+            "md5": "50ff5b553f1423401fb1d379da40c0f3",
+            "crc32": "07d906d6",
+            "sha1": "bcea8d5dbde6af895d4b0805ff721af0741bd5c6"
+        },
+        {
+            "name": "mrr_401_scandata.xml",
+            "source": "derivative",
+            "format": "Scandata",
+            "original": "mrr_401_djvu.xml",
+            "mtime": "1574264549",
+            "size": "40910",
+            "md5": "f9d76e0a0c9530fa8e5c978793e184cf",
+            "crc32": "fb9e2908",
+            "sha1": "97d1cb04be0cc482cb9c3567319f9e984341efc3"
+        },
+        {
+            "name": "mrr_401_text.pdf",
+            "source": "derivative",
+            "format": "Additional Text PDF",
+            "original": "mrr_401_abbyy.gz",
+            "mtime": "1574267887",
+            "size": "39481340",
+            "md5": "a26fa0f23a3a48bebc4bd485f9aeda08",
+            "crc32": "181a847d",
+            "sha1": "d26ad79ea49f9c53828d762f357411dbca6ab66e"
+        }
+    ],
+    "files_count": 12,
+    "item_last_updated": 1636918314,
+    "item_size": 725851018,
+    "metadata": {
+        "identifier": "mrr_401",
+        "mediatype": "texts",
+        "collection": [
+            "maximumrnr",
+            "zines"
+        ],
+        "description": "<div>Maximum Rocknroll 401 (2016 Oct) Art issue</div><div>San Francisco CA</div>",
+        "language": "eng",
+        "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+        "subject": "punk",
+        "title": "Maximum Rocknroll 401 (2016 Oct) Art issue",
+        "publicdate": "2019-11-20 13:14:14",
+        "uploader": "woodchuck108@yahoo.com",
+        "addeddate": "2019-11-20 13:14:14",
+        "curation": "[curator]validator@archive.org[/curator][date]20191120131448[/date][comment]checked for malware[/comment]",
+        "identifier-access": "http://archive.org/details/mrr_401",
+        "identifier-ark": "ark:/13960/t1kh8nr84",
+        "imagecount": "136",
+        "ppi": "600",
+        "ocr": "ABBYY FineReader 11.0 (Extended OCR)",
+        "backup_location": "ia907006_31"
+    },
+    "server": "ia803109.us.archive.org",
+    "uniq": 96738935,
+    "workable_servers": [
+        "ia803109.us.archive.org",
+        "ia903109.us.archive.org"
+    ]
+}

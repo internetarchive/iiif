@@ -1,11 +1,12 @@
 import os
 import unittest
+from tests.base import IIIFTestCase
 
 from iiify.resolver import safe_media_path
 from iiify.configs import media_root
 
 
-class TestSafeMediaPath(unittest.TestCase):
+class TestSafeMediaPath(IIIFTestCase):
     """Regression tests for CodeQL py/path-injection #11 and #91.
 
     ``safe_media_path`` is the single source-side sanitizer for the tainted

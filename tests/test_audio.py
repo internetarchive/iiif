@@ -1,16 +1,21 @@
 import os
 
-import unittest
+from tests.base import IIIFTestCase
 import math
 from flask.testing import FlaskClient
-from iiify.app import app
+from iiify.app import app, cache
+from tests.mocks.mock_metadata import log_requests, mock_urls
 
-class TestAudio(unittest.TestCase):
+class TestAudio(IIIFTestCase):
 
     def setUp(self) -> None:
-        app.config['CACHE_TYPE'] = "NullCache"
+        cache.init_app(app, config={
+                'CACHE_TYPE': 'NullCache',
+                'CACHE_NO_NULL_WARNING': True})
         self.test_app = FlaskClient(app)
 
+    
+    @mock_urls
     def test_audio_no_derivatives(self):
         resp = self.test_app.get("/iiif/3/kaled_jalil/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -18,8 +23,9 @@ class TestAudio(unittest.TestCase):
 
         self.assertEqual(len(manifest['items']),114,f"Expected 114 canvases but got: {len(manifest['items'])}") 
 
+    @mock_urls
     def test_spectrogram_waveforms(self):
-        resp = self.test_app.get("/iiif/3/hhfbc-cyl26/manifest.json?recache=True")
+        resp = self.test_app.get("/iiif/3/hhfbc-cyl26/manifest.json")
         self.assertEqual(resp.status_code, 200)
         manifest = resp.json        
 
@@ -53,6 +59,7 @@ class TestAudio(unittest.TestCase):
             elif name.endswith(".wav"):
                 self.assertEqual(format, "audio/x-wav", f"Unexpected mimetype for {name}")
 
+    @mock_urls
     def test_multi_track_audio_gets_ranges(self):
         resp = self.test_app.get("/iiif/Weirdos_demo-1978/manifest.json")
         self.assertEqual(resp.status_code, 200)
@@ -62,6 +69,7 @@ class TestAudio(unittest.TestCase):
         self.assertEqual(manifest["structures"][0]["label"]["en"][0], "Track List", f"Expected a top level range to be labeled 'Track List' but got {manifest["structures"][0]["label"]["en"][0]}")
         self.assertEqual(len(manifest["structures"][0]["items"]), 15, f"Expected 15 tracks but got {len(manifest["structures"][0]["items"])}")
     
+    @mock_urls
     def test_single_track_audio_gets_no_ranges(self):
         resp = self.test_app.get("/iiif/2021-04-06/manifest.json")
         self.assertEqual(resp.status_code, 200)

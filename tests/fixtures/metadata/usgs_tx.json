@@ -1,0 +1,107 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn721503.ca.archive.org",
+                "dir": "/0/items/usgs_tx"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn721503.ca.archive.org",
+                "dir": "/0/items/usgs_tx"
+            }
+        ]
+    },
+    "created": 1793995448,
+    "d1": "ia601608.us.archive.org",
+    "d2": "ia801608.us.archive.org",
+    "dir": "/24/items/usgs_tx",
+    "files": [
+        {
+            "name": "usgs_tx_archive.torrent",
+            "source": "metadata",
+            "btih": "12ad603c16f1f7d56b873c07dc45d239d3e5caf5",
+            "mtime": "1775405451",
+            "size": "1260",
+            "md5": "b9c24dcafa7a0a3364c755795a82fc34",
+            "crc32": "3d707f6c",
+            "sha1": "763e57762242b23a12a3b6af561be5a246dc964b",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "usgs_tx_files.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "a7db36d67e68e00281f433d498d051a9",
+            "summation": "md5"
+        },
+        {
+            "name": "usgs_tx_meta.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1775405450",
+            "size": "1399",
+            "md5": "4d7c4f7b3c2ffb0a8951bec1d75f91d6",
+            "crc32": "da61b851",
+            "sha1": "933824d650bd45aef9e1d5d545dcdbc992709105"
+        },
+        {
+            "name": "usgs_tx_reviews.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "md5": "93e654e019c2a3c173fb09c2087729c0",
+            "mtime": "1160088866",
+            "size": "171",
+            "crc32": "3a8a1ade",
+            "sha1": "dd27c70e1ae0de26dcda378e595c451dd5c0646c"
+        }
+    ],
+    "files_count": 4,
+    "is_collection": true,
+    "item_last_updated": 1775405451,
+    "item_size": 2830,
+    "metadata": {
+        "identifier": "usgs_tx",
+        "title": "USGS Maps of Texas",
+        "mediatype": "collection",
+        "collection": [
+            "maps_usgs",
+            "image"
+        ],
+        "description": "<p>USGS maps for the state of Texas are available here.</p>\r\n\r\n<p>Click to go to the <a href=\"http://www.archive.org/details/maps_usgs\">collection page</a> for USGS DRG maps of all 50 states.</p>",
+        "hidden": "true",
+        "publicdate": "2006-10-05 22:55:15",
+        "addeddate": "2006-10-05 22:54:50",
+        "uploader": "renata@archive.org",
+        "updater": [
+            "ewingrr",
+            "ewingrr",
+            "ewingrr",
+            "ewingrr",
+            "ewingrr",
+            "Jeff Kaplan"
+        ],
+        "updatedate": [
+            "2006-10-05 22:55:40",
+            "2006-11-01 20:00:52",
+            "2006-11-21 20:34:36",
+            "2006-11-21 23:52:24",
+            "2006-11-22 00:53:38",
+            "2010-10-28 03:11:48"
+        ],
+        "nav_order": "540",
+        "spotlight_identifier": "usgs_drg_tx_25097_h2",
+        "num_top_ba": "5",
+        "backup_location": "ia903600_23",
+        "show_search_by_year": "true",
+        "filesxml": "Sun Apr 5 16:10:50 UTC 2026"
+    },
+    "reviews": [],
+    "server": "ia801608.us.archive.org",
+    "uniq": 1249725316,
+    "workable_servers": [
+        "ia801608.us.archive.org",
+        "ia601608.us.archive.org"
+    ]
+}

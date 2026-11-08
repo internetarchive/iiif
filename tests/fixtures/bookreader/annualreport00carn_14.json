@@ -1,0 +1,1281 @@
+{
+    "data": {
+        "data": {
+            "streamOnly": false,
+            "isRestricted": false,
+            "id": "annualreport00carn_14",
+            "subPrefix": "annualreport00carn_14",
+            "bookUrl": "/details/annualreport00carn_14",
+            "bookUri": "https://archive.org/details/annualreport00carn_14",
+            "downloadUrls": [
+                [
+                    "PDF",
+                    "//archive.org/download/annualreport00carn_14/annualreport00carn_14.pdf"
+                ],
+                [
+                    "ePub",
+                    "//archive.org/download/annualreport00carn_14/annualreport00carn_14.epub"
+                ],
+                [
+                    "Plain Text",
+                    "//archive.org/download/annualreport00carn_14/annualreport00carn_14_djvu.txt"
+                ],
+                [
+                    "DAISY",
+                    "//archive.org/download/annualreport00carn_14/annualreport00carn_14_daisy.zip"
+                ],
+                [
+                    "Kindle",
+                    "//archive.org/download/annualreport00carn_14/annualreport00carn_14.mobi"
+                ]
+            ]
+        },
+        "brOptions": {
+            "bookId": "annualreport00carn_14",
+            "bookPath": "/8/items/annualreport00carn_14/annualreport00carn_14",
+            "imageFormat": "jp2",
+            "server": "ia800803.us.archive.org",
+            "subPrefix": "annualreport00carn_14",
+            "zip": "/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip",
+            "bookTitle": "Annual report",
+            "bookLanguage": "eng",
+            "ppi": "300",
+            "titleLeaf": 7,
+            "coverLeaf": 1,
+            "defaultStartLeaf": 1,
+            "pageProgression": "lr",
+            "vars": {
+                "bookId": "annualreport00carn_14",
+                "bookPath": "/8/items/annualreport00carn_14/annualreport00carn_14",
+                "server": "ia800803.us.archive.org",
+                "subPrefix": "annualreport00carn_14"
+            },
+            "plugins": {
+                "chapters": {
+                    "openLibraryId": null,
+                    "internetArchiveId": "annualreport00carn_14",
+                    "enabled": false
+                },
+                "search": {
+                    "enabled": true,
+                    "preTag": "<IA_FTS_MATCH>",
+                    "postTag": "</IA_FTS_MATCH>",
+                    "searchInsideUrl": "//{{server}}/fulltext/inside.php?item_id={{bookId|urlencode}}&doc={{subPrefix|urlencode}}&q={{query|urlencode}}&path=/8/items/annualreport00carn_14&pre_tag={{preTag|urlencode}}&post_tag={{postTag|urlencode}}"
+                },
+                "tts": {
+                    "enabled": true,
+                    "pageChunkUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&page={{pageIndex}}&callback=false",
+                    "remoteTtsUrl": "https://{{server}}/BookReader/BookReaderGetTTS.php?string={{text|urlencode}}&format={{format}}"
+                },
+                "textSelection": {
+                    "enabled": true,
+                    "singlePageDjvuXmlUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&mode=djvu_xml&page={{pageIndex}}"
+                }
+            },
+            "unviewablePageURI": "/bookreader/static/preview-default.png",
+            "data": [
+                [
+                    {
+                        "width": 2865,
+                        "height": 4031,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0001.jp2&id=annualreport00carn_14",
+                        "leafNum": 1,
+                        "pageType": "Cover",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0002.jp2&id=annualreport00carn_14",
+                        "leafNum": 2,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0003.jp2&id=annualreport00carn_14",
+                        "leafNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0004.jp2&id=annualreport00carn_14",
+                        "leafNum": 4,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0005.jp2&id=annualreport00carn_14",
+                        "leafNum": 5,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0006.jp2&id=annualreport00carn_14",
+                        "leafNum": 6,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0007.jp2&id=annualreport00carn_14",
+                        "leafNum": 7,
+                        "pageType": "Title",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0008.jp2&id=annualreport00carn_14",
+                        "leafNum": 8,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0009.jp2&id=annualreport00carn_14",
+                        "leafNum": 9,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0010.jp2&id=annualreport00carn_14",
+                        "leafNum": 10,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0011.jp2&id=annualreport00carn_14",
+                        "leafNum": 11,
+                        "pageType": "Contents",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0012.jp2&id=annualreport00carn_14",
+                        "leafNum": 12,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0013.jp2&id=annualreport00carn_14",
+                        "leafNum": 13,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0014.jp2&id=annualreport00carn_14",
+                        "leafNum": 14,
+                        "pageType": "Normal",
+                        "pageNum": 2,
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0015.jp2&id=annualreport00carn_14",
+                        "leafNum": 15,
+                        "pageNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0016.jp2&id=annualreport00carn_14",
+                        "leafNum": 16,
+                        "pageNum": 4,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0017.jp2&id=annualreport00carn_14",
+                        "leafNum": 17,
+                        "pageNum": 5,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0018.jp2&id=annualreport00carn_14",
+                        "leafNum": 18,
+                        "pageNum": 6,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0019.jp2&id=annualreport00carn_14",
+                        "leafNum": 19,
+                        "pageNum": 7,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0020.jp2&id=annualreport00carn_14",
+                        "leafNum": 20,
+                        "pageNum": 8,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0021.jp2&id=annualreport00carn_14",
+                        "leafNum": 21,
+                        "pageNum": 9,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0022.jp2&id=annualreport00carn_14",
+                        "leafNum": 22,
+                        "pageNum": 10,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0023.jp2&id=annualreport00carn_14",
+                        "leafNum": 23,
+                        "pageNum": 11,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0024.jp2&id=annualreport00carn_14",
+                        "leafNum": 24,
+                        "pageNum": 12,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0025.jp2&id=annualreport00carn_14",
+                        "leafNum": 25,
+                        "pageNum": 13,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0026.jp2&id=annualreport00carn_14",
+                        "leafNum": 26,
+                        "pageNum": 14,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0027.jp2&id=annualreport00carn_14",
+                        "leafNum": 27,
+                        "pageNum": 15,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0028.jp2&id=annualreport00carn_14",
+                        "leafNum": 28,
+                        "pageNum": 16,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0029.jp2&id=annualreport00carn_14",
+                        "leafNum": 29,
+                        "pageNum": 17,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0030.jp2&id=annualreport00carn_14",
+                        "leafNum": 30,
+                        "pageNum": 18,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0031.jp2&id=annualreport00carn_14",
+                        "leafNum": 31,
+                        "pageNum": 19,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0032.jp2&id=annualreport00carn_14",
+                        "leafNum": 32,
+                        "pageNum": 20,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0033.jp2&id=annualreport00carn_14",
+                        "leafNum": 33,
+                        "pageNum": 21,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0034.jp2&id=annualreport00carn_14",
+                        "leafNum": 34,
+                        "pageNum": 22,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0035.jp2&id=annualreport00carn_14",
+                        "leafNum": 35,
+                        "pageNum": 23,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0036.jp2&id=annualreport00carn_14",
+                        "leafNum": 36,
+                        "pageNum": 24,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0037.jp2&id=annualreport00carn_14",
+                        "leafNum": 37,
+                        "pageNum": 25,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0038.jp2&id=annualreport00carn_14",
+                        "leafNum": 38,
+                        "pageNum": 26,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0039.jp2&id=annualreport00carn_14",
+                        "leafNum": 39,
+                        "pageNum": 27,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0040.jp2&id=annualreport00carn_14",
+                        "leafNum": 40,
+                        "pageNum": 28,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0041.jp2&id=annualreport00carn_14",
+                        "leafNum": 41,
+                        "pageNum": 29,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0042.jp2&id=annualreport00carn_14",
+                        "leafNum": 42,
+                        "pageNum": 30,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0043.jp2&id=annualreport00carn_14",
+                        "leafNum": 43,
+                        "pageNum": 31,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0044.jp2&id=annualreport00carn_14",
+                        "leafNum": 44,
+                        "pageNum": 32,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0045.jp2&id=annualreport00carn_14",
+                        "leafNum": 45,
+                        "pageNum": 33,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0046.jp2&id=annualreport00carn_14",
+                        "leafNum": 46,
+                        "pageNum": 34,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0047.jp2&id=annualreport00carn_14",
+                        "leafNum": 47,
+                        "pageNum": 35,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0048.jp2&id=annualreport00carn_14",
+                        "leafNum": 48,
+                        "pageNum": 36,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0049.jp2&id=annualreport00carn_14",
+                        "leafNum": 49,
+                        "pageNum": 37,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0050.jp2&id=annualreport00carn_14",
+                        "leafNum": 50,
+                        "pageNum": 38,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0051.jp2&id=annualreport00carn_14",
+                        "leafNum": 51,
+                        "pageNum": 39,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0052.jp2&id=annualreport00carn_14",
+                        "leafNum": 52,
+                        "pageNum": 40,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0053.jp2&id=annualreport00carn_14",
+                        "leafNum": 53,
+                        "pageNum": 41,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0054.jp2&id=annualreport00carn_14",
+                        "leafNum": 54,
+                        "pageNum": 42,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0055.jp2&id=annualreport00carn_14",
+                        "leafNum": 55,
+                        "pageNum": 43,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0056.jp2&id=annualreport00carn_14",
+                        "leafNum": 56,
+                        "pageNum": 44,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0057.jp2&id=annualreport00carn_14",
+                        "leafNum": 57,
+                        "pageNum": 45,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0058.jp2&id=annualreport00carn_14",
+                        "leafNum": 58,
+                        "pageNum": 46,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0059.jp2&id=annualreport00carn_14",
+                        "leafNum": 59,
+                        "pageNum": 47,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0060.jp2&id=annualreport00carn_14",
+                        "leafNum": 60,
+                        "pageNum": 48,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0061.jp2&id=annualreport00carn_14",
+                        "leafNum": 61,
+                        "pageNum": 49,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0062.jp2&id=annualreport00carn_14",
+                        "leafNum": 62,
+                        "pageNum": 50,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0063.jp2&id=annualreport00carn_14",
+                        "leafNum": 63,
+                        "pageNum": 51,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0064.jp2&id=annualreport00carn_14",
+                        "leafNum": 64,
+                        "pageNum": 52,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0065.jp2&id=annualreport00carn_14",
+                        "leafNum": 65,
+                        "pageNum": 53,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0066.jp2&id=annualreport00carn_14",
+                        "leafNum": 66,
+                        "pageNum": 54,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0067.jp2&id=annualreport00carn_14",
+                        "leafNum": 67,
+                        "pageNum": 55,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0068.jp2&id=annualreport00carn_14",
+                        "leafNum": 68,
+                        "pageNum": 56,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0069.jp2&id=annualreport00carn_14",
+                        "leafNum": 69,
+                        "pageNum": 57,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0070.jp2&id=annualreport00carn_14",
+                        "leafNum": 70,
+                        "pageNum": 58,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0071.jp2&id=annualreport00carn_14",
+                        "leafNum": 71,
+                        "pageNum": 59,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0072.jp2&id=annualreport00carn_14",
+                        "leafNum": 72,
+                        "pageNum": 60,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0073.jp2&id=annualreport00carn_14",
+                        "leafNum": 73,
+                        "pageNum": 61,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0074.jp2&id=annualreport00carn_14",
+                        "leafNum": 74,
+                        "pageNum": 62,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0075.jp2&id=annualreport00carn_14",
+                        "leafNum": 75,
+                        "pageNum": 63,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0076.jp2&id=annualreport00carn_14",
+                        "leafNum": 76,
+                        "pageNum": 64,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0077.jp2&id=annualreport00carn_14",
+                        "leafNum": 77,
+                        "pageNum": 65,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0078.jp2&id=annualreport00carn_14",
+                        "leafNum": 78,
+                        "pageNum": 66,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0079.jp2&id=annualreport00carn_14",
+                        "leafNum": 79,
+                        "pageNum": 67,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0080.jp2&id=annualreport00carn_14",
+                        "leafNum": 80,
+                        "pageNum": 68,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0081.jp2&id=annualreport00carn_14",
+                        "leafNum": 81,
+                        "pageNum": 69,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0082.jp2&id=annualreport00carn_14",
+                        "leafNum": 82,
+                        "pageNum": 70,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0083.jp2&id=annualreport00carn_14",
+                        "leafNum": 83,
+                        "pageNum": 71,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0084.jp2&id=annualreport00carn_14",
+                        "leafNum": 84,
+                        "pageNum": 72,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0085.jp2&id=annualreport00carn_14",
+                        "leafNum": 85,
+                        "pageNum": 73,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0086.jp2&id=annualreport00carn_14",
+                        "leafNum": 86,
+                        "pageNum": 74,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0087.jp2&id=annualreport00carn_14",
+                        "leafNum": 87,
+                        "pageNum": 75,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0088.jp2&id=annualreport00carn_14",
+                        "leafNum": 88,
+                        "pageNum": 76,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0089.jp2&id=annualreport00carn_14",
+                        "leafNum": 89,
+                        "pageNum": 77,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0090.jp2&id=annualreport00carn_14",
+                        "leafNum": 90,
+                        "pageNum": 78,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0091.jp2&id=annualreport00carn_14",
+                        "leafNum": 91,
+                        "pageNum": 79,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0092.jp2&id=annualreport00carn_14",
+                        "leafNum": 92,
+                        "pageNum": 80,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0093.jp2&id=annualreport00carn_14",
+                        "leafNum": 93,
+                        "pageNum": 81,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0094.jp2&id=annualreport00carn_14",
+                        "leafNum": 94,
+                        "pageNum": 82,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0095.jp2&id=annualreport00carn_14",
+                        "leafNum": 95,
+                        "pageNum": 83,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0096.jp2&id=annualreport00carn_14",
+                        "leafNum": 96,
+                        "pageNum": 84,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0097.jp2&id=annualreport00carn_14",
+                        "leafNum": 97,
+                        "pageNum": 85,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0098.jp2&id=annualreport00carn_14",
+                        "leafNum": 98,
+                        "pageNum": 86,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0099.jp2&id=annualreport00carn_14",
+                        "leafNum": 99,
+                        "pageNum": 87,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0100.jp2&id=annualreport00carn_14",
+                        "leafNum": 100,
+                        "pageNum": 88,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0101.jp2&id=annualreport00carn_14",
+                        "leafNum": 101,
+                        "pageNum": 89,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0102.jp2&id=annualreport00carn_14",
+                        "leafNum": 102,
+                        "pageNum": 90,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0103.jp2&id=annualreport00carn_14",
+                        "leafNum": 103,
+                        "pageNum": 91,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0104.jp2&id=annualreport00carn_14",
+                        "leafNum": 104,
+                        "pageNum": 92,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0105.jp2&id=annualreport00carn_14",
+                        "leafNum": 105,
+                        "pageNum": 93,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0106.jp2&id=annualreport00carn_14",
+                        "leafNum": 106,
+                        "pageNum": 94,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0107.jp2&id=annualreport00carn_14",
+                        "leafNum": 107,
+                        "pageNum": 95,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0108.jp2&id=annualreport00carn_14",
+                        "leafNum": 108,
+                        "pageNum": 96,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0109.jp2&id=annualreport00carn_14",
+                        "leafNum": 109,
+                        "pageNum": 97,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0110.jp2&id=annualreport00carn_14",
+                        "leafNum": 110,
+                        "pageNum": 98,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0111.jp2&id=annualreport00carn_14",
+                        "leafNum": 111,
+                        "pageNum": 99,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2769,
+                        "height": 4004,
+                        "uri": "https://ia800803.us.archive.org/BookReader/BookReaderImages.php?zip=/8/items/annualreport00carn_14/annualreport00carn_14_jp2.zip&file=annualreport00carn_14_jp2/annualreport00carn_14_0112.jp2&id=annualreport00carn_14",
+                        "leafNum": 112,
+                        "pageType": "Cover",
+                        "pageSide": "L"
+                    }
+                ]
+            ]
+        },
+        "lendingInfo": {
+            "lendingStatus": null,
+            "userid": 0,
+            "isAdmin": false,
+            "isArchiveOrgLending": false,
+            "isOpenLibraryLending": false,
+            "isLendingRequired": false,
+            "isBrowserBorrowable": false,
+            "isPrintDisabledOnly": false,
+            "isAvailable": false,
+            "isAvailableForBrowsing": false,
+            "userHasBorrowed": false,
+            "userHasBrowsed": false,
+            "userOnWaitingList": false,
+            "userHoldIsReady": false,
+            "userIsPrintDisabled": false,
+            "shouldProtectImages": false,
+            "daysLeftOnLoan": 0,
+            "secondsLeftOnLoan": 0,
+            "loansUrl": "",
+            "bookUrl": "",
+            "loanCount": 0,
+            "totalWaitlistCount": 0,
+            "userWaitlistPosition": -1,
+            "maxLoans": 10,
+            "loanRecord": []
+        },
+        "metadata": {
+            "language": "eng",
+            "scanningcenter": "nj",
+            "sponsor": "Columbia University Libraries",
+            "contributor": "Columbia University Libraries",
+            "date": "1954",
+            "subject": [
+                "Carnegie Corporation of New York",
+                "Carnegie Corporation of New York",
+                "Carnegie Corporation of New York",
+                "\u0152uvres de bienfaisance"
+            ],
+            "title": "Annual report",
+            "creator": "Carnegie Corporation of New York",
+            "shiptracking": "CoCa181",
+            "year": [
+                "1954",
+                "1969"
+            ],
+            "publisher": "New York [Carnegie Corporation of New York]",
+            "mediatype": "texts",
+            "repub_state": "19",
+            "page-progression": "lr",
+            "publicdate": "2018-01-10 16:34:12",
+            "updatedate": "2018-01-10 17:28:38",
+            "updater": "associate-cheri-destefano@archive.org",
+            "identifier": "annualreport00carn_14",
+            "uploader": "associate-cheri-destefano@archive.org",
+            "addeddate": "2018-01-10 17:28:40",
+            "scanner": "scribe2.nj.archive.org",
+            "operator": "associate-mario-dibartolo@archive.org",
+            "tts_version": "v1.57-initial-85-gb810232",
+            "imagecount": "114",
+            "scandate": "20180131224851",
+            "ppi": "300",
+            "republisher_operator": "associate-joseph-ondreicka@archive.org",
+            "republisher_date": "20180201150553",
+            "republisher_time": "165",
+            "foldoutcount": "0",
+            "identifier-access": "http://archive.org/details/annualreport00carn_14",
+            "identifier-ark": "ark:/13960/t6g22fr6c",
+            "bookplateleaf": "0005",
+            "scanfee": "100",
+            "invoice": "86",
+            "curation": "[curator]lenscriv@archive.org[/curator][date]20180205143204[/date][state]approved[/state][comment]199[/comment]",
+            "sponsordate": "20180131",
+            "external-identifier": "urn:oclc:record:1014025650",
+            "collection": [
+                "culcarnegiecorp",
+                "ColumbiaUniversityLibraries",
+                "americana"
+            ],
+            "description": [
+                "Report year ends Sept. 30",
+                "1951-71. 1 v",
+                "Grant and appropriations information reprinted as: Carnegie Corporation of New York. List of grants and appropriations, 19 -198 ; Carnegie Corporation of New York. Grants and appropriations, 1989-",
+                "Latest issue consulted: 2002/2003",
+                "<h2>Other volumes</h2>\n\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_001\" rel=\"nofollow\">Annual report, 1954</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_002\" rel=\"nofollow\">Annual report, 1955</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_003\" rel=\"nofollow\">Annual report, 1956</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_004\" rel=\"nofollow\">Annual report, 1957</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_005\" rel=\"nofollow\">Annual report, 1958</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_006\" rel=\"nofollow\">Annual report, 1959</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_007\" rel=\"nofollow\">Annual report, 1960</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_008\" rel=\"nofollow\">Annual report, 1961</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_009\" rel=\"nofollow\">Annual report, 1962</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_010\" rel=\"nofollow\">Annual report, 1963</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_011\" rel=\"nofollow\">Annual report, 1964</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_012\" rel=\"nofollow\">Annual report, 1965</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_013\" rel=\"nofollow\">Annual report, 1966</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_014\" rel=\"nofollow\">Annual report, 1967</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_015\" rel=\"nofollow\">Annual report, 1968</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_017\" rel=\"nofollow\">Annual report, 1970</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_018\" rel=\"nofollow\">Annual report, 1971</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_019\" rel=\"nofollow\">Annual report, 1972</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_020\" rel=\"nofollow\">Annual report, 1973</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_021\" rel=\"nofollow\">Annual report, 1974</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_022\" rel=\"nofollow\">Annual report, 1975</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_023\" rel=\"nofollow\">Annual report, 1976</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_024\" rel=\"nofollow\">Annual report, 1977</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_025\" rel=\"nofollow\">Annual report, 1978</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_026\" rel=\"nofollow\">Annual report, 1979</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_027\" rel=\"nofollow\">Annual report, 1980</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_028\" rel=\"nofollow\">Annual report, 1981</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_029\" rel=\"nofollow\">Annual report, 1982</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_030\" rel=\"nofollow\">Annual report, 1983</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_031\" rel=\"nofollow\">Annual report, 1984</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_032\" rel=\"nofollow\">Annual report, 1985</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_033\" rel=\"nofollow\">Annual report, 1986</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_034\" rel=\"nofollow\">Annual report, 1987</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_035\" rel=\"nofollow\">Annual report, 1988</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_036\" rel=\"nofollow\">Annual report, 1989</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_037\" rel=\"nofollow\">Annual report, 1990</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_038\" rel=\"nofollow\">Annual report, 1991</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_039\" rel=\"nofollow\">Annual report, 1992</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_040\" rel=\"nofollow\">Annual report, 1993</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_041\" rel=\"nofollow\">Annual report, 1994</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_042\" rel=\"nofollow\">Annual report, 1995</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_043\" rel=\"nofollow\">Annual report, 1996</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_044\" rel=\"nofollow\">Annual report, 1997</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_045\" rel=\"nofollow\">Annual report, 1998</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_046\" rel=\"nofollow\">Annual report, 1999</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_047\" rel=\"nofollow\">Annual report, 2000</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_048\" rel=\"nofollow\">Annual report, 2001</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_049\" rel=\"nofollow\">Annual report, 2002-2003</a>\n<img src=\"//web.archive.org/web/2im_/http://clio.columbia.edu/assets/icons/book-dd6385e1df68997c9a55e6cb9f746576.png\" alt=\"Book\" style=\"margin-right:10px;float:left;\" /><a href=\"http://www.columbia.edu/cgi-bin/cul/resolve?clio12998568_050\" rel=\"nofollow\">Annual report, 2004-2005</a>"
+            ],
+            "backup_location": "ia906605_32",
+            "oclc-id": "1014025650",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "page_number_confidence": "100",
+            "page_number_module_version": "1.0.3"
+        }
+    }
+}

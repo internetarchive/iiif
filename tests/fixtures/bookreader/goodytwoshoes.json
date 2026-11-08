@@ -1,0 +1,330 @@
+{
+    "data": {
+        "data": {
+            "streamOnly": false,
+            "isRestricted": false,
+            "id": "goodytwoshoes00newyiala",
+            "subPrefix": "goodytwoshoes00newyiala",
+            "bookUrl": "/details/goodytwoshoes00newyiala",
+            "bookUri": "https://archive.org/details/goodytwoshoes00newyiala",
+            "downloadUrls": [
+                [
+                    "PDF",
+                    "//archive.org/download/goodytwoshoes00newyiala/goodytwoshoes00newyiala.pdf"
+                ],
+                [
+                    "ePub",
+                    "//archive.org/download/goodytwoshoes00newyiala/goodytwoshoes00newyiala.epub"
+                ],
+                [
+                    "Plain Text",
+                    "//archive.org/download/goodytwoshoes00newyiala/goodytwoshoes00newyiala_djvu.txt"
+                ],
+                [
+                    "DAISY",
+                    "//archive.org/download/goodytwoshoes00newyiala/goodytwoshoes00newyiala_daisy.zip"
+                ],
+                [
+                    "Kindle",
+                    "//archive.org/download/goodytwoshoes00newyiala/goodytwoshoes00newyiala.mobi"
+                ]
+            ]
+        },
+        "brOptions": {
+            "bookId": "goodytwoshoes00newyiala",
+            "bookPath": "/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala",
+            "imageFormat": "jp2",
+            "server": "ia803103.us.archive.org",
+            "subPrefix": "goodytwoshoes00newyiala",
+            "zip": "/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip",
+            "bookTitle": "Goody Two-Shoes",
+            "bookLanguage": "eng",
+            "ppi": "500",
+            "coverLeaf": 1,
+            "defaultStartLeaf": 1,
+            "pageProgression": "lr",
+            "vars": {
+                "bookId": "goodytwoshoes00newyiala",
+                "bookPath": "/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala",
+                "server": "ia803103.us.archive.org",
+                "subPrefix": "goodytwoshoes00newyiala"
+            },
+            "plugins": {
+                "chapters": {
+                    "openLibraryId": "OL7095326M",
+                    "internetArchiveId": "goodytwoshoes00newyiala"
+                },
+                "search": {
+                    "enabled": true,
+                    "preTag": "<IA_FTS_MATCH>",
+                    "postTag": "</IA_FTS_MATCH>",
+                    "searchInsideUrl": "//{{server}}/fulltext/inside.php?item_id={{bookId|urlencode}}&doc={{subPrefix|urlencode}}&q={{query|urlencode}}&path=/14/items/goodytwoshoes00newyiala&pre_tag={{preTag|urlencode}}&post_tag={{postTag|urlencode}}"
+                },
+                "tts": {
+                    "enabled": true,
+                    "pageChunkUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&page={{pageIndex}}&callback=false",
+                    "remoteTtsUrl": "https://{{server}}/BookReader/BookReaderGetTTS.php?string={{text|urlencode}}&format={{format}}"
+                },
+                "textSelection": {
+                    "enabled": true,
+                    "singlePageDjvuXmlUrl": "https://{{server}}/BookReader/BookReaderGetTextWrapper.php?path={{bookPath|urlencode}}_djvu.xml&mode=djvu_xml&page={{pageIndex}}"
+                }
+            },
+            "unviewablePageURI": "/bookreader/static/preview-default.png",
+            "data": [
+                [
+                    {
+                        "width": 2454,
+                        "height": 3192,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0001.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 1,
+                        "pageType": "Cover",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0002.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 2,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0003.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 3,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0004.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 4,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0005.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 5,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0006.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 6,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0007.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 7,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0008.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 8,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0009.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 9,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0010.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 10,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0011.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 11,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0012.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 12,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0013.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 13,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0014.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 14,
+                        "pageType": "Normal",
+                        "pageSide": "L"
+                    },
+                    {
+                        "width": 2346,
+                        "height": 3140,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0015.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 15,
+                        "pageType": "Normal",
+                        "pageSide": "R"
+                    }
+                ],
+                [
+                    {
+                        "width": 2414,
+                        "height": 3202,
+                        "uri": "https://ia803103.us.archive.org/BookReader/BookReaderImages.php?zip=/14/items/goodytwoshoes00newyiala/goodytwoshoes00newyiala_jp2.zip&file=goodytwoshoes00newyiala_jp2/goodytwoshoes00newyiala_0016.jp2&id=goodytwoshoes00newyiala",
+                        "leafNum": 16,
+                        "pageType": "Cover",
+                        "pageSide": "L"
+                    }
+                ]
+            ]
+        },
+        "lendingInfo": {
+            "lendingStatus": null,
+            "userid": 0,
+            "isAdmin": false,
+            "isArchiveOrgLending": false,
+            "isOpenLibraryLending": false,
+            "isLendingRequired": false,
+            "isBrowserBorrowable": false,
+            "isPrintDisabledOnly": false,
+            "isAvailable": false,
+            "isAvailableForBrowsing": false,
+            "userHasBorrowed": false,
+            "userHasBrowsed": false,
+            "userOnWaitingList": false,
+            "userHoldIsReady": false,
+            "userIsPrintDisabled": false,
+            "shouldProtectImages": false,
+            "daysLeftOnLoan": 0,
+            "secondsLeftOnLoan": 0,
+            "loansUrl": "",
+            "bookUrl": "",
+            "loanCount": 0,
+            "totalWaitlistCount": 0,
+            "userWaitlistPosition": -1,
+            "maxLoans": 10,
+            "loanRecord": []
+        },
+        "metadata": {
+            "identifier": "goodytwoshoes00newyiala",
+            "title": "Goody Two-Shoes",
+            "mediatype": "texts",
+            "description": [
+                "Publisher's chromolithographed pictorial wrappers",
+                "Ex libris Elvah Karshner"
+            ],
+            "date": "c1888",
+            "year": "1888",
+            "subject": [
+                "Brothers and sisters",
+                "Orphans",
+                "Conduct of life",
+                "Education"
+            ],
+            "publicdate": "2006-12-05 11:01:57",
+            "addeddate": "2006-12-05 19:01:51",
+            "uploader": "scanner-alyson-wieczorek@archive.org",
+            "updater": [
+                "ARossi",
+                "ARossi",
+                "ARossi"
+            ],
+            "updatedate": [
+                "2006-12-05 19:01:49",
+                "2006-12-11 19:23:45",
+                "2007-06-19 21:03:21",
+                "2007-08-30 02:52:19"
+            ],
+            "notes": "notes",
+            "contributor": "University of California Libraries",
+            "publisher": "New-York : McLoughlin Bro's",
+            "language": "eng",
+            "copyright-evidence-operator": "alyson-wieczorek",
+            "possible-copyright-status": "NOT_IN_COPYRIGHT",
+            "copyright-region": "US",
+            "copyright-evidence": "Evidence reported by alyson-wieczorek for item goodytwoshoes00newyiala on December 5, 2006: visible notice of copyright; stated date is 1888.",
+            "copyright-evidence-date": "20061205190126",
+            "sponsor": "msn",
+            "scanningcenter": "iala",
+            "call_number": "srlf_ucla:LAGE-1529577",
+            "collection-library": "ucla_spec",
+            "identifier-bib": "LAGE-1529577",
+            "identifier-access": "http://www.archive.org/details/goodytwoshoes00newyiala",
+            "imagecount": "20",
+            "ppi": "500",
+            "lcamid": "1420900961",
+            "rcamid": "1020705645",
+            "camera": "5D",
+            "operator": "scanner-kelly-critch@archive.org",
+            "scanner": "iala9",
+            "scandate": "20061208161222",
+            "identifier-ark": "ark:/13960/t53f4ms96",
+            "curation": "[curator]marcus@archive.org[/curator][date]20070112012407[/date][state]approved[/state]",
+            "sponsordate": "20080430",
+            "filesxml": [
+                "Sat Oct 13 5:50:07 UTC 2007",
+                "Thu Dec 24 11:20:19 UTC 2020",
+                "Mon Oct 4 20:35:05 UTC 2021"
+            ],
+            "collection": [
+                "cdl",
+                "yrlsc",
+                "iacl",
+                "americana"
+            ],
+            "foldoutcount": "0",
+            "repub_state": "4",
+            "backup_location": "ia903600_26",
+            "openlibrary_edition": "OL7095326M",
+            "openlibrary_work": "OL16077419W",
+            "external-identifier": "urn:oclc:record:1045551362",
+            "oclc-id": "32678428",
+            "ocr_module_version": "0.0.21",
+            "ocr_converted": "abbyy-to-hocr 1.1.37",
+            "page_number_confidence": "0",
+            "page_number_module_version": "1.0.3"
+        }
+    }
+}

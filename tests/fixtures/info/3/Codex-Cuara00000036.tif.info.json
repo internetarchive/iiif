@@ -1,0 +1,82 @@
+{
+    "@context": "http://iiif.io/api/image/3/context.json",
+    "id": "https://iiif.archive.org/image/iiif/3/Codex-Cuara%2F00000036.tif",
+    "type": "ImageService3",
+    "protocol": "http://iiif.io/api/image",
+    "profile": "level2",
+    "width": 5015,
+    "height": 7200,
+    "maxArea": 36108000,
+    "sizes": [
+        {
+            "width": 78,
+            "height": 113
+        },
+        {
+            "width": 157,
+            "height": 225
+        },
+        {
+            "width": 313,
+            "height": 450
+        },
+        {
+            "width": 627,
+            "height": 900
+        },
+        {
+            "width": 1254,
+            "height": 1800
+        },
+        {
+            "width": 2508,
+            "height": 3600
+        },
+        {
+            "width": 5015,
+            "height": 7200
+        }
+    ],
+    "tiles": [
+        {
+            "width": 512,
+            "height": 512,
+            "scaleFactors": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+                64
+            ]
+        }
+    ],
+    "extraQualities": [
+        "bitonal",
+        "color",
+        "gray"
+    ],
+    "extraFormats": [
+        "tif",
+        "gif"
+    ],
+    "extraFeatures": [
+        "baseUriRedirect",
+        "canonicalLinkHeader",
+        "cors",
+        "jsonldMediaType",
+        "mirroring",
+        "profileLinkHeader",
+        "regionByPct",
+        "regionByPx",
+        "regionSquare",
+        "rotationArbitrary",
+        "rotationBy90s",
+        "sizeByConfinedWh",
+        "sizeByH",
+        "sizeByPct",
+        "sizeByW",
+        "sizeByWh"
+    ]
+}

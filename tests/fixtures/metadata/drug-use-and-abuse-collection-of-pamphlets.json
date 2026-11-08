@@ -1,0 +1,120 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn710007.ca.archive.org",
+                "dir": "/0/items/drug-use-and-abuse-collection-of-pamphlets"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn710007.ca.archive.org",
+                "dir": "/0/items/drug-use-and-abuse-collection-of-pamphlets"
+            }
+        ]
+    },
+    "created": 1793998058,
+    "d1": "ia600402.us.archive.org",
+    "d2": "ia800402.us.archive.org",
+    "dir": "/24/items/drug-use-and-abuse-collection-of-pamphlets",
+    "files": [
+        {
+            "name": "Drug Use and Abuse (Collection of Pamphlets).jpg",
+            "source": "original",
+            "mtime": "1682379151",
+            "size": "8495186",
+            "md5": "51aca0b24a18b4480cea2f87997eb0ec",
+            "crc32": "da5af97b",
+            "sha1": "66a40a96cd0e943eba44c19e180e76d4a1eb383f",
+            "format": "JPEG",
+            "rotation": "0"
+        },
+        {
+            "name": "Drug Use and Abuse (Collection of Pamphlets)_thumb.jpg",
+            "source": "derivative",
+            "format": "JPEG Thumb",
+            "original": "Drug Use and Abuse (Collection of Pamphlets).jpg",
+            "mtime": "1682379196",
+            "size": "9289",
+            "md5": "665db8ea3eaa6969da8844769c1f8c77",
+            "crc32": "81156774",
+            "sha1": "30c83ce328c5cce982f274f806bec75cd18f2f5a"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1682379174",
+            "size": "26155",
+            "md5": "08f91da11d336a5b4efe9cd801a30e35",
+            "crc32": "9d1917fb",
+            "sha1": "92f9c25f3439171be80b5ece238aede366e36c98",
+            "format": "Item Tile",
+            "rotation": "0"
+        },
+        {
+            "name": "drug-use-and-abuse-collection-of-pamphlets_archive.torrent",
+            "source": "metadata",
+            "btih": "8ea21cd8c4bc3fbbcbe4e2a760600f8ccc2dfe55",
+            "mtime": "1682379199",
+            "size": "2620",
+            "md5": "b398b3da69defbb805b6122509912105",
+            "crc32": "996d5d72",
+            "sha1": "af6f87e919f886317fa19a2766c6f50479b14671",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "drug-use-and-abuse-collection-of-pamphlets_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "8cc492292b9a140b30267d6b00258b6f",
+            "summation": "md5"
+        },
+        {
+            "name": "drug-use-and-abuse-collection-of-pamphlets_meta.sqlite",
+            "source": "original",
+            "mtime": "1682379170",
+            "size": "28672",
+            "md5": "0072ffa28ba1fa37646cd126b4b6b899",
+            "crc32": "2bb01cf0",
+            "sha1": "ecf6a139c3f47fe5096e2f7eb5bcbe5e5777f092",
+            "format": "Metadata"
+        },
+        {
+            "name": "drug-use-and-abuse-collection-of-pamphlets_meta.xml",
+            "source": "original",
+            "mtime": "1682379179",
+            "size": "2710",
+            "md5": "7b18eae02bc4549753e55f0b7e9cf9d6",
+            "crc32": "7c584356",
+            "sha1": "8cefb17dbf8b828ad35c3c6f9107d061f8585cad",
+            "format": "Metadata"
+        }
+    ],
+    "files_count": 7,
+    "item_last_updated": 1682379199,
+    "item_size": 8564632,
+    "metadata": {
+        "identifier": "drug-use-and-abuse-collection-of-pamphlets",
+        "mediatype": "image",
+        "collection": [
+            "opensource_image",
+            "community"
+        ],
+        "creator": "Smith, Kline & French Laboratories,",
+        "date": "1954",
+        "description": "<span dir=\"ltr\" class=\"textLayer--absolute\" style=\"white-space:pre;float:left;margin-bottom:-721.997px;margin-right:-721.997px;background-color:rgb(242,242,242);font-size:13.0243px;font-family:sans-serif;\">Collection of pamphledkcfts and other publications filed upon receipt in a pharmaceutical company</span><span dir=\"ltr\" class=\"textLayer--absolute\" style=\"white-space:pre;float:left;margin-bottom:-721.997px;margin-right:-721.997px;background-color:rgb(242,242,242);font-size:13.0243px;font-family:sans-serif;\">-</span><span dir=\"ltr\" class=\"textLayer--absolute\" style=\"white-space:pre;float:left;margin-bottom:-721.997px;margin-right:-721.997px;background-color:rgb(242,242,242);font-size:13.0243px;font-family:sans-serif;\">Collection of pamphlets and other publications filed upon receipt in a pharmaceutical company</span><span dir=\"ltr\" class=\"textLayer--absolute\" style=\"white-space:pre;float:left;margin-bottom:-721.997px;margin-right:-721.997px;background-color:rgb(242,242,242);font-size:13.0243px;font-family:sans-serif;\">-</span><div><font face=\"Lato, sans-serif\">Collection of pamphlets and other publications filed upon receipt in a pharmaceutical company\u00a0</font><span style=\"font-family:Lato, sans-serif;\">provided folder labeled \"'Thorazine' in psychiatry\"</span></div><span dir=\"ltr\" class=\"textLayer--absolute\" style=\"white-space:pre;float:left;margin-bottom:-721.997px;margin-right:-721.997px;background-color:rgb(242,242,242);font-size:13.0243px;font-family:sans-serif;\">provided folder labeled \"'Thorazine' in psychiatry\"</span><span dir=\"ltr\" class=\"textLayer--absolute\" style=\"white-space:pre;float:left;margin-bottom:-721.997px;margin-right:-721.997px;background-color:rgb(242,242,242);font-size:13.0243px;font-family:sans-serif;\">provided folder labeled \"'Thorazine' in psychiatry\"</span>",
+        "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+        "subject": "Pamphlets pharmaceutical",
+        "title": "Drug Use And Abuse ( Collection Of Pamphlets)",
+        "uploader": "nicksill@ucla.edu",
+        "publicdate": "2023-04-24 23:32:45",
+        "addeddate": "2023-04-24 23:32:45",
+        "curation": "[curator]validator@archive.org[/curator][date]20230424233259[/date][comment]checked for malware[/comment]"
+    },
+    "server": "ia600402.us.archive.org",
+    "uniq": 287409743,
+    "workable_servers": [
+        "ia600402.us.archive.org",
+        "ia800402.us.archive.org"
+    ]
+}

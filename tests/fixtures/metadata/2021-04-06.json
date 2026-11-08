@@ -1,0 +1,139 @@
+{
+    "alternate_locations": {
+        "servers": [
+            {
+                "server": "dn720308.ca.archive.org",
+                "dir": "/0/items/2021-04-06"
+            }
+        ],
+        "workable": [
+            {
+                "server": "dn720308.ca.archive.org",
+                "dir": "/0/items/2021-04-06"
+            }
+        ]
+    },
+    "created": 1793996150,
+    "d1": "ia600408.us.archive.org",
+    "d2": "ia800408.us.archive.org",
+    "dir": "/24/items/2021-04-06",
+    "files": [
+        {
+            "name": "2021-04-06.mp3",
+            "source": "original",
+            "mtime": "1617709522",
+            "size": "229433061",
+            "md5": "1fae706ed53b772446200194028d2d80",
+            "crc32": "54164d29",
+            "sha1": "2cb657780a226b82b2a36982daaa3962284ad4e8",
+            "format": "VBR MP3",
+            "length": "14339.56",
+            "height": "0",
+            "width": "0",
+            "track": "01"
+        },
+        {
+            "name": "2021-04-06.png",
+            "source": "derivative",
+            "format": "PNG",
+            "original": "2021-04-06.mp3",
+            "mtime": "1617709657",
+            "size": "32811",
+            "md5": "700dea09aa41292fe8996ce061e5d0f5",
+            "crc32": "00481ddf",
+            "sha1": "26c8e6e2e9d485552d2739b9316226acaf41c529"
+        },
+        {
+            "name": "2021-04-06_archive.torrent",
+            "source": "metadata",
+            "btih": "b10367a315fbc0e05df90406324184f6e0bae5c2",
+            "mtime": "1647224137",
+            "size": "10881",
+            "md5": "68e8403adc7e0d59c14e1503aa7e13a9",
+            "crc32": "ada6b453",
+            "sha1": "a7f1a8864f12506f502351dad2ce1bec20266cf6",
+            "format": "Archive BitTorrent"
+        },
+        {
+            "name": "2021-04-06_files.xml",
+            "source": "original",
+            "format": "Metadata",
+            "md5": "aa45da567b61f31717e1bed76625c10f",
+            "summation": "md5"
+        },
+        {
+            "name": "2021-04-06_meta.sqlite",
+            "source": "original",
+            "mtime": "1617709557",
+            "size": "11264",
+            "md5": "ec203c37baf99ecb0e32bac41a692200",
+            "crc32": "3003a9b5",
+            "sha1": "c9281e3c274b50a8b16fe9a6637111dbc48b8554",
+            "format": "Metadata"
+        },
+        {
+            "name": "2021-04-06_meta.xml",
+            "source": "original",
+            "mtime": "1647224135",
+            "size": "895",
+            "md5": "44bbacb79e470bc3be1dba72910753d7",
+            "crc32": "74b98adb",
+            "sha1": "03ecef5b6b56b25fd72810cdaf0c96759091b0f3",
+            "format": "Metadata"
+        },
+        {
+            "name": "2021-04-06_spectrogram.png",
+            "source": "derivative",
+            "format": "Spectrogram",
+            "original": "2021-04-06.mp3",
+            "mtime": "1617709803",
+            "size": "245620",
+            "md5": "92e33b95c0f5da028bd8b34855ccf093",
+            "crc32": "9bf0f258",
+            "sha1": "36069fb557ce39a612c50092a3bc1f121396b343"
+        },
+        {
+            "name": "__ia_thumb.jpg",
+            "source": "original",
+            "mtime": "1626276990",
+            "size": "3533",
+            "md5": "54fe8f29d69f7ffed01f6b9fa41b34ab",
+            "crc32": "34cd000d",
+            "sha1": "489f10fe97df0bd7d6ccf09cef86ae9189526799",
+            "format": "Item Tile",
+            "rotation": "0"
+        }
+    ],
+    "files_count": 8,
+    "item_last_updated": 1647224137,
+    "item_size": 229738065,
+    "metadata": {
+        "identifier": "2021-04-06",
+        "mediatype": "audio",
+        "collection": [
+            "airchecks-misc",
+            "airchecks",
+            "radioprograms"
+        ],
+        "description": "An archive of BBC Radio Newcastle Breakfast With Alfie Joey Unedited",
+        "scanner": "Internet Archive HTML5 Uploader 1.6.4",
+        "subject": [
+            "BBC",
+            "Radio",
+            "Newcastle",
+            "Breakfast",
+            "Unedited"
+        ],
+        "title": "Breakfast on BBC Radio Newcastle With Alfie Joey Unedited",
+        "uploader": "daveritchie73@gmail.com",
+        "publicdate": "2021-04-06 11:45:46",
+        "addeddate": "2021-04-06 11:45:46",
+        "curation": "[curator]validator@archive.org[/curator][date]20210406114612[/date][comment]checked for malware[/comment]"
+    },
+    "server": "ia800408.us.archive.org",
+    "uniq": 210549406,
+    "workable_servers": [
+        "ia800408.us.archive.org",
+        "ia600408.us.archive.org"
+    ]
+}
