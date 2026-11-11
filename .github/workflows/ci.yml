@@ -31,7 +31,10 @@ jobs:
           key: ${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ hashFiles('dev-requirements.txt') }}
 
       - name: Install
-        run: pip install --no-cache-dir --upgrade -r requirements.txt
+        # --no-deps: requirements.txt is a complete pinned lockfile, so install it
+        # verbatim and let the explicit Pillow 13 pin override iiif-prezi3 3.1.1's
+        # stale Pillow<=12.0.0 metadata cap (functionally unused by this app).
+        run: pip install --no-cache-dir --no-deps --upgrade -r requirements.txt
 
       - name: Test
         run: python -m unittest discover -s tests
